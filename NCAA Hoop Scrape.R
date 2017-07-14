@@ -112,6 +112,6 @@ for(i in 1:nrow(z)) {
 z <- z[z$D1 == 2,]
 
 
-write.csv(z, paste("Results/2017-18/NCAA_Hoops_Results", month, "_", 
+write.csv(z, paste("2.0_Files/Results/2017-18/NCAA_Hoops_Results", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names=FALSE)
 
