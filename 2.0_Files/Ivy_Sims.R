@@ -1,0 +1,398 @@
+############################# Palestra Sims (Ivy Tourney) ########################################
+palestra.sim <- function(teams) {
+  tmp <- x[1:3, c("team", "opponent")]
+  tmp[1:3,] <- NA
+  tmp$winprob <- 0
+  tmp$predscorediff <- 0
+  tmp$location <- "N"
+  
+  ### semi final 1
+  tmp[1, c("team", "opponent")] <- c(teams[1], teams[4])
+  tmp$predscorediff[1] <- as.numeric(predict(lm.hoops, newdata = tmp[1,]))
+  tmp$winprob[1] <- predict(glm.pointspread, newdata = tmp[1,], type = "response")
+  rand <- runif(1)
+  if(teams[1] == "Penn") {
+    tmp$location[1] <- "H"
+  }else if(teams[4] == "Penn") {
+    tmp$location[1] <- "V"
+  }
+  if(rand <= tmp$winprob[1]){
+    tmp$team[3] <- teams[1]
+  }else{
+    tmp$team[3] <- teams[4]
+  }
+  
+  ### semi final 2
+  tmp[2, c("team", "opponent")] <- c(teams[2], teams[3])
+  tmp$predscorediff[2] <- as.numeric(predict(lm.hoops, newdata = tmp[2,]))
+  tmp$winprob[2] <- predict(glm.pointspread, newdata = tmp[2,], type = "response")
+  rand <- runif(1)
+  if(teams[2] == "Penn") {
+    tmp$location[2] <- "H"
+  }else if(teams[3] == "Penn") {
+    tmp$location[2] <- "V"
+  }
+  if(rand <= tmp$winprob[2]){
+    tmp$opponent[3] <- teams[2]
+  }else{
+    tmp$opponent[3] <- teams[3]
+  }
+  
+  # Final
+  tmp$predscorediff[3] <- as.numeric(predict(lm.hoops, newdata = tmp[3,]))
+  tmp$winprob[3] <- predict(glm.pointspread, newdata = tmp[3,], type = "response")
+  rand <- runif(1)
+  if(tmp$team[3] == "Penn") {
+    tmp$location[3] <- "H"
+  }else if(tmp$opponent[3] == "Penn") {
+    tmp$location[3] <- "V"
+  }
+  if(rand <= tmp$winprob[3]){
+    champ <- tmp$team[3]
+  }else{
+    champ <- tmp$opponent[3] 
+  }
+  
+  return(champ)
+}
+
+
+################################### IVY SIMS ##################################
+ivy.sim <- function(nsims) {
+  games <- y[y$location == "H" & y$team_conf == "Ivy" & y$conf_game & y$reg_season, ]
+  ivy <- unique(y$team[y$team_conf == "Ivy"])
+  champ <- rep(NA, nsims)
+  
+  # Data Frame to Hold Team Wins by Sim
+  simresults <- as.data.frame(matrix(nrow = nsims, ncol = length(ivy), byrow = T))
+  names(simresults) <- ivy
+  
+  prebreak.pos <- as.data.frame(matrix(nrow = nsims, ncol = length(ivy), byrow = T))
+  names(prebreak.pos) <- ivy
+  
+  # Simulate All Games
+  for (j in 1:nrow(simresults)){
+    print(paste("Sim: ", j, sep = ""))
+    games$simwins <- NA
+    games$oppsimwins <- NA
+    for(i in 1:nrow(games)) {
+      if(games$wins[i] == 1){
+        games$simwins[i] <- 1
+        games$oppsimwins[i] <- 0
+      }
+      else if(games$wins[i] == 0){
+        games$simwins[i] <- 0
+        games$oppsimwins[i] <- 1
+      }
+      else if(games$wins[i] < 1 & games$wins[i] > 0){
+        rand <- runif(1)
+        if(games$wins[i] >= rand) {
+          games$simwins[i] <- 1
+          games$oppsimwins[i] <- 0
+        }
+        else{
+          games$simwins[i] <- 0
+          games$oppsimwins[i] <- 1
+        }
+      }
+    }
+    
+    
+    for(i in 1:8) {
+      simresults[j, i] <- (sum(games$simwins[games$team == ivy[i]]) + 
+                             sum(games$oppsimwins[games$opponent == ivy[i]]))
+    }
+    
+    # H2H records (Row Team Wins Over Column Team)
+    head2head <- matrix(nrow = 8, ncol = 8)
+    colnames(head2head) <- ivy
+    rownames(head2head) <- ivy
+    for(i in 1:8) {
+      for(k in 1:8) {
+        head2head[i,k] <- sum(games$simwins[games$team == ivy[i] & games$opponent == ivy[k]]) +
+          sum(games$oppsimwins[games$team == ivy[k] & games$opponent == ivy[i]])
+      }
+    }
+    
+    # Get order of finish Pre-Tiebreak
+    preBreak <- sort(as.vector(simresults[j,], mode = "numeric"), decreasing = T)
+    
+    for(z in 1:8) {
+      prebreak.pos[j,z] <- c(1:length(ivy))[preBreak == simresults[j, z]][1]
+    }
+    
+    # Break any ties
+    for(i in 1:(length(ivy) - 1)) {
+      if(sum(prebreak.pos[j,] == i) > 1){
+        # Get teams to between which to break tie
+        teams <- ivy[preBreak[i] == simresults[j,]]
+        teamIDs <- c(1:length(ivy))[is.element(ivy, teams)]
+        
+        # Tiebreak 1 (H2H)
+        h2h <- rep(0, length(teams))
+        for(z in 1:length(teams)) {
+          h2h[z] <- sum(head2head[teams[z], teams[-z]])
+        }
+        if(sum(h2h == max(h2h)) == 1) {
+          winner <- teams[grep(max(h2h), h2h)]
+          winnerID <- teamIDs[grep(max(h2h), h2h)]
+          # Winner wins tie-break
+          simresults[j, winnerID] <- simresults[j, winnerID] + 0.1 * length(teams)
+          # Change current standing of losers
+          change <- teams[teams != winner]
+          prebreak.pos[j, change] <- i + 1
+          next
+        }
+        
+        # Tiebreak 2 (Record vs. 1-8, descending order)
+        for(z in 1:length(ivy)) {
+          if(z == i) {
+            next
+          }
+          comp_teams <- ivy[prebreak.pos[j,] == z]
+          comp_teamsIDs <- c(1:length(ivy))[is.element(ivy, comp_teams)]
+          
+          h2h <- rep(0, length(teams))
+          for(k in 1:length(teams)) {
+            h2h[k] <- sum(head2head[teams[k], comp_teams])
+          }
+          
+          if(sum(h2h == max(h2h)) == 1) {
+            winner <- teams[grep(max(h2h), h2h)]
+            winnerID <- teamIDs[grep(max(h2h), h2h)]
+            # Winner wins tie-break
+            simresults[j, winnerID] <- simresults[j, winnerID] + 0.1 * length(teams)
+            # Change current standing of losers
+            change <- teams[teams != winner]
+            prebreak.pos[j, change] <- i + 1
+            break
+          }
+        }
+        if(z < 8){
+          next
+        }
+        
+        # Tiebreak 3 (Analytics)
+        tmp <- powranks[is.element(powranks$Team, teams),]
+        tmp <- tmp[order(tmp$Team),]
+        winner <- tmp$Team[grep(max(tmp$YUSAG_Coefficient), tmp$YUSAG_Coefficient)]
+        winnerID <- c(1:8)[ivy == winner]
+        # Winner wins tie-break
+        simresults[j, winnerID] <- simresults[j, winnerID] + 0.1 * length(teams)
+        # Change current standing of losers
+        change <- teams[teams != winner]
+        prebreak.pos[j, change] <- i + 1
+      }
+    }
+    # Sim Ivy tournament
+    palestra <- c(ivy[as.vector(prebreak.pos[j,] == 1)], ivy[as.vector(prebreak.pos[j,] == 2)],
+                  ivy[as.vector(prebreak.pos[j,] == 3)], ivy[as.vector(prebreak.pos[j,] == 4)])
+    champ[j] <- palestra.sim(palestra)
+  }
+  
+  playoffs <- data.frame(Team = ivy,
+                         auto_bid = rep(NA, length(ivy)),
+                         playoff_prob = rep(NA, length(ivy)),
+                         seed1_prob = rep(NA, length(ivy)),
+                         seed2_prob = rep(NA, length(ivy)),
+                         seed3_prob = rep(NA, length(ivy)),
+                         seed4_prob = rep(NA, length(ivy)))
+  
+  
+  for(i in 1:length(ivy)) {
+    playoffs$auto_bid[i] <- round(sum(is.element(champ, ivy[i]))/nsims * 100, 1)
+    playoffs$seed1_prob[i] <- round(sum(prebreak.pos[,i] == 1)/nsims * 100, 1)
+    playoffs$seed2_prob[i] <- round(sum(prebreak.pos[,i] == 2)/nsims * 100, 1)
+    playoffs$seed3_prob[i] <- round(sum(prebreak.pos[,i] == 3)/nsims * 100, 1)
+    playoffs$seed4_prob[i] <- round(sum(prebreak.pos[,i] == 4)/nsims * 100, 1)
+    playoffs$playoff_prob[i] <- sum(playoffs[i,4:7], na.rm = T)
+  }
+  write.table(playoffs, "2.0_Files/Predictions/playoffs.csv", row.names = F, col.names = T, sep = ",")
+  return(playoffs)
+}
+
+
+############################ Playoff Swing Factor ##############################
+psf <- function(nsims, year, months, days) {
+  tochange <- y[y$year == year & (paste(y$month, y$day, sep = "_") == paste(months[1], days[1], sep = "_") | 
+                                    paste(y$month, y$day, sep = "_") == paste(months[2], days[2], sep = "_")) &
+                  y$team_conf == "Ivy" & y$location == "H",]
+  
+  games <- y[y$location == "H" & y$team_conf == "Ivy" & y$conf_game & y$reg_season, ]
+  ivy <- unique(y$team[y$team_conf == "Ivy"])
+  
+  # Data Frame to Hold Team Wins by Sim
+  simresults <- as.data.frame(matrix(nrow = nsims, ncol = length(ivy), byrow = T))
+  names(simresults) <- ivy
+  
+  prebreak.pos <- as.data.frame(matrix(nrow = nsims, ncol = length(ivy), byrow = T))
+  names(prebreak.pos) <- ivy
+  # Create Data Frame to Store SwingFactor
+  
+  swingfactor <- data.frame(home = tochange$team,
+                            away = tochange$opponent,
+                            psf = rep(NA, nrow(tochange)))
+  
+  # Switch
+  q = 0
+  for(k in 1:(2 * nrow(tochange))) {
+    if(q == 0) {
+      games$wins[games$team == tochange$team[ceiling(k/2)] & 
+                   games$opponent == tochange$opponent[ceiling(k/2)]] <- 1
+      q <- 1
+    }
+    # Second time through game to change
+    else{
+      games$wins[games$team == tochange$team[ceiling(k/2)] & 
+                   games$opponent == tochange$opponent[ceiling(k/2)]] <- 0
+      q <- 0
+    }
+    
+    ### Simulate Games
+    for (j in 1:nrow(simresults)){
+      print(paste("Game_id: ", k, " sim #: ", j, sep = ""))
+      games$simwins <- NA
+      games$oppsimwins <- NA
+      for(i in 1:nrow(games)) {
+        if(games$wins[i] == 1){
+          games$simwins[i] <- 1
+          games$oppsimwins[i] <- 0
+        }
+        else if(games$wins[i] == 0){
+          games$simwins[i] <- 0
+          games$oppsimwins[i] <- 1
+        }
+        else if(games$wins[i] < 1 & games$wins[i] > 0){
+          rand <- runif(1)
+          if(games$wins[i] >= rand) {
+            games$simwins[i] <- 1
+            games$oppsimwins[i] <- 0
+          }
+          else{
+            games$simwins[i] <- 0
+            games$oppsimwins[i] <- 1
+          }
+        }
+      }
+      
+      
+      for(i in 1:8) {
+        simresults[j, i] <- (sum(games$simwins[games$team == ivy[i]]) + 
+                               sum(games$oppsimwins[games$opponent == ivy[i]]))
+      }
+      
+      # H2H records (Row Team Wins Over Column Team)
+      head2head <- matrix(nrow = 8, ncol = 8)
+      colnames(head2head) <- ivy
+      rownames(head2head) <- ivy
+      for(i in 1:8) {
+        for(m in 1:8) {
+          head2head[i,m] <- sum(games$simwins[games$team == ivy[i] & games$opponent == ivy[m]]) +
+            sum(games$oppsimwins[games$team == ivy[m] & games$opponent == ivy[i]])
+        }
+      }
+      
+      # Get order of finish Pre-Tiebreak
+      preBreak <- sort(as.vector(simresults[j,], mode = "numeric"), decreasing = T)
+      
+      for(z in 1:8) {
+        prebreak.pos[j,z] <- c(1:length(ivy))[preBreak == simresults[j, z]][1]
+      }
+      
+      # Break any ties
+      for(i in 1:(length(ivy) - 1)) {
+        if(sum(prebreak.pos[j,] == i) > 1){
+          # Get teams to between which to break tie
+          teams <- ivy[preBreak[i] == simresults[j,]]
+          teamIDs <- c(1:length(ivy))[is.element(ivy, teams)]
+          
+          # Tiebreak 1 (H2H)
+          h2h <- rep(0, length(teams))
+          for(z in 1:length(teams)) {
+            h2h[z] <- sum(head2head[teams[z], teams[-z]])
+          }
+          if(sum(h2h == max(h2h)) == 1) {
+            winner <- teams[grep(max(h2h), h2h)]
+            winnerID <- teamIDs[grep(max(h2h), h2h)]
+            # Winner wins tie-break
+            simresults[j, winnerID] <- simresults[j, winnerID] + 0.1 * length(teams)
+            # Change current standing of losers
+            change <- teams[teams != winner]
+            prebreak.pos[j, change] <- i + 1
+            next
+          }
+          
+          
+          # Tiebreak 2 (Record vs. 1-8, descending order)
+          for(z in 1:length(ivy)) {
+            if(z == i) {
+              next
+            }
+            comp_teams <- ivy[prebreak.pos[j,] == z]
+            comp_teamsIDs <- c(1:length(ivy))[is.element(ivy, comp_teams)]
+            
+            h2h <- rep(0, length(teams))
+            for(m in 1:length(teams)) {
+              h2h[m] <- sum(head2head[teams[m], comp_teams])
+            }
+            
+            if(sum(h2h == max(h2h)) == 1) {
+              winner <- teams[grep(max(h2h), h2h)]
+              winnerID <- teamIDs[grep(max(h2h), h2h)]
+              # Winner wins tie-break
+              simresults[j, winnerID] <- simresults[j, winnerID] + 0.1 * length(teams)
+              # Change current standing of losers
+              change <- teams[teams != winner]
+              prebreak.pos[j, change] <- i + 1
+              break
+            }
+          }
+          if(z < 8){
+            next
+          }
+          
+          # Tiebreak 3 (Analytics)
+          tmp <- powranks[is.element(powranks$Team, teams),]
+          tmp <- tmp[order(tmp$Team),]
+          winner <- tmp$Team[grep(max(tmp$YUSAG_Coefficient), tmp$YUSAG_Coefficient)]
+          winnerID <- c(1:8)[ivy == winner]
+          # Winner wins tie-break
+          simresults[j, winnerID] <- simresults[j, winnerID] + 0.1 * length(teams)
+          # Change current standing of losers
+          change <- teams[teams != winner]
+          prebreak.pos[j, change] <- i + 1
+        }
+      }
+    }
+    
+    playoffs <- data.frame(Team = ivy,
+                           playoff_prob = rep(NA, length(ivy)),
+                           seed1_prob = rep(NA, length(ivy)),
+                           seed2_prob = rep(NA, length(ivy)),
+                           seed3_prob = rep(NA, length(ivy)),
+                           seed4_prob = rep(NA, length(ivy)))
+    
+    
+    for(i in 1:length(ivy)) {
+      playoffs$seed1_prob[i] <- round(sum(prebreak.pos[,i] == 1)/nsims * 100, 1)
+      playoffs$seed2_prob[i] <- round(sum(prebreak.pos[,i] == 2)/nsims * 100, 1)
+      playoffs$seed3_prob[i] <- round(sum(prebreak.pos[,i] == 3)/nsims * 100, 1)
+      playoffs$seed4_prob[i] <- round(sum(prebreak.pos[,i] == 4)/nsims * 100, 1)
+      playoffs$playoff_prob[i] <- sum(playoffs[i,3:6], na.rm = T)
+    }
+    
+    if(q == 1) {
+      ### store playoff odds
+      simplayoffs <- data.frame(Team = ivy,
+                                playoff_prob1 = rep(NA, length(ivy)),
+                                playoff_prob2 = rep(NA, length(ivy)))
+      simplayoffs$playoff_prob1 <- playoffs$playoff_prob
+    }
+    else{
+      simplayoffs$playoff_prob2 <- playoffs$playoff_prob
+      swingfactor$psf[k/2] <- sum(abs(simplayoffs$playoff_prob2 - simplayoffs$playoff_prob1))
+    }
+  }
+  write.table(swingfactor, "2.0_Files/Predictions/psf.csv", row.names = F, col.names = T, sep = ",")
+  return(swingfactor)
+}
