@@ -5,8 +5,10 @@ __NCAA_Scrape.R:__ An algorithim to scrape game schedule/result data from the NC
 
 __2.0_Files/:__ A collection of files that are essentially the "inner workings" of everything done in this project.
 * __Ivy_Sims.R:__ Simulates the Ivy League Basketball season in order to estimate playoff odds and cacluates the "Playoff Swing Factor" of each conference game.
-* __bracketology.R:__ Assembles the [YUSAG Bracket](http://sports.sites.yale.edu/yusag-bracketology)
-* __powerrankings.R:__ Computes the [YUSAG NCAA Power Rankings](http://sports.sites.yale.edu/ncaa-power-rankings)
+* __bracketology.R:__ Assembles the [YUSAG Bracket](http://sports.sites.yale.edu/yusag-bracketology).
+* __powerrankings.R:__ Computes the [YUSAG NCAA Power Rankings](http://sports.sites.yale.edu/ncaa-power-rankings).
 * __record_evaluator.R:__ Examines the quality of each team's resume by computing Quality Wins (as recently redefinined by the NCAA tournament selection committee), Strength of Record, and Wins Above Bubble.
 * __rpi.R:__ Predictions end of season RPI for each team.
+* __Bracketology/:__
+  *test
 
