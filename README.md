@@ -10,5 +10,5 @@ __2.0_Files/:__ A collection of files that are essentially the "inner workings" 
 * __record_evaluator.R:__ Examines the quality of each team's resume by computing Quality Wins (as recently redefinined by the NCAA tournament selection committee), Strength of Record, and Wins Above Bubble.
 * __rpi.R:__ Predictions end of season RPI for each team.
 * __Bracketology/:__
-  *test
+  * test
 
