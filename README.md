@@ -9,6 +9,11 @@ __2.0_Files/:__ A collection of files that are essentially the "inner workings" 
 * __powerrankings.R:__ Computes the [YUSAG NCAA Power Rankings](http://sports.sites.yale.edu/ncaa-power-rankings).
 * __record_evaluator.R:__ Examines the quality of each team's resume by computing Quality Wins (as recently redefinined by the NCAA tournament selection committee), Strength of Record, and Wins Above Bubble.
 * __rpi.R:__ Predictions end of season RPI for each team.
-* __Bracketology/:__
-  * test
+* __Bracketology/:__ Collection of .csv files used in YUSAG Bracketology, including the bracket itself (__bracket.csv__), teams on "the bubble" (__bubble.csv__), and bracketology metrics for all NCAA teams (__bracket_math.csv__)
+* __Info/:__ Collection of .csv files used to adjust model coefficients to account for the impact of incoming transfers and recruits
+* __Power_Rankings/:__ Collection of .csv files produced by __powerrankings.R__, including power rankings overall, power rankings sorted by conference, and conference rankings.
+
+
+
+
 
