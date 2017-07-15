@@ -2,7 +2,7 @@ record_eval <- function(team) {
   games <- y[y$team == team & y$reg_season,]
   games$opp_rank <- NA
   for(k in 1:nrow(games)) {
-    games$opp_rank[k] <- powranks$rank[powranks$Team == games$opponent[k]]
+    games$opp_rank[k] <- grep(games$opponent[k], rpi$team)
   }
   tierAw <- 
     sum(games$wins[games$opp_rank <= 50 & games$location == "N"]) + 
