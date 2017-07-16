@@ -5,6 +5,7 @@ make_bracket <- function(tourney) {
                         "rpi" = rep(NA, 351),
                         "sor" = rep(NA, 351),
                         "wab" = rep(NA, 351),
+                        "qual_bonus" = rep(NA, 351),
                         "yusag_rank" = rep(NA, 351),
                         "rpi_rank" = rep(NA, 351),
                         "sor_rank" = rep(NA, 351),
@@ -33,6 +34,7 @@ make_bracket <- function(tourney) {
     bracket$rpi[i] <- rpi$rpi[rpi$team == teams[i]]
     bracket$sor[i] <- resumes$sor[resumes$team == teams[i]]
     bracket$wab[i] <- resumes$wab[resumes$team == teams[i]]
+    bracket$qual_bonus[i] <- resumes$qual_bonus[resumes$team == teams[i]]
     bracket$yusag_rank[i] <- powranks$rank[powranks$Team == teams[i]]
     bracket$rpi_rank[i] <- rpi$rank[rpi$team == teams[i]]
     bracket$sor_rank[i] <- resumes$sor_rank[resumes$team == teams[i]]
