@@ -44,7 +44,7 @@ rpi_compute <- function(new) {
       stats$rpi[i] <- rpi_calc(teams[i])
     }
     stats <- stats[order(stats$rpi, decreasing = T),]
-    stats$team <- as.character(stats$teams)
+    stats$team <- as.character(stats$team)
     write.table(stats, "2.0_Files/Bracketology/rpi.csv", row.names = F, col.names = T, sep = ",")
   }
   else{
