@@ -2,7 +2,7 @@ record_eval <- function(team) {
   games <- y[y$team == team & y$reg_season,]
   games$opp_rank <- NA
   for(k in 1:nrow(games)) {
-    games$opp_rank[k] <- grep(games$opponent[k], as.character(rpi$team))
+    games$opp_rank[k] <- rpi$rpi_rank[rpi$team == games$opponent[k]]
   }
   tierAw <- 
     sum(games$wins[games$opp_rank <= 50 & games$location == "N"]) + 
@@ -72,7 +72,7 @@ get_resumes <- function(new){
                       "qual_bonus" = rep(0, length(teams)),
                       "wab" = rep(0, length(teams)))
     for(i in 1:nrow(tmp)) {
-      print(i)
+      print("Evaluating Team #: ", paste(i), sep = "")
       rec_eval <- record_eval(teams[i])
       tmp$sor[i] <- rec_eval$sor
       tmp$wab[i] <- rec_eval$wab

@@ -40,11 +40,12 @@ rpi_calc <- function(team) {
 rpi_compute <- function(new) {
   if(new) {
     for(i in 1:length(teams)) {
-      print(i)
+      print(paste("RPI #: ", i, sep = ""))
       stats$rpi[i] <- rpi_calc(teams[i])
     }
     stats <- stats[order(stats$rpi, decreasing = T),]
     stats$team <- as.character(stats$team)
+    stats$rpi_rank <- 1:351
     write.table(stats, "2.0_Files/Bracketology/rpi.csv", row.names = F, col.names = T, sep = ",")
   }
   else{
