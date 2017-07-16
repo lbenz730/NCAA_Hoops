@@ -46,7 +46,7 @@ make_bracket <- function(tourney) {
   autobid_calc <- function(conf) {
     for(i in 1:length(confs$team[confs$conference == conf])) {
       tmp <- by_conf$Team[by_conf$Conference_Rank == i & by_conf$Conference == conf]
-      if(confs$eligible[confs$team == tmp] & !confs$elimanted[confs$team == tmp]) {
+      if(confs$eligible[confs$team == tmp] & !confs$eliminated[confs$team == tmp]) {
         return(tmp)
       }
     }
