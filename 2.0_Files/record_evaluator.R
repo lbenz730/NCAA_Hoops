@@ -72,7 +72,7 @@ get_resumes <- function(new){
                       "qual_bonus" = rep(0, length(teams)),
                       "wab" = rep(0, length(teams)))
     for(i in 1:nrow(tmp)) {
-      print("Evaluating Team #: ", paste(i), sep = "")
+      print(paste("Evaluating Team #: ", i, sep = ""))
       rec_eval <- record_eval(teams[i])
       tmp$sor[i] <- rec_eval$sor
       tmp$wab[i] <- rec_eval$wab
