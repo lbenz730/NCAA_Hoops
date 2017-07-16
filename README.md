@@ -22,8 +22,10 @@ __2.0_Files/:__ A collection of files that are essentially the "inner workings" 
   * __recruiting.csv:__ [247Sports recruiting scores](http://247sports.com/Season/2017-Basketball/CompositeTeamRankings) for each team's incoming freshman class.
   * __transfers.csv:__ Data on transfers eligible to play in the 2017-18 season, pulled from http://www.barttorvik.com/trankpre.php.
 * __Power_Rankings/:__ Collection of .csv files produced by __powerrankings.R__, including power rankings overall, power rankings sorted by conference, and conference summary table.
-* __Predictsions/:__ Storage for Ivy League postseason odds and "Playoff Swing Factor".
-* __Results/:__ Complete NCAA Basketball schedule/results through a given date. Sub-directories indicate the year/season, with .csv files given in NCAA_Hoops_results_day_month_year.csv format.
+* __Predictions/:__ 
+  * __playoffs.csv:__ Ivy League playoff odds.
+  * __psf.csv:__ [Playoff Swing Factor](http://yaledailynews.com/downthefield/2017/01/31/by-the-numbers-ivy-hoops-games-to-watch/) for most recent week of Ivy League conference games.
+* __Results/:__ Complete NCAA Basketball schedule/results through a given date. Sub-directories indicate the year/season, with .csv files given in NCAA_Hoops_results_day_month_year.csv format.__NCAA_Hoops_results_6_29_2017.csv__ is the complete results file for the 2016-17 season.
 
 
 
