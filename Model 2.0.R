@@ -75,6 +75,7 @@ for(i in 1:nrow(x)) {
 #   y$weights[i] <- 1/(1 + (0.5^(5 * rr)) * exp(-rr))
 # }   
 
+y <- x ### Until 2017-18 season Begins
 ############################### Create Model ###################################
 lm.hoops <- lm(scorediff ~ team + opponent + location, weights = weights, data = x) #rbind(x,y)
 summary(lm.hoops)
@@ -141,8 +142,6 @@ for(i in 1:nrow(x)) {
 # for(i in 1:nrow(x)) {
 #   y$GEI[i] <- compute_GEI(y[i,])
 # }
-
-y <- x
 
 ########################### Bracketology #######################################
 rpi <- rpi_compute(new = F)
