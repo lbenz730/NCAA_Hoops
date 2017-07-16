@@ -11,7 +11,7 @@ __2.0_Files/:__ A collection of files that are essentially the "inner workings" 
 * __rpi.R:__ Predictions end of season RPI for each team.
 * __Bracketology/:__ Collection of .csv files used in YUSAG Bracketology, including the bracket itself (__bracket.csv__), teams on "the bubble" (__bubble.csv__), and bracketology metrics for all NCAA teams (__bracket_math.csv__).
 * __Info/:__ 
- *__test __
+  *__conferences.csv:__ List of teams with their conference, postseason eligibility status, and elimination status from automatic bid contention.
 * __Power_Rankings/:__ Collection of .csv files produced by __powerrankings.R__, including power rankings overall, power rankings sorted by conference, and conference summary table.
 * __Predictsions/:__ Storage for Ivy League postseason odds and "Playoff Swing Factor".
 * __Results/:__ Complete NCAA Basketball schedule/results through a given date. Sub-directories indicate the year/season, with .csv files given in NCAA_Hoops_results_day_month_year.csv format.
