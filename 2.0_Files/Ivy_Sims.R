@@ -1,4 +1,5 @@
 ############################# Palestra Sims (Ivy Tourney) ########################################
+### Simulates Ivy League Tournament
 palestra.sim <- function(teams) {
   tmp <- x[1:3, c("team", "opponent")]
   tmp[1:3,] <- NA
@@ -56,8 +57,8 @@ palestra.sim <- function(teams) {
   return(champ)
 }
 
-
 ################################### IVY SIMS ##################################
+### Simulates Ivy League Regular Season
 ivy.sim <- function(nsims) {
   games <- y[y$location == "H" & y$team_conf == "Ivy" & y$conf_game & y$reg_season, ]
   ivy <- unique(y$team[y$team_conf == "Ivy"])
@@ -67,6 +68,7 @@ ivy.sim <- function(nsims) {
   simresults <- as.data.frame(matrix(nrow = nsims, ncol = length(ivy), byrow = T))
   names(simresults) <- ivy
   
+  # Stores pre (and later post) tie-break position in standings
   prebreak.pos <- as.data.frame(matrix(nrow = nsims, ncol = length(ivy), byrow = T))
   names(prebreak.pos) <- ivy
   
@@ -97,7 +99,7 @@ ivy.sim <- function(nsims) {
       }
     }
     
-    
+    # get team win totals for current sim
     for(i in 1:8) {
       simresults[j, i] <- (sum(games$simwins[games$team == ivy[i]]) + 
                              sum(games$oppsimwins[games$opponent == ivy[i]]))
@@ -190,6 +192,7 @@ ivy.sim <- function(nsims) {
     champ[j] <- palestra.sim(palestra)
   }
   
+  ### store playoff odds
   playoffs <- data.frame(Team = ivy,
                          auto_bid = rep(NA, length(ivy)),
                          playoff_prob = rep(NA, length(ivy)),
@@ -211,8 +214,8 @@ ivy.sim <- function(nsims) {
   return(playoffs)
 }
 
-
 ############################ Playoff Swing Factor ##############################
+### compute playoff swing factor (leverage) of each game
 psf <- function(nsims, year, months, days) {
   tochange <- y[y$year == year & (paste(y$month, y$day, sep = "_") == paste(months[1], days[1], sep = "_") | 
                                     paste(y$month, y$day, sep = "_") == paste(months[2], days[2], sep = "_")) &
@@ -227,8 +230,8 @@ psf <- function(nsims, year, months, days) {
   
   prebreak.pos <- as.data.frame(matrix(nrow = nsims, ncol = length(ivy), byrow = T))
   names(prebreak.pos) <- ivy
-  # Create Data Frame to Store SwingFactor
   
+  # Create Data Frame to Store SwingFactor
   swingfactor <- data.frame(home = tochange$team,
                             away = tochange$opponent,
                             psf = rep(NA, nrow(tochange)))
@@ -274,7 +277,6 @@ psf <- function(nsims, year, months, days) {
           }
         }
       }
-      
       
       for(i in 1:8) {
         simresults[j, i] <- (sum(games$simwins[games$team == ivy[i]]) + 
