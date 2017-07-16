@@ -3,7 +3,7 @@ __Model_2.0.R:__ Control panel for everything NCAA Hoops related that I do for t
 
 __NCAA_Scrape.R:__ An algorithim to scrape game schedule/result data from the NCAA website. This script is mostly copied (with slight modifications) from a scrape written by Prof. Jay Emerson and used in STAT 230: Introductory Data Analysis (Spring 2016).
 
-__2.0_Files/:__ A collection of files that are essentially the "inner workings" of everything done in this project.
+__2.0_Files/:__ A collection of files that are essentially the "inner workings" of everything done in this project. Every script in this directory contains functions. Those functions are executed in the master file, __Model_2.0.R__.
 * __Ivy_Sims.R:__ Simulates the Ivy League Basketball season in order to estimate playoff odds and cacluates the "Playoff Swing Factor" of each conference game.
 * __bracketology.R:__ Assembles the [YUSAG Bracket](http://sports.sites.yale.edu/yusag-bracketology).
 * __powerrankings.R:__ Computes the [YUSAG NCAA Power Rankings](http://sports.sites.yale.edu/ncaa-power-rankings).
