@@ -4,6 +4,7 @@ pr_compute <- function(by_conf) {
                               YUSAG_Coefficient = rep(NA, length(teams)))
   powerrankings[1, ] <- c(teams[1], "Southland", 0)
   
+  ### Get YUSAG Coefficients
   for(i in 2:(length(teams))) {
     teamcoef <- 
       lm.hoops$coefficients[paste("team", teams[i], sep = "")] 
@@ -14,6 +15,7 @@ pr_compute <- function(by_conf) {
   }
   powerrankings$YUSAG_Coefficient <- as.numeric(powerrankings$YUSAG_Coefficient)
   
+  ### Return w/out sorting by conference
   if(!by_conf) {
     powerrankings <- powerrankings[order(powerrankings$YUSAG_Coefficient, decreasing = T), ]
     powerrankings$rank <- seq(1, 351, 1)
@@ -21,6 +23,7 @@ pr_compute <- function(by_conf) {
     return(powerrankings)
   }
   else{
+    ### Sort by conference
     conferences <- sort(unique(confs$conference))
     
     summ <- data.frame(conf = conferences,
@@ -49,11 +52,11 @@ pr_compute <- function(by_conf) {
       tmp$record <- NA
       tmp$conf_record <- NA
       for(j in 1:nrow(tmp)) {
-        wins <- round(sum(x$wins[x$team == tmp$Team[j] & x$reg_season]))
-        losses <- max(x$game_id[x$team == tmp$Team[j] & x$reg_season]) - wins
+        wins <- round(sum(y$wins[y$team == tmp$Team[j] & y$reg_season]))
+        losses <- max(y$game_id[y$team == tmp$Team[j] & y$reg_season]) - wins
         tmp$record[j] <- paste(wins, losses, sep = " - " )
-        conf_wins <- round(sum(x$wins[x$team == tmp$Team[j] & x$reg_season & x$conf_game]))
-        conf_losses <- length(x$wins[x$team == tmp$Team[j] & x$reg_season & x$conf_game]) - conf_wins
+        conf_wins <- round(sum(y$wins[y$team == tmp$Team[j] & y$reg_season & y$conf_game]))
+        conf_losses <- length(y$wins[y$team == tmp$Team[j] & y$reg_season & y$conf_game]) - conf_wins
         tmp$conf_record[j] <- paste(conf_wins, conf_losses, sep = " - " )
       }
       if(i > 1){

@@ -1,9 +1,14 @@
 record_eval <- function(team) {
+  ### Get Team's games
   games <- y[y$team == team & y$reg_season,]
+  
+  ### Opponent's RPI Ranks
   games$opp_rank <- NA
   for(k in 1:nrow(games)) {
     games$opp_rank[k] <- rpi$rpi_rank[rpi$team == games$opponent[k]]
   }
+  
+  ### Classify wins into NCAA's 4 tiers
   tierAw <- 
     sum(games$wins[games$opp_rank <= 50 & games$location == "N"]) + 
     sum(games$wins[games$opp_rank <= 30 & games$location == "H"]) + 
@@ -37,9 +42,11 @@ record_eval <- function(team) {
     sum(1 - games$wins[games$opp_rank >= 161 & games$opp_rank <= 351 & games$location == "H"]) + 
     sum(1 - games$wins[games$opp_rank >= 241 & games$opp_rank <= 351 & games$location == "V"])
   
+  ### Resume Bonus
   qual_bonus <- 4 * tierAw + 3 * tierBw + 2 * tierDw + tierDw - 
     tierAl - 2 * tierBl - 3 * tierCl - 4 * tierDl
   
+  ### Compute Strength of Record
   test <- powranks$Team[25]
   data <- games
   data$team <- test
@@ -48,6 +55,7 @@ record_eval <- function(team) {
     round(predict.glm(glm.pointspread, newdata = data, type = "response"), 3)
   sor <- sum(games$wins) - sum(data$wins)
   
+  ### Compute Wins Above Bubble (Ignore eligibity)
   autobids <- by_conf$Team[by_conf$Conference_Rank == 1]
   atlarge <- powranks[!is.element(powranks$Team, autobids),]
   
@@ -65,6 +73,8 @@ record_eval <- function(team) {
   return(list("qual_bonus" = qual_bonus, "sor" = sor, "wab" = mean(wab)))
 }
 
+
+### Get and Return Team's resumes
 get_resumes <- function(new){
   if(new){
     tmp <- data.frame("team" = teams,
