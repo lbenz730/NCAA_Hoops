@@ -30,7 +30,7 @@ make_bracket <- function(tourney) {
   
   for(i in 1:length(teams)) {
     bracket$yusag_coeff[i] <- powranks$YUSAG_Coefficient[powranks$Team == teams[i]]
-    bracket$conf[i] <- powranks$Conference[powranks$Team == teams[i]]
+    bracket$conf[i] <- get_conf(teams[i])
     bracket$rpi[i] <- rpi$rpi[rpi$team == teams[i]]
     bracket$sor[i] <- resumes$sor[resumes$team == teams[i]]
     bracket$wab[i] <- resumes$wab[resumes$team == teams[i]]

@@ -10,7 +10,7 @@ pr_compute <- function(by_conf) {
       lm.hoops$coefficients[paste("team", teams[i], sep = "")] 
     opponentcoef <- 
       lm.hoops$coefficients[paste("opponent", teams[i], sep = "")]
-    tmp <- c(teams[i], confs$conference[confs$team == teams[i]], round((teamcoef - opponentcoef)/2, 2))
+    tmp <- c(teams[i], get_conf(teams[i]), round((teamcoef - opponentcoef)/2, 2))
     powerrankings[i, ] <- tmp
   }
   powerrankings$YUSAG_Coefficient <- as.numeric(powerrankings$YUSAG_Coefficient)
