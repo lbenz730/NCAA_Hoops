@@ -124,6 +124,9 @@ for(i in 1:nrow(x)) {
 #   y$GEI[i] <- compute_GEI(y[i,])
 # }
 
+### Get History
+history <- write_history(update = F)
+
 ########################### Bracketology #######################################
 rpi <- rpi_compute(new = F)
 resumes <- get_resumes(new = F)
