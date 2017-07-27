@@ -19,11 +19,11 @@ __2.0_Files/:__ A collection of files that are essentially the "inner workings" 
   * __rpi.csv:__ Projected end of season RPI for each team. Produced by __rpi.R__.
 * __Info/:__ A collection of information used to adjust model weights and determine postseason status.
   * __conferences.csv:__ List of teams with their conference, postseason eligibility status, and elimination status from automatic bid contention.
-* __History/:__ Model prediction history, with actual score differentials and predicted score differentials from a week in advance.
- * __2017_18_history.csv:__ 2017-18 prediction history.
   * __mins.csv:__ Percentage of team's 2016-17 minutes returning during the 2017-18 season. Acquired from [Bart Tovrik](http://www.barttorvik.com/returningmins.php).
   * __recruiting.csv:__ [247Sports recruiting scores](http://247sports.com/Season/2017-Basketball/CompositeTeamRankings) for each team's incoming freshman class.
   * __transfers.csv:__ Data on transfers eligible to play in the 2017-18 season, pulled from http://www.barttorvik.com/trankpre.php.
+* __History/:__ Model prediction history, with actual score differentials and predicted score differentials from a week in advance.
+  * __2017_18_history.csv:__ 2017-18 prediction history.
 * __Power_Rankings/:__ Collection of .csv files produced by __powerrankings.R__.
   * __Powerrankings.csv:__ Ranking of all 351 teams by [YUSAG Coefficient](http://sports.sites.yale.edu/ncaa-mens-basketball-power-rankings).
   * __conf_summary.csv:__ Ranking of the 32 Division 1 conferences, by median YUSAG coefficient. 
