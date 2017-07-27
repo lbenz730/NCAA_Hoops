@@ -23,3 +23,17 @@ compute_GEI <- function(data) {
   opp_conf_rank <- by_conf$Conference_Rank[by_conf$Team == data$opponent]
   return(harmonic_mean(team_strength, opp_strength)/(1 + abs(team_strength - opp_strength)))
 }
+
+### Get Games for a certain date
+get_games <- function(today, D, M, Y) {
+  if(today){
+    date<- unclass(as.POSIXlt(Sys.time()))
+    Y <- 1900 + date$year
+    M <- 1 + date$mon
+    D <- date$mday
+  }
+  return(filter(y, day == D, month == M, year == Y))
+}
+
+
+
