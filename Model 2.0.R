@@ -16,12 +16,12 @@ source("2.0_Files/helpers.R")
 ########################  Data Cleaning ########################################
 x <- x %>%
  mutate(season_id = "2016-17", game_id = NA, opp_game_id = NA, 
-        team_conf = NA, opp_conf = NA, conf_game = NA)
+        team_conf = NA, opp_conf = NA, conf_game = NA, GEI = NA)
 
 # y <- y %>%
 #   mutate(scorediff = NA, predscorediff = NA, wins = NA,
 #          season_id = "2016-17", game_id = NA, opp_game_id = NA, 
-#          team_conf = NA, opp_conf = NA, conf_game = NA)
+#          team_conf = NA, opp_conf = NA, conf_game = NA, GEI = NA)
 
 teams <- unique(x$team)
 
@@ -117,12 +117,9 @@ powranks <- pr_compute(by_conf = F)
 by_conf <- pr_compute(by_conf = T)
 
 ########################### Game Excitement Index ##############################
-x$GEI <- NA
 for(i in 1:nrow(x)) {
   x$GEI[i] <- compute_GEI(x[i,])
 }
-
-# y$GEI <- NA
 # for(i in 1:nrow(x)) {
 #   y$GEI[i] <- compute_GEI(y[i,])
 # }
