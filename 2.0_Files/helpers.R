@@ -36,4 +36,84 @@ get_games <- function(today, D, M, Y) {
 }
 
 
+### Update History (Weekly Basis)
+write_history <- function(update) {
+  history <- read.csv("2.0_Files/History/2017_18_history.csv", as.is = T)
+  if(update) {
+    date<- unclass(as.POSIXlt(Sys.time()))
+    Y <- 1900 + date$year
+    M <- 1 + date$mon
+    D <- date$mday
+    
+    ### Get one week from current date
+    if((D <= 25 & M != 11 & M != 2) | (D <= 24 & M == 11) | (D <= 21 & M == 2)) {
+      days <- D:(D + 6)
+      months <- rep(M, 7)
+      years <- rep(Y, 7)
+    }else if(D > 25 & is.element(M, c(1,3))) {
+      days <- c(D:31, 1:(D - 25))
+      months <- c(rep(M, (31 - D)), rep(M + 1, (D - 24)))
+      years <- rep(Y, 7)
+    }else if(D > 25 & M == 12) {
+      days <- c(D:31, 1:(D - 25))
+      months <- c(rep(M, (31 - D)), rep(1, (D - 24)))
+      years <- c(rep(Y, (31 - D)), rep(Y + 1, (D - 24)))
+    }else if(D > 21 & M == 2){
+      days <- c(D:28, 1:(D - 22))
+      months <- c(rep(M, (28 - D)), rep(M + 1, (D - 21)))
+      years <- rep(Y, 7)
+    }else{
+      days <- c(D:30, 1:(D - 24))
+      months <- c(rep(M, (30 - D)), rep(M + 1, (D - 24)))
+      years <- rep(Y, 7)
+    }
+    
+    dates <- paste(months, days, years, sep = "_")
+    tmp <- y %>% select(year, month, day, team, opponent, 
+                        location, teamscore, oppscore, scorediff, 
+                        predscorediff, GEI) %>%
+      mutate(date = paste(month, day, year, sep = "_")) %>%
+      filter(is.element(date, dates))
+    
+    history <- rbind(history, tmp[-12])
+    
+    ### Get past week of Results
+    if(D > 7) {
+      days <- (D - 7):(D - 1) 
+      months <- rep(M, 7)
+      years <- rep(Y, 7)
+    }else if(D <= 7 & M != 12 & M != 1 & M != 3) {
+      days <- c((24 + D):31, 1:(D - 1))
+      months <- c(rep((M - 1), (8 - D)), rep(M, (D - 1)))
+      years <- rep(Y, 7)
+    }else if(D <= 7 & M == 1) {
+      days <- c((24 + D):31, 1:(D - 1))
+      months <- c(rep(12, (8 - D)), rep(1, (D - 1)))
+      years <- c(rep((Y - 1), (8 - D)), rep(Y, (D - 1)))
+    }else if(D <= 7 & M == 12) {
+      days <- c((23 + D):30, 1:(D - 1))
+      months <- c(rep(12, (8 - D)), rep(1, (D - 1)))
+      years <- rep(Y, 7)
+    }else{
+      days <- c((21 + D):28, 1:(D - 1))
+      months <- c(rep(12, (8 - D)), rep(1, (D - 1)))
+      years <- rep(Y, 7)
+    }
+    
+    dates <- paste(months, days, years, sep = "_")
+    tmp <- history %>% select(year, month, day, team, opponent, 
+                              location, teamscore, oppscore, scorediff, 
+                              predscorediff, GEI) %>%
+      mutate(date = paste(month, day, year, sep = "_")) %>%
+      filter(is.element(date, dates))
+    
+    history <- mutate(history, "date" = paste(month, day, year, sep = "_")) 
+    history[is.element(history$date, dates),] <- history %>% 
+      filter(is.element(date, dates)) %>%
+      mutate(teamscore = tmp$teamscore, oppscore = tmp$oppscore, scorediff = tmp$scorediff)
+    
+    write.table(history[-12], "2.0_Files/History/2017_18_history.csv", row.names = F, col.names = T, sep = ",")
+  }
+  return(history)
+}
 
