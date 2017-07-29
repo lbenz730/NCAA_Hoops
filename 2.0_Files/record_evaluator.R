@@ -1,6 +1,6 @@
 record_eval <- function(team) {
   ### Get Team's games
-  games <- y[y$team == team & y$reg_season,]
+  games <- y[y$team == team,]
   
   ### Opponent's RPI Ranks
   games$opp_rank <- NA
