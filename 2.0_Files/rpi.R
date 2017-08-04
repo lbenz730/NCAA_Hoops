@@ -5,7 +5,7 @@ stats <- data.frame("team" = teams,
 
 ### Compute team's winning percentage
 wp_compute <- function(team, team_iq) {
-  games <- y[y$team == team & y$opponent != team_iq & y$reg_season,]
+  games <- y[y$team == team & y$opponent != team_iq,]
   wwins <- sum(1.4 * games$win[games$location == "V"]) + 
     sum(0.6 * games$win[games$location == "H"]) +
     sum(games$win[games$location == "N"])
@@ -18,7 +18,7 @@ wp_compute <- function(team, team_iq) {
 
 ### Compute team's opponent winning percentage
 owp_compute <- function(team) {
-  opponents <- y$opponent[y$team == team & y$reg_season]
+  opponents <- y$opponent[y$team == team]
   owp <- rep(0, length(opponents))
   for(i in 1:length(opponents)) {
     owp[i] <- wp_compute(opponents[i], team)
@@ -28,7 +28,7 @@ owp_compute <- function(team) {
 
 ### Compute team's opponent's opponent winning percentage
 oowp_compute <- function(team) {
-  opponents <- y$opponent[y$team == team & y$reg_season]
+  opponents <- y$opponent[y$team == team]
   oowp <- rep(0, length(opponents))
   for(i in 1:length(opponents)) {
     oowp[i] <- owp_compute(opponents[i])
