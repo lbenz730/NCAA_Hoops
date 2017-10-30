@@ -111,6 +111,9 @@ for(i in 1:nrow(z)) {
 
 z <- z[z$D1 == 2,]
 
+### NC State vs. North Carolina St. Bug Fix
+z$team <- gsub("NC State", "North Carolina St.", z$team)
+z$opponent <- gsub("NC State", "North Carolina St.", z$opponent)
 
 write.csv(z, paste("2.0_Files/Results/2017-18/NCAA_Hoops_Results_", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names=FALSE)
