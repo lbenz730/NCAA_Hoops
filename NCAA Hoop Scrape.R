@@ -8,9 +8,9 @@ month <- 1 + today$mon
 day <- today$mday
 
 # Year specific code
-code <- 12480
+code <- 12620
 
-# Stripwhite function
+# Stripwhite function 
 stripwhite <- function(x) gsub("\\s*$", "", gsub("^\\s*", "", x))
 
 url = "http://stats.ncaa.org/team/inst_team_list?academic_year=2018&conf_id=-1&division=1&sport_code=MBB"
@@ -112,6 +112,6 @@ for(i in 1:nrow(z)) {
 z <- z[z$D1 == 2,]
 
 
-write.csv(z, paste("2.0_Files/Results/2017-18/NCAA_Hoops_Results", month, "_", 
+write.csv(z, paste("2.0_Files/Results/2017-18/NCAA_Hoops_Results_", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names=FALSE)
 
