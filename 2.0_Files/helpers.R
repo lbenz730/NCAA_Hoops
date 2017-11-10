@@ -21,7 +21,7 @@ compute_GEI <- function(data) {
   score <- abs(data$predscorediff)
   team_conf_rank <- by_conf$Conference_Rank[by_conf$Team == data$team]
   opp_conf_rank <- by_conf$Conference_Rank[by_conf$Team == data$opponent]
-  return(harmonic_mean(team_strength, opp_strength)/(1 + abs(team_strength - opp_strength)))
+  return(20 * harmonic_mean(team_strength, opp_strength)/(10 + abs(team_strength - opp_strength)))
 }
 
 ### Get Games for a certain date
@@ -38,7 +38,7 @@ get_games <- function(today, D, M, Y) {
 
 ### Update History (Weekly Basis)
 write_history <- function(update) {
-  history <- read.csv("2.0_Files/History/2017_18_history.csv", as.is = T)
+  history <- supressWarnings(read.csv("2.0_Files/History/2017_18_history.csv", as.is = T))
   if(update) {
     date<- unclass(as.POSIXlt(Sys.time()))
     Y <- 1900 + date$year
