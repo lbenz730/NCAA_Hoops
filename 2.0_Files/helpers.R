@@ -26,7 +26,7 @@ compute_GEI <- function(data) {
 
 ### Get Games for a certain date
 get_games <- function(today, D, M, Y) {
-  if(today){
+  if(today == "T"){
     date<- unclass(as.POSIXlt(Sys.time()))
     Y <- 1900 + date$year
     M <- 1 + date$mon
@@ -38,7 +38,7 @@ get_games <- function(today, D, M, Y) {
 
 ### Update History (Weekly Basis)
 write_history <- function(update) {
-  history <- supressWarnings(read.csv("2.0_Files/History/2017_18_history.csv", as.is = T))
+  history <- suppressWarnings(read.csv("2.0_Files/History/2017_18_history.csv", as.is = T))
   if(update) {
     date<- unclass(as.POSIXlt(Sys.time()))
     Y <- 1900 + date$year
@@ -75,7 +75,7 @@ write_history <- function(update) {
       mutate(date = paste(month, day, year, sep = "_")) %>%
       filter(is.element(date, dates))
     
-    history <- rbind(history, tmp[-12])
+    history <- rbind(history, tmp[,-12])
     
     ### Get past week of Results
     if(D > 7) {
@@ -101,7 +101,7 @@ write_history <- function(update) {
     }
     
     dates <- paste(months, days, years, sep = "_")
-    tmp <- history %>% select(year, month, day, team, opponent, 
+    tmp <- y %>% select(year, month, day, team, opponent, 
                               location, teamscore, oppscore, scorediff, 
                               predscorediff, GEI) %>%
       mutate(date = paste(month, day, year, sep = "_")) %>%
@@ -112,7 +112,7 @@ write_history <- function(update) {
       filter(is.element(date, dates)) %>%
       mutate(teamscore = tmp$teamscore, oppscore = tmp$oppscore, scorediff = tmp$scorediff)
     
-    write.table(history[-12], "2.0_Files/History/2017_18_history.csv", row.names = F, col.names = T, sep = ",")
+    write.table(history[,-12], "2.0_Files/History/2017_18_history.csv", row.names = F, col.names = T, sep = ",")
   }
   return(history)
 }
