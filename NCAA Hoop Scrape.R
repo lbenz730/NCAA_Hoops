@@ -91,7 +91,11 @@ for (i in 1:nrow(teamid)) {
                       teamscore=result[,1],
                       oppscore=result[,2],
                       OT=OT, stringsAsFactors=FALSE)
-    z <- rbind(z, res)
+    res$date <- paste(res$month, res$day, collapse = "_")
+    
+    # Fix non-unique dates problem
+    uni_dates <- unique(res$date)
+    z <- rbind(z, res[uni_dates %in% res$date, -ncol(res)])
   }
 }
 
@@ -114,6 +118,8 @@ z <- z[z$D1 == 2,]
 ### NC State vs. North Carolina St. Bug Fix
 z$team <- gsub("NC State", "North Carolina St.", z$team)
 z$opponent <- gsub("NC State", "North Carolina St.", z$opponent)
+z$team <- gsub("A&M-Corpus Christi", "A&M-Corpus Chris", z$team)
+z$opponent <- gsub("A&M-Corpus Christi", "A&M-Corpus Chris", z$opponent)
 
 write.csv(z, paste("2.0_Files/Results/2017-18/NCAA_Hoops_Results_", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names=FALSE)
