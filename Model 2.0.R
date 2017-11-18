@@ -42,10 +42,6 @@ for(i in 1:nrow(x)) {
 }
 for(i in 1:nrow(y)) {
   y$opp_game_id[i] <- get_opp_id(y, i)
-  if(length(get_opp_id(y, i)) > 1) {
-    print(i)
-  }
-  
 }
 
 ### Confs
