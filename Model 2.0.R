@@ -2,7 +2,7 @@
 library(dplyr)
 library(magrittr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_11_14_2017.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_11_18_2017.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
@@ -42,6 +42,9 @@ for(i in 1:nrow(x)) {
 }
 for(i in 1:nrow(y)) {
   y$opp_game_id[i] <- get_opp_id(y, i)
+  if(length(get_opp_id(y, i)) > 1) {
+    print(i)
+  }
   
 }
 
@@ -72,10 +75,10 @@ for(i in 1:nrow(x)) {
 
 y$weights <- 0
 for(i in 1:nrow(y)) {
-  w_team <- (max(c(1, y$game_id[y$Team == y$Team[i] & !is.na(y$scorediff)] - y$game_id[i])))/
-    max(c(0, y$game_id[y$Team == y$Team[i] & !is.na(y$scorediff)]))
-  w_opponent <- (max(c(0, y$game_id[y$Team == y$Opponent[i] & !is.na(y$scorediff)] - y$opp_game_id[i])))/
-    max(c(1, y$game_id[y$Team == y$Opponent[i] & !is.na(y$scorediff)]))
+  w_team <- 1 - (max(c(0, y$game_id[y$team == y$team[i] & !is.na(y$scorediff)])) - y$game_id[i])/
+    max(c(0, y$game_id[y$team == y$team[i] & !is.na(y$scorediff)]))
+  w_opponent <- 1 - (max(c(0, y$game_id[y$team == y$opponent[i] & !is.na(y$scorediff)])) - y$opp_game_id[i])/
+    max(c(1, y$game_id[y$team == y$opponent[i] & !is.na(y$scorediff)]))
   rr <- mean(c(w_team, w_opponent))
   y$weights[i] <- 1/(1 + (0.5^(5 * rr)) * exp(-rr))
 }   
@@ -87,7 +90,7 @@ lm.hoops <- lm(scorediff ~ team + opponent + location, weights = weights, data =
 ####################### Adjust for Recruiting Class of 2017 ####################
 rec$adjustment <- rec$score/sd(rec$score[rec$score > 0])
 for(i in 2:(length(teams))) {
-  tmp1 <- (max(c(0 ,y$game_id[y$team == teams[i]]), na.rm = T) 
+  tmp1 <- (max(c(0, y$game_id[y$team == teams[i]]), na.rm = T) 
            - 2 * max(c(0, y$game_id[y$team == teams[i] & !is.na(y$scorediff)]), na.rm = T))/
     max(c(1, y$game_id[y$team == teams[i]]), na.rm = T)
   lm.hoops$coefficients[paste("team", teams[i], sep = "")]  <-
@@ -119,7 +122,7 @@ y$wins[y$scorediff < 0] <- 0
 glm.pointspread <- glm(wins ~ predscorediff, data = rbind(x,y), family=binomial(link=logit)) 
 summary(glm.pointspread)
 y$wins[is.na(y$wins)] <- 
-  round(predict.glm(glm.pointspread, newdata = y[is.na(y$wins),], type = "response"), 3)
+  round(predict(glm.pointspread, newdata = y[is.na(y$wins),], type = "response"), 3)
 
 ################################ Power Rankings ################################
 powranks <- pr_compute(by_conf = F)
@@ -135,13 +138,17 @@ for(i in 1:nrow(y)) {
 }
 
 ### Get History
-history <- write_history(update = T)
+history <- write_history(update = F)
 
 ########################### Bracketology #######################################
 rpi <- rpi_compute(new = F)
 resumes <- get_resumes(new = F)
 bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
+
+########################## Model Evaluation ###################################
+mean(abs(history$predscorediff - history$scorediff), na.rm = T)
+sum(sign(history$predscorediff) == sign(history$scorediff), na.rm = T)/sum(!is.na(history$scorediff))
 
 ################################ Ivy Sims ######################################
 playoffs <- ivy.sim(nsims = 5000)
