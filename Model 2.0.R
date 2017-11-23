@@ -2,7 +2,7 @@
 library(dplyr)
 library(magrittr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_11_18_2017.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_11_23_2017.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
@@ -41,7 +41,7 @@ for(i in 1:nrow(x)) {
   x$opp_game_id[i] <- get_opp_id(x, i)
 }
 for(i in 1:nrow(y)) {
-  y$opp_game_id[i] <- get_opp_id(y, i)
+  y$opp_game_id[i] <- get_opp_id(y, i)[1]
 }
 
 ### Confs
@@ -119,6 +119,19 @@ glm.pointspread <- glm(wins ~ predscorediff, data = rbind(x,y), family=binomial(
 summary(glm.pointspread)
 y$wins[is.na(y$wins)] <- 
   round(predict(glm.pointspread, newdata = y[is.na(y$wins),], type = "response"), 3)
+
+####################################  Scale ####################################
+avg <- mean(lm.hoops$coefficients[2:351])
+opp_avg <- mean(lm.hoops$coefficients[352:701])
+
+lm.hoops$coefficients[1] <- lm.hoops$coefficients[1] - mean(avg, abs(opp_avg))
+for(i in 2:(length(teams))) {
+  lm.hoops$coefficients[paste("team", teams[i], sep = "")]  <-
+    lm.hoops$coefficients[paste("team", teams[i], sep = "")] - avg
+  lm.hoops$coefficients[paste("opponent", teams[i], sep = "")] <- 
+    lm.hoops$coefficients[paste("opponent", teams[i], sep = "")] -
+    rec$adjustment[rec$Team == teams[i]] - opp_avg
+}
 
 ################################ Power Rankings ################################
 powranks <- pr_compute(by_conf = F)
