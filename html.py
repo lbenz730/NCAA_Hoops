@@ -144,7 +144,7 @@ with open('2.0_Files/Bracketology/bracket.csv', 'rU') as csvfile:
             html += "</td><td>"
             html += row[11]
             html += "</td><td>"
-            html += str(round(float(row[2]), 2))
+            html += str(round(float(row[12]), 2))
             html += "</td></tr>"
 html += "</tbody></table>"
 
@@ -178,7 +178,7 @@ with open('2.0_Files/Bracketology/bubble.csv', 'rU') as csvfile:
             html += "</td><td>"
             html += row[11]
             html += "</td><td>"
-            html += str(round(float(row[2]), 2))
+            html += str(round(float(row[12]), 2))
             html += "</td></tr>"
 html += "</tbody></table>"
 
@@ -197,7 +197,7 @@ with open('2.0_Files/Bracketology/bracket_math.csv', 'rU') as csvfile:
         i += 1
         if i > 1:
             html += "<tr><td>"
-            html += str(i)
+            html += str(i-1)
             html += "</td><td>"
             html += row[0].replace('"', '')
             html += "</td><td>"
