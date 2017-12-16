@@ -124,8 +124,7 @@ y$wins[is.na(y$wins)] <-
 avg <- mean(lm.hoops$coefficients[2:351])
 opp_avg <- mean(lm.hoops$coefficients[352:701])
 
-lm.hoops$coefficients[1] <- lm.hoops$coefficients[1] - mean(avg, abs(opp_avg)) 
-+ lm.hoops$coefficients[702]
+lm.hoops$coefficients[1] <- lm.hoops$coefficients[1] - mean(avg, abs(opp_avg)) + lm.hoops$coefficients[702]
 for(i in 2:(length(teams))) {
   lm.hoops$coefficients[paste("team", teams[i], sep = "")]  <-
     lm.hoops$coefficients[paste("team", teams[i], sep = "")] - avg
