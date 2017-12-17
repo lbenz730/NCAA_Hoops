@@ -91,7 +91,7 @@ for (i in 1:nrow(teamid)) {
                       teamscore=result[,1],
                       oppscore=result[,2],
                       OT=OT, stringsAsFactors=FALSE)
-    res$date <- paste(res$month, res$day, collapse = "_")
+    res$date <- paste(res$month, res$day, sep = "_")
     
     # Fix non-unique dates problem
     uni_dates <- unique(res$date)
