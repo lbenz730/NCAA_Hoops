@@ -119,9 +119,9 @@ with open('2.0_Files/Bracketology/bracket.csv', 'rU') as csvfile:
         i += 1
         if i > 1:
             html += "<tr><td>"
-            html += row[15]  
+            html += row[16]  
             html += "</td><td>"
-            html += row[16]
+            html += row[15]
             html += "</td><td>"
             if row[17] == "TRUE" and row[13] == "TRUE":
                 html += "<i><b>" + row[0].replace('"', '') + "</b></i>"
