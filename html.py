@@ -41,7 +41,7 @@ with open('2.0_Files/Power_Rankings/conf_summary.csv', 'rU') as csvfile:
         i += 1
         if i > 1:
             html += "<tr><td>"
-            html += str(i)
+            html += str(i-1)
             html += "</td><td>"
             html += row[0].replace('"', '')
             html += "</td><td>"
