@@ -105,6 +105,7 @@ for (i in 1:length(z$opponent[grep("@", z$opponent)])) {
   z$opponent[grep("@", z$opponent)][1] <- rows[[i]][1]
 }
 
+z$opponent <- stripwhite(z$opponent)
 
 z$D1 <- rep(0, nrow(z))
 
