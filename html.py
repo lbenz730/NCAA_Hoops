@@ -1,4 +1,18 @@
+import re
 import csv
+
+def epenthesize(string, num):
+    string = string.split(".")
+    if len(string) == 1:
+        string.append('0')
+    if len(string[1]) > num:
+        string[1] = string[1][:num]
+    while len(string[1]) < num:
+        string[1] += '0'
+
+
+    return ".".join(string)
+
 ### Power Rankings
 i = 0
 html = "<table class= \"sortable\"><thead><tr><th>Rank</th><th>Team</th><th>Conference</th><th>YUSAG Coefficient</th></tr></thead><tbody>"
@@ -12,16 +26,7 @@ with open('2.0_Files/Power_Rankings/Powerrankings.csv', 'rU') as csvfile:
             html += "</td><td>"
             html += row[0].replace('"', '')
             html += "</td><td>"
-            coeff = str(round(float(row[2]), 2))
-            html += coeff
-            if len(coeff) == 4 and float(row[2]) >= 10:
-                html += "0"
-            elif len(coeff) == 3 and float(row[2]) < 10:
-                html += "0"
-            elif len(coeff) == 4 and float(row[2]) > -10 and float(row[2]) < 0:
-                html += "0"
-            elif len(coeff) == 5 and float(row[2]) <= -10:
-                html += "0"
+            html +=  epenthesize(row[2], 2)
             html += "</td><td>"
             html += row[1].replace('"', '')
             html += "</td></tr>"
@@ -45,15 +50,15 @@ with open('2.0_Files/Power_Rankings/conf_summary.csv', 'rU') as csvfile:
             html += "</td><td>"
             html += row[0].replace('"', '')
             html += "</td><td>"
-            html += str(round(float(row[1])/1.0, 1))
+            html += epenthesize(row[1], 1)
             html += "</td><td>"
-            html += str(round(float(row[2])/1.0, 1))
+            html += epenthesize(row[2], 1)
             html += "</td><td>"
-            html += str(round(float(row[3])/1.0, 1))
+            html += epenthesize(row[3], 1)
             html += "</td><td>"
-            html += str(round(float(row[4])/1.0, 1))
+            html += epenthesize(row[4], 1)
             html += "</td><td>"
-            html += str(round(float(row[5])/1.0, 1))
+            html += epenthesize(row[5], 1)
             html += "</td></tr>"
 
 csvfile.close()
@@ -73,7 +78,7 @@ with open('2.0_Files/Power_Rankings/pr_by_conf.csv', 'rU') as csvfile:
             html += "</td><td>"
             html += row[0].replace('"', '')
             html += "</td><td>"
-            html += str(round(float(row[2])/1.0, 2))
+            html += epenthesize(row[1], 2)
             html += "</td><td>"
             html += row[3]
             html += "</td><td>"
@@ -144,7 +149,7 @@ with open('2.0_Files/Bracketology/bracket.csv', 'rU') as csvfile:
             html += "</td><td>"
             html += row[11]
             html += "</td><td>"
-            html += str(round(float(row[12]), 2))
+            html += epenthesize(row[12], 2)
             html += "</td></tr>"
 html += "</tbody></table>"
 
@@ -178,7 +183,7 @@ with open('2.0_Files/Bracketology/bubble.csv', 'rU') as csvfile:
             html += "</td><td>"
             html += row[11]
             html += "</td><td>"
-            html += str(round(float(row[12]), 2))
+            html += epenthesize(row[12], 2)
             html += "</td></tr>"
 html += "</tbody></table>"
 
@@ -203,27 +208,27 @@ with open('2.0_Files/Bracketology/bracket_math.csv', 'rU') as csvfile:
             html += "</td><td>"
             html += row[1].replace('"', '')
             html += "</td><td>"
-            html += str(round(float(row[2])/1.0, 2))
+            html += epenthesize(row[2], 2)
             html += "</td><td>"
             html += row[7]
             html += "</td><td>"
-            html += str(round(float(row[3])/1.0, 4))
+            html += epenthesize(row[3], 4)
             html += "</td><td>"
             html += row[8]
             html += "</td><td>"
-            html += str(round(float(row[4])/1.0, 1))
+            html += epenthesize(row[4], 1)
             html += "</td><td>"
             html += row[9]
             html += "</td><td>"
-            html += str(round(float(row[6])/1.0, 1))
+            html += epenthesize(row[6], 1)
             html += "</td><td>"
             html += row[10]
             html += "</td><td>"
-            html += str(round(float(row[5])/1.0, 2))
+            html += epenthesize(row[5], 2)
             html += "</td><td>"
             html += row[11]
             html += "</td><td>"
-            html += str(round(float(row[12])/1.0, 2))
+            html += epenthesize(row[12], 2)
             html += "</td></tr>"
 html += "</tbody></table>"
 
