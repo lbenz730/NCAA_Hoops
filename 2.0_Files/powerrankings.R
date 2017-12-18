@@ -2,7 +2,7 @@ pr_compute <- function(by_conf) {
   powerrankings <- data.frame(Team = rep(NA, length(teams)),
                               Conference = rep(NA, length(teams)),
                               YUSAG_Coefficient = rep(NA, length(teams)))
-  powerrankings[1, ] <- c(teams[1], "Southland", lm.hoops$coefficients[1])
+  powerrankings[1, ] <- c(teams[1], "Southland", lm.hoops$coefficients[1] + lm.hoops$coefficients[702])
   
   ### Get YUSAG Coefficients
   for(i in 2:(length(teams))) {
@@ -13,7 +13,7 @@ pr_compute <- function(by_conf) {
     tmp <- c(teams[i], get_conf(teams[i]), round((teamcoef - opponentcoef)/2, 2))
     powerrankings[i, ] <- tmp
   }
-  powerrankings$YUSAG_Coefficient <- as.numeric(powerrankings$YUSAG_Coefficient)
+  powerrankings$YUSAG_Coefficient <- round(as.numeric(powerrankings$YUSAG_Coefficient),2)
   
   ### Return w/out sorting by conference
   if(!by_conf) {

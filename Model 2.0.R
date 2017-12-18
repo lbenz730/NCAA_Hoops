@@ -59,12 +59,12 @@ y$reg_season <- (y$month < 3 | y$month >= 11) | (y$month == 3 & y$day <= 4)
 ################################# Set Weights ##################################
 x$weights <- 0
 for(i in 1:nrow(x)) {
-  tmp1 <- (max(c(1, y$game_id[y$team == y$team[i]]), na.rm = T) 
-           - 2 * max(c(0, y$game_id[y$team == y$team[i] & !is.na(y$scorediff)]), na.rm = T))/
-    max(c(1, y$game_id[y$team == y$team[i]]), na.rm = T)
-  tmp2 <- (max(c(1,y$game_id[y$opponent == y$opponent[i]]), na.rm = T)
-           - 2 * max(c(0, y$game_id[y$opponent == y$opponent[i] & !is.na(y$scorediff)]), na.rm = T))/
-    max(c(1, y$game_id[y$opponent == y$opponent[i]]), na.rm = T)
+  tmp1 <- (max(c(1, y$game_id[y$team == x$team[i]]), na.rm = T) 
+           - 2 * max(c(0, y$game_id[y$team == x$team[i] & !is.na(y$scorediff)]), na.rm = T))/
+    max(c(1, y$game_id[y$team == x$team[i]]), na.rm = T)
+  tmp2 <- (max(c(1,y$game_id[y$team == x$opponent[i]]), na.rm = T)
+           - 2 * max(c(0, y$game_id[y$team == x$opponent[i] & !is.na(y$scorediff)]), na.rm = T))/
+    max(c(1, y$game_id[y$team == x$opponent[i]]), na.rm = T)
   x$weights[i] <- min(0.5, max(0, 0.5 * (mins$mins[mins$team == x$team[i]] * tmp1 
                                          + mins$mins[mins$team == x$opponent[i]] * tmp2)), na.rm = T)
 }
@@ -115,7 +115,7 @@ for(i in 1:(length(t.teams))) {
 y$predscorediff <- round(predict(lm.hoops, newdata = y), 1)
 y$wins[y$scorediff > 0] <- 1
 y$wins[y$scorediff < 0] <- 0
-glm.pointspread <- glm(wins ~ predscorediff, data = rbind(x,y), family=binomial(link=logit)) 
+glm.pointspread <- glm(wins ~ predscorediff, data = rbind(x,y), family=binomial) 
 summary(glm.pointspread)
 y$wins[is.na(y$wins)] <- 
   round(predict(glm.pointspread, newdata = y[is.na(y$wins),], type = "response"), 3)
@@ -124,13 +124,12 @@ y$wins[is.na(y$wins)] <-
 avg <- mean(lm.hoops$coefficients[2:351])
 opp_avg <- mean(lm.hoops$coefficients[352:701])
 
-lm.hoops$coefficients[1] <- lm.hoops$coefficients[1] - mean(avg, abs(opp_avg)) + lm.hoops$coefficients[702]
+lm.hoops$coefficients[1] <- lm.hoops$coefficients[1] - mean(avg, abs(opp_avg)) 
 for(i in 2:(length(teams))) {
   lm.hoops$coefficients[paste("team", teams[i], sep = "")]  <-
-    lm.hoops$coefficients[paste("team", teams[i], sep = "")] - avg
+    lm.hoops$coefficients[paste("team", teams[i], sep = "")] - mean(avg, abs(opp_avg))
   lm.hoops$coefficients[paste("opponent", teams[i], sep = "")] <- 
-    lm.hoops$coefficients[paste("opponent", teams[i], sep = "")] -
-    rec$adjustment[rec$Team == teams[i]] - opp_avg
+    lm.hoops$coefficients[paste("opponent", teams[i], sep = "")] + mean(avg, abs(opp_avg))
 }
 
 ################################ Power Rankings ################################
@@ -150,8 +149,8 @@ for(i in 1:nrow(y)) {
 history <- write_history(update = F)
 
 ########################### Bracketology #######################################
-rpi <- rpi_compute(new = T)
-resumes <- get_resumes(new = T)
+rpi <- rpi_compute(new = F)
+resumes <- get_resumes(new = F)
 bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
