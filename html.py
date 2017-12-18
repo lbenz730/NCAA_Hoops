@@ -78,7 +78,7 @@ with open('2.0_Files/Power_Rankings/pr_by_conf.csv', 'rU') as csvfile:
             html += "</td><td>"
             html += row[0].replace('"', '')
             html += "</td><td>"
-            html += epenthesize(row[1], 2)
+            html += epenthesize(row[2], 2)
             html += "</td><td>"
             html += row[3]
             html += "</td><td>"
