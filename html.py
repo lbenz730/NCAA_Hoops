@@ -26,9 +26,9 @@ with open('2.0_Files/Power_Rankings/Powerrankings.csv', 'rU') as csvfile:
             html += "</td><td>"
             html += row[0].replace('"', '')
             html += "</td><td>"
-            html +=  epenthesize(row[2], 2)
+            html +=  row[1].replace('"', '')
             html += "</td><td>"
-            html += row[1].replace('"', '')
+            html += epenthesize(row[2], 2)
             html += "</td></tr>"
 html += "</tbody></table>"
 
