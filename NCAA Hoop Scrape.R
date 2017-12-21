@@ -107,13 +107,7 @@ for (i in 1:length(z$opponent[grep("@", z$opponent)])) {
 
 z$opponent <- stripwhite(z$opponent)
 
-z$D1 <- rep(0, nrow(z))
-
-for(i in 1:nrow(z)) {
-  z$D1[i] <- length(teamid$team[teamid$team == z$team[i]]) + 
-    length(teamid$team[teamid$team == z$opponent[i]])
-}
-
+z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team
 z <- z[z$D1 == 2,]
 
 ### NC State vs. North Carolina St. Bug Fix
