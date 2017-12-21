@@ -2,7 +2,7 @@
 library(dplyr)
 library(magrittr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_12_20_2017.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_12_21_2017.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
@@ -159,5 +159,5 @@ mean(abs(history$predscorediff - history$scorediff), na.rm = T)
 sum(sign(history$predscorediff) == sign(history$scorediff), na.rm = T)/sum(!is.na(history$scorediff))
 
 ################################ Ivy Sims ######################################
-playoffs <- ivy.sim(nsims = 5000)
-psf <- psf(nsims = 1000, year = 2017, months = c(3,3), days = c(3,4))
+playoffs <- ivy.sim(nsims = 50)
+psf_results <- psf(nsims = 100, year = 2018, months = c(1,1), days = c(5,6))
