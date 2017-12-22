@@ -1,58 +1,43 @@
 ############################# Palestra Sims (Ivy Tourney) ########################################
 ### Simulates Ivy League Tournament
 palestra.sim <- function(teams) {
-  tmp <- x[1:3, c("team", "opponent")]
-  tmp[1:3,] <- NA
-  tmp$winprob <- 0
-  tmp$predscorediff <- 0
+  tmp <- data.frame("team" = c(teams[1:2], NA),
+                    "opponent" = c(teams[4:3], NA), 
+                    stringsAsFactors = F)
   tmp$location <- "N"
   
-  ### semi final 1
-  tmp[1, c("team", "opponent")] <- c(teams[1], teams[4])
-  tmp$predscorediff[1] <- as.numeric(predict(lm.hoops, newdata = tmp[1,]))
-  tmp$winprob[1] <- predict(glm.pointspread, newdata = tmp[1,], type = "response")
-  rand <- runif(1)
+  ### Find Penn in Tournament
   if(teams[1] == "Penn") {
     tmp$location[1] <- "H"
   }else if(teams[4] == "Penn") {
     tmp$location[1] <- "V"
   }
-  if(rand <= tmp$winprob[1]){
-    tmp$team[3] <- teams[1]
-  }else{
-    tmp$team[3] <- teams[4]
-  }
-  
-  ### semi final 2
-  tmp[2, c("team", "opponent")] <- c(teams[2], teams[3])
-  tmp$predscorediff[2] <- as.numeric(predict(lm.hoops, newdata = tmp[2,]))
-  tmp$winprob[2] <- predict(glm.pointspread, newdata = tmp[2,], type = "response")
-  rand <- runif(1)
   if(teams[2] == "Penn") {
     tmp$location[2] <- "H"
   }else if(teams[3] == "Penn") {
     tmp$location[2] <- "V"
   }
-  if(rand <= tmp$winprob[2]){
-    tmp$opponent[3] <- teams[2]
-  }else{
-    tmp$opponent[3] <- teams[3]
-  }
   
-  # Final
-  tmp$predscorediff[3] <- as.numeric(predict(lm.hoops, newdata = tmp[3,]))
-  tmp$winprob[3] <- predict(glm.pointspread, newdata = tmp[3,], type = "response")
-  rand <- runif(1)
+  tmp$predscorediff <- predict(lm.hoops, newdata = tmp)
+  tmp$winprob <- predict(glm.pointspread, newdata = tmp, type = "response")
+  
+  ### Sim Semifinals
+  rands <- runif(2)
+  tmp[3, c("team", "opponent")] <- ifelse(rands <= tmp$winprob[1:2], tmp$team, tmp$opponent)
+  
+  ### Finals
   if(tmp$team[3] == "Penn") {
     tmp$location[3] <- "H"
   }else if(tmp$opponent[3] == "Penn") {
     tmp$location[3] <- "V"
   }
-  if(rand <= tmp$winprob[3]){
-    champ <- tmp$team[3]
-  }else{
-    champ <- tmp$opponent[3] 
-  }
+  
+  tmp$predscorediff <- predict(lm.hoops, newdata = tmp)
+  tmp$winprob <- predict(glm.pointspread, newdata = tmp, type = "response")
+  
+  # Final
+  rand <- runif(1)
+  champ <- ifelse(rand <= tmp$winprob[3], tmp$team[3], tmp$opponent[3])
   
   return(champ)
 }
@@ -60,6 +45,7 @@ palestra.sim <- function(teams) {
 ################################### IVY SIMS ##################################
 ### Simulates Ivy League Regular Season
 ivy.sim <- function(nsims) {
+  start.time <- Sys.time()
   games <- y[y$location == "H" & y$team_conf == "Ivy" & y$conf_game & y$reg_season, ]
   ivy <- unique(y$team[y$team_conf == "Ivy"])
   champ <- rep(NA, nsims)
@@ -85,7 +71,7 @@ ivy.sim <- function(nsims) {
     sims <- games$wins > 0 & games$wins < 1
     games$simwins[sims] <- ifelse(rand[sims] <= games$wins[sims], 1, 0)
     games$oppsimwins[sims] <- ifelse(rand[sims] > games$wins[sims], 1, 0)
-
+    
     # get team win totals for current sim
     for(i in 1:8) {
       simresults[j, i] <- (sum(games$simwins[games$team == ivy[i]]) + 
@@ -187,6 +173,7 @@ ivy.sim <- function(nsims) {
         prebreak.pos[j, change] <- i + 1
       }
     }
+
     # Sim Ivy tournament
     palestra <- c(ivy[as.vector(prebreak.pos[j,] == 1)], ivy[as.vector(prebreak.pos[j,] == 2)],
                   ivy[as.vector(prebreak.pos[j,] == 3)], ivy[as.vector(prebreak.pos[j,] == 4)])
