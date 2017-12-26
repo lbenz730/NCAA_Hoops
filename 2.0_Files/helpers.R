@@ -1,3 +1,7 @@
+library(ggplot2)
+library(ggridges)
+library(viridis)
+
 ### Get opponent game id
 get_opp_id <- function(data, i) {
   return(data$game_id[data$team == data$opponent[i] & data$opponent == data$team[i] & data$month == data$month[i] & data$day == data$day[i]])
@@ -36,7 +40,7 @@ get_games <- function(today, D, M, Y) {
 }
 
 
-### Update History (Weekly Basis)
+### Update History (Weekly Basis) ### BUGGY
 write_history <- function(update) {
   history <- suppressWarnings(read.csv("2.0_Files/History/2017_18_history.csv", as.is = T))
   if(update) {
@@ -102,8 +106,8 @@ write_history <- function(update) {
     
     dates <- paste(months, days, years, sep = "_")
     tmp <- y %>% select(year, month, day, team, opponent, 
-                              location, teamscore, oppscore, scorediff, 
-                              predscorediff, GEI) %>%
+                        location, teamscore, oppscore, scorediff, 
+                        predscorediff, GEI) %>%
       mutate(date = paste(month, day, year, sep = "_")) %>%
       filter(is.element(date, dates))
     
@@ -117,3 +121,36 @@ write_history <- function(update) {
   return(history)
 }
 
+### Joy Plots
+ivy_joy <- function(simresults) {
+  n <- nrow(simresults)
+  sims <- data.frame(team = rep(NA, 8*n),
+                     wins = rep(NA, 8*n))
+                     
+  for(i in 1:8) {
+    sims$team[(n*i - n + 1):(n*i)] <- names(simresults)[i]
+    sims$wins[(n*i - n + 1):(n*i)] <- floor(simresults[,i])
+  }
+  
+  sims %>% mutate(team = reorder(team, wins, mean)) %>%
+    ggplot(aes(x = wins, y = team, fill = ..x..)) +
+    geom_density_ridges_gradient(scale = 3) + theme_ridges() + 
+    scale_x_continuous(expand = c(0.01, 0)) +
+    scale_fill_viridis(name = "Conference Wins", option = "C") +
+    theme(legend.position="right") +
+    labs(y = "Team", x= "Ivy League Wins", 
+         title = "Distribution of Ivy League Men's Basketball Conference Wins",
+         subtitle = paste("Based on", n, "Simulations of Ivy League Season \n@recspecs730/@YaleSportsGroup"))
+  
+}
+
+yusag_plot <- function(data){
+  data %>% mutate(group = reorder(Conference, YUSAG_Coefficient, median)) %>%
+    ggplot(aes(x = YUSAG_Coefficient, y = group, fill = ..x..)) + 
+    geom_density_ridges_gradient(scale = 3) + theme_ridges() +
+    scale_y_discrete(expand = c(0.01, 0)) + 
+    scale_x_continuous(expand = c(0.01, 0)) +
+    theme(legend.position="none") +
+    scale_fill_viridis(name = "group", option = "C") +
+    labs(y = "Conference", title = "NCAA Men's Basketball Power Rankings")
+}

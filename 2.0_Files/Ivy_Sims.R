@@ -45,7 +45,6 @@ palestra.sim <- function(teams) {
 ################################### IVY SIMS ##################################
 ### Simulates Ivy League Regular Season
 ivy.sim <- function(nsims) {
-  start.time <- Sys.time()
   games <- y[y$location == "H" & y$team_conf == "Ivy" & y$conf_game & y$reg_season, ]
   ivy <- unique(y$team[y$team_conf == "Ivy"])
   champ <- rep(NA, nsims)
@@ -386,4 +385,41 @@ psf <- function(nsims, year, months, days) {
   }
   write.table(swingfactor, "2.0_Files/Predictions/psf.csv", row.names = F, col.names = T, sep = ",")
   return(swingfactor)
+}
+
+
+fast.sim <- function(nsims) {
+  games <- y[y$location == "H" & y$team_conf == "Ivy" & y$conf_game & y$reg_season, ]
+  ivy <- unique(y$team[y$team_conf == "Ivy"])
+  champ <- rep(NA, nsims)
+  
+  # Data Frame to Hold Team Wins by Sim
+  simresults <- as.data.frame(matrix(nrow = nsims, ncol = length(ivy), byrow = T))
+  names(simresults) <- ivy
+  
+  # Stores pre (and later post) tie-break position in standings
+  prebreak.pos <- as.data.frame(matrix(nrow = nsims, ncol = length(ivy), byrow = T))
+  names(prebreak.pos) <- ivy
+  
+  # Simulate All Games
+  for (j in 1:nrow(simresults)){
+    print(paste("Sim: ", j, sep = ""))
+    games$simwins <- NA
+    games$oppsimwins <- NA
+    rand <- runif(nrow(games))
+    games$simwins[games$wins == 1] <- 1
+    games$oppsimwins[games$wins == 1] <- 0
+    games$simwins[games$wins == 0] <- 0
+    games$oppsimwins[games$wins == 0] <- 1
+    sims <- games$wins > 0 & games$wins < 1
+    games$simwins[sims] <- ifelse(rand[sims] <= games$wins[sims], 1, 0)
+    games$oppsimwins[sims] <- ifelse(rand[sims] > games$wins[sims], 1, 0)
+    
+    # get team win totals for current sim
+    for(i in 1:8) {
+      simresults[j, i] <- (sum(games$simwins[games$team == ivy[i]]) + 
+                             sum(games$oppsimwins[games$opponent == ivy[i]]))
+    }
+  }
+  return(simresults)
 }

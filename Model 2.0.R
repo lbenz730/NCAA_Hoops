@@ -1,8 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-library(magrittr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_12_24_2017.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_12_26_2017.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
@@ -135,6 +134,7 @@ for(i in 2:(length(teams))) {
 ################################ Power Rankings ################################
 powranks <- pr_compute(by_conf = F)
 by_conf <- pr_compute(by_conf = T)
+yusag_plot(powranks)
 
 ########################### Game Excitement Index ##############################
 for(i in 1:nrow(x)) {
@@ -144,9 +144,6 @@ for(i in 1:nrow(x)) {
 for(i in 1:nrow(y)) {
   y$GEI[i] <- compute_GEI(y[i,])
 }
-
-### Get History
-history <- write_history(update = F)
 
 ########################### Bracketology #######################################
 rpi <- rpi_compute(new = T)
@@ -160,4 +157,6 @@ sum(sign(history$predscorediff) == sign(history$scorediff), na.rm = T)/sum(!is.n
 
 ################################ Ivy Sims ######################################
 playoffs <- ivy.sim(nsims = 5000)
+simresults <- fast.sim(nsims = 20000)
+ivy_joy(simresults)
 psf_results <- psf(nsims = 1000, year = 2018, months = c(1,1), days = c(5,6))
