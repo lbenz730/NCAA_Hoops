@@ -165,12 +165,12 @@ conf_sim <- function(conf, nsims) {
                         "avg_wins" = rep(0, length(conf_teams)),
                         "avg_losses" = rep(0, length(conf_teams)))
   
-  sim_season <- rep(0, nrow(results))
-  max_wins <- nrow(schedule) * 2 / nrow(results)
-  
   ### Sim Schedule
   schedule <- filter(y, conf_game, team_conf == conf, location == "H") %>%
     mutate(simwins = 0, opp_simwins = 0)
+  
+  sim_season <- rep(0, nrow(results))
+  max_wins <- nrow(schedule) * 2 / nrow(results)
   
   for(i in 1:nsims) {
     print(paste("Sim #", i))
