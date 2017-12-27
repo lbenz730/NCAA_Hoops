@@ -146,8 +146,8 @@ for(i in 1:nrow(y)) {
 }
 
 ########################### Bracketology #######################################
-rpi <- rpi_compute(new = T)
-resumes <- get_resumes(new = T)
+rpi <- rpi_compute(new = F)
+resumes <- get_resumes(new = F)
 bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
@@ -160,3 +160,6 @@ playoffs <- ivy.sim(nsims = 5000)
 simresults <- fast.sim(nsims = 20000)
 ivy_joy(simresults)
 psf_results <- psf(nsims = 1000, year = 2018, months = c(1,1), days = c(5,6))
+
+############################# Conference Sims (No Tie-Breaks) ##################
+conf_results <- conf_sim("MVC", 10000)

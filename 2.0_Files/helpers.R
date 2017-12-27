@@ -154,3 +154,41 @@ yusag_plot <- function(data){
     scale_fill_viridis(name = "group", option = "C") +
     labs(y = "Conference", title = "NCAA Men's Basketball Power Rankings")
 }
+
+
+#### Conference Sims
+conf_sim <- function(conf, nsims) {
+  conf_teams <- unique(filter(confs, conference == conf) %>% select(team))$team
+  results <- data.frame("team" = conf_teams,
+                        "shared_title" = rep(0, length(conf_teams)),
+                        "sole_title" = rep(0, length(conf_teams)),
+                        "avg_wins" = rep(0, length(conf_teams)),
+                        "avg_losses" = rep(0, length(conf_teams)))
+  
+  sim_season <- rep(0, nrow(results))
+  max_wins <- nrow(schedule) * 2 / nrow(results)
+  
+  ### Sim Schedule
+  schedule <- filter(y, conf_game, team_conf == conf, location == "H") %>%
+    mutate(simwins = 0, opp_simwins = 0)
+  
+  for(i in 1:nsims) {
+    print(paste("Sim #", i))
+    rands <- runif(nrow(schedule))
+    schedule$simwins <- ifelse(rands <= schedule$wins, 1, 0)
+    schedule$opp_simwins <- abs(1 - schedule$simwins)
+    for(j in 1:nrow(results)) {
+      sim_season[j] <- sum(schedule$simwins[schedule$team == conf_teams[j]]) +
+        sum(schedule$opp_simwins[schedule$opponent == conf_teams[j]])
+    }
+    
+    results$avg_wins <- results$avg_wins + sim_season/nsims
+    results$avg_losses <- results$avg_losses + (max_wins - sim_season)/nsims
+    winners <- grep(max(sim_season), sim_season)
+    results$shared_title[winners] <- results$shared_title[winners] + 1/nsims
+    if(length(winners) == 1) {
+      results$sole_title[winners] <- results$sole_title[winners] + 1/nsims
+    }
+  }
+  return(results)
+}
