@@ -43,8 +43,8 @@ record_eval <- function(team) {
     sum(1 - games$wins[games$opp_rank >= 241 & games$opp_rank <= 351 & games$location == "V"])
   
   ### Resume Bonus
-  qual_bonus <- 4 * tierAw + 3 * tierBw + 2 * tierDw + tierDw - 
-    tierAl - 2 * tierBl - 3 * tierCl - 4 * tierDl
+  qual_bonus <- 6 * tierAw + 4 * tierBw + 2 * tierDw + tierDw - 
+    tierAl - 2 * tierBl - 4 * tierCl - 6 * tierDl
   
   ### Compute Strength of Record
   test <- powranks$Team[25]
