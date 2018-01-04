@@ -1,7 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_1_2_2018.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_1_4_2018.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
@@ -162,4 +162,4 @@ ivy_joy(simresults)
 psf_results <- psf(nsims = 1000, year = 2018, months = c(1,1), days = c(5,6))
 
 ############################# Conference Sims (No Tie-Breaks) ##################
-conf_results <- conf_sim("Ivy", 10000)
+conf_results <- conf_sim("CAA", 10000)
