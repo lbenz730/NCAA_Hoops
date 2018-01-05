@@ -218,10 +218,13 @@ psf <- function(nsims, year, months, days) {
   prebreak.pos <- as.data.frame(matrix(nrow = nsims, ncol = length(ivy), byrow = T))
   names(prebreak.pos) <- ivy
   
+  
+  
   # Create Data Frame to Store SwingFactor
   swingfactor <- data.frame(home = tochange$team,
                             away = tochange$opponent,
-                            psf = rep(NA, nrow(tochange)))
+                            psf = rep(NA, nrow(tochange)),
+                            auto_bid_sf = rep(NA, nrow(tochange)))
   
   # Switch
   q = 0
@@ -239,6 +242,7 @@ psf <- function(nsims, year, months, days) {
     }
     
     ### Simulate Games
+    champ <- rep(NA, nsims)
     for (j in 1:nrow(simresults)){
       print(paste("Game_id: ", k, " sim #: ", j, sep = ""))
       games$simwins <- NA
@@ -353,14 +357,20 @@ psf <- function(nsims, year, months, days) {
           prebreak.pos[j, change] <- i + 1
         }
       }
+      # Sim Ivy tournament
+      palestra <- c(ivy[as.vector(prebreak.pos[j,] == 1)], ivy[as.vector(prebreak.pos[j,] == 2)],
+                    ivy[as.vector(prebreak.pos[j,] == 3)], ivy[as.vector(prebreak.pos[j,] == 4)])
+      champ[j] <- palestra.sim(palestra)
     }
+    
     
     playoffs <- data.frame(Team = ivy,
                            playoff_prob = rep(NA, length(ivy)),
                            seed1_prob = rep(NA, length(ivy)),
                            seed2_prob = rep(NA, length(ivy)),
                            seed3_prob = rep(NA, length(ivy)),
-                           seed4_prob = rep(NA, length(ivy)))
+                           seed4_prob = rep(NA, length(ivy)), 
+                           auto_bid = rep(NA, length(ivy)))
     
     
     for(i in 1:length(ivy)) {
@@ -369,18 +379,24 @@ psf <- function(nsims, year, months, days) {
       playoffs$seed3_prob[i] <- round(sum(prebreak.pos[,i] == 3)/nsims * 100, 1)
       playoffs$seed4_prob[i] <- round(sum(prebreak.pos[,i] == 4)/nsims * 100, 1)
       playoffs$playoff_prob[i] <- sum(playoffs[i,3:6], na.rm = T)
+      playoffs$auto_bid[i] <- round(sum(champ == ivy[i])/nsims * 100, 1)
     }
     
     if(q == 1) {
       ### store playoff odds
       simplayoffs <- data.frame(Team = ivy,
                                 playoff_prob1 = rep(NA, length(ivy)),
-                                playoff_prob2 = rep(NA, length(ivy)))
+                                playoff_prob2 = rep(NA, length(ivy)),
+                                auto_bid_1 = rep(NA, length(ivy)),
+                                auto_bid_2 = rep(NA, length(ivy)))
       simplayoffs$playoff_prob1 <- playoffs$playoff_prob
+      simplayoffs$auto_bid_1 <- playoffs$auto_bid
     }
     else{
       simplayoffs$playoff_prob2 <- playoffs$playoff_prob
+      simplayoffs$auto_bid_2 <- playoffs$auto_bid
       swingfactor$psf[k/2] <- sum(abs(simplayoffs$playoff_prob2 - simplayoffs$playoff_prob1))
+      swingfactor$auto_bid_sf[k/2] <- sum(abs(simplayoffs$auto_bid_2 - simplayoffs$auto_bid_1))
     }
   }
   write.table(swingfactor, "2.0_Files/Predictions/psf.csv", row.names = F, col.names = T, sep = ",")
@@ -391,7 +407,6 @@ psf <- function(nsims, year, months, days) {
 fast.sim <- function(nsims) {
   games <- y[y$location == "H" & y$team_conf == "Ivy" & y$conf_game & y$reg_season, ]
   ivy <- unique(y$team[y$team_conf == "Ivy"])
-  champ <- rep(NA, nsims)
   
   # Data Frame to Hold Team Wins by Sim
   simresults <- as.data.frame(matrix(nrow = nsims, ncol = length(ivy), byrow = T))
