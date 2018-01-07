@@ -47,13 +47,16 @@ record_eval <- function(team) {
     tierAl - 2 * tierBl - 5 * tierCl - 10 * tierDl
   
   ### Compute Strength of Record
-  test <- powranks$Team[25]
-  data <- games
-  data$team <- test
-  data$predscorediff <- round(predict(lm.hoops, newdata = data), 1)
-  data$wins <- 
-    round(predict.glm(glm.pointspread, newdata = data, type = "response"), 3)
-  sor <- sum(games$wins) - sum(data$wins)
+  test <- powranks$Team[1:25]
+  sor <- rep(0, 25)
+  for(j in 1:length(sor)) {
+    data <- games
+    data$team <- test[j]
+    data$predscorediff <- round(predict(lm.hoops, newdata = data), 1)
+    data$wins <- 
+      round(predict.glm(glm.pointspread, newdata = data, type = "response"), 3)
+    sor[j] <- sum(games$wins) - sum(data$wins)
+  }
   
   ### Compute Wins Above Bubble (Ignore eligibity)
   autobids <- by_conf$Team[by_conf$Conference_Rank == 1]
@@ -70,7 +73,7 @@ record_eval <- function(team) {
     wab[j] <- sum(games$wins) - sum(data$wins)
   }
   
-  return(list("qual_bonus" = qual_bonus, "sor" = sor, "wab" = mean(wab)))
+  return(list("qual_bonus" = qual_bonus, "sor" = mean(sor), "wab" = mean(wab)))
 }
 
 
