@@ -162,4 +162,4 @@ ivy_joy(simresults)
 psf_results <- psf(nsims = 2500, year = 2018, months = c(1,1), days = c(5,6))
 
 ############################# Conference Sims (No Tie-Breaks) ##################
-conf_results <- conf_sim("CAA", 10000)
+conf_results <- conf_sim("SEC", 10000)
