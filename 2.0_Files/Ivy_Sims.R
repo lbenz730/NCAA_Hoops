@@ -206,7 +206,7 @@ ivy.sim <- function(nsims) {
 psf <- function(nsims, year, months, days) {
   tochange <- y[y$year == year & (paste(y$month, y$day, sep = "_") == paste(months[1], days[1], sep = "_") | 
                                     paste(y$month, y$day, sep = "_") == paste(months[2], days[2], sep = "_")) &
-                  y$team_conf == "Ivy" & y$location == "H",]
+                  y$team_conf == "Ivy" & y$location == "H" & y$conf_game,]
   
   games <- y[y$location == "H" & y$team_conf == "Ivy" & y$conf_game & y$reg_season, ]
   ivy <- unique(y$team[y$team_conf == "Ivy"])
