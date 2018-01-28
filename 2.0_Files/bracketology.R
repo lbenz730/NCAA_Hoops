@@ -42,8 +42,8 @@ make_bracket <- function(tourney) {
     bracket$resume_rank[i] <- resumes$resume_rank[resumes$team == teams[i]]
   }
   
-  bracket$blend <- 0.2 * bracket$rpi_rank + 0.2 * bracket$wab_rank + 
-    0.2 * bracket$sor_rank + 0.15 * bracket$yusag_rank + 0.25 * bracket$resume_rank
+  bracket$blend <- 0.1 * bracket$rpi_rank + 0.2 * bracket$wab_rank + 
+    0.2 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.3 * bracket$resume_rank
   
   autobid_calc <- function(conf) {
     for(i in 1:length(confs$team[confs$conference == conf])) {
