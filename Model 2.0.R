@@ -1,7 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_1_28_2018.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_1_29_2018.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
@@ -156,7 +156,30 @@ for(i in 1:nrow(undefeateds)) {
 write.csv(undefeateds[,c(1,2,7)], "2.0_Files/Predictions/undeafeateds.csv", row.names = F)
 
 ############################# Conference Sims (No Tie-Breaks) ##################
-conf_results <- conf_sim("SEC", 10000)
+conf_results <- conf_sim("MEAC", 10000)
+
+
+
+
+
+
+
 
 #### Select Games
 filter(y, month == 1, day %in% 26:27, conf_game, team_conf == "Ivy", location == "H")
+
+
+
+
+
+
+par(mfrow = c(2,4))
+colors <- c("brown", "skyblue", "red", "forestgreen", "firebrick4", "maroon", "orange", "navy")
+for(i in 1:8) {
+  hist(simresults[,i], xlab = "Conference Wins", col = colors[i], main = names(simresults)[i],
+       xlim = c(0, 14))
+}
+
+winmat <- apply(simresults, 1, sort, decreasing = T)
+table(winmat[3,] == winmat[5,])/20000
+table(winmat[4,] == winmat[7,])/20000
