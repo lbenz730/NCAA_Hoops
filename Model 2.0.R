@@ -1,7 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_2_2_2018.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_2_4_2018.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
@@ -143,8 +143,8 @@ bracket_math <- make_bracket(tourney = F)
 playoffs <- ivy.sim(nsims = 5000)
 simresults <- fast.sim(nsims = 20000)
 ivy_joy(simresults)
-psf_results <- psf(nsims = 1000, year = 2018, months = c(2,2), days = c(2,3))
-
+psf_results <- psf(nsims = 1000, year = 2018, months = c(2,2), days = c(9,10))
+write.csv(simresults, "2.0_Files/Predictions/mens_simresults.csv", row.names = F)
 ######################### Conf Undefeated Watch ################################
 confs <- confs[order(confs$team), ]
 confs$conf_loss <- aggregate(1-wins ~ team, data = filter(y, conf_game, !is.na(scorediff)), sum)[,2]
@@ -166,7 +166,7 @@ conf_results <- conf_sim("MEAC", 10000)
 
 
 #### Select Games
-filter(y, month == 1, day %in% 26:27, conf_game, team_conf == "Ivy", location == "H")
+filter(y, month == 2, day %in% 2:3, conf_game, team_conf == "Ivy", location == "H")
 
 
 
@@ -180,6 +180,9 @@ for(i in 1:8) {
        xlim = c(0, 14))
 }
 
+
 winmat <- apply(simresults, 1, sort, decreasing = T)
 table(winmat[3,] == winmat[5,])/20000
-table(winmat[4,] == winmat[7,])/20000
+table(winmat[3,] == winmat[5,])/20000
+apply(winmat, 1, mean)
+table(winmat[4,])
