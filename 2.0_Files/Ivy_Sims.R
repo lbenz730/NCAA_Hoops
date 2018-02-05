@@ -172,7 +172,7 @@ ivy.sim <- function(nsims) {
         prebreak.pos[j, change] <- i + 1
       }
     }
-
+    
     # Sim Ivy tournament
     palestra <- c(ivy[as.vector(prebreak.pos[j,] == 1)], ivy[as.vector(prebreak.pos[j,] == 2)],
                   ivy[as.vector(prebreak.pos[j,] == 3)], ivy[as.vector(prebreak.pos[j,] == 4)])
