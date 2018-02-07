@@ -42,7 +42,7 @@ rpi_calc <- function(team) {
 ### Get and return team's RPI
 rpi_compute <- function(new) {
   if(new) {
-    for(i in 1:10) {
+    for(i in 1:length(teams)) {
       print(paste("RPI #: ", i, sep = ""))
       stats$rpi[i] <- rpi_calc(teams[i])
     }
