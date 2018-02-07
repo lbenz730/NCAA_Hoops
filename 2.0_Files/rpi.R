@@ -1,4 +1,4 @@
-teams <- unique(x$team)
+teams <- unique(y$team)
 stats <- data.frame("team" = teams,
                     "rpi" = rep(NA, length(teams)),
                     stringsAsFactors = F)
@@ -19,10 +19,7 @@ wp_compute <- function(team, team_iq) {
 ### Compute team's opponent winning percentage
 owp_compute <- function(team) {
   opponents <- y$opponent[y$team == team]
-  owp <- rep(0, length(opponents))
-  for(i in 1:length(opponents)) {
-    owp[i] <- wp_compute(opponents[i], team)
-  }
+  owp <- apply(as.data.frame(opponents), 1, wp_compute, team_iq = team)
   return(mean(owp))
 }
 
@@ -45,7 +42,7 @@ rpi_calc <- function(team) {
 ### Get and return team's RPI
 rpi_compute <- function(new) {
   if(new) {
-    for(i in 1:length(teams)) {
+    for(i in 1:10) {
       print(paste("RPI #: ", i, sep = ""))
       stats$rpi[i] <- rpi_calc(teams[i])
     }
