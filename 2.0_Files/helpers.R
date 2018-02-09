@@ -155,6 +155,17 @@ yusag_plot <- function(data){
     labs(y = "Conference", title = "NCAA Men's Basketball Power Rankings")
 }
 
+yusag_plot_2 <- function(data, date){
+  data %>% 
+    ggplot(aes(x = YUSAG_Coefficient, y = Conference, fill = ..x..)) + 
+    geom_density_ridges_gradient(scale = 3) + theme_ridges() +
+    scale_y_discrete(expand = c(0.01, 0)) + 
+    scale_x_continuous(expand = c(0.01, 0)) +
+    theme(legend.position="none") +
+    scale_fill_viridis(name = "group", option = "C") +
+    labs(y = "Conference", title = "NCAA Men's Basketball Power Rankings",
+         subtitle = date)
+}
 
 #### Conference Sims
 conf_sim <- function(conf, nsims) {
