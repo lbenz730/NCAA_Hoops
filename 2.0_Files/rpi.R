@@ -1,7 +1,4 @@
 teams <- unique(y$team)
-stats <- data.frame("team" = teams,
-                    "rpi" = rep(NA, length(teams)),
-                    stringsAsFactors = F)
 
 ### Compute team's winning percentage
 wp_compute <- function(team, team_iq) {
@@ -41,6 +38,9 @@ rpi_calc <- function(team) {
 
 ### Get and return team's RPI
 rpi_compute <- function(new) {
+  stats <- data.frame("team" = teams,
+                      "rpi" = rep(NA, length(teams)),
+                      stringsAsFactors = F)
   if(new) {
     for(i in 1:length(teams)) {
       print(paste("RPI #: ", i, sep = ""))
