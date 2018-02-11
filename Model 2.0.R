@@ -1,7 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_2_8_2018.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_2_11_2018.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
@@ -143,7 +143,7 @@ bracket_math <- make_bracket(tourney = F)
 playoffs <- ivy.sim(nsims = 5000)
 simresults <- fast.sim(nsims = 20000)
 ivy_joy(simresults)
-psf_results <- psf(nsims = 1000, year = 2018, months = c(2,2), days = c(9,10))
+psf_results <- psf(nsims = 1000, year = 2018, months = c(2,2), days = c(16,17))
 write.csv(simresults, "2.0_Files/Predictions/mens_simresults.csv", row.names = F)
 ######################### Conf Undefeated Watch ################################
 confs <- confs[order(confs$team), ]
@@ -156,10 +156,10 @@ for(i in 1:nrow(undefeateds)) {
 write.csv(undefeateds[,c(1,2,7)], "2.0_Files/Predictions/undeafeateds.csv", row.names = F)
 
 ############################# Conference Sims (No Tie-Breaks) ##################
-conf_results <- conf_sim("MEAC", 10000)
+conf_results <- conf_sim("Ivy", 10000)
 
 #### Select Games
-filter(y, month == 2, day %in% 2:3, conf_game, team_conf == "Ivy", location == "H")
+filter(y, month == 2, day %in% 9:10, conf_game, team_conf == "Ivy", location == "H")
 
 par(mfrow = c(2,4))
 colors <- c("brown", "skyblue", "red", "forestgreen", "firebrick4", "maroon", "orange", "navy")
@@ -169,8 +169,12 @@ for(i in 1:8) {
 }
 
 
+
+######################### Mess Around w/ Ivy Sims ##############################
 winmat <- apply(simresults, 1, sort, decreasing = T)
-table(winmat[4,] == winmat[6,])/20000
+table(winmat[4,] == winmat[5,])/20000
 table(winmat[3,] == winmat[6,])/20000
 apply(winmat, 1, mean)
 table(winmat[4,])
+table(simresults$Dartmouth)/20000
+apply(simresults, 2, mean)
