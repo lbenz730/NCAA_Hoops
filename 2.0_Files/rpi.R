@@ -3,11 +3,11 @@ teams <- unique(y$team)
 ### Compute team's winning percentage
 wp_compute <- function(team, team_iq) {
   games <- y[y$team == team & y$opponent != team_iq,]
-  wwins <- sum(1.4 * games$win[games$location == "V"]) + 
-    sum(0.6 * games$win[games$location == "H"]) +
+  wwins <- sum(1.3 * games$win[games$location == "V"]) + 
+    sum(0.7 * games$win[games$location == "H"]) +
     sum(games$win[games$location == "N"])
-  wloses <- sum(1.4 * (1 - games$win[games$location == "H"])) + 
-    sum(0.6 * (1 - games$win[games$location == "V"])) +
+  wloses <- sum(1.3 * (1 - games$win[games$location == "H"])) + 
+    sum(0.7 * (1 - games$win[games$location == "V"])) +
     sum((1 - games$win[games$location == "N"]))
   wp <- wwins/(wwins + wloses)
   return(wp)
