@@ -19,11 +19,11 @@ tourney_sim  <- function(teams, byes, double_byes, hca, nsims) {
                         "win_prob" = rep(NA, n-1),
                         "winner" = rep(NA, n-1))
     game_count <- 0
-    non_bye <- n - byes
+    non_bye <- n - byes - double_byes
     
     for(i in 1:((non_bye)/2)) {
-      games$team[i] <- teams[byes + i]
-      games$team_seed[i] <- byes + i
+      games$team[i] <- teams[double_byes + byes + i]
+      games$team_seed[i] <- double_byes + byes + i
       games$opponent[i] <- teams[n + 1 - i]
       games$opp_seed[i] <- n + 1 - i
       
@@ -49,9 +49,9 @@ tourney_sim  <- function(teams, byes, double_byes, hca, nsims) {
     
     ### Fill in teams w/ first round byes
     if(byes > 0) {
-      games$team[(game_count + 1):(1 + byes)] <- teams[1:(byes-game_count+1)]
-      games$team_seed[(game_count + 1):(1 + byes)] <- 1:(byes-game_count+1)
-      remaining <- setdiff(1:n, c(1:(byes-game_count+1), non_bye:n))
+      games$team[(game_count + 1):(1 + byes)] <- teams[(double_byes + 1):(double_byes + byes-game_count+1)]
+      games$team_seed[(game_count + 1):(1 + byes)] <- (double_byes + 1):(double_byes + byes-game_count+1)
+      remaining <- setdiff((double_byes + 1):n, c((double_byes + 1):(double_byes + byes-game_count+1), (double_byes + non_bye):n))
       game_count  <- game_count + (byes-game_count+1)
       k <- length(remaining)/2
       games$team[(game_count+1):(game_count+k)] <- teams[remaining[1:k]]
@@ -65,23 +65,56 @@ tourney_sim  <- function(teams, byes, double_byes, hca, nsims) {
       games$win_prob[cur_round] <- predict(glm.pointspread, newdata = games[cur_round,] , type = "response")
       games$winner[cur_round] <- ifelse(games$win_prob[cur_round] >= runif(length(cur_round)), games$team[cur_round],
                                         games$opponent[cur_round])
-      games$opponent[next_round] <- games$winner[cur_round] 
+      games$opponent[next_round[length(cur_round):1]] <- games$winner[cur_round] 
       games$opp_seed[next_round] <- 
         apply(as.data.frame(gsub("[()]", "", paste("^", games$opponent[next_round], "$", sep = ""))), 
               1, grep, gsub("[()]", "", teams))
       
-      cur_round <- (non_bye/2 + 1):game_count
-      next_round <- (game_count + 1):(game_count + length(cur_round)/2) ### Fix with Double Byes
+      cur_round <- next_round
+      next_round <- (max(cur_round) + 1):(max(cur_round) + (double_byes + length(cur_round))/2)
     }
     
     if(double_byes > 0) {
+      ### Set Double Bye Teams
+      these <- (max(cur_round) + 1):(max(cur_round) + double_byes)
+      games$team[these] <- teams[1:double_byes]
+      games$team_seed[these] <- 1:double_byes
       
+      ### Sim Games with Single Bye Teams
+      for(i in cur_round) {
+        if(is.na(hca)) {
+          games$location[i] <- "N" 
+        }
+        else if(hca == "seed") {
+          games$location[i] <- "H"
+        }
+        else if(games$team[i] == hca) {
+          games$location[i] <- "H"
+        }
+        else if(games$opponent[i]  == hca) {
+          games$location[i] <- "V"
+        }
+        else{
+          games$location[i] <- "N" 
+        }
+      }
+      
+      games$predscorediff[cur_round] <- predict(lm.hoops, newdata = games[cur_round,])
+      games$win_prob[cur_round] <- predict(glm.pointspread, newdata = games[cur_round,] , type = "response")
+      games$winner[cur_round] <- ifelse(games$win_prob[cur_round] >= runif(length(cur_round)), games$team[cur_round],
+                                        games$opponent[cur_round])
+      games$opponent[next_round[length(cur_round):1]] <- games$winner[cur_round] 
+      games$opp_seed[next_round] <- 
+        apply(as.data.frame(gsub("[()]", "", paste("^", games$opponent[next_round], "$", sep = ""))), 
+              1, grep, gsub("[()]", "", teams))
+      
+      cur_round <- next_round
+      next_round <- (max(cur_round) + 1):(max(cur_round) + length(cur_round)/2)
       
     }
     
     
     ### Sim Remainder of Tournament
-    j <- 1
     while(is.na(games$winner[n-1])) {
       for(i in cur_round) {
         if(is.na(hca)) {
@@ -137,4 +170,5 @@ tourney_sim  <- function(teams, byes, double_byes, hca, nsims) {
     simresults$champ[simresults$team == games$winner[n-1]] <- 
       simresults$champ[simresults$team == games$winner[n-1]] + 1/nsims
   }
+  return(simresults)
 }
