@@ -8,8 +8,10 @@ __2.0_Files/:__ A collection of files that are essentially the "inner workings" 
 * __bracketology.R:__ Assembles the [YUSAG Bracket](http://sports.sites.yale.edu/yusag-bracketology).
 * __helpers.R:__ A file with miscellanious functions used throughout the project.
 * __powerrankings.R:__ Computes the [YUSAG NCAA Power Rankings](http://sports.sites.yale.edu/ncaa-power-rankings).
+* __season_shift.R:__ Code used to create __ncaa_season_shifts.pdf__, which is used to generate the [GIF seen here](https://twitter.com/recspecs730/status/961986171365621761).
 * __record_evaluator.R:__ Examines the quality of each team's resume by computing Quality Wins (as recently redefinined by the NCAA tournament selection committee), Strength of Record, and Wins Above Bubble.
 * __rpi.R:__ Predictions end of season RPI for each team.
+* __tourney_sim.R:__ Function for simulating college basketball tournaments with parameters left to the user. The user specifies ```teams``` (in order of seed), the number of single ```byes```, the number of ```double_byes```, the number of simulations to run ```nsims```, and a parameter for home court advantage, ```hca```. If the tournament is played at a neutral site, set ```hca = NA```. If the higher seed is always given home court advantage, set ```hca = "seed"```. If one team hosts the tournament (even if not the top seed), set ```hca = INSERT_TEAM_NAME```.
 * __Bracketology/:__ Collection of .csv files used in [YUSAG Bracketology](http://sports.sites.yale.edu/yusag-bracketology).
   * __bids.csv:__ Table of tournament bids broken down by conference.
   * __bracket.csv:__ The final bracket produced for [YUSAG Bracketology](http://sports.sites.yale.edu/yusag-bracketology).
@@ -32,8 +34,4 @@ __2.0_Files/:__ A collection of files that are essentially the "inner workings" 
   * __playoffs.csv:__ Ivy League playoff odds.
   * __psf.csv:__ [Playoff Swing Factor](http://yaledailynews.com/downthefield/2017/01/31/by-the-numbers-ivy-hoops-games-to-watch/) for most recent week of Ivy League conference games.
 * __Results/:__ Complete NCAA Basketball schedule/results through a given date. Sub-directories indicate the year/season, with .csv files given in NCAA_Hoops_results_day_month_year.csv format. __NCAA_Hoops_results_6_29_2017.csv__ is the complete results file for the 2016-17 season. __NCAA_Hoops_results_10_30_2017.csv__ gives the preseason schedule for the 2017-18 season.
-
-
-
-
-
+* __html.py:__ Takes power ranking and bracketology .csv files and coverts them to the HTML seen in __html__ for use on the YUSAG Website.
