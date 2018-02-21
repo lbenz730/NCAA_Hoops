@@ -1,7 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_2_19_2018.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_2_21_2018.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
@@ -12,6 +12,7 @@ source("2.0_Files/rpi.R")
 source("2.0_Files/record_evaluator.R")
 source("2.0_Files/bracketology.R")
 source("2.0_Files/helpers.R")
+source("2.0_Files/tourney_sim.R")
 ########################  Data Cleaning ########################################
 x <- x %>%
   mutate(season_id = "2016-17", game_id = NA, opp_game_id = NA, 
@@ -141,10 +142,8 @@ bracket_math <- make_bracket(tourney = F)
 
 ################################ Ivy Sims ######################################
 playoffs <- ivy.sim(nsims = 5000)
-simresults <- fast.sim(nsims = 20000)
-ivy_joy(simresults)
 psf_results <- psf(nsims = 1000, year = 2018, months = c(2,2), days = c(23,24))
-write.csv(simresults, "2.0_Files/Predictions/mens_simresults.csv", row.names = F)
+
 ######################### Conf Undefeated Watch ################################
 confs <- confs[order(confs$team), ]
 confs$conf_loss <- aggregate(1-wins ~ team, data = filter(y, conf_game, !is.na(scorediff)), sum)[,2]
@@ -167,10 +166,10 @@ for(i in 1:8) {
   hist(simresults[,i], xlab = "Conference Wins", col = colors[i], main = names(simresults)[i],
        xlim = c(0, 14))
 }
-
-
-
 ######################### Mess Around w/ Ivy Sims ##############################
+simresults <- fast.sim(nsims = 20000)
+write.csv(simresults, "2.0_Files/Predictions/mens_simresults.csv", row.names = F)
+
 winmat <- apply(simresults, 1, sort, decreasing = T)
 table(winmat[4,] == winmat[5,])/20000
 table(winmat[3,] == winmat[6,])/20000
@@ -179,3 +178,4 @@ table(winmat[4,])/20000
 table(simresults$Yale)/20000
 apply(simresults, 2, mean)
 
+###################### Conference Tournament Simulations #######################
