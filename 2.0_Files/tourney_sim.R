@@ -2,7 +2,7 @@
 ### Luke Benz
 ### Feb 2018
 
-tourney_sim  <- function(teams, eliminated, byes, double_byes, hca, nsims) {
+tourney_sim  <- function(teams, seeds, byes, double_byes, hca, nsims) {
   ### Champ Storage
   n <- length(teams)
   simresults <- data.frame("team" = teams,
