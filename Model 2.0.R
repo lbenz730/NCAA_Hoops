@@ -1,7 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_2_21_2018.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_2_22_2018.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
@@ -179,3 +179,5 @@ table(simresults$Yale)/20000
 apply(simresults, 2, mean)
 
 ###################### Conference Tournament Simulations #######################
+acc <- filter(powranks, Conference == "ACC") %>% select(Team)
+tourney_sim(acc$Team[c(2,1, 13:15)], byes = 5, double_byes = 4, hca = NA, nsims = 100)
