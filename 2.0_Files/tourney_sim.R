@@ -2,11 +2,12 @@
 ### Luke Benz
 ### Feb 2018
 
-tourney_sim  <- function(teams, byes, double_byes, hca, nsims) {
+tourney_sim  <- function(teams, eliminated, byes, double_byes, hca, nsims) {
   ### Champ Storage
   n <- length(teams)
   simresults <- data.frame("team" = teams,
-                           "champ" = rep(0, n))
+                           "champ" = rep(0, n),
+                           "finals" = rep(0, n))
   for(j in 1:nsims) {
     print(paste("Sim #:", j))
     ### Fill in First Round
@@ -23,9 +24,9 @@ tourney_sim  <- function(teams, byes, double_byes, hca, nsims) {
     
     for(i in 1:((non_bye)/2)) {
       games$team[i] <- teams[double_byes + byes + i]
-      games$team_seed[i] <- double_byes + byes + i
+      games$team_seed[i] <- seeds[double_byes + byes + i]
       games$opponent[i] <- teams[n + 1 - i]
-      games$opp_seed[i] <- n + 1 - i
+      games$opp_seed[i] <- seeds[n + 1 - i]
       
       if(is.na(hca)) {
         games$location[i] <- "N" 
@@ -67,8 +68,8 @@ tourney_sim  <- function(teams, byes, double_byes, hca, nsims) {
                                         games$opponent[cur_round])
       games$opponent[next_round[length(cur_round):1]] <- games$winner[cur_round] 
       games$opp_seed[next_round] <- 
-        apply(as.data.frame(gsub("[()]", "", paste("^", games$opponent[next_round], "$", sep = ""))), 
-              1, grep, gsub("[()]", "", teams))
+        seeds[apply(as.data.frame(gsub("[()]", "", paste("^", games$opponent[next_round], "$", sep = ""))), 
+              1, grep, gsub("[()]", "", teams))]
       
       cur_round <- next_round
       next_round <- (max(cur_round) + 1):(max(cur_round) + (double_byes + length(cur_round))/2)
@@ -105,8 +106,8 @@ tourney_sim  <- function(teams, byes, double_byes, hca, nsims) {
                                         games$opponent[cur_round])
       games$opponent[next_round[length(cur_round):1]] <- games$winner[cur_round] 
       games$opp_seed[next_round] <- 
-        apply(as.data.frame(gsub("[()]", "", paste("^", games$opponent[next_round], "$", sep = ""))), 
-              1, grep, gsub("[()]", "", teams))
+        seeds[apply(as.data.frame(gsub("[()]", "", paste("^", games$opponent[next_round], "$", sep = ""))), 
+              1, grep, gsub("[()]", "", teams))]
       
       cur_round <- next_round
       next_round <- (max(cur_round) + 1):(max(cur_round) + length(cur_round)/2)
@@ -144,10 +145,10 @@ tourney_sim  <- function(teams, byes, double_byes, hca, nsims) {
         for(i in 1:(length(cur_round)/2)) {
           team1 <- games$winner[cur_round[i]]
           team2 <- games$winner[cur_round[length(cur_round) + 1 - i]]
-          team_seed1 <- grep(gsub("[()]", "", paste("^", team1, "$", sep = "")), 
-                             gsub("[()]", "", teams))
-          team_seed2 <- grep(gsub("[()]", "", paste("^", team2, "$", sep = "")), 
-                             gsub("[()]", "", teams))
+          team_seed1 <- seeds[grep(gsub("[()]", "", paste("^", team1, "$", sep = "")), 
+                             gsub("[()]", "", teams))]
+          team_seed2 <- seeds[grep(gsub("[()]", "", paste("^", team2, "$", sep = "")), 
+                             gsub("[()]", "", teams))]
           if(team_seed1 < team_seed2) {
             games$team[next_round[i]] <- team1
             games$opponent[next_round[i]] <- team2
@@ -169,6 +170,11 @@ tourney_sim  <- function(teams, byes, double_byes, hca, nsims) {
     }
     simresults$champ[simresults$team == games$winner[n-1]] <- 
       simresults$champ[simresults$team == games$winner[n-1]] + 1/nsims
+    simresults$finals[simresults$team == games$winner[n-1]] <- 
+      simresults$finals[simresults$team == games$winner[n-1]] + 1/nsims
+    loser <- setdiff(c(games$team[n-1], games$opponent[n-1]), games$winner[n-1])
+    simresults$finals[simresults$team == loser] <- 
+      simresults$finals[simresults$team == loser] + 1/nsims
   }
   return(simresults)
 }
