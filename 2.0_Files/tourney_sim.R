@@ -50,26 +50,24 @@ tourney_sim  <- function(teams, seeds, byes, double_byes, hca, nsims) {
     
     ### Fill in teams w/ first round byes
     if(byes > 0) {
-      games$team[(game_count + 1):(1 + byes)] <- teams[(double_byes + 1):(double_byes + byes-game_count+1)]
-      games$team_seed[(game_count + 1):(1 + byes)] <- (double_byes + 1):(double_byes + byes-game_count+1)
-      remaining <- setdiff((double_byes + 1):n, c((double_byes + 1):(double_byes + byes-game_count+1), (double_byes + non_bye):n))
-      game_count  <- game_count + (byes-game_count+1)
-      k <- length(remaining)/2
-      games$team[(game_count+1):(game_count+k)] <- teams[remaining[1:k]]
-      games$team_seed[(game_count+1):(game_count+k)] <- remaining[1:k]
-      games$opponent[(game_count+1):(game_count+k)] <- teams[remaining[(k+1):length(remaining)]]
-      games$opp_seed[(game_count+1):(game_count+k)] <- remaining[(k+1):length(remaining)]
-      game_count <- game_count + k
-      
+      one_bye <- (double_byes + 1):(double_byes + byes)
+      games$team[next_round[1:length(cur_round)]] <- teams[one_bye[1:length(cur_round)]]
+      games$team_seed[next_round[1:length(cur_round)]] <- seeds[one_bye[1:length(cur_round)]]
+      left <- one_bye[-c(1:length(cur_round))]
+      games$team[next_round[-(1:length(cur_round))]] <- teams[left[1:(length(left)/2)]]
+      games$team_seed[next_round[-(1:length(cur_round))]] <- seeds[left[1:(length(left)/2)]]
+      games$opponent[next_round[-(1:length(cur_round))]] <- teams[sort(left[((length(left)/2) + 1):length(left)], decreasing = T)]
+      games$opp_seed[next_round[-(1:length(cur_round))]] <- seeds[sort(left[((length(left)/2) + 1):length(left)], decreasing = T)]
+
       ### Sim Any Non-Bye Games
       games$predscorediff[cur_round] <- predict(lm.hoops, newdata = games[cur_round,])
       games$win_prob[cur_round] <- predict(glm.pointspread, newdata = games[cur_round,] , type = "response")
       games$winner[cur_round] <- ifelse(games$win_prob[cur_round] >= runif(length(cur_round)), games$team[cur_round],
                                         games$opponent[cur_round])
       games$opponent[next_round[length(cur_round):1]] <- games$winner[cur_round] 
-      games$opp_seed[next_round] <- 
-        seeds[apply(as.data.frame(gsub("[()]", "", paste("^", games$opponent[next_round], "$", sep = ""))), 
-              1, grep, gsub("[()]", "", teams))]
+      games$opp_seed[next_round[length(cur_round):1]] <- 
+        seeds[unlist(apply(as.data.frame(gsub("[()]", "", paste("^", games$winner[cur_round], "$", sep = ""))), 
+              1, grep, gsub("[()]", "", teams)))]
       
       cur_round <- next_round
       next_round <- (max(cur_round) + 1):(max(cur_round) + (double_byes + length(cur_round))/2)
