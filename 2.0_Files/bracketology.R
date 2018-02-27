@@ -44,17 +44,18 @@ make_bracket <- function(tourney) {
   
   bracket$blend <- 0.10 * bracket$rpi_rank + 0.35 * bracket$wab_rank + 
     0.10 * bracket$sor_rank + 0.10 * bracket$yusag_rank + 0.35 * bracket$resume_rank
+  bracket <- bracket[order(bracket$blend, decreasing = F),]
   
   autobid_calc <- function(conf) {
-    for(i in 1:length(confs$team[confs$conference == conf])) {
-      tmp <- by_conf$Team[by_conf$Conference_Rank == i & by_conf$Conference == conf]
-      if(confs$eligible[confs$team == tmp] & !confs$eliminated[confs$team == tmp]) {
-        return(tmp)
+    tmp <- bracket$team[bracket$conf == conf]
+    for(i in 1:length(tmp)) {
+      if(confs$eligible[confs$team == tmp[i]] & !confs$eliminated[confs$team == tmp[i]]) {
+        return(tmp[i])
       }
     }
   }
   
-  bracket <- bracket[order(bracket$blend, decreasing = F),]
+  
   
   if(tourney == T) {
     ### Get Autobids
@@ -93,7 +94,7 @@ make_bracket <- function(tourney) {
     bracket$first4 <- is.element(bracket$seed_overall, f4) | is.element(bracket$seed_overall, c(65:68))
     write.table(bracket, "2.0_Files/Bracketology/bracket.csv", row.names = F, col.names = T, sep = ",")
     
-  
+    
     ### First teams out
     j <- 37
     z <- 37
