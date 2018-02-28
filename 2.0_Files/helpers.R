@@ -126,7 +126,7 @@ ivy_joy <- function(simresults) {
   n <- nrow(simresults)
   sims <- data.frame(team = rep(NA, 8*n),
                      wins = rep(NA, 8*n))
-                     
+  
   for(i in 1:8) {
     sims$team[(n*i - n + 1):(n*i)] <- names(simresults)[i]
     sims$wins[(n*i - n + 1):(n*i)] <- floor(simresults[,i])
@@ -203,3 +203,34 @@ conf_sim <- function(conf, nsims) {
   }
   return(results)
 }
+
+
+### Jerome EP Calcultor
+jerome <- function(t_sim) {
+  return(3 * t_sim$finals + 2 * (1 + c(0, 0, rep(1, nrow(t_sim) - 2))) * t_sim$champ/t_sim$finals)
+}
+
+### eliminate teams from AutoBid Contention
+eliminate <- function(team, confs) {
+  confs$eliminated[confs$team == team] <- T
+  write.csv(confs, "2.0_Files/Info/conferences.csv", row.names = F)
+  return(confs)
+}
+
+### find regular season
+reg_season <- function(month, day, conf) {
+   if(month > 10) {
+    return(T)
+  }
+  else if(month < deadlines$month[deadlines$conf == conf]) {
+    return(T)
+  }
+  else if(month == deadlines$month[deadlines$conf == conf]) {
+    return(day < deadlines$day[deadlines$conf == conf])
+  }
+  else{
+    return(F)
+  }
+}
+  
+  
