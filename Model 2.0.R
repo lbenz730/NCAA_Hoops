@@ -1,11 +1,12 @@
 #############################  Read CSVs #######################################
 library(dplyr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_2_23_2018.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_2_27_2018.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
 confs <- read.csv("2.0_Files/Info/conferences.csv", as.is = T)
+deadlines <- read.csv("2.0_Files/Info/deadlines.csv", as.is = T)
 source("2.0_Files/powerrankings.R")
 source("2.0_Files/Ivy_Sims.R")
 source("2.0_Files/rpi.R")
@@ -54,7 +55,10 @@ for(i in 1:length(teams)) {
 x$conf_game <- x$team_conf == x$opp_conf
 y$conf_game <- y$team_conf == y$opp_conf
 x$reg_season <- (x$month < 3 | x$month >= 11) | (x$month == 3 & x$day <= 4)
-y$reg_season <- (y$month < 3 | y$month >= 11) | (y$month == 3 & y$day <= 4)
+y$reg_season <- NA
+for(i in 1:nrow(y)) {
+  y$reg_season[i] <- reg_season(y$month[i], y$day[i], y$team_conf[i])
+}
 
 ################################# Set Weights ##################################
 x$weights <- 0
@@ -142,7 +146,7 @@ bracket_math <- make_bracket(tourney = F)
 
 ################################ Ivy Sims ######################################
 playoffs <- ivy.sim(nsims = 5000)
-psf_results <- psf(nsims = 1000, year = 2018, months = c(2,2), days = c(23,24))
+psf_results <- psf(nsims = 1000, year = 2018, months = c(3,3), days = c(2,3))
 
 ######################### Conf Undefeated Watch ################################
 confs <- confs[order(confs$team), ]
@@ -179,5 +183,59 @@ table(simresults$Yale)/20000
 apply(simresults, 2, mean)
 
 ###################### Conference Tournament Simulations #######################
-acc <- filter(powranks, Conference == "ACC") %>% select(Team)
-tourney_sim(acc$Team[c(2,1, 13:15)], byes = 5, double_byes = 4, hca = NA, nsims = 100)
+asun <- c("FGCU", "Lipscomb", "Jacksonville", "NJIT", "North Florida", "Kennesaw St.", "Stetson", "USC Upstate")
+asun_t <- tourney_sim(asun, seeds = 1:8, byes = 0, double_byes = 0, hca = "seed", nsims = 1000)
+jerome(asun_t)
+
+ovc <- c("Murray St.", "Belmont", "Austin Peay", "Jacksonville St.", "Tennessee Tech", "Tennessee St.", "Eastern Ill.", "SIUE")
+ovc_t <- tourney_sim(ovc, seeds = 1:8, byes = 2, double_byes = 2, hca = NA, nsims = 1000)
+jerome(ovc_t)
+
+big_south <- c("UNC Asheville", "Winthrop", "Radford", "Campbell", "High Point", "Liberty", "Charleston So.", "Gardner-Webb", "Presbyterian", "Longwood")
+big_south_t <- tourney_sim(big_south, seeds = 1:10, byes = 6, double_byes = 0, hca = "UNC Asheville", nsims = 1000)
+jerome(big_south_t)
+
+mvc <- c("Loyola Chicago", "Southern Ill.", "Illinois St.", "Drake", "Bradley", "Evansville", "UNI" , "Valparaiso")
+mvc_t <- tourney_sim(mvc, seeds = 1:10, byes = 6, double_byes = 0, hca = NA, nsims = 1000)
+jerome(mvc_t)
+
+caa <- c("Col. of Charleston", "Northeastern", "Hofstra", "William & Mary", "Towson", "Elon", "Drexel", "UNCW", "James Madison", "Delaware")
+caa_t <- tourney_sim(caa, seeds = 1:10, byes = 6, double_byes = 0, hca = NA, nsims = 1000)
+jerome(caa_t)
+
+southern <- c("ETSU", "UNCG", "Furman", "Wofford", "Mercer",  "Western Caro.",  "Samford", "The Citadel", "Chattanooga", "VMI")     
+southern_t <- tourney_sim(southern, seeds = 1:10, byes = 6, double_byes = 0, hca = NA, nsims = 1000)
+jerome(southern_t)
+
+maac <- c("Canisius", "Rider","Niagara", "Iona" ,"Fairfield","Manhattan","Quinnipiac", "Monmouth", "Saint Peter's", "Siena", "Marist")
+maac_t <- tourney_sim(maac, seeds = 1:11, byes = 5, double_byes = 0, hca = NA, nsims = 1000)
+jerome(maac_t)
+
+wcc <- c("Gonzaga", "Saint Mary's (CA)", "BYU", "San Francisco", "Pacific", "San Diego", "Santa Clara", "Portland", "Loyola Marymount", "Pepperdine")
+wcc_t <- tourney_sim(wcc, seeds = 1:10, byes = 6, double_byes = 0, hca = NA, nsims = 1000)
+jerome(wcc_t)
+
+summit <- c("South Dakota St.", "South Dakota", "Fort Wayne", "Denver", "North Dakota St.", "Oral Roberts", "Omaha", "Western Ill.")
+summit_t <- tourney_sim(summit, seeds = 1:8, byes = 0, double_byes = 0, hca = NA, nsims = 1000)
+jerome(summit_t)
+
+horizon <- c("Northern Ky.", "Wright St.", "Ill.-Chicago", "Oakland", "Milwaukee", "IUPUI", "Green Bay", "Youngstown St.", "Cleveland St.", "Detroit Mercy")
+horizon_t <- tourney_sim(horizon, seeds = 1:10, byes = 6, double_byes = 0, hca = NA, nsims = 1000)
+jerome(horizon_t)
+
+
+nec <- c("Wagner", "Saint Francis (PA)", "Mt. St. Mary's", "St. Francis Brooklyn", "LIU Brooklyn", "Robert Morris", "Fairleigh Dickinson", "Central Conn. St.")
+nec_t <- tourney_sim(nec, seeds = 1:8, byes = 0, double_byes = 0, hca = "seed", nsims = 1000)
+jerome(nec_t)
+
+patriot <- c("Bucknell", "Colgate", "Navy", "Lehigh", "Boston U.", "Holy Cross", "Lafayette", "Army West Point", "Loyola Maryland", "American")
+patriot_t <- tourney_sim(patriot, seeds = 1:10, byes = 6, double_byes = 0, hca = "seed", nsims = 1000)
+jerome(patriot_t)
+
+am_east <- c("Vermont", "UMBC", "Hartford", "Albany (NY)", "Stony Brook", "New Hampshire", "UMass Lowell", "Maine")
+am_east_t <- tourney_sim(am_east, seeds = 1:8, byes = 0, double_byes = 0, hca = "seed", nsims = 1000)
+jerome(am_east_t)
+
+big10 <- c("Michigan St.", "Ohio St.", "Purdue", "Michigan", "Nebraska", "Penn St.", "Indiana", "Maryland", "Wisconsin", "Northwestern", "Minnesota", "Illinois", "Rutgers", "Iowa")
+big10_t <- tourney_sim(big10, seeds = 1:14, byes = 6 , double_byes = 4, hca = NA, nsims = 1000)
+jerome(big10_t)
