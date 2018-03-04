@@ -1,7 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_2_28_2018.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_3_4_2018.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
@@ -195,7 +195,7 @@ big_south <- c("UNC Asheville", "Winthrop", "Radford", "Campbell", "High Point",
 big_south_t <- tourney_sim(big_south, seeds = 1:10, byes = 6, double_byes = 0, hca = "UNC Asheville", nsims = 1000)
 jerome(big_south_t)
 
-mvc <- c("Loyola Chicago", "Southern Ill.", "Illinois St.", "Drake", "Bradley", "Evansville", "UNI" , "Valparaiso")
+mvc <- c("Loyola Chicago", "Southern Ill.", "Illinois St.", "Drake", "Bradley", "Indiana St.", "Missouri St.", "Evansville", "UNI" , "Valparaiso")
 mvc_t <- tourney_sim(mvc, seeds = 1:10, byes = 6, double_byes = 0, hca = NA, nsims = 1000)
 jerome(mvc_t)
 
@@ -239,3 +239,28 @@ jerome(am_east_t)
 big10 <- c("Michigan St.", "Ohio St.", "Purdue", "Michigan", "Nebraska", "Penn St.", "Indiana", "Maryland", "Wisconsin", "Northwestern", "Minnesota", "Illinois", "Rutgers", "Iowa")
 big10_t <- tourney_sim(big10, seeds = 1:14, byes = 6 , double_byes = 4, hca = NA, nsims = 1000)
 jerome(big10_t)
+
+bsky <- c("Montana", "Idaho", "Weber St.", "Eastern Wash.", "Northern Colo.", "Idaho St.", "Portland St.", "Montana St.", "North Dakota", "Southern Utah", "Sacramento St.", "Northern Ariz.")
+bsky_t <- tourney_sim(bsky, seeds = 1:12, byes = 4, double_byes = 0, hca = NA, nsims = 1000)
+jerome(bsky_t)
+
+sb <- c("Louisiana", "Georgia St.", "Ga. Southern", "UT Arlington", "La.-Monroe", "Troy", "Coastal Caro.", "Appalachian St.", "South Ala.", "Texas St.", "Arkansas St.", "Little Rock")
+sb_t <- tourney_sim(sb, seeds = 1:12, byes = 4, double_byes = 0, hca = NA, nsims = 1000)
+jerome(sb_t)
+
+cusa <- c("Middle Tenn.", "Old Dominion", "Western Ky.", "Marshall", "UTSA", "UAB", "North Texas", "FIU", "Southern Miss.", "UTEP", "Rice", "Charlotte")
+cusa_t <- tourney_sim(sb, seeds = 1:12, byes = 4, double_byes = 0, hca = NA, nsims = 1000)
+jerome(cusa_t)
+
+pac12 <- c("Arizona", "Southern California", "Washington", "UCLA", "Utah", "Stanford", "Oregon", "Arizona St.", "Colorado", "Oregon St.", "Washington St.", "California")
+pac12_t <- tourney_sim(pac12, seeds = 1:12, byes = 4, double_byes = 0, hca = NA, nsims = 1000)
+jerome(pac12_t)
+
+b12 <- c("Kansas", "West Virginia", "Texas Tech", "TCU", "Kansas St.", "Baylor", "Oklahoma", "Oklahoma St.", "Texas", "Iowa St.")
+b12_t <- tourney_sim(b12, seeds = 1:10, byes = 6, double_byes = 0, hca = NA, nsims = 1000)
+jerome(b12_t)
+
+mwc <- c("Nevada", "Boise St.", "Fresno St.", "New Mexico", "San Diego St.", "Wyoming", "UNLV", "Utah St.", "Air Force", "Colorado St.", "San Jose St.")
+mwc_t <- tourney_sim(mwc, seeds = 1:11, byes = 5, double_byes = 0, hca = NA, nsims = 1000)
+jerome(mwc_t)
+

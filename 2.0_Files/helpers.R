@@ -211,15 +211,17 @@ jerome <- function(t_sim) {
 }
 
 ### eliminate teams from AutoBid Contention
-eliminate <- function(team, confs) {
-  confs$eliminated[confs$team == team] <- T
+eliminate <- function(teams, confs) {
+  for(team in teams) {
+    confs$eliminated[confs$team == team] <- T
+  }
   write.csv(confs, "2.0_Files/Info/conferences.csv", row.names = F)
   return(confs)
 }
 
 ### find regular season
 reg_season <- function(month, day, conf) {
-   if(month > 10) {
+  if(month > 10) {
     return(T)
   }
   else if(month < deadlines$month[deadlines$conf == conf]) {
@@ -232,5 +234,4 @@ reg_season <- function(month, day, conf) {
     return(F)
   }
 }
-  
-  
+
