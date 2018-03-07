@@ -1,7 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_3_4_2018.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_3_7_2018.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
@@ -261,6 +261,14 @@ b12_t <- tourney_sim(b12, seeds = 1:10, byes = 6, double_byes = 0, hca = NA, nsi
 jerome(b12_t)
 
 mwc <- c("Nevada", "Boise St.", "Fresno St.", "New Mexico", "San Diego St.", "Wyoming", "UNLV", "Utah St.", "Air Force", "Colorado St.", "San Jose St.")
-mwc_t <- tourney_sim(mwc, seeds = 1:11, byes = 5, double_byes = 0, hca = NA, nsims = 1000)
-jerome(mwc_t)
+mwc_t <- tourney_sim(mwc, seeds = 1:11, byes = 5, double_byes = 0, hca = NA, nsims = 5000)
+mwc_tjerome(mwc_t)
 
+ivy <- c("Harvard", "Penn", "Yale", "Cornell")
+tourney_sim(ivy, seeds = 1:4, byes = 0, double_byes = 0, hca = NA, nsims = 20000)
+
+
+vec <- c("Penn", "Yale", "N")
+z <- predict(lm.hoops, data.frame("team" = vec[1],"opponent" = vec[2],"location" = vec[3]))
+predict(glm.pointspread, data.frame("predscorediff" = z), type = "response")
+z

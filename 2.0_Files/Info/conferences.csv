@@ -13,7 +13,7 @@
 "Saint Louis","A-10",TRUE,FALSE,TRUE
 "St. Bonaventure","A-10",TRUE,FALSE,TRUE
 "VCU","A-10",TRUE,FALSE,TRUE
-"FGCU","A-Sun",TRUE,FALSE,TRUE
+"FGCU","A-Sun",TRUE,TRUE,TRUE
 "Jacksonville","A-Sun",TRUE,TRUE,TRUE
 "Kennesaw St.","A-Sun",TRUE,TRUE,TRUE
 "Lipscomb","A-Sun",TRUE,FALSE,TRUE
@@ -37,23 +37,23 @@
 "Clemson","ACC",TRUE,FALSE,FALSE
 "Duke","ACC",TRUE,FALSE,FALSE
 "Florida St.","ACC",TRUE,FALSE,FALSE
-"Georgia Tech","ACC",TRUE,FALSE,FALSE
+"Georgia Tech","ACC",TRUE,TRUE,FALSE
 "Louisville","ACC",TRUE,FALSE,FALSE
 "Miami (FL)","ACC",TRUE,FALSE,FALSE
 "North Carolina","ACC",TRUE,FALSE,FALSE
 "North Carolina St.","ACC",TRUE,FALSE,FALSE
 "Notre Dame","ACC",TRUE,FALSE,FALSE
-"Pittsburgh","ACC",TRUE,FALSE,FALSE
+"Pittsburgh","ACC",TRUE,TRUE,FALSE
 "Syracuse","ACC",TRUE,FALSE,FALSE
 "Virginia","ACC",TRUE,FALSE,FALSE
 "Virginia Tech","ACC",TRUE,FALSE,FALSE
-"Wake Forest","ACC",TRUE,FALSE,FALSE
+"Wake Forest","ACC",TRUE,TRUE,FALSE
 "Albany (NY)","Am. East",TRUE,TRUE,TRUE
 "Binghamton","Am. East",TRUE,TRUE,TRUE
-"Hartford","Am. East",TRUE,FALSE,TRUE
+"Hartford","Am. East",TRUE,TRUE,TRUE
 "Maine","Am. East",TRUE,TRUE,TRUE
 "New Hampshire","Am. East",TRUE,TRUE,TRUE
-"Stony Brook","Am. East",TRUE,FALSE,TRUE
+"Stony Brook","Am. East",TRUE,TRUE,TRUE
 "UMass Lowell","Am. East",TRUE,TRUE,TRUE
 "UMBC","Am. East",TRUE,FALSE,TRUE
 "Vermont","Am. East",TRUE,FALSE,TRUE
@@ -68,7 +68,7 @@
 "Northwestern","Big 10",TRUE,TRUE,FALSE
 "Ohio St.","Big 10",TRUE,TRUE,FALSE
 "Penn St.","Big 10",TRUE,TRUE,FALSE
-"Purdue","Big 10",TRUE,FALSE,FALSE
+"Purdue","Big 10",TRUE,TRUE,FALSE
 "Rutgers","Big 10",TRUE,TRUE,FALSE
 "Wisconsin","Big 10",TRUE,TRUE,FALSE
 "Baylor","Big 12",TRUE,FALSE,FALSE
@@ -93,11 +93,11 @@
 "Xavier","Big East",TRUE,FALSE,FALSE
 "Eastern Wash.","Big Sky",TRUE,FALSE,TRUE
 "Idaho","Big Sky",TRUE,FALSE,TRUE
-"Idaho St.","Big Sky",TRUE,FALSE,TRUE
+"Idaho St.","Big Sky",TRUE,TRUE,TRUE
 "Montana","Big Sky",TRUE,FALSE,TRUE
-"Montana St.","Big Sky",TRUE,FALSE,TRUE
+"Montana St.","Big Sky",TRUE,TRUE,TRUE
 "North Dakota","Big Sky",TRUE,FALSE,TRUE
-"Northern Ariz.","Big Sky",TRUE,FALSE,TRUE
+"Northern Ariz.","Big Sky",TRUE,TRUE,TRUE
 "Northern Colo.","Big Sky",TRUE,FALSE,TRUE
 "Portland St.","Big Sky",TRUE,FALSE,TRUE
 "Sacramento St.","Big Sky",TRUE,FALSE,TRUE
@@ -107,7 +107,7 @@
 "Charleston So.","Big South",TRUE,TRUE,TRUE
 "Gardner-Webb","Big South",TRUE,TRUE,TRUE
 "High Point","Big South",TRUE,TRUE,TRUE
-"Liberty","Big South",TRUE,FALSE,TRUE
+"Liberty","Big South",TRUE,TRUE,TRUE
 "Longwood","Big South",TRUE,TRUE,TRUE
 "Presbyterian","Big South",TRUE,TRUE,TRUE
 "Radford","Big South",TRUE,FALSE,TRUE
@@ -137,23 +137,23 @@
 "UTSA","C-USA",TRUE,FALSE,TRUE
 "Western Ky.","C-USA",TRUE,FALSE,TRUE
 "Col. of Charleston","CAA",TRUE,FALSE,TRUE
-"Delaware","CAA",TRUE,FALSE,TRUE
-"Drexel","CAA",TRUE,FALSE,TRUE
+"Delaware","CAA",TRUE,TRUE,TRUE
+"Drexel","CAA",TRUE,TRUE,TRUE
 "Elon","CAA",TRUE,TRUE,TRUE
-"Hofstra","CAA",TRUE,FALSE,TRUE
+"Hofstra","CAA",TRUE,TRUE,TRUE
 "James Madison","CAA",TRUE,TRUE,TRUE
-"Northeastern","CAA",TRUE,FALSE,TRUE
-"Towson","CAA",TRUE,FALSE,TRUE
-"UNCW","CAA",TRUE,FALSE,TRUE
-"William & Mary","CAA",TRUE,FALSE,TRUE
-"Cleveland St.","Horizon",TRUE,FALSE,TRUE
+"Northeastern","CAA",TRUE,TRUE,TRUE
+"Towson","CAA",TRUE,TRUE,TRUE
+"UNCW","CAA",TRUE,TRUE,TRUE
+"William & Mary","CAA",TRUE,TRUE,TRUE
+"Cleveland St.","Horizon",TRUE,TRUE,TRUE
 "Detroit Mercy","Horizon",TRUE,TRUE,TRUE
 "Green Bay","Horizon",TRUE,TRUE,TRUE
 "Ill.-Chicago","Horizon",TRUE,FALSE,TRUE
-"IUPUI","Horizon",TRUE,FALSE,TRUE
-"Milwaukee","Horizon",TRUE,FALSE,TRUE
+"IUPUI","Horizon",TRUE,TRUE,TRUE
+"Milwaukee","Horizon",TRUE,TRUE,TRUE
 "Northern Ky.","Horizon",TRUE,TRUE,TRUE
-"Oakland","Horizon",TRUE,FALSE,TRUE
+"Oakland","Horizon",TRUE,TRUE,TRUE
 "Wright St.","Horizon",TRUE,FALSE,TRUE
 "Youngstown St.","Horizon",TRUE,TRUE,TRUE
 "Brown","Ivy",TRUE,FALSE,TRUE
@@ -165,15 +165,15 @@
 "Princeton","Ivy",TRUE,FALSE,TRUE
 "Yale","Ivy",TRUE,FALSE,TRUE
 "Canisius","MAAC",TRUE,TRUE,TRUE
-"Fairfield","MAAC",TRUE,FALSE,TRUE
+"Fairfield","MAAC",TRUE,TRUE,TRUE
 "Iona","MAAC",TRUE,FALSE,TRUE
 "Manhattan","MAAC",TRUE,FALSE,TRUE
 "Marist","MAAC",TRUE,TRUE,TRUE
 "Monmouth","MAAC",TRUE,TRUE,TRUE
 "Niagara","MAAC",TRUE,FALSE,TRUE
-"Quinnipiac","MAAC",TRUE,FALSE,TRUE
+"Quinnipiac","MAAC",TRUE,TRUE,TRUE
 "Rider","MAAC",TRUE,TRUE,TRUE
-"Saint Peter's","MAAC",TRUE,FALSE,TRUE
+"Saint Peter's","MAAC",TRUE,TRUE,TRUE
 "Siena","MAAC",TRUE,TRUE,TRUE
 "Akron","MAC",TRUE,FALSE,TRUE
 "Ball St.","MAC",TRUE,FALSE,TRUE
@@ -183,27 +183,27 @@
 "Eastern Mich.","MAC",TRUE,FALSE,TRUE
 "Kent St.","MAC",TRUE,FALSE,TRUE
 "Miami (OH)","MAC",TRUE,FALSE,TRUE
-"Northern Ill.","MAC",TRUE,FALSE,TRUE
-"Ohio","MAC",TRUE,FALSE,TRUE
+"Northern Ill.","MAC",TRUE,TRUE,TRUE
+"Ohio","MAC",TRUE,TRUE,TRUE
 "Toledo","MAC",TRUE,FALSE,TRUE
-"Western Mich.","MAC",TRUE,FALSE,TRUE
+"Western Mich.","MAC",TRUE,TRUE,TRUE
 "Bethune-Cookman","MEAC",TRUE,FALSE,TRUE
-"Coppin St.","MEAC",TRUE,FALSE,TRUE
-"Delaware St.","MEAC",TRUE,FALSE,TRUE
+"Coppin St.","MEAC",TRUE,TRUE,TRUE
+"Delaware St.","MEAC",TRUE,TRUE,TRUE
 "Florida A&M","MEAC",TRUE,FALSE,TRUE
 "Hampton","MEAC",TRUE,FALSE,TRUE
-"Howard","MEAC",TRUE,FALSE,TRUE
+"Howard","MEAC",TRUE,TRUE,TRUE
 "Morgan St.","MEAC",TRUE,FALSE,TRUE
 "N.C. A&T","MEAC",TRUE,FALSE,TRUE
 "N.C. Central","MEAC",TRUE,FALSE,TRUE
 "Norfolk St.","MEAC",TRUE,FALSE,TRUE
 "Savannah St.","MEAC",TRUE,FALSE,TRUE
 "South Carolina St.","MEAC",TRUE,FALSE,TRUE
-"UMES","MEAC",TRUE,FALSE,TRUE
+"UMES","MEAC",TRUE,TRUE,TRUE
 "Bradley","MVC",TRUE,TRUE,TRUE
 "Drake","MVC",TRUE,TRUE,TRUE
 "Evansville","MVC",TRUE,TRUE,TRUE
-"Illinois St.","MVC",TRUE,FALSE,TRUE
+"Illinois St.","MVC",TRUE,TRUE,TRUE
 "Indiana St.","MVC",TRUE,TRUE,TRUE
 "Loyola Chicago","MVC",TRUE,FALSE,TRUE
 "Missouri St.","MVC",TRUE,TRUE,TRUE
@@ -230,7 +230,7 @@
 "Sacred Heart","NEC",TRUE,TRUE,TRUE
 "Saint Francis (PA)","NEC",TRUE,TRUE,TRUE
 "St. Francis Brooklyn","NEC",TRUE,TRUE,TRUE
-"Wagner","NEC",TRUE,FALSE,TRUE
+"Wagner","NEC",TRUE,TRUE,TRUE
 "Austin Peay","OVC",TRUE,TRUE,TRUE
 "Belmont","OVC",TRUE,TRUE,TRUE
 "Eastern Ill.","OVC",TRUE,TRUE,TRUE
@@ -257,7 +257,7 @@
 "Washington St.","Pac 12",TRUE,FALSE,FALSE
 "American","Patriot",TRUE,TRUE,TRUE
 "Army West Point","Patriot",TRUE,TRUE,TRUE
-"Boston U.","Patriot",TRUE,FALSE,TRUE
+"Boston U.","Patriot",TRUE,TRUE,TRUE
 "Bucknell","Patriot",TRUE,FALSE,TRUE
 "Colgate","Patriot",TRUE,FALSE,TRUE
 "Holy Cross","Patriot",TRUE,FALSE,TRUE
@@ -280,15 +280,15 @@
 "Texas A&M","SEC",TRUE,FALSE,FALSE
 "Vanderbilt","SEC",TRUE,FALSE,FALSE
 "Chattanooga","Southern",TRUE,TRUE,TRUE
-"ETSU","Southern",TRUE,FALSE,TRUE
-"Furman","Southern",TRUE,FALSE,TRUE
+"ETSU","Southern",TRUE,TRUE,TRUE
+"Furman","Southern",TRUE,TRUE,TRUE
 "Mercer","Southern",TRUE,TRUE,TRUE
 "Samford","Southern",TRUE,TRUE,TRUE
 "The Citadel","Southern",TRUE,TRUE,TRUE
 "UNCG","Southern",TRUE,FALSE,TRUE
 "VMI","Southern",TRUE,TRUE,TRUE
 "Western Caro.","Southern",TRUE,TRUE,TRUE
-"Wofford","Southern",TRUE,FALSE,TRUE
+"Wofford","Southern",TRUE,TRUE,TRUE
 "A&M-Corpus Chris","Southland",TRUE,FALSE,TRUE
 "Abilene Christian","Southland",TRUE,FALSE,TRUE
 "Central Ark.","Southland",TRUE,FALSE,TRUE
@@ -302,13 +302,13 @@
 "Sam Houston St.","Southland",TRUE,FALSE,TRUE
 "SFA","Southland",TRUE,FALSE,TRUE
 "Southeastern La.","Southland",TRUE,FALSE,TRUE
-"Denver","Summit",TRUE,FALSE,TRUE
-"Fort Wayne","Summit",TRUE,FALSE,TRUE
-"North Dakota St.","Summit",TRUE,FALSE,TRUE
+"Denver","Summit",TRUE,TRUE,TRUE
+"Fort Wayne","Summit",TRUE,TRUE,TRUE
+"North Dakota St.","Summit",TRUE,TRUE,TRUE
 "Omaha","Summit",TRUE,TRUE,TRUE
-"Oral Roberts","Summit",TRUE,FALSE,TRUE
+"Oral Roberts","Summit",TRUE,TRUE,TRUE
 "South Dakota","Summit",TRUE,FALSE,TRUE
-"South Dakota St.","Summit",TRUE,FALSE,TRUE
+"South Dakota St.","Summit",TRUE,TRUE,TRUE
 "Western Ill.","Summit",TRUE,TRUE,TRUE
 "Appalachian St.","Sunbelt",TRUE,FALSE,TRUE
 "Arkansas St.","Sunbelt",TRUE,FALSE,TRUE
@@ -323,11 +323,11 @@
 "Troy","Sunbelt",TRUE,FALSE,TRUE
 "UT Arlington","Sunbelt",TRUE,FALSE,TRUE
 "Alabama A&M","SWAC",FALSE,TRUE,TRUE
-"Alabama St.","SWAC",TRUE,FALSE,TRUE
+"Alabama St.","SWAC",TRUE,TRUE,TRUE
 "Alcorn","SWAC",TRUE,FALSE,TRUE
 "Ark.-Pine Bluff","SWAC",TRUE,FALSE,TRUE
 "Grambling","SWAC",FALSE,TRUE,TRUE
-"Jackson St.","SWAC",TRUE,FALSE,TRUE
+"Jackson St.","SWAC",TRUE,TRUE,TRUE
 "Mississippi Val.","SWAC",TRUE,FALSE,TRUE
 "Prairie View","SWAC",TRUE,FALSE,TRUE
 "Southern U.","SWAC",TRUE,FALSE,TRUE
@@ -340,13 +340,13 @@
 "UMKC","WAC",TRUE,FALSE,TRUE
 "Utah Valley","WAC",TRUE,FALSE,TRUE
 "UTRGV","WAC",TRUE,FALSE,TRUE
-"BYU","WCC",TRUE,FALSE,TRUE
+"BYU","WCC",TRUE,TRUE,TRUE
 "Gonzaga","WCC",TRUE,FALSE,TRUE
 "Loyola Marymount","WCC",TRUE,FALSE,TRUE
 "Pacific","WCC",TRUE,TRUE,TRUE
 "Pepperdine","WCC",TRUE,TRUE,TRUE
 "Portland","WCC",TRUE,TRUE,TRUE
-"Saint Mary's (CA)","WCC",TRUE,FALSE,TRUE
+"Saint Mary's (CA)","WCC",TRUE,TRUE,TRUE
 "San Diego","WCC",TRUE,TRUE,TRUE
-"San Francisco","WCC",TRUE,FALSE,TRUE
+"San Francisco","WCC",TRUE,TRUE,TRUE
 "Santa Clara","WCC",TRUE,TRUE,TRUE
