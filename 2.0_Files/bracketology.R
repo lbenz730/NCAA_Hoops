@@ -42,7 +42,7 @@ make_bracket <- function(tourney) {
     bracket$resume_rank[i] <- resumes$resume_rank[resumes$team == teams[i]]
   }
   
-  bracket$blend <- 0.15 * bracket$rpi_rank + 0.25 * bracket$wab_rank + 
+  bracket$blend <- 0.25 * bracket$rpi_rank + 0.15 * bracket$wab_rank + 
     0.10 * bracket$sor_rank + 0.10 * bracket$yusag_rank + 0.40 * bracket$resume_rank
   bracket <- bracket[order(bracket$blend, decreasing = F),]
   
