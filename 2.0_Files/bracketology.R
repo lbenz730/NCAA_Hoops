@@ -10,7 +10,8 @@ make_bracket <- function(tourney) {
                         "rpi_rank" = rep(NA, 351),
                         "sor_rank" = rep(NA, 351),
                         "resume_rank" = rep(NA, 351),
-                        "wab_rank" = rep(NA, 351), 
+                        "wab_rank" = rep(NA, 351),
+                        "mid_major" = rep(NA, 351),
                         stringsAsFactors = F)
   
   ### Get Advanced Metric Ranks
@@ -40,12 +41,15 @@ make_bracket <- function(tourney) {
     bracket$sor_rank[i] <- resumes$sor_rank[resumes$team == teams[i]]
     bracket$wab_rank[i] <- resumes$wab_rank[resumes$team == teams[i]]  
     bracket$resume_rank[i] <- resumes$resume_rank[resumes$team == teams[i]]
+    bracket$mid_major[i] <- confs$mid_major[confs$team == teams[i]]
   }
   
-  bracket$blend <- 0.25 * bracket$rpi_rank + 0.15 * bracket$wab_rank + 
-    0.10 * bracket$sor_rank + 0.10 * bracket$yusag_rank + 0.40 * bracket$resume_rank
+  bracket$blend <- 0.3 * bracket$rpi_rank + 0.2 * bracket$wab_rank + 
+    0.05 * bracket$sor_rank + 0.05 * bracket$yusag_rank + 0.40 * bracket$resume_rank +  
+    2 * as.numeric(bracket$mid_major)
   bracket <- bracket[order(bracket$blend, decreasing = F),]
   
+  bracket <- bracket[, -(ncol(bracket)-1)]
   autobid_calc <- function(conf) {
     tmp <- bracket$team[bracket$conf == conf]
     for(i in 1:length(tmp)) {
