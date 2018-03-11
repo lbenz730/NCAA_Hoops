@@ -72,8 +72,11 @@ record_eval <- function(team) {
       round(predict.glm(glm.pointspread, newdata = data, type = "response"), 3)
     wab[j] <- sum(games$wins) - sum(data$wins)
   }
+  wins <- sum(games$wins) 
+  losses = sum(1 - games$wins) 
   
-  return(list("qual_bonus" = qual_bonus, "sor" = mean(sor), "wab" = mean(wab)))
+  return(list("qual_bonus" = qual_bonus, "sor" = mean(sor), "wab" = mean(wab),
+              "wins" = wins, "losses" = losses))
 }
 
 
@@ -83,13 +86,17 @@ get_resumes <- function(new){
     tmp <- data.frame("team" = teams,
                       "sor" = rep(0, length(teams)),
                       "qual_bonus" = rep(0, length(teams)),
-                      "wab" = rep(0, length(teams)))
+                      "wab" = rep(0, length(teams)),
+                      "wins" = rep(0, length(teams)),
+                      "losses" = rep(0, length(teams)))
     for(i in 1:nrow(tmp)) {
       print(paste("Evaluating Team #: ", i, sep = ""))
       rec_eval <- record_eval(teams[i])
       tmp$sor[i] <- rec_eval$sor
       tmp$wab[i] <- rec_eval$wab
       tmp$qual_bonus[i] <- rec_eval$qual_bonus
+      tmp$wins[i] <- rec_eval$wins
+      tmp$losses[i] <- rec_eval$losses
     }
     write.table(tmp, "2.0_Files/Bracketology/resumes.csv", row.names = F, col.names = T, sep = ",")
   }

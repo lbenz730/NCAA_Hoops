@@ -9,7 +9,7 @@
 "Massachusetts","A-10",TRUE,TRUE,TRUE
 "Rhode Island","A-10",TRUE,FALSE,TRUE
 "Richmond","A-10",TRUE,TRUE,TRUE
-"Saint Joseph's","A-10",TRUE,FALSE,TRUE
+"Saint Joseph's","A-10",TRUE,TRUE,TRUE
 "Saint Louis","A-10",TRUE,TRUE,TRUE
 "St. Bonaventure","A-10",TRUE,FALSE,TRUE
 "VCU","A-10",TRUE,TRUE,TRUE
@@ -24,7 +24,7 @@
 "Cincinnati","AAC",TRUE,FALSE,FALSE
 "East Carolina","AAC",TRUE,TRUE,FALSE
 "Houston","AAC",TRUE,FALSE,FALSE
-"Memphis","AAC",TRUE,FALSE,FALSE
+"Memphis","AAC",TRUE,TRUE,FALSE
 "SMU","AAC",TRUE,TRUE,FALSE
 "South Fla.","AAC",TRUE,TRUE,FALSE
 "Temple","AAC",TRUE,TRUE,FALSE
@@ -56,7 +56,7 @@
 "Stony Brook","Am. East",TRUE,TRUE,TRUE
 "UMass Lowell","Am. East",TRUE,TRUE,TRUE
 "UMBC","Am. East",TRUE,FALSE,TRUE
-"Vermont","Am. East",TRUE,FALSE,TRUE
+"Vermont","Am. East",TRUE,TRUE,TRUE
 "Illinois","Big 10",TRUE,TRUE,FALSE
 "Indiana","Big 10",TRUE,TRUE,FALSE
 "Iowa","Big 10",TRUE,TRUE,FALSE
@@ -158,12 +158,12 @@
 "Youngstown St.","Horizon",TRUE,TRUE,TRUE
 "Brown","Ivy",TRUE,TRUE,TRUE
 "Columbia","Ivy",TRUE,TRUE,TRUE
-"Cornell","Ivy",TRUE,FALSE,TRUE
+"Cornell","Ivy",TRUE,TRUE,TRUE
 "Dartmouth","Ivy",TRUE,TRUE,TRUE
 "Harvard","Ivy",TRUE,FALSE,TRUE
 "Penn","Ivy",TRUE,FALSE,TRUE
 "Princeton","Ivy",TRUE,TRUE,TRUE
-"Yale","Ivy",TRUE,FALSE,TRUE
+"Yale","Ivy",TRUE,TRUE,TRUE
 "Canisius","MAAC",TRUE,TRUE,TRUE
 "Fairfield","MAAC",TRUE,TRUE,TRUE
 "Iona","MAAC",TRUE,FALSE,TRUE
@@ -191,7 +191,7 @@
 "Coppin St.","MEAC",TRUE,TRUE,TRUE
 "Delaware St.","MEAC",TRUE,TRUE,TRUE
 "Florida A&M","MEAC",TRUE,TRUE,TRUE
-"Hampton","MEAC",TRUE,FALSE,TRUE
+"Hampton","MEAC",TRUE,TRUE,TRUE
 "Howard","MEAC",TRUE,TRUE,TRUE
 "Morgan St.","MEAC",TRUE,TRUE,TRUE
 "N.C. A&T","MEAC",TRUE,TRUE,TRUE
@@ -313,11 +313,11 @@
 "Appalachian St.","Sunbelt",TRUE,TRUE,TRUE
 "Arkansas St.","Sunbelt",TRUE,TRUE,TRUE
 "Coastal Caro.","Sunbelt",TRUE,TRUE,TRUE
-"Ga. Southern","Sunbelt",TRUE,FALSE,TRUE
+"Ga. Southern","Sunbelt",TRUE,TRUE,TRUE
 "Georgia St.","Sunbelt",TRUE,FALSE,TRUE
 "La.-Monroe","Sunbelt",TRUE,TRUE,TRUE
 "Little Rock","Sunbelt",TRUE,TRUE,TRUE
-"Louisiana","Sunbelt",TRUE,FALSE,TRUE
+"Louisiana","Sunbelt",TRUE,TRUE,TRUE
 "South Ala.","Sunbelt",TRUE,TRUE,TRUE
 "Texas St.","Sunbelt",TRUE,TRUE,TRUE
 "Troy","Sunbelt",TRUE,TRUE,TRUE
