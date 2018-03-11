@@ -19,6 +19,7 @@ __2.0_Files/:__ A collection of files that are essentially the "inner workings" 
   * __bubble.csv:__ Bracket metrics for the first 16 teams missing the field as at-large bids.
   * __resumes.csv:__ Subset of bracket metrics (resume evaluation, strength of record, wins above bubble) produced by __record_evaluator.R__. 
   * __rpi.csv:__ Projected end of season RPI for each team. Produced by __rpi.R__.
+  * __historical/:__ A collection of files used to predict NCAA Tournament seed from the various metrics in this directory.
 * __Info/:__ A collection of information used to adjust model weights and determine postseason status.
   * __conferences.csv:__ List of teams with their conference, postseason eligibility status, and elimination status from automatic bid contention.
   * __mins.csv:__ Percentage of team's 2016-17 minutes returning during the 2017-18 season. Acquired from [Bart Tovrik](http://www.barttorvik.com/returningmins.php).
@@ -33,5 +34,5 @@ __2.0_Files/:__ A collection of files that are essentially the "inner workings" 
 * __Predictions/:__ 
   * __playoffs.csv:__ Ivy League playoff odds.
   * __psf.csv:__ [Playoff Swing Factor](http://yaledailynews.com/downthefield/2017/01/31/by-the-numbers-ivy-hoops-games-to-watch/) for most recent week of Ivy League conference games.
-* __Results/:__ Complete NCAA Basketball schedule/results through a given date. Sub-directories indicate the year/season, with .csv files given in NCAA_Hoops_results_day_month_year.csv format. __NCAA_Hoops_results_6_29_2017.csv__ is the complete results file for the 2016-17 season. __NCAA_Hoops_results_10_30_2017.csv__ gives the preseason schedule for the 2017-18 season.
+* __Results/:__ Complete NCAA Basketball schedule/results through a given date. Sub-directories indicate the year/season, with .csv files given in NCAA_Hoops_results_day_month_year.csv format. __NCAA_Hoops_results_6_29_2017.csv__ is the complete results file for the 2016-17 season. __NCAA_Hoops_results_10_30_2017.csv__ gives the preseason schedule for the 2017-18 season. There is also a folder of results for the 2015-16 season, with one .csv of results from the end of that season.
 * __html.py:__ Takes power ranking and bracketology .csv files and coverts them to the HTML seen in __html__ for use on the YUSAG Website.
