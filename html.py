@@ -117,22 +117,22 @@ output.close()
 
 ### Bracket
 i = 0
-html = "<table class= \"sortable\"><thead><tr><th>Seed Line</th><th>Overall Seed</th><th>Team</th><th>Conference</th><th>YUSAG Rank</th><th>RPI Rank</th><th>SOR Rank</th><th>Resume Rank</th><th>WAB Rank</th><th>Blend</th></tr></thead><tbody>"
+html = "<table class= \"sortable\"><thead><tr><th>Seed Line</th><th>Overall Seed</th><th>Team</th><th>Conference</th><th>YUSAG Rank</th><th>RPI Rank</th><th>SOR Rank</th><th>Resume Rank</th><th>WAB Rank</th><th>Blend</th><th>Predicted Seed</th></tr></thead><tbody>"
 with open('2.0_Files/Bracketology/bracket.csv', 'rU') as csvfile:
     rankings = csv.reader(csvfile, delimiter=',', quotechar='|', dialect = csv.excel_tab)
     for row in rankings:
         i += 1
         if i > 1:
             html += "<tr><td>"
-            html += row[16]  
+            html += row[17]  
             html += "</td><td>"
-            html += row[15]
+            html += row[16]
             html += "</td><td>"
-            if row[17] == "TRUE" and row[13] == "TRUE":
+            if row[18] == "TRUE" and row[13] == "TRUE":
                 html += "<i><b>" + row[0].replace('"', '') + "</b></i>"
             elif row[13] == "TRUE":
                 html += "<b>" + row[0].replace('"', '') + "</b>"
-            elif row[17] == "TRUE":
+            elif row[18] == "TRUE":
                 html += "<i>" + row[0].replace('"', '') + "</i>"
             else:
                 html += row[0].replace('"', '')
@@ -150,6 +150,8 @@ with open('2.0_Files/Bracketology/bracket.csv', 'rU') as csvfile:
             html += row[11]
             html += "</td><td>"
             html += epenthesize(row[12], 2)
+            html += "</td><td>"
+            html += epenthesize(row[15], 2)
             html += "</td></tr>"
 html += "</tbody></table>"
 
