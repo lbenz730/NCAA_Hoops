@@ -13,7 +13,7 @@ make_bracket <- function(tourney) {
                         "resume_rank" = rep(NA, 351),
                         "wab_rank" = rep(NA, 351),
                         "mid_major" = rep(NA, 351),
-                        "threshold_pen" = rep(NA, 351),
+                        "loss_bonus" = rep(NA, 351),
                         stringsAsFactors = F)
   
   ### Get Advanced Metric Ranks
@@ -46,7 +46,8 @@ make_bracket <- function(tourney) {
     bracket$mid_major[i] <- confs$mid_major[confs$team == teams[i]]
     bracket$wins[i] <- resumes$wins[resumes$team == teams[i]]
     bracket$losses[i] <- resumes$losses[resumes$team == teams[i]]
-    bracket$threshold_pen[i] <- resumes$wins[resumes$team == teams[i]] - resumes$losses[resumes$team == teams[i]] <= 5         
+    bracket$loss_bonus[i] <- resumes$losses[resumes$team == teams[i]] <= 4 &
+       bracket$conf[i] %in% c("Big 10", "Big 12", "Big East", "ACC", "Pac 12", "Big 12")
   }
   
   bracket$blend <- 0.25 * bracket$rpi_rank + 0.1 * bracket$wab_rank + 
@@ -54,8 +55,6 @@ make_bracket <- function(tourney) {
     2 * as.numeric(bracket$mid_major)
   bracket <- bracket[order(bracket$blend, decreasing = F),]
   
-  remove <- names(bracket) %in% c("mid_major", "threshold_pen", "wins", "losses")
-  bracket <- bracket[, !remove]
   autobid_calc <- function(conf) {
     tmp <- bracket$team[bracket$conf == conf]
     for(i in 1:length(tmp)) {
@@ -100,9 +99,11 @@ make_bracket <- function(tourney) {
     z <- rbind(z, read.csv("2.0_Files/Bracketology/historical/bracket_math_2016.csv", as.is = T))
     z <- z[!is.na(z$seed),]
     seed.rf <- randomForest(seed ~ yusag_rank + sor_rank + wab_rank + rpi_rank + resume_rank + mid_major
-                            + wins + losses, data = z)
+                            + wins + losses + loss_bonus, data = z, mtry = 3, nodesize = 1)
     bracket$pred_seed <- predict(seed.rf, newdata = bracket)
     bracket <- bracket[order(bracket$pred_seed, decreasing = F),]
+    remove <- names(bracket) %in% c("mid_major", "wins", "losses", "loss_bonus")
+    bracket <- bracket[, !remove]
     bracket$seed_overall <- 1:68
     bracket$seed_line <- c(rep(1,4), rep(2,4), rep(3,4), rep(4,4), rep(5,4),
                            rep(6,4), rep(7,4), rep(8,4), rep(9,4), rep(10,4),
