@@ -3,10 +3,10 @@ ncaa_sim <- function(nsims) {
   east11 <- c("St. Bonaventure", "UCLA")
   east16 <- c("LIU Brooklyn", "Radford")
   east <- c("Villanova", "Purdue", "Texas Tech", "Wichita St.", "West Virginia",
-            "Florida", "Arkansas", "Virgina Tech", "Alabama", "Butler", east11,
+            "Florida", "Arkansas", "Virginia Tech", "Alabama", "Butler", east11,
             "Murray St.", "Marshall", "SFA", "Cal St. Fullerton", east16)
   south <- c("Virginia", "Cincinnati", "Tennessee", "Arizona", "Kentucky",
-             "Miami", "Nevada", "Creighton", "Kansas St.", "Texas", "Loyola Chicago", 
+             "Miami (FL)", "Nevada", "Creighton", "Kansas St.", "Texas", "Loyola Chicago", 
              "Davidson", "Buffalo", "Wright St.", "Georgia St.", "UMBC")
   west16 <- c("N.C. Central", "Texas Southern")
   west <- c("Xavier", "North Carolina", "Michigan", "Gonzaga", "Ohio St.", "Houston",
