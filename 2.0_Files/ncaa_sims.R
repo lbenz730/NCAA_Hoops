@@ -110,7 +110,7 @@ ncaa_sim <- function(nsims) {
     final4$win_prob <- predict(glm.pointspread, newdata = final4, type = "response")
     ncg <- ifelse(runif(2) <= final4$win_prob, final4$team, final4$opponent)
     ncaa_sims$ncg[ncaa_sims$team %in% ncg] <- 
-      ncaa_sims$ncg[ncaa_sims$team %in% vec] + 100/nsims
+      ncaa_sims$ncg[ncaa_sims$team %in% ncg] + 100/nsims
     ncg <- data.frame("team" = ncg[1], 
                       "opponent" = ncg[2],
                       "location" = "N",
