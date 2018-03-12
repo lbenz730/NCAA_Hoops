@@ -1,7 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr)
 x <- read.csv("2.0_Files/Results/2016-17/NCAA_Hoops_Results_6_29_2017.csv", as.is = T)
-y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_3_10_2018.csv", as.is = T)
+y <- read.csv("2.0_Files/Results/2017-18/NCAA_Hoops_Results_3_11_2018.csv", as.is = T)
 mins <- read.csv("2.0_Files/Info/mins.csv", as.is = T)
 rec <- read.csv("2.0_Files/Info/recruiting.csv", as.is = T)
 transfers <- read.csv("2.0_Files/Info/transfers.csv", as.is = T)
@@ -14,6 +14,7 @@ source("2.0_Files/record_evaluator.R")
 source("2.0_Files/bracketology.R")
 source("2.0_Files/helpers.R")
 source("2.0_Files/tourney_sim.R")
+source("2.0_Files/ncaa_sims.R")
 ########################  Data Cleaning ########################################
 x <- x %>%
   mutate(season_id = "2016-17", game_id = NA, opp_game_id = NA, 
@@ -129,18 +130,13 @@ powranks <- pr_compute(by_conf = F)
 by_conf <- pr_compute(by_conf = T)
 yusag_plot(powranks)
 
-########################### Game Excitement Index ##############################
-for(i in 1:nrow(x)) {
-  x$GEI[i] <- compute_GEI(x[i,])
-}
-
-for(i in 1:nrow(y)) {
-  y$GEI[i] <- compute_GEI(y[i,])
-}
+########################### NCAA Sims ##############################
+ncaa_sims <- ncaa_sim(nsims = 10000)
+write.csv(ncaa_sims, "2.0_Files/Predictions/ncaa_sims.csv", row.names = F)
 
 ########################### Bracketology #######################################
-rpi <- rpi_compute(new = T)
-resumes <- get_resumes(new = T)
+rpi <- rpi_compute(new = F)
+resumes <- get_resumes(new = F)
 bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
@@ -184,4 +180,7 @@ apply(simresults, 2, mean)
 
 champs <- c("Lipscomb", "Radford", "Michigan", "Col. of Charleston", "Wright St.",
             "Iona", "Loyola Chicago", "LIU Brooklyn", "Murray St.", "Bucknell",
-            "UNCG", "South Dakota St.", "Gonzaga")
+            "UNCG", "South Dakota St.", "Gonzaga", "UMBC", "Virginia", "Kansas",
+            "New Mexico St.", "Villanova", "Arizona", "N.C. Central", "Buffalo",
+            "Texas Southern", "San Diego St.", "Montana", "Marshall", "SFA",
+            "Cal St. Fullerton", "Penn", "Kentucky", "Davidson")
