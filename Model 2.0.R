@@ -125,6 +125,15 @@ summary(glm.pointspread)
 y$wins[is.na(y$wins)] <- 
   round(predict(glm.pointspread, newdata = y[is.na(y$wins),], type = "response"), 3)
 
+y$date <- as.Date(paste(y$year, y$month, y$day, sep = "/"))
+curdate <- as.Date("2018/3/25")
+y$dist <- y$date - curdate
+preds <- read.csv("predictions.csv")
+preds$prediction_made_date <- as.Date(preds$prediction_made_date)
+preds$date <- as.Date(preds$date)
+z <- filter(y, dist >= 0, dist <= 3)
+z$prediction_made_date <- curdate
+write.csv(rbind(preds,z), "predictions.csv", row.names = F)
 ################################ Power Rankings ################################
 powranks <- pr_compute(by_conf = F)
 by_conf <- pr_compute(by_conf = T)
