@@ -8,12 +8,12 @@ month <- 1 + today$mon
 day <- today$mday
 
 # Year specific code
-code <- 12620
+code <- 12020
 
 # Stripwhite function 
 stripwhite <- function(x) gsub("\\s*$", "", gsub("^\\s*", "", x))
 
-url = "http://stats.ncaa.org/team/inst_team_list?academic_year=2018&conf_id=-1&division=1&sport_code=MBB"
+url = "http://stats.ncaa.org/team/inst_team_list?academic_year=2015&conf_id=-1&division=1&sport_code=MBB"
 x <- scan(url, what="", sep="\n")
 
 # Focus attention on lines containing the links 
@@ -116,6 +116,6 @@ z$opponent <- gsub("NC State", "North Carolina St.", z$opponent)
 z$team <- gsub("A&M-Corpus Christi", "A&M-Corpus Chris", z$team)
 z$opponent <- gsub("A&M-Corpus Christi", "A&M-Corpus Chris", z$opponent)
 
-write.csv(z, paste("2.0_Files/Results/2017-18/NCAA_Hoops_Results_", month, "_", 
+write.csv(z, paste("3.0_Files/Results/2018-19/NCAA_Hoops_Results_", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names=FALSE)
 
