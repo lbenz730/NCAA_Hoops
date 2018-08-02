@@ -63,28 +63,3 @@ if(year == 2018) {
 ### Save
 master <- master[order(master$composite_score, decreasing = T),]
 write.csv(master, paste0("247_rankings_", year, ".csv"), row.names = F)
-
-library(ggplot2)
-x <- read.csv("247_recruiting.csv", as.is = T)
-aac <- unique(filter(x, conf == "AAC") %>% pull(team))
-x$composite_score[x$composite_score < 0] <- 0
-x <- select(x, team, composite_score, year)
-x <- rbind(x, data.frame("team" = "Wichita State",
-                         "composite_score" = 45.35,
-                         "year" = 2015))
-
-x <- filter(x, team %in% aac, !is.na(composite_score))
-ggplot(x, aes(x = year, y = composite_score)) + facet_wrap(~team) +
-  geom_point(aes(col = team), size = 2) + 
-  geom_line(aes(col = team), group = 1, size = 1.1) + 
-  scale_color_manual(values = c("red3", "navy", "purple", "red",
-                                          "blue", "red", "red4", "springgreen3",
-                                          "blue", "wheat3", "darkgreen", "black"), 
-                    guide = F) + 
-  theme_bw() + labs(x = "Year", y = "247Sports Recruiting Score", title = 
-                      "Recruiting Trends for Current AAC Teams", subtitle = 
-                      "Data Source: 247Sports.com \nLuke Benz (@recspecs730)") + 
-  theme(axis.title = element_text(size = 14), plot.title = element_text(size = 16, hjust = 0.5),
-        plot.subtitle = element_text(size = 8), axis.text.x = element_text(angle = 90))
-
-                                          
