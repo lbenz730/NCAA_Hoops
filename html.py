@@ -15,8 +15,8 @@ def epenthesize(string, num):
 
 ### Power Rankings
 i = 0
-html = "<table class= \"sortable\"><thead><tr><th>Rank</th><th>Team</th><th>Conference</th><th>YUSAG Coefficient</th></tr></thead><tbody>"
-with open('2.0_Files/Power_Rankings/Powerrankings.csv', 'rU') as csvfile:
+html = "<table class= \"sortable\"><thead><tr><th>Rank</th><th>Team</th><th>Conference</th><th>YUSAG Coefficient</th><th>Off. Coefficient</th><th>Off. Rank</th><th>Def. Coefficient</th><th>Def. Rank</th></tr></thead><tbody>"
+with open('3.0_Files/Power_Rankings/power_rankings.csv', 'rU') as csvfile:
     rankings = csv.reader(csvfile, delimiter=',', quotechar='|', dialect = csv.excel_tab)
     for row in rankings:
         i += 1
@@ -29,6 +29,14 @@ with open('2.0_Files/Power_Rankings/Powerrankings.csv', 'rU') as csvfile:
             html +=  row[1].replace('"', '')
             html += "</td><td>"
             html += epenthesize(row[2], 2)
+            html += "</td><td>"
+            html += epenthesize(row[3], 2)
+            html += "</td><td>"
+            html +=  row[6].replace('"', '')
+            html += "</td><td>"
+            html += epenthesize(row[4], 2)
+            html += "</td><td>"
+            html +=  row[7].replace('"', '')
             html += "</td></tr>"
 html += "</tbody></table>"
 
