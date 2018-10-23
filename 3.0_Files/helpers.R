@@ -145,15 +145,39 @@ ivy_joy <- function(simresults) {
 }
 
 yusag_plot <- function(data){
-  data %>% mutate(group = reorder(Conference, YUSAG_Coefficient, median)) %>%
-    ggplot(aes(x = YUSAG_Coefficient, y = group, fill = ..x..)) + 
-    geom_density_ridges_gradient(scale = 3) + theme_ridges() +
+  data %>% mutate(group = reorder(conference, yusag_coeff, median)) %>%
+    ggplot(aes(x = yusag_coeff, y = group, fill = ..x..)) + 
+    geom_density_ridges_gradient(scale = 1.5) + theme_ridges() +
     scale_y_discrete(expand = c(0.01, 0)) + 
     scale_x_continuous(expand = c(0.01, 0)) +
-    theme(legend.position="none") +
     scale_fill_viridis(name = "group", option = "C") +
-    labs(y = "Conference", title = "NCAA Men's Basketball Power Rankings")
+    labs(y = "Conference", 
+         x = "Points Above Average Team",
+         title = "NCAA Men's Basketball Power Rankings") + 
+    theme(plot.title = element_text(size = 16, hjust = 0.5),
+          axis.title.y = element_text(size = 14, hjust = 0.5),
+          axis.title.x = element_text(size = 14, hjust = 0.5),
+          legend.position="none")
+  
 }
+
+box_plot <- function(data) {
+  data %>% mutate(group = reorder(conference, yusag_coeff, median)) %>%
+    ggplot(aes(y = yusag_coeff, x = group)) + 
+    geom_point(alpha = 0.2) + 
+    geom_boxplot(fill  = "orange", alpha = 0.2) +
+    geom_hline(yintercept = 0, lty = 2, size = 1.2, col = "orange") + 
+    labs(x = "Conference", 
+         y = "Points Above Average Team",
+         title = "NCAA Men's Basketball Power Rankings") + 
+    theme_bw() + 
+    theme(plot.title = element_text(size = 16, hjust = 0.5),
+          axis.title.y = element_text(size = 14, hjust = 0.5),
+          axis.title.x = element_text(size = 14, hjust = 0.5),
+          axis.text.x = element_text(angle = 90),
+          legend.position="none")
+}
+
 
 yusag_plot_2 <- function(data, date){
   data %>% 
