@@ -3,6 +3,7 @@ library(dplyr)
 x <- read.csv("3.0_Files/Results/2017-18/NCAA_Hoops_Results_3_25_2018.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T)
+priors <- read.csv("3.0_Files/Info/prior.csv", as.is = T)
 source("3.0_Files/powerrankings.R")
 source("3.0_Files/Ivy_Sims.R")
 source("3.0_Files/rpi.R")
@@ -14,9 +15,13 @@ source("3.0_Files/ncaa_sims.R")
 ########################  Data Cleaning ########################################
 x <- x %>%
   rename(team_score = teamscore, opp_score = oppscore) %>%
-  mutate(score_diff = team_score - opp_score,
+  mutate(date = as.Date(paste(year, month, day, sep = "-")),
+         score_diff = team_score - opp_score,
          season_id = "2017-18", game_id = NA, opp_game_id = NA, 
-         team_conf = NA, opp_conf = NA, conf_game = NA)
+         team_conf = NA, opp_conf = NA, conf_game = NA) %>%
+  select(date, team, opponent, location, team_score, opp_score,
+         score_diff, game_id, opp_game_id, team_conf, opp_conf,
+         year, month, day, season_id, D1, OT)
 
 teams <- unique(x$team)
 
@@ -54,9 +59,32 @@ for(i in 1:nrow(x)) {
   x$weights[i] <- 1/(1 + (0.5^(5 * rr)) * exp(-rr))
 }   
 
-
 ############################### Create Models ##################################
+### Current Season
 lm.hoops <- lm(score_diff ~ team + opponent + location, weights = weights, data = x) 
+lm.off <- lm(team_score ~ team + opponent + location, weights = weights, data = x) 
+lm.def <- lm(opp_score ~ team + opponent + location, weights = weights, data = x) 
+
+### Update With Pre-Season Priors
+priors <- mutate(priors, 
+                 rel_yusag_coeff = yusag_coeff - yusag_coeff[1],
+                 rel_off_coeff = off_coeff - off_coeff[1],
+                 rel_def_coeff = def_coeff - def_coeff[1])
+
+w <- sapply(teams, prior_weight)
+
+lm.hoops$coefficients[2:353] <- 
+  lm.hoops$coefficients[2:353] * w[-1] + priors$yusag_coeff[-1] * (1-w[-1])
+lm.hoops$coefficients[354:705] <- 
+  lm.hoops$coefficients[354:705] * w[-1] - priors$yusag_coeff[-1] * (1-w[-1])
+lm.off$coefficients[2:353] <- 
+  lm.off$coefficients[2:353] * w[-1] + priors$off_coeff[-1] * (1-w[-1])
+lm.off$coefficients[354:705] <- 
+  lm.off$coefficients[354:705] * w[-1] - priors$off_coeff[-1] * (1-w[-1])
+lm.def$coefficients[2:353] <- 
+  lm.def$coefficients[2:353] * w[-1] + priors$def_coeff[-1] * (1-w[-1])
+lm.def$coefficients[354:705] <- 
+  lm.def$coefficients[354:705] * w[-1] - priors$def_coeff[-1] * (1-w[-1])
 
 ######################## Point Spread to Win Percentage Model #################
 y$predscorediff <- round(predict(lm.hoops, newdata = y), 1)

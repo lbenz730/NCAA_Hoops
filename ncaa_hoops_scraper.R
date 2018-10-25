@@ -13,7 +13,7 @@ code <- 12020
 # Stripwhite function 
 stripwhite <- function(x) gsub("\\s*$", "", gsub("^\\s*", "", x))
 
-url = "http://stats.ncaa.org/team/inst_team_list?academic_year=2015&conf_id=-1&division=1&sport_code=MBB"
+url = "http://stats.ncaa.org/team/inst_team_list?academic_year=2019&conf_id=-1&division=1&sport_code=MBB"
 x <- scan(url, what="", sep="\n")
 
 # Focus attention on lines containing the links 
