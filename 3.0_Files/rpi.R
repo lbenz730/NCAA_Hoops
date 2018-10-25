@@ -1,4 +1,4 @@
-teams <- unique(y$team)
+teams <- unique(x$team)
 
 ### Compute team's winning percentage
 wp_compute <- function(team, team_iq) {
@@ -48,10 +48,10 @@ rpi_compute <- function(new) {
     }
     stats <- stats[order(stats$rpi, decreasing = T),]
     stats$rpi_rank <- 1:length(teams)
-    write.table(stats, "2.0_Files/Bracketology/rpi.csv", row.names = F, col.names = T, sep = ",")
+    write.table(stats, "3.0_Files/Bracketology/rpi.csv", row.names = F, col.names = T, sep = ",")
   }
   else{
-    stats <- read.csv("2.0_Files/Bracketology/rpi.csv", as.is = T)
+    stats <- read.csv("3.0_Files/Bracketology/rpi.csv", as.is = T)
   }
   return(stats)
 }
