@@ -8,12 +8,12 @@ month <- 1 + today$mon
 day <- today$mday
 
 # Year specific code
-code <- 12020
+code <- 12620
 
 # Stripwhite function 
 stripwhite <- function(x) gsub("\\s*$", "", gsub("^\\s*", "", x))
 
-url = "http://stats.ncaa.org/team/inst_team_list?academic_year=2019&conf_id=-1&division=1&sport_code=MBB"
+url = "http://stats.ncaa.org/team/inst_team_list?academic_year=2018&conf_id=-1&division=1&sport_code=MBB"
 x <- scan(url, what="", sep="\n")
 
 # Focus attention on lines containing the links 

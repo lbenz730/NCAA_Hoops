@@ -17,6 +17,7 @@ x <- x %>%
   rename(team_score = teamscore, opp_score = oppscore) %>%
   mutate(date = as.Date(paste(year, month, day, sep = "-")),
          score_diff = team_score - opp_score,
+         total_score = team_score + opp_score,
          season_id = "2017-18", game_id = NA, opp_game_id = NA, 
          team_conf = NA, opp_conf = NA, conf_game = NA) %>%
   select(date, team, opponent, location, team_score, opp_score,
@@ -42,8 +43,9 @@ for(i in 1:length(teams)) {
   x$team_conf[x$team == teams[i]] <- get_conf(teams[i])
   x$opp_conf[x$opponent == teams[i]] <- get_conf(teams[i])
 }
-
 x$conf_game <- x$team_conf == x$opp_conf
+
+### Reg Season
 for(i in 1:nrow(x)) {
   x$reg_season[i] <- reg_season(x$month[i], x$day[i], x$team_conf[i])
 }
