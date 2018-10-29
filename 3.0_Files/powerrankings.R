@@ -1,66 +1,58 @@
 pr_compute <- function(by_conf) {
-  avg <- mean(lm.hoops$coefficients[2:351])
-  opp_avg <- mean(lm.hoops$coefficients[352:701])
+  ### Avg to scale coefficintes to 0
+  avg <- mean(lm.hoops$coefficients[2:353], na.rm = T)
+  off_avg <-  mean(lm.off$coefficients[2:353], na.rm = T)
+  def_avg <- mean(lm.def$coefficients[2:353], na.rm = T)
   
-  powerrankings <- data.frame(Team = rep(NA, length(teams)),
-                              Conference = rep(NA, length(teams)),
-                              YUSAG_Coefficient = rep(NA, length(teams)))
-  powerrankings[1, ] <- c(teams[1], "Southland", lm.hoops$coefficients[1] - mean(avg, abs(opp_avg)))
+  ### Store Power Rankings Data Frame
+  power_rankings <- data.frame("team" = teams,
+                               "conference" = confs$conference)
   
-  
-  ### Get YUSAG Coefficients
-  for(i in 2:(length(teams))) {
-    teamcoef <- 
-      lm.hoops$coefficients[paste("team", teams[i], sep = "")] - mean(avg, abs(opp_avg))
-    opponentcoef <- 
-      lm.hoops$coefficients[paste("opponent", teams[i], sep = "")] + mean(avg, abs(opp_avg))
-    tmp <- c(teams[i], get_conf(teams[i]), round((teamcoef - opponentcoef)/2, 2))
-    powerrankings[i, ] <- tmp
-  }
-  powerrankings$YUSAG_Coefficient <- round(as.numeric(powerrankings$YUSAG_Coefficient),2)
+  power_rankings <- mutate(power_rankings,
+                           yusag_coeff = c(0, lm.hoops$coefficients[2:353]) - avg,
+                           off_coeff = c(0, lm.off$coefficients[2:353]) - off_avg,
+                           def_coeff = c(0, lm.def$coefficients[2:353]) - def_avg)
+  power_rankings <- 
+    arrange(power_rankings, desc(yusag_coeff)) %>%
+    mutate(rank = 1:353) %>%
+    arrange(desc(off_coeff)) %>%
+    mutate(off_rank = 1:353) %>%
+    arrange(desc(def_coeff)) %>%
+    mutate(def_rank = 1:353) %>%
+    arrange(desc(yusag_coeff))
   
   ### Return w/out sorting by conference
   if(!by_conf) {
-    powerrankings <- powerrankings[order(powerrankings$YUSAG_Coefficient, decreasing = T), ]
-    powerrankings$rank <- seq(1, 351, 1)
-    write.table(powerrankings, "2.0_Files/Power_Rankings/Powerrankings.csv", row.names = F, col.names = T, sep = ",")
-    return(powerrankings)
+    write.csv(power_rankings, "3.0_Files/Power_Rankings/Powerrankings.csv", row.names = F)
+    return(power_rankings)
   }
   else{
     ### Sort by conference
     conferences <- sort(unique(confs$conference))
     
-    summ <- data.frame(conf = conferences,
-                       mean = rep(NA, length(conferences)),
-                       median = rep(NA, length(conferences)),
-                       min = rep(NA, length(conferences)),
-                       max = rep(NA, length(conferences)),
-                       sd = rep(NA, length(conferences)))
-                       
-    summ$mean <- round(aggregate(YUSAG_Coefficient ~ Conference, data = powerrankings, mean)$YUSAG_Coefficient, 1)
-    summ$median <- round(aggregate(YUSAG_Coefficient ~ Conference, data = powerrankings, median)$YUSAG_Coefficient, 1)
-    summ$max <- round(aggregate(YUSAG_Coefficient ~ Conference, data = powerrankings, max)$YUSAG_Coefficient, 1)
-    summ$min <- round(aggregate(YUSAG_Coefficient ~ Conference, data = powerrankings, min)$YUSAG_Coefficient, 1)
-    summ$sd <- round(aggregate(YUSAG_Coefficient ~ Conference, data = powerrankings, sd)$YUSAG_Coefficient, 1)
-    summ <- summ[order(summ$median, decreasing = T), ]
-    write.table(summ, "2.0_Files/Power_Rankings/conf_summary.csv", row.names = F, col.names = T, sep = ",")
+    sum_stats <- 
+      group_by(power_rankings, conference) %>% 
+      summarise("mean" = mean(yusag_coeff),
+                "median" = median(yusag_coeff),
+                "min" = min(yusag_coeff),
+                "max" = max(yusag_coeff),
+                "sd" = sd(yusag_coeff)) %>%
+      arrange(desc(median))
+    
+    write.csv(sum_stats, "3.0_Files/Power_Rankings/conf_summary.csv", row.names = F)
     
     for(i in 1:length(conferences)) {
-      powerrankings <- powerrankings[order(powerrankings$YUSAG_Coefficient, decreasing = T), ]
-      powerrankings$rank <- seq(1, 351, 1)
-      tmp <- powerrankings[powerrankings$Conference == conferences[i], ]
-      tmp$Conference <- tmp$Conference 
-      tmp$info <- paste("(Conference Rank:  ", grep(conferences[i], summ$conf), ")", sep = "")
-      tmp <- tmp[order(tmp$YUSAG_Coefficient, decreasing = T), ]
-      tmp$Conference_Rank <- 1:nrow(tmp)
+      tmp <- filter(power_rankings, conference == conferences[i])
+      tmp$info <- paste0("(Conference Rank:  ", grep(conferences[i], sum_stats$conference), ")")
+      tmp$conference_rank <- 1:nrow(tmp)
       tmp$record <- NA
       tmp$conf_record <- NA
       for(j in 1:nrow(tmp)) {
-        wins <- round(sum(y$wins[y$team == tmp$Team[j] & y$reg_season]))
-        losses <- max(y$game_id[y$team == tmp$Team[j] & y$reg_season]) - wins
+        wins <- round(sum(x$wins[x$team == tmp$team[j] & x$reg_season]))
+        losses <- max(x$game_id[x$team == tmp$team[j] & x$reg_season]) - wins
         tmp$record[j] <- paste(wins, losses, sep = " - " )
-        conf_wins <- round(sum(y$wins[y$team == tmp$Team[j] & y$reg_season & y$conf_game]))
-        conf_losses <- length(y$wins[y$team == tmp$Team[j] & y$reg_season & y$conf_game]) - conf_wins
+        conf_wins <- round(sum(x$wins[x$team == tmp$team[j] & x$reg_season & x$conf_game]))
+        conf_losses <- length(x$wins[x$team == tmp$team[j] & x$reg_season & x$conf_game]) - conf_wins
         tmp$conf_record[j] <- paste(conf_wins, conf_losses, sep = " - " )
       }
       if(i > 1){
@@ -70,7 +62,7 @@ pr_compute <- function(by_conf) {
         pr <- tmp
       }
     }
-    write.table(pr, "2.0_Files/Power_Rankings/pr_by_conf.csv", row.names = F, col.names = T, sep = ",")
+    write.table(pr, "3.0_Files/Power_Rankings/pr_by_conf.csv", row.names = F)
     return(pr)
   }
 }
