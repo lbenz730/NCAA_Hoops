@@ -1,36 +1,26 @@
 ### Adapted from a file produced by Prof. Jay Emerson used in
 ### Introductory Data Analysis (STAT 230), Spring 2016
 
+library(dplyr)
+
 # Get date materials
 today <- unclass(as.POSIXlt(Sys.time()))
 year <- 1900 + today$year
 month <- 1 + today$mon
 day <- today$mday
 
-# Year specific code
-code <- 12620
-
 # Stripwhite function 
 stripwhite <- function(x) gsub("\\s*$", "", gsub("^\\s*", "", x))
 
-url = "http://stats.ncaa.org/team/inst_team_list?academic_year=2018&conf_id=-1&division=1&sport_code=MBB"
-x <- scan(url, what="", sep="\n")
-
-# Focus attention on lines containing the links 
-these <- grep(paste("/team/[0-9]*/", code, sep=""), x)
-x <- x[these]
-
-id <- as.numeric(gsub("^.*team/([0-9]*)/.*$", "\\1", x))
-name <- gsub("<[^<>]*>", "", x)
-name <- stripwhite(name)
-
-teamid <- data.frame(team=name, id=id, stringsAsFactors=FALSE)
-teamid$team <- gsub("&#x27;", "'", teamid$team)
-teamid$team <- gsub("&amp;", "&", teamid$team)
+### Read in ID's table
+teamid <- 
+  read.csv("3.0_Files/Info/conferences.csv", as.is = T) %>%
+  select(team, ncaa_id) %>%
+  arrange(team)
 
 ################################################################################
-baseurl <- paste('http://stats.ncaa.org/team/index/',
-                 code, '?org_id=', sep="")
+baseurl <- 'http://stats.ncaa.org/teams/'
+
 z <- NULL
 bad <- NULL
 #for (i in 1:2) {    # For testing purposes
@@ -40,7 +30,7 @@ for (i in 1:nrow(teamid)) {
   # Elegantly scan and handle hiccups:
   ct <- 0
   while (ct >= 0 && ct <= 5) {
-    x <- try(scan(paste(baseurl, teamid$id[i], sep=""),
+    x <- try(scan(paste(baseurl, teamid$ncaa_id[i], sep=""),
                   what="", sep="\n"))
     if (class(x) != "try-error") {
       ct <- -1
@@ -51,7 +41,7 @@ for (i in 1:nrow(teamid)) {
       ct <- ct + 1
       if (ct > 5) {
         warning("Big internet problem")
-        bad <- c(bad, teamid$id[i])
+        bad <- c(bad, teamid$ncaa_id[i])
       }
     }
   }
@@ -110,12 +100,7 @@ z$opponent <- stripwhite(z$opponent)
 z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team
 z <- z[z$D1 == 2,]
 
-### NC State vs. North Carolina St. Bug Fix
-z$team <- gsub("NC State", "North Carolina St.", z$team)
-z$opponent <- gsub("NC State", "North Carolina St.", z$opponent)
-z$team <- gsub("A&M-Corpus Christi", "A&M-Corpus Chris", z$team)
-z$opponent <- gsub("A&M-Corpus Christi", "A&M-Corpus Chris", z$opponent)
-
+### Save Results
 write.csv(z, paste("3.0_Files/Results/2018-19/NCAA_Hoops_Results_", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names=FALSE)
 
