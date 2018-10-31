@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2017-18/NCAA_Hoops_Results_3_25_2018.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_10_31_2018.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T)
 priors <- read.csv("3.0_Files/Info/prior.csv", as.is = T)
@@ -18,11 +18,13 @@ x <- x %>%
   mutate(date = as.Date(paste(year, month, day, sep = "-")),
          score_diff = team_score - opp_score,
          total_score = team_score + opp_score,
-         season_id = "2017-18", game_id = NA, opp_game_id = NA, 
+         season_id = "2018-19", game_id = NA, opp_game_id = NA, 
          team_conf = NA, opp_conf = NA, conf_game = NA) %>%
   select(date, team, opponent, location, team_score, opp_score,
          score_diff, game_id, opp_game_id, team_conf, opp_conf,
-         year, month, day, season_id, D1, OT)
+         year, month, day, season_id, D1, OT) %>% 
+  filter(D1 == 2)
+  
 
 teams <- unique(x$team)
 
@@ -90,9 +92,9 @@ lm.def$coefficients[354:705] <-
 
 ######################## Point Spread to Win Percentage Model #################
 y$predscorediff <- round(predict(lm.hoops, newdata = y), 1)
-y$wins[y$scorediff > 0] <- 1
-y$wins[y$scorediff < 0] <- 0
-glm.pointspread <- glm(wins ~ predscorediff, data = rbind(x,y), family=binomial) 
+y$wins[y$score_diff > 0] <- 1
+y$wins[y$score_diff < 0] <- 0
+glm.pointspread <- glm(wins ~ predscorediff, data = y, family=binomial) 
 summary(glm.pointspread)
 y$wins[is.na(y$wins)] <- 
   round(predict(glm.pointspread, newdata = y[is.na(y$wins),], type = "response"), 3)

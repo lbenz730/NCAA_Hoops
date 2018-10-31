@@ -98,7 +98,6 @@ for (i in 1:length(z$opponent[grep("@", z$opponent)])) {
 z$opponent <- stripwhite(z$opponent)
 
 z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team
-z <- z[z$D1 == 2,]
 
 ### Save Results
 write.csv(z, paste("3.0_Files/Results/2018-19/NCAA_Hoops_Results_", month, "_", 
