@@ -48,7 +48,7 @@ output.close()
 ### Power Rankings
 i = 0
 html = "<h2> Conference Summary Table </h2> <h4> (YUSAG Coefficients) </h4><table class= \"sortable\"><thead><tr><th>Ranking</th><th>Conference</th><th>Mean</th><th>Median</th><th>Min</th><th>Max</th><th>Std. Dev.</th></tr></thead><tbody>"
-with open('2.0_Files/Power_Rankings/conf_summary.csv', 'rU') as csvfile:
+with open('3.0_Files/Power_Rankings/conf_summary.csv', 'rU') as csvfile:
     rankings = csv.reader(csvfile, delimiter=',', quotechar='|', dialect = csv.excel_tab)
     for row in rankings:
         i += 1
@@ -72,27 +72,35 @@ with open('2.0_Files/Power_Rankings/conf_summary.csv', 'rU') as csvfile:
 csvfile.close()
 
 i = 0
-with open('2.0_Files/Power_Rankings/pr_by_conf.csv', 'rU') as csvfile:
+with open('3.0_Files/Power_Rankings/pr_by_conf.csv', 'rU') as csvfile:
     rankings = csv.reader(csvfile, delimiter=',', quotechar='|', dialect = csv.excel_tab)
     for row in rankings:
         i += 1
         if i > 1:
             if prev_row[1] != row[1]:
                 html += "</tbody></table><p><h2>" 
-                html += row[1].replace('"', '') + "</h2><h4>" + row[4].replace('"', '') + "</h4></p><table class= \"sortable\"><thead><tr><th>Rank</th><th>Team</th><th>YUSAG Coefficient</th><th>Overall Rank</th><th>Projected Record</th><th>Projected Conference Record</th></tr></thead><tbody>"
+                html += row[1].replace('"', '') + "</h2><h4>" + row[8].replace('"', '') + "</h4></p><table class= \"sortable\"><thead><tr><th>Rank</th><th>Team</th><th>YUSAG Coefficient</th><th>Overall Rank</th><th>Off. Coefficient</th><th>Off. Rank</th><th>Def. Coefficient</th><th>Def. Rank</th><th>Projected Record</th><th>Projected Conference Record</th></tr></thead><tbody>"
 
             html += "<tr><td>"
-            html += row[5]
+            html += row[9]
             html += "</td><td>"
             html += row[0].replace('"', '')
             html += "</td><td>"
             html += epenthesize(row[2], 2)
             html += "</td><td>"
-            html += row[3]
+            html += row[5]
             html += "</td><td>"
-            html += row[6].replace('"', '')
+            html += epenthesize(row[3], 2)
             html += "</td><td>"
-            html += row[7].replace('"', '')
+            html += row[6]
+            html += "</td><td>"
+            html += epenthesize(row[4], 2)
+            html += "</td><td>"
+            html += row[7]
+            html += "</td><td>"
+            html += row[10].replace('"', '')
+            html += "</td><td>"
+            html += row[11].replace('"', '')
             html += "</td></tr>"
 
         prev_row = row
@@ -105,7 +113,7 @@ output.close()
 ### Bids
 i = 0
 html = "<table class= \"sortable\"><thead><tr><th>Conference</th><th>Bids</th><tbody>"
-with open('2.0_Files/Bracketology/bids.csv', 'rU') as csvfile:
+with open('3.0_Files/Bracketology/bids.csv', 'rU') as csvfile:
     rankings = csv.reader(csvfile, delimiter=',', quotechar='|', dialect = csv.excel_tab)
     for row in rankings:
         i += 1
@@ -126,7 +134,7 @@ output.close()
 ### Bracket
 i = 0
 html = "<table class= \"sortable\"><thead><tr><th>Seed Line</th><th>Overall Seed</th><th>Team</th><th>Conference</th><th>YUSAG Rank</th><th>RPI Rank</th><th>SOR Rank</th><th>Resume Rank</th><th>WAB Rank</th><th>Blend</th><th>Predicted Seed</th></tr></thead><tbody>"
-with open('2.0_Files/Bracketology/bracket.csv', 'rU') as csvfile:
+with open('3.0_Files/Bracketology/bracket.csv', 'rU') as csvfile:
     rankings = csv.reader(csvfile, delimiter=',', quotechar='|', dialect = csv.excel_tab)
     for row in rankings:
         i += 1
@@ -171,7 +179,7 @@ output.close()
 ### First 16 Out
 i = 0
 html = "<table class= \"sortable\"><thead><tr><th>Overall Seed</th><th>Team</th><th>Conference</th><th>YUSAG Rank</th><th>RPI Rank</th><th>SOR Rank</th><th>Resume Rank</th><th>WAB Rank</th><th>Blend</th></tr></thead><tbody>"
-with open('2.0_Files/Bracketology/bubble.csv', 'rU') as csvfile:
+with open('3.0_Files/Bracketology/bubble.csv', 'rU') as csvfile:
     rankings = csv.reader(csvfile, delimiter=',', quotechar='|', dialect = csv.excel_tab)
     for row in rankings:
         i += 1
@@ -206,7 +214,7 @@ output.close()
 ### Bracketmath
 i = 0
 html = "<table class= \"sortable\"><thead><tr><th>Tourney Rank</th><th>Team</th><th>Conference</th><th>YUSAG Coefficient</th><th>YUSAG Rank</th><th>RPI</th><th>RPI Rank</th><th>SOR</th><th>SOR Rank</th><th>Quality of Resume</th><th>Resume Rank</th><th>WAB</th><th>WAB Rank</th><th>Blend</th></tr></thead><tbody>"
-with open('2.0_Files/Bracketology/bracket_math.csv', 'rU') as csvfile:
+with open('3.0_Files/Bracketology/bracket_math.csv', 'rU') as csvfile:
     rankings = csv.reader(csvfile, delimiter=',', quotechar='|', dialect = csv.excel_tab)
     for row in rankings:
         i += 1
