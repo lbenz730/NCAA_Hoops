@@ -23,7 +23,7 @@ pr_compute <- function(by_conf) {
   
   ### Return w/out sorting by conference
   if(!by_conf) {
-    write.csv(power_rankings, "3.0_Files/Power_Rankings/Powerrankings.csv", row.names = F)
+    write.csv(power_rankings, "3.0_Files/Power_Rankings/power_rankings.csv", row.names = F)
     return(power_rankings)
   }
   else{
