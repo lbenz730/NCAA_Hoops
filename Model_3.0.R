@@ -54,7 +54,6 @@ x <- inner_join(x, deadlines, by = c("team_conf" = "conf")) %>%
   mutate(reg_season = date < deadline) %>%
   select(-deadline)
 
-
 ################################# Set Weights ##################################
 x$weights <- 0
 for(i in 1:nrow(x)) {
@@ -80,16 +79,6 @@ priors <- mutate(priors,
   arrange(team)
 
 w <- sapply(teams, prior_weight)
-
-bye <- c(setdiff(names(lm.hoops$coefficients[2:351]), paste0("team", teams[-1])),
-         setdiff(names(lm.hoops$coefficients[352:701]), paste0("opponent", teams[-1])))
-add <- c(setdiff(paste0("team", teams[-1]), names(lm.hoops$coefficients[2:351])),
-         setdiff(paste0("opponent", teams[-1]), names(lm.hoops$coefficients[352:701])))
-lm.hoops$coefficients <- lm.hoops$coefficients[!(names(lm.hoops$coefficients) %in% bye)]
-lm.hoops$coefficients[add] <- 0
-
-lm.hoops$coefficients <- lm.hoops$coefficients[c(1, 1 + order(names(lm.hoops$coefficients[-1])))]
-lm.hoops$coefficients <- lm.hoops$coefficients[c(1, 356:707, 4:355, 2, 3)]
 
 lm.hoops$coefficients[2:353] <- 
   lm.hoops$coefficients[2:353] * w[-1] + priors$yusag_coeff[-1] * (1-w[-1])

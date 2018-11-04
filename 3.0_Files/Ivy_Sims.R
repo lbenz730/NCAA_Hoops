@@ -45,7 +45,7 @@ palestra.sim <- function(teams) {
 ################################### IVY SIMS ##################################
 ### Simulates Ivy League Regular Season
 ivy.sim <- function(nsims) {
-  games <- x[x$location == "H" & x$team_conf == "Ivy" & y$conf_game & y$reg_season, ]
+  games <- x[x$location == "H" & x$team_conf == "Ivy" & x$conf_game & x$reg_season, ]
   ivy <- unique(x$team[x$team_conf == "Ivy"])
   champ <- rep(NA, nsims)
   

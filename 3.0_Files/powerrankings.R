@@ -24,6 +24,14 @@ pr_compute <- function(by_conf) {
   ### Return w/out sorting by conference
   if(!by_conf) {
     write.csv(power_rankings, "3.0_Files/Power_Rankings/power_rankings.csv", row.names = F)
+    history <- read.csv("3.0_Files/History/history.csv", as.is = T)
+    today <- unclass(as.POSIXlt(Sys.time()))
+    year <- 1900 + today$year
+    month <- 1 + today$mon
+    day <- today$mday
+    today <- as.Date(paste(year, month, day, sep = "-"))
+    bind_rows(history, mutate(power_rankings, date = today))
+    write.csv(history, "3.0_Files/History/history.csv", row.names = F)
     return(power_rankings)
   }
   else{
