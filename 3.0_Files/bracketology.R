@@ -1,44 +1,42 @@
 library(randomForest)
 make_bracket <- function(tourney) {
   bracket <- data.frame("team" = teams,
-                        "conf" = rep(NA, 351),
-                        "yusag_coeff" = rep(NA, 351),
-                        "rpi" = rep(NA, 351),
-                        "sor" = rep(NA, 351),
-                        "wab" = rep(NA, 351),
-                        "qual_bonus" = rep(NA, 351),
-                        "yusag_rank" = rep(NA, 351),
-                        "rpi_rank" = rep(NA, 351),
-                        "sor_rank" = rep(NA, 351),
-                        "resume_rank" = rep(NA, 351),
-                        "wab_rank" = rep(NA, 351),
-                        "mid_major" = rep(NA, 351),
-                        "loss_bonus" = rep(NA, 351),
+                        "conf" = rep(NA, 353),
+                        "yusag_coeff" = rep(NA, 353),
+                        "rpi" = rep(NA, 353),
+                        "sor" = rep(NA, 353),
+                        "wab" = rep(NA, 353),
+                        "qual_bonus" = rep(NA, 353),
+                        "yusag_rank" = rep(NA, 353),
+                        "rpi_rank" = rep(NA, 353),
+                        "sor_rank" = rep(NA, 353),
+                        "resume_rank" = rep(NA, 353),
+                        "wab_rank" = rep(NA, 353),
+                        "mid_major" = rep(NA, 353),
+                        "loss_bonus" = rep(NA, 353),
                         stringsAsFactors = F)
   
   ### Get Advanced Metric Ranks
-  rpi <- rpi[order(rpi$rpi, decreasing = T),]
-  rpi$rank <- 1:351
+  rpi <- arrange(rpi, desc(rpi)) %>% 
+    mutate(rank = 1:353)
   
-  resumes <- resumes[order(resumes$sor, decreasing = T),]
-  resumes$sor_rank <- 1:351
-  
-  resumes <- resumes[order(resumes$wab, decreasing = T),]
-  resumes$wab_rank <- 1:351
-  
-  resumes <- resumes[order(resumes$qual_bonus, decreasing = T),]
-  resumes$resume_rank <- 1:351
-  
-  
+  resumes <- 
+    arrange(resumes, desc(sor)) %>%
+    mutate(sor_rank = 1:353) %>%
+    arrange(desc(wab)) %>%
+    mutate(wab_rank = 1:353) %>%
+    arrange(desc(qual_bonus)) %>%
+    mutate(resume_rank = 1:353)
+
   
   for(i in 1:length(teams)) {
-    bracket$yusag_coeff[i] <- powranks$YUSAG_Coefficient[powranks$Team == teams[i]]
+    bracket$yusag_coeff[i] <- power_rankings$yusag_coeff[power_rankings$team == teams[i]]
     bracket$conf[i] <- get_conf(teams[i])
     bracket$rpi[i] <- rpi$rpi[rpi$team == teams[i]]
     bracket$sor[i] <- resumes$sor[resumes$team == teams[i]]
     bracket$wab[i] <- resumes$wab[resumes$team == teams[i]]
     bracket$qual_bonus[i] <- resumes$qual_bonus[resumes$team == teams[i]]
-    bracket$yusag_rank[i] <- powranks$rank[powranks$Team == teams[i]]
+    bracket$yusag_rank[i] <- power_rankings$rank[power_rankings$team == teams[i]]
     bracket$rpi_rank[i] <- rpi$rank[rpi$team == teams[i]]
     bracket$sor_rank[i] <- resumes$sor_rank[resumes$team == teams[i]]
     bracket$wab_rank[i] <- resumes$wab_rank[resumes$team == teams[i]]  
@@ -53,7 +51,8 @@ make_bracket <- function(tourney) {
   bracket$blend <- 0.25 * bracket$rpi_rank + 0.1 * bracket$wab_rank + 
     0.1 * bracket$sor_rank + 0.1 * bracket$yusag_rank + 0.45 * bracket$resume_rank +  
     2 * as.numeric(bracket$mid_major)
-  bracket <- bracket[order(bracket$blend, decreasing = F),]
+  
+  bracket <- arrange(bracket, desc(yusag_coeff))
   
   autobid_calc <- function(conf) {
     tmp <- bracket$team[bracket$conf == conf]
@@ -75,6 +74,18 @@ make_bracket <- function(tourney) {
     bracket$autobid <- is.element(bracket$team, autobids)
     
     ### Get At-Large bids
+    bracket_math <- 
+      read.csv("3.0_Files/Bracketology/historical/bracket_math_2016.csv", as.is = T) %>%
+      bind_rows(read.csv("3.0_Files/Bracketology/historical/bracket_math_2017.csv", as.is = T)) %>%
+      bind_rows(read.csv("3.0_Files/Bracketology/historical/bracket_math_2018.csv", as.is = T))
+    
+    bracket_math$bid <- !(is.na(bracket_math$seed))
+    glm.madness <- glm(bid ~ rpi + sor + blend + qual_bonus, 
+                       data = bracket_math, family = "binomial")
+    bracket$odds <- 
+      predict(glm.madness, newdata = bracket_math, type = "response")
+    bracket <- arrange(bracket, desc(odds))
+    
     tmp <- bracket[!bracket$autobid, ]
     j <- 1
     z <- 1
@@ -92,18 +103,8 @@ make_bracket <- function(tourney) {
     
     ### Write Bracket    
     bracket$atlarge <- is.element(bracket$team, atlarge)
-    bracket <-rbind(bracket[bracket$autobid,], bracket[bracket$atlarge,])
-    
-    ### Seed Teams 
-    z <- read.csv("2.0_Files/Bracketology/historical/bracket_math_2017.csv", as.is = T)
-    z <- rbind(z, read.csv("2.0_Files/Bracketology/historical/bracket_math_2016.csv", as.is = T))
-    z <- z[!is.na(z$seed),]
-    seed.rf <- randomForest(seed ~ yusag_rank + sor_rank + wab_rank + rpi_rank + resume_rank + mid_major
-                            + wins + losses + loss_bonus, data = z, mtry = 3, nodesize = 1)
-    bracket$pred_seed <- predict(seed.rf, newdata = bracket)
-    bracket <- bracket[order(bracket$pred_seed, decreasing = F),]
-    remove <- names(bracket) %in% c("mid_major", "wins", "losses", "loss_bonus")
-    bracket <- bracket[, !remove]
+    bracket <- rbind(bracket[bracket$autobid,], bracket[bracket$atlarge,])
+    bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus)
     bracket$seed_overall <- 1:68
     bracket$seed_line <- c(rep(1,4), rep(2,4), rep(3,4), rep(4,4), rep(5,4),
                            rep(6,4), rep(7,4), rep(8,4), rep(9,4), rep(10,4),
@@ -111,7 +112,7 @@ make_bracket <- function(tourney) {
                            rep(16,6))
     f4 <- bracket$seed_overall[!bracket$autobid][33:36]
     bracket$first4 <- is.element(bracket$seed_overall, f4) | is.element(bracket$seed_overall, c(65:68))
-    write.table(bracket, "2.0_Files/Bracketology/bracket.csv", row.names = F, col.names = T, sep = ",")
+    write.csv(bracket, "3.0_Files/Bracketology/bracket.csv", row.names = F)
     
     ### First teams out
     j <- 37
@@ -128,19 +129,18 @@ make_bracket <- function(tourney) {
       }
     }
     bubble <- tmp[is.element(tmp$team, bubble),]
-    write.table(bubble, "2.0_Files/Bracketology/bubble.csv", row.names = F, col.names = T, sep = ",")
-
+    write.csv(bubble, "3.0_Files/Bracketology/bubble.csv", row.names = F)
+    
     ### Bid Summary by Conference
-    tmp <- bracket
-    tmp$bid <- 1
-    bids <- as.data.frame(aggregate(bid ~ conf, data = tmp, sum))
-    bids <- bids[order(bids$bid, decreasing = T),]
-    write.table(bids, "2.0_Files/Bracketology/bids.csv", row.names = F, col.names = T, sep = ",")
+    group_by(bracket, conference) %>%
+      summarise("n_bid" = n()) %>%
+      arrange(desc(n_bid))
+    write.csv(bids, "3.0_Files/Bracketology/bids.csv", row.names = F)
     
     return(bracket)
   }
   else{
-    write.table(bracket, "2.0_Files/Bracketology/bracket_math.csv", row.names = F, col.names = T, sep = ",")
+    write.csv(bracket, "3.0_Files/Bracketology/bracket_math.csv", row.names = F)
     return(bracket)
   }
 }

@@ -18,7 +18,7 @@ palestra.sim <- function(teams) {
     tmp$location[2] <- "V"
   }
   
-  tmp$predscorediff <- predict(lm.hoops, newdata = tmp)
+  tmp$pred_score_diff <- predict(lm.hoops, newdata = tmp)
   tmp$winprob <- predict(glm.pointspread, newdata = tmp, type = "response")
   
   ### Sim Semifinals
@@ -32,7 +32,7 @@ palestra.sim <- function(teams) {
     tmp$location[3] <- "V"
   }
   
-  tmp$predscorediff <- predict(lm.hoops, newdata = tmp)
+  tmp$pred_score_diff <- predict(lm.hoops, newdata = tmp)
   tmp$winprob <- predict(glm.pointspread, newdata = tmp, type = "response")
   
   # Final
@@ -45,8 +45,8 @@ palestra.sim <- function(teams) {
 ################################### IVY SIMS ##################################
 ### Simulates Ivy League Regular Season
 ivy.sim <- function(nsims) {
-  games <- y[y$location == "H" & y$team_conf == "Ivy" & y$conf_game & y$reg_season, ]
-  ivy <- unique(y$team[y$team_conf == "Ivy"])
+  games <- x[x$location == "H" & x$team_conf == "Ivy" & y$conf_game & y$reg_season, ]
+  ivy <- unique(x$team[x$team_conf == "Ivy"])
   champ <- rep(NA, nsims)
   
   # Data Frame to Hold Team Wins by Sim
@@ -161,9 +161,9 @@ ivy.sim <- function(nsims) {
         }
         
         # Tiebreak 3 (Analytics)
-        tmp <- powranks[is.element(powranks$Team, teams),]
-        tmp <- tmp[order(tmp$Team),]
-        winner <- tmp$Team[grep(max(tmp$YUSAG_Coefficient), tmp$YUSAG_Coefficient)]
+        tmp <- power_rankingss[is.element(power_rankings$team, teams),]
+        tmp <- tmp[order(tmp$team),]
+        winner <- tmp$Team[grep(max(tmp$yusag_coeff), tmp$yusag_coeff)]
         winnerID <- c(1:8)[ivy == winner]
         # Winner wins tie-break
         simresults[j, winnerID] <- simresults[j, winnerID] + 0.1 * tie
@@ -180,7 +180,7 @@ ivy.sim <- function(nsims) {
   }
   
   ### store playoff odds
-  playoffs <- data.frame(Team = ivy,
+  playoffs <- data.frame(team = ivy,
                          auto_bid = rep(NA, length(ivy)),
                          playoff_prob = rep(NA, length(ivy)),
                          seed1_prob = rep(NA, length(ivy)),
@@ -197,19 +197,18 @@ ivy.sim <- function(nsims) {
     playoffs$seed4_prob[i] <- round(sum(prebreak.pos[,i] == 4)/nsims * 100, 1)
     playoffs$playoff_prob[i] <- sum(playoffs[i,4:7], na.rm = T)
   }
-  write.table(playoffs, "2.0_Files/Predictions/playoffs.csv", row.names = F, col.names = T, sep = ",")
+  write.csv(playoffs, "3.0_Files/Predictions/playoffs.csv", row.names = F)
   return(playoffs)
 }
 
 ############################ Playoff Swing Factor ##############################
 ### compute playoff swing factor (leverage) of each game
-psf <- function(nsims, year, months, days) {
-  tochange <- y[y$year == year & (paste(y$month, y$day, sep = "_") == paste(months[1], days[1], sep = "_") | 
-                                    paste(y$month, y$day, sep = "_") == paste(months[2], days[2], sep = "_")) &
-                  y$team_conf == "Ivy" & y$location == "H" & y$conf_game,]
+psf <- function(nsims, year, min_date, max_date) {
+  tochange <- filter(x, date >= min_date, data <= max_date, team_conf == "Ivy",
+                     conf_game, location == "H")
   
-  games <- y[y$location == "H" & y$team_conf == "Ivy" & y$conf_game & y$reg_season, ]
-  ivy <- unique(y$team[y$team_conf == "Ivy"])
+  games <- x[x$location == "H" & x$team_conf == "Ivy" & x$conf_game & x$reg_season, ]
+  ivy <- unique(x$team[x$team_conf == "Ivy"])
   
   # Data Frame to Hold Team Wins by Sim
   simresults <- as.data.frame(matrix(nrow = nsims, ncol = length(ivy), byrow = T))
@@ -346,9 +345,9 @@ psf <- function(nsims, year, months, days) {
           }
           
           # Tiebreak 3 (Analytics)
-          tmp <- powranks[is.element(powranks$Team, teams),]
-          tmp <- tmp[order(tmp$Team),]
-          winner <- tmp$Team[grep(max(tmp$YUSAG_Coefficient), tmp$YUSAG_Coefficient)]
+          tmp <- power_rankings[is.element(power_rankings$team, teams),]
+          tmp <- tmp[order(tmp$team),]
+          winner <- tmp$Team[grep(max(tmp$yusag_coeff), tmp$yusag_coeff)]
           winnerID <- c(1:8)[ivy == winner]
           # Winner wins tie-break
           simresults[j, winnerID] <- simresults[j, winnerID] + 0.1 * tie
@@ -399,14 +398,14 @@ psf <- function(nsims, year, months, days) {
       swingfactor$auto_bid_sf[k/2] <- sum(abs(simplayoffs$auto_bid_2 - simplayoffs$auto_bid_1))
     }
   }
-  write.table(swingfactor, "2.0_Files/Predictions/psf.csv", row.names = F, col.names = T, sep = ",")
+  write.csv(swingfactor, "3.0_Files/Predictions/psf.csv", row.names = F)
   return(swingfactor)
 }
 
 
 fast.sim <- function(nsims) {
-  games <- y[y$location == "H" & y$team_conf == "Ivy" & y$conf_game & y$reg_season, ]
-  ivy <- unique(y$team[y$team_conf == "Ivy"])
+  games <- x[x$location == "H" & x$team_conf == "Ivy" & x$conf_game & x$reg_season, ]
+  ivy <- unique(x$team[x$team_conf == "Ivy"])
   
   # Data Frame to Hold Team Wins by Sim
   simresults <- as.data.frame(matrix(nrow = nsims, ncol = length(ivy), byrow = T))

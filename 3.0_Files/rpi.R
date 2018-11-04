@@ -2,7 +2,7 @@ teams <- unique(x$team)
 
 ### Compute team's winning percentage
 wp_compute <- function(team, team_iq) {
-  games <- y[y$team == team & y$opponent != team_iq,]
+  games <- x[x$team == team & x$opponent != team_iq,]
   wwins <- sum(1.3 * games$win[games$location == "V"]) + 
     sum(0.7 * games$win[games$location == "H"]) +
     sum(games$win[games$location == "N"])
@@ -15,14 +15,14 @@ wp_compute <- function(team, team_iq) {
 
 ### Compute team's opponent winning percentage
 owp_compute <- function(team) {
-  opponents <- y$opponent[y$team == team]
-  owp <- apply(as.data.frame(opponents), 1, wp_compute, team_iq = team)
+  opponents <- x$opponent[x$team == team]
+  owp <- sapply(opponents, wp_compute, team_iq = team)
   return(mean(owp))
 }
 
 ### Compute team's opponent's opponent winning percentage
 oowp_compute <- function(team) {
-  opponents <- y$opponent[y$team == team]
+  opponents <- x$opponent[x$team == team]
   oowp <- rep(0, length(opponents))
   for(i in 1:length(opponents)) {
     oowp[i] <- owp_compute(opponents[i])

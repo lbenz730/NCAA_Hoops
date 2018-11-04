@@ -6,7 +6,7 @@ pr_compute <- function(by_conf) {
   
   ### Store Power Rankings Data Frame
   power_rankings <- data.frame("team" = teams,
-                               "conference" = confs$conference)
+                               "conference" = sapply(teams, get_conf))
   
   power_rankings <- mutate(power_rankings,
                            yusag_coeff = c(0, lm.hoops$coefficients[2:353]) - avg,

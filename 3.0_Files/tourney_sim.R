@@ -16,7 +16,7 @@ tourney_sim  <- function(teams, seeds, byes, double_byes, hca, nsims) {
                         "location" = rep(NA, n-1),
                         "team_seed" = rep(NA, n-1),
                         "opp_seed" = rep(NA, n-1),
-                        "predscorediff" = rep(NA, n-1),
+                        "pred_score_diff" = rep(NA, n-1),
                         "win_prob" = rep(NA, n-1),
                         "winner" = rep(NA, n-1))
     game_count <- 0
@@ -60,7 +60,7 @@ tourney_sim  <- function(teams, seeds, byes, double_byes, hca, nsims) {
       games$opp_seed[next_round[-(1:length(cur_round))]] <- seeds[sort(left[((length(left)/2) + 1):length(left)], decreasing = T)]
 
       ### Sim Any Non-Bye Games
-      games$predscorediff[cur_round] <- predict(lm.hoops, newdata = games[cur_round,])
+      games$pred_score_diff[cur_round] <- predict(lm.hoops, newdata = games[cur_round,])
       games$win_prob[cur_round] <- predict(glm.pointspread, newdata = games[cur_round,] , type = "response")
       games$winner[cur_round] <- ifelse(games$win_prob[cur_round] >= runif(length(cur_round)), games$team[cur_round],
                                         games$opponent[cur_round])
@@ -98,7 +98,7 @@ tourney_sim  <- function(teams, seeds, byes, double_byes, hca, nsims) {
         }
       }
       
-      games$predscorediff[cur_round] <- predict(lm.hoops, newdata = games[cur_round,])
+      games$pred_score_diff[cur_round] <- predict(lm.hoops, newdata = games[cur_round,])
       games$win_prob[cur_round] <- predict(glm.pointspread, newdata = games[cur_round,] , type = "response")
       games$winner[cur_round] <- ifelse(games$win_prob[cur_round] >= runif(length(cur_round)), games$team[cur_round],
                                         games$opponent[cur_round])
@@ -134,7 +134,7 @@ tourney_sim  <- function(teams, seeds, byes, double_byes, hca, nsims) {
       }
       
       
-      games$predscorediff[cur_round] <- predict(lm.hoops, newdata = games[cur_round,])
+      games$pred_score_diff[cur_round] <- predict(lm.hoops, newdata = games[cur_round,])
       games$win_prob[cur_round] <- predict(glm.pointspread, newdata = games[cur_round,] , type = "response")
       games$winner[cur_round] <- ifelse(games$win_prob[cur_round] >= runif(length(cur_round)), games$team[cur_round],
                                         games$opponent[cur_round])

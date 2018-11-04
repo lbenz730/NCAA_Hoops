@@ -1,6 +1,6 @@
 record_eval <- function(team) {
   ### Get Team's games
-  games <- y[y$team == team,]
+  games <- x[x$team == team,]
   
   ### Opponent's RPI Ranks
   games$opp_rank <- NA
@@ -47,22 +47,22 @@ record_eval <- function(team) {
     tierAl - 2 * tierBl - 8 * tierCl - 16 * tierDl
   
   ### Compute Strength of Record
-  test <- powranks$Team[1:25]
+  test <- power_rankings$team[1:25]
   sor <- rep(0, 25)
   for(j in 1:length(sor)) {
     data <- games
     data$team <- test[j]
-    data$predscorediff <- round(predict(lm.hoops, newdata = data), 1)
+    data$pred_score_diff <- round(predict(lm.hoops, newdata = data), 1)
     data$wins <- 
       round(predict.glm(glm.pointspread, newdata = data, type = "response"), 3)
     sor[j] <- sum(games$wins) - sum(data$wins)
   }
   
   ### Compute Wins Above Bubble (Ignore eligibity)
-  autobids <- by_conf$Team[by_conf$Conference_Rank == 1]
-  atlarge <- powranks[!is.element(powranks$Team, autobids),]
+  autobids <- by_conf$team[by_conf$conference_rank == 1]
+  atlarge <- power_rankings[!is.element(power_rankings$team, autobids),]
   
-  bubble <- atlarge$Team[32:40]
+  bubble <- atlarge$team[32:40]
   wab <- rep(0, length(bubble))
   for(j in 1:length(bubble)) {
     data <- games
@@ -98,10 +98,10 @@ get_resumes <- function(new){
       tmp$wins[i] <- rec_eval$wins
       tmp$losses[i] <- rec_eval$losses
     }
-    write.table(tmp, "2.0_Files/Bracketology/resumes.csv", row.names = F, col.names = T, sep = ",")
+    write.csv(tmp, "3.0_Files/Bracketology/resumes.csv", row.names = F)
   }
   else{
-    tmp <- read.csv("2.0_Files/Bracketology/resumes.csv", as.is = T)
+    tmp <- read.csv("3.0_Files/Bracketology/resumes.csv", as.is = T)
   }
   return(tmp)
 }
