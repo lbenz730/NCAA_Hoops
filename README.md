@@ -1,5 +1,5 @@
 # NCAA_Hoops
-__Model_2.0.R:__ Control panel for everything NCAA Hoops related that I do for the [Yale Undergraduate Sports Analytics Group](http://sports.sites.yale.edu) (YUSAG). Everything is controlled with this script, including creating the prediction model, making the [YUSAG Bracket](http://sports.sites.yale.edu/yusag-bracketology), and simulating Ivy League games. Note that large chunks of code are commented out. These code chunks correspond to the upcoming 2017-18 college basketball season, and will be uncommented as soon as the NCAA releases the official 2017-18 schedule (and the appropriate data is obtained). Be sure to follow my NCAA Basketball coverage this season on twitter [@YaleSportsGroup](https://twitter.com/YaleSportsGroup) and [@recspecs730](https://twitter.com/recspecs730).
+__Model_3.0.R:__ Control panel for everything NCAA Hoops related that I do for the [Yale Undergraduate Sports Analytics Group](http://sports.sites.yale.edu) (YUSAG). Everything is controlled with this script, including creating the prediction model, making the [YUSAG Bracket](http://sports.sites.yale.edu/yusag-bracketology), and simulating Ivy League games. Be sure to follow my NCAA Basketball coverage this season on twitter [@YaleSportsGroup](https://twitter.com/YaleSportsGroup) and [@recspecs730](https://twitter.com/recspecs730).
 
 __ncaa_hoop_scraper.R:__ An algorithim to scrape game schedule/result data from the NCAA website. This script is mostly copied (with slight modifications) from a scrape written by Prof. Jay Emerson and used in STAT 230: Introductory Data Analysis (Spring 2016).
 
@@ -25,14 +25,13 @@ __3.0_Files/:__ A collection of files that are essentially the "inner workings" 
   * __mins.csv:__ Percentage of team's 2016-17 minutes returning during the 2017-18 season. Acquired from [Bart Tovrik](http://www.barttorvik.com/returningmins.php).
   * __recruiting.csv:__ [247Sports recruiting scores](http://247sports.com/Season/2017-Basketball/CompositeTeamRankings) for each team's incoming freshman class.
   * __transfers.csv:__ Data on transfers eligible to play in the 2017-18 season, pulled from http://www.barttorvik.com/trankpre.php.
-* __History/:__ Model prediction history, with actual score differentials and predicted score differentials from a week in advance.
-  * __2017_18_history.csv:__ 2017-18 prediction history.
+* __History/:__ Some historical files of interest.
 * __Power_Rankings/:__ Collection of .csv files produced by __powerrankings.R__.
-  * __Powerrankings.csv:__ Ranking of all 351 teams by [YUSAG Coefficient](http://sports.sites.yale.edu/ncaa-mens-basketball-power-rankings).
+  * __power_rankings.csv:__ Ranking of all 353 teams by [YUSAG Coefficient](http://sports.sites.yale.edu/ncaa-mens-basketball-power-rankings).
   * __conf_summary.csv:__ Ranking of the 32 Division 1 conferences, by median YUSAG coefficient. 
   * __pr_by_conf.csv:__ Ranking of teams by YUSAG Coefficient, sorted by conference. For more, [click here](http://sports.sites.yale.edu/ncaa-mens-basketball-power-rankings-0).
 * __Predictions/:__ 
   * __playoffs.csv:__ Ivy League playoff odds.
   * __psf.csv:__ [Playoff Swing Factor](http://yaledailynews.com/downthefield/2017/01/31/by-the-numbers-ivy-hoops-games-to-watch/) for most recent week of Ivy League conference games.
-* __Results/:__ Complete NCAA Basketball schedule/results through a given date. Sub-directories indicate the year/season, with .csv files given in NCAA_Hoops_results_day_month_year.csv format. __NCAA_Hoops_results_6_29_2017.csv__ is the complete results file for the 2016-17 season. __NCAA_Hoops_results_10_30_2017.csv__ gives the preseason schedule for the 2017-18 season. There is also a folder of results for the 2015-16 season, with one .csv of results from the end of that season.
+* __Results/:__ Complete NCAA Basketball schedule/results through a given date. Sub-directories indicate the year/season, with .csv files given in NCAA_Hoops_results_day_month_year.csv format. __NCAA_Hoops_results_6_29_2017.csv__ is the complete results file for the 2016-17 season. __NCAA_Hoops_results_10_30_2017.csv__ gives the preseason schedule for the 2017-18 season. __NCAA_Hoops_results_10_31_2018.csv__ gives the preseason schedule for the 2018-19 season. There is also a folder of results for the 2015-16 season, with one .csv of results from the end of that season.
 * __html.py:__ Takes power ranking and bracketology .csv files and coverts them to the HTML seen in __html__ for use on the YUSAG Website.
