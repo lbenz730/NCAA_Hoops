@@ -38,9 +38,15 @@ for(i in 1:length(teams)) {
 }
 
 ### Opp Game IDs
-for(i in 1:nrow(x)) {
-  x$opp_game_id[i] <- get_opp_id(x, i)[1]
-}
+x <- 
+  inner_join(x, select(x, date, team, opponent, game_id), 
+             by = c("team" = "opponent",
+                    "opponent" = "team", 
+                    "date" = "date")) %>%
+  filter(!duplicated(paste(team, game_id.x))) %>%
+  mutate(opp_game_id = game_id.y) %>%
+  rename(game_id = game_id.x) %>%
+  select(-game_id.y)
 
 ### Confs
 for(i in 1:length(teams)) {

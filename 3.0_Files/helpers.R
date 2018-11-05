@@ -2,11 +2,6 @@ library(ggplot2)
 library(ggridges)
 library(viridis)
 
-### Get opponent game id
-get_opp_id <- function(data, i) {
-  return(data$game_id[data$team == data$opponent[i] & data$opponent == data$team[i] & data$month == data$month[i] & data$day == data$day[i]])
-}
-
 ### get team's conference
 get_conf <- function(team) {
   return(confs$conference[confs$team == team])
