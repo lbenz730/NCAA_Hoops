@@ -127,6 +127,12 @@ power_rankings <- pr_compute(by_conf = F)
 by_conf <- pr_compute(by_conf = T)
 yusag_plot(power_rankings)
 box_plot(power_rankings)
+x <- 
+  inner_join(x, select(power_rankings, team, yusag_coeff, rank), by = "team") %>%
+  inner_join(select(power_rankings, team, yusag_coeff, rank), 
+             by = c("opponent" = "team")) %>% 
+  rename(rank = rank.x, opp_rank = rank.y, 
+         yusag_coeff = yusag_coeff.x, opp_yusag_coeff = yusag_coeff.y)
 
 ########################### Bracketology #######################################
 rpi <- rpi_compute(new = T)
