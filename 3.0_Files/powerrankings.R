@@ -6,12 +6,13 @@ pr_compute <- function(by_conf) {
   
   ### Store Power Rankings Data Frame
   power_rankings <- data.frame("team" = teams,
-                               "conference" = sapply(teams, get_conf))
+                               "conference" = sapply(teams, get_conf),
+                               stringsAsFactors = F)
   
   power_rankings <- mutate(power_rankings,
                            yusag_coeff = c(0, lm.hoops$coefficients[2:353]) - avg,
                            off_coeff = c(0, lm.off$coefficients[2:353]) - off_avg,
-                           def_coeff = c(0, lm.def$coefficients[2:353]) - def_avg)
+                           def_coeff = -(c(0, lm.def$coefficients[2:353]) - def_avg))
   power_rankings <- 
     arrange(power_rankings, desc(yusag_coeff)) %>%
     mutate(rank = 1:353) %>%
@@ -30,7 +31,8 @@ pr_compute <- function(by_conf) {
     month <- 1 + today$mon
     day <- today$mday
     today <- as.Date(paste(year, month, day, sep = "-"))
-    bind_rows(history, mutate(power_rankings, date = today))
+    history <- filter(history, as.Date(date) != today)
+    history <- bind_rows(history, mutate(power_rankings, date = as.character(today)))
     write.csv(history, "3.0_Files/History/history.csv", row.names = F)
     return(power_rankings)
   }

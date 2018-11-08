@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_10_31_2018.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_11_8_2018.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -86,18 +86,27 @@ priors <- mutate(priors,
 
 w <- sapply(teams, prior_weight)
 
+coeffs <- c("(Intercept)", paste0("team", teams[-1]), paste0("opponent", teams[-1]), 
+"locationN", "locationV")
+lm.hoops$coefficients <- lm.hoops$coefficients[coeffs]
+lm.def$coefficients <- lm.def$coefficients[coeffs]
+lm.off$coefficients <- lm.off$coefficients[coeffs]
+lm.hoops$coefficients[is.na(lm.hoops$coefficients)] <- 0
+lm.def$coefficients[is.na(lm.def$coefficients)] <- 0
+lm.off$coefficients[is.na(lm.off$coefficients)] <- 0
+
 lm.hoops$coefficients[2:353] <- 
-  lm.hoops$coefficients[2:353] * w[-1] + priors$yusag_coeff[-1] * (1-w[-1])
+  lm.hoops$coefficients[2:353] * w[-1] + priors$rel_yusag_coeff[-1] * (1-w[-1])
 lm.hoops$coefficients[354:705] <- 
-  lm.hoops$coefficients[354:705] * w[-1] - priors$yusag_coeff[-1] * (1-w[-1])
+  lm.hoops$coefficients[354:705] * w[-1] - priors$rel_yusag_coeff[-1] * (1-w[-1])
 lm.off$coefficients[2:353] <- 
-  lm.off$coefficients[2:353] * w[-1] + priors$off_coeff[-1] * (1-w[-1])
+  lm.off$coefficients[2:353] * w[-1] + priors$rel_off_coeff[-1] * (1-w[-1])
 lm.off$coefficients[354:705] <- 
-  lm.off$coefficients[354:705] * w[-1] - priors$off_coeff[-1] * (1-w[-1])
+  lm.off$coefficients[354:705] * w[-1] - priors$rel_off_coeff[-1] * (1-w[-1])
 lm.def$coefficients[2:353] <- 
-  lm.def$coefficients[2:353] * w[-1] + priors$def_coeff[-1] * (1-w[-1])
+  lm.def$coefficients[2:353] * w[-1] - priors$rel_def_coeff[-1] * (1-w[-1])
 lm.def$coefficients[354:705] <- 
-  lm.def$coefficients[354:705] * w[-1] - priors$def_coeff[-1] * (1-w[-1])
+  lm.def$coefficients[354:705] * w[-1] + priors$rel_def_coeff[-1] * (1-w[-1])
 
 lm.hoops$coefficients[c(1, 706:707)] <- 
   w[1] * lm.hoops$coefficients[c(1, 706:707)] + 
@@ -109,8 +118,9 @@ lm.off$coefficients[c(1, 706:707)] <-
   w[1] * lm.off$coefficients[c(1, 706:707)] + 
   (1-w[1]) * c(68.19705698, -2.93450334,  -3.34957772)
 lm.def$coefficients[c(1, 706:707)] <- 
-  w[1] * lm.off$coefficients[c(1, 706:707)] + 
+  w[1] * lm.def$coefficients[c(1, 706:707)] + 
   (1-w[1]) * c(64.84747926, 0.41507438,  3.34957772)
+
 ######################## Point Spread to Win Percentage Model #################
 x$pred_score_diff <- round(predict(lm.hoops, newdata = x), 1)
 x$wins[x$score_diff > 0] <- 1
@@ -125,14 +135,18 @@ x$wins[is.na(x$wins)] <-
 ################################ Power Rankings ################################
 power_rankings <- pr_compute(by_conf = F)
 by_conf <- pr_compute(by_conf = T)
-yusag_plot(power_rankings)
-box_plot(power_rankings)
+history <- read.csv("3.0_Files/History/history.csv", as.is = T)
 x <- 
   inner_join(x, select(power_rankings, team, yusag_coeff, rank), by = "team") %>%
   inner_join(select(power_rankings, team, yusag_coeff, rank), 
              by = c("opponent" = "team")) %>% 
   rename(rank = rank.x, opp_rank = rank.y, 
          yusag_coeff = yusag_coeff.x, opp_yusag_coeff = yusag_coeff.y)
+yusag_plot(power_rankings)
+box_plot(power_rankings)
+evo_plot()
+rank_plot()
+
 
 ########################### Bracketology #######################################
 rpi <- rpi_compute(new = T)

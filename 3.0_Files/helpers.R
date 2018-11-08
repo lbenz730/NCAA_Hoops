@@ -100,15 +100,49 @@ reg_season <- function(date, conf) {
 
 ### Compute Weights for Pre-season prior
 prior_weight <- function(school) {
-  w <- 2 * (filter(x, team == school, !is.na(score_diff)) %>% 
-      pull(game_id) %>%
-      max())/(
-    filter(x, team == school) %>% 
-      pull(game_id) %>%
-      max()
-  )
+  w <- 2 * max(c(0, filter(x, team == school, !is.na(score_diff)) %>% 
+                   pull(game_id) %>%
+                   max()), 
+                 na.rm = T)/(
+                   max(c(1, filter(x, team == school) %>% 
+                           pull(game_id) %>%
+                           max()), na.rm = T)
+                 )
   
   w <- min(c(w, 1))
   return(w)
 }
 
+
+
+rank_plot <- function() {
+  ggplot(history, aes(x = as.Date(date), y = rank, group = team, col = team)) + 
+    facet_wrap(~conference, ncol = 8) +
+    geom_line() + 
+    theme_bw() + 
+    theme(plot.title = element_text(size = 16, hjust = 0.5),
+          axis.title.y = element_text(size = 14, hjust = 0.5),
+          axis.title.x = element_text(size = 14, hjust = 0.5),
+          axis.text.x = element_text(angle = 90, size = 6),
+          legend.position = "none") + 
+    labs(x = "Date", 
+         y = "D1 Rank",
+         title = "Evolution of the NCAA Basketball Universe") + 
+    scale_y_reverse()
+}
+
+
+evo_plot <- function() {
+  ggplot(history, aes(x = as.Date(date), y = yusag_coeff, group = team, col = team)) + 
+    facet_wrap(~conference, ncol = 8) +
+    geom_line() + 
+    theme_bw() + 
+    theme(plot.title = element_text(size = 16, hjust = 0.5),
+          axis.title.y = element_text(size = 14, hjust = 0.5),
+          axis.title.x = element_text(size = 14, hjust = 0.5),
+          axis.text.x = element_text(angle = 90, size = 6),
+          legend.position = "none") + 
+    labs(x = "Date", 
+         y = "Points Above Average Team",
+         title = "Evolution of the NCAA Basketball Universe")
+}
