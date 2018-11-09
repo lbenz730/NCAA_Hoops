@@ -57,8 +57,8 @@ for (i in 1:nrow(teamid)) {
     
     opploc <- stripwhite(gsub("<[^<>]*>", "", x[datelines+2]))
     loc <- rep("H", length(opploc))
-    loc[grep("^@", opploc)] <- "V"
     loc[grep(" @ ", opploc, fixed=TRUE)] <- "N"
+    loc[grep("^@", opploc)] <- "V"
     opp <- opploc
     opp[loc == "V"] <- gsub("@ ", "", opp[loc == "V"])
     opp[loc == "N"] <- substring(opp, 1, regexpr("@", opp)-2)[loc == "N"]
