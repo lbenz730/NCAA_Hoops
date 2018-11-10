@@ -91,10 +91,11 @@ for (i in 1:nrow(teamid)) {
 
 # Extract D1 Games
 rows <- strsplit(z$opponent[grep("@", z$opponent)], "@")
-for (i in 1:length(z$opponent[grep("@", z$opponent)])) {
-  z$opponent[grep("@", z$opponent)][1] <- rows[[i]][1]
+if(length(rows) > 1) {
+  for (i in 1:length(z$opponent[grep("@", z$opponent)])) {
+    z$opponent[grep("@", z$opponent)][1] <- rows[[i]][1]
+  }
 }
-
 z$opponent <- stripwhite(z$opponent)
 
 z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team

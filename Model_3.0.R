@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_11_8_2018.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_11_10_2018.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -49,11 +49,9 @@ x <-
   select(-game_id.y)
 
 ### Confs
-for(i in 1:length(teams)) {
-  x$team_conf[x$team == teams[i]] <- get_conf(teams[i])
-  x$opp_conf[x$opponent == teams[i]] <- get_conf(teams[i])
-}
-x$conf_game <- x$team_conf == x$opp_conf
+x <- mutate(x, team_conf = sapply(x$team, get_conf),
+            opp_conf = sapply(x$opponent, get_conf),
+            conf_game = team_conf == opp_conf)
 
 ### Reg Season
 x <- inner_join(x, deadlines, by = c("team_conf" = "conf")) %>%
