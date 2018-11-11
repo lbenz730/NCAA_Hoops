@@ -138,7 +138,9 @@ x <-
   rename(rank = rank.x, opp_rank = rank.y, 
          yusag_coeff = yusag_coeff.x, opp_yusag_coeff = yusag_coeff.y)
 yusag_plot(power_rankings)
+png("3.0_Files/Power_Rankings/boxplot.png", res = 180, width = 1275, height = 1000)
 box_plot(power_rankings)
+dev.off()
 evo_plot()
 rank_plot()
 
