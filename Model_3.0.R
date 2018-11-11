@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_11_10_2018.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_11_11_2018.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -107,9 +107,6 @@ lm.def$coefficients[354:705] <-
   lm.def$coefficients[354:705] * w[-1] + priors$rel_def_coeff[-1] * (1-w[-1])
 
 lm.hoops$coefficients[c(1, 706:707)] <- 
-  w[1] * lm.hoops$coefficients[c(1, 706:707)] + 
-  (1-w[1]) * c(3.34957772, -3.34957772, -6.69915544)
-lm.off$coefficients[c(1, 706:707)] <- 
   w[1] * lm.hoops$coefficients[c(1, 706:707)] + 
   (1-w[1]) * c(3.34957772, -3.34957772, -6.69915544)
 lm.off$coefficients[c(1, 706:707)] <- 
