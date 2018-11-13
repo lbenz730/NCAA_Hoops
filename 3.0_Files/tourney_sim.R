@@ -9,7 +9,9 @@ tourney_sim  <- function(teams, seeds, byes, double_byes, hca, nsims) {
                            "champ" = rep(0, n),
                            "finals" = rep(0, n))
   for(j in 1:nsims) {
-    print(paste("Sim #:", j))
+    if(j %% 100 == 0) {
+      cat("Sim #:", j, "of", nsims, "\n")
+    }
     ### Fill in First Round
     games <- data.frame("team" = rep(NA, n-1),
                         "opponent" = rep(NA, n-1),
