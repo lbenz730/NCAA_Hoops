@@ -15,7 +15,7 @@ __3.0_Files/:__ A collection of files that are essentially the "inner workings" 
 * __Bracketology/:__ Collection of .csv files used in [YUSAG Bracketology](http://sports.sites.yale.edu/yusag-bracketology).
   * __bids.csv:__ Table of tournament bids broken down by conference.
   * __bracket.csv:__ The final bracket produced for [YUSAG Bracketology](http://sports.sites.yale.edu/yusag-bracketology).
-  * __bracket_math.csv:__ Table of bracket metrics for all 351 Division-1 teams. See [YUSAG Bracket Math](http://sports.sites.yale.edu/bracket-math) for more.
+  * __bracket_math.csv:__ Table of bracket metrics for all 353 Division-1 teams. See [YUSAG Bracket Math](http://sports.sites.yale.edu/bracket-math) for more.
   * __bubble.csv:__ Bracket metrics for the first 16 teams missing the field as at-large bids.
   * __resumes.csv:__ Subset of bracket metrics (resume evaluation, strength of record, wins above bubble) produced by __record_evaluator.R__. 
   * __rpi.csv:__ Projected end of season RPI for each team. Produced by __rpi.R__.
