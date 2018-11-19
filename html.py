@@ -220,7 +220,7 @@ output.close()
 
 ### Bracketmath
 i = 0
-html = "<table class= \"sortable\"><thead><tr><th>Tourney Rank</th><th>Team</th><th>Conference</th><th>YUSAG Coefficient</th><th>YUSAG Rank</th><th>RPI</th><th>RPI Rank</th><th>SOR</th><th>SOR Rank</th><th>Quality of Resume</th><th>Resume Rank</th><th>WAB</th><th>WAB Rank</th><th>Blend</th></tr></thead><tbody>"
+html = "<table class= \"sortable\"><thead><tr><th>Tourney Rank</th><th>Team</th><th>Conference</th><th>YUSAG Coefficient</th><th>YUSAG Rank</th><th>RPI</th><th>RPI Rank</th><th>SOR</th><th>SOR Rank</th><th>Quality of Resume</th><th>Resume Rank</th><th>WAB</th><th>WAB Rank</th><th>Blend</th><th>Avg.</th><th>At-Large Odds</th></tr></thead><tbody>"
 with open('3.0_Files/Bracketology/bracket_math.csv', 'rU') as csvfile:
     rankings = csv.reader(csvfile, delimiter=',', quotechar='|', dialect = csv.excel_tab)
     for row in rankings:
@@ -254,6 +254,10 @@ with open('3.0_Files/Bracketology/bracket_math.csv', 'rU') as csvfile:
             html += row[11]
             html += "</td><td>"
             html += epenthesize(row[12], 2)
+            html += "</td><td>"
+            html += epenthesize(row[13], 2)
+            html += "</td><td>"
+            html += epenthesize(row[14], 2)
             html += "</td></tr>"
 html += "</tbody></table>"
 
