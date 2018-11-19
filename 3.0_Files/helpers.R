@@ -59,7 +59,9 @@ conf_sim <- function(conf, nsims) {
   max_wins <- nrow(schedule) * 2 / nrow(results)
   
   for(i in 1:nsims) {
-    print(paste("Sim #", i))
+    if(i %% 100 == 0) {
+      cat("Sim:", i, "\n")
+    }
     rands <- runif(nrow(schedule))
     schedule$simwins <- ifelse(rands <= schedule$wins, 1, 0)
     schedule$opp_simwins <- abs(1 - schedule$simwins)
@@ -145,4 +147,9 @@ evo_plot <- function() {
     labs(x = "Date", 
          y = "Points Above Average Team",
          title = "Evolution of the NCAA Basketball Universe")
+}
+
+
+max_date <- function(date, hist_dates) {
+  return(max(hist_dates[hist_dates <= date]))
 }

@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_11_18_2018.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_11_19_2018.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -61,10 +61,10 @@ x <- inner_join(x, deadlines, by = c("team_conf" = "conf")) %>%
 ################################# Set Weights ##################################
 x$weights <- 0
 for(i in 1:nrow(x)) {
-  w_team <- 1 - (max(c(0, x$game_id[x$team == x$team[i] & !is.na(x$scorediff)])) - x$game_id[i])/
-    max(c(0, x$game_id[x$team == x$team[i] & !is.na(x$scorediff)]))
-  w_opponent <- 1 - (max(c(0, x$game_id[x$team == x$opponent[i] & !is.na(x$scorediff)])) - x$opp_game_id[i])/
-    max(c(1, x$game_id[x$team == x$opponent[i] & !is.na(x$scorediff)]))
+  w_team <- 1 - (max(c(0, x$game_id[x$team == x$team[i] & !is.na(x$score_diff)])) - x$game_id[i])/
+    max(c(0, x$game_id[x$team == x$team[i] & !is.na(x$score_diff)]))
+  w_opponent <- 1 - (max(c(0, x$game_id[x$team == x$opponent[i] & !is.na(x$score_diff)])) - x$opp_game_id[i])/
+    max(c(1, x$game_id[x$team == x$opponent[i] & !is.na(x$score_diff)]))
   rr <- mean(c(w_team, w_opponent))
   x$weights[i] <- 1/(1 + (0.5^(5 * rr)) * exp(-rr))
 }   
@@ -83,15 +83,6 @@ priors <- mutate(priors,
   arrange(team)
 
 w <- sapply(teams, prior_weight)
-
-coeffs <- c("(Intercept)", paste0("team", teams[-1]), paste0("opponent", teams[-1]), 
-"locationN", "locationV")
-lm.hoops$coefficients <- lm.hoops$coefficients[coeffs]
-lm.def$coefficients <- lm.def$coefficients[coeffs]
-lm.off$coefficients <- lm.off$coefficients[coeffs]
-lm.hoops$coefficients[is.na(lm.hoops$coefficients)] <- 0
-lm.def$coefficients[is.na(lm.def$coefficients)] <- 0
-lm.off$coefficients[is.na(lm.off$coefficients)] <- 0
 
 lm.hoops$coefficients[2:353] <- 
   lm.hoops$coefficients[2:353] * w[-1] + priors$rel_yusag_coeff[-1] * (1-w[-1])
@@ -118,6 +109,9 @@ lm.def$coefficients[c(1, 706:707)] <-
 
 ######################## Point Spread to Win Percentage Model #################
 x$pred_score_diff <- round(predict(lm.hoops, newdata = x), 1)
+x$pred_team_score <- round(predict(lm.off, newdata = x), 1)
+x$pred_opp_score <- round(predict(lm.def, newdata = x), 1)
+x$pred_total_score <- x$pred_team_score + x$pred_opp_score
 x$wins[x$score_diff > 0] <- 1
 x$wins[x$score_diff < 0] <- 0
 glm.pointspread <- glm(wins ~ pred_score_diff, 
@@ -132,11 +126,15 @@ power_rankings <- pr_compute(by_conf = F)
 by_conf <- pr_compute(by_conf = T)
 history <- read.csv("3.0_Files/History/history.csv", as.is = T)
 x <- 
-  inner_join(x, select(power_rankings, team, yusag_coeff, rank), by = "team") %>%
-  inner_join(select(power_rankings, team, yusag_coeff, rank), 
-             by = c("opponent" = "team")) %>% 
+  mutate(x, pr_date = sapply(x$date, max_date, hist_dates = unique(history$date))) %>%
+  inner_join(select(history, team, yusag_coeff, rank, date), by = c("team" = "team",
+                                                                        "pr_date" = "date")) %>%
+  inner_join(select(history, team, yusag_coeff, rank, date), 
+             by = c("opponent" = "team",
+                    "pr_date" = "date")) %>% 
   rename(rank = rank.x, opp_rank = rank.y, 
-         yusag_coeff = yusag_coeff.x, opp_yusag_coeff = yusag_coeff.y)
+         yusag_coeff = yusag_coeff.x, opp_yusag_coeff = yusag_coeff.y) %>%
+  select(-pr_date)
 yusag_plot(power_rankings)
 png("3.0_Files/Power_Rankings/boxplot.png", res = 180, width = 1275, height = 1000)
 box_plot(power_rankings)
@@ -144,16 +142,15 @@ dev.off()
 evo_plot()
 rank_plot()
 
-
 ########################### Bracketology #######################################
 rpi <- rpi_compute(new = T)
-resumes <- get_resumes(new = F)
+resumes <- get_resumes(new = T)
 bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
 ################################ Ivy Sims ######################################
 playoffs <- ivy.sim(nsims = 5000)
-psf_results <- psf(nsims = 1000, year = 2018, months = c(3,3), days = c(2,3))
+psf_results <- psf(nsims = 1000, year = 2018, min_date = "2019-01-01", max_date = "2019-01-01")
 
 ############################# Conference Sims (No Tie-Breaks) ##################
 conf_results <- conf_sim("Ivy", 10000)

@@ -7,14 +7,14 @@ palestra.sim <- function(teams) {
   tmp$location <- "N"
   
   ### Find Penn in Tournament
-  if(teams[1] == "Penn") {
+  if(teams[1] == "Yale") {
     tmp$location[1] <- "H"
-  }else if(teams[4] == "Penn") {
+  }else if(teams[4] == "Yale") {
     tmp$location[1] <- "V"
   }
-  if(teams[2] == "Penn") {
+  if(teams[2] == "Yale") {
     tmp$location[2] <- "H"
-  }else if(teams[3] == "Penn") {
+  }else if(teams[3] == "Yale") {
     tmp$location[2] <- "V"
   }
   
@@ -26,9 +26,9 @@ palestra.sim <- function(teams) {
   tmp[3, c("team", "opponent")] <- ifelse(rands <= tmp$winprob[1:2], tmp$team, tmp$opponent)
   
   ### Finals
-  if(tmp$team[3] == "Penn") {
+  if(tmp$team[3] == "Yale") {
     tmp$location[3] <- "H"
-  }else if(tmp$opponent[3] == "Penn") {
+  }else if(tmp$opponent[3] == "Yale") {
     tmp$location[3] <- "V"
   }
   
@@ -59,7 +59,9 @@ ivy.sim <- function(nsims) {
   
   # Simulate All Games
   for (j in 1:nrow(simresults)){
-    print(paste("Sim: ", j, sep = ""))
+    if(j %% 100 == 0) {
+      cat("Sim:", j, "\n")
+    }
     games$simwins <- NA
     games$oppsimwins <- NA
     rand <- runif(nrow(games))
@@ -161,7 +163,7 @@ ivy.sim <- function(nsims) {
         }
         
         # Tiebreak 3 (Analytics)
-        tmp <- power_rankingss[is.element(power_rankings$team, teams),]
+        tmp <- power_rankings[is.element(power_rankings$team, teams),]
         tmp <- tmp[order(tmp$team),]
         winner <- tmp$Team[grep(max(tmp$yusag_coeff), tmp$yusag_coeff)]
         winnerID <- c(1:8)[ivy == winner]
@@ -243,7 +245,9 @@ psf <- function(nsims, year, min_date, max_date) {
     ### Simulate Games
     champ <- rep(NA, nsims)
     for (j in 1:nrow(simresults)){
-      print(paste("Game_id: ", k, " sim #: ", j, sep = ""))
+      if(j %% 100 == 0) {
+        cat("Game_id:", k, "Sim:", j, "\n")
+      }
       games$simwins <- NA
       games$oppsimwins <- NA
       rand <- runif(nrow(games))
@@ -417,7 +421,9 @@ fast.sim <- function(nsims) {
   
   # Simulate All Games
   for (j in 1:nrow(simresults)){
-    print(paste("Sim: ", j, sep = ""))
+    if(j %% 100 == 0) {
+      cat("Sim:", j, "\n")
+    }
     games$simwins <- NA
     games$oppsimwins <- NA
     rand <- runif(nrow(games))

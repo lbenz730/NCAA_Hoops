@@ -1,4 +1,3 @@
-library(randomForest)
 make_bracket <- function(tourney) {
   bracket <- data.frame("team" = teams,
                         "conf" = rep(NA, 353),
@@ -49,8 +48,10 @@ make_bracket <- function(tourney) {
   }
   
   bracket$blend <- 0.25 * bracket$rpi_rank + 0.1 * bracket$wab_rank + 
-    0.1 * bracket$sor_rank + 0.1 * bracket$yusag_rank + 0.45 * bracket$resume_rank +  
-    2 * as.numeric(bracket$mid_major)
+    0.1 * bracket$sor_rank + 0.25 * bracket$yusag_rank + 0.30 * bracket$resume_rank 
+  
+  bracket$avg <- 0.2 * bracket$rpi_rank + 0.2 * bracket$wab_rank + 
+    0.2 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.2 * bracket$resume_rank 
   
   bracket <- arrange(bracket, desc(yusag_coeff))
   
@@ -62,8 +63,26 @@ make_bracket <- function(tourney) {
       }
     }
   }
+  bracket_math <- 
+    read.csv("3.0_Files/Bracketology/historical/bracket_math_2016.csv", as.is = T) %>%
+    bind_rows(read.csv("3.0_Files/Bracketology/historical/bracket_math_2017.csv", as.is = T)) %>%
+    bind_rows(read.csv("3.0_Files/Bracketology/historical/bracket_math_2018.csv", as.is = T)) 
   
+  bracket_math$avg <- 0.2 * bracket_math$rpi_rank + 
+    0.2 * bracket_math$wab_rank +  0.2 * bracket_math$sor_rank + 
+    0.2 * bracket_math$yusag_rank + 0.2 * bracket_math$resume_rank 
   
+  bracket_math$bid <- bracket_math$seed <= 10
+  glm.madness <- suppressWarnings(glm(bid ~ yusag_rank + avg, 
+                                      data = bracket_math, family = "binomial"))
+  lm.seed <- lm(seed ~ yusag_rank + blend + avg, 
+                data = bracket_math)
+  bracket$odds <- 
+    round(predict(glm.madness, newdata = bracket, type = "response"), 4) * 100
+  bracket$seed <- 
+    predict(lm.seed, newdata = bracket, type = "response")
+  
+  bracket <- arrange(bracket, desc(odds), seed)
   
   if(tourney == T) {
     ### Get Autobids
@@ -72,23 +91,11 @@ make_bracket <- function(tourney) {
       autobids[j] <- autobid_calc(unique(confs$conference)[j])
     }
     bracket$autobid <- is.element(bracket$team, autobids)
-    
-    ### Get At-Large bids
-    bracket_math <- 
-      read.csv("3.0_Files/Bracketology/historical/bracket_math_2016.csv", as.is = T) %>%
-      bind_rows(read.csv("3.0_Files/Bracketology/historical/bracket_math_2017.csv", as.is = T)) %>%
-      bind_rows(read.csv("3.0_Files/Bracketology/historical/bracket_math_2018.csv", as.is = T))
-    
-    bracket_math$bid <- !(is.na(bracket_math$seed))
-    glm.madness <- glm(bid ~ rpi + sor + blend + qual_bonus, 
-                       data = bracket_math, family = "binomial")
-    bracket$odds <- 
-      predict(glm.madness, newdata = bracket_math, type = "response")
-    bracket <- arrange(bracket, desc(odds))
-    
     tmp <- bracket[!bracket$autobid, ]
     j <- 1
     z <- 1
+    
+    ### Get At-Large bids
     atlarge <- vector()
     while(j <= 36) {
       for(k in z:length(teams)){
@@ -104,7 +111,8 @@ make_bracket <- function(tourney) {
     ### Write Bracket    
     bracket$atlarge <- is.element(bracket$team, atlarge)
     bracket <- rbind(bracket[bracket$autobid,], bracket[bracket$atlarge,])
-    bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus)
+    bracket <- arrange(bracket, desc(odds), seed)
+    bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus, -seed)
     bracket$seed_overall <- 1:68
     bracket$seed_line <- c(rep(1,4), rep(2,4), rep(3,4), rep(4,4), rep(5,4),
                            rep(6,4), rep(7,4), rep(8,4), rep(9,4), rep(10,4),
@@ -132,14 +140,14 @@ make_bracket <- function(tourney) {
     write.csv(bubble, "3.0_Files/Bracketology/bubble.csv", row.names = F)
     
     ### Bid Summary by Conference
-    group_by(bracket, conference) %>%
+    bids <- group_by(bracket, conf) %>%
       summarise("n_bid" = n()) %>%
       arrange(desc(n_bid))
     write.csv(bids, "3.0_Files/Bracketology/bids.csv", row.names = F)
-    
     return(bracket)
   }
   else{
+    bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus, -seed)
     write.csv(bracket, "3.0_Files/Bracketology/bracket_math.csv", row.names = F)
     return(bracket)
   }

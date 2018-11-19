@@ -1,13 +1,7 @@
 record_eval <- function(team) {
   ### Get Team's games
   games <- x[x$team == team,]
-  
-  ### Opponent's RPI Ranks
-  games$opp_rank <- NA
-  for(k in 1:nrow(games)) {
-    games$opp_rank[k] <- rpi$rpi_rank[rpi$team == games$opponent[k]]
-  }
-  
+
   ### Classify wins into NCAA's 4 tiers
   tierAw <- 
     sum(games$wins[games$opp_rank <= 50 & games$location == "N"]) + 
@@ -67,7 +61,7 @@ record_eval <- function(team) {
   for(j in 1:length(bubble)) {
     data <- games
     data$team <- bubble[j]
-    data$predscorediff <- round(predict(lm.hoops, newdata = data), 1)
+    data$pred_score_diff <- round(predict(lm.hoops, newdata = data), 1)
     data$wins <- 
       round(predict.glm(glm.pointspread, newdata = data, type = "response"), 3)
     wab[j] <- sum(games$wins) - sum(data$wins)
