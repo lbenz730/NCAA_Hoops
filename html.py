@@ -203,7 +203,6 @@ with open('3.0_Files/Bracketology/bubble.csv', 'rU') as csvfile:
             html += "</td><td>"
             html += row[11]
             html += "</td><td>"
-            html += "</td><td>"
             html += epenthesize(row[16], 2)
             html += "</td><td>"
             html += epenthesize(row[17], 2)

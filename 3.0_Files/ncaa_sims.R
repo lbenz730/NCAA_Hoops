@@ -60,7 +60,7 @@ ncaa_sim <- function(nsims) {
                          "opponent" = final4[4:3],
                          "location" = rep("N", 2),
                          stringsAsFactors = F)
-    final4$predscorediff <- predict(lm.hoops, newdata = final4)
+    final4$pred_score_diff <- predict(lm.hoops, newdata = final4)
     final4$win_prob <- predict(glm.pointspread, newdata = final4, type = "response")
     ncg <- ifelse(runif(2) <= final4$win_prob, final4$team, final4$opponent)
     ncaa_sims$ncg[ncaa_sims$team %in% ncg] <- 
@@ -69,7 +69,7 @@ ncaa_sim <- function(nsims) {
                       "opponent" = ncg[2],
                       "location" = "N",
                       stringsAsFactors = F)
-    ncg$predscorediff <- predict(lm.hoops, newdata = ncg)
+    ncg$pred_score_diff <- predict(lm.hoops, newdata = ncg)
     ncg$win_prob <- predict(glm.pointspread, newdata = ncg, type = "response")
     champ <- ifelse(runif(1) <= ncg$win_prob, ncg$team, ncg$opponent)
     ncaa_sims$champ[ncaa_sims$team == champ] <- 
