@@ -211,7 +211,7 @@ with open('3.0_Files/Bracketology/bubble.csv', 'rU') as csvfile:
             html += "</td></tr>"
 html += "</tbody></table>"
 
-output = open("html/bubble.html", 'w')
+output = open("html/bubble.txt", 'w')
 output.write(html)
 output.close()
 
