@@ -57,14 +57,14 @@ pr_compute <- function(by_conf) {
       tmp$conference_rank <- 1:nrow(tmp)
       tmp$record <- "--"
       tmp$conf_record <- "--"
-      # for(j in 1:nrow(tmp)) {
-      #   wins <- round(sum(x$wins[x$team == tmp$team[j] & x$reg_season]))
-      #   losses <- max(x$game_id[x$team == tmp$team[j] & x$reg_season]) - wins
-      #   tmp$record[j] <- paste(wins, losses, sep = " - " )
-      #   conf_wins <- round(sum(x$wins[x$team == tmp$team[j] & x$reg_season & x$conf_game]))
-      #   conf_losses <- length(x$wins[x$team == tmp$team[j] & x$reg_season & x$conf_game]) - conf_wins
-      #   tmp$conf_record[j] <- paste(conf_wins, conf_losses, sep = " - " )
-      # }
+      for(j in 1:nrow(tmp)) {
+        wins <- round(sum(x$wins[x$team == tmp$team[j] & x$reg_season]))
+        losses <- max(x$game_id[x$team == tmp$team[j] & x$reg_season]) - wins
+        tmp$record[j] <- paste(wins, losses, sep = " - " )
+        conf_wins <- round(sum(x$wins[x$team == tmp$team[j] & x$reg_season & x$conf_game]))
+        conf_losses <- length(x$wins[x$team == tmp$team[j] & x$reg_season & x$conf_game]) - conf_wins
+        tmp$conf_record[j] <- paste(conf_wins, conf_losses, sep = " - " )
+      }
       if(i > 1){
         pr <- rbind(pr, tmp)
       }
