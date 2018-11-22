@@ -16,9 +16,9 @@ record_eval <- function(team) {
     sum(games$wins[games$opp_rank >= 76 & games$opp_rank <= 160 & games$location == "H"]) + 
     sum(games$wins[games$opp_rank >= 136 & games$opp_rank <= 240 & games$location == "V"])
   tierDw <- 
-    sum(games$wins[games$opp_rank >= 201 & games$opp_rank <= 351 & games$location == "N"]) + 
-    sum(games$wins[games$opp_rank >= 161 & games$opp_rank <= 351 & games$location == "H"]) + 
-    sum(games$wins[games$opp_rank >= 241 & games$opp_rank <= 351 & games$location == "V"])
+    sum(games$wins[games$opp_rank >= 201 & games$opp_rank <= 353 & games$location == "N"]) + 
+    sum(games$wins[games$opp_rank >= 161 & games$opp_rank <= 353 & games$location == "H"]) + 
+    sum(games$wins[games$opp_rank >= 241 & games$opp_rank <= 353 & games$location == "V"])
   tierAl <- 
     sum(1 - games$wins[games$opp_rank <= 50 & games$location == "N"]) + 
     sum(1 - games$wins[games$opp_rank <= 30 & games$location == "H"]) + 
@@ -32,9 +32,9 @@ record_eval <- function(team) {
     sum(1 - games$wins[games$opp_rank >= 76 & games$opp_rank <= 160 & games$location == "H"]) + 
     sum(1 - games$wins[games$opp_rank >= 136 & games$opp_rank <= 240 & games$location == "V"])
   tierDl <- 
-    sum(1 - games$wins[games$opp_rank >= 201 & games$opp_rank <= 351 & games$location == "N"]) + 
-    sum(1 - games$wins[games$opp_rank >= 161 & games$opp_rank <= 351 & games$location == "H"]) + 
-    sum(1 - games$wins[games$opp_rank >= 241 & games$opp_rank <= 351 & games$location == "V"])
+    sum(1 - games$wins[games$opp_rank >= 201 & games$opp_rank <= 353 & games$location == "N"]) + 
+    sum(1 - games$wins[games$opp_rank >= 161 & games$opp_rank <= 353 & games$location == "H"]) + 
+    sum(1 - games$wins[games$opp_rank >= 241 & games$opp_rank <= 353 & games$location == "V"])
   
   ### Resume Bonus
   qual_bonus <- 16 * tierAw + 8 * tierBw + 2 * tierCw + tierDw - 
