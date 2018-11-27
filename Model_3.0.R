@@ -28,7 +28,7 @@ x <- x %>%
   filter(D1 == 2)
 
 
-teams <- unique(x$team)
+teams <- sort(unique(x$team))
 
 ### Game IDs
 for(i in 1:length(teams)) {
