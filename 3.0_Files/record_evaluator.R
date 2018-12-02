@@ -3,7 +3,8 @@ record_eval <- function(team) {
   games <- x[x$team == team,]
   games <- inner_join(select(games, -opp_rank), 
              select(power_rankings, team, rank), 
-             by = c("opponent" = "team"))
+             by = c("opponent" = "team")) %>%
+    rename(team_rank = rank.x , opp_rank = rank.y)
 
   ### Classify wins into NCAA's 4 tiers
   tierAw <- 
