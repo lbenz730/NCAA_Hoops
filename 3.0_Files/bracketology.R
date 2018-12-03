@@ -63,6 +63,7 @@ make_bracket <- function(tourney) {
       }
     }
   }
+  
   bracket_math <- 
     read.csv("3.0_Files/Bracketology/historical/bracket_math_2016.csv", as.is = T) %>%
     bind_rows(read.csv("3.0_Files/Bracketology/historical/bracket_math_2017.csv", as.is = T)) %>%
