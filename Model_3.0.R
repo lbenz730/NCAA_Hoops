@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_12_3_2018.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_12_5_2018.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -153,14 +153,24 @@ playoffs <- ivy.sim(nsims = 5000)
 psf_results <- psf(nsims = 1000, year = 2018, min_date = "2019-01-01", max_date = "2019-01-01")
 
 ############################# Conference Sims (No Tie-Breaks) ##################
-conf_results <- conf_sim("WCC", 10000)
+conf_results <- conf_sim("Ivy", 10000)
 arrange(conf_results, desc(avg_wins))
 
-#### Feast Week Sims
-tourney_sim(c("Florida", "Butler", "Virginia","Wisconsin", 
-              "Stanford", "Middle Tenn.", "Dayton", "Oklahoma"), 
-            seeds = 1:8,
-            nsims = 1000, 
-            byes = 0,
-            double_byes = 0, 
-            hca = NA) %>% arrange(desc(champ))
+#### Undefeated Watch
+undefeated <- filter(x, !is.na(score_diff)) %>%
+  group_by(team) %>%
+  summarise("wins" = sum(wins), "losses" = n() - wins) %>%
+  ungroup() %>%
+  filter(losses == 0) %>%
+  pull(team)
+df <- filter(x, team %in% undefeated, is.na(score_diff)) %>%
+  group_by(team) %>%
+  summarise("undefeated_pct" = prod(wins) * 100,
+            "expected_losses" = sprintf("%.2f", sum(1-wins))) %>%
+  arrange(desc(undefeated_pct)) 
+df$undefeated_pct <- 
+  case_when(
+    df$undefeated_pct > 1 ~ paste0(round(df$undefeated_pct, 1), "%"),
+    df$undefeated_pct > 0.01 ~ paste0(round(df$undefeated_pct, 2), "%"),
+    T ~ "< 0.01%"
+  )
