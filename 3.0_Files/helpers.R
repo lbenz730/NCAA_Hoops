@@ -44,7 +44,9 @@ box_plot <- function(data) {
 
 #### Conference Sims
 conf_sim <- function(conf, nsims) {
-  conf_teams <- unique(filter(confs, conference == conf) %>% select(team))$team
+  conf_teams <- filter(confs, conference == conf) %>% 
+    pull(team) %>% 
+    unique()
   results <- data.frame("team" = conf_teams,
                         "shared_title" = rep(0, length(conf_teams)),
                         "sole_title" = rep(0, length(conf_teams)),
@@ -52,8 +54,13 @@ conf_sim <- function(conf, nsims) {
                         "avg_losses" = rep(0, length(conf_teams)))
   
   ### Sim Schedule
-  schedule <- filter(x, conf_game, team_conf == conf, location == "H") %>%
+  schedule <- filter(x, conf_game, team_conf == conf, location != "V") %>%
     mutate(simwins = 0, opp_simwins = 0)
+  schedule$tmp <- case_when(
+    schedule$team < schedule$opponent ~ paste(schedule$team, schedule$opponent, schedule$date),
+    T ~ paste(schedule$opponent, schedule$team, schedule$date)
+  )
+  schedule <- filter(schedule, !duplicated(tmp))
   
   sim_season <- rep(0, nrow(results))
   max_wins <- nrow(schedule) * 2 / nrow(results)
@@ -102,14 +109,14 @@ reg_season <- function(date, conf) {
 
 ### Compute Weights for Pre-season prior
 prior_weight <- function(school) {
-  w <- 1.8 * max(c(0, filter(x, team == school, !is.na(score_diff)) %>% 
-                   pull(game_id) %>%
-                   max()), 
-                 na.rm = T)/(
-                   max(c(1, filter(x, team == school) %>% 
-                           pull(game_id) %>%
-                           max()), na.rm = T)
-                 )
+  w <- 1.85 * max(c(0, filter(x, team == school, !is.na(score_diff)) %>% 
+                      pull(game_id) %>%
+                      max()), 
+                  na.rm = T)/(
+                    max(c(1, filter(x, team == school) %>% 
+                            pull(game_id) %>%
+                            max()), na.rm = T)
+                  )
   
   w <- min(c(w, 1))
   return(w)
