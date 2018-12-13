@@ -1,6 +1,5 @@
 ### Adapted from a file produced by Prof. Jay Emerson used in
 ### Introductory Data Analysis (STAT 230), Spring 2016
-
 library(dplyr)
 
 # Get date materials
