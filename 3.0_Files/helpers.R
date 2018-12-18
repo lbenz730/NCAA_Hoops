@@ -142,9 +142,9 @@ rank_plot <- function() {
 
 
 evo_plot <- function() {
-  ggplot(history, aes(x = as.Date(date), y = yusag_coeff, group = team, col = team)) + 
+  ggplot(history, aes(x = as.Date(date), y = yusag_coeff)) + 
     facet_wrap(~conference, ncol = 8) +
-    geom_line() + 
+    geom_line(aes(group = team, col = team)) + 
     theme_bw() + 
     theme(plot.title = element_text(size = 16, hjust = 0.5),
           axis.title.y = element_text(size = 14, hjust = 0.5),
