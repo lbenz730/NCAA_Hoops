@@ -109,7 +109,6 @@ lm.def$coefficients[c(1, 706:707)] <-
 
 ################################ Power Rankings ################################
 power_rankings <- pr_compute(by_conf = F)
-by_conf <- pr_compute(by_conf = T)
 history <- read.csv("3.0_Files/History/history.csv", as.is = T)
 x <- 
   mutate(x, pr_date = sapply(x$date, max_date, hist_dates = unique(history$date))) %>%
@@ -149,6 +148,7 @@ glm.pointspread <- glm(wins ~ pred_score_diff,
                        family=binomial) 
 x$wins[is.na(x$wins)] <- 
   round(predict(glm.pointspread, newdata = x[is.na(x$wins),], type = "response"), 3)
+by_conf <- pr_compute(by_conf = T)
 
 ####################################### Plots ##################################
 yusag_plot(power_rankings)
