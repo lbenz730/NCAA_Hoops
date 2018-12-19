@@ -23,7 +23,7 @@ x <- x %>%
          season_id = "2018-19", game_id = NA, opp_game_id = NA, 
          team_conf = NA, opp_conf = NA, conf_game = NA) %>%
   select(date, team, opponent, location, team_score, opp_score,
-         score_diff, game_id, opp_game_id, team_conf, opp_conf,
+         score_diff, total_score, game_id, opp_game_id, team_conf, opp_conf,
          year, month, day, season_id, D1, OT) %>% 
   filter(D1 == 2)
 
@@ -107,11 +107,40 @@ lm.def$coefficients[c(1, 706:707)] <-
   w[1] * lm.def$coefficients[c(1, 706:707)] + 
   (1-w[1]) * c(64.84747926, 0.41507438,  3.34957772)
 
+################################ Power Rankings ################################
+power_rankings <- pr_compute(by_conf = F)
+by_conf <- pr_compute(by_conf = T)
+history <- read.csv("3.0_Files/History/history.csv", as.is = T)
+x <- 
+  mutate(x, pr_date = sapply(x$date, max_date, hist_dates = unique(history$date))) %>%
+  inner_join(select(history, team, yusag_coeff, rank, date, off_coeff, def_coeff), 
+             by = c("team" = "team","pr_date" = "date")) %>%
+  inner_join(select(history, team, yusag_coeff, rank, date, off_coeff, def_coeff), 
+             by = c("opponent" = "team","pr_date" = "date")) %>% 
+  rename(rank = rank.x, opp_rank = rank.y, 
+         yusag_coeff = yusag_coeff.x, opp_yusag_coeff = yusag_coeff.y,
+         off_coeff = off_coeff.x, opp_off_coeff = off_coeff.y,
+         def_coeff = def_coeff.x, opp_def_coeff = def_coeff.y) %>%
+  select(-pr_date)
+
+############################### Predictions ####################################
+x <- 
+  mutate(x, "hca" = case_when(location == "H" ~ lm.hoops$coefficients[1],
+                              location == "V" ~ lm.hoops$coefficients[706],
+                              location == "N" ~ 0),
+         "hca_off" = case_when(location == "H" ~ abs(lm.off$coefficients[706]),
+                               location == "V" ~ lm.off$coefficients[707] - lm.off$coefficients[706],
+                               location == "N" ~ 0),
+         "hca_def" = case_when(location == "H" ~ -lm.def$coefficients[706],
+                               location == "V" ~ lm.def$coefficients[707] - lm.def$coefficients[706],
+                               location == "N" ~ 0)) %>%
+  mutate("pred_score_diff" = round(yusag_coeff - opp_yusag_coeff + hca, 1),
+         "pred_team_score" = round(mean(x$team_score, na.rm = T) + off_coeff - opp_def_coeff + hca_off, 1),
+         "pred_opp_score" = round(mean(x$team_score, na.rm = T) -def_coeff + opp_off_coeff + hca_def, 1),
+         "pred_total_score" = pred_team_score + pred_opp_score) %>%
+  select(-hca, -hca_off, -hca_def)
+
 ######################## Point Spread to Win Percentage Model #################
-x$pred_score_diff <- round(predict(lm.hoops, newdata = x), 1)
-x$pred_team_score <- round(predict(lm.off, newdata = x), 1)
-x$pred_opp_score <- round(predict(lm.def, newdata = x), 1)
-x$pred_total_score <- x$pred_team_score + x$pred_opp_score
 x$wins[x$score_diff > 0] <- 1
 x$wins[x$score_diff < 0] <- 0
 glm.pointspread <- glm(wins ~ pred_score_diff, 
@@ -121,20 +150,7 @@ glm.pointspread <- glm(wins ~ pred_score_diff,
 x$wins[is.na(x$wins)] <- 
   round(predict(glm.pointspread, newdata = x[is.na(x$wins),], type = "response"), 3)
 
-################################ Power Rankings ################################
-power_rankings <- pr_compute(by_conf = F)
-by_conf <- pr_compute(by_conf = T)
-history <- read.csv("3.0_Files/History/history.csv", as.is = T)
-x <- 
-  mutate(x, pr_date = sapply(x$date, max_date, hist_dates = unique(history$date))) %>%
-  inner_join(select(history, team, yusag_coeff, rank, date), by = c("team" = "team",
-                                                                        "pr_date" = "date")) %>%
-  inner_join(select(history, team, yusag_coeff, rank, date), 
-             by = c("opponent" = "team",
-                    "pr_date" = "date")) %>% 
-  rename(rank = rank.x, opp_rank = rank.y, 
-         yusag_coeff = yusag_coeff.x, opp_yusag_coeff = yusag_coeff.y) %>%
-  select(-pr_date)
+####################################### Plots ##################################
 yusag_plot(power_rankings)
 png("3.0_Files/Power_Rankings/boxplot.png", res = 180, width = 1275, height = 1000)
 box_plot(power_rankings)
@@ -158,7 +174,7 @@ conf_results[,2:3] <- round(conf_results[,2:3], 2)
 conf_results[,4:5] <- round(conf_results[,4:5], 2)
 arrange(conf_results, desc(avg_wins))
 
-#### Undefeated Watch
+########################## Undefeated Watch ####################################
 undefeated <- filter(x, !is.na(score_diff)) %>%
   group_by(team) %>%
   summarise("wins" = sum(wins), "losses" = n() - wins) %>%
@@ -177,3 +193,18 @@ df$undefeated_pct <-
     T ~ "< 0.01%"
   )
 as.data.frame(df)
+
+############################ System Evaluation #################################
+cat("System Evaluation",
+    "\n-------------------------------------------------------------\n",
+    "Predictive Accuracy: ",
+    round(100 * mean(sign(x$pred_score_diff) == sign(x$score_diff), na.rm = T), 1), "%\n", 
+    "Mean Absolute Error in Predicted Score Differential: ",
+    round(mean(abs(x$pred_score_diff - x$score_diff), na.rm = T), 2), "\n",
+    "Predicted Totals Score <= Total Score: ",
+    round(100 * mean(x$pred_total_score <= x$total_score, na.rm = T), 1), "%\n",
+    "Predicted Totals Score > Total Score: ",
+    round(100 * mean(x$pred_total_score > x$total_score, na.rm = T), 1), "%\n",
+    "Mean Absolute Error in Total Score Predictions: ",
+    round(mean(abs(x$pred_total_score - x$total_score), na.rm = T),  2),
+    sep = "")
