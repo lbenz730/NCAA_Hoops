@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_12_19_2018.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_12_21_2018.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -134,8 +134,8 @@ x <-
                                location == "V" ~ lm.def$coefficients[707] - lm.def$coefficients[706],
                                location == "N" ~ 0)) %>%
   mutate("pred_score_diff" = round(yusag_coeff - opp_yusag_coeff + hca, 1),
-         "pred_team_score" = round(mean(x$team_score, na.rm = T) + off_coeff - opp_def_coeff + hca_off, 1),
-         "pred_opp_score" = round(mean(x$team_score, na.rm = T) -def_coeff + opp_off_coeff + hca_def, 1),
+         "pred_team_score" = round(71 + off_coeff - opp_def_coeff + hca_off, 1),
+         "pred_opp_score" = round(71 -def_coeff + opp_off_coeff + hca_def, 1),
          "pred_total_score" = pred_team_score + pred_opp_score) %>%
   select(-hca, -hca_off, -hca_def)
 
@@ -194,17 +194,29 @@ df$undefeated_pct <-
   )
 as.data.frame(df)
 
+
 ############################ System Evaluation #################################
-cat("System Evaluation",
+min_date <- as.Date("2018-12-01")
+max_date <- Sys.Date()
+y <- filter(x, date >= min_date, date <= max_date)
+cat(paste("System Evaluation:", min_date, "Through", max_date),
     "\n-------------------------------------------------------------\n",
     "Predictive Accuracy: ",
-    round(100 * mean(sign(x$pred_score_diff) == sign(x$score_diff), na.rm = T), 1), "%\n", 
+    round(100 * mean(sign(y$pred_score_diff) == sign(y$score_diff), na.rm = T), 1), "%\n", 
     "Mean Absolute Error in Predicted Score Differential: ",
-    round(mean(abs(x$pred_score_diff - x$score_diff), na.rm = T), 2), "\n",
+    round(mean(abs(y$pred_score_diff - y$score_diff), na.rm = T), 2), "\n",
+    "Games w/in 2 Points of Observed Score Differential: ",
+    round(100 * mean(abs(y$pred_score_diff - y$score_diff) <= 2, na.rm = T), 2), "%\n",
+    "Games w/in 5 Points of Observed Score Differential: ",
+    round(100 * mean(abs(y$pred_score_diff - y$score_diff) <= 5, na.rm = T), 2), "%\n",
     "Predicted Totals Score <= Total Score: ",
-    round(100 * mean(x$pred_total_score <= x$total_score, na.rm = T), 1), "%\n",
+    round(100 * mean(y$pred_total_score <= y$total_score, na.rm = T), 1), "%\n",
     "Predicted Totals Score > Total Score: ",
-    round(100 * mean(x$pred_total_score > x$total_score, na.rm = T), 1), "%\n",
+    round(100 * mean(y$pred_total_score > y$total_score, na.rm = T), 1), "%\n",
     "Mean Absolute Error in Total Score Predictions: ",
-    round(mean(abs(x$pred_total_score - x$total_score), na.rm = T),  2),
+    round(mean(abs(y$pred_total_score - y$total_score), na.rm = T),  2), "\n",
+    "Games w/in 2 Points of Observed Total Score: ",
+    round(100 * mean(abs(y$pred_total_score - y$total_score) <= 2, na.rm = T), 2), "%\n",
+    "Games w/in 5 Points of Observed Total Score: ",
+    round(100 * mean(abs(y$pred_total_score - y$total_score) <= 5, na.rm = T), 2), "%\n",
     sep = "")
