@@ -200,11 +200,11 @@ ivy.sim <- function(nsims) {
     playoffs$playoff_prob[i] <- sum(playoffs[i,4:7], na.rm = T)
   }
   write.csv(playoffs, "3.0_Files/Predictions/playoffs.csv", row.names = F)
-  playoff_history <- read.csv("playoff_history.csv", as.is = T) %>%
+  playoff_history <- read.csv("3.0_Files/Predictions/playoff_history.csv", as.is = T) %>%
     mutate(date = as.Date(date)) %>%
     filter(date != Sys.Date()) %>%
     rbind(playoffs %>% mutate(date = Sys.Date()))
-  write.csv(playoff_history, "3.0_Files/Predictions/playoff_history.csv")
+  write.csv(playoff_history, "3.0_Files/Predictions/playoff_history.csv", row.names = F)
   return(playoffs)
 }
 
