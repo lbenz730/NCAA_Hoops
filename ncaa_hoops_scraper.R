@@ -103,3 +103,4 @@ z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team
 write.csv(z, paste("3.0_Files/Results/2018-19/NCAA_Hoops_Results_", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names=FALSE)
 
+
