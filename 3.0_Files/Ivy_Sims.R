@@ -211,7 +211,7 @@ ivy.sim <- function(nsims) {
 ############################ Playoff Swing Factor ##############################
 ### compute playoff swing factor (leverage) of each game
 psf <- function(nsims, year, min_date, max_date) {
-  tochange <- filter(x, date >= min_date, data <= max_date, team_conf == "Ivy",
+  tochange <- filter(x, date >= min_date, date <= max_date, team_conf == "Ivy",
                      conf_game, location == "H")
   
   games <- x[x$location == "H" & x$team_conf == "Ivy" & x$conf_game & x$reg_season, ]

@@ -166,7 +166,7 @@ bracket_math <- make_bracket(tourney = F)
 
 ################################ Ivy Sims ######################################
 playoffs <- ivy.sim(nsims = 5000)
-psf_results <- psf(nsims = 1000, min_date = "2019-01-01", max_date = "2019-01-01")
+psf_results <- psf(nsims = 1000, min_date = "2019-01-01", max_date = "2019-01-06")
 
 ############################# Conference Sims (No Tie-Breaks) ##################
 conf_results <- conf_sim("Ivy", 10000)
