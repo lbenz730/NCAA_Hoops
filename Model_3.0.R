@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_1_3_2019.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_1_4_2019.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -134,8 +134,8 @@ x <-
                                location == "V" ~ lm.def$coefficients[707] - lm.def$coefficients[706],
                                location == "N" ~ 0)) %>%
   mutate("pred_score_diff" = round(yusag_coeff - opp_yusag_coeff + hca, 1),
-         "pred_team_score" = round(71 + off_coeff - opp_def_coeff + hca_off, 1),
-         "pred_opp_score" = round(71 -def_coeff + opp_off_coeff + hca_def, 1),
+         "pred_team_score" = round(72 + off_coeff - opp_def_coeff + hca_off, 1),
+         "pred_opp_score" = round(72 -def_coeff + opp_off_coeff + hca_def, 1),
          "pred_total_score" = pred_team_score + pred_opp_score) %>%
   select(-hca, -hca_off, -hca_def)
 
@@ -220,3 +220,4 @@ cat(paste("System Evaluation:", min_date, "Through", max_date),
     "Games w/in 5 Points of Observed Total Score: ",
     round(100 * mean(abs(y$pred_total_score - y$total_score) <= 5, na.rm = T), 2), "%\n",
     sep = "")
+
