@@ -227,7 +227,8 @@ psf <- function(nsims, year, min_date, max_date) {
   
   
   # Create Data Frame to Store SwingFactor
-  swingfactor <- data.frame(home = tochange$team,
+  swingfactor <- data.frame(date = tochange$date,
+                            home = tochange$team,
                             away = tochange$opponent,
                             psf = rep(NA, nrow(tochange)),
                             auto_bid_sf = rep(NA, nrow(tochange)))
@@ -407,6 +408,11 @@ psf <- function(nsims, year, min_date, max_date) {
       swingfactor$auto_bid_sf[k/2] <- sum(abs(simplayoffs$auto_bid_2 - simplayoffs$auto_bid_1))
     }
   }
+  
+  psf_history <- read.csv("3.0_Files/Predictions/psf_history.csv", as.is = T) %>%
+    filter(as.Date(date) != Sys.Date())
+  psf_history <- rbind(psf_history, swingfactor) 
+  write.csv(psf_history, "3.0_Files/Predictions/psf_history.csv", row.names = F)
   write.csv(swingfactor, "3.0_Files/Predictions/psf.csv", row.names = F)
   return(swingfactor)
 }

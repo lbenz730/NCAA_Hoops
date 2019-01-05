@@ -138,6 +138,7 @@ x <-
          "pred_opp_score" = round(72 -def_coeff + opp_off_coeff + hca_def, 1),
          "pred_total_score" = pred_team_score + pred_opp_score) %>%
   select(-hca, -hca_off, -hca_def)
+ivy_preds()
 
 ######################## Point Spread to Win Percentage Model #################
 x$wins[x$score_diff > 0] <- 1
