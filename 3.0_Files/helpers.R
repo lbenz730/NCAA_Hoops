@@ -109,13 +109,17 @@ reg_season <- function(date, conf) {
 
 ### Compute Weights for Pre-season prior
 prior_weight <- function(school) {
-  w <- 1.95 * max(c(0, filter(x, team == school, !is.na(score_diff)) %>% 
+  w <- 1.95 * max(c(0, 
+                    filter(x, team == school, !is.na(score_diff)) %>% 
                       pull(game_id) %>%
-                      max()), 
+                      max()
+                    ), 
                   na.rm = T)/(
-                    max(c(1, filter(x, team == school) %>% 
+                    max(c(1, 
+                          filter(x, team == school) %>% 
                             pull(game_id) %>%
-                            max()), na.rm = T)
+                            max()
+                          ), na.rm = T)
                   )
   
   w <- min(c(w, 1))

@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_1_6_2019.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_1_9_2019.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -26,7 +26,6 @@ x <- x %>%
          score_diff, total_score, game_id, opp_game_id, team_conf, opp_conf,
          year, month, day, season_id, D1, OT) %>% 
   filter(D1 == 2)
-
 
 teams <- sort(unique(x$team))
 
