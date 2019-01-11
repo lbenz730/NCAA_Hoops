@@ -188,7 +188,8 @@ ivy.sim <- function(nsims) {
                          seed1_prob = rep(NA, length(ivy)),
                          seed2_prob = rep(NA, length(ivy)),
                          seed3_prob = rep(NA, length(ivy)),
-                         seed4_prob = rep(NA, length(ivy)))
+                         seed4_prob = rep(NA, length(ivy)),
+                         stringsAsFactors = F)
   
   
   for(i in 1:length(ivy)) {
@@ -231,7 +232,8 @@ psf <- function(nsims, year, min_date, max_date) {
                             home = tochange$team,
                             away = tochange$opponent,
                             psf = rep(NA, nrow(tochange)),
-                            auto_bid_sf = rep(NA, nrow(tochange)))
+                            auto_bid_sf = rep(NA, nrow(tochange)),
+                            stringsAsFactors = F)
   
   # Switch
   q = 0
