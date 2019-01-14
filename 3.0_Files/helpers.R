@@ -185,10 +185,10 @@ ivy_preds <- function() {
 
 ####### Ivy League Graphics
 playoff_graphic <- function() {
-  background_colors <- arrange(playoffs, desc(auto_bid), desc(playoff_prob), desc(seed1_prob)) %>%
+  background_colors <- arrange(playoffs, desc(playoff_prob), desc(seed1_prob)) %>%
     pull(team) %>%
     sapply(., function(x) { ncaa_colors$primary_color[ncaa_colors$ncaa_name == x] })
-  text_colors <- arrange(playoffs, desc(auto_bid), desc(playoff_prob), desc(seed1_prob)) %>%
+  text_colors <- arrange(playoffs, desc(playoff_prob), desc(seed1_prob)) %>%
     pull(team) %>%
     sapply(., function(x) { ncaa_colors$secondary_color[ncaa_colors$ncaa_name == x] })
   text_colors[c("Brown", "Dartmouth", "Cornell")] <- "#FFFFFF"
@@ -198,7 +198,7 @@ playoff_graphic <- function() {
     auto_bid > 0 ~ auto_bid,
     playoff_prob > 0 ~ 0.1)
   ) %>%
-    arrange(desc(auto_bid), desc(playoff_prob), desc(seed1_prob)) %>%
+    arrange(desc(playoff_prob), desc(seed1_prob)) %>%
     rename("Team" = team,
            "Auto Bid" = auto_bid,
            "Playoff Probability" = playoff_prob,
