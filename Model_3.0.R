@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_1_17_2019.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_1_20_2019.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -170,13 +170,13 @@ psf_results <- psf(nsims = 1000, min_date = "2019-01-16", max_date = "2019-01-23
 playoff_graphic()
 psf_graphic()
 ############################# Conference Sims (No Tie-Breaks) ##################
-conf_results <- conf_sim("ACC", 10000)
+conf_results <- conf_sim("Am. East", 10000)
 conf_results[,2:3] <- round(conf_results[,2:3], 2)
 conf_results[,4:5] <- round(conf_results[,4:5], 2)
 arrange(conf_results, desc(avg_wins))
 
 ########################## Undefeated Watch ####################################
-undefeated <- filter(x, !is.na(score_diff)) %>%
+undefeated <- filter(x, !is.na(score_diff), conf_game) %>%
   group_by(team) %>%
   summarise("wins" = sum(wins), "losses" = n() - wins) %>%
   ungroup() %>%
@@ -189,11 +189,11 @@ df <- filter(x, team %in% undefeated, is.na(score_diff)) %>%
   arrange(desc(undefeated_pct)) 
 df$undefeated_pct <- 
   case_when(
-    df$undefeated_pct > 1 ~ paste0(round(df$undefeated_pct, 1), "%"),
-    df$undefeated_pct > 0.01 ~ paste0(round(df$undefeated_pct, 2), "%"),
+    df$undefeated_pct > 0.05 ~ paste0(sprintf("%.1f", df$undefeated_pct), "%"),
     T ~ "< 0.01%"
   )
-as.data.frame(df)
+as.data.frame(inner_join(df, select(confs, team, conference), by = "team")) %>%
+  select(team, conference, undefeated_pct, expected_losses)
 
 
 ############################ System Evaluation #################################
@@ -221,4 +221,5 @@ cat(paste("System Evaluation:", min_date, "Through", max_date),
     "Games w/in 5 Points of Observed Total Score: ",
     round(100 * mean(abs(y$pred_total_score - y$total_score) <= 5, na.rm = T), 2), "%\n",
     sep = "")
+nrow(filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score))
 
