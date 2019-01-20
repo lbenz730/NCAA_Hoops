@@ -159,8 +159,8 @@ evo_plot()
 rank_plot()
 
 ########################### Bracketology #######################################
-rpi <- rpi_compute(new = T)
-resumes <- get_resumes(new = T)
+rpi <- rpi_compute(new = F)
+resumes <- get_resumes(new = F)
 bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
