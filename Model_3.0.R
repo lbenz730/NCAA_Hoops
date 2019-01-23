@@ -149,7 +149,7 @@ glm.pointspread <- glm(wins ~ pred_score_diff,
 x$wins[is.na(x$wins)] <- 
   round(predict(glm.pointspread, newdata = x[is.na(x$wins),], type = "response"), 3)
 by_conf <- pr_compute(by_conf = T)
-
+write.csv(x, "3.0_Files/Results/2018-19/2019_Final.csv", row.names = F)
 ####################################### Plots ##################################
 yusag_plot(power_rankings)
 png("3.0_Files/Power_Rankings/boxplot.png", res = 180, width = 1275, height = 1000)

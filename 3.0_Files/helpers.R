@@ -55,7 +55,8 @@ conf_sim <- function(conf, nsims) {
                         "shared_title" = rep(0, length(conf_teams)),
                         "sole_title" = rep(0, length(conf_teams)),
                         "avg_wins" = rep(0, length(conf_teams)),
-                        "avg_losses" = rep(0, length(conf_teams)))
+                        "avg_losses" = rep(0, length(conf_teams)),
+                        stringsAsFactors = F)
   
   ### Sim Schedule
   schedule <- filter(x, conf_game, team_conf == conf, location != "V") %>%
@@ -88,6 +89,45 @@ conf_sim <- function(conf, nsims) {
     if(length(winners) == 1) {
       results$sole_title[winners] <- results$sole_title[winners] + 1/nsims
     }
+  }
+  return(results)
+}
+
+#### Conference Sims
+conf_fast_sim <- function(conf, nsims) {
+  conf_teams <- filter(confs, conference == conf) %>% 
+    pull(team) %>% 
+    unique()
+  results <- data.frame("team" = rep(conf_teams, nsims),
+                        "sim" = rep(1:nsims, each = length(conf_teams)),
+                        "n_wins" = NA,
+                        stringsAsFactors = F)
+                        
+  
+  ### Sim Schedule
+  schedule <- filter(x, conf_game, team_conf == conf, location != "V") %>%
+    mutate(simwins = 0, opp_simwins = 0)
+  schedule$tmp <- case_when(
+    schedule$team < schedule$opponent ~ paste(schedule$team, schedule$opponent, schedule$date),
+    T ~ paste(schedule$opponent, schedule$team, schedule$date)
+  )
+  schedule <- filter(schedule, !duplicated(tmp))
+  
+  sim_season <- rep(0, length(conf_teams))
+  
+  for(i in 1:nsims) {
+    if(i %% 100 == 0) {
+      cat("Sim:", i, "\n")
+    }
+    rands <- runif(nrow(schedule))
+    schedule$simwins <- ifelse(rands <= schedule$wins, 1, 0)
+    schedule$opp_simwins <- abs(1 - schedule$simwins)
+    for(j in 1:length(conf_teams)) {
+      sim_season[j] <- sum(schedule$simwins[schedule$team == conf_teams[j]]) +
+        sum(schedule$opp_simwins[schedule$opponent == conf_teams[j]])
+    }
+    
+    results$n_wins[results$sim == i] <- sim_season
   }
   return(results)
 }
