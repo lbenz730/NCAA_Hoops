@@ -412,7 +412,8 @@ psf <- function(nsims, year, min_date, max_date) {
   }
   
   psf_history <- read.csv("3.0_Files/Predictions/psf_history.csv", as.is = T) %>%
-    filter(as.Date(date) != Sys.Date())
+    mutate(date = as.Date(date)) %>%
+    filter(date != Sys.Date())
   psf_history <- rbind(psf_history, swingfactor) 
   write.csv(psf_history, "3.0_Files/Predictions/psf_history.csv", row.names = F)
   write.csv(swingfactor, "3.0_Files/Predictions/psf.csv", row.names = F)
