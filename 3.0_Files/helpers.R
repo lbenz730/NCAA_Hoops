@@ -231,8 +231,10 @@ playoff_graphic <- function() {
   text_colors <- arrange(playoffs, desc(playoff_prob), desc(seed1_prob)) %>%
     pull(team) %>%
     sapply(., function(x) { ncaa_colors$secondary_color[ncaa_colors$ncaa_name == x] })
-  text_colors[c("Brown", "Dartmouth", "Cornell")] <- "#FFFFFF"
-  
+  text_colors[c("Brown", "Dartmouth", "Cornell", "Harvard")] <- "#FFFFFF"
+  tmp <- text_colors["Penn"]
+  text_colors["Penn"] <- "red"
+  background_colors["Penn"] <- tmp
   
   mutate(playoffs, auto_bid = case_when(
     auto_bid > 0 ~ auto_bid,
@@ -269,8 +271,12 @@ psf_graphic <- function() {
     sapply(., function(x) { ncaa_colors$secondary_color[ncaa_colors$ncaa_name == x] })
   text_colors[c("Brown", "Dartmouth", "Cornell", "Harvard")] <- "#FFFFFF"
   tmp <- text_colors["Penn"]
-  text_colors["Penn"] <- background_colors["Penn"]
+  text_colors["Penn"] <- "red"
   background_colors["Penn"] <- tmp
+  
+  psf_results <- mutate(psf_results,
+                        auto_bid_sf = sprintf("%.1f", auto_bid_sf),
+                        psf = sprintf("%.1f", psf))
   
   inner_join(psf_results, select(x, team, opponent, pred_team_score, date,
                                  pred_opp_score, wins), by = c("home" = "team",
@@ -302,11 +308,11 @@ psf_graphic <- function() {
     ) %>%
     mutate(psf = cell_spec(
       psf, color = "white", bold = T,
-      background = spec_color(psf, end = 0.9, option = "C", direction = -1)
+      background = spec_color(as.numeric(psf), end = 0.9, option = "C", direction = 1)
     )) %>%
     mutate(auto_bid_sf = cell_spec(
       auto_bid_sf, color = "white", bold = T,
-      background = spec_color(auto_bid_sf, end = 0.9, option = "C", direction = -1)
+      background = spec_color(as.numeric(auto_bid_sf), end = 0.9, option = "C", direction = 1)
     )) %>%
     select(-winner) %>%
     rename("Home" = home,
