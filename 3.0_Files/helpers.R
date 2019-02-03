@@ -213,12 +213,13 @@ max_date <- function(date, hist_dates) {
 ivy_preds <- function() {
   filter(x, conf_game, 
          team_conf == "Ivy", 
-         date >= Sys.Date(), date <= Sys.Date() + 2, 
+         date > Sys.Date(), date <= Sys.Date() + 2, 
          location == "H") %>% 
     select(date, team, opponent, location, pred_team_score, 
            pred_opp_score, pred_score_diff, pred_total_score) %>%
     rbind(read.csv("3.0_Files/Predictions/ivy_predictions.csv", as.is = T) %>%
-            mutate("date" = as.Date(date))) %>%
+            mutate("date" = as.Date(date)) %>%
+            filter(date <= Sys.Date())) %>%
     filter(!duplicated(paste(date, team, opponent))) %>%
     write.csv("3.0_Files/Predictions/ivy_predictions.csv", row.names = F)
 }
