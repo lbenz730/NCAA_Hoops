@@ -47,8 +47,8 @@ make_bracket <- function(tourney) {
        bracket$conf[i] %in% c("Big 10", "Big 12", "Big East", "ACC", "Pac 12", "Big 12")
   }
   
-  bracket$blend <- 0.25 * bracket$rpi_rank + 0.1 * bracket$wab_rank + 
-    0.1 * bracket$sor_rank + 0.25 * bracket$yusag_rank + 0.30 * bracket$resume_rank 
+  bracket$blend <- 0.25 * bracket$rpi_rank + 0.15 * bracket$wab_rank + 
+    0.175 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.225 * bracket$resume_rank 
   
   bracket$avg <- 0.2 * bracket$rpi_rank + 0.2 * bracket$wab_rank + 
     0.2 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.2 * bracket$resume_rank 

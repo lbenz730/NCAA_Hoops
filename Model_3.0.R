@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_2_3_2019.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_2_6_2019.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -170,7 +170,7 @@ psf_results <- psf(nsims = 1000, min_date = "2019-02-02", max_date = "2019-02-02
 playoff_graphic()
 psf_graphic()
 ############################# Conference Sims (No Tie-Breaks) ##################
-conf_results <- conf_sim("Am. East", 10000)
+conf_results <- conf_sim("Ivy", 10000)
 conf_results[,2:3] <- round(conf_results[,2:3], 2)
 conf_results[,4:5] <- round(conf_results[,4:5], 2)
 arrange(conf_results, desc(avg_wins))
