@@ -26,7 +26,7 @@ make_bracket <- function(tourney) {
     mutate(wab_rank = 1:353) %>%
     arrange(desc(qual_bonus)) %>%
     mutate(resume_rank = 1:353)
-
+  
   
   for(i in 1:length(teams)) {
     bracket$yusag_coeff[i] <- power_rankings$yusag_coeff[power_rankings$team == teams[i]]
@@ -43,12 +43,12 @@ make_bracket <- function(tourney) {
     bracket$mid_major[i] <- confs$mid_major[confs$team == teams[i]]
     bracket$wins[i] <- resumes$wins[resumes$team == teams[i]]
     bracket$losses[i] <- resumes$losses[resumes$team == teams[i]]
-    bracket$loss_bonus[i] <- resumes$losses[resumes$team == teams[i]] <= 4 &
-       bracket$conf[i] %in% c("Big 10", "Big 12", "Big East", "ACC", "Pac 12", "Big 12")
+    bracket$loss_bonus[i] <- resumes$losses[resumes$team == teams[i]] <= 4.5 
+    bracket$conf[i] %in% c("Big 10", "Big 12", "Big East", "ACC", "Pac 12", "Big 12")
   }
   
-  bracket$blend <- 0.25 * bracket$rpi_rank + 0.15 * bracket$wab_rank + 
-    0.175 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.225 * bracket$resume_rank 
+  bracket$blend <- 0.25 * bracket$rpi_rank + 0.1 * bracket$wab_rank + 
+    0.1 * bracket$sor_rank + 0.25 * bracket$yusag_rank + 0.3 * bracket$resume_rank
   
   bracket$avg <- 0.2 * bracket$rpi_rank + 0.2 * bracket$wab_rank + 
     0.2 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.2 * bracket$resume_rank 
@@ -74,11 +74,15 @@ make_bracket <- function(tourney) {
     0.2 * bracket_math$yusag_rank + 0.2 * bracket_math$resume_rank 
   
   bracket_math$bid <- bracket_math$seed <= 10
-  glm.madness <- suppressWarnings(glm(bid ~ blend + (mid_major & yusag_rank > 25) 
-                                      + (mid_major & yusag_rank > 50), 
+  glm.madness <- suppressWarnings(glm(bid ~ blend +
+                                        + (mid_major & yusag_rank > 50) 
+                                      + (mid_major & yusag_rank > 25) 
+                                      + (loss_bonus & yusag_rank <= 10), 
                                       data = bracket_math, family = "binomial"))
-  lm.seed <- lm(seed ~ blend + (mid_major & yusag_rank > 25)
-                + (mid_major & yusag_rank > 50), 
+  lm.seed <- lm(seed ~ blend +
+                  + (mid_major & yusag_rank > 50) 
+                + (mid_major & yusag_rank > 25) 
+                + (loss_bonus & yusag_rank <= 10), 
                 data = bracket_math)
   bracket$odds <- 
     round(predict(glm.madness, newdata = bracket, type = "response"), 4) * 100

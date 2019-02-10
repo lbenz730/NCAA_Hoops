@@ -102,7 +102,7 @@ conf_fast_sim <- function(conf, nsims) {
                         "sim" = rep(1:nsims, each = length(conf_teams)),
                         "n_wins" = NA,
                         stringsAsFactors = F)
-                        
+  
   
   ### Sim Schedule
   schedule <- filter(x, conf_game, team_conf == conf, location != "V") %>%
@@ -275,9 +275,9 @@ psf_graphic <- function() {
   text_colors["Penn"] <- "red"
   background_colors["Penn"] <- tmp
   
-  psf_results <- mutate(psf_results,
-                        auto_bid_sf = sprintf("%.1f", auto_bid_sf),
-                        psf = sprintf("%.1f", psf))
+  psf_results <- arrange(psf_results, desc(psf)) %>% 
+    mutate(auto_bid_sf = sprintf("%.1f", auto_bid_sf),
+             psf = sprintf("%.1f", psf))
   
   inner_join(psf_results, select(x, team, opponent, pred_team_score, date,
                                  pred_opp_score, wins), by = c("home" = "team",
@@ -285,14 +285,13 @@ psf_graphic <- function() {
                                                                "date" = "date")) %>%
     mutate("winner" = ifelse(pred_team_score > pred_opp_score, home, away),
            "result" = case_when(
-             pred_team_score > pred_opp_score ~ paste0(home, ": ", pred_team_score, " - ",
-                                                       pred_opp_score, " (", 100 * wins, "%)"),
-             pred_opp_score > pred_team_score ~ paste0(away, ": ", pred_opp_score, " - ",
-                                                       pred_team_score, " (", 100 * (1 - wins), "%)")
+             pred_team_score > pred_opp_score ~ paste0(home, ": ", sprintf("%.1f", pred_team_score), " - ",
+                                                       sprintf("%.1f", pred_opp_score), " (", sprintf("%.1f", 100 * wins), "%)"),
+             pred_opp_score > pred_team_score ~ paste0(away, ": ", sprintf("%.1f", pred_opp_score), " - ",
+                                                       sprintf("%.1f", pred_team_score), " (", sprintf("%.1f", 100 * (1 - wins)), "%)")
            )
     ) %>%
     select(home, away, result, psf, auto_bid_sf, winner) %>%
-    arrange(desc(psf)) %>%
     mutate(home = cell_spec(home, 
                             color = text_colors[home], 
                             background = background_colors[home],
