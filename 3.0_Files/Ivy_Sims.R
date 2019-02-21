@@ -198,7 +198,7 @@ ivy.sim <- function(nsims) {
     playoffs$seed2_prob[i] <- round(sum(prebreak.pos[,i] == 2)/nsims * 100, 1)
     playoffs$seed3_prob[i] <- round(sum(prebreak.pos[,i] == 3)/nsims * 100, 1)
     playoffs$seed4_prob[i] <- round(sum(prebreak.pos[,i] == 4)/nsims * 100, 1)
-    playoffs$playoff_prob[i] <- sum(playoffs[i,4:7], na.rm = T)
+    playoffs$playoff_prob[i] <- round(sum(prebreak.pos[,i] <= 4)/nsims * 100, 1)
   }
   write.csv(playoffs, "3.0_Files/Predictions/playoffs.csv", row.names = F)
   playoff_history <- read.csv("3.0_Files/Predictions/playoff_history.csv", as.is = T) %>%
@@ -389,7 +389,7 @@ psf <- function(nsims, year, min_date, max_date) {
       playoffs$seed2_prob[i] <- round(sum(prebreak.pos[,i] == 2)/nsims * 100, 1)
       playoffs$seed3_prob[i] <- round(sum(prebreak.pos[,i] == 3)/nsims * 100, 1)
       playoffs$seed4_prob[i] <- round(sum(prebreak.pos[,i] == 4)/nsims * 100, 1)
-      playoffs$playoff_prob[i] <- sum(playoffs[i,3:6], na.rm = T)
+      playoffs$playoff_prob[i] <- round(sum(prebreak.pos[,i] <= 4)/nsims * 100, 1)
       playoffs$auto_bid[i] <- round(sum(champ == ivy[i])/nsims * 100, 1)
     }
     
