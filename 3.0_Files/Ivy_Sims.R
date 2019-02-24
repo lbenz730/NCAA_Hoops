@@ -193,12 +193,12 @@ ivy.sim <- function(nsims) {
   
   
   for(i in 1:length(ivy)) {
-    playoffs$auto_bid[i] <- round(sum(is.element(champ, ivy[i]))/nsims * 100, 1)
-    playoffs$seed1_prob[i] <- round(sum(prebreak.pos[,i] == 1)/nsims * 100, 1)
-    playoffs$seed2_prob[i] <- round(sum(prebreak.pos[,i] == 2)/nsims * 100, 1)
-    playoffs$seed3_prob[i] <- round(sum(prebreak.pos[,i] == 3)/nsims * 100, 1)
-    playoffs$seed4_prob[i] <- round(sum(prebreak.pos[,i] == 4)/nsims * 100, 1)
-    playoffs$playoff_prob[i] <- round(sum(prebreak.pos[,i] <= 4)/nsims * 100, 1)
+    playoffs$auto_bid[i] <- sum(is.element(champ, ivy[i]))/nsims * 100
+    playoffs$seed1_prob[i] <- sum(prebreak.pos[,i] == 1)/nsims * 100
+    playoffs$seed2_prob[i] <- sum(prebreak.pos[,i] == 2)/nsims * 100
+    playoffs$seed3_prob[i] <- sum(prebreak.pos[,i] == 3)/nsims * 100
+    playoffs$seed4_prob[i] <- sum(prebreak.pos[,i] == 4)/nsims * 100
+    playoffs$playoff_prob[i] <- sum(prebreak.pos[,i] <= 4)/nsims * 100
   }
   write.csv(playoffs, "3.0_Files/Predictions/playoffs.csv", row.names = F)
   playoff_history <- read.csv("3.0_Files/Predictions/playoff_history.csv", as.is = T) %>%

@@ -238,10 +238,37 @@ playoff_graphic <- function() {
   background_colors["Penn"] <- tmp
   
   mutate(playoffs, auto_bid = case_when(
-    auto_bid > 0 ~ auto_bid,
-    playoff_prob > 0 ~ 0.1)
+    auto_bid > 0.05 ~ round(auto_bid, 1),
+    playoff_prob > 0 ~ 0.1,
+    T ~ 0),
+    seed1_prob = 
+      case_when(
+        seed1_prob > 0.05 ~ round(seed1_prob, 1),
+        seed1_prob > 0 ~ 0.1,
+        T ~ 0),
+    seed2_prob = 
+      case_when(
+        seed2_prob > 0.05 ~ round(seed2_prob, 1),
+        seed2_prob > 0 ~ 0.1,
+        T ~ 0),
+    seed3_prob = 
+      case_when(
+        seed3_prob > 0.05 ~ round(seed3_prob, 1),
+        seed3_prob > 0 ~ 0.1,
+        T ~ 0),
+    seed4_prob = 
+      case_when(
+        seed4_prob > 0.05 ~ round(seed4_prob, 1),
+        seed4_prob > 0 ~ 0.1,
+        T ~ 0)
   ) %>%
     arrange(desc(playoff_prob), desc(seed1_prob)) %>%
+    mutate(playoff_prob = 
+             case_when(
+               playoff_prob > 99.9 & playoff_prob < 100 ~ 99.9,
+               playoff_prob > 0.05 ~ round(playoff_prob, 1),
+               playoff_prob > 0 ~ 0.1,
+               T ~ 0)) %>%
     rename("Team" = team,
            "Auto Bid" = auto_bid,
            "Playoff Probability" = playoff_prob,
