@@ -134,7 +134,9 @@ conf_fast_sim <- function(conf, nsims) {
 
 ### Jerome EP Calcultor
 jerome <- function(t_sim) {
-  return(3 * t_sim$finals + 2 * (1 + c(0, 0, rep(1, nrow(t_sim) - 2))) * t_sim$champ/t_sim$finals)
+  v <- 3 * t_sim$finals + 2 * (1 + c(0, 0, rep(1, nrow(t_sim) - 2))) * t_sim$champ/t_sim$finals
+  names(v) <- t_sim$team
+  return(v)
 }
 
 ### eliminate teams from AutoBid Contention

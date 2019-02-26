@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_2_25_2019.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_2_26_2019.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -223,3 +223,13 @@ cat(paste("System Evaluation:", min_date, "Through", max_date),
     sep = "")
 nrow(filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score))
 filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)
+
+
+t <- filter(x, team_conf == "MAAC", conf_game) %>% 
+  group_by(team) %>%
+  summarise("nwins" = sum(wins)) %>%
+  arrange(desc(nwins)) %>%
+  pull(team)
+t[1:3] <- t[3:1]
+jerome(tourney_sim(teams = t, seeds = 1:length(t), 
+            byes = 5, double_byes = 0, hca = NA, nsims = 1000))
