@@ -6,6 +6,7 @@ tourney_sim  <- function(teams, seeds, byes, double_byes, hca, nsims) {
   ### Champ Storage
   n <- length(teams)
   simresults <- data.frame("team" = teams,
+                           "seed" = seeds,
                            "champ" = rep(0, n),
                            "finals" = rep(0, n))
   for(j in 1:nsims) {

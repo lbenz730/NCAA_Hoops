@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_3_3_2019.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_3_4_2019.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -233,3 +233,17 @@ t <- filter(x, team_conf == "MAAC", conf_game) %>%
 t[1:3] <- t[3:1]
 jerome(tourney_sim(teams = t, seeds = 1:length(t), 
             byes = 5, double_byes = 0, hca = NA, nsims = 1000))
+
+
+
+tourney_sim(c("Saint Francis (PA)", "Fairleigh Dickinson", "Sacred Heart", "Robert Morris",
+              "St. Francis Brooklyn", "LIU Brooklyn", "Wagner", "Bryant"),
+            seeds = 1:8,
+            byes = 0,
+            double_byes = 0,
+            hca = "seed",
+            nsims = 1000) %>%
+  arrange(desc(champ)) %>%
+  mutate(champ = ifelse(champ <= 0.01, "< 1 %", paste(sprintf("%.1f", 100 * champ), "%"))) %>%
+  mutate(finals = ifelse(finals <= 0.01, "< 1 %", paste(sprintf("%.1f", 100 * finals), "%")))
+

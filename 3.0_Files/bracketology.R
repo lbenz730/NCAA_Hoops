@@ -43,7 +43,7 @@ make_bracket <- function(tourney) {
     bracket$mid_major[i] <- confs$mid_major[confs$team == teams[i]]
     bracket$wins[i] <- resumes$wins[resumes$team == teams[i]]
     bracket$losses[i] <- resumes$losses[resumes$team == teams[i]]
-    bracket$loss_bonus[i] <- resumes$losses[resumes$team == teams[i]] <= 5 
+    bracket$loss_bonus[i] <- resumes$losses[resumes$team == teams[i]] <= 4.5 
     bracket$conf[i] %in% c("Big 10", "Big 12", "Big East", "ACC", "Pac 12", "Big 12")
   }
   
