@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_3_4_2019.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_3_7_2019.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -56,6 +56,9 @@ x <- mutate(x, team_conf = sapply(x$team, get_conf),
 x <- inner_join(x, deadlines, by = c("team_conf" = "conf")) %>%
   mutate(reg_season = date < deadline) %>%
   select(-deadline)
+
+### Eliminate Teams from Auto Bid contention
+confs <- eliminate(filter(x, score_diff < 0, !reg_season) %>% pull(team), confs)
 
 ################################# Set Weights ##################################
 x$weights <- 0
