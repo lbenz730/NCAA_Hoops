@@ -121,7 +121,7 @@
 2019,2,26,"Akron","Buffalo","V",64,77,NA,2
 2019,3,2,"Akron","Ohio","H",49,73,NA,2
 2019,3,5,"Akron","Bowling Green","H",91,67,NA,2
-2019,3,8,"Akron","Kent St.","V",NA,NA,NA,2
+2019,3,8,"Akron","Kent St.","V",65,68,NA,2
 2018,11,6,"Alabama","Southern U.","H",82,62,NA,2
 2018,11,11,"Alabama","Appalachian St.","H",81,73,NA,2
 2018,11,15,"Alabama","Northeastern","N",52,68,NA,2
@@ -183,7 +183,7 @@
 2019,2,25,"Alabama A&M","Alcorn","V",55,61,NA,2
 2019,3,2,"Alabama A&M","Prairie View","H",65,72,NA,2
 2019,3,4,"Alabama A&M","Texas Southern","H",61,66,NA,2
-2019,3,7,"Alabama A&M","Jackson St.","V",NA,NA,NA,2
+2019,3,7,"Alabama A&M","Jackson St.","V",47,66,NA,2
 2019,3,9,"Alabama A&M","Grambling","V",NA,NA,NA,2
 2018,11,6,"Alabama St.","Iowa St.","V",53,79,NA,2
 2018,11,8,"Alabama St.","South Dakota St.","V",61,78,NA,2
@@ -212,7 +212,7 @@
 2019,2,25,"Alabama St.","Southern U.","V",60,57,NA,2
 2019,3,2,"Alabama St.","Texas Southern","H",68,78,NA,2
 2019,3,4,"Alabama St.","Prairie View","H",69,96,NA,2
-2019,3,7,"Alabama St.","Grambling","V",NA,NA,NA,2
+2019,3,7,"Alabama St.","Grambling","V",66,93,NA,2
 2019,3,9,"Alabama St.","Jackson St.","V",NA,NA,NA,2
 2018,11,9,"Albany (NY)","Iona","V",68,72,NA,2
 2018,11,14,"Albany (NY)","Boston U.","H",61,71,NA,2
@@ -245,6 +245,7 @@
 2019,2,27,"Albany (NY)","New Hampshire","H",58,62,NA,2
 2019,3,2,"Albany (NY)","Hartford","V",80,82,1,2
 2019,3,5,"Albany (NY)","Binghamton","V",73,58,NA,2
+2019,3,9,"Albany (NY)","UMBC","V",NA,NA,NA,2
 2018,11,6,"Alcorn","Tulsa","V",56,73,NA,2
 2018,11,9,"Alcorn","Blue Mountain (MS)","H",79,55,NA,1
 2018,11,16,"Alcorn","Vanderbilt","V",54,79,NA,2
@@ -273,7 +274,7 @@
 2019,2,23,"Alcorn","Alabama St.","H",74,69,1,2
 2019,2,25,"Alcorn","Alabama A&M","H",61,55,NA,2
 2019,3,2,"Alcorn","Southern U.","V",46,61,NA,2
-2019,3,7,"Alcorn","Texas Southern","V",NA,NA,NA,2
+2019,3,7,"Alcorn","Texas Southern","V",72,99,NA,2
 2019,3,9,"Alcorn","Prairie View","V",NA,NA,NA,2
 2018,11,9,"American","George Mason","V",78,75,1,2
 2018,11,12,"American","Northwestern","V",51,63,NA,2
@@ -304,7 +305,7 @@
 2019,2,24,"American","Army West Point","V",77,66,NA,2
 2019,2,27,"American","Lehigh","H",66,80,NA,2
 2019,3,2,"American","Holy Cross","V",86,66,NA,2
-2019,3,7,"American","Navy","H",NA,NA,NA,2
+2019,3,7,"American","Navy","H",56,60,NA,2
 2018,11,6,"Appalachian St.","Mars Hill","H",125,62,NA,1
 2018,11,11,"Appalachian St.","Alabama","V",73,81,NA,2
 2018,11,15,"Appalachian St.","Purdue","N",70,92,NA,2
@@ -334,7 +335,7 @@
 2019,2,23,"Appalachian St.","Ga. Southern","H",69,92,NA,2
 2019,2,28,"Appalachian St.","La.-Monroe","V",75,81,NA,2
 2019,3,3,"Appalachian St.","Louisiana","V",90,80,NA,2
-2019,3,7,"Appalachian St.","Troy","H",NA,NA,NA,2
+2019,3,7,"Appalachian St.","Troy","H",72,64,NA,2
 2019,3,9,"Appalachian St.","South Alabama","H",NA,NA,NA,2
 2018,11,7,"Arizona","Houston Baptist","H",90,60,NA,2
 2018,11,11,"Arizona","Cal Poly","H",82,61,NA,2
@@ -488,7 +489,7 @@
 2019,2,23,"Arkansas St.","Little Rock","H",72,65,NA,2
 2019,2,28,"Arkansas St.","Georgia St.","V",60,76,NA,2
 2019,3,2,"Arkansas St.","Ga. Southern","V",70,81,NA,2
-2019,3,7,"Arkansas St.","La.-Monroe","H",NA,NA,NA,2
+2019,3,7,"Arkansas St.","La.-Monroe","H",73,72,NA,2
 2019,3,9,"Arkansas St.","Louisiana","H",NA,NA,NA,2
 2018,11,6,"Army West Point","Marist","H",73,69,NA,2
 2018,11,11,"Army West Point","Duke","V",72,94,NA,2
@@ -521,7 +522,7 @@
 2019,2,24,"Army West Point","American","H",66,77,NA,2
 2019,2,27,"Army West Point","Loyola Maryland","H",79,69,NA,2
 2019,3,2,"Army West Point","Bucknell","V",61,62,NA,2
-2019,3,7,"Army West Point","Lehigh","V",NA,NA,NA,2
+2019,3,7,"Army West Point","Lehigh","V",70,75,NA,2
 2018,11,6,"Auburn","South Alabama","H",101,58,NA,2
 2018,11,9,"Auburn","Washington","H",88,66,NA,2
 2018,11,14,"Auburn","Mississippi Col.","H",103,52,NA,1
@@ -584,7 +585,8 @@
 2019,2,23,"Austin Peay","UT Martin","H",92,78,NA,2
 2019,2,28,"Austin Peay","Eastern Ky.","V",80,82,NA,2
 2019,3,2,"Austin Peay","Murray St.","V",83,94,NA,2
-2019,3,7,"Austin Peay","Morehead St.","N",NA,NA,NA,2
+2019,3,7,"Austin Peay","Morehead St.","N",95,81,NA,2
+2019,3,8,"Austin Peay","Belmont","N",67,83,NA,2
 2018,11,6,"Ball St.","Indiana St.","H",86,69,NA,2
 2018,11,10,"Ball St.","Purdue","V",75,84,NA,2
 2018,11,15,"Ball St.","Virginia Tech","N",64,73,NA,2
@@ -615,7 +617,7 @@
 2019,2,26,"Ball St.","Toledo","H",72,80,NA,2
 2019,3,2,"Ball St.","Western Mich.","V",60,58,NA,2
 2019,3,5,"Ball St.","Eastern Mich.","V",61,68,NA,2
-2019,3,8,"Ball St.","Northern Ill.","H",NA,NA,NA,2
+2019,3,8,"Ball St.","Northern Ill.","H",57,64,NA,2
 2018,11,6,"Baylor","Texas Southern","H",69,72,NA,2
 2018,11,10,"Baylor","Southern U.","H",80,53,NA,2
 2018,11,12,"Baylor","Prairie View","H",91,80,NA,2
@@ -676,7 +678,8 @@
 2019,2,23,"Belmont","SIUE","H",97,75,NA,2
 2019,2,28,"Belmont","UT Martin","V",112,67,NA,2
 2019,3,2,"Belmont","Southeast Mo. St.","V",84,66,NA,2
-2019,3,8,"Belmont","TB","N",NA,NA,NA,1
+2019,3,8,"Belmont","Austin Peay","N",83,67,NA,2
+2019,3,9,"Belmont","Murray St.","N",NA,NA,NA,2
 2018,11,7,"Bethune-Cookman","DePaul","V",58,80,NA,2
 2018,11,10,"Bethune-Cookman","Marquette","V",59,92,NA,2
 2018,11,13,"Bethune-Cookman","Trinity Baptist","H",104,44,NA,1
@@ -706,7 +709,7 @@
 2019,2,18,"Bethune-Cookman","Savannah St.","V",70,79,NA,2
 2019,2,23,"Bethune-Cookman","Florida A&M","V",67,54,NA,2
 2019,3,2,"Bethune-Cookman","South Carolina St.","H",98,95,1,2
-2019,3,7,"Bethune-Cookman","Florida A&M","V",NA,NA,NA,2
+2019,3,7,"Bethune-Cookman","Florida A&M","H",56,64,NA,2
 2018,11,6,"Binghamton","Cornell","H",75,86,NA,2
 2018,11,9,"Binghamton","NJIT","H",57,74,NA,2
 2018,11,12,"Binghamton","Misericordia","H",107,64,NA,1
@@ -738,6 +741,7 @@
 2019,2,27,"Binghamton","Hartford","H",76,96,NA,2
 2019,3,2,"Binghamton","Maine","V",83,60,NA,2
 2019,3,5,"Binghamton","Albany (NY)","H",58,73,NA,2
+2019,3,9,"Binghamton","Stony Brook","V",NA,NA,NA,2
 2018,11,10,"Boise St.","Idaho St.","H",70,72,NA,2
 2018,11,16,"Boise St.","Jackson St.","H",70,53,NA,2
 2018,11,19,"Boise St.","Creighton","N",82,94,NA,2
@@ -831,7 +835,7 @@
 2019,2,27,"Boston U.","Lafayette","V",84,82,NA,2
 2019,3,2,"Boston U.","Navy","H",74,79,NA,2
 2019,3,5,"Boston U.","Loyola Maryland","H",71,63,NA,2
-2019,3,7,"Boston U.","Colgate","V",NA,NA,NA,2
+2019,3,7,"Boston U.","Colgate","V",69,81,NA,2
 2018,11,6,"Bowling Green","Tiffin","H",91,52,NA,1
 2018,11,9,"Bowling Green","St. John's (NY)","V",80,84,NA,2
 2018,11,12,"Bowling Green","VCU","V",61,72,NA,2
@@ -862,7 +866,7 @@
 2019,2,26,"Bowling Green","Miami (OH)","H",69,82,NA,2
 2019,3,1,"Bowling Green","Kent St.","H",77,72,NA,2
 2019,3,5,"Bowling Green","Akron","V",67,91,NA,2
-2019,3,8,"Bowling Green","Buffalo","V",NA,NA,NA,2
+2019,3,8,"Bowling Green","Buffalo","V",73,84,NA,2
 2018,11,7,"Bradley","Wis.-Parkside","H",74,58,NA,1
 2018,11,10,"Bradley","Southeast Mo. St.","H",68,57,NA,2
 2018,11,14,"Bradley","Jacksonville St.","H",74,65,NA,2
@@ -894,7 +898,8 @@
 2019,2,23,"Bradley","Evansville","H",63,61,NA,2
 2019,2,27,"Bradley","Valparaiso","H",67,42,NA,2
 2019,3,2,"Bradley","Loyola Chicago","V",68,81,NA,2
-2019,3,8,"Bradley","Missouri St.","N",NA,NA,NA,2
+2019,3,8,"Bradley","Missouri St.","N",61,58,NA,2
+2019,3,9,"Bradley","Loyola Chicago","N",NA,NA,NA,2
 2018,11,9,"Brown","LIU Brooklyn","V",81,83,NA,2
 2018,11,11,"Brown","NJIT","V",60,63,NA,2
 2018,11,16,"Brown","UMass Lowell","H",82,74,NA,2
@@ -923,7 +928,7 @@
 2019,2,23,"Brown","Dartmouth","H",68,65,NA,2
 2019,3,1,"Brown","Columbia","H",77,80,NA,2
 2019,3,2,"Brown","Cornell","H",75,51,NA,2
-2019,3,8,"Brown","Princeton","V",68,63,NA,2
+2019,3,8,"Brown","Princeton","V",67,63,NA,2
 2019,3,9,"Brown","Penn","V",NA,NA,NA,2
 2018,11,6,"Bryant","Rhode Island","V",63,97,NA,2
 2018,11,11,"Bryant","Seattle U","V",59,82,NA,2
@@ -985,7 +990,8 @@
 2019,2,24,"Bucknell","Lafayette","H",118,76,NA,2
 2019,2,27,"Bucknell","Navy","V",53,64,NA,2
 2019,3,2,"Bucknell","Army West Point","H",62,61,NA,2
-2019,3,7,"Bucknell","Holy Cross","H",NA,NA,NA,2
+2019,3,7,"Bucknell","Holy Cross","H",77,65,NA,2
+2019,3,10,"Bucknell","Lehigh","H",NA,NA,NA,2
 2018,11,6,"Buffalo","Saint Francis (PA)","H",82,67,NA,2
 2018,11,9,"Buffalo","West Virginia","V",99,94,1,2
 2018,11,12,"Buffalo","Southern Ill.","V",62,53,NA,2
@@ -1016,7 +1022,7 @@
 2019,2,26,"Buffalo","Akron","H",77,64,NA,2
 2019,3,1,"Buffalo","Miami (OH)","V",77,69,NA,2
 2019,3,5,"Buffalo","Ohio","V",82,79,NA,2
-2019,3,8,"Buffalo","Bowling Green","H",NA,NA,NA,2
+2019,3,8,"Buffalo","Bowling Green","H",84,73,NA,2
 2018,11,10,"Butler","Miami (OH)","H",90,68,NA,2
 2018,11,12,"Butler","Detroit Mercy","H",84,63,NA,2
 2018,11,16,"Butler","Ole Miss","H",83,76,NA,2
@@ -1079,7 +1085,7 @@
 2019,2,21,"BYU","San Francisco","H",71,77,NA,2
 2019,2,23,"BYU","Gonzaga","V",68,102,NA,2
 2019,3,2,"BYU","San Diego","H",87,73,NA,2
-2019,3,9,"BYU","TB","N",NA,NA,NA,1
+2019,3,9,"BYU","San Diego","N",NA,NA,NA,2
 2018,11,7,"Cal Poly","Menlo","H",82,75,NA,1
 2018,11,11,"Cal Poly","Arizona","V",61,82,NA,2
 2018,11,16,"Cal Poly","Sacramento St.","V",NA,NA,NA,2
@@ -1108,7 +1114,7 @@
 2019,2,23,"Cal Poly","Hawaii","H",88,80,NA,2
 2019,2,28,"Cal Poly","Cal St. Fullerton","V",75,86,NA,2
 2019,3,2,"Cal Poly","Long Beach St.","V",85,94,NA,2
-2019,3,7,"Cal Poly","UC Irvine","H",NA,NA,NA,2
+2019,3,7,"Cal Poly","UC Irvine","H",72,110,NA,2
 2019,3,9,"Cal Poly","UC Santa Barbara","H",NA,NA,NA,2
 2018,11,6,"Cal St. Fullerton","Arizona St.","V",94,102,2,2
 2018,11,10,"Cal St. Fullerton","West Coast Baptist","H",106,53,NA,1
@@ -1169,7 +1175,7 @@
 2019,2,24,"California","Arizona St.","V",59,69,NA,2
 2019,2,28,"California","Washington","H",76,73,NA,2
 2019,3,2,"California","Washington St.","H",76,69,NA,2
-2019,3,7,"California","Stanford","V",NA,NA,NA,2
+2019,3,7,"California","Stanford","V",64,59,NA,2
 2018,11,9,"California Baptist","San Diego Christian","H",87,71,NA,1
 2018,11,13,"California Baptist","Oral Roberts","V",70,69,NA,2
 2018,11,16,"California Baptist","Tulsa","V",79,82,NA,2
@@ -1198,7 +1204,7 @@
 2019,2,23,"California Baptist","CSU Bakersfield","V",72,58,NA,2
 2019,2,28,"California Baptist","Seattle U","H",65,67,NA,2
 2019,3,2,"California Baptist","Utah Valley","H",63,64,NA,2
-2019,3,7,"California Baptist","UTRGV","V",NA,NA,NA,2
+2019,3,7,"California Baptist","UTRGV","V",82,79,1,2
 2019,3,9,"California Baptist","New Mexico St.","V",NA,NA,NA,2
 2018,11,6,"Campbell","UNCW","H",97,93,1,2
 2018,11,9,"Campbell","Coastal Caro.","H",75,85,NA,2
@@ -1230,7 +1236,8 @@
 2019,2,23,"Campbell","Longwood","V",74,72,NA,2
 2019,2,27,"Campbell","USC Upstate","V",85,73,NA,2
 2019,3,2,"Campbell","Radford","H",64,62,NA,2
-2019,3,7,"Campbell","Hampton","N",NA,NA,NA,2
+2019,3,7,"Campbell","Hampton","H",86,77,NA,2
+2019,3,8,"Campbell","Gardner-Webb","H",74,79,NA,2
 2018,11,13,"Canisius","Bucknell","V",82,73,NA,2
 2018,11,17,"Canisius","Albany (NY)","H",66,75,NA,2
 2018,11,19,"Canisius","Florida St.","V",61,93,NA,2
@@ -1261,7 +1268,8 @@
 2019,2,24,"Canisius","Iona","V",80,87,NA,2
 2019,2,27,"Canisius","Niagara","H",84,86,NA,2
 2019,3,1,"Canisius","Siena","H",68,62,NA,2
-2019,3,8,"Canisius","TB","N",NA,NA,NA,1
+2019,3,8,"Canisius","Manhattan","N",69,65,1,2
+2019,3,10,"Canisius","TB","N",NA,NA,NA,1
 2018,11,6,"Central Ark.","Missouri","V",55,68,NA,2
 2018,11,8,"Central Ark.","Hendrix","H",99,73,NA,1
 2018,11,12,"Central Ark.","Ozarks (AR)","H",93,52,NA,1
@@ -1354,7 +1362,7 @@
 2019,2,26,"Central Mich.","Eastern Mich.","V",77,66,NA,2
 2019,3,2,"Central Mich.","Toledo","H",68,80,NA,2
 2019,3,5,"Central Mich.","Northern Ill.","H",86,89,NA,2
-2019,3,8,"Central Mich.","Western Mich.","V",NA,NA,NA,2
+2019,3,8,"Central Mich.","Western Mich.","V",82,75,NA,2
 2018,11,6,"Charleston So.","Columbia Int'l","H",100,68,NA,1
 2018,11,9,"Charleston So.","Florida","V",46,76,NA,2
 2018,11,13,"Charleston So.","South Carolina St.","H",89,72,NA,2
@@ -1385,7 +1393,8 @@
 2019,2,27,"Charleston So.","UNC Asheville","H",77,48,NA,2
 2019,3,2,"Charleston So.","Presbyterian","V",72,65,NA,2
 2019,3,5,"Charleston So.","USC Upstate","H",71,52,NA,2
-2019,3,7,"Charleston So.","Winthrop","N",NA,NA,NA,2
+2019,3,7,"Charleston So.","Winthrop","N",77,63,NA,2
+2019,3,8,"Charleston So.","Radford","N",54,63,NA,2
 2018,11,6,"Charlotte","Chattanooga","H",69,80,NA,2
 2018,11,10,"Charlotte","Oklahoma St.","H",66,64,NA,2
 2018,11,16,"Charlotte","James Madison","H",59,64,NA,2
@@ -1508,7 +1517,7 @@
 2019,2,24,"Cincinnati","UConn","V",64,60,NA,2
 2019,2,27,"Cincinnati","SMU","V",52,49,NA,2
 2019,3,2,"Cincinnati","Memphis","H",71,69,NA,2
-2019,3,7,"Cincinnati","UCF","V",NA,NA,NA,2
+2019,3,7,"Cincinnati","UCF","V",55,58,NA,2
 2019,3,10,"Cincinnati","Houston","H",NA,NA,NA,2
 2018,11,6,"Clemson","The Citadel","H",100,80,NA,2
 2018,11,9,"Clemson","N.C. Central","H",71,51,NA,2
@@ -1600,7 +1609,7 @@
 2019,2,23,"Coastal Caro.","Georgia St.","H",95,82,NA,2
 2019,2,28,"Coastal Caro.","Louisiana","V",70,83,NA,2
 2019,3,2,"Coastal Caro.","La.-Monroe","V",97,91,NA,2
-2019,3,7,"Coastal Caro.","South Alabama","H",NA,NA,NA,2
+2019,3,7,"Coastal Caro.","South Alabama","H",92,70,NA,2
 2019,3,9,"Coastal Caro.","Troy","H",NA,NA,NA,2
 2018,11,6,"Col. of Charleston","Presbyterian","H",85,73,NA,2
 2018,11,10,"Col. of Charleston","Western Caro.","V",77,74,NA,2
@@ -1665,7 +1674,8 @@
 2019,2,23,"Colgate","Navy","H",93,71,NA,2
 2019,2,27,"Colgate","Holy Cross","H",79,59,NA,2
 2019,3,2,"Colgate","Lafayette","V",76,70,NA,2
-2019,3,7,"Colgate","Boston U.","H",NA,NA,NA,2
+2019,3,7,"Colgate","Boston U.","H",81,69,NA,2
+2019,3,10,"Colgate","Navy","H",NA,NA,NA,2
 2018,11,13,"Colorado","Drake","H",100,71,NA,2
 2018,11,16,"Colorado","Omaha","H",79,75,NA,2
 2018,11,20,"Colorado","San Diego","V",64,70,NA,2
@@ -1694,7 +1704,7 @@
 2019,2,20,"Colorado","Washington St.","V",74,76,NA,2
 2019,2,23,"Colorado","Washington","V",55,64,NA,2
 2019,3,2,"Colorado","Utah","H",71,63,NA,2
-2019,3,7,"Colorado","UCLA","H",NA,NA,NA,2
+2019,3,7,"Colorado","UCLA","H",93,68,NA,2
 2019,3,9,"Colorado","Southern California","H",NA,NA,NA,2
 2018,11,7,"Colorado St.","Colo. Christian","H",100,66,NA,1
 2018,11,10,"Colorado St.","Ark.-Pine Bluff","H",92,67,NA,2
@@ -1753,7 +1763,7 @@
 2019,2,23,"Columbia","Princeton","V",61,79,NA,2
 2019,3,1,"Columbia","Brown","V",80,77,NA,2
 2019,3,2,"Columbia","Yale","V",83,75,NA,2
-2019,3,8,"Columbia","Dartmouth","H",NA,NA,NA,2
+2019,3,8,"Columbia","Dartmouth","H",70,66,NA,2
 2019,3,9,"Columbia","Harvard","H",NA,NA,NA,2
 2018,11,6,"Coppin St.","Wisconsin","V",63,85,NA,2
 2018,11,10,"Coppin St.","Dayton","V",46,76,NA,2
@@ -1785,7 +1795,7 @@
 2019,2,23,"Coppin St.","Howard","H",73,74,NA,2
 2019,2,25,"Coppin St.","Delaware St.","H",60,70,NA,2
 2019,3,2,"Coppin St.","Norfolk St.","V",38,72,NA,2
-2019,3,7,"Coppin St.","Morgan St.","V",NA,NA,NA,2
+2019,3,7,"Coppin St.","Morgan St.","V",83,69,NA,2
 2018,11,6,"Cornell","Binghamton","V",86,75,NA,2
 2018,11,8,"Cornell","SUNY Canton","H",86,44,NA,1
 2018,11,11,"Cornell","Colgate","H",57,73,NA,2
@@ -1814,7 +1824,7 @@
 2019,2,23,"Cornell","Penn","V",50,68,NA,2
 2019,3,1,"Cornell","Yale","V",65,88,NA,2
 2019,3,2,"Cornell","Brown","V",51,75,NA,2
-2019,3,8,"Cornell","Harvard","H",NA,NA,NA,2
+2019,3,8,"Cornell","Harvard","H",72,59,NA,2
 2019,3,9,"Cornell","Dartmouth","H",NA,NA,NA,2
 2018,11,6,"Creighton","Western Ill.","H",78,67,NA,2
 2018,11,11,"Creighton","ETSU","H",75,69,NA,2
@@ -1875,7 +1885,7 @@
 2019,2,16,"CSU Bakersfield","UMKC","V",67,75,NA,2
 2019,2,23,"CSU Bakersfield","California Baptist","H",58,72,NA,2
 2019,3,2,"CSU Bakersfield","Grand Canyon","V",69,73,NA,2
-2019,3,7,"CSU Bakersfield","Seattle U","V",NA,NA,NA,2
+2019,3,7,"CSU Bakersfield","Seattle U","V",57,63,1,2
 2019,3,9,"CSU Bakersfield","Utah Valley","V",NA,NA,NA,2
 2018,11,6,"CSUN","New Mexico","H",84,87,NA,2
 2018,11,13,"CSUN","Loyola Marymount","V",64,79,NA,2
@@ -1907,7 +1917,7 @@
 2019,2,23,"CSUN","UC Davis","H",81,76,1,2
 2019,2,27,"CSUN","UC Riverside","H",70,68,NA,2
 2019,3,2,"CSUN","Hawaii","V",84,73,NA,2
-2019,3,7,"CSUN","UC Santa Barbara","H",NA,NA,NA,2
+2019,3,7,"CSUN","UC Santa Barbara","H",74,76,NA,2
 2019,3,9,"CSUN","UC Irvine","V",NA,NA,NA,2
 2018,11,6,"Dartmouth","Newbury","H",114,39,NA,1
 2018,11,9,"Dartmouth","Davidson","V",76,79,NA,2
@@ -1937,7 +1947,7 @@
 2019,2,23,"Dartmouth","Brown","V",65,68,NA,2
 2019,3,1,"Dartmouth","Princeton","H",76,77,1,2
 2019,3,2,"Dartmouth","Penn","H",51,65,NA,2
-2019,3,8,"Dartmouth","Columbia","V",NA,NA,NA,2
+2019,3,8,"Dartmouth","Columbia","V",66,70,NA,2
 2019,3,9,"Dartmouth","Cornell","V",NA,NA,NA,2
 2018,11,6,"Davidson","Cleveland St.","H",83,63,NA,2
 2018,11,9,"Davidson","Dartmouth","H",79,76,NA,2
@@ -2061,7 +2071,7 @@
 2019,2,25,"Delaware St.","Coppin St.","V",70,60,NA,2
 2019,3,2,"Delaware St.","Morgan St.","H",58,76,NA,2
 2019,3,4,"Delaware St.","Norfolk St.","H",66,74,NA,2
-2019,3,7,"Delaware St.","UMES","V",NA,NA,NA,2
+2019,3,7,"Delaware St.","UMES","V",64,70,NA,2
 2018,11,6,"Denver","Maine","H",63,50,NA,2
 2018,11,12,"Denver","Kansas St.","V",56,64,NA,2
 2018,11,15,"Denver","Abilene Christian","H",61,67,NA,2
@@ -2183,7 +2193,8 @@
 2019,2,24,"Drake","Illinois St.","V",60,67,NA,2
 2019,2,27,"Drake","Indiana St.","H",80,68,NA,2
 2019,3,2,"Drake","Missouri St.","V",73,62,NA,2
-2019,3,8,"Drake","TB","N",NA,NA,NA,1
+2019,3,8,"Drake","Illinois St.","N",78,62,NA,2
+2019,3,9,"Drake","UNI","N",NA,NA,NA,2
 2018,11,9,"Drexel","Eastern Mich.","V",62,66,NA,2
 2018,11,11,"Drexel","Rutgers","V",66,95,NA,2
 2018,11,14,"Drexel","Bryn Athyn","H",118,41,NA,1
@@ -2401,7 +2412,7 @@
 2019,2,26,"Eastern Mich.","Central Mich.","H",66,77,NA,2
 2019,3,2,"Eastern Mich.","Northern Ill.","V",75,69,NA,2
 2019,3,5,"Eastern Mich.","Ball St.","H",68,61,NA,2
-2019,3,8,"Eastern Mich.","Toledo","V",NA,NA,NA,2
+2019,3,8,"Eastern Mich.","Toledo","V",58,64,NA,2
 2018,11,6,"Eastern Wash.","Syracuse","V",34,66,NA,2
 2018,11,9,"Eastern Wash.","Oregon","V",47,81,NA,2
 2018,11,16,"Eastern Wash.","Green Bay","H",78,82,1,2
@@ -2431,7 +2442,7 @@
 2019,2,23,"Eastern Wash.","Northern Ariz.","V",86,73,NA,2
 2019,2,28,"Eastern Wash.","Sacramento St.","H",56,59,NA,2
 2019,3,2,"Eastern Wash.","Portland St.","H",68,66,NA,2
-2019,3,7,"Eastern Wash.","Idaho St.","V",NA,NA,NA,2
+2019,3,7,"Eastern Wash.","Idaho St.","V",91,62,NA,2
 2019,3,9,"Eastern Wash.","Weber St.","V",NA,NA,NA,2
 2018,11,6,"Elon","Manhattan","V",62,56,NA,2
 2018,11,9,"Elon","North Carolina","H",67,116,NA,2
@@ -2528,7 +2539,7 @@
 2019,2,23,"Evansville","Bradley","V",61,63,NA,2
 2019,2,27,"Evansville","Southern Ill.","H",NA,98,NA,2
 2019,3,2,"Evansville","Valparaiso","V",65,63,NA,2
-2019,3,7,"Evansville","Illinois St.","N",NA,NA,NA,2
+2019,3,7,"Evansville","Illinois St.","N",60,65,NA,2
 2018,11,6,"Fairfield","Purdue","V",57,90,NA,2
 2018,11,10,"Fairfield","Bucknell","V",60,58,NA,2
 2018,11,13,"Fairfield","LIU Brooklyn","H",87,89,NA,2
@@ -2559,7 +2570,7 @@
 2019,2,24,"Fairfield","Manhattan","H",72,59,NA,2
 2019,3,1,"Fairfield","Marist","H",59,44,NA,2
 2019,3,3,"Fairfield","Saint Peter's","V",52,62,NA,2
-2019,3,7,"Fairfield","Manhattan","N",NA,NA,NA,2
+2019,3,7,"Fairfield","Manhattan","N",53,57,NA,2
 2018,11,9,"Fairleigh Dickinson","Rutgers","V",55,90,NA,2
 2018,11,14,"Fairleigh Dickinson","Queens (NY)","H",87,48,NA,1
 2018,11,16,"Fairleigh Dickinson","NYIT","H",85,57,NA,1
@@ -2591,6 +2602,7 @@
 2019,2,28,"Fairleigh Dickinson","Mount St. Mary's","V",65,59,NA,2
 2019,3,2,"Fairleigh Dickinson","Central Conn. St.","V",70,58,NA,2
 2019,3,6,"Fairleigh Dickinson","Wagner","H",84,46,NA,2
+2019,3,9,"Fairleigh Dickinson","Robert Morris","H",NA,NA,NA,2
 2018,11,6,"FGCU","Illinois St.","V",66,74,NA,2
 2018,11,8,"FGCU","Southeastern (FL)","H",81,54,NA,1
 2018,11,11,"FGCU","Michigan St.","V",82,106,NA,2
@@ -2746,7 +2758,7 @@
 2019,2,18,"Florida A&M","South Carolina St.","V",54,57,NA,2
 2019,2,23,"Florida A&M","Bethune-Cookman","H",54,67,NA,2
 2019,3,2,"Florida A&M","N.C. A&T","V",42,63,NA,2
-2019,3,7,"Florida A&M","Bethune-Cookman","H",NA,NA,NA,2
+2019,3,7,"Florida A&M","Bethune-Cookman","V",64,56,NA,2
 2018,11,6,"Florida St.","Florida","H",81,60,NA,2
 2018,11,11,"Florida St.","Tulane","V",80,69,NA,2
 2018,11,19,"Florida St.","Canisius","H",93,61,NA,2
@@ -2932,7 +2944,9 @@
 2019,2,23,"Gardner-Webb","High Point","V",79,87,NA,2
 2019,2,27,"Gardner-Webb","Presbyterian","H",78,70,NA,2
 2019,3,2,"Gardner-Webb","Longwood","H",66,47,NA,2
-2019,3,7,"Gardner-Webb","High Point","N",NA,NA,NA,2
+2019,3,7,"Gardner-Webb","High Point","N",75,69,NA,2
+2019,3,8,"Gardner-Webb","Campbell","V",79,74,NA,2
+2019,3,10,"Gardner-Webb","Radford","H",NA,NA,NA,2
 2018,11,6,"George Mason","Penn","H",71,72,NA,2
 2018,11,9,"George Mason","American","H",75,78,1,2
 2018,11,13,"George Mason","Ga. Southern","V",89,98,NA,2
@@ -3180,7 +3194,7 @@
 2019,2,23,"Grambling","Jackson St.","V",60,71,NA,2
 2019,3,2,"Grambling","Ark.-Pine Bluff","V",66,70,NA,2
 2019,3,4,"Grambling","Mississippi Val.","V",77,75,NA,2
-2019,3,7,"Grambling","Alabama St.","H",NA,NA,NA,2
+2019,3,7,"Grambling","Alabama St.","H",93,66,NA,2
 2019,3,9,"Grambling","Alabama A&M","H",NA,NA,NA,2
 2018,11,6,"Grand Canyon","South Dakota St.","V",74,79,NA,2
 2018,11,10,"Grand Canyon","Delaware St.","H",89,47,NA,2
@@ -3210,7 +3224,7 @@
 2019,2,21,"Grand Canyon","California Baptist","H",91,58,NA,2
 2019,2,27,"Grand Canyon","Eastern N.M.","H",95,64,NA,1
 2019,3,2,"Grand Canyon","CSU Bakersfield","H",73,69,NA,2
-2019,3,7,"Grand Canyon","Utah Valley","V",NA,NA,NA,2
+2019,3,7,"Grand Canyon","Utah Valley","V",70,82,NA,2
 2019,3,9,"Grand Canyon","Seattle U","V",NA,NA,NA,2
 2018,11,6,"Green Bay","Wis. Lutheran","H",110,54,NA,1
 2018,11,9,"Green Bay","Indiana St.","H",74,78,NA,2
@@ -3275,7 +3289,7 @@
 2019,2,28,"Hampton","Winthrop","H",90,75,NA,2
 2019,3,2,"Hampton","USC Upstate","V",92,71,NA,2
 2019,3,5,"Hampton","Longwood","H",77,71,NA,2
-2019,3,7,"Hampton","Campbell","N",NA,NA,NA,2
+2019,3,7,"Hampton","Campbell","V",77,86,NA,2
 2018,11,6,"Hartford","Central Conn. St.","H",68,75,NA,2
 2018,11,9,"Hartford","Utah St.","V",73,100,NA,2
 2018,11,11,"Hartford","Mississippi St.","V",59,77,NA,2
@@ -3307,6 +3321,7 @@
 2019,2,27,"Hartford","Binghamton","V",96,76,NA,2
 2019,3,2,"Hartford","Albany (NY)","H",82,80,1,2
 2019,3,5,"Hartford","Stony Brook","H",63,68,NA,2
+2019,3,9,"Hartford","UMass Lowell","H",NA,NA,NA,2
 2018,11,6,"Harvard","MIT","H",78,66,NA,1
 2018,11,9,"Harvard","Northeastern","H",71,81,NA,2
 2018,11,13,"Harvard","Massachusetts","V",74,71,NA,2
@@ -3332,7 +3347,7 @@
 2019,2,23,"Harvard","Yale","V",88,86,NA,2
 2019,3,1,"Harvard","Penn","H",59,53,NA,2
 2019,3,2,"Harvard","Princeton","H",66,58,NA,2
-2019,3,8,"Harvard","Cornell","V",NA,NA,NA,2
+2019,3,8,"Harvard","Cornell","V",59,72,NA,2
 2019,3,9,"Harvard","Columbia","V",NA,NA,NA,2
 2018,11,9,"Hawaii","Portland","H",82,64,NA,2
 2018,11,10,"Hawaii","Humboldt St.","H",90,54,NA,1
@@ -3362,7 +3377,7 @@
 2019,2,21,"Hawaii","UC Santa Barbara","V",61,79,NA,2
 2019,2,23,"Hawaii","Cal Poly","V",80,88,NA,2
 2019,3,2,"Hawaii","CSUN","H",73,84,NA,2
-2019,3,7,"Hawaii","UC Davis","V",NA,NA,NA,2
+2019,3,7,"Hawaii","UC Davis","V",76,69,NA,2
 2019,3,9,"Hawaii","Cal St. Fullerton","V",NA,NA,NA,2
 2018,11,7,"High Point","William & Mary","V",69,79,NA,2
 2018,11,10,"High Point","Wofford","H",60,68,NA,2
@@ -3394,7 +3409,7 @@
 2019,2,23,"High Point","Gardner-Webb","H",87,79,NA,2
 2019,2,27,"High Point","Radford","H",54,72,NA,2
 2019,3,2,"High Point","UNC Asheville","V",79,74,NA,2
-2019,3,7,"High Point","Gardner-Webb","N",NA,NA,NA,2
+2019,3,7,"High Point","Gardner-Webb","N",69,75,NA,2
 2018,11,9,"Hofstra","Mount St. Mary's","H",79,61,NA,2
 2018,11,11,"Hofstra","Marshall","V",72,76,NA,2
 2018,11,14,"Hofstra","N.C. A&T","H",92,72,NA,2
@@ -3459,7 +3474,7 @@
 2019,2,27,"Holy Cross","Colgate","V",59,79,NA,2
 2019,3,2,"Holy Cross","American","H",66,86,NA,2
 2019,3,5,"Holy Cross","Lafayette","V",79,74,NA,2
-2019,3,7,"Holy Cross","Bucknell","V",NA,NA,NA,2
+2019,3,7,"Holy Cross","Bucknell","V",65,77,NA,2
 2018,11,10,"Houston","Alabama A&M","H",101,54,NA,2
 2018,11,14,"Houston","Rice","H",79,68,NA,2
 2018,11,19,"Houston","Northwestern St.","H",82,55,NA,2
@@ -3489,7 +3504,7 @@
 2019,2,23,"Houston","South Fla.","H",71,59,NA,2
 2019,2,27,"Houston","East Carolina","V",99,65,NA,2
 2019,3,2,"Houston","UCF","H",64,69,NA,2
-2019,3,7,"Houston","SMU","H",NA,NA,NA,2
+2019,3,7,"Houston","SMU","H",90,79,NA,2
 2019,3,10,"Houston","Cincinnati","V",NA,NA,NA,2
 2018,11,7,"Houston Baptist","Arizona","V",60,90,NA,2
 2018,11,10,"Houston Baptist","Fordham","H",75,72,NA,2
@@ -3550,7 +3565,7 @@
 2019,2,23,"Howard","Coppin St.","V",74,73,NA,2
 2019,2,25,"Howard","Morgan St.","V",75,69,NA,2
 2019,3,2,"Howard","Savannah St.","V",81,76,NA,2
-2019,3,7,"Howard","Norfolk St.","V",NA,NA,NA,2
+2019,3,7,"Howard","Norfolk St.","V",98,95,NA,2
 2018,11,6,"Idaho","UC Irvine","V",68,86,NA,2
 2018,11,13,"Idaho","Nicholls St.","H",80,83,NA,2
 2018,11,18,"Idaho","Bethesda (CA)","H",87,59,NA,1
@@ -3580,7 +3595,7 @@
 2019,2,23,"Idaho","Southern Utah","V",76,85,NA,2
 2019,2,28,"Idaho","Portland St.","H",65,67,NA,2
 2019,3,2,"Idaho","Sacramento St.","H",94,90,NA,2
-2019,3,7,"Idaho","Weber St.","V",NA,NA,NA,2
+2019,3,7,"Idaho","Weber St.","V",59,93,NA,2
 2019,3,9,"Idaho","Idaho St.","V",NA,NA,NA,2
 2018,11,6,"Idaho St.","Gonzaga","V",79,120,NA,2
 2018,11,10,"Idaho St.","Boise St.","V",72,70,NA,2
@@ -3609,7 +3624,7 @@
 2019,2,21,"Idaho St.","Portland St.","V",93,99,NA,2
 2019,3,2,"Idaho St.","Northern Colo.","V",62,71,NA,2
 2019,3,4,"Idaho St.","Weber St.","H",78,74,NA,2
-2019,3,7,"Idaho St.","Eastern Wash.","H",NA,NA,NA,2
+2019,3,7,"Idaho St.","Eastern Wash.","H",62,91,NA,2
 2019,3,9,"Idaho St.","Idaho","H",NA,NA,NA,2
 2018,11,8,"Illinois","Evansville","H",99,60,NA,2
 2018,11,13,"Illinois","Georgetown","H",80,88,NA,2
@@ -3639,8 +3654,8 @@
 2019,2,18,"Illinois","Wisconsin","V",58,64,NA,2
 2019,2,23,"Illinois","Penn St.","H",76,83,NA,2
 2019,2,27,"Illinois","Purdue","V",56,73,NA,2
-2019,3,3,"Illinois","Northwestern","H",NA,76,NA,2
-2019,3,7,"Illinois","Indiana","H",NA,NA,NA,2
+2019,3,3,"Illinois","Northwestern","H",81,76,NA,2
+2019,3,7,"Illinois","Indiana","H",74,92,NA,2
 2019,3,10,"Illinois","Penn St.","V",NA,NA,NA,2
 2018,11,6,"Illinois St.","FGCU","H",74,66,NA,2
 2018,11,10,"Illinois St.","Belmont","V",89,100,NA,2
@@ -3673,7 +3688,8 @@
 2019,2,24,"Illinois St.","Drake","H",67,60,NA,2
 2019,2,27,"Illinois St.","Missouri St.","H",65,57,NA,2
 2019,3,2,"Illinois St.","Southern Ill.","V",63,72,NA,2
-2019,3,7,"Illinois St.","Evansville","N",NA,NA,NA,2
+2019,3,7,"Illinois St.","Evansville","N",65,60,NA,2
+2019,3,8,"Illinois St.","Drake","N",62,78,NA,2
 2018,11,6,"Incarnate Word","Texas Tech","V",37,87,NA,2
 2018,11,9,"Incarnate Word","St. Francis (IL)","H",63,49,NA,1
 2018,11,10,"Incarnate Word","Texas-Tyler","H",66,54,NA,1
@@ -3734,7 +3750,7 @@
 2019,2,22,"Indiana","Iowa","V",70,76,1,2
 2019,2,26,"Indiana","Wisconsin","H",75,73,2,2
 2019,3,2,"Indiana","Michigan St.","H",63,62,NA,2
-2019,3,7,"Indiana","Illinois","V",NA,NA,NA,2
+2019,3,7,"Indiana","Illinois","V",92,74,NA,2
 2019,3,10,"Indiana","Rutgers","H",NA,NA,NA,2
 2018,11,6,"Indiana St.","Ball St.","V",69,86,NA,2
 2018,11,9,"Indiana St.","Green Bay","V",78,74,NA,2
@@ -3766,7 +3782,7 @@
 2019,2,23,"Indiana St.","Missouri St.","V",61,67,NA,2
 2019,2,27,"Indiana St.","Drake","V",68,80,NA,2
 2019,3,2,"Indiana St.","UNI","H",71,54,NA,2
-2019,3,7,"Indiana St.","Valparaiso","N",NA,NA,NA,2
+2019,3,7,"Indiana St.","Valparaiso","N",55,77,NA,2
 2018,11,9,"Iona","Albany (NY)","H",72,68,NA,2
 2018,11,13,"Iona","New Mexico","V",83,90,NA,2
 2018,11,19,"Iona","Long Beach St.","N",85,86,NA,2
@@ -3796,7 +3812,8 @@
 2019,2,22,"Iona","Manhattan","V",66,52,NA,2
 2019,2,24,"Iona","Canisius","H",87,80,NA,2
 2019,3,1,"Iona","Rider","V",86,79,NA,2
-2019,3,8,"Iona","TB","N",NA,NA,NA,1
+2019,3,8,"Iona","Saint Peter's","N",73,71,NA,2
+2019,3,10,"Iona","TB","N",NA,NA,NA,1
 2018,11,8,"Iowa","UMKC","H",77,63,NA,2
 2018,11,11,"Iowa","Green Bay","H",93,82,NA,2
 2018,11,15,"Iowa","Oregon","N",77,69,NA,2
@@ -3826,7 +3843,7 @@
 2019,2,22,"Iowa","Indiana","H",76,70,1,2
 2019,2,26,"Iowa","Ohio St.","V",70,90,NA,2
 2019,3,2,"Iowa","Rutgers","H",72,86,NA,2
-2019,3,7,"Iowa","Wisconsin","V",NA,NA,NA,2
+2019,3,7,"Iowa","Wisconsin","V",45,65,NA,2
 2019,3,10,"Iowa","Nebraska","V",NA,NA,NA,2
 2018,11,6,"Iowa St.","Alabama St.","H",79,53,NA,2
 2018,11,9,"Iowa St.","Missouri","H",76,59,NA,2
@@ -3920,7 +3937,7 @@
 2019,2,23,"Jackson St.","Grambling","H",71,60,NA,2
 2019,3,2,"Jackson St.","Mississippi Val.","V",57,60,NA,2
 2019,3,4,"Jackson St.","Ark.-Pine Bluff","V",57,56,NA,2
-2019,3,7,"Jackson St.","Alabama A&M","H",NA,NA,NA,2
+2019,3,7,"Jackson St.","Alabama A&M","H",66,47,NA,2
 2019,3,9,"Jackson St.","Alabama St.","H",NA,NA,NA,2
 2018,11,6,"Jacksonville","Florida A&M","H",50,65,NA,2
 2018,11,10,"Jacksonville","Northern Ariz.","V",82,97,NA,2
@@ -3985,7 +4002,8 @@
 2019,2,23,"Jacksonville St.","Eastern Ky.","H",104,101,2,2
 2019,2,28,"Jacksonville St.","Eastern Ill.","V",89,84,2,2
 2019,3,2,"Jacksonville St.","SIUE","V",97,72,NA,2
-2019,3,7,"Jacksonville St.","UT Martin","N",NA,NA,NA,2
+2019,3,7,"Jacksonville St.","UT Martin","N",88,81,NA,2
+2019,3,8,"Jacksonville St.","Murray St.","N",74,76,NA,2
 2018,11,6,"James Madison","East. Mennonite","H",86,58,NA,1
 2018,11,9,"James Madison","East Carolina","V",73,72,NA,2
 2018,11,12,"James Madison","Bridgewater (VA)","H",82,59,NA,1
@@ -4142,7 +4160,7 @@
 2019,2,26,"Kent St.","Ohio","H",78,73,NA,2
 2019,3,1,"Kent St.","Bowling Green","V",72,77,NA,2
 2019,3,5,"Kent St.","Miami (OH)","V",75,66,NA,2
-2019,3,8,"Kent St.","Akron","H",NA,NA,NA,2
+2019,3,8,"Kent St.","Akron","H",68,65,NA,2
 2018,11,6,"Kentucky","Duke","N",84,118,NA,2
 2018,11,9,"Kentucky","Southern Ill.","H",71,59,NA,2
 2018,11,14,"Kentucky","North Dakota","H",96,58,NA,2
@@ -4232,7 +4250,7 @@
 2019,2,23,"La.-Monroe","UT Arlington","V",86,91,2,2
 2019,2,28,"La.-Monroe","Appalachian St.","H",81,75,NA,2
 2019,3,2,"La.-Monroe","Coastal Caro.","H",91,97,NA,2
-2019,3,7,"La.-Monroe","Arkansas St.","V",NA,NA,NA,2
+2019,3,7,"La.-Monroe","Arkansas St.","V",72,73,NA,2
 2019,3,9,"La.-Monroe","Little Rock","V",NA,NA,NA,2
 2018,11,7,"Lafayette","Saint Peter's","V",86,93,1,2
 2018,11,10,"Lafayette","La Salle","V",77,76,NA,2
@@ -4324,7 +4342,8 @@
 2019,2,24,"Lehigh","Holy Cross","H",71,73,NA,2
 2019,2,27,"Lehigh","American","V",80,66,NA,2
 2019,3,2,"Lehigh","Loyola Maryland","V",73,92,NA,2
-2019,3,7,"Lehigh","Army West Point","H",NA,NA,NA,2
+2019,3,7,"Lehigh","Army West Point","H",75,70,NA,2
+2019,3,10,"Lehigh","Bucknell","V",NA,NA,NA,2
 2018,11,8,"Liberty","Me.-Fort Kent","H",89,40,NA,1
 2018,11,13,"Liberty","Trevecca Nazarene","H",93,40,NA,1
 2018,11,16,"Liberty","Kent St.","V",77,70,NA,2
@@ -4357,7 +4376,8 @@
 2019,2,26,"Liberty","Kennesaw St.","H",76,59,NA,2
 2019,3,1,"Liberty","NJIT","V",57,51,NA,2
 2019,3,4,"Liberty","Jacksonville","H",72,58,NA,2
-2019,3,7,"Liberty","North Florida","H",NA,NA,NA,2
+2019,3,7,"Liberty","North Florida","H",71,63,NA,2
+2019,3,10,"Liberty","Lipscomb","V",NA,NA,NA,2
 2018,11,6,"Lipscomb","Sewanee","H",97,53,NA,1
 2018,11,10,"Lipscomb","Tennessee St.","H",86,79,NA,2
 2018,11,15,"Lipscomb","Belmont","H",83,87,NA,2
@@ -4388,7 +4408,8 @@
 2019,2,25,"Lipscomb","NJIT","H",81,77,NA,2
 2019,3,1,"Lipscomb","North Ala.","V",87,75,NA,2
 2019,3,4,"Lipscomb","Kennesaw St.","H",86,71,NA,2
-2019,3,7,"Lipscomb","NJIT","H",NA,NA,NA,2
+2019,3,7,"Lipscomb","NJIT","H",78,55,NA,2
+2019,3,10,"Lipscomb","Liberty","H",NA,NA,NA,2
 2018,11,8,"Little Rock","Southeastern Okla.","H",101,92,1,1
 2018,11,13,"Little Rock","Tennessee St.","V",83,67,NA,2
 2018,11,16,"Little Rock","Nevada","V",59,87,NA,2
@@ -4418,7 +4439,7 @@
 2019,2,23,"Little Rock","Arkansas St.","V",65,72,NA,2
 2019,2,28,"Little Rock","Ga. Southern","V",66,81,NA,2
 2019,3,2,"Little Rock","Georgia St.","V",70,83,NA,2
-2019,3,7,"Little Rock","Louisiana","H",NA,NA,NA,2
+2019,3,7,"Little Rock","Louisiana","H",72,77,NA,2
 2019,3,9,"Little Rock","La.-Monroe","H",NA,NA,NA,2
 2018,11,6,"LIU Brooklyn","New Rochelle","H",109,76,NA,1
 2018,11,9,"LIU Brooklyn","Brown","H",83,81,NA,2
@@ -4451,6 +4472,7 @@
 2019,2,28,"LIU Brooklyn","Central Conn. St.","H",84,55,NA,2
 2019,3,2,"LIU Brooklyn","Bryant","H",81,65,NA,2
 2019,3,6,"LIU Brooklyn","Sacred Heart","V",71,62,NA,2
+2019,3,9,"LIU Brooklyn","Saint Francis (PA)","V",NA,NA,NA,2
 2018,11,9,"Long Beach St.","UCLA","V",80,91,NA,2
 2018,11,10,"Long Beach St.","Menlo","H",78,57,NA,1
 2018,11,12,"Long Beach St.","Arizona St.","V",58,90,NA,2
@@ -4544,7 +4566,7 @@
 2019,2,23,"Louisiana","Texas St.","V",62,64,NA,2
 2019,2,28,"Louisiana","Coastal Caro.","H",83,70,NA,2
 2019,3,3,"Louisiana","Appalachian St.","H",80,90,NA,2
-2019,3,7,"Louisiana","Little Rock","V",NA,NA,NA,2
+2019,3,7,"Louisiana","Little Rock","V",77,72,NA,2
 2019,3,9,"Louisiana","Arkansas St.","V",NA,NA,NA,2
 2018,11,6,"Louisiana Tech","Wichita St.","V",71,58,NA,2
 2018,11,11,"Louisiana Tech","Sam Houston St.","H",76,69,NA,2
@@ -4639,7 +4661,8 @@
 2019,2,24,"Loyola Chicago","Southern Ill.","V",53,63,NA,2
 2019,2,27,"Loyola Chicago","UNI","V",56,55,NA,2
 2019,3,2,"Loyola Chicago","Bradley","H",81,68,NA,2
-2019,3,8,"Loyola Chicago","TB","N",NA,NA,NA,1
+2019,3,8,"Loyola Chicago","Valparaiso","H",NA,54,NA,2
+2019,3,9,"Loyola Chicago","Bradley","N",NA,NA,NA,2
 2018,11,6,"Loyola Maryland","St. John's (NY)","V",55,76,NA,2
 2018,11,11,"Loyola Maryland","Dartmouth","H",80,82,NA,2
 2018,11,13,"Loyola Maryland","Delaware St.","H",91,62,NA,2
@@ -4702,7 +4725,7 @@
 2019,2,23,"Loyola Marymount","Pacific","V",63,56,NA,2
 2019,2,28,"Loyola Marymount","Santa Clara","H",72,70,NA,2
 2019,3,2,"Loyola Marymount","San Francisco","V",74,69,NA,2
-2019,3,8,"Loyola Marymount","TB","N",NA,NA,NA,1
+2019,3,8,"Loyola Marymount","Pepperdine","N",65,68,NA,2
 2018,11,6,"LSU","Southeastern La.","H",94,63,NA,2
 2018,11,9,"LSU","UNC Greensboro","H",97,91,NA,2
 2018,11,13,"LSU","Memphis","H",85,76,NA,2
@@ -4765,6 +4788,7 @@
 2019,2,27,"Maine","UMass Lowell","H",61,70,NA,2
 2019,3,2,"Maine","Binghamton","H",60,83,NA,2
 2019,3,5,"Maine","New Hampshire","V",53,60,NA,2
+2019,3,9,"Maine","Vermont","V",NA,NA,NA,2
 2018,11,6,"Manhattan","Elon","H",56,62,NA,2
 2018,11,12,"Manhattan","UMBC","V",52,75,NA,2
 2018,11,16,"Manhattan","Coastal Caro.","N",55,53,NA,2
@@ -4795,7 +4819,8 @@
 2019,2,24,"Manhattan","Fairfield","V",59,72,NA,2
 2019,3,1,"Manhattan","Monmouth","H",54,62,NA,2
 2019,3,3,"Manhattan","Quinnipiac","V",62,58,NA,2
-2019,3,7,"Manhattan","Fairfield","N",NA,NA,NA,2
+2019,3,7,"Manhattan","Fairfield","N",57,53,NA,2
+2019,3,8,"Manhattan","Canisius","N",65,69,1,2
 2018,11,6,"Marist","Army West Point","V",69,73,NA,2
 2018,11,10,"Marist","Columbia","H",82,76,NA,2
 2018,11,13,"Marist","Lehigh","V",72,78,NA,2
@@ -4826,7 +4851,7 @@
 2019,2,24,"Marist","Siena","V",55,67,NA,2
 2019,3,1,"Marist","Fairfield","V",44,59,NA,2
 2019,3,3,"Marist","Rider","H",64,75,NA,2
-2019,3,7,"Marist","Saint Peter's","N",NA,NA,NA,2
+2019,3,7,"Marist","Saint Peter's","N",68,71,1,2
 2018,11,6,"Marquette","UMBC","H",67,42,NA,2
 2018,11,10,"Marquette","Bethune-Cookman","H",92,59,NA,2
 2018,11,14,"Marquette","Indiana","V",73,96,NA,2
@@ -4919,7 +4944,7 @@
 2019,2,23,"Maryland","Ohio St.","H",72,62,NA,2
 2019,2,27,"Maryland","Penn St.","V",61,78,NA,2
 2019,3,3,"Maryland","Michigan","H",62,69,NA,2
-2019,3,8,"Maryland","Minnesota","H",NA,NA,NA,2
+2019,3,8,"Maryland","Minnesota","H",69,60,NA,2
 2018,11,6,"Massachusetts","UMass Lowell","H",83,75,NA,2
 2018,11,9,"Massachusetts","New Hampshire","H",104,75,NA,2
 2018,11,13,"Massachusetts","Harvard","H",71,74,NA,2
@@ -5073,7 +5098,7 @@
 2019,2,26,"Miami (FL)","Wake Forest","V",75,76,NA,2
 2019,3,2,"Miami (FL)","Duke","V",57,87,NA,2
 2019,3,5,"Miami (FL)","Pittsburgh","H",76,63,NA,2
-2019,3,8,"Miami (FL)","Virginia Tech","V",NA,NA,NA,2
+2019,3,8,"Miami (FL)","Virginia Tech","V",70,84,NA,2
 2018,11,10,"Miami (OH)","Butler","V",68,90,NA,2
 2018,11,12,"Miami (OH)","Midway","H",91,42,NA,1
 2018,11,16,"Miami (OH)","North Dakota St.","N",89,78,NA,2
@@ -5104,7 +5129,7 @@
 2019,2,26,"Miami (OH)","Bowling Green","V",82,69,NA,2
 2019,3,1,"Miami (OH)","Buffalo","H",69,77,NA,2
 2019,3,5,"Miami (OH)","Kent St.","H",66,75,NA,2
-2019,3,8,"Miami (OH)","Ohio","V",NA,NA,NA,2
+2019,3,8,"Miami (OH)","Ohio","V",57,66,NA,2
 2018,11,6,"Michigan","Norfolk St.","H",63,44,NA,2
 2018,11,10,"Michigan","Holy Cross","H",56,37,NA,2
 2018,11,14,"Michigan","Villanova","V",73,46,NA,2
@@ -5259,7 +5284,7 @@
 2019,2,24,"Minnesota","Rutgers","V",64,68,NA,2
 2019,2,28,"Minnesota","Northwestern","V",62,50,NA,2
 2019,3,5,"Minnesota","Purdue","H",73,69,NA,2
-2019,3,8,"Minnesota","Maryland","V",NA,NA,NA,2
+2019,3,8,"Minnesota","Maryland","V",60,69,NA,2
 2018,11,9,"Mississippi St.","Austin Peay","H",95,67,NA,2
 2018,11,11,"Mississippi St.","Hartford","H",77,59,NA,2
 2018,11,16,"Mississippi St.","Long Beach St.","H",79,51,NA,2
@@ -5384,7 +5409,7 @@
 2019,2,23,"Missouri St.","Indiana St.","H",67,61,NA,2
 2019,2,27,"Missouri St.","Illinois St.","V",57,65,NA,2
 2019,3,2,"Missouri St.","Drake","H",62,73,NA,2
-2019,3,8,"Missouri St.","Bradley","N",NA,NA,NA,2
+2019,3,8,"Missouri St.","Bradley","N",58,61,NA,2
 2018,11,6,"Monmouth","Lehigh","H",61,85,NA,2
 2018,11,9,"Monmouth","Colgate","V",74,87,NA,2
 2018,11,12,"Monmouth","Saint Joseph's","V",63,78,NA,2
@@ -5416,7 +5441,8 @@
 2019,2,22,"Monmouth","Canisius","H",59,60,NA,2
 2019,2,24,"Monmouth","Quinnipiac","H",56,68,NA,2
 2019,3,1,"Monmouth","Manhattan","V",62,54,NA,2
-2019,3,7,"Monmouth","Niagara","N",NA,NA,NA,2
+2019,3,7,"Monmouth","Niagara","N",76,72,NA,2
+2019,3,9,"Monmouth","Quinnipiac","N",NA,NA,NA,2
 2018,11,9,"Montana","Georgia St.","H",81,74,NA,2
 2018,11,12,"Montana","Montana Tech","H",79,55,NA,1
 2018,11,16,"Montana","Incarnate Word","N",93,66,NA,2
@@ -5446,7 +5472,7 @@
 2019,2,25,"Montana","Northern Colo.","H",72,74,NA,2
 2019,3,2,"Montana","Southern Utah","H",70,54,NA,2
 2019,3,4,"Montana","Northern Ariz.","H",66,64,NA,2
-2019,3,7,"Montana","Portland St.","V",NA,NA,NA,2
+2019,3,7,"Montana","Portland St.","V",69,81,NA,2
 2019,3,9,"Montana","Sacramento St.","V",NA,NA,NA,2
 2018,11,6,"Montana St.","Utah St.","H",71,101,NA,2
 2018,11,9,"Montana St.","Indiana","V",35,80,NA,2
@@ -5476,7 +5502,7 @@
 2019,2,23,"Montana St.","Montana","V",83,89,NA,2
 2019,3,2,"Montana St.","Northern Ariz.","H",84,73,NA,2
 2019,3,4,"Montana St.","Southern Utah","H",90,83,NA,2
-2019,3,7,"Montana St.","Sacramento St.","V",NA,NA,NA,2
+2019,3,7,"Montana St.","Sacramento St.","V",67,70,NA,2
 2019,3,9,"Montana St.","Portland St.","V",NA,NA,NA,2
 2018,11,6,"Morehead St.","Ky. Christian","H",102,82,NA,1
 2018,11,8,"Morehead St.","UConn","V",70,80,NA,2
@@ -5510,7 +5536,7 @@
 2019,2,28,"Morehead St.","Murray St.","H",52,71,NA,2
 2019,3,2,"Morehead St.","Eastern Ky.","V",78,77,NA,2
 2019,3,6,"Morehead St.","SIUE","N",72,68,NA,2
-2019,3,7,"Morehead St.","Austin Peay","N",NA,NA,NA,2
+2019,3,7,"Morehead St.","Austin Peay","N",81,95,NA,2
 2018,11,6,"Morgan St.","Villanova","V",77,100,NA,2
 2018,11,9,"Morgan St.","Saint Francis (PA)","V",60,80,NA,2
 2018,11,12,"Morgan St.","DePaul","V",63,91,NA,2
@@ -5539,7 +5565,7 @@
 2019,2,25,"Morgan St.","Howard","H",69,75,NA,2
 2019,3,2,"Morgan St.","Delaware St.","V",76,58,NA,2
 2019,3,4,"Morgan St.","UMES","V",73,78,NA,2
-2019,3,7,"Morgan St.","Coppin St.","H",NA,NA,NA,2
+2019,3,7,"Morgan St.","Coppin St.","H",69,83,NA,2
 2018,11,6,"Mount St. Mary's","NC State","V",55,105,NA,2
 2018,11,9,"Mount St. Mary's","Hofstra","V",61,79,NA,2
 2018,11,14,"Mount St. Mary's","Marshall","V",75,98,NA,2
@@ -5600,7 +5626,8 @@
 2019,2,23,"Murray St.","Southeast Mo. St.","H",103,67,NA,2
 2019,2,28,"Murray St.","Morehead St.","V",71,52,NA,2
 2019,3,2,"Murray St.","Austin Peay","H",94,83,NA,2
-2019,3,8,"Murray St.","TB","N",NA,NA,NA,1
+2019,3,8,"Murray St.","Jacksonville St.","N",76,74,NA,2
+2019,3,9,"Murray St.","Belmont","N",NA,NA,NA,2
 2018,11,6,"N.C. A&T","UNC Greensboro","H",66,74,NA,2
 2018,11,10,"N.C. A&T","Wake Forest","V",78,90,NA,2
 2018,11,12,"N.C. A&T","Maryland","V",59,82,NA,2
@@ -5630,7 +5657,7 @@
 2019,2,23,"N.C. A&T","South Carolina St.","H",63,62,NA,2
 2019,2,25,"N.C. A&T","Savannah St.","H",63,58,NA,2
 2019,3,2,"N.C. A&T","Florida A&M","H",63,42,NA,2
-2019,3,7,"N.C. A&T","N.C. Central","H",NA,NA,NA,2
+2019,3,7,"N.C. A&T","N.C. Central","H",NA,52,NA,2
 2018,11,9,"N.C. Central","Clemson","V",51,71,NA,2
 2018,11,13,"N.C. Central","Cincinnati","V",51,73,NA,2
 2018,11,15,"N.C. Central","Bowling Green","V",60,75,NA,2
@@ -5660,7 +5687,7 @@
 2019,2,18,"N.C. Central","Howard","V",98,90,NA,2
 2019,2,23,"N.C. Central","Savannah St.","H",78,69,NA,2
 2019,2,25,"N.C. Central","South Carolina St.","H",72,62,NA,2
-2019,3,7,"N.C. Central","N.C. A&T","V",NA,NA,NA,2
+2019,3,7,"N.C. Central","N.C. A&T","V",NA,74,NA,2
 2018,11,6,"Navy","Old Dominion","V",44,67,NA,2
 2018,11,9,"Navy","Maryland","H",57,78,NA,2
 2018,11,14,"Navy","Coppin St.","H",77,58,NA,2
@@ -5690,7 +5717,8 @@
 2019,2,23,"Navy","Colgate","V",71,93,NA,2
 2019,2,27,"Navy","Bucknell","H",64,53,NA,2
 2019,3,2,"Navy","Boston U.","V",79,74,NA,2
-2019,3,7,"Navy","American","V",NA,NA,NA,2
+2019,3,7,"Navy","American","V",60,56,NA,2
+2019,3,10,"Navy","Colgate","V",NA,NA,NA,2
 2018,11,6,"NC State","Mount St. Mary's","H",105,55,NA,2
 2018,11,10,"NC State","UMES","H",95,49,NA,2
 2018,11,13,"NC State","UNC Asheville","H",100,49,NA,2
@@ -5934,7 +5962,7 @@
 2019,2,24,"Niagara","Saint Peter's","V",60,78,NA,2
 2019,2,27,"Niagara","Canisius","V",86,84,NA,2
 2019,3,3,"Niagara","Siena","H",65,72,1,2
-2019,3,7,"Niagara","Monmouth","N",NA,NA,NA,2
+2019,3,7,"Niagara","Monmouth","N",72,76,NA,2
 2018,11,6,"Nicholls St.","Mississippi Col.","H",86,58,NA,1
 2018,11,8,"Nicholls St.","Louisville","V",72,85,NA,2
 2018,11,11,"Nicholls St.","Washington St.","V",72,89,NA,2
@@ -5998,7 +6026,7 @@
 2019,2,25,"NJIT","Lipscomb","V",77,81,NA,2
 2019,3,1,"NJIT","Liberty","H",51,57,NA,2
 2019,3,4,"NJIT","FGCU","V",83,78,NA,2
-2019,3,7,"NJIT","Lipscomb","V",NA,NA,NA,2
+2019,3,7,"NJIT","Lipscomb","V",55,78,NA,2
 2018,11,6,"Norfolk St.","Michigan","V",44,63,NA,2
 2018,11,8,"Norfolk St.","Mid-Atlantic Christ.","H",108,50,NA,1
 2018,11,10,"Norfolk St.","Clarion","H",74,46,NA,1
@@ -6029,7 +6057,7 @@
 2019,2,23,"Norfolk St.","Morgan St.","V",75,74,NA,2
 2019,3,2,"Norfolk St.","Coppin St.","H",72,38,NA,2
 2019,3,4,"Norfolk St.","Delaware St.","V",74,66,NA,2
-2019,3,7,"Norfolk St.","Howard","H",NA,NA,NA,2
+2019,3,7,"Norfolk St.","Howard","H",95,98,NA,2
 2018,11,6,"North Ala.","Samford","V",74,91,NA,2
 2018,11,10,"North Ala.","Blue Mountain (MS)","H",72,59,NA,1
 2018,11,13,"North Ala.","Saint Louis","V",58,69,NA,2
@@ -6186,7 +6214,7 @@
 2019,2,23,"North Florida","Liberty","H",75,70,NA,2
 2019,2,26,"North Florida","Stetson","H",77,67,NA,2
 2019,3,4,"North Florida","North Ala.","H",76,66,NA,2
-2019,3,7,"North Florida","Liberty","V",NA,NA,NA,2
+2019,3,7,"North Florida","Liberty","V",63,71,NA,2
 2018,11,6,"North Texas","Angelo St.","H",89,55,NA,1
 2018,11,9,"North Texas","Humboldt St.","N",93,48,NA,1
 2018,11,10,"North Texas","Portland","N",78,73,NA,2
@@ -6308,7 +6336,7 @@
 2019,2,25,"Northern Colo.","Montana","V",74,72,NA,2
 2019,2,28,"Northern Colo.","Weber St.","H",85,61,NA,2
 2019,3,2,"Northern Colo.","Idaho St.","H",71,62,NA,2
-2019,3,7,"Northern Colo.","Southern Utah","V",NA,NA,NA,2
+2019,3,7,"Northern Colo.","Southern Utah","V",70,53,NA,2
 2019,3,9,"Northern Colo.","Northern Ariz.","H",NA,NA,NA,2
 2018,11,6,"Northern Ill.","Rockford","H",93,54,NA,1
 2018,11,9,"Northern Ill.","Northern Ky.","H",85,88,2,2
@@ -6340,7 +6368,7 @@
 2019,2,26,"Northern Ill.","Western Mich.","H",70,65,NA,2
 2019,3,2,"Northern Ill.","Eastern Mich.","H",69,75,NA,2
 2019,3,5,"Northern Ill.","Central Mich.","V",89,86,NA,2
-2019,3,8,"Northern Ill.","Ball St.","V",NA,NA,NA,2
+2019,3,8,"Northern Ill.","Ball St.","V",64,57,NA,2
 2018,11,6,"Northern Ky.","Wilmington (OH)","H",102,38,NA,1
 2018,11,9,"Northern Ky.","Northern Ill.","V",88,85,2,2
 2018,11,11,"Northern Ky.","Wabash","H",99,59,NA,1
@@ -6402,7 +6430,7 @@
 2019,2,20,"Northwestern","Ohio St.","V",49,63,NA,2
 2019,2,23,"Northwestern","Wisconsin","H",64,69,NA,2
 2019,2,28,"Northwestern","Minnesota","H",50,62,NA,2
-2019,3,3,"Northwestern","Illinois","V",NA,81,NA,2
+2019,3,3,"Northwestern","Illinois","V",76,81,NA,2
 2019,3,6,"Northwestern","Ohio St.","H",68,50,NA,2
 2019,3,9,"Northwestern","Purdue","H",NA,NA,NA,2
 2018,11,6,"Northwestern St.","Centenary (LA)","H",102,62,NA,1
@@ -6529,7 +6557,7 @@
 2019,2,26,"Ohio","Kent St.","V",73,78,NA,2
 2019,3,2,"Ohio","Akron","V",73,49,NA,2
 2019,3,5,"Ohio","Buffalo","H",79,82,NA,2
-2019,3,8,"Ohio","Miami (OH)","H",NA,NA,NA,2
+2019,3,8,"Ohio","Miami (OH)","H",66,57,NA,2
 2018,11,7,"Ohio St.","Cincinnati","V",64,56,NA,2
 2018,11,11,"Ohio St.","Purdue Fort Wayne","H",107,61,NA,2
 2018,11,15,"Ohio St.","Creighton","V",69,60,NA,2
@@ -6839,7 +6867,7 @@
 2019,2,23,"Pacific","Loyola Marymount","H",56,63,NA,2
 2019,2,28,"Pacific","Gonzaga","H",66,86,NA,2
 2019,3,2,"Pacific","Pepperdine","V",73,72,NA,2
-2019,3,7,"Pacific","Pepperdine","N",NA,NA,NA,2
+2019,3,7,"Pacific","Pepperdine","N",53,61,NA,2
 2018,11,6,"Penn","George Mason","V",72,71,NA,2
 2018,11,9,"Penn","Rice","H",92,76,NA,2
 2018,11,13,"Penn","Lafayette","H",91,61,NA,2
@@ -6868,7 +6896,7 @@
 2019,2,23,"Penn","Cornell","H",68,50,NA,2
 2019,3,1,"Penn","Harvard","V",53,59,NA,2
 2019,3,2,"Penn","Dartmouth","V",65,51,NA,2
-2019,3,8,"Penn","Yale","H",NA,NA,NA,2
+2019,3,8,"Penn","Yale","H",77,66,NA,2
 2019,3,9,"Penn","Brown","H",NA,NA,NA,2
 2018,11,9,"Penn St.","North Florida","H",87,72,NA,2
 2018,11,12,"Penn St.","Jacksonville St.","H",76,61,NA,2
@@ -6931,7 +6959,9 @@
 2019,2,21,"Pepperdine","Gonzaga","V",64,92,NA,2
 2019,2,23,"Pepperdine","Portland","H",86,80,NA,2
 2019,3,2,"Pepperdine","Pacific","H",72,73,NA,2
-2019,3,7,"Pepperdine","Pacific","N",NA,NA,NA,2
+2019,3,7,"Pepperdine","Pacific","N",61,53,NA,2
+2019,3,8,"Pepperdine","Loyola Marymount","N",68,65,NA,2
+2019,3,9,"Pepperdine","San Francisco","N",NA,NA,NA,2
 2018,11,6,"Pittsburgh","Youngstown St.","H",69,53,NA,2
 2018,11,9,"Pittsburgh","VMI","H",94,55,NA,2
 2018,11,12,"Pittsburgh","Troy","H",84,75,NA,2
@@ -6994,7 +7024,7 @@
 2019,2,23,"Portland","Pepperdine","V",80,86,NA,2
 2019,2,28,"Portland","Saint Mary's (CA)","V",48,65,NA,2
 2019,3,2,"Portland","Santa Clara","H",62,78,NA,2
-2019,3,7,"Portland","San Diego","N",NA,NA,NA,2
+2019,3,7,"Portland","San Diego","N",47,67,NA,2
 2018,11,6,"Portland St.","Oregon","V",57,84,NA,2
 2018,11,10,"Portland St.","UC Riverside","H",71,64,NA,2
 2018,11,17,"Portland St.","Willamette","H",125,61,NA,1
@@ -7024,7 +7054,7 @@
 2019,2,23,"Portland St.","Sacramento St.","H",65,57,NA,2
 2019,2,28,"Portland St.","Idaho","V",67,65,NA,2
 2019,3,2,"Portland St.","Eastern Wash.","V",66,68,NA,2
-2019,3,7,"Portland St.","Montana","H",NA,NA,NA,2
+2019,3,7,"Portland St.","Montana","H",81,69,NA,2
 2019,3,9,"Portland St.","Montana St.","H",NA,NA,NA,2
 2018,11,9,"Prairie View","Santa Clara","V",81,64,NA,2
 2018,11,12,"Prairie View","Baylor","V",80,91,NA,2
@@ -7055,7 +7085,7 @@
 2019,2,25,"Prairie View","Ark.-Pine Bluff","H",48,44,NA,2
 2019,3,2,"Prairie View","Alabama A&M","V",72,65,NA,2
 2019,3,4,"Prairie View","Alabama St.","V",96,69,NA,2
-2019,3,7,"Prairie View","Southern U.","H",NA,NA,NA,2
+2019,3,7,"Prairie View","Southern U.","H",73,55,NA,2
 2019,3,9,"Prairie View","Alcorn","H",NA,NA,NA,2
 2018,11,6,"Presbyterian","Col. of Charleston","V",73,85,NA,2
 2018,11,10,"Presbyterian","Tennessee Tech","V",80,65,NA,2
@@ -7089,7 +7119,7 @@
 2019,2,27,"Presbyterian","Gardner-Webb","V",70,78,NA,2
 2019,3,2,"Presbyterian","Charleston So.","H",65,72,NA,2
 2019,3,5,"Presbyterian","UNC Asheville","H",106,59,NA,2
-2019,3,7,"Presbyterian","Radford","N",NA,NA,NA,2
+2019,3,7,"Presbyterian","Radford","N",76,84,NA,2
 2018,11,9,"Princeton","DeSales","H",85,51,NA,1
 2018,11,16,"Princeton","Lehigh","V",57,72,NA,2
 2018,11,21,"Princeton","Fairleigh Dickinson","H",66,77,NA,2
@@ -7115,7 +7145,7 @@
 2019,2,23,"Princeton","Columbia","H",79,61,NA,2
 2019,3,1,"Princeton","Dartmouth","V",77,76,1,2
 2019,3,2,"Princeton","Harvard","V",58,66,NA,2
-2019,3,8,"Princeton","Brown","H",63,68,NA,2
+2019,3,8,"Princeton","Brown","H",63,67,NA,2
 2019,3,9,"Princeton","Yale","H",NA,NA,NA,2
 2018,11,6,"Providence","Siena","H",77,67,NA,2
 2018,11,9,"Providence","Wichita St.","N",80,83,NA,2
@@ -7240,7 +7270,7 @@
 2019,2,24,"Quinnipiac","Monmouth","V",68,56,NA,2
 2019,3,1,"Quinnipiac","Saint Peter's","V",77,60,NA,2
 2019,3,3,"Quinnipiac","Manhattan","H",58,62,NA,2
-2019,3,9,"Quinnipiac","TB","N",NA,NA,NA,1
+2019,3,9,"Quinnipiac","Monmouth","N",NA,NA,NA,2
 2018,11,6,"Radford","Davis & Elkins","H",91,57,NA,1
 2018,11,9,"Radford","UIC","H",88,78,NA,2
 2018,11,14,"Radford","Notre Dame","V",63,60,NA,2
@@ -7271,7 +7301,9 @@
 2019,2,23,"Radford","Hampton","H",71,74,NA,2
 2019,2,27,"Radford","High Point","V",72,54,NA,2
 2019,3,2,"Radford","Campbell","V",62,64,NA,2
-2019,3,7,"Radford","Presbyterian","N",NA,NA,NA,2
+2019,3,7,"Radford","Presbyterian","N",84,76,NA,2
+2019,3,8,"Radford","Charleston So.","N",63,54,NA,2
+2019,3,10,"Radford","Gardner-Webb","V",NA,NA,NA,2
 2018,11,6,"Rhode Island","Bryant","H",97,63,NA,2
 2018,11,13,"Rhode Island","Col. of Charleston","V",55,66,NA,2
 2018,11,16,"Rhode Island","Harvard","H",76,74,NA,2
@@ -7427,6 +7459,7 @@
 2019,2,28,"Robert Morris","Sacred Heart","V",63,87,NA,2
 2019,3,2,"Robert Morris","Wagner","V",69,60,NA,2
 2019,3,6,"Robert Morris","St. Francis Brooklyn","H",69,65,1,2
+2019,3,9,"Robert Morris","Fairleigh Dickinson","V",NA,NA,NA,2
 2018,11,9,"Rutgers","Fairleigh Dickinson","H",90,55,NA,2
 2018,11,11,"Rutgers","Drexel","H",95,66,NA,2
 2018,11,16,"Rutgers","St. John's (NY)","H",65,84,NA,2
@@ -7485,7 +7518,7 @@
 2019,2,23,"Sacramento St.","Portland St.","V",57,65,NA,2
 2019,2,28,"Sacramento St.","Eastern Wash.","V",59,56,NA,2
 2019,3,2,"Sacramento St.","Idaho","V",90,94,NA,2
-2019,3,7,"Sacramento St.","Montana St.","H",NA,NA,NA,2
+2019,3,7,"Sacramento St.","Montana St.","H",70,67,NA,2
 2019,3,9,"Sacramento St.","Montana","H",NA,NA,NA,2
 2018,11,6,"Sacred Heart","Holy Cross","V",81,93,NA,2
 2018,11,12,"Sacred Heart","Western New Eng.","H",114,72,NA,1
@@ -7549,6 +7582,7 @@
 2019,2,28,"Saint Francis (PA)","Wagner","V",83,72,NA,2
 2019,3,2,"Saint Francis (PA)","Sacred Heart","V",84,94,NA,2
 2019,3,6,"Saint Francis (PA)","Bryant","H",67,63,NA,2
+2019,3,9,"Saint Francis (PA)","LIU Brooklyn","H",NA,NA,NA,2
 2018,11,9,"Saint Joseph's","Old Dominion","H",79,64,NA,2
 2018,11,12,"Saint Joseph's","Monmouth","H",78,63,NA,2
 2018,11,15,"Saint Joseph's","Wake Forest","N",89,69,NA,2
@@ -7579,7 +7613,7 @@
 2019,2,27,"Saint Joseph's","Fordham","V",66,52,NA,2
 2019,3,2,"Saint Joseph's","La Salle","H",72,62,NA,2
 2019,3,5,"Saint Joseph's","Rhode Island","H",85,86,1,2
-2019,3,8,"Saint Joseph's","VCU","V",NA,NA,NA,2
+2019,3,8,"Saint Joseph's","VCU","V",63,75,NA,2
 2018,11,6,"Saint Louis","Southeast Mo. St.","H",75,65,NA,2
 2018,11,10,"Saint Louis","Troy","H",62,58,NA,2
 2018,11,13,"Saint Louis","North Ala.","H",69,58,NA,2
@@ -7673,7 +7707,8 @@
 2019,2,24,"Saint Peter's","Niagara","H",78,60,NA,2
 2019,3,1,"Saint Peter's","Quinnipiac","H",60,77,NA,2
 2019,3,3,"Saint Peter's","Fairfield","H",62,52,NA,2
-2019,3,7,"Saint Peter's","Marist","N",NA,NA,NA,2
+2019,3,7,"Saint Peter's","Marist","N",71,68,1,2
+2019,3,8,"Saint Peter's","Iona","N",71,73,NA,2
 2018,11,6,"Sam Houston St.","East Tex. Baptist","H",85,64,NA,1
 2018,11,8,"Sam Houston St.","Southwestern (TX)","H",94,56,NA,1
 2018,11,11,"Sam Houston St.","Louisiana Tech","V",69,76,NA,2
@@ -7736,7 +7771,8 @@
 2019,2,23,"Samford","The Citadel","V",83,87,1,2
 2019,2,28,"Samford","Furman","H",81,90,NA,2
 2019,3,2,"Samford","Wofford","H",64,85,NA,2
-2019,3,8,"Samford","The Citadel","N",NA,NA,NA,2
+2019,3,8,"Samford","The Citadel","N",100,71,NA,2
+2019,3,9,"Samford","UNC Greensboro","N",NA,NA,NA,2
 2018,11,6,"San Diego","Weber St.","H",83,66,NA,2
 2018,11,9,"San Diego","UC Davis","V",76,57,NA,2
 2018,11,12,"San Diego","Washington","V",63,66,NA,2
@@ -7768,7 +7804,9 @@
 2019,2,23,"San Diego","Saint Mary's (CA)","H",46,66,NA,2
 2019,2,28,"San Diego","San Francisco","V",91,90,1,2
 2019,3,2,"San Diego","BYU","V",73,87,NA,2
-2019,3,7,"San Diego","Portland","N",NA,NA,NA,2
+2019,3,7,"San Diego","Portland","N",67,47,NA,2
+2019,3,8,"San Diego","Santa Clara","N",62,45,NA,2
+2019,3,9,"San Diego","BYU","N",NA,NA,NA,2
 2018,11,6,"San Diego St.","Ark.-Pine Bluff","H",76,60,NA,2
 2018,11,14,"San Diego St.","Texas Southern","H",103,64,NA,2
 2018,11,19,"San Diego St.","Duke","N",64,90,NA,2
@@ -7830,7 +7868,7 @@
 2019,2,23,"San Francisco","Santa Clara","V",65,68,NA,2
 2019,2,28,"San Francisco","San Diego","H",90,91,1,2
 2019,3,2,"San Francisco","Loyola Marymount","H",69,74,NA,2
-2019,3,9,"San Francisco","TB","N",NA,NA,NA,1
+2019,3,9,"San Francisco","Pepperdine","N",NA,NA,NA,2
 2018,11,7,"San Jose St.","LIFE Pacific","H",89,72,NA,1
 2018,11,10,"San Jose St.","Southern Utah","H",59,66,NA,2
 2018,11,15,"San Jose St.","Weber St.","N",77,85,NA,2
@@ -7891,7 +7929,8 @@
 2019,2,23,"Santa Clara","San Francisco","H",68,65,NA,2
 2019,2,28,"Santa Clara","Loyola Marymount","V",70,72,NA,2
 2019,3,2,"Santa Clara","Portland","V",78,62,NA,2
-2019,3,8,"Santa Clara","TB","N",NA,NA,NA,1
+2019,3,8,"Santa Clara","San Diego","N",45,62,NA,2
+2010,3,7,"Savannah St.","South Carolina St.","V",90,87,NA,2
 2018,11,7,"Savannah St.","Texas A&M","V",83,98,NA,2
 2018,11,9,"Savannah St.","Georgia","V",76,110,NA,2
 2018,11,11,"Savannah St.","Middle Ga. St.","H",105,95,NA,1
@@ -7921,7 +7960,6 @@
 2019,2,23,"Savannah St.","N.C. Central","V",69,78,NA,2
 2019,2,25,"Savannah St.","N.C. A&T","V",58,63,NA,2
 2019,3,2,"Savannah St.","Howard","H",76,81,NA,2
-2019,3,7,"Savannah St.","South Carolina St.","V",NA,NA,NA,2
 2018,11,6,"Seattle U","Stanford","V",74,96,NA,2
 2018,11,8,"Seattle U","Puget Sound","H",95,67,NA,1
 2018,11,11,"Seattle U","Bryant","H",82,59,NA,2
@@ -7951,7 +7989,7 @@
 2019,2,23,"Seattle U","Chicago St.","H",77,57,NA,2
 2019,2,26,"Seattle U","Utah Valley","H",68,77,NA,2
 2019,2,28,"Seattle U","California Baptist","V",67,65,NA,2
-2019,3,7,"Seattle U","CSU Bakersfield","H",NA,NA,NA,2
+2019,3,7,"Seattle U","CSU Bakersfield","H",63,57,1,2
 2019,3,9,"Seattle U","Grand Canyon","H",NA,NA,NA,2
 2018,11,6,"Seton Hall","Wagner","H",89,49,NA,2
 2018,11,14,"Seton Hall","Nebraska","V",57,80,NA,2
@@ -8104,7 +8142,7 @@
 2019,2,24,"SMU","UCF","V",48,95,NA,2
 2019,2,27,"SMU","Cincinnati","H",49,52,NA,2
 2019,3,3,"SMU","Wichita St.","H",55,67,NA,2
-2019,3,7,"SMU","Houston","V",NA,NA,NA,2
+2019,3,7,"SMU","Houston","V",79,90,NA,2
 2019,3,10,"SMU","South Fla.","V",NA,NA,NA,2
 2018,11,6,"South Alabama","Auburn","V",58,101,NA,2
 2018,11,11,"South Alabama","Huntingdon","H",106,76,NA,1
@@ -8135,7 +8173,7 @@
 2019,2,23,"South Alabama","Troy","V",68,52,NA,2
 2019,2,28,"South Alabama","UT Arlington","H",57,75,NA,2
 2019,3,2,"South Alabama","Texas St.","H",77,63,NA,2
-2019,3,7,"South Alabama","Coastal Caro.","V",NA,NA,NA,2
+2019,3,7,"South Alabama","Coastal Caro.","V",70,92,NA,2
 2019,3,9,"South Alabama","Appalachian St.","V",NA,NA,NA,2
 2018,11,6,"South Carolina","USC Upstate","H",65,52,NA,2
 2018,11,9,"South Carolina","Stony Brook","H",81,83,NA,2
@@ -8168,6 +8206,7 @@
 2019,3,2,"South Carolina","Missouri","V",63,78,NA,2
 2019,3,5,"South Carolina","Texas A&M","V",71,54,NA,2
 2019,3,9,"South Carolina","Georgia","H",NA,NA,NA,2
+2010,3,7,"South Carolina St.","Savannah St.","H",87,90,NA,2
 2018,11,6,"South Carolina St.","Brevard","H",99,51,NA,1
 2018,11,10,"South Carolina St.","Tulsa","V",52,74,NA,2
 2018,11,13,"South Carolina St.","Charleston So.","V",72,89,NA,2
@@ -8199,7 +8238,6 @@
 2019,2,23,"South Carolina St.","N.C. A&T","V",62,63,NA,2
 2019,2,25,"South Carolina St.","N.C. Central","V",62,72,NA,2
 2019,3,2,"South Carolina St.","Bethune-Cookman","V",95,98,1,2
-2019,3,7,"South Carolina St.","Savannah St.","H",NA,NA,NA,2
 2018,11,7,"South Dakota","York (NE)","H",83,58,NA,1
 2018,11,12,"South Dakota","Northern Ariz.","H",90,74,NA,2
 2018,11,16,"South Dakota","High Point","N",56,60,NA,2
@@ -8385,7 +8423,7 @@
 2019,2,21,"Southern California","Oregon","H",66,49,NA,2
 2019,2,23,"Southern California","Oregon St.","H",62,67,NA,2
 2019,2,28,"Southern California","UCLA","V",88,93,1,2
-2019,3,7,"Southern California","Utah","V",NA,NA,NA,2
+2019,3,7,"Southern California","Utah","V",74,83,NA,2
 2019,3,9,"Southern California","Colorado","V",NA,NA,NA,2
 2018,11,9,"Southern Ill.","Kentucky","V",59,71,NA,2
 2018,11,12,"Southern Ill.","Buffalo","H",53,62,NA,2
@@ -8418,7 +8456,7 @@
 2019,2,24,"Southern Ill.","Loyola Chicago","H",63,53,NA,2
 2019,2,27,"Southern Ill.","Evansville","H",NA,91,NA,2
 2019,3,2,"Southern Ill.","Illinois St.","H",72,63,NA,2
-2019,3,8,"Southern Ill.","UNI","N",NA,NA,NA,2
+2019,3,8,"Southern Ill.","UNI","N",58,61,NA,2
 2018,11,6,"Southern Miss.","Southeastern Bapt.","H",111,66,NA,1
 2018,11,11,"Southern Miss.","SMU","V",74,64,NA,2
 2018,11,15,"Southern Miss.","Troy","V",81,66,NA,2
@@ -8478,7 +8516,7 @@
 2019,2,23,"Southern U.","Alabama A&M","H",59,49,NA,2
 2019,2,25,"Southern U.","Alabama St.","H",57,60,NA,2
 2019,3,2,"Southern U.","Alcorn","H",61,46,NA,2
-2019,3,7,"Southern U.","Prairie View","V",NA,NA,NA,2
+2019,3,7,"Southern U.","Prairie View","V",55,73,NA,2
 2019,3,9,"Southern U.","Texas Southern","V",NA,NA,NA,2
 2018,11,6,"Southern Utah","West Coast Baptist","H",109,63,NA,1
 2018,11,10,"Southern Utah","San Jose St.","V",66,59,NA,2
@@ -8508,7 +8546,7 @@
 2019,2,23,"Southern Utah","Idaho","H",85,76,NA,2
 2019,3,2,"Southern Utah","Montana","V",54,70,NA,2
 2019,3,4,"Southern Utah","Montana St.","V",83,90,NA,2
-2019,3,7,"Southern Utah","Northern Colo.","H",NA,NA,NA,2
+2019,3,7,"Southern Utah","Northern Colo.","H",53,70,NA,2
 2018,11,7,"St. Bonaventure","Bucknell","H",85,88,1,2
 2018,11,10,"St. Bonaventure","Jackson St.","H",67,36,NA,2
 2018,11,12,"St. Bonaventure","Niagara","V",72,80,NA,2
@@ -8632,7 +8670,7 @@
 2019,2,24,"Stanford","Arizona","V",54,70,NA,2
 2019,2,28,"Stanford","Washington St.","H",98,50,NA,2
 2019,3,3,"Stanford","Washington","H",61,62,NA,2
-2019,3,7,"Stanford","California","H",NA,NA,NA,2
+2019,3,7,"Stanford","California","H",59,64,NA,2
 2018,11,7,"Stetson","Johnson (FL)","H",116,66,NA,1
 2018,11,11,"Stetson","Missouri St.","V",70,83,NA,2
 2018,11,14,"Stetson","Southern California","V",59,95,NA,2
@@ -8695,6 +8733,7 @@
 2019,2,27,"Stony Brook","UMBC","H",78,63,NA,2
 2019,3,2,"Stony Brook","Vermont","V",50,56,NA,2
 2019,3,5,"Stony Brook","Hartford","V",68,63,NA,2
+2019,3,9,"Stony Brook","Binghamton","H",NA,NA,NA,2
 2018,11,6,"Syracuse","Eastern Wash.","H",66,34,NA,2
 2018,11,10,"Syracuse","Morehead St.","H",84,70,NA,2
 2018,11,15,"Syracuse","UConn","N",76,83,NA,2
@@ -8786,7 +8825,7 @@
 2019,2,23,"Temple","Tulsa","H",84,73,NA,2
 2019,2,26,"Temple","Memphis","V",73,81,NA,2
 2019,3,3,"Temple","Tulane","H",80,69,NA,2
-2019,3,7,"Temple","UConn","V",NA,NA,NA,2
+2019,3,7,"Temple","UConn","V",78,71,NA,2
 2019,3,9,"Temple","UCF","H",NA,NA,NA,2
 2018,11,6,"Tennessee","Lenoir-Rhyne","H",86,41,NA,1
 2018,11,9,"Tennessee","Louisiana","H",87,65,NA,2
@@ -8970,7 +9009,7 @@
 2019,2,25,"Texas Southern","Mississippi Val.","H",92,80,NA,2
 2019,3,2,"Texas Southern","Alabama St.","V",78,68,NA,2
 2019,3,4,"Texas Southern","Alabama A&M","V",66,61,NA,2
-2019,3,7,"Texas Southern","Alcorn","H",NA,NA,NA,2
+2019,3,7,"Texas Southern","Alcorn","H",99,72,NA,2
 2019,3,9,"Texas Southern","Southern U.","H",NA,NA,NA,2
 2018,11,9,"Texas St.","Air Force","H",67,57,NA,2
 2018,11,13,"Texas St.","Hardin-Simmons","H",97,52,NA,1
@@ -9063,7 +9102,7 @@
 2019,2,23,"The Citadel","Samford","H",87,83,1,2
 2019,2,28,"The Citadel","UNC Greensboro","H",96,100,NA,2
 2019,3,2,"The Citadel","VMI","V",78,81,NA,2
-2019,3,8,"The Citadel","Samford","N",NA,NA,NA,2
+2019,3,8,"The Citadel","Samford","N",71,100,NA,2
 2018,11,9,"Toledo","Oakland","V",87,86,NA,2
 2018,11,10,"Toledo","Wilberforce","H",99,58,NA,1
 2018,11,14,"Toledo","Wright St.","V",74,84,NA,2
@@ -9094,7 +9133,7 @@
 2019,2,26,"Toledo","Ball St.","V",80,72,NA,2
 2019,3,2,"Toledo","Central Mich.","V",80,68,NA,2
 2019,3,5,"Toledo","Western Mich.","H",76,57,NA,2
-2019,3,8,"Toledo","Eastern Mich.","H",NA,NA,NA,2
+2019,3,8,"Toledo","Eastern Mich.","H",64,58,NA,2
 2018,11,6,"Towson","Virginia","V",42,73,NA,2
 2018,11,11,"Towson","Wesley","H",93,66,NA,1
 2018,11,16,"Towson","Pepperdine","N",65,74,NA,2
@@ -9155,7 +9194,7 @@
 2019,2,23,"Troy","South Alabama","H",52,68,NA,2
 2019,2,28,"Troy","Texas St.","H",44,58,NA,2
 2019,3,2,"Troy","UT Arlington","H",66,79,NA,2
-2019,3,7,"Troy","Appalachian St.","V",NA,NA,NA,2
+2019,3,7,"Troy","Appalachian St.","V",64,72,NA,2
 2019,3,9,"Troy","Coastal Caro.","V",NA,NA,NA,2
 2018,11,11,"Tulane","Florida St.","H",69,80,NA,2
 2018,11,13,"Tulane","Coastal Caro.","H",81,76,NA,2
@@ -9277,7 +9316,7 @@
 2019,2,23,"UC Davis","CSUN","V",76,81,1,2
 2019,2,28,"UC Davis","UC Irvine","H",48,64,NA,2
 2019,3,2,"UC Davis","Cal St. Fullerton","H",66,59,NA,2
-2019,3,7,"UC Davis","Hawaii","H",NA,NA,NA,2
+2019,3,7,"UC Davis","Hawaii","H",69,76,NA,2
 2019,3,9,"UC Davis","UC Riverside","H",NA,NA,NA,2
 2018,11,6,"UC Irvine","Idaho","H",86,68,NA,2
 2018,11,9,"UC Irvine","Texas A&M","V",74,73,NA,2
@@ -9309,7 +9348,7 @@
 2019,2,21,"UC Irvine","Cal Poly","H",74,47,NA,2
 2019,2,28,"UC Irvine","UC Davis","V",64,48,NA,2
 2019,3,2,"UC Irvine","UC Riverside","V",68,47,NA,2
-2019,3,7,"UC Irvine","Cal Poly","V",NA,NA,NA,2
+2019,3,7,"UC Irvine","Cal Poly","V",110,72,NA,2
 2019,3,9,"UC Irvine","CSUN","H",NA,NA,NA,2
 2018,11,6,"UC Riverside","Oregon St.","V",59,72,NA,2
 2018,11,10,"UC Riverside","Portland St.","V",64,71,NA,2
@@ -9371,7 +9410,7 @@
 2019,2,21,"UC Santa Barbara","Hawaii","H",79,61,NA,2
 2019,2,23,"UC Santa Barbara","Cal St. Fullerton","H",82,67,NA,2
 2019,2,28,"UC Santa Barbara","Long Beach St.","H",64,69,NA,2
-2019,3,7,"UC Santa Barbara","CSUN","V",NA,NA,NA,2
+2019,3,7,"UC Santa Barbara","CSUN","V",76,74,NA,2
 2019,3,9,"UC Santa Barbara","Cal Poly","V",NA,NA,NA,2
 2018,11,6,"UCF","Rider","H",84,70,NA,2
 2018,11,11,"UCF","Fla. Atlantic","H",79,80,NA,2
@@ -9401,7 +9440,7 @@
 2019,2,24,"UCF","SMU","H",95,48,NA,2
 2019,2,27,"UCF","South Fla.","V",75,63,NA,2
 2019,3,2,"UCF","Houston","V",69,64,NA,2
-2019,3,7,"UCF","Cincinnati","H",NA,NA,NA,2
+2019,3,7,"UCF","Cincinnati","H",58,55,NA,2
 2019,3,9,"UCF","Temple","V",NA,NA,NA,2
 2018,11,6,"UCLA","Purdue Fort Wayne","H",96,71,NA,2
 2018,11,9,"UCLA","Long Beach St.","H",91,80,NA,2
@@ -9432,7 +9471,7 @@
 2019,2,21,"UCLA","Oregon St.","H",68,67,NA,2
 2019,2,23,"UCLA","Oregon","H",90,83,NA,2
 2019,2,28,"UCLA","Southern California","H",93,88,1,2
-2019,3,7,"UCLA","Colorado","V",NA,NA,NA,2
+2019,3,7,"UCLA","Colorado","V",68,93,NA,2
 2019,3,9,"UCLA","Utah","V",NA,NA,NA,2
 2018,11,8,"UConn","Morehead St.","H",80,70,NA,2
 2018,11,11,"UConn","UMKC","H",94,66,NA,2
@@ -9463,7 +9502,7 @@
 2019,2,24,"UConn","Cincinnati","H",60,64,NA,2
 2019,2,28,"UConn","Wichita St.","V",63,65,NA,2
 2019,3,3,"UConn","South Fla.","H",60,58,NA,2
-2019,3,7,"UConn","Temple","H",NA,NA,NA,2
+2019,3,7,"UConn","Temple","H",71,78,NA,2
 2019,3,10,"UConn","East Carolina","V",NA,NA,NA,2
 2018,11,6,"UIC","Notre Dame","V",67,84,NA,2
 2018,11,9,"UIC","Radford","V",78,88,NA,2
@@ -9528,6 +9567,7 @@
 2019,2,23,"UMass Lowell","Hartford","H",73,75,NA,2
 2019,2,27,"UMass Lowell","Maine","V",70,61,NA,2
 2019,3,5,"UMass Lowell","Vermont","V",57,74,NA,2
+2019,3,9,"UMass Lowell","Hartford","V",NA,NA,NA,2
 2018,11,6,"UMBC","Marquette","V",42,67,NA,2
 2018,11,10,"UMBC","Shenandoah","H",93,45,NA,1
 2018,11,12,"UMBC","Manhattan","H",75,52,NA,2
@@ -9559,6 +9599,7 @@
 2019,2,23,"UMBC","Albany (NY)","V",75,84,NA,2
 2019,2,27,"UMBC","Stony Brook","V",63,78,NA,2
 2019,3,2,"UMBC","New Hampshire","H",56,53,NA,2
+2019,3,9,"UMBC","Albany (NY)","H",NA,NA,NA,2
 2018,11,6,"UMES","Georgetown","V",53,68,NA,2
 2018,11,10,"UMES","NC State","V",49,95,NA,2
 2018,11,13,"UMES","Longwood","H",63,66,NA,2
@@ -9589,7 +9630,7 @@
 2019,2,16,"UMES","Coppin St.","H",55,58,NA,2
 2019,2,23,"UMES","Delaware St.","V",62,56,NA,2
 2019,3,4,"UMES","Morgan St.","H",78,73,NA,2
-2019,3,7,"UMES","Delaware St.","H",NA,NA,NA,2
+2019,3,7,"UMES","Delaware St.","H",70,64,NA,2
 2018,11,6,"UMKC","Loyola Chicago","V",45,76,NA,2
 2018,11,8,"UMKC","Iowa","V",63,77,NA,2
 2018,11,11,"UMKC","UConn","V",66,94,NA,2
@@ -9683,7 +9724,7 @@
 2019,2,24,"UNC Greensboro","ETSU","H",60,59,NA,2
 2019,2,28,"UNC Greensboro","The Citadel","V",100,96,NA,2
 2019,3,2,"UNC Greensboro","Mercer","V",74,47,NA,2
-2019,3,9,"UNC Greensboro","TB","N",NA,NA,NA,1
+2019,3,9,"UNC Greensboro","Samford","N",NA,NA,NA,2
 2018,11,6,"UNCW","Campbell","V",93,97,1,2
 2018,11,9,"UNCW","Stanford","H",59,72,NA,2
 2018,11,13,"UNCW","UNC Greensboro","H",61,82,NA,2
@@ -9747,7 +9788,8 @@
 2019,2,23,"UNI","Valparaiso","H",64,53,NA,2
 2019,2,27,"UNI","Loyola Chicago","H",55,56,NA,2
 2019,3,2,"UNI","Indiana St.","V",54,71,NA,2
-2019,3,8,"UNI","Southern Ill.","N",NA,NA,NA,2
+2019,3,8,"UNI","Southern Ill.","N",61,58,NA,2
+2019,3,9,"UNI","Drake","N",NA,NA,NA,2
 2018,11,10,"UNLV","Loyola Marymount","H",50,61,NA,2
 2018,11,13,"UNLV","UC Riverside","H",72,51,NA,2
 2018,11,16,"UNLV","Oakland","H",74,61,NA,2
@@ -9871,7 +9913,7 @@
 2019,2,28,"UT Martin","Belmont","H",67,112,NA,2
 2019,3,2,"UT Martin","Tennessee St.","H",91,86,NA,2
 2019,3,6,"UT Martin","Eastern Ill.","N",78,71,NA,2
-2019,3,7,"UT Martin","Jacksonville St.","N",NA,NA,NA,2
+2019,3,7,"UT Martin","Jacksonville St.","N",81,88,NA,2
 2018,11,8,"Utah","Maine","H",75,61,NA,2
 2018,11,12,"Utah","Minnesota","V",69,78,NA,2
 2018,11,15,"Utah","Mississippi Val.","H",98,63,NA,2
@@ -9900,7 +9942,7 @@
 2019,2,20,"Utah","Washington","V",45,62,NA,2
 2019,2,23,"Utah","Washington St.","V",92,79,NA,2
 2019,3,2,"Utah","Colorado","V",63,71,NA,2
-2019,3,7,"Utah","Southern California","H",NA,NA,NA,2
+2019,3,7,"Utah","Southern California","H",83,74,NA,2
 2019,3,9,"Utah","UCLA","H",NA,NA,NA,2
 2018,11,6,"Utah St.","Montana St.","V",101,71,NA,2
 2018,11,9,"Utah St.","Hartford","H",100,73,NA,2
@@ -9962,7 +10004,7 @@
 2019,2,23,"Utah Valley","UMKC","H",79,67,NA,2
 2019,2,26,"Utah Valley","Seattle U","V",77,68,NA,2
 2019,3,2,"Utah Valley","California Baptist","V",64,63,NA,2
-2019,3,7,"Utah Valley","Grand Canyon","H",NA,NA,NA,2
+2019,3,7,"Utah Valley","Grand Canyon","H",82,70,NA,2
 2019,3,9,"Utah Valley","CSU Bakersfield","H",NA,NA,NA,2
 2018,11,6,"UTEP","Tex. Permian Basin","H",90,63,NA,1
 2018,11,9,"UTEP","New Mexico St.","V",69,96,NA,2
@@ -10025,7 +10067,7 @@
 2019,2,23,"UTRGV","New Mexico St.","V",79,88,NA,2
 2019,2,28,"UTRGV","Chicago St.","V",82,77,NA,2
 2019,3,2,"UTRGV","UMKC","V",75,70,NA,2
-2019,3,7,"UTRGV","California Baptist","H",NA,NA,NA,2
+2019,3,7,"UTRGV","California Baptist","H",79,82,1,2
 2018,11,7,"UTSA","St. Edward's","H",76,77,NA,1
 2018,11,12,"UTSA","Oklahoma","H",67,87,NA,2
 2018,11,14,"UTSA","Oklahoma St.","V",60,82,NA,2
@@ -10088,7 +10130,8 @@
 2019,2,23,"Valparaiso","UNI","V",53,64,NA,2
 2019,2,27,"Valparaiso","Bradley","V",42,67,NA,2
 2019,3,2,"Valparaiso","Evansville","H",63,65,NA,2
-2019,3,7,"Valparaiso","Indiana St.","N",NA,NA,NA,2
+2019,3,7,"Valparaiso","Indiana St.","N",77,55,NA,2
+2019,3,8,"Valparaiso","Loyola Chicago","H",NA,67,NA,2
 2018,11,6,"Vanderbilt","Winthrop","H",92,79,NA,2
 2018,11,11,"Vanderbilt","Southern California","V",82,78,NA,2
 2018,11,16,"Vanderbilt","Alcorn","H",79,54,NA,2
@@ -10150,7 +10193,7 @@
 2019,2,26,"VCU","Saint Louis","H",71,65,NA,2
 2019,3,2,"VCU","Richmond","V",69,66,NA,2
 2019,3,5,"VCU","George Mason","V",71,36,NA,2
-2019,3,8,"VCU","Saint Joseph's","H",NA,NA,NA,2
+2019,3,8,"VCU","Saint Joseph's","H",75,63,NA,2
 2018,11,9,"Vermont","Boston U.","V",78,72,NA,2
 2018,11,12,"Vermont","Kansas","V",68,84,NA,2
 2018,11,14,"Vermont","NVU-Lyndon","H",122,56,NA,1
@@ -10181,6 +10224,7 @@
 2019,2,23,"Vermont","Binghamton","V",69,63,NA,2
 2019,3,2,"Vermont","Stony Brook","H",56,50,NA,2
 2019,3,5,"Vermont","UMass Lowell","H",74,57,NA,2
+2019,3,9,"Vermont","Maine","H",NA,NA,NA,2
 2018,11,6,"Villanova","Morgan St.","H",100,77,NA,2
 2018,11,10,"Villanova","Quinnipiac","H",86,53,NA,2
 2018,11,14,"Villanova","Michigan","H",46,73,NA,2
@@ -10271,7 +10315,7 @@
 2019,2,23,"Virginia Tech","Notre Dame","V",67,59,NA,2
 2019,2,26,"Virginia Tech","Duke","H",77,72,NA,2
 2019,3,5,"Virginia Tech","Florida St.","V",64,73,1,2
-2019,3,8,"Virginia Tech","Miami (FL)","H",NA,NA,NA,2
+2019,3,8,"Virginia Tech","Miami (FL)","H",84,70,NA,2
 2018,11,6,"VMI","Washington Col.","H",89,56,NA,1
 2018,11,9,"VMI","Pittsburgh","V",55,94,NA,2
 2018,11,11,"VMI","Goucher","H",98,34,NA,1
@@ -10302,7 +10346,8 @@
 2019,2,23,"VMI","Western Caro.","V",83,78,NA,2
 2019,2,28,"VMI","Mercer","H",84,71,NA,2
 2019,3,2,"VMI","The Citadel","H",81,78,NA,2
-2019,3,8,"VMI","Western Caro.","N",NA,NA,NA,2
+2019,3,8,"VMI","Western Caro.","N",96,83,NA,2
+2019,3,9,"VMI","Wofford","N",NA,NA,NA,2
 2018,11,6,"Wagner","Seton Hall","V",49,89,NA,2
 2018,11,10,"Wagner","UMass Lowell","V",84,88,1,2
 2018,11,13,"Wagner","SUNY Cortland","H",90,58,NA,1
@@ -10454,7 +10499,7 @@
 2019,2,21,"Weber St.","Sacramento St.","V",76,78,NA,2
 2019,2,28,"Weber St.","Northern Colo.","V",61,85,NA,2
 2019,3,4,"Weber St.","Idaho St.","V",74,78,NA,2
-2019,3,7,"Weber St.","Idaho","H",NA,NA,NA,2
+2019,3,7,"Weber St.","Idaho","H",93,59,NA,2
 2019,3,9,"Weber St.","Eastern Wash.","H",NA,NA,NA,2
 2018,11,9,"West Virginia","Buffalo","H",94,99,1,2
 2018,11,15,"West Virginia","Monmouth","N",71,53,NA,2
@@ -10518,7 +10563,7 @@
 2019,2,21,"Western Caro.","UNC Greensboro","V",76,79,1,2
 2019,2,23,"Western Caro.","VMI","H",78,83,NA,2
 2019,3,2,"Western Caro.","ETSU","V",74,81,NA,2
-2019,3,8,"Western Caro.","VMI","N",NA,NA,NA,2
+2019,3,8,"Western Caro.","VMI","N",83,96,NA,2
 2018,11,6,"Western Ill.","Creighton","V",67,78,NA,2
 2018,11,10,"Western Ill.","North Park","H",84,56,NA,1
 2018,11,14,"Western Ill.","Dominican (IL)","H",95,56,NA,1
@@ -10610,7 +10655,7 @@
 2019,2,26,"Western Mich.","Northern Ill.","V",65,70,NA,2
 2019,3,2,"Western Mich.","Ball St.","H",58,60,NA,2
 2019,3,5,"Western Mich.","Toledo","V",57,76,NA,2
-2019,3,8,"Western Mich.","Central Mich.","H",NA,NA,NA,2
+2019,3,8,"Western Mich.","Central Mich.","H",75,82,NA,2
 2018,11,6,"Wichita St.","Louisiana Tech","H",58,71,NA,2
 2018,11,9,"Wichita St.","Providence","N",83,80,NA,2
 2018,11,15,"Wichita St.","Davidson","N",53,57,NA,2
@@ -10701,7 +10746,7 @@
 2019,2,21,"Winthrop","Radford","V",81,87,NA,2
 2019,2,23,"Winthrop","Charleston So.","H",80,78,2,2
 2019,2,28,"Winthrop","Hampton","V",75,90,NA,2
-2019,3,7,"Winthrop","Charleston So.","N",NA,NA,NA,2
+2019,3,7,"Winthrop","Charleston So.","N",63,77,NA,2
 2018,11,6,"Wisconsin","Coppin St.","H",85,63,NA,2
 2018,11,13,"Wisconsin","Xavier","V",77,68,NA,2
 2018,11,17,"Wisconsin","Houston Baptist","H",96,59,NA,2
@@ -10731,7 +10776,7 @@
 2019,2,23,"Wisconsin","Northwestern","V",69,64,NA,2
 2019,2,26,"Wisconsin","Indiana","V",73,75,2,2
 2019,3,2,"Wisconsin","Penn St.","H",61,57,NA,2
-2019,3,7,"Wisconsin","Iowa","H",NA,NA,NA,2
+2019,3,7,"Wisconsin","Iowa","H",65,45,NA,2
 2019,3,10,"Wisconsin","Ohio St.","V",NA,NA,NA,2
 2018,11,6,"Wofford","North Carolina","H",67,78,NA,2
 2018,11,10,"Wofford","High Point","V",68,60,NA,2
@@ -10763,7 +10808,7 @@
 2019,2,23,"Wofford","Furman","V",72,64,NA,2
 2019,2,28,"Wofford","Chattanooga","V",80,54,NA,2
 2019,3,2,"Wofford","Samford","V",85,64,NA,2
-2019,3,9,"Wofford","TB","N",NA,NA,NA,1
+2019,3,9,"Wofford","VMI","N",NA,NA,NA,2
 2018,11,7,"Wright St.","Western Caro.","H",96,73,NA,2
 2018,11,10,"Wright St.","Murray St.","V",54,73,NA,2
 2018,11,14,"Wright St.","Toledo","H",84,74,NA,2
@@ -10884,7 +10929,7 @@
 2019,2,23,"Yale","Harvard","H",86,88,NA,2
 2019,3,1,"Yale","Cornell","H",88,65,NA,2
 2019,3,2,"Yale","Columbia","H",75,83,NA,2
-2019,3,8,"Yale","Penn","V",NA,NA,NA,2
+2019,3,8,"Yale","Penn","V",66,77,NA,2
 2019,3,9,"Yale","Princeton","V",NA,NA,NA,2
 2018,11,6,"Youngstown St.","Pittsburgh","V",53,69,NA,2
 2018,11,10,"Youngstown St.","Akron","N",69,98,NA,2
