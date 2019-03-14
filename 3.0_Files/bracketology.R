@@ -43,12 +43,12 @@ make_bracket <- function(tourney) {
     bracket$mid_major[i] <- confs$mid_major[confs$team == teams[i]]
     bracket$wins[i] <- resumes$wins[resumes$team == teams[i]]
     bracket$losses[i] <- resumes$losses[resumes$team == teams[i]]
-    bracket$loss_bonus[i] <- resumes$losses[resumes$team == teams[i]] <= 4.5 
+    bracket$loss_bonus[i] <- resumes$losses[resumes$team == teams[i]] <= 4
     bracket$conf[i] %in% c("Big 10", "Big 12", "Big East", "ACC", "Pac 12", "Big 12")
   }
   
   bracket$blend <- 0.15 * bracket$rpi_rank + 0.125 * bracket$wab_rank + 
-    0.125 * bracket$sor_rank + 0.25 * bracket$yusag_rank + 0.35 * bracket$resume_rank
+    0.2 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.325 * bracket$resume_rank
   
   bracket$avg <- 0.2 * bracket$rpi_rank + 0.2 * bracket$wab_rank + 
     0.2 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.2 * bracket$resume_rank 
@@ -82,14 +82,15 @@ make_bracket <- function(tourney) {
   lm.seed <- lm(seed ~ blend +
                   + (mid_major & yusag_rank > 50) 
                 + (mid_major & yusag_rank > 25) 
-                + (loss_bonus & yusag_rank <= 10), 
+                + (loss_bonus & yusag_rank <= 10) 
+                + (losses <= 3), 
                 data = bracket_math)
   bracket$odds <- 
     round(predict(glm.madness, newdata = bracket, type = "response"), 4) * 100
   bracket$seed <- 
     predict(lm.seed, newdata = bracket, type = "response")
   
-  bracket <- arrange(bracket, desc(odds), seed)
+  bracket <- arrange(bracket, round(desc(odds)), seed)
   
   if(tourney == T) {
     ### Get Autobids
