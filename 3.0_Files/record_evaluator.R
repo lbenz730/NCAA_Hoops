@@ -42,7 +42,8 @@ record_eval <- function(team) {
   
   ### Resume Bonus
   qual_bonus <- 16 * tierAw + 8 * tierBw + 2 * tierCw + tierDw - 
-    4 * tierAl - 8 * tierBl - 16 * tierCl - 32 * tierDl
+    4 * tierAl - 8 * tierBl - 16 * tierCl - 32 * tierDl - 
+    25 * (tierAl >= 8) - 25 * (tierAl >= 10) - 50 * (tierAl >= 12) 
   
   ### Compute Strength of Record
   test <- power_rankings$team[1:25]

@@ -87,10 +87,12 @@ make_bracket <- function(tourney) {
                 data = bracket_math)
   bracket$odds <- 
     round(predict(glm.madness, newdata = bracket, type = "response"), 4) * 100
+  bracket$odds[bracket$wins - bracket$losses <= 2] <- 
+    bracket$odds[bracket$wins - bracket$losses <= 2]/4
   bracket$seed <- 
     predict(lm.seed, newdata = bracket, type = "response")
   
-  bracket <- arrange(bracket, round(desc(odds)), seed)
+  bracket <- arrange(bracket, desc(odds), seed)
   
   if(tourney == T) {
     ### Get Autobids
@@ -128,6 +130,10 @@ make_bracket <- function(tourney) {
                            rep(16,6))
     f4 <- bracket$seed_overall[!bracket$autobid][33:36]
     bracket$first4 <- is.element(bracket$seed_overall, f4) | is.element(bracket$seed_overall, c(65:68))
+    ### Not 3 1 seeds from 1 conference
+    if(sum(bracket$conf[4] == bracket$conf[1:3]) == 2) {
+      bracket[4:5,] <- rbind(bracket[5,], bracket[4,])
+    }
     write.csv(bracket, "3.0_Files/Bracketology/bracket.csv", row.names = F)
     
     ### First teams out
