@@ -1,33 +1,70 @@
 ### NCAA Tournament SIMS
 ncaa_sim <- function(nsims) {
-  east <- c("Villanova", "Texas Tech")
-  south <- c("Loyola Chicago", "Kansas St.")
-  west <- c("Michigan","Florida St.")
-  midwest <- c("Kansas", "Duke")
-  east_seeds <- c(1, 3)
-  west_seeds <- c(3, 9)
-  south_seeds <- c(11, 9)
-  mw_seeds <- c(1, 2)
   
+  ### Hard Code Teams, Regions, and Seeds
+  east <- c("Duke", "Michigan St.", "LSU", "Virginia Tech", 
+            "Mississippi St.", "Maryland", "Louisville",
+            "VCU", "UCF", "Minnesota", "Belmont", "Temple",
+            "Liberty", "Saint Louis", "Yale", "Bradley", 
+            "North Dakota St.", "N.C. Central")
+  south <- c("Virginia", "Tennessee", "Purdue", "Kansas St.",
+             "Wisconsin", "Villanova", "Cincinnati", "Ole Miss",
+             "Oklahoma", "Iowa", "Saint Mary's (CA)", "Oregon",
+             "UC Irvine", "Old Dominion", "Colgate", "Gardner-Webb")
+  west <- c("Gonzaga", "Michigan", "Texas Tech", "Florida St.", 
+            "Marquette", "Buffalo", "Nevada", "Syracuse", 
+            "Baylor", "Florida", "Arizona St.", "St. John's (NY)",
+            "Murray St.", "Vermont", "Northern Ky.", "Montana",
+            "Fairleigh Dickinson", "Prairie View")
+  midwest <- c("North Carolina", "Kentucky", "Houston", "Kansas",
+               "Auburn", "Iowa St.", "Wofford", "Utah St.", 
+               "Washington", "Seton Hall", "Ohio St.", "New Mexico St.", 
+               "Northeastern", "Georgia St.", "Abilene Christian", "Iona")
+  east_seeds <- c(1:10, 11, 11, 12:15, 16, 16)
+  west_seeds <- c(1:10, 11, 11, 12:15, 16, 16)
+  south_seeds <- 1:16
+  mw_seeds <- 1:16
   
+  first_four <- data.frame("team" = c(east[c(11, 17)], west[c(11, 17)]),
+                           "opponent" = c(east[c(12, 18)], west[c(12, 18)]),
+                           "location" = "N",
+                           stringsAsFactors = F)
+  first_four$pred_score_diff <- predict(lm.hoops, newdata = first_four)
+  first_four$win_prob <- predict(glm.pointspread, newdata = first_four, type = "response")
+  
+  ### Storage of Sim Results
   ncaa_sims <- data.frame("team" = c(east, west, south, midwest),
                           "seed" = c(east_seeds, west_seeds, south_seeds, mw_seeds),
-                          "region" = c(rep("East", 2), rep("West", 2),
-                                       rep("South", 2), rep("Midwest", 2)),
-                          "f4" = rep(0, 8),
-                          "ncg" = rep(0, 8),
-                          "champ" = rep(0, 8),
+                          "region" = c(rep("East", length(east)), 
+                                       rep("West", length(west)),
+                                       rep("South", length(south)), 
+                                       rep("Midwest", length(midwest))),
+                          "r64" = 0,
+                          "r32" = 0,
+                          "s16" = 0,
+                          "e8" = 0,
+                          "f4" = 0,
+                          "ncg" = 0,
+                          "champ" = 0,
                           stringsAsFactors = F)
   for(j in 1:nsims) {
-    print(paste("Sim #:", j))
+    if(j %% 100 == 0) {
+      cat("Sim:", j, "\n")
+    }
+    
+    ### Sim First 4
+    first_four_losers <- ifelse(runif(4) <= first_four$win_prob, 
+                                 first_four$opponent, 
+                                 first_four$team)
+    
     ### Sim Up to Final 4
     final4 <- rep(NA, 4)
     for(k in 1:4) {
       if(k == 1) {
-        vec <- east
+        vec <- setdiff(east, first_four_losers)
       }
       else if(k == 2) {
-        vec <- west
+        vec <- setdiff(west, first_four_losers)
       }
       else if(k == 3) {
         vec <- south
@@ -35,23 +72,25 @@ ncaa_sim <- function(nsims) {
       else{
         vec <- midwest
       }
-      round <- 5
+      ncaa_sims$r64[ncaa_sims$team %in% vec] <- 
+        ncaa_sims$r64[ncaa_sims$team %in% vec] + 100/nsims
+      round <- 2
       ### Sim Remainder of Tournament
       while(round < 6) {
         ngame <- 16/(2^(round-1))
         games <- data.frame("team" = rep(NA, ngame),
                             "opponent" = rep(NA, ngame),
                             "location" = rep("N", ngame),
-                            "predscorediff" = rep(NA, ngame),
+                            "pred_score_diff" = rep(NA, ngame),
                             "win_prob" = rep(NA, ngame),
                             stringsAsFactors = F)
         games$team <- vec[1:ngame]
         games$opponent <- vec[(2*ngame):(ngame + 1)]
-        games$predscorediff <- predict(lm.hoops, newdata = games)
+        games$pred_score_diff <- predict(lm.hoops, newdata = games)
         games$win_prob <- predict(glm.pointspread, newdata = games, type = "response")
         vec <- ifelse(runif(ngame) <= games$win_prob, games$team, games$opponent)
-        ncaa_sims[ncaa_sims$team %in% vec, round-1] <- 
-          ncaa_sims[ncaa_sims$team %in% vec, round-1] + 100/nsims
+        ncaa_sims[ncaa_sims$team %in% vec, round+3] <- 
+          ncaa_sims[ncaa_sims$team %in% vec, round+3] + 100/nsims
         round <- round + 1
       }
       final4[k] <- vec

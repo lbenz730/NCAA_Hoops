@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_3_17_2019.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_3_18_2019.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -167,6 +167,10 @@ resumes <- get_resumes(new = T)
 bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
+############################## NCAA Sims #######################################
+ncaa_sims <- ncaa_sim(10000)
+write.csv(ncaa_sims, "3.0_Files/Predictions/ncaa_sims.csv", row.names = F)
+
 ################################ Ivy Sims ######################################
 playoffs <- ivy.sim(nsims = 5000)
 psf_results <- psf(nsims = 1000, min_date = "2019-03-08", max_date = "2019-03-09")
@@ -226,13 +230,3 @@ cat(paste("System Evaluation:", min_date, "Through", max_date),
     sep = "")
 nrow(filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score))
 filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)
-
-
-t <- filter(x, team_conf == "SEC", conf_game) %>% 
-  group_by(team) %>%
-  summarise("nwins" = sum(wins)) %>%
-  arrange(desc(nwins)) %>%
-  pull(team)
-jerome(tourney_sim(teams = t, seeds = 1:length(t), 
-            byes = , double_byes = 4, hca = NA, nsims = 1000))
-
