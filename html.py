@@ -132,50 +132,50 @@ output.close()
 
 
 ### Bracket
-i = 0
-html = "<table class= \"sortable\"><thead><tr><th>Seed Line</th><th>Overall Seed</th><th>Team</th><th>Conference</th><th>YUSAG Rank</th><th>RPI Rank</th><th>SOR Rank</th><th>Resume Rank</th><th>WAB Rank</th><th>Blend</th><th>Avg.</th><th>At-Large Odds</th></tr></thead><tbody>"
-with open('3.0_Files/Bracketology/bracket.csv', 'rU') as csvfile:
-    rankings = csv.reader(csvfile, delimiter=',', quotechar='|', dialect = csv.excel_tab)
-    for row in rankings:
-        i += 1
-        if i > 1:
-            html += "<tr><td>"
-            html += row[18]  
-            html += "</td><td>"
-            html += row[17]
-            html += "</td><td>"
-            if row[19] == "TRUE" and row[15] == "TRUE":
-                html += "<i><b>" + row[0].replace('"', '') + "</b></i>"
-            elif row[15] == "TRUE":
-                html += "<b>" + row[0].replace('"', '') + "</b>"
-            elif row[19] == "TRUE":
-                html += "<i>" + row[0].replace('"', '') + "</i>"
-            else:
-                html += row[0].replace('"', '')
-            html += "</td><td>"
-            html += row[1].replace('"', '')
-            html += "</td><td>"
-            html += row[7]
-            html += "</td><td>"
-            html += row[8]
-            html += "</td><td>"
-            html += row[9]
-            html += "</td><td>"
-            html += row[10]
-            html += "</td><td>"
-            html += row[11]
-            html += "</td><td>"
-            html += epenthesize(row[12], 2)
-            html += "</td><td>"
-            html += epenthesize(row[13], 2)
-            html += "</td><td>"
-            html += epenthesize(row[14], 2)
-            html += "</td></tr>"
-html += "</tbody></table>"
-
-output = open("html/bracket.txt", 'w')
-output.write(html)
-output.close()
+# i = 0
+# html = "<table class= \"sortable\"><thead><tr><th>Seed Line</th><th>Overall Seed</th><th>Team</th><th>Conference</th><th>YUSAG Rank</th><th>RPI Rank</th><th>SOR Rank</th><th>Resume Rank</th><th>WAB Rank</th><th>Blend</th><th>Avg.</th><th>At-Large Odds</th></tr></thead><tbody>"
+# with open('3.0_Files/Bracketology/bracket.csv', 'rU') as csvfile:
+#     rankings = csv.reader(csvfile, delimiter=',', quotechar='|', dialect = csv.excel_tab)
+#     for row in rankings:
+#         i += 1
+#         if i > 1:
+#             html += "<tr><td>"
+#             html += row[18]  
+#             html += "</td><td>"
+#             html += row[17]
+#             html += "</td><td>"
+#             if row[19] == "TRUE" and row[15] == "TRUE":
+#                 html += "<i><b>" + row[0].replace('"', '') + "</b></i>"
+#             elif row[15] == "TRUE":
+#                 html += "<b>" + row[0].replace('"', '') + "</b>"
+#             elif row[19] == "TRUE":
+#                 html += "<i>" + row[0].replace('"', '') + "</i>"
+#             else:
+#                 html += row[0].replace('"', '')
+#             html += "</td><td>"
+#             html += row[1].replace('"', '')
+#             html += "</td><td>"
+#             html += row[7]
+#             html += "</td><td>"
+#             html += row[8]
+#             html += "</td><td>"
+#             html += row[9]
+#             html += "</td><td>"
+#             html += row[10]
+#             html += "</td><td>"
+#             html += row[11]
+#             html += "</td><td>"
+#             html += epenthesize(row[12], 2)
+#             html += "</td><td>"
+#             html += epenthesize(row[13], 2)
+#             html += "</td><td>"
+#             html += epenthesize(row[14], 2)
+#             html += "</td></tr>"
+# html += "</tbody></table>"
+# 
+# output = open("html/bracket.txt", 'w')
+# output.write(html)
+# output.close()
 
 
 ### First 16 Out

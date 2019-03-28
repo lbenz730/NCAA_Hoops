@@ -25,12 +25,35 @@ ncaa_sim <- function(nsims) {
   south_seeds <- 1:16
   mw_seeds <- 1:16
   
+  ### Keep Track of teams that have won
+  winners <- list()
+  winners[[1]]<- c("Belmont", "Arizona St.", "Fairleigh Dickinson", "North Dakota St.")
+  winners[[2]] <- c("Minnesota", "LSU", "Auburn", "Florida St.", "Maryland",
+                    "Murray St.", "Kansas", "Michigan St.", "Gonzaga", 
+                    "Kentucky", "Baylor", "Wofford", "Purdue", "Michigan",
+                    "Florida", "Villanova", "Tennessee", "Iowa", "Washington",
+                    "North Carolina", "UCF", "Duke", "Buffalo", "Texas Tech",
+                    "Liberty", "Virginia Tech", "Oklahoma", "Virginia", 
+                    "Ohio St.", "Houston", "UC Irvine",
+                    "Oregon")
+  winners[[3]] <- c("Kentucky", "LSU", "Gonzaga", "Florida St.", "Michigan",
+                         "Purdue", "Michigan St.", "Auburn", "Duke", "North Carolina",
+                    "Virginia", "Texas Tech", "Tennessee", "Oregon", "Houston",
+                    "Virginia Tech")
+  winners[[4]] <- vector()
+  winners[[5]] <- vector()
+  winners[[6]] <- vector()
+  
   first_four <- data.frame("team" = c(east[c(11, 17)], west[c(11, 17)]),
                            "opponent" = c(east[c(12, 18)], west[c(12, 18)]),
                            "location" = "N",
                            stringsAsFactors = F)
   first_four$pred_score_diff <- predict(lm.hoops, newdata = first_four)
   first_four$win_prob <- predict(glm.pointspread, newdata = first_four, type = "response")
+  first_four <- mutate(first_four, win_prob = 
+                         case_when(team %in% winners[[1]] ~ 1,
+                                   opponent %in% winners[[1]] ~ 0,
+                                   T ~ win_prob))
   
   ### Storage of Sim Results
   ncaa_sims <- data.frame("team" = c(east, west, south, midwest),
@@ -88,6 +111,10 @@ ncaa_sim <- function(nsims) {
         games$opponent <- vec[(2*ngame):(ngame + 1)]
         games$pred_score_diff <- predict(lm.hoops, newdata = games)
         games$win_prob <- predict(glm.pointspread, newdata = games, type = "response")
+        games <- mutate(games, win_prob = 
+                 case_when(team %in% winners[[round]] ~ 1,
+                           opponent %in% winners[[round]] ~ 0,
+                           T ~ win_prob))
         vec <- ifelse(runif(ngame) <= games$win_prob, games$team, games$opponent)
         ncaa_sims[ncaa_sims$team %in% vec, round+3] <- 
           ncaa_sims[ncaa_sims$team %in% vec, round+3] + 100/nsims
@@ -101,6 +128,10 @@ ncaa_sim <- function(nsims) {
                          stringsAsFactors = F)
     final4$pred_score_diff <- predict(lm.hoops, newdata = final4)
     final4$win_prob <- predict(glm.pointspread, newdata = final4, type = "response")
+    final4 <- mutate(final4, win_prob = 
+             case_when(team %in% winners[[6]] ~ 1,
+                       opponent %in% winners[[6]] ~ 0,
+                       T ~ win_prob))
     ncg <- ifelse(runif(2) <= final4$win_prob, final4$team, final4$opponent)
     ncaa_sims$ncg[ncaa_sims$team %in% ncg] <- 
       ncaa_sims$ncg[ncaa_sims$team %in% ncg] + 100/nsims
