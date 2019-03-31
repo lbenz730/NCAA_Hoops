@@ -46,3 +46,12 @@ xyz <- read.csv("https://storage.googleapis.com/kaggle-competitions-data/kaggle/
 setdiff(preds$ID, xyz$ID)
 
 write.csv(preds, "3.0_Files/Stage2DataFiles/benz_kaggle_predictions.csv", row.names = F)
+
+
+preds_benz <- read.csv("3.0_Files/Stage2DataFiles/benz_kaggle_predictions.csv", as.is = T)
+
+y <- inner_join(preds, filter(x, date >= as.Date("2019-03-21"), !is.na(score_diff)), by = c("team", "opponent")) %>%
+  mutate("ID" = paste("2019", team_id1, team_id2, sep = "_")) %>%
+  inner_join(preds_benz, by = "ID")
+
+mean(-((y$score_diff > 0) * log(y$Pred) + (y$score_diff < 0) * log(1 - y$Pred)))

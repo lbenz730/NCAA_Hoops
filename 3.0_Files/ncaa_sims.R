@@ -40,7 +40,8 @@ ncaa_sim <- function(nsims) {
                          "Purdue", "Michigan St.", "Auburn", "Duke", "North Carolina",
                     "Virginia", "Texas Tech", "Tennessee", "Oregon", "Houston",
                     "Virginia Tech")
-  winners[[4]] <- vector()
+  winners[[4]] <- c("Gonzaga", "Texas Tech", "Virginia", "Purdue",
+                    "Duke", "Kentucky", "Auburn", "Michigan St.")
   winners[[5]] <- vector()
   winners[[6]] <- vector()
   
