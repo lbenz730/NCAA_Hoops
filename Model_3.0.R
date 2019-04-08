@@ -1,6 +1,6 @@
 #############################  Read CSVs #######################################
 library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_3_30_2019.csv", as.is = T)
+x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_4_8_2019.csv", as.is = T)
 train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
 confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
 deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
@@ -228,5 +228,5 @@ cat(paste("System Evaluation:", min_date, "Through", max_date),
     "Games w/in 5 Points of Observed Total Score: ",
     round(100 * mean(abs(y$pred_total_score - y$total_score) <= 5, na.rm = T), 2), "%\n",
     sep = "")
-nrow(filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score))
+nrow(filter(x, round(pred_team_score) == team_score))
 filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)

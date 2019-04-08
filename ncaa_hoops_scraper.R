@@ -11,6 +11,12 @@ day <- today$mday
 # Stripwhite function 
 stripwhite <- function(x) gsub("\\s*$", "", gsub("^\\s*", "", x))
 
+### Fix 
+fix_team <- function(x) {
+  possible_fix <- teamid$team[sapply(teamid$team, grepl, x)]
+  return(possible_fix[nchar(possible_fix) == max(nchar(possible_fix))])
+}
+
 ### Read in ID's table
 teamid <- 
   read.csv("3.0_Files/Info/conferences.csv", as.is = T) %>%
@@ -22,7 +28,6 @@ baseurl <- 'http://stats.ncaa.org/teams/'
 
 z <- NULL
 bad <- NULL
-#for (i in 1:2) {    # For testing purposes
 for (i in 1:nrow(teamid)) {
   cat("Getting", i, teamid$team[i], "\n")
   
@@ -59,8 +64,10 @@ for (i in 1:nrow(teamid)) {
     loc[grep("@", opploc, fixed=TRUE)] <- "N"
     loc[grep("^@", opploc)] <- "V"
     opp <- opploc
-    opp[loc == "V"] <- gsub("@ ", "", opp[loc == "V"])
+    opp[loc == "V"] <- gsub("@", "", gsub("@ ", "", opp[loc == "V"]))
     opp[loc == "N"] <- substring(opp, 1, regexpr("@", opp)-2)[loc == "N"]
+    
+   
     
     result <- stripwhite(gsub("<[^<>]*>", "", x[datelines+5]))
     OT <- suppressWarnings(as.numeric(gsub("^.*\\((\\d)OT\\)",
@@ -80,21 +87,26 @@ for (i in 1:nrow(teamid)) {
                       teamscore=result[,1],
                       oppscore=result[,2],
                       OT=OT, stringsAsFactors=FALSE)
-    res$date <- paste(res$month, res$day, sep = "_")
+    res$date <- paste(res$month, res$day, sep = "_") 
+    res$opponent <- stripwhite(gsub("&amp;", "&", gsub("&x;", "'", gsub("[0-9]", "", gsub("#", "", res$opponent)))))
+    fix <- sapply(res$opponent, function(x) { any(sapply(teamid$team, grepl, x)) }) &
+      !res$opponent %in% teamid$team
+    res$opponent[fix] <- sapply(res$opponent[fix], fix_team)
     
     # Fix non-unique dates problem
     uni_dates <- unique(res$date)
     z <- rbind(z, res[uni_dates %in% res$date, -ncol(res)])
+   
   }
 }
 
 # Extract D1 Games
-rows <- strsplit(z$opponent[grep("@", z$opponent)], "@")
-if(length(rows) > 1) {
-  for (i in 1:length(z$opponent[grep("@", z$opponent)])) {
-    z$opponent[grep("@", z$opponent)][1] <- rows[[i]][1]
-  }
-}
+# rows <- strsplit(z$opponent[grep("@", z$opponent)], "@")
+# if(length(rows) > 1) {
+#   for (i in 1:length(z$opponent[grep("@", z$opponent)])) {
+#     z$opponent[grep("@", z$opponent)][1] <- rows[[i]][1]
+#   }
+# }
 z$opponent <- stripwhite(z$opponent)
 
 z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team
