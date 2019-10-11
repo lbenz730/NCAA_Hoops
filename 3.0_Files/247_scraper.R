@@ -6,14 +6,14 @@ conferences <- c("ACC", "Big-12", "Big-Ten", "Pac-12", "SEC", "AAC",
                  "Patriot", "SBC", "SLC", "Southern", "Summit", "SW-AC",
                  "WAC", "WCC")
 
-year <- 2009
+year <- 2019
 
 for(conf in conferences) {
   print(paste("Scraping", conf))
   url <- paste0("https://247sports.com/Season/", year, "-Basketball/CompositeTeamRankings?Conference=", conf)
   x <- scan(url, sep = "\n", what = "")
-  x <- x[85]
-  y <- strsplit(x, '<div class=\"rank left\">')[[1]][-c(1:2)]
+  x <- x[75]
+  y <- strsplit(x, '<div class=\"rank-column\">')[[1]][-1]
   
   if(length(y) > 0) {
     recruits <- data.frame("team" = rep(NA, length(y)),
@@ -27,15 +27,17 @@ for(conf in conferences) {
                            "composite_score" = rep(NA, length(y)))
     
     for(i in 1:nrow(recruits)) {
-      recruits$team[i] <- strsplit(gsub("</span>.*", "", y[i]), "<span>")[[1]][2] 
+      recruits$team[i] <- gsub("\".*", "", strsplit(y[i], "<img alt=\"", "")[[1]][2])
       recruits$conf[i] <- conf
       recruits$conf_rank[i] <- as.numeric(gsub("[^0-9]", "", gsub(' </div>  <div class=\"other\">.*', "", y[i])))
-      z <- strsplit(y[i], "Total: ")[[1]][2]  
+      z <- strsplit(y[i], "/Commits/\">")[[1]][3]  
       recruits$num_star_players[i] <- as.numeric(substring(z, 1, 1))
-      recruits[i,c("stars_5", "stars_4", "stars_3")] <- 
-        as.numeric(substring(strsplit(z, "<span class=\"icon-starsolid grey\"></span>: ")[[1]], 1, 1)[-1])
-      recruits$avg_recruit_score[i] <- as.numeric(strsplit(strsplit(z, "<b>Avg:</b> ")[[1]][2], "</li>")[[1]][1])
-      recruits$composite_score[i] <- as.numeric(strsplit(strsplit(z, paste0('/Season/', year, '-Basketball/Commits/\">'))[[1]][2], "</a>")[[1]][1])
+      star5 <- substring(gsub("^\\s*", "", gsub("[^0-9 ]", "", gsub(".*<h2>5-Star</h2>", "", y[i]))), 1, 1)
+      star4 <- substring(gsub("^\\s*", "", gsub("[^0-9 ]", "", gsub(".*<h2>4-Star</h2>", "", y[i]))), 1, 1)
+      star3 <- substring(gsub("^\\s*", "", gsub("[^0-9 ]", "", gsub(".*<h2>3-Star</h2>", "", y[i]))), 1, 1)
+      recruits[i,c("stars_5", "stars_4", "stars_3")] <- as.numeric(c(star5, star4, star3))
+      recruits$avg_recruit_score[i] <- as.numeric(gsub(" </div>.*", "", gsub(".*<div class=\"avg\"> ", "", y[i])))
+      recruits$composite_score[i] <- as.numeric(gsub(" </a>.*", "", strsplit(y[i], paste0('/Season/', year, '-Basketball/Commits/\">'))[[1]][4]))
     }
     
     if(conf == "ACC") {
