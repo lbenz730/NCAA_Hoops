@@ -53,9 +53,10 @@ for (i in 1:nrow(teamid)) {
     x <- x[-grep("^\\s*$", x)]  # Drop lines with only whitespace
     
     # Which lines contain dates surrounded immediately by > ... < ?
-    datelines <- grep(">\\d\\d/\\d\\d/\\d\\d\\d\\d<", x)
+    datelines <- grep("\\d\\d/\\d\\d/\\d\\d\\d\\d", x)
     
     dates <- stripwhite(gsub("<[^<>]*>", "", x[datelines]))
+    dates <- gsub(" .*", "", dates)
     dates <- matrix(as.numeric(unlist(strsplit(dates, "/"))),
                     ncol=3, byrow=TRUE)
     
@@ -112,7 +113,7 @@ z$opponent <- stripwhite(z$opponent)
 z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team
 
 ### Save Results
-write.csv(z, paste("3.0_Files/Results/2018-19/NCAA_Hoops_Results_", month, "_", 
-                   day, "_", year, ".csv", sep=""), row.names=FALSE)
+write.csv(z, paste("3.0_Files/Results/2019-20/NCAA_Hoops_Results_", month, "_", 
+                   day, "_", year, ".csv", sep=""), row.names = F)
 
 

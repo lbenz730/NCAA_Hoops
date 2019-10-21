@@ -1,11 +1,12 @@
 #############################  Read CSVs #######################################
-library(dplyr)
-x <- read.csv("3.0_Files/Results/2018-19/NCAA_Hoops_Results_4_8_2019.csv", as.is = T)
-train <- read.csv("3.0_Files/Results/2017-18/training.csv", as.is = T)
-confs <- read.csv("3.0_Files/Info/conferences.csv", as.is = T)
-deadlines <- read.csv("3.0_Files/Info/deadlines.csv", as.is = T) %>%
+library(dplyr) 
+library(readr)
+x <- read_csv("3.0_Files/Results/2019-20/NCAA_Hoops_Results_10_20_2019.csv")
+train <- read_csv("3.0_Files/Results/2017-18/training.csv")
+confs <- read_csv("3.0_Files/Info/conferences.csv")
+deadlines <- read_csv("3.0_Files/Info/deadlines.csv") %>%
   mutate(deadline = as.Date(deadline, "%m/%d/%y"))
-priors <- read.csv("3.0_Files/Info/prior.csv", as.is = T)
+priors <- read_csv("3.0_Files/Info/prior.csv")
 source("3.0_Files/powerrankings.R")
 source("3.0_Files/Ivy_Sims.R")
 source("3.0_Files/rpi.R")
@@ -20,7 +21,7 @@ x <- x %>%
   mutate(date = as.Date(paste(year, month, day, sep = "-")),
          score_diff = team_score - opp_score,
          total_score = team_score + opp_score,
-         season_id = "2018-19", game_id = NA, opp_game_id = NA, 
+         season_id = "2019-20", game_id = NA, opp_game_id = NA, 
          team_conf = NA, opp_conf = NA, conf_game = NA) %>%
   select(date, team, opponent, location, team_score, opp_score,
          score_diff, total_score, game_id, opp_game_id, team_conf, opp_conf,
@@ -58,7 +59,7 @@ x <- inner_join(x, deadlines, by = c("team_conf" = "conf")) %>%
   select(-deadline)
 
 ### Eliminate Teams from Auto Bid contention
-confs <- eliminate(filter(x, score_diff < 0, !reg_season) %>% pull(team), confs)
+#confs <- eliminate(filter(x, score_diff < 0, !reg_season) %>% pull(team), confs)
 
 ################################# Set Weights ##################################
 x$weights <- 0
