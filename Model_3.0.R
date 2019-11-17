@@ -1,7 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr) 
 library(readr)
-x <- read_csv("3.0_Files/Results/2019-20/NCAA_Hoops_Results_10_20_2019.csv")
+x <- read_csv("3.0_Files/Results/2019-20/NCAA_Hoops_Results_11_16_2019.csv")
 train <- read_csv("3.0_Files/Results/2017-18/training.csv")
 confs <- read_csv("3.0_Files/Info/conferences.csv")
 deadlines <- read_csv("3.0_Files/Info/deadlines.csv") %>%
@@ -74,6 +74,8 @@ for(i in 1:nrow(x)) {
 
 ############################### Create Models ##################################
 ### Current Season
+x[2202, c("team_score", "opp_score", "score_diff")] <- c(70, 70, 0)
+x[5715, c("team_score", "opp_score", "score_diff")] <- c(70, 70, 0)
 lm.hoops <- lm(score_diff ~ team + opponent + location, weights = weights, data = x) 
 lm.off <- lm(team_score ~ team + opponent + location, weights = weights, data = x) 
 lm.def <- lm(opp_score ~ team + opponent + location, weights = weights, data = x) 
@@ -150,10 +152,11 @@ glm.pointspread <- glm(wins ~ pred_score_diff,
                        data = bind_rows(select(train, wins, pred_score_diff),
                                         select(x, wins, pred_score_diff)), 
                        family=binomial) 
+saveRDS(glm.pointspread, file = "glm_pointspread.rds")
 x$wins[is.na(x$wins)] <- 
   round(predict(glm.pointspread, newdata = x[is.na(x$wins),], type = "response"), 3)
 by_conf <- pr_compute(by_conf = T)
-write.csv(x, "3.0_Files/Results/2018-19/2019_Final.csv", row.names = F)
+write_csv(x, "3.0_Files/Predictions/predictions.csv")
 ####################################### Plots ##################################
 yusag_plot(power_rankings)
 png("3.0_Files/Power_Rankings/boxplot.png", res = 180, width = 1275, height = 1000)

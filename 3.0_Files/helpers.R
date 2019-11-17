@@ -306,7 +306,7 @@ psf_graphic <- function() {
   
   psf_results <- arrange(psf_results, desc(psf)) %>% 
     mutate(auto_bid_sf = sprintf("%.1f", auto_bid_sf),
-             psf = sprintf("%.1f", psf))
+           psf = sprintf("%.1f", psf))
   
   inner_join(psf_results, select(x, team, opponent, pred_team_score, date,
                                  pred_opp_score, wins), by = c("home" = "team",
@@ -354,3 +354,8 @@ psf_graphic <- function() {
     row_spec(0, bold = T, font_size = 16) %>%
     add_header_above(c("Ivy League Men's Basketball Predictions" = 5), bold = T)
 }
+
+
+
+
+

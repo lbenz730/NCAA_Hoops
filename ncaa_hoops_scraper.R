@@ -57,6 +57,9 @@ for (i in 1:nrow(teamid)) {
     
     dates <- stripwhite(gsub("<[^<>]*>", "", x[datelines]))
     dates <- gsub(" .*", "", dates)
+    ix <- !dates %in% c("Start", "Team", "End")
+    datelines <- datelines[ix]
+    dates <- dates[ix]
     dates <- matrix(as.numeric(unlist(strsplit(dates, "/"))),
                     ncol=3, byrow=TRUE)
     
@@ -68,15 +71,16 @@ for (i in 1:nrow(teamid)) {
     opp[loc == "V"] <- gsub("@", "", gsub("@ ", "", opp[loc == "V"]))
     opp[loc == "N"] <- substring(opp, 1, regexpr("@", opp)-2)[loc == "N"]
     
-   
+    
     
     result <- stripwhite(gsub("<[^<>]*>", "", x[datelines+5]))
     OT <- suppressWarnings(as.numeric(gsub("^.*\\((\\d)OT\\)",
                                            "\\1", result))) # warnings okay
     result <- gsub(" \\(.*\\)", "", result)
     result <- strsplit(substring(result, 3, 20), "-")
-    if (any(sapply(result, length) == 0))
+    if (any(sapply(result, length) == 0)) {
       result[sapply(result, length) == 0] <- list(c(NA, NA))
+    }
     result <- matrix(as.numeric(unlist(result)), ncol=2, byrow=TRUE)
     
     res <- data.frame(year=dates[,3],
@@ -90,14 +94,14 @@ for (i in 1:nrow(teamid)) {
                       OT=OT, stringsAsFactors=FALSE)
     res$date <- paste(res$month, res$day, sep = "_") 
     res$opponent <- stripwhite(gsub("&amp;", "&", gsub("&x;", "'", gsub("[0-9]", "", gsub("#", "", res$opponent)))))
-    fix <- sapply(res$opponent, function(x) { any(sapply(teamid$team, grepl, x)) }) &
-      !res$opponent %in% teamid$team
-    res$opponent[fix] <- sapply(res$opponent[fix], fix_team)
+    #fix <- sapply(res$opponent, function(x) { any(sapply(teamid$team, grepl, x)) }) &
+    #  !res$opponent %in% teamid$team
+    #res$opponent[fix] <- sapply(res$opponent[fix], fix_team)
     
     # Fix non-unique dates problem
     uni_dates <- unique(res$date)
     z <- rbind(z, res[uni_dates %in% res$date, -ncol(res)])
-   
+    
   }
 }
 
