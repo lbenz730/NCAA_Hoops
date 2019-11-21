@@ -17,7 +17,9 @@ shinyServer(function(input, output, session) {
     
     datatable(rankings, 
               rownames = F,
-              options = list(paging = FALSE)
+              options = list(paging = FALSE,
+                             columnDefs = list(list(className = 'dt-center', targets = "_all"))
+                             )
     ) %>%
       formatRound(columns = c(4,5,6), 
                   digits = 2)
@@ -40,6 +42,7 @@ shinyServer(function(input, output, session) {
       select(`Conference Rank`, `Team`, n_win, n_loss, conf_wins, 
              conf_losses, `Net Rating`, `Off. Rating`, `Def. Rating`,
              everything()) %>%
+      select(-Conference) %>%
       rename("Overall Rank" = Rank,
              "Proj. Wins" = n_win,
              "Proj. Loss" = n_loss,
@@ -50,7 +53,8 @@ shinyServer(function(input, output, session) {
   output$conf_standings <- DT::renderDataTable({
     datatable(conf_table(),
               rownames = F,
-              options = list(paging = FALSE)
+              options = list(paging = FALSE,
+                             columnDefs = list(list(className = 'dt-center', targets = "_all")))
     ) %>%
       formatRound(columns = c(3,4,5,6,7,8,9), 
                   digits = 2)
@@ -119,7 +123,8 @@ shinyServer(function(input, output, session) {
   output$game_projections <- DT::renderDataTable({
     datatable(gp(),
               rownames = F,
-              options = list(paging = FALSE)) %>%
+              options = list(paging = FALSE,
+                             columnDefs = list(list(className = 'dt-center', targets = "_all")))) %>%
       
       formatRound(columns = c(6, 7), 
                   digits = 1) %>%
@@ -171,15 +176,15 @@ shinyServer(function(input, output, session) {
                                 teamscore < oppscore ~ 0,
                                 T ~ 1.0001)
       ) %>%
-      select(date, opponent, team_score, opp_score, pred_team_score, pred_opp_score, wins) %>%
+      select(date, opponent, location, team_score, opp_score, pred_team_score, pred_opp_score, wins) %>%
       bind_rows(filter(x, team == input$team) %>%
-                  select(date, opponent, team_score, opp_score, pred_team_score, pred_opp_score, wins)) %>% 
+                  select(date, opponent, location, team_score, opp_score, pred_team_score, pred_opp_score, wins)) %>% 
       arrange(date) %>%
-      select(date, opponent, team_score, opp_score, pred_team_score, pred_opp_score, wins)
+      select(date, opponent, location, team_score, opp_score, pred_team_score, pred_opp_score, wins)
     df[df$wins %in% c(0,1), c("pred_team_score", "pred_opp_score")] <- NA
     df$wins[df$wins %in% c(0,1)] <- NA
     df$wins[df$wins > 1] <- 1
-    names(df) <- c("Date", "Opponent", "Team Score", "Opponent Score", "Pred. Team Score",
+    names(df) <- c("Date", "Opponent", "Location", "Team Score", "Opponent Score", "Pred. Team Score",
                    "Pred. Opp. Score", "Win Probability")
     
     
@@ -191,10 +196,14 @@ shinyServer(function(input, output, session) {
   output$team_schedule <- DT::renderDataTable({
     datatable(ts1(),
               rownames = F,
-              options = list(paging = FALSE)) %>%
-      formatRound(columns = c(5, 6), 
+              options = list(paging = FALSE,
+                             columnDefs = list(list(className = 'dt-center', targets = "_all"))
+                             
+                             )
+              ) %>%
+      formatRound(columns = c(6, 7), 
                   digits = 1) %>%
-      formatPercentage(columns = c(7), 1)
+      formatPercentage(columns = c(8), 1)
   })
   
   
