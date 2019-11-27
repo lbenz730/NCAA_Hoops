@@ -1,7 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr) 
 library(readr)
-x <- read_csv("3.0_Files/Results/2019-20/NCAA_Hoops_Results_11_19_2019.csv")
+x <- read_csv("3.0_Files/Results/2019-20/NCAA_Hoops_Results_11_26_2019.csv")
 train <- read_csv("3.0_Files/Results/2017-18/training.csv")
 confs <- read_csv("3.0_Files/Info/conferences.csv")
 deadlines <- read_csv("3.0_Files/Info/deadlines.csv") %>%
@@ -170,8 +170,8 @@ bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
 ############################## NCAA Sims #######################################
-ncaa_sims <- ncaa_sim(10000)
-write.csv(ncaa_sims, "3.0_Files/Predictions/ncaa_sims.csv", row.names = F)
+#ncaa_sims <- ncaa_sim(10000)
+#write.csv(ncaa_sims, "3.0_Files/Predictions/ncaa_sims.csv", row.names = F)
 
 ################################ Ivy Sims ######################################
 playoffs <- ivy.sim(nsims = 5000)
@@ -179,7 +179,7 @@ psf_results <- psf(nsims = 1000, min_date = "2019-03-08", max_date = "2019-03-09
 playoff_graphic()
 psf_graphic()
 ############################# Conference Sims (No Tie-Breaks) ##################
-conf_results <- conf_sim("Big 10", 10000)
+conf_results <- conf_sim("MWC", 10000)
 conf_results[,2:3] <- round(conf_results[,2:3], 2)
 conf_results[,4:5] <- round(conf_results[,4:5], 2)
 arrange(conf_results, desc(avg_wins))
@@ -206,7 +206,7 @@ as.data.frame(inner_join(df, select(confs, team, conference), by = "team")) %>%
 
 
 ############################ System Evaluation #################################
-min_date <- as.Date("2019-01-01")
+min_date <- as.Date("2019-11-05")
 max_date <- Sys.Date()
 y <- filter(x, date >= min_date, date <= max_date)
 cat(paste("System Evaluation:", min_date, "Through", max_date),

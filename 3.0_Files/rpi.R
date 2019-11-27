@@ -3,12 +3,12 @@ teams <- unique(x$team)
 ### Compute team's winning percentage
 wp_compute <- function(team, team_iq) {
   games <- x[x$team == team & x$opponent != team_iq,]
-  wwins <- sum(1.3 * games$win[games$location == "V"]) + 
-    sum(0.7 * games$win[games$location == "H"]) +
-    sum(games$win[games$location == "N"])
-  wloses <- sum(1.3 * (1 - games$win[games$location == "H"])) + 
-    sum(0.7 * (1 - games$win[games$location == "V"])) +
-    sum((1 - games$win[games$location == "N"]))
+  wwins <- sum(1.3 * games$wins[games$location == "V"]) + 
+    sum(0.7 * games$wins[games$location == "H"]) +
+    sum(games$wins[games$location == "N"])
+  wloses <- sum(1.3 * (1 - games$wins[games$location == "H"])) + 
+    sum(0.7 * (1 - games$wins[games$location == "V"])) +
+    sum((1 - games$wins[games$location == "N"]))
   wp <- wwins/(wwins + wloses)
   return(wp)
 }
@@ -23,10 +23,7 @@ owp_compute <- function(team) {
 ### Compute team's opponent's opponent winning percentage
 oowp_compute <- function(team) {
   opponents <- x$opponent[x$team == team]
-  oowp <- rep(0, length(opponents))
-  for(i in 1:length(opponents)) {
-    oowp[i] <- owp_compute(opponents[i])
-  }
+  oowp <- sapply(opponents, owp_compute)
   return(mean(oowp))
 }
 
@@ -42,10 +39,7 @@ rpi_compute <- function(new) {
                       "rpi" = rep(NA, length(teams)),
                       stringsAsFactors = F)
   if(new) {
-    for(i in 1:length(teams)) {
-      print(paste("RPI #: ", i, sep = ""))
-      stats$rpi[i] <- rpi_calc(teams[i])
-    }
+    stats$rpi <- sapply(teams, rpi_calc)
     stats <- stats[order(stats$rpi, decreasing = T),]
     stats$rpi_rank <- 1:length(teams)
     write.table(stats, "3.0_Files/Bracketology/rpi.csv", row.names = F, col.names = T, sep = ",")

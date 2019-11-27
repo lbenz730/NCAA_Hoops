@@ -134,9 +134,23 @@ shinyServer(function(input, output, session) {
   
   ################################## Team Breakdowns ###########################
   rhp <- eventReactive(input$team, {
+    M <- filter(history, team == input$team) %>%
+      pull(yusag_coeff) %>%
+      max()
+    
+    m <- filter(history, team == input$team) %>%
+      pull(yusag_coeff) %>%
+      min()
+    
+    color_team <- ncaahoopR::ncaa_colors %>%
+      filter(ncaa_name == input$team) %>%
+      pull(primary_color)
+    color_team <- ifelse(length(color_team) == 0, "orange", color_team)
+    
+    
     ggplot(filter(history, team == input$team), aes(x = date, y = yusag_coeff)) %>% +
-      geom_line(color = "orange", size = 2) +
-      scale_y_continuous(limits = c(-25, 25)) +
+      geom_line(color = color_team, size = 2) +
+      scale_y_continuous(limits = c(-3 + m, 3 + M)) +
       geom_label(data = filter(history, team == input$team, date %in% c(as.Date("2019-11-05") + seq(0, 140, 7), max(history$date))),
                  aes(label = sprintf("%.2f", yusag_coeff))) +
       labs(x = "Date",
@@ -146,11 +160,24 @@ shinyServer(function(input, output, session) {
   })
   
   rahp <- eventReactive(input$team, {
+    M <- filter(history, team == input$team) %>%
+      pull(rank) %>%
+      max()
+    
+    m <- filter(history, team == input$team) %>%
+      pull(rank) %>%
+      min()
+    
+    color_team <- ncaahoopR::ncaa_colors %>%
+      filter(ncaa_name == input$team) %>%
+      pull(primary_color)
+    color_team <- ifelse(length(color_team) == 0, "orange", color_team)
+    
     ggplot(filter(history, team == input$team), aes(x = date, y = rank)) %>% +
-      geom_line(color = "orange", size = 2) +
+      geom_line(color = color_team, size = 2) +
       geom_label(data = filter(history, team == input$team, date %in% c(as.Date("2019-11-05") + seq(0, 140, 7), max(history$date))),
                  aes(label = rank)) +
-      scale_y_reverse(limits = c(353, 1)) +
+      scale_y_reverse(limits = c(min(c(353, M + 20)), max(c(1, m - 20))) ) +
       labs(x = "Date",
            y = "Rank",
            title = "Evolution of Rank Over Time",
@@ -172,19 +199,21 @@ shinyServer(function(input, output, session) {
              "pred_team_score" = NA,
              "pred_opp_score" = NA,
              "opp_team_score" = NA,
+             "opp_rank" = NA,
              "wins" = case_when(teamscore > oppscore ~ 1, 
                                 teamscore < oppscore ~ 0,
+                                opponent == "TBA" ~ 0.5,
                                 T ~ 1.0001)
       ) %>%
-      select(date, opponent, location, team_score, opp_score, pred_team_score, pred_opp_score, wins) %>%
+      select(date, opponent, opp_rank, location, team_score, opp_score, pred_team_score, pred_opp_score, wins) %>%
       bind_rows(filter(x, team == input$team) %>%
-                  select(date, opponent, location, team_score, opp_score, pred_team_score, pred_opp_score, wins)) %>% 
+                  select(date, opponent, opp_rank, location, team_score, opp_score, pred_team_score, pred_opp_score, wins)) %>% 
       arrange(date) %>%
-      select(date, opponent, location, team_score, opp_score, pred_team_score, pred_opp_score, wins)
+      select(date, opponent, opp_rank, location, team_score, opp_score, pred_team_score, pred_opp_score, wins)
     df[df$wins %in% c(0,1), c("pred_team_score", "pred_opp_score")] <- NA
     df$wins[df$wins %in% c(0,1)] <- NA
     df$wins[df$wins > 1] <- 1
-    names(df) <- c("Date", "Opponent", "Location", "Team Score", "Opponent Score", "Pred. Team Score",
+    names(df) <- c("Date", "Opponent", "Opp. Rank", "Location", "Team Score", "Opponent Score", "Pred. Team Score",
                    "Pred. Opp. Score", "Win Probability")
     
     
@@ -201,9 +230,9 @@ shinyServer(function(input, output, session) {
                              
                              )
               ) %>%
-      formatRound(columns = c(6, 7), 
+      formatRound(columns = c(7, 8), 
                   digits = 1) %>%
-      formatPercentage(columns = c(8), 1)
+      formatPercentage(columns = c(9), 1)
   })
   
   

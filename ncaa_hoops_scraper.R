@@ -25,6 +25,8 @@ teamid <-
 
 ################################################################################
 baseurl <- 'http://stats.ncaa.org/teams/'
+tournaments <- c('Empire Classic (Riverside)', 'Myrtle Beach Invitational', 
+                 'Maui Invitational (Mainland)', 'Cayman Islands (Mainland)')
 
 z <- NULL
 bad <- NULL
@@ -97,6 +99,10 @@ for (i in 1:nrow(teamid)) {
     #fix <- sapply(res$opponent, function(x) { any(sapply(teamid$team, grepl, x)) }) &
     #  !res$opponent %in% teamid$team
     #res$opponent[fix] <- sapply(res$opponent[fix], fix_team)
+    
+    for(tourney in tournaments) {
+      res$opponent <- stripwhite(gsub(tourney, "", res$opponent))
+    }
     
     # Fix non-unique dates problem
     uni_dates <- unique(res$date)
