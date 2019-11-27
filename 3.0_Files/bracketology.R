@@ -92,7 +92,7 @@ make_bracket <- function(tourney) {
   bracket$seed <- 
     predict(lm.seed, newdata = bracket, type = "response")
   
-  bracket <- arrange(bracket, desc(odds), seed)
+  bracket <- arrange(bracket, desc(round(odds, 1)), seed)
   
   if(tourney == T) {
     ### Get Autobids

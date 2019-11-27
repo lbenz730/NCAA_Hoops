@@ -1,7 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr) 
 library(readr)
-x <- read_csv("3.0_Files/Results/2019-20/NCAA_Hoops_Results_11_26_2019.csv")
+x <- read_csv("3.0_Files/Results/2019-20/NCAA_Hoops_Results_11_27_2019.csv")
 train <- read_csv("3.0_Files/Results/2017-18/training.csv")
 confs <- read_csv("3.0_Files/Info/conferences.csv")
 deadlines <- read_csv("3.0_Files/Info/deadlines.csv") %>%
@@ -174,7 +174,7 @@ bracket_math <- make_bracket(tourney = F)
 #write.csv(ncaa_sims, "3.0_Files/Predictions/ncaa_sims.csv", row.names = F)
 
 ################################ Ivy Sims ######################################
-playoffs <- ivy.sim(nsims = 5000)
+playoffs <- ivy.sim(nsims = 500)
 psf_results <- psf(nsims = 1000, min_date = "2019-03-08", max_date = "2019-03-09")
 playoff_graphic()
 psf_graphic()
