@@ -1,7 +1,7 @@
 library(shiny)
 library(DT)
 library(lubridate)
-
+library(ggridges)
 
 shinyServer(function(input, output, session) {
   
@@ -14,15 +14,19 @@ shinyServer(function(input, output, session) {
   ###################################### Rankings Tab ############################ 
   ### Rankings
   output$rankings <- DT::renderDataTable({
-    
-    datatable(rankings, 
-              rownames = F,
-              options = list(paging = FALSE,
-                             columnDefs = list(list(className = 'dt-center', targets = "_all"))
-                             )
+    datatable(
+      rankings,
+      rownames = F,
+      options = list(paging = FALSE,
+                     columnDefs = list(list(className = 'dt-center', targets = "_all"))
+      )
     ) %>%
       formatRound(columns = c(4,5,6), 
-                  digits = 2)
+                  digits = 2) %>%
+      formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[-1]), cm.colors(353)[353:1])) %>%
+      formatStyle("Off. Rating", backgroundColor = styleInterval(sort(rankings$`Off. Rating`[-1]), cm.colors(353)[353:1])) %>%
+      formatStyle("Def. Rating", backgroundColor = styleInterval(sort(rankings$`Def. Rating`[-1]), cm.colors(353)[353:1]))
+    
     
   })
   
@@ -39,25 +43,36 @@ shinyServer(function(input, output, session) {
       inner_join(conf_projections, by = c("Team" = "team",
                                           "Conference" = "team_conf")) %>%
       mutate("Conference Rank" = 1:nrow(.)) %>%
-      select(`Conference Rank`, `Team`, n_win, n_loss, conf_wins, 
-             conf_losses, `Net Rating`, `Off. Rating`, `Def. Rating`,
+      select(`Conference Rank`, `Team`,  `Net Rating`, `Off. Rating`, `Def. Rating`,
+             n_win, n_loss, conf_wins, 
+             conf_losses,
              everything()) %>%
       select(-Conference) %>%
       rename("Overall Rank" = Rank,
              "Proj. Wins" = n_win,
              "Proj. Loss" = n_loss,
              "Proj. Conf. Wins" = conf_wins,
-             "Prof. Conf. Loss" = conf_losses)
+             "Proj. Conf. Loss" = conf_losses)
   })
   
   output$conf_standings <- DT::renderDataTable({
+    l <- conf_table()$`Proj. Conf. Wins`[1] + conf_table()$`Proj. Conf. Loss`[1]
     datatable(conf_table(),
               rownames = F,
               options = list(paging = FALSE,
                              columnDefs = list(list(className = 'dt-center', targets = "_all")))
     ) %>%
       formatRound(columns = c(3,4,5,6,7,8,9), 
-                  digits = 2)
+                  digits = 2) %>%
+      formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[-1]), cm.colors(353)[353:1])) %>%
+      formatStyle("Off. Rating", backgroundColor = styleInterval(sort(rankings$`Off. Rating`[-1]), cm.colors(353)[353:1])) %>%
+      formatStyle("Def. Rating", backgroundColor = styleInterval(sort(rankings$`Def. Rating`[-1]), cm.colors(353)[353:1])) %>%
+      formatStyle("Proj. Wins", backgroundColor = styleInterval(0:31, cm.colors(33)[33:1])) %>%
+      formatStyle("Proj. Loss", backgroundColor = styleInterval(0:31, cm.colors(33))) %>%
+      formatStyle("Proj. Conf. Wins", backgroundColor = styleInterval(0:(l-1), cm.colors(l+1)[(l+1):1])) %>%
+      formatStyle("Proj. Conf. Loss", backgroundColor = styleInterval(0:(l-1), cm.colors(l+1)))
+    
+      
   })
   
   #### Universe Plote
@@ -96,6 +111,53 @@ shinyServer(function(input, output, session) {
   
   output$conf_box_plot <- renderPlot(box_plot())
   
+  
+  ### Standings Plot
+  standings_plot <- eventReactive(input$conf, {
+    sims <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", input$conf, ".csv"))
+    
+    standings <- 
+      group_by(sims, team) %>%
+      summarise("avg_wins" = mean(n_wins)) %>%
+      arrange(desc(avg_wins)) %>%
+      mutate("rank" = nrow(.):1) %>%
+      arrange(team) %>%
+      left_join(select(ncaahoopR::ncaa_colors, ncaa_name, primary_color), 
+                 by = c("team" = "ncaa_name"))
+    
+    champion <- 
+      group_by(sims, sim) %>%
+      summarise("n_wins" = max(n_wins)) %>%
+      group_by(n_wins)%>%
+      summarise("champ_freq" = n()/nrow(.))
+    
+    sims$team <- as.factor(sims$team)
+    sims$team <- reorder(sims$team, rep(standings$rank, 10000))
+    standings <- arrange(standings, avg_wins)
+    
+    p <- ggplot(sims) + 
+      geom_density_ridges(aes(x = n_wins, y = team, fill = team), 
+                          stat = "binline", scale = 0.7, bins = max(champion$n_wins)) + 
+      theme_bw() + 
+      labs(x ="# of Wins", 
+           y = "Team",
+           title = "Distribution of Conference Wins",
+           subtitle = input$conf) +
+      theme(legend.position = "none",
+            axis.title = element_text(size = 14),
+            plot.title = element_text(size = 16, hjust = 0.5),
+            plot.subtitle = element_text(size = 12, hjust = 0.5),
+            axis.text.y = element_text(size = 12)
+            )
+    
+    if(all(!is.na(standings$primary_color))) {
+      p <- p + scale_fill_manual(values = c(standings$primary_color)) 
+    } 
+    p
+  })
+  
+  output$conf_standings_plot <- renderPlot(standings_plot())
+  
   ###################################### Game Predictions ##############################################
   gp <- eventReactive(input$proj_date, {
     df <- filter(x, date == input$proj_date) %>% 
@@ -114,7 +176,7 @@ shinyServer(function(input, output, session) {
       select(team, opponent, location, rank, opp_rank, pred_team_score,
              pred_opp_score, win_prob, team_score, opp_score)
     names(df) <- c("Team", "Opponent", "Location", "Team Rank",
-                   "Opponent Rank", "Pred. Team Score", "Pred Opp Score",
+                   "Opponent Rank", "Pred. Team Score", "Pred. Opp. Score",
                    "Win Prob.","Team Score", "Opp. Score")
     df
   })
@@ -128,7 +190,12 @@ shinyServer(function(input, output, session) {
       
       formatRound(columns = c(6, 7), 
                   digits = 1) %>%
-      formatPercentage(columns = c(8), 1)
+      formatPercentage(columns = c(8), 1) %>%
+      formatStyle("Win Prob.", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
+      formatStyle("Team Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+      formatStyle("Opponent Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+      formatStyle("Pred. Team Score", backgroundColor = styleInterval(40:100, cm.colors(62)[62:1])) %>%
+      formatStyle("Pred. Opp. Score", backgroundColor = styleInterval(40:100, cm.colors(62)[62:1]))
   })
   
   
@@ -189,7 +256,7 @@ shinyServer(function(input, output, session) {
   
   ts1 <- eventReactive(input$team, {
     df <- read_csv(paste0("3.0_Files/Results/2019-20/NCAA_Hoops_Results_",
-                          paste(unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)], collapse = "_"),
+                          paste(gsub("^0", "", unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)]), collapse = "_"),
                           ".csv")) %>% 
       filter(D1 == 1) %>%
       filter(team == input$team) %>%
@@ -213,7 +280,11 @@ shinyServer(function(input, output, session) {
     df[df$wins %in% c(0,1), c("pred_team_score", "pred_opp_score")] <- NA
     df$wins[df$wins %in% c(0,1)] <- NA
     df$wins[df$wins > 1] <- 1
-    names(df) <- c("Date", "Opponent", "Opp. Rank", "Location", "Team Score", "Opponent Score", "Pred. Team Score",
+    df$result <- NA
+    df$result[df$team_score > df$opp_score] <- "W"
+    df$result[df$team_score < df$opp_score] <- "L"
+    df <- select(df, date, opponent, result, everything())
+    names(df) <- c("Date", "Opponent", "Result", "Opp. Rank", "Location", "Team Score", "Opponent Score", "Pred. Team Score",
                    "Pred. Opp. Score", "Win Probability")
     
     
@@ -228,11 +299,14 @@ shinyServer(function(input, output, session) {
               options = list(paging = FALSE,
                              columnDefs = list(list(className = 'dt-center', targets = "_all"))
                              
-                             )
-              ) %>%
-      formatRound(columns = c(7, 8), 
+              )
+    ) %>%
+      formatRound(columns = c(8, 9), 
                   digits = 1) %>%
-      formatPercentage(columns = c(9), 1)
+      formatPercentage(columns = c(10), 1) %>%
+      formatStyle("Result", target = "row", 
+                  backgroundColor = styleEqual(c("W", "L"), c("palegreen", "tomato"))
+      )
   })
   
   

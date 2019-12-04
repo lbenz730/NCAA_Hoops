@@ -73,8 +73,19 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                 ### Render D1 Universe
                                 plotOutput("uni_plot", width = "100%", height = "600px"),
                                 
+                                br(),
+                                br(),
+                                
+                                
+                                ### Render Conference Standings Plot
+                                plotOutput("conf_standings_plot", width = "100%", height = "600px"),
+                                
+                                br(),
+                                br(),
+                                
                                 ### Render Conference Box Plots
                                 plotOutput("conf_box_plot", width = "100%", height = "600px")
+                                
                                 
                               )
                               

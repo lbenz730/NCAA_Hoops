@@ -1,7 +1,7 @@
 #############################  Read CSVs #######################################
 library(dplyr) 
 library(readr)
-x <- read_csv("3.0_Files/Results/2019-20/NCAA_Hoops_Results_11_27_2019.csv")
+x <- read_csv("3.0_Files/Results/2019-20/NCAA_Hoops_Results_12_3_2019.csv")
 train <- read_csv("3.0_Files/Results/2017-18/training.csv")
 confs <- read_csv("3.0_Files/Info/conferences.csv")
 deadlines <- read_csv("3.0_Files/Info/deadlines.csv") %>%
@@ -52,6 +52,7 @@ x <-
 x <- mutate(x, team_conf = sapply(x$team, get_conf),
             opp_conf = sapply(x$opponent, get_conf),
             conf_game = team_conf == opp_conf)
+x$conf_game[x$team %in%  c("Arizona St.", "Colorado") & x$date == "2019-11-08"] <- F
 
 ### Reg Season
 x <- inner_join(x, deadlines, by = c("team_conf" = "conf")) %>%
@@ -137,8 +138,8 @@ x <-
                                location == "V" ~ lm.def$coefficients[707] - lm.def$coefficients[706],
                                location == "N" ~ 0)) %>%
   mutate("pred_score_diff" = round(yusag_coeff - opp_yusag_coeff + hca, 1),
-         "pred_team_score" = round(72 + off_coeff - opp_def_coeff + hca_off, 1),
-         "pred_opp_score" = round(72 -def_coeff + opp_off_coeff + hca_def, 1),
+         "pred_team_score" = round(70 + off_coeff - opp_def_coeff + hca_off, 1),
+         "pred_opp_score" = round(70 -def_coeff + opp_off_coeff + hca_def, 1),
          "pred_total_score" = pred_team_score + pred_opp_score) %>%
   select(-hca, -hca_off, -hca_def)
 ivy_preds()
@@ -156,12 +157,12 @@ x$wins[is.na(x$wins)] <-
 by_conf <- pr_compute(by_conf = T)
 write_csv(x, "3.0_Files/Predictions/predictions.csv")
 ####################################### Plots ##################################
-yusag_plot(power_rankings)
-png("3.0_Files/Power_Rankings/boxplot.png", res = 180, width = 1275, height = 1000)
-box_plot(power_rankings)
-dev.off()
-evo_plot()
-rank_plot()
+# yusag_plot(power_rankings)
+# png("3.0_Files/Power_Rankings/boxplot.png", res = 180, width = 1275, height = 1000)
+# box_plot(power_rankings)
+# dev.off()
+# evo_plot()
+# rank_plot()
 
 ########################### Bracketology #######################################
 rpi <- rpi_compute(new = T)
@@ -174,37 +175,16 @@ bracket_math <- make_bracket(tourney = F)
 #write.csv(ncaa_sims, "3.0_Files/Predictions/ncaa_sims.csv", row.names = F)
 
 ################################ Ivy Sims ######################################
-playoffs <- ivy.sim(nsims = 500)
-psf_results <- psf(nsims = 1000, min_date = "2019-03-08", max_date = "2019-03-09")
+playoffs <- ivy.sim(nsims = 5000)
 playoff_graphic()
+psf_results <- psf(nsims = 1000, min_date = "2019-03-08", max_date = "2019-03-09")
 psf_graphic()
 ############################# Conference Sims (No Tie-Breaks) ##################
-conf_results <- conf_sim("MWC", 10000)
-conf_results[,2:3] <- round(conf_results[,2:3], 2)
-conf_results[,4:5] <- round(conf_results[,4:5], 2)
-arrange(conf_results, desc(avg_wins))
-
-########################## Undefeated Watch ####################################
-undefeated <- filter(x, !is.na(score_diff), conf_game) %>%
-  group_by(team) %>%
-  summarise("wins" = sum(wins), "losses" = n() - wins) %>%
-  ungroup() %>%
-  filter(losses == 0) %>%
-  pull(team)
-df <- filter(x, team %in% undefeated, is.na(score_diff)) %>%
-  group_by(team) %>%
-  summarise("undefeated_pct" = prod(wins) * 100,
-            "expected_losses" = sprintf("%.2f", sum(1-wins))) %>%
-  arrange(desc(undefeated_pct)) 
-df$undefeated_pct <- 
-  case_when(
-    df$undefeated_pct > 0.05 ~ paste0(sprintf("%.1f", df$undefeated_pct), "%"),
-    T ~ "< 0.01%"
-  )
-as.data.frame(inner_join(df, select(confs, team, conference), by = "team")) %>%
-  select(team, conference, undefeated_pct, expected_losses)
-
-
+for(conf in unique(confs$conference)) {
+  print(conf)
+  sims <- conf_fast_sim(conf, 10000)
+  write_csv(sims, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+}
 ############################ System Evaluation #################################
 min_date <- as.Date("2019-11-05")
 max_date <- Sys.Date()

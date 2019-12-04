@@ -42,7 +42,7 @@ records <- group_by(x, team, team_conf) %>%
 
 
 non_d1 <- read_csv(paste0("3.0_Files/Results/2019-20/NCAA_Hoops_Results_",
-                          paste(unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)], collapse = "_"),
+                          paste(gsub("^0", "", unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)]), collapse = "_"),
                           ".csv")) %>% 
   filter(D1 == 1) %>%
   group_by(team) %>%
