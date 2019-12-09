@@ -2,6 +2,7 @@ library(shiny)
 library(DT)
 library(lubridate)
 library(ggridges)
+library(ggimage)
 
 shinyServer(function(input, output, session) {
   
@@ -77,11 +78,14 @@ shinyServer(function(input, output, session) {
   
   #### Universe Plote
   universe_plot <- eventReactive(input$conf, {
-    ggplot(rankings_clean, aes(x = off_coeff, y = def_coeff)) +
+    df <- rankings_clean %>%
+      inner_join(select(ncaahoopR::ncaa_colors, -conference),
+                 by = c("team" = "ncaa_name"))
+    
+    
+    ggplot(df, aes(x = off_coeff, y = def_coeff)) +
       geom_point(alpha = 0.5, aes(color = yusag_coeff), size = 3) +
-      geom_point(data = filter(rankings_clean, conference == input$conf), size = 3) +
-      geom_label_repel(data = filter(rankings_clean, conference == input$conf), 
-                       aes(label = team), force = 2, size = 5, min.segment.length = 0.25) +
+      geom_image(data = filter(df, conference == input$conf), aes(image = logo_url)) +
       scale_color_viridis_c(option = "C") +
       labs(x = "Offensive Points Relative to Average \nNCAA Division 1 Team",
            y = "Defensive Points Relative to Average \nNCAA Division 1 Team",

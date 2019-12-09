@@ -6,10 +6,10 @@ library(ggrepel)
 glm.pointspread <- readRDS("glm_pointspread.rds")
 
 theme_set(theme_bw() +
-            theme(axis.title = element_text(size = 14),
-                  plot.title = element_text(size = 16, hjust  = 0.5),
-                  plot.subtitle = element_text(size = 12, hjust = 0.5),
-                  legend.title = element_text(size = 8, hjust = 0.5),
+            theme(axis.title = element_text(size = 20),
+                  plot.title = element_text(size = 24, hjust  = 0.5),
+                  plot.subtitle = element_text(size = 18, hjust = 0.5),
+                  legend.title = element_text(size = 12, hjust = 0.5),
                   legend.position = "bottom"))
 
 x <- read_csv("3.0_Files/Predictions/predictions.csv")
