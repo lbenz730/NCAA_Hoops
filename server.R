@@ -84,6 +84,8 @@ shinyServer(function(input, output, session) {
     
     
     ggplot(df, aes(x = off_coeff, y = def_coeff)) +
+      geom_hline(yintercept = 0, lty = 2, alpha = 0.5, size = 2) + 
+      geom_vline(xintercept = 0, lty = 2, alpha = 0.5, size = 2) + 
       geom_point(alpha = 0.5, aes(color = yusag_coeff), size = 3) +
       geom_image(data = filter(df, conference == input$conf), aes(image = logo_url)) +
       scale_color_viridis_c(option = "C") +
@@ -139,25 +141,14 @@ shinyServer(function(input, output, session) {
     sims$team <- reorder(sims$team, rep(standings$rank, 10000))
     standings <- arrange(standings, avg_wins)
     
-    p <- ggplot(sims) + 
-      geom_density_ridges(aes(x = n_wins, y = team, fill = team), 
-                          stat = "binline", scale = 0.7, bins = max(champion$n_wins)) + 
-      theme_bw() + 
+   ggplot(sims, aes(x = n_wins, y = team, fill = team)) + 
+      geom_density_ridges(stat = "binline", scale = 0.7, bins = max(champion$n_wins)) + 
       labs(x ="# of Wins", 
            y = "Team",
            title = "Distribution of Conference Wins",
            subtitle = input$conf) +
-      theme(legend.position = "none",
-            axis.title = element_text(size = 14),
-            plot.title = element_text(size = 16, hjust = 0.5),
-            plot.subtitle = element_text(size = 12, hjust = 0.5),
-            axis.text.y = element_text(size = 12)
-            )
-    
-    if(all(!is.na(standings$primary_color))) {
-      p <- p + scale_fill_manual(values = c(standings$primary_color)) 
-    } 
-    p
+      theme(legend.position = "none") +
+      scale_fill_manual(values = c(standings$primary_color)) 
   })
   
   output$conf_standings_plot <- renderPlot(standings_plot())
