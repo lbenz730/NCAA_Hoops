@@ -84,8 +84,9 @@ shinyServer(function(input, output, session) {
     
     
     ggplot(df, aes(x = off_coeff, y = def_coeff)) +
-      geom_hline(yintercept = 0, lty = 2, alpha = 0.5, size = 2) + 
-      geom_vline(xintercept = 0, lty = 2, alpha = 0.5, size = 2) + 
+      geom_hline(yintercept = 0, lty = 1, alpha = 0.5, size = 2) + 
+      geom_vline(xintercept = 0, lty = 1, alpha = 0.5, size = 2) + 
+      geom_abline(slope = rep(-1, 11), intercept = seq(25, -25, -5), alpha = 0.5, lty  = 2) +
       geom_point(alpha = 0.5, aes(color = yusag_coeff), size = 3) +
       geom_image(data = filter(df, conference == input$conf), aes(image = logo_url)) +
       scale_color_viridis_c(option = "C") +
@@ -213,7 +214,8 @@ shinyServer(function(input, output, session) {
     ggplot(filter(history, team == input$team), aes(x = date, y = yusag_coeff)) %>% +
       geom_line(color = color_team, size = 2) +
       scale_y_continuous(limits = c(-3 + m, 3 + M)) +
-      geom_label(data = filter(history, team == input$team, date %in% c(as.Date("2019-11-05") + seq(0, 140, 7), max(history$date))),
+      geom_label(data = filter(history, team == input$team, date %in% sapply(as.Date("2019-11-05") + seq(0, 140, 7), function(x) {max(history$date[history$date <= x])})
+),
                  aes(label = sprintf("%.2f", yusag_coeff))) +
       labs(x = "Date",
            y = "Points Relative to Average NCAA Division 1 Team",
@@ -237,7 +239,8 @@ shinyServer(function(input, output, session) {
     
     ggplot(filter(history, team == input$team), aes(x = date, y = rank)) %>% +
       geom_line(color = color_team, size = 2) +
-      geom_label(data = filter(history, team == input$team, date %in% c(as.Date("2019-11-05") + seq(0, 140, 7), max(history$date))),
+      geom_label(data = filter(history, team == input$team, date %in% sapply(as.Date("2019-11-05") + seq(0, 140, 7), function(x) {max(history$date[history$date <= x])})
+),
                  aes(label = rank)) +
       scale_y_reverse(limits = c(min(c(353, M + 20)), max(c(1, m - 20))) ) +
       labs(x = "Date",
@@ -304,10 +307,22 @@ shinyServer(function(input, output, session) {
       )
   })
   
+  ### Bracketology
+  output$bracket <- DT::renderDataTable({
+    datatable(select(bracket, seed_overall, seed_line, everything()),
+              rownames = F,
+              options = list(paging = FALSE,
+                             columnDefs = list(list(className = 'dt-center', targets = "_all")))
+              ) %>% 
+      formatRound(columns = c(4),  digits = 2) %>%
+      formatRound(columns = c(5),  digits = 4) 
+  })
+  
   
 })
 
 
+  
 
 
 

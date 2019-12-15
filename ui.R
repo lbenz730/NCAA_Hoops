@@ -139,7 +139,7 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                    
                    ### Bracketology
                    tabPanel("Bracketology",
-                            "COMING SOON"
+                            DT::dataTableOutput("bracket")
                    ),
                    
                    ### ncaahoopR Graphics

@@ -65,12 +65,6 @@ conf_projections <- bind_rows(records, non_d1) %>%
   ungroup()
 
 
-
-
-
-
-
-
-    
-    
-    
+bracket <- read_csv("3.0_Files/Bracketology/bracket.csv")
+bids <- read_csv("3.0_Files/Bracketology/bids.csv")    
+bubble <- read_csv("3.0_Files/Bracketology/bubble.csv")
