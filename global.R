@@ -68,3 +68,5 @@ conf_projections <- bind_rows(records, non_d1) %>%
 bracket <- read_csv("3.0_Files/Bracketology/bracket.csv")
 bids <- read_csv("3.0_Files/Bracketology/bids.csv")    
 bubble <- read_csv("3.0_Files/Bracketology/bubble.csv")
+bubble$seed_overall <- 68 + 1:nrow(bubble)
+bracket_math <- read_csv("3.0_Files/Bracketology/bracket_math.csv")

@@ -61,7 +61,7 @@ record_eval <- function(team) {
   autobids <- by_conf$team[by_conf$conference_rank == 1]
   atlarge <- power_rankings[!is.element(power_rankings$team, autobids),]
   
-  bubble <- atlarge$team[32:40]
+  bubble <- arrange(power_rankings, desc(yusag_coeff))$team[32:40]
   wab <- rep(0, length(bubble))
   for(j in 1:length(bubble)) {
     data <- games

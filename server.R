@@ -36,6 +36,11 @@ shinyServer(function(input, output, session) {
     paste("Updated:", as.character(as.Date(max(history$date))))
   })
   
+  ### Update Date
+  output$update2 <- renderText({
+    paste("Updated:", as.character(as.Date(max(history$date))))
+  })
+  
   
   ############################ Conference Breakdown ##############################  
   ### Conf Summary Table
@@ -73,7 +78,7 @@ shinyServer(function(input, output, session) {
       formatStyle("Proj. Conf. Wins", backgroundColor = styleInterval(0:(l-1), cm.colors(l+1)[(l+1):1])) %>%
       formatStyle("Proj. Conf. Loss", backgroundColor = styleInterval(0:(l-1), cm.colors(l+1)))
     
-      
+    
   })
   
   #### Universe Plote
@@ -130,7 +135,7 @@ shinyServer(function(input, output, session) {
       mutate("rank" = nrow(.):1) %>%
       arrange(team) %>%
       left_join(select(ncaahoopR::ncaa_colors, ncaa_name, primary_color), 
-                 by = c("team" = "ncaa_name"))
+                by = c("team" = "ncaa_name"))
     
     champion <- 
       group_by(sims, sim) %>%
@@ -142,7 +147,7 @@ shinyServer(function(input, output, session) {
     sims$team <- reorder(sims$team, rep(standings$rank, 10000))
     standings <- arrange(standings, avg_wins)
     
-   ggplot(sims, aes(x = n_wins, y = team, fill = team)) + 
+    ggplot(sims, aes(x = n_wins, y = team, fill = team)) + 
       geom_density_ridges(stat = "binline", scale = 0.7, bins = max(champion$n_wins)) + 
       labs(x ="# of Wins", 
            y = "Team",
@@ -215,8 +220,8 @@ shinyServer(function(input, output, session) {
       geom_line(color = color_team, size = 2) +
       scale_y_continuous(limits = c(-3 + m, 3 + M)) +
       geom_label(data = filter(history, team == input$team, date %in% sapply(as.Date("2019-11-05") + seq(0, 140, 7), function(x) {max(history$date[history$date <= x])})
-),
-                 aes(label = sprintf("%.2f", yusag_coeff))) +
+      ),
+      aes(label = sprintf("%.2f", yusag_coeff))) +
       labs(x = "Date",
            y = "Points Relative to Average NCAA Division 1 Team",
            title = "Evolution of Net Rating Over Time",
@@ -240,8 +245,8 @@ shinyServer(function(input, output, session) {
     ggplot(filter(history, team == input$team), aes(x = date, y = rank)) %>% +
       geom_line(color = color_team, size = 2) +
       geom_label(data = filter(history, team == input$team, date %in% sapply(as.Date("2019-11-05") + seq(0, 140, 7), function(x) {max(history$date[history$date <= x])})
-),
-                 aes(label = rank)) +
+      ),
+      aes(label = rank)) +
       scale_y_reverse(limits = c(min(c(353, M + 20)), max(c(1, m - 20))) ) +
       labs(x = "Date",
            y = "Rank",
@@ -307,22 +312,99 @@ shinyServer(function(input, output, session) {
       )
   })
   
-  ### Bracketology
+  ################################## Bracketology
   output$bracket <- DT::renderDataTable({
-    datatable(select(bracket, seed_overall, seed_line, everything()),
+    df <- select(bracket, seed_line, seed_overall, everything(), -blend, -avg)
+    df$odds <- 1/100 * df$odds
+    names(df)[1:15] <- c("Seed Line", "Seed Overall", "Team", "Conference", 
+                   "Net Rating", "RPI", "Strength of Record", "Wins Above Bubble",
+                   "Resume", "Rating Rank", "RPI Rank", "SOR Rank", "WAB Rank",
+                   "Resume Rank", "At-Large Odds")
+    
+    
+    datatable(df,
               rownames = F,
               options = list(paging = FALSE,
-                             columnDefs = list(list(className = 'dt-center', targets = "_all")))
-              ) %>% 
-      formatRound(columns = c(4),  digits = 2) %>%
-      formatRound(columns = c(5),  digits = 4) 
+                             columnDefs = list(list(className = 'dt-center', targets = "_all"),
+                                               list(visible=FALSE, targets=c(15, 16, 17))
+                                               
+                             ))
+    ) %>% 
+      formatRound(columns = c(5, 7, 8, 9),  digits = 2) %>%
+      formatRound(columns = c(6),  digits = 4) %>%
+      formatStyle("Team",  valueColumns = "autobid", fontWeight = styleEqual(T, "bold")) %>%
+      formatStyle("Team",  valueColumns = "first4", "font-style" = styleEqual(T, "italic")) %>%
+      formatPercentage(columns = c(15), 1) %>%
+      formatStyle("At-Large Odds", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
+      formatStyle("RPI Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+      formatStyle("WAB Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+      formatStyle("SOR Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+      formatStyle("Resume Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+      formatStyle("Rating Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+      formatStyle("Wins Above Bubble", backgroundColor = styleInterval(sort(bracket_math$wab[1:99]), cm.colors(100)[100:1])) %>%
+      formatStyle("Strength of Record", backgroundColor = styleInterval(sort(bracket_math$sor[1:99]), cm.colors(100)[100:1])) %>%
+      formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[1:99]), cm.colors(100)[100:1])) %>%
+      formatStyle("RPI", backgroundColor = styleInterval(sort(bracket_math$rpi[1:99]), cm.colors(100)[100:1])) %>%
+      formatStyle("Resume", backgroundColor = styleInterval(sort(bracket_math$qual_bonus[1:99]), cm.colors(100)[100:1]))
+    
+    
+  })
+  
+  
+  output$bubble <- DT::renderDataTable({
+    df <- select(bubble, seed_overall, everything(), -blend, -avg, -mid_major,
+                 -wins, -losses, -seed, -autobid, -loss_bonus)
+    df$odds <- 1/100 * df$odds
+    print(names(df))
+    names(df)[1:14] <- c("Seed Overall", "Team", "Conference", 
+                         "Net Rating", "RPI", "Strength of Record", "Wins Above Bubble",
+                         "Resume", "Rating Rank", "RPI Rank", "SOR Rank", "WAB Rank",
+                         "Resume Rank", "At-Large Odds")
+    
+    
+    datatable(df,
+              rownames = F,
+              options = list(paging = FALSE,
+                             columnDefs = list(list(className = 'dt-center', targets = "_all"))
+                                               
+                             )
+    ) %>% 
+      formatRound(columns = c(4, 6, 7, 8),  digits = 2) %>%
+      formatRound(columns = c(5),  digits = 4) %>%
+      formatPercentage(columns = c(14), 1) %>%
+      formatStyle("At-Large Odds", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
+      formatStyle("RPI Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+      formatStyle("WAB Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+      formatStyle("SOR Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+      formatStyle("Resume Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+      formatStyle("Rating Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+      formatStyle("Wins Above Bubble", backgroundColor = styleInterval(sort(bracket_math$wab[1:99]), cm.colors(100)[100:1])) %>%
+      formatStyle("Strength of Record", backgroundColor = styleInterval(sort(bracket_math$sor[1:99]), cm.colors(100)[100:1])) %>%
+      formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[1:99]), cm.colors(100)[100:1])) %>%
+      formatStyle("RPI", backgroundColor = styleInterval(sort(bracket_math$rpi[1:99]), cm.colors(100)[100:1])) %>%
+      formatStyle("Resume", backgroundColor = styleInterval(sort(bracket_math$qual_bonus[1:99]), cm.colors(100)[100:1]))
+    
+    
+  })
+  
+  output$bid_breakdown <- DT::renderDataTable({
+    df <- bids
+    names(df) <- c("Conference", "Bids")
+    datatable(df,
+              rownames = F,
+              options = list(paging = FALSE,
+                             columnDefs = list(list(className = 'dt-center', targets = "_all"))
+                             
+              )) %>%
+      formatStyle("Bids", background = styleColorBar(c(0, max(bids$n_bid)), 'lightblue'))
+    
   })
   
   
 })
 
 
-  
+
 
 
 
