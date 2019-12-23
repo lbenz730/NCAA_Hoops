@@ -20,6 +20,7 @@ shinyServer(function(input, output, session) {
       rownames = F,
       options = list(paging = FALSE,
                      searching = F,
+                     info  = F,
                      columnDefs = list(list(className = 'dt-center', targets = "_all"))
       )
     ) %>%
@@ -68,6 +69,7 @@ shinyServer(function(input, output, session) {
               rownames = F,
               options = list(paging = FALSE,
                              searching = F,
+                             info  = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all")))
     ) %>%
       formatRound(columns = c(3,4,5,6,7,8,9), 
@@ -217,9 +219,10 @@ shinyServer(function(input, output, session) {
               rownames = F,
               options = list(paging = FALSE,
                              searching = F,
+                             info  = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all")))) %>%
       formatPercentage(columns = 2:ncol(cs()), 1) %>%
-      formatStyle(names(cs())[-1], backgroundColor = styleInterval(seq(0, 1, 0.01), cm.colors(102)[102:1]))
+      formatStyle(names(cs())[-1], backgroundColor = styleInterval(seq(0, 1, 0.01), heat.colors(102)[102:1]))
     
   })
   
@@ -254,6 +257,7 @@ shinyServer(function(input, output, session) {
               rownames = F,
               options = list(paging = FALSE,
                              searching = F,
+                             info  = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all")))) %>%
       
       formatRound(columns = c(6, 7), 
@@ -370,6 +374,7 @@ shinyServer(function(input, output, session) {
               rownames = F,
               options = list(paging = FALSE,
                              searching = F,
+                             info  = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all"))
                              
               )
@@ -399,6 +404,7 @@ shinyServer(function(input, output, session) {
               rownames = F,
               options = list(paging = FALSE,
                              searching = F,
+                             info  = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all"),
                                                list(visible=FALSE, targets=c(15, 16, 17))
                                                
@@ -440,6 +446,7 @@ shinyServer(function(input, output, session) {
               rownames = F,
               options = list(paging = FALSE,
                              searching = F,
+                             info  = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all"))
                              
               )
@@ -469,6 +476,7 @@ shinyServer(function(input, output, session) {
               rownames = F,
               options = list(paging = FALSE,
                              searching = F,
+                             info  = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all"))
                              
               )) %>%
