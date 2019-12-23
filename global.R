@@ -70,3 +70,5 @@ bids <- read_csv("3.0_Files/Bracketology/bids.csv")
 bubble <- read_csv("3.0_Files/Bracketology/bubble.csv")
 bubble$seed_overall <- 68 + 1:nrow(bubble)
 bracket_math <- read_csv("3.0_Files/Bracketology/bracket_math.csv")
+
+  

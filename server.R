@@ -19,6 +19,7 @@ shinyServer(function(input, output, session) {
       rankings,
       rownames = F,
       options = list(paging = FALSE,
+                     searching = F,
                      columnDefs = list(list(className = 'dt-center', targets = "_all"))
       )
     ) %>%
@@ -66,6 +67,7 @@ shinyServer(function(input, output, session) {
     datatable(conf_table(),
               rownames = F,
               options = list(paging = FALSE,
+                             searching = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all")))
     ) %>%
       formatRound(columns = c(3,4,5,6,7,8,9), 
@@ -159,6 +161,70 @@ shinyServer(function(input, output, session) {
   
   output$conf_standings_plot <- renderPlot(standings_plot())
   
+  cs <- eventReactive(input$conf, {
+    df <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", input$conf, ".csv")) %>%
+      group_by(team, place) %>%
+      summarise("pct" = n()/10000) %>%
+      ungroup() %>%
+      tidyr::spread(key = "place", value = "pct") %>%
+      mutate_if(is.numeric, ~replace(., is.na(.), 0)) %>%
+      rename("Team" = team) 
+    if(ncol(df) == 8) {
+      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
+                    desc(`5`), desc(`6`), desc(`7`))
+    } else if(ncol(df) == 9) {
+      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
+                    desc(`5`), desc(`6`), desc(`7`), desc(`8`))
+    } else if(ncol(df) == 10) {
+      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
+                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
+                    desc(`9`))
+    } else if(ncol(df) == 11) {
+      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
+                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
+                    desc(`9`), desc(`10`))
+    } else if(ncol(df) == 12) {
+      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
+                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
+                    desc(`9`), desc(`10`), desc(`11`))
+    } else if(ncol(df) == 13) {
+      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
+                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
+                    desc(`10`), desc(`11`), desc(`12`))
+    } else if(ncol(df) == 14) {
+      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
+                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
+                    desc(`9`), desc(`10`), desc(`11`), desc(`12`),
+                    desc(`13`))
+    } else if(ncol(df) == 15) {
+      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
+                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
+                    desc(`9`), desc(`10`), desc(`11`), desc(`12`),
+                    desc(`13`), desc(`14`))
+    } else if(ncol(df) == 16) {
+      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
+                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
+                    desc(`9`), desc(`10`), desc(`11`), desc(`12`),
+                    desc(`13`), desc(`14`), desc(`15`))
+    }
+    
+    df
+    
+  })
+  
+  output$conf_sims <- DT::renderDataTable({
+    datatable(cs(),
+              rownames = F,
+              options = list(paging = FALSE,
+                             searching = F,
+                             columnDefs = list(list(className = 'dt-center', targets = "_all")))) %>%
+      formatPercentage(columns = 2:ncol(cs()), 1) %>%
+      formatStyle(names(cs())[-1], backgroundColor = styleInterval(seq(0, 1, 0.01), cm.colors(102)[102:1]))
+    
+  })
+  
+  
+  
   ###################################### Game Predictions ##############################################
   gp <- eventReactive(input$proj_date, {
     df <- filter(x, date == input$proj_date) %>% 
@@ -187,6 +253,7 @@ shinyServer(function(input, output, session) {
     datatable(gp(),
               rownames = F,
               options = list(paging = FALSE,
+                             searching = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all")))) %>%
       
       formatRound(columns = c(6, 7), 
@@ -198,6 +265,8 @@ shinyServer(function(input, output, session) {
       formatStyle("Pred. Team Score", backgroundColor = styleInterval(40:100, cm.colors(62)[62:1])) %>%
       formatStyle("Pred. Opp. Score", backgroundColor = styleInterval(40:100, cm.colors(62)[62:1]))
   })
+  
+  
   
   
   ################################## Team Breakdowns ###########################
@@ -300,6 +369,7 @@ shinyServer(function(input, output, session) {
     datatable(ts1(),
               rownames = F,
               options = list(paging = FALSE,
+                             searching = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all"))
                              
               )
@@ -312,19 +382,23 @@ shinyServer(function(input, output, session) {
       )
   })
   
+  
+  
+  
   ################################## Bracketology
   output$bracket <- DT::renderDataTable({
     df <- select(bracket, seed_line, seed_overall, everything(), -blend, -avg)
     df$odds <- 1/100 * df$odds
     names(df)[1:15] <- c("Seed Line", "Seed Overall", "Team", "Conference", 
-                   "Net Rating", "RPI", "Strength of Record", "Wins Above Bubble",
-                   "Resume", "Rating Rank", "RPI Rank", "SOR Rank", "WAB Rank",
-                   "Resume Rank", "At-Large Odds")
+                         "Net Rating", "RPI", "Strength of Record", "Wins Above Bubble",
+                         "Resume", "Rating Rank", "RPI Rank", "SOR Rank", "WAB Rank",
+                         "Resume Rank", "At-Large Odds")
     
     
     datatable(df,
               rownames = F,
               options = list(paging = FALSE,
+                             searching = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all"),
                                                list(visible=FALSE, targets=c(15, 16, 17))
                                                
@@ -365,9 +439,10 @@ shinyServer(function(input, output, session) {
     datatable(df,
               rownames = F,
               options = list(paging = FALSE,
+                             searching = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all"))
-                                               
-                             )
+                             
+              )
     ) %>% 
       formatRound(columns = c(4, 6, 7, 8),  digits = 2) %>%
       formatRound(columns = c(5),  digits = 4) %>%
@@ -378,11 +453,11 @@ shinyServer(function(input, output, session) {
       formatStyle("SOR Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
       formatStyle("Resume Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
       formatStyle("Rating Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
-      formatStyle("Wins Above Bubble", backgroundColor = styleInterval(sort(bracket_math$wab[1:99]), cm.colors(100)[100:1])) %>%
-      formatStyle("Strength of Record", backgroundColor = styleInterval(sort(bracket_math$sor[1:99]), cm.colors(100)[100:1])) %>%
-      formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[1:99]), cm.colors(100)[100:1])) %>%
-      formatStyle("RPI", backgroundColor = styleInterval(sort(bracket_math$rpi[1:99]), cm.colors(100)[100:1])) %>%
-      formatStyle("Resume", backgroundColor = styleInterval(sort(bracket_math$qual_bonus[1:99]), cm.colors(100)[100:1]))
+      formatStyle("Wins Above Bubble", backgroundColor = styleInterval(sort(bracket_math$wab[1:352]), cm.colors(353)[353:1])) %>%
+      formatStyle("Strength of Record", backgroundColor = styleInterval(sort(bracket_math$sor[1:352]), cm.colors(353)[353:1])) %>%
+      formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[1:352]), cm.colors(353)[353:1])) %>%
+      formatStyle("RPI", backgroundColor = styleInterval(sort(bracket_math$rpi[1:352]), cm.colors(353)[353:1])) %>%
+      formatStyle("Resume", backgroundColor = styleInterval(sort(bracket_math$qual_bonus[1:352]), cm.colors(353)[353:1]))
     
     
   })
@@ -393,6 +468,7 @@ shinyServer(function(input, output, session) {
     datatable(df,
               rownames = F,
               options = list(paging = FALSE,
+                             searching = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all"))
                              
               )) %>%

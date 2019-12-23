@@ -101,6 +101,7 @@ conf_fast_sim <- function(conf, nsims) {
   results <- data.frame("team" = rep(conf_teams, nsims),
                         "sim" = rep(1:nsims, each = length(conf_teams)),
                         "n_wins" = NA,
+                        "place" = NA,
                         stringsAsFactors = F)
   
   
@@ -128,6 +129,7 @@ conf_fast_sim <- function(conf, nsims) {
     }
     
     results$n_wins[results$sim == i] <- sim_season
+    results$place[results$sim == i] <- rank(-sim_season, ties = "min")
   }
   return(results)
 }

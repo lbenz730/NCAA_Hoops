@@ -39,7 +39,12 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                             ),
                                             
                                             p("More on the mathematical methodology behind these ratings can be found", a("here", href= "https://lukebenz.com/post/hoops_methodology/methodology/")
-                                            )
+                                            ),
+                                            
+                                            p(align = "left",
+                                              tags$b(tags$i("If you enjoy this site and would like to help keep it free")),
+                                              tags$b(tags$i("(in order to offset the cost of server time), consider donating by
+                                                            Venmo (@lbenz730) or PayPal (lsbenz30@yahoo.com)")))
                                             
                                           ),
                                           
@@ -79,6 +84,16 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                 
                                 ### Render Conference Standings Plot
                                 plotOutput("conf_standings_plot", width = "100%", height = "600px"),
+                                
+                                br(),
+                                br(),
+                                
+                                ### Conf Sims
+                                tags$h2("Distributions of Regular Season Conference Finish"),
+                                tags$i("Ties left unbroken."),
+                                br(),
+                                
+                                DT::dataTableOutput("conf_sims"),
                                 
                                 br(),
                                 br(),
@@ -228,7 +243,12 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                             
                                             p(align = "left",
                                               "Follow me on twitter", a("@recspecs730", href = "https://twitter.com/recspecs730"),
-                                              "for more hoops analysis")
+                                              "for more hoops analysis."),
+                                            
+                                            p(align = "left",
+                                              tags$b(tags$i("If you enjoy this site and would like to help keep it free")),
+                                              tags$b(tags$i("(in order to offset the cost of server time), consider donating by
+                                                            Venmo (@lbenz730) or PayPal (lsbenz30@yahoo.com)")))
                                             
                                           ),
                                           mainPanel()
