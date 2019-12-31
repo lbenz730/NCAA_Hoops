@@ -26,7 +26,8 @@ teamid <-
 ################################################################################
 baseurl <- 'http://stats.ncaa.org/teams/'
 tournaments <- c('Empire Classic (Riverside)', 'Myrtle Beach Invitational', 
-                 'Maui Invitational (Mainland)', 'Cayman Islands (Mainland)')
+                 'Maui Invitational (Mainland)', 'Cayman Islands (Mainland)',
+                 'Hawaiian Airlines Diamond Head Classic')
 
 z <- NULL
 bad <- NULL

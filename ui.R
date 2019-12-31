@@ -38,7 +38,7 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                               tags$b("Defensive Rating"), "show from which area(s) of the game teams may derive their strength."
                                             ),
                                             
-                                            p("More on the mathematical methodology behind these ratings can be found", a("here", href= "https://lukebenz.com/post/hoops_methodology/methodology/")
+                                            p("More on the mathematical methodology behind these ratings can be found", a("here", href= "https://lukebenz.com/post/methodology/")
                                             ),
                                             
                                             p(align = "left",
@@ -233,7 +233,7 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                             p(aligin = "left", 
                                               tags$b(tags$u("Useful Links")),
                                               tags$ul(
-                                                tags$li(a("Rankings Methodology", href = "https://lukebenz.com/post/hoops_methodology/methodology/")),
+                                                tags$li(a("Rankings Methodology", href = "https://lukebenz.com/post/hoops_methodology/")),
                                                 tags$li(a("GitHub Repository", href = "https://github.com/lbenz730/NCAA_Hoops")),
                                                 tags$li(a("ncaahoopR Package", href = "https://github.com/lbenz730/ncaahoopR/"))
                                                 
