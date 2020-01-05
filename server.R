@@ -226,6 +226,12 @@ shinyServer(function(input, output, session) {
     
   })
   
+  conf_schedule <- eventReactive(input$conf, { visualize_schedule(input$conf) })
+  
+  output$conf_schedule_plot <- renderPlot(conf_schedule())
+                                 
+                                 
+  
   
   
   ###################################### Game Predictions ##############################################

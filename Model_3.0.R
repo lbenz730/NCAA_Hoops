@@ -1,7 +1,9 @@
 #############################  Read CSVs #######################################
 library(dplyr) 
 library(readr)
-x <- read_csv("3.0_Files/Results/2019-20/NCAA_Hoops_Results_12_30_2019.csv")
+library(lubridate)
+x <- read_csv(paste("3.0_Files/Results/2019-20/NCAA_Hoops_Results",
+                     month(Sys.Date()), day(Sys.Date()), "2020.csv", sep = "_"))
 train <- read_csv("3.0_Files/Results/2017-18/training.csv")
 confs <- read_csv("3.0_Files/Info/conferences.csv")
 deadlines <- read_csv("3.0_Files/Info/deadlines.csv") %>%
@@ -176,9 +178,9 @@ bracket_math <- make_bracket(tourney = F)
 
 ################################ Ivy Sims ######################################
 playoffs <- ivy.sim(nsims = 5000)
-#playoff_graphic()
-#psf_results <- psf(nsims = 1000, min_date = "2019-03-08", max_date = "2019-03-09")
-#psf_graphic()
+playoff_graphic()
+psf_results <- psf(nsims = 1000, min_date = Sys.Date(), max_date = Sys.Date() + 2)
+psf_graphic()
 ############################# Conference Sims (No Tie-Breaks) ##################
 for(conf in unique(confs$conference)) {
   print(conf)
@@ -214,7 +216,7 @@ nrow(filter(x, round(pred_team_score) == team_score))
 filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)
 
 
-
+devtools::install_github("lbenz730/ncaahoopR")
 rsconnect::deployApp(forceUpdate = T)
 
 

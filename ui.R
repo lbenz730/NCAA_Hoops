@@ -75,6 +75,12 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                 ### Render Table
                                 DT::dataTableOutput("conf_standings"),
                                 
+                                ### Conference Schedule
+                                plotOutput("conf_schedule_plot", width = "100%", height = "600px"),
+                                
+                                br(),
+                                br(),
+                                
                                 ### Render D1 Universe
                                 plotOutput("uni_plot", width = "100%", height = "600px"),
                                 
