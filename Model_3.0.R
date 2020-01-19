@@ -144,7 +144,6 @@ x <-
          "pred_opp_score" = round(70 -def_coeff + opp_off_coeff + hca_def, 1),
          "pred_total_score" = pred_team_score + pred_opp_score) %>%
   select(-hca, -hca_off, -hca_def)
-ivy_preds()
 
 ######################## Point Spread to Win Percentage Model #################
 x$wins[x$score_diff > 0] <- 1
@@ -158,14 +157,6 @@ x$wins[is.na(x$wins)] <-
   round(predict(glm.pointspread, newdata = x[is.na(x$wins),], type = "response"), 3)
 by_conf <- pr_compute(by_conf = T)
 write_csv(x, "3.0_Files/Predictions/predictions.csv")
-####################################### Plots ##################################
-# yusag_plot(power_rankings)
-# png("3.0_Files/Power_Rankings/boxplot.png", res = 180, width = 1275, height = 1000)
-# box_plot(power_rankings)
-# dev.off()
-# evo_plot()
-# rank_plot()
-
 ########################### Bracketology #######################################
 rpi <- rpi_compute(new = T)
 resumes <- get_resumes(new = T)
