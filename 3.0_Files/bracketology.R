@@ -48,7 +48,7 @@ make_bracket <- function(tourney) {
   }
   
   bracket$blend <- 0.15 * bracket$rpi_rank + 0.125 * bracket$wab_rank + 
-    0.2 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.325 * bracket$resume_rank
+    0.2 * bracket$sor_rank + 0.1 * bracket$yusag_rank + 0.425 * bracket$resume_rank
   
   bracket$avg <- 0.2 * bracket$rpi_rank + 0.2 * bracket$wab_rank + 
     0.2 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.2 * bracket$resume_rank 
@@ -87,12 +87,14 @@ make_bracket <- function(tourney) {
                 data = bracket_math)
   bracket$odds <- 
     round(predict(glm.madness, newdata = bracket, type = "response"), 4) * 100
+  bracket$odds <- ifelse(bracket$odds > 99.9, 99.99, bracket$odds)
   bracket$odds[bracket$wins - bracket$losses <= 2] <- 
     bracket$odds[bracket$wins - bracket$losses <= 2]/4
   bracket$seed <- 
     predict(lm.seed, newdata = bracket, type = "response")
   
-  bracket <- arrange(bracket, desc(round(odds, 1)), seed)
+  
+  bracket <- arrange(bracket, desc(round(odds, 1)), avg)
   
   if(tourney == T) {
     ### Get Autobids
@@ -121,7 +123,7 @@ make_bracket <- function(tourney) {
     ### Write Bracket    
     bracket$atlarge <- is.element(bracket$team, atlarge)
     bracket <- rbind(bracket[bracket$autobid,], bracket[bracket$atlarge,])
-    bracket <- arrange(bracket, desc(odds), seed)
+    bracket <- arrange(bracket, desc(round(odds, 1)), avg)
     bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus, -seed)
     bracket$seed_overall <- 1:68
     bracket$seed_line <- c(rep(1,4), rep(2,4), rep(3,4), rep(4,4), rep(5,4),
