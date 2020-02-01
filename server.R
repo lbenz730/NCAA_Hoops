@@ -152,7 +152,7 @@ shinyServer(function(input, output, session) {
     standings <- arrange(standings, avg_wins)
     
     ggplot(sims, aes(x = n_wins, y = team, fill = team)) + 
-      geom_density_ridges(stat = "binline", scale = 0.7, bins = max(champion$n_wins)) + 
+      geom_density_ridges(stat = "binline", scale = 0.7, binwidth = 1) + 
       labs(x ="# of Wins", 
            y = "Team",
            title = "Distribution of Conference Wins",
