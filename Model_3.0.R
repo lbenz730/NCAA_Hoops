@@ -170,7 +170,7 @@ bracket_math <- make_bracket(tourney = F)
 ################################ Ivy Sims ######################################
 playoffs <- ivy.sim(nsims = 5000)
 playoff_graphic()
-psf_results <- psf(nsims = 1000, min_date = Sys.Date(), max_date = Sys.Date() + 2)
+psf_results <- psf(nsims = 2500, min_date = Sys.Date(), max_date = Sys.Date() + 2)
 psf_graphic()
 ############################# Conference Sims (No Tie-Breaks) ##################
 for(conf in unique(confs$conference)) {
