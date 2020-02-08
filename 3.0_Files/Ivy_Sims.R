@@ -413,6 +413,7 @@ psf <- function(nsims, min_date, max_date) {
     mutate(date = as.Date(date)) %>%
     filter(date < Sys.Date())
   psf_history <- rbind(psf_history, swingfactor) 
+  psf_history <- filter(psf_history, date >= "2019-11-05")
   write.csv(psf_history, "3.0_Files/Predictions/psf_history.csv", row.names = F) 
   write.csv(swingfactor, "3.0_Files/Predictions/psf.csv", row.names = F)
   return(swingfactor)
