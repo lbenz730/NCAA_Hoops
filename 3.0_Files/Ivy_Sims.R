@@ -215,7 +215,7 @@ psf <- function(nsims, min_date, max_date) {
   tochange <- filter(x, date >= min_date, date <= max_date, team_conf == "Ivy",
                      conf_game, location == "H")
   
-  games <- x[x$location == "H" & x$team_conf == "Ivy" & x$conf_game & x$reg_season, ]
+ 
   ivy <- unique(x$team[x$team_conf == "Ivy"])
   
   # Data Frame to Hold Team Wins by Sim
@@ -236,6 +236,7 @@ psf <- function(nsims, min_date, max_date) {
   # Switch
   q = 0
   for(k in 1:(2 * nrow(tochange))) {
+    games <- x[x$location == "H" & x$team_conf == "Ivy" & x$conf_game & x$reg_season, ]
     if(q == 0) {
       games$wins[games$team == tochange$team[ceiling(k/2)] & 
                    games$opponent == tochange$opponent[ceiling(k/2)]] <- 1
@@ -407,6 +408,7 @@ psf <- function(nsims, min_date, max_date) {
       swingfactor$psf[k/2] <- sum(abs(simplayoffs$playoff_prob2 - simplayoffs$playoff_prob1))
       swingfactor$auto_bid_sf[k/2] <- sum(abs(simplayoffs$auto_bid_2 - simplayoffs$auto_bid_1))
     }
+    
   }
   
   psf_history <- read.csv("3.0_Files/Predictions/psf_history.csv", as.is = T) %>%
