@@ -27,7 +27,8 @@ teamid <-
 baseurl <- 'http://stats.ncaa.org/teams/'
 tournaments <- c('Empire Classic (Riverside)', 'Myrtle Beach Invitational', 
                  'Maui Invitational (Mainland)', 'Cayman Islands (Mainland)',
-                 'Hawaiian Airlines Diamond Head Classic')
+                 'Hawaiian Airlines Diamond Head Classic') 
+conf_tournaments <- paste(unique(teamid$conference), ".* MBB Championship")
 
 z <- NULL
 bad <- NULL
@@ -102,6 +103,10 @@ for (i in 1:nrow(teamid)) {
     #res$opponent[fix] <- sapply(res$opponent[fix], fix_team)
     
     for(tourney in tournaments) {
+      res$opponent <- stripwhite(gsub(tourney, "", res$opponent))
+    }
+    
+    for(tourney in conf_tournaments) {
       res$opponent <- stripwhite(gsub(tourney, "", res$opponent))
     }
     
