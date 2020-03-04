@@ -171,44 +171,12 @@ shinyServer(function(input, output, session) {
       tidyr::spread(key = "place", value = "pct") %>%
       mutate_if(is.numeric, ~replace(., is.na(.), 0)) %>%
       rename("Team" = team) 
-    if(ncol(df) == 8) {
-      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
-                    desc(`5`), desc(`6`), desc(`7`))
-    } else if(ncol(df) == 9) {
-      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
-                    desc(`5`), desc(`6`), desc(`7`), desc(`8`))
-    } else if(ncol(df) == 10) {
-      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
-                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
-                    desc(`9`))
-    } else if(ncol(df) == 11) {
-      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
-                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
-                    desc(`9`), desc(`10`))
-    } else if(ncol(df) == 12) {
-      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
-                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
-                    desc(`9`), desc(`10`), desc(`11`))
-    } else if(ncol(df) == 13) {
-      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
-                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
-                    desc(`10`), desc(`11`), desc(`12`))
-    } else if(ncol(df) == 14) {
-      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
-                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
-                    desc(`9`), desc(`10`), desc(`11`), desc(`12`),
-                    desc(`13`))
-    } else if(ncol(df) == 15) {
-      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
-                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
-                    desc(`9`), desc(`10`), desc(`11`), desc(`12`),
-                    desc(`13`), desc(`14`))
-    } else if(ncol(df) == 16) {
-      df <- arrange(df, desc(`1`), desc(`2`), desc(`3`), desc(`4`), 
-                    desc(`5`), desc(`6`), desc(`7`), desc(`8`), 
-                    desc(`9`), desc(`10`), desc(`11`), desc(`12`),
-                    desc(`13`), desc(`14`), desc(`15`))
-    }
+    
+    df$avg_seed <- apply(df[,-1], 1, function(x) {sum(x * as.numeric(names(df)[-1]))})
+    df <- arrange(df, avg_seed) %>%
+      select(-avg_seed)
+      
+   
     
     df
     

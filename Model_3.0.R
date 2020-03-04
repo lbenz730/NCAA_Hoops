@@ -62,7 +62,7 @@ x <- inner_join(x, deadlines, by = c("team_conf" = "conf")) %>%
   select(-deadline)
 
 ### Eliminate Teams from Auto Bid contention
-#confs <- eliminate(filter(x, score_diff < 0, !reg_season) %>% pull(team), confs)
+confs <- eliminate(filter(x, score_diff < 0, !reg_season) %>% pull(team), confs)
 
 ################################# Set Weights ##################################
 x$weights <- 0
