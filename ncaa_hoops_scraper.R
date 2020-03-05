@@ -20,7 +20,7 @@ fix_team <- function(x) {
 ### Read in ID's table
 teamid <- 
   read.csv("3.0_Files/Info/conferences.csv", as.is = T) %>%
-  select(team, ncaa_id) %>%
+  select(team, ncaa_id, conference) %>%
   arrange(team)
 
 ################################################################################
@@ -28,7 +28,9 @@ baseurl <- 'http://stats.ncaa.org/teams/'
 tournaments <- c('Empire Classic (Riverside)', 'Myrtle Beach Invitational', 
                  'Maui Invitational (Mainland)', 'Cayman Islands (Mainland)',
                  'Hawaiian Airlines Diamond Head Classic') 
-conf_tournaments <- paste(unique(teamid$conference), ".* MBB Championship")
+conf_tournaments <- paste(c("Big South", "Patriot League", "Northeast Conference",
+                            "Horizon League", "Mountain West", "ASUN"), " .* MBB Championship")
+
 
 z <- NULL
 bad <- NULL
@@ -131,5 +133,3 @@ z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team
 ### Save Results
 write.csv(z, paste("3.0_Files/Results/2019-20/NCAA_Hoops_Results_", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names = F)
-
-
