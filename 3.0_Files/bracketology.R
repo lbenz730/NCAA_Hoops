@@ -75,11 +75,15 @@ make_bracket <- function(tourney) {
   
   bracket_math$bid <- bracket_math$seed <= 10
   glm.madness <- suppressWarnings(glm(bid ~ blend +
+                                        (yusag_rank <= 3) +
+                                        (yusag_rank <= 25) +
                                         + (mid_major & yusag_rank > 50) 
                                       + (mid_major & yusag_rank > 25) 
                                       + (loss_bonus & yusag_rank <= 10), 
                                       data = bracket_math, family = "binomial"))
-  lm.seed <- lm(seed ~ blend +
+  lm.seed <- lm(seed ~ blend 
+                  + (yusag_rank <= 3) +
+                  (yusag_rank <= 25) 
                   + (mid_major & yusag_rank > 50) 
                 + (mid_major & yusag_rank > 25) 
                 + (loss_bonus & yusag_rank <= 10) 
