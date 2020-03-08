@@ -158,8 +158,8 @@ x$wins[is.na(x$wins)] <-
 by_conf <- pr_compute(by_conf = T)
 write_csv(x, "3.0_Files/Predictions/predictions.csv")
 ########################### Bracketology #######################################
-rpi <- rpi_compute(new = T)
-resumes <- get_resumes(new = T)
+rpi <- rpi_compute(new = F)
+resumes <- get_resumes(new = F)
 bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 

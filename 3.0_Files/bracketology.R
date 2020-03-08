@@ -48,7 +48,7 @@ make_bracket <- function(tourney) {
   }
   
   bracket$blend <- 0.15 * bracket$rpi_rank + 0.125 * bracket$wab_rank + 
-    0.2 * bracket$sor_rank + 0.1 * bracket$yusag_rank + 0.425 * bracket$resume_rank
+    0.1 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.425 * bracket$resume_rank
   
   bracket$avg <- 0.2 * bracket$rpi_rank + 0.2 * bracket$wab_rank + 
     0.2 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.2 * bracket$resume_rank 
@@ -76,14 +76,12 @@ make_bracket <- function(tourney) {
   bracket_math$bid <- bracket_math$seed <= 10
   glm.madness <- suppressWarnings(glm(bid ~ blend +
                                         (yusag_rank <= 3) +
-                                        (yusag_rank <= 25) +
                                         + (mid_major & yusag_rank > 50) 
                                       + (mid_major & yusag_rank > 25) 
                                       + (loss_bonus & yusag_rank <= 10), 
                                       data = bracket_math, family = "binomial"))
   lm.seed <- lm(seed ~ blend 
                   + (yusag_rank <= 3) +
-                  (yusag_rank <= 25) 
                   + (mid_major & yusag_rank > 50) 
                 + (mid_major & yusag_rank > 25) 
                 + (loss_bonus & yusag_rank <= 10) 
@@ -97,7 +95,12 @@ make_bracket <- function(tourney) {
   bracket$seed <- 
     predict(lm.seed, newdata = bracket, type = "response")
   
-  
+  correct <- c("Texas Tech", "Saint Mary's (CA)")
+  correct2 <- c("Purdue")
+  correct3 <- c("Gonzaga")
+  bracket$odds[bracket$team %in% correct] <- bracket$odds[bracket$team %in% correct] + 0.5 * (100 - bracket$odds[bracket$team %in% correct])
+  bracket$odds[bracket$team %in% correct2] <- bracket$odds[bracket$team %in% correct2] + 0.25 * (100 - bracket$odds[bracket$team %in% correct2])
+  bracket$avg[bracket$team %in% correct3] <- 0.8 * bracket$avg[bracket$team %in% correct3]
   bracket <- arrange(bracket, desc(round(odds, 1)), avg)
   
   if(tourney == T) {
