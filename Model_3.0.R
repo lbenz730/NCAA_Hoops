@@ -168,16 +168,16 @@ bracket_math <- make_bracket(tourney = F)
 #write.csv(ncaa_sims, "3.0_Files/Predictions/ncaa_sims.csv", row.names = F)
 
 ################################ Ivy Sims ######################################
-playoffs <- ivy.sim(nsims = 5000)
-playoff_graphic()
-psf_results <- psf(nsims = 2500, min_date = Sys.Date(), max_date = Sys.Date() + 2)
-psf_graphic()
-############################# Conference Sims (No Tie-Breaks) ##################
-for(conf in unique(confs$conference)) {
-  print(conf)
-  sims <- conf_fast_sim(conf, 10000)
-  write_csv(sims, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
-}
+# playoffs <- ivy.sim(nsims = 5000)
+# playoff_graphic()
+# psf_results <- psf(nsims = 2500, min_date = Sys.Date(), max_date = Sys.Date() + 2)
+# psf_graphic()
+# ############################# Conference Sims (No Tie-Breaks) ##################
+# for(conf in unique(confs$conference)) {
+#   print(conf)
+#   sims <- conf_fast_sim(conf, 10000)
+#   write_csv(sims, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+# }
 ############################ System Evaluation #################################
 min_date <- as.Date("2019-11-05")
 max_date <- Sys.Date()
