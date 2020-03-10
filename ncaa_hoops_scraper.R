@@ -28,9 +28,9 @@ baseurl <- 'http://stats.ncaa.org/teams/'
 tournaments <- c('Empire Classic (Riverside)', 'Myrtle Beach Invitational', 
                  'Maui Invitational (Mainland)', 'Cayman Islands (Mainland)',
                  'Hawaiian Airlines Diamond Head Classic') 
-conf_tournaments <- paste(c("Big South", "Patriot League", "Northeast Conference",
-                            "Horizon League", "Mountain West", "ASUN", 
-                            "America East", "Sun Belt"), " .* MBB Championship")
+conf_tournaments <- paste0(c("Big South", "Patriot League", "Northeast Conference",
+                            "Horizon League", "Mountain West", "ASUN", "MAC", "WCC", 
+                            "America East", "Sun Belt"), ".*MBB.*")
 
 
 z <- NULL
@@ -134,3 +134,4 @@ z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team
 ### Save Results
 write.csv(z, paste("3.0_Files/Results/2019-20/NCAA_Hoops_Results_", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names = F)
+
