@@ -30,7 +30,8 @@ tournaments <- c('Empire Classic (Riverside)', 'Myrtle Beach Invitational',
                  'Hawaiian Airlines Diamond Head Classic') 
 conf_tournaments <- paste0(c("Big South", "Patriot League", "Northeast Conference",
                             "Horizon League", "Mountain West", "ASUN", "MAC", "WCC", 
-                            "America East", "Sun Belt"), ".*MBB.*")
+                            "America East", "Sun Belt", "SWAC", "MEAC", "Big East", 
+                            "Big 10", "Big 12", "ACC", "SEC", "Ivy League"), ".*MBB.*")
 
 
 z <- NULL

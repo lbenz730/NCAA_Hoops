@@ -75,13 +75,11 @@ make_bracket <- function(tourney) {
   
   bracket_math$bid <- bracket_math$seed <= 10
   glm.madness <- suppressWarnings(glm(bid ~ blend +
-                                        (yusag_rank <= 3) +
                                         + (mid_major & yusag_rank > 50) 
                                       + (mid_major & yusag_rank > 25) 
                                       + (loss_bonus & yusag_rank <= 10), 
                                       data = bracket_math, family = "binomial"))
   lm.seed <- lm(seed ~ blend 
-                  + (yusag_rank <= 3) +
                   + (mid_major & yusag_rank > 50) 
                 + (mid_major & yusag_rank > 25) 
                 + (loss_bonus & yusag_rank <= 10) 
@@ -95,7 +93,7 @@ make_bracket <- function(tourney) {
   bracket$seed <- 
     predict(lm.seed, newdata = bracket, type = "response")
   
-  correct <- c("Texas Tech", "Saint Mary's (CA)")
+  correct <- c("Texas Tech", "Saint Mary's (CA)", "Duke")
   correct2 <- c("Purdue", "UCLA")
   correct3 <- c("Gonzaga")
   correct4 <- c("San Diego St.")
