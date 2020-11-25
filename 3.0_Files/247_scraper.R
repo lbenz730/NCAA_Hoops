@@ -6,13 +6,13 @@ conferences <- c("ACC", "Big-12", "Big-Ten", "Pac-12", "SEC", "AAC",
                  "Patriot", "SBC", "SLC", "Southern", "Summit", "SW-AC",
                  "WAC", "WCC")
 
-year <- 2019
+year <- 2020
 
 for(conf in conferences) {
   print(paste("Scraping", conf))
   url <- paste0("https://247sports.com/Season/", year, "-Basketball/CompositeTeamRankings?Conference=", conf)
   x <- scan(url, sep = "\n", what = "")
-  x <- x[75]
+  x <- x[73]
   y <- strsplit(x, '<div class=\"rank-column\">')[[1]][-1]
   
   if(length(y) > 0) {

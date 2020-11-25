@@ -175,8 +175,8 @@ shinyServer(function(input, output, session) {
     df$avg_seed <- apply(df[,-1], 1, function(x) {sum(x * as.numeric(names(df)[-1]))})
     df <- arrange(df, avg_seed) %>%
       select(-avg_seed)
-      
-   
+    
+    
     
     df
     
@@ -197,31 +197,56 @@ shinyServer(function(input, output, session) {
   conf_schedule <- eventReactive(input$conf, { visualize_schedule(input$conf) })
   
   output$conf_schedule_plot <- renderPlot(conf_schedule())
-                                 
-                                 
+  
+  
   
   
   
   ###################################### Game Predictions ##############################################
   gp <- eventReactive(input$proj_date, {
-    df <- filter(x, date == input$proj_date) %>% 
-      mutate("id" = case_when(
-        location == "H" ~ paste(team, opponent),
-        location == "V" ~ paste(opponent, team),
-        location == "N" & team < opponent  ~ paste(team, opponent),
-        T ~ paste(opponent, team)
-      )) %>%
-      arrange(rank) %>%
-      filter(!duplicated(id)) %>%
-      select(team, opponent, location, rank, opp_rank,
-             pred_team_score, pred_opp_score,
-             team_score, opp_score, pred_score_diff) %>%
-      mutate("win_prob" = predict(glm.pointspread, newdata = ., type = "response")) %>%
-      select(team, opponent, location, rank, opp_rank, pred_team_score,
-             pred_opp_score, win_prob, team_score, opp_score)
-    names(df) <- c("Team", "Opponent", "Location", "Team Rank",
-                   "Opponent Rank", "Pred. Team Score", "Pred. Opp. Score",
-                   "Win Prob.","Team Score", "Opp. Score")
+    df <- filter(x, date == input$proj_date) 
+    if(nrow(df) > 0) {
+      df <- 
+        df %>% 
+        mutate("id" = case_when(
+          location == "H" ~ paste(team, opponent),
+          location == "V" ~ paste(opponent, team),
+          location == "N" & team < opponent  ~ paste(team, opponent),
+          T ~ paste(opponent, team)
+        )) %>%
+        arrange(rank) %>%
+        filter(!duplicated(id)) %>%
+        select(team, opponent, location, rank, opp_rank,
+               pred_team_score, pred_opp_score,
+               team_score, opp_score, pred_score_diff) %>%
+        mutate("win_prob" = predict(glm.pointspread, newdata = ., type = "response")) %>%
+        select(team, opponent, location, rank, opp_rank, pred_team_score,
+               pred_opp_score, win_prob, team_score, opp_score)
+      names(df) <- c("Team", "Opponent", "Location", "Team Rank",
+                     "Opponent Rank", "Pred. Team Score", "Pred. Opp. Score",
+                     "Win Prob.","Team Score", "Opp. Score")
+    } else {
+      df <- 
+        df %>% 
+        mutate("id" = case_when(
+          location == "H" ~ paste(team, opponent),
+          location == "V" ~ paste(opponent, team),
+          location == "N" & team < opponent  ~ paste(team, opponent),
+          T ~ paste(opponent, team)
+        )) %>%
+        arrange(rank) %>%
+        filter(!duplicated(id)) %>%
+        select(team, opponent, location, rank, opp_rank,
+               pred_team_score, pred_opp_score,
+               team_score, opp_score, pred_score_diff) %>%
+        mutate(win_prob = NA) %>% 
+        select(team, opponent, location, rank, opp_rank, pred_team_score,
+               pred_opp_score,win_prob, team_score, opp_score) %>% 
+        slice(0)
+      names(df) <- c("Team", "Opponent", "Location", "Team Rank",
+                     "Opponent Rank", "Pred. Team Score", "Pred. Opp. Score",
+                     "Win Prob.","Team Score", "Opp. Score")
+    }
     df
   })
   

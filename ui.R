@@ -38,7 +38,7 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                               tags$b("Defensive Rating"), "show from which area(s) of the game teams may derive their strength."
                                             ),
                                             
-                                            p("More on the mathematical methodology behind these ratings can be found", a("here", href= "https://lukebenz.com/post/methodology/")
+                                            p("More on the mathematical methodology behind these ratings can be found", a("here", href= "https://lukebenz.com/post/hoops_methodology/")
                                             ),
                                             
                                             p(align = "left",

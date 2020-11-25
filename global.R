@@ -76,7 +76,7 @@ visualize_schedule <- function(conf) {
   conf_data <- filter(x, conf_game, team_conf == conf)
   conf_data <- inner_join(conf_data, select(ncaahoopR::ncaa_colors, ncaa_name, logo_url), 
                           by = c("opponent" = "ncaa_name"))
-  conf_data$game_id <- 1:(nrow(conf_data)/length(unique(conf_data$team)))
+  conf_data$game_id <- rep(1:(nrow(conf_data)/length(unique(conf_data$team))), length(unique(conf_data$team)))
   
   colors <- gg_color_hue(5)
   conf_data <- mutate(conf_data, "result"  = case_when(
