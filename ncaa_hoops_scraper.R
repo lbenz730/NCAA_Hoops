@@ -27,11 +27,12 @@ teamid <-
 baseurl <- 'http://stats.ncaa.org/teams/'
 tournaments <- c('Empire Classic (Riverside)', 'Myrtle Beach Invitational', 
                  'Maui Invitational (Mainland)', 'Cayman Islands (Mainland)',
+                 "- MBB Negro League Baseball Museum Tipoff Classic",
                  'Hawaiian Airlines Diamond Head Classic') 
 conf_tournaments <- paste0(c("Big South", "Patriot League", "Northeast Conference",
-                            "Horizon League", "Mountain West", "ASUN", "MAC", "WCC", 
-                            "America East", "Sun Belt", "SWAC", "MEAC", "Big East", 
-                            "Big 10", "Big 12", "ACC", "SEC", "Ivy League"), ".*MBB.*")
+                             "Horizon League", "Mountain West", "ASUN", "MAC", "WCC", 
+                             "America East", "Sun Belt", "SWAC", "MEAC", "Big East", 
+                             "Big 10", "Big 12", "ACC", "SEC", "Ivy League"), ".*MBB.*")
 
 
 z <- NULL
@@ -64,59 +65,66 @@ for (i in 1:nrow(teamid)) {
     datelines <- grep("\\d\\d/\\d\\d/\\d\\d\\d\\d", x)
     
     dates <- stripwhite(gsub("<[^<>]*>", "", x[datelines]))
-    dates <- gsub(" .*", "", dates)
-    ix <- !dates %in% c("Start", "Team", "End")
-    datelines <- datelines[ix]
-    dates <- dates[ix]
-    dates <- matrix(as.numeric(unlist(strsplit(dates, "/"))),
-                    ncol=3, byrow=TRUE)
-    
-    opploc <- stripwhite(gsub("<[^<>]*>", "", x[datelines+2]))
-    loc <- rep("H", length(opploc))
-    loc[grep("@", opploc, fixed=TRUE)] <- "N"
-    loc[grep("^@", opploc)] <- "V"
-    opp <- opploc
-    opp[loc == "V"] <- gsub("@", "", gsub("@ ", "", opp[loc == "V"]))
-    opp[loc == "N"] <- substring(opp, 1, regexpr("@", opp)-2)[loc == "N"]
-    
-    
-    
-    result <- stripwhite(gsub("<[^<>]*>", "", x[datelines+5]))
-    OT <- suppressWarnings(as.numeric(gsub("^.*\\((\\d)OT\\)",
-                                           "\\1", result))) # warnings okay
-    result <- gsub(" \\(.*\\)", "", result)
-    result <- strsplit(substring(result, 3, 20), "-")
-    if (any(sapply(result, length) == 0)) {
-      result[sapply(result, length) == 0] <- list(c(NA, NA))
+    if(length(dates) > 0) {
+      dates <- gsub(" .*", "", dates)
+      ix <- !dates %in% c("Start", "Team", "End")
+      datelines <- datelines[ix]
+      dates <- dates[ix]
+      dates <- matrix(as.numeric(unlist(strsplit(dates, "/"))),
+                      ncol=3, byrow=TRUE)
+      
+      opploc <- stripwhite(gsub("<[^<>]*>", "", x[datelines+2]))
+      loc <- rep("H", length(opploc))
+      loc[grep("@", opploc, fixed=TRUE)] <- "N"
+      loc[grep("^@", opploc)] <- "V"
+      opp <- opploc
+      opp[loc == "V"] <- gsub("@", "", gsub("@ ", "", opp[loc == "V"]))
+      opp[loc == "N"] <- substring(opp, 1, regexpr("@", opp)-2)[loc == "N"]
+      
+      
+      
+      result <- stripwhite(gsub("<[^<>]*>", "", x[datelines+5]))
+      OT <- suppressWarnings(as.numeric(gsub("^.*\\((\\d)OT\\)",
+                                             "\\1", result))) # warnings okay
+      result <- gsub(" \\(.*\\)", "", result)
+      canceled <- result == 'Canceled'
+      postponed <- result == 'Postponed' | result == 'Ppd'
+      result[canceled|postponed] <- ""
+      result <- strsplit(substring(result, 3, 20), "-")
+      if (any(sapply(result, length) == 0)) {
+        result[sapply(result, length) == 0] <- list(c(NA, NA))
+      }
+      result <- matrix(as.numeric(unlist(result)), ncol=2, byrow=TRUE)
+      
+      res <- data.frame(year=dates[,3],
+                        month=dates[,1],
+                        day=dates[,2],
+                        team=teamid$team[i],
+                        opponent=opp,
+                        location=loc,
+                        teamscore=result[,1],
+                        oppscore=result[,2],
+                        canceled=canceled,
+                        postponed=postponed,
+                        OT=OT, stringsAsFactors=FALSE)
+      res$date <- paste(res$month, res$day, sep = "_") 
+      res$opponent <- stripwhite(gsub("&amp;", "&", gsub("&x;", "'", gsub("[0-9]", "", gsub("#", "", res$opponent)))))
+      #fix <- sapply(res$opponent, function(x) { any(sapply(teamid$team, grepl, x)) }) &
+      #  !res$opponent %in% teamid$team
+      #res$opponent[fix] <- sapply(res$opponent[fix], fix_team)
+      
+      for(tourney in tournaments) {
+        res$opponent <- stripwhite(gsub(tourney, "", res$opponent))
+      }
+      
+      for(tourney in conf_tournaments) {
+        res$opponent <- stripwhite(gsub(tourney, "", res$opponent))
+      }
+      
+      # Fix non-unique dates problem
+      uni_dates <- unique(res$date)
+      z <- rbind(z, res[uni_dates %in% res$date, -ncol(res)])
     }
-    result <- matrix(as.numeric(unlist(result)), ncol=2, byrow=TRUE)
-    
-    res <- data.frame(year=dates[,3],
-                      month=dates[,1],
-                      day=dates[,2],
-                      team=teamid$team[i],
-                      opponent=opp,
-                      location=loc,
-                      teamscore=result[,1],
-                      oppscore=result[,2],
-                      OT=OT, stringsAsFactors=FALSE)
-    res$date <- paste(res$month, res$day, sep = "_") 
-    res$opponent <- stripwhite(gsub("&amp;", "&", gsub("&x;", "'", gsub("[0-9]", "", gsub("#", "", res$opponent)))))
-    #fix <- sapply(res$opponent, function(x) { any(sapply(teamid$team, grepl, x)) }) &
-    #  !res$opponent %in% teamid$team
-    #res$opponent[fix] <- sapply(res$opponent[fix], fix_team)
-    
-    for(tourney in tournaments) {
-      res$opponent <- stripwhite(gsub(tourney, "", res$opponent))
-    }
-    
-    for(tourney in conf_tournaments) {
-      res$opponent <- stripwhite(gsub(tourney, "", res$opponent))
-    }
-    
-    # Fix non-unique dates problem
-    uni_dates <- unique(res$date)
-    z <- rbind(z, res[uni_dates %in% res$date, -ncol(res)])
     
   }
 }
@@ -133,6 +141,6 @@ z$opponent <- stripwhite(z$opponent)
 z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team
 
 ### Save Results
-write.csv(z, paste("3.0_Files/Results/2019-20/NCAA_Hoops_Results_", month, "_", 
+write.csv(z, paste("3.0_Files/Results/2020-21/NCAA_Hoops_Results_", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names = F)
 

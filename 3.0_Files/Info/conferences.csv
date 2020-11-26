@@ -1,354 +1,358 @@
-"team","conference","eligible","eliminated","mid_major","ncaa_id"
-"A&M-Corpus Christi","Southland",TRUE,TRUE,TRUE,486746
-"Abilene Christian","Southland",TRUE,FALSE,TRUE,486751
-"Air Force","MWC",TRUE,TRUE,TRUE,486695
-"Akron","MAC",TRUE,FALSE,TRUE,486752
-"Alabama","SEC",TRUE,FALSE,FALSE,486755
-"Alabama A&M","SWAC",FALSE,TRUE,TRUE,486753
-"Alabama St.","SWAC",TRUE,TRUE,TRUE,486754
-"Albany (NY)","Am. East",TRUE,TRUE,TRUE,486757
-"Alcorn","SWAC",TRUE,TRUE,TRUE,486758
-"American","Patriot",TRUE,TRUE,TRUE,486759
-"Appalachian St.","Sunbelt",TRUE,TRUE,TRUE,486760
-"Arizona","Pac 12",TRUE,FALSE,FALSE,486762
-"Arizona St.","Pac 12",TRUE,FALSE,FALSE,486761
-"Ark.-Pine Bluff","SWAC",TRUE,TRUE,TRUE,486737
-"Arkansas","SEC",TRUE,FALSE,FALSE,486764
-"Arkansas St.","Sunbelt",TRUE,TRUE,TRUE,486763
-"Army West Point","Patriot",TRUE,TRUE,TRUE,486696
-"Auburn","SEC",TRUE,FALSE,FALSE,486766
-"Austin Peay","OVC",TRUE,TRUE,TRUE,486767
-"Ball St.","MAC",TRUE,FALSE,TRUE,486768
-"Baylor","Big 12",TRUE,FALSE,FALSE,486770
-"Belmont","OVC",TRUE,FALSE,TRUE,486744
-"Bethune-Cookman","MEAC",TRUE,FALSE,TRUE,486771
-"Binghamton","Am. East",TRUE,FALSE,TRUE,486772
-"Boise St.","MWC",TRUE,TRUE,TRUE,486773
-"Boston College","ACC",TRUE,TRUE,FALSE,486774
-"Boston U.","Patriot",TRUE,FALSE,TRUE,486775
-"Bowling Green","MAC",TRUE,FALSE,TRUE,486776
-"Bradley","MVC",TRUE,FALSE,TRUE,486777
-"Brown","Ivy",TRUE,FALSE,TRUE,486779
-"Bryant","NEC",TRUE,TRUE,TRUE,486780
-"Bucknell","Patriot",TRUE,TRUE,TRUE,486781
-"Buffalo","MAC",TRUE,TRUE,TRUE,486782
-"Butler","Big East",TRUE,FALSE,FALSE,486783
-"BYU","WCC",TRUE,TRUE,TRUE,486778
-"Cal Poly","Big West",TRUE,FALSE,TRUE,486784
-"Cal St. Fullerton","Big West",TRUE,FALSE,TRUE,486787
-"California","Pac 12",TRUE,FALSE,FALSE,486792
-"California Baptist","WAC",FALSE,TRUE,TRUE,487001
-"Campbell","Big South",TRUE,TRUE,TRUE,486797
-"Canisius","MAAC",TRUE,TRUE,TRUE,486798
-"Central Ark.","Southland",TRUE,TRUE,TRUE,486729
-"Central Conn. St.","NEC",TRUE,FALSE,TRUE,486799
-"Central Mich.","MAC",TRUE,TRUE,TRUE,486801
-"Charleston So.","Big South",TRUE,TRUE,TRUE,486769
-"Charlotte","C-USA",TRUE,TRUE,TRUE,486926
-"Chattanooga","Southern",TRUE,TRUE,TRUE,486679
-"Chicago St.","WAC",TRUE,FALSE,TRUE,486802
-"Cincinnati","AAC",TRUE,FALSE,FALSE,486803
-"Clemson","ACC",TRUE,FALSE,FALSE,486805
-"Cleveland St.","Horizon",TRUE,TRUE,TRUE,486806
-"Coastal Carolina","Sunbelt",TRUE,TRUE,TRUE,486807
-"Col. of Charleston","CAA",TRUE,TRUE,TRUE,486730
-"Colgate","Patriot",TRUE,TRUE,TRUE,486808
-"Colorado","Pac 12",TRUE,TRUE,FALSE,486810
-"Colorado St.","MWC",TRUE,TRUE,TRUE,486809
-"Columbia","Ivy",TRUE,FALSE,TRUE,486811
-"Coppin St.","MEAC",TRUE,FALSE,TRUE,486813
-"Cornell","Ivy",TRUE,FALSE,TRUE,486814
-"Creighton","Big East",TRUE,FALSE,FALSE,486815
-"CSU Bakersfield","WAC",TRUE,FALSE,TRUE,486785
-"CSUN","Big West",TRUE,FALSE,TRUE,486789
-"Dartmouth","Ivy",TRUE,FALSE,TRUE,486816
-"Davidson","A-10",TRUE,FALSE,TRUE,486817
-"Dayton","A-10",TRUE,FALSE,TRUE,486818
-"Delaware","CAA",TRUE,TRUE,TRUE,486821
-"Delaware St.","MEAC",TRUE,TRUE,TRUE,486820
-"Denver","Summit",TRUE,TRUE,TRUE,486822
-"DePaul","Big East",TRUE,FALSE,FALSE,486819
-"Detroit Mercy","Horizon",TRUE,FALSE,TRUE,486823
-"Drake","MVC",TRUE,TRUE,TRUE,486824
-"Drexel","CAA",TRUE,TRUE,TRUE,486825
-"Duke","ACC",TRUE,FALSE,FALSE,486826
-"Duquesne","A-10",TRUE,FALSE,TRUE,486827
-"East Carolina","AAC",TRUE,FALSE,FALSE,486828
-"Eastern Ill.","OVC",TRUE,TRUE,TRUE,486830
-"Eastern Ky.","OVC",TRUE,TRUE,TRUE,486831
-"Eastern Mich.","MAC",TRUE,TRUE,TRUE,486832
-"Eastern Wash.","Big Sky",TRUE,FALSE,TRUE,486833
-"Elon","CAA",TRUE,TRUE,TRUE,486731
-"ETSU","Southern",TRUE,FALSE,TRUE,486829
-"Evansville","MVC",TRUE,TRUE,TRUE,486834
-"Fairfield","MAAC",TRUE,TRUE,TRUE,486835
-"Fairleigh Dickinson","NEC",TRUE,TRUE,TRUE,486836
-"FGCU","A-Sun",TRUE,TRUE,TRUE,486748
-"FIU","C-USA",TRUE,TRUE,TRUE,486839
-"Fla. Atlantic","C-USA",TRUE,FALSE,TRUE,486838
-"Florida","SEC",TRUE,FALSE,FALSE,486841
-"Florida A&M","MEAC",FALSE,TRUE,TRUE,486837
-"Florida St.","ACC",TRUE,FALSE,FALSE,486840
-"Fordham","A-10",TRUE,FALSE,TRUE,486842
-"Fresno St.","MWC",TRUE,TRUE,TRUE,486786
-"Furman","Southern",TRUE,TRUE,TRUE,486843
-"Ga. Southern","Sunbelt",TRUE,FALSE,TRUE,486847
-"Gardner-Webb","Big South",TRUE,TRUE,TRUE,486732
-"George Mason","A-10",TRUE,FALSE,TRUE,486844
-"George Washington","A-10",TRUE,TRUE,TRUE,486845
-"Georgetown","Big East",TRUE,TRUE,FALSE,486846
-"Georgia","SEC",TRUE,FALSE,FALSE,486850
-"Georgia St.","Sunbelt",TRUE,TRUE,TRUE,486848
-"Georgia Tech","ACC",TRUE,FALSE,FALSE,486849
-"Gonzaga","WCC",TRUE,FALSE,TRUE,486851
-"Grambling","SWAC",TRUE,TRUE,TRUE,486852
-"Grand Canyon","WAC",TRUE,FALSE,TRUE,486733
-"Green Bay","Horizon",TRUE,TRUE,TRUE,486721
-"Hampton","Big South",TRUE,TRUE,TRUE,486853
-"Hartford","Am. East",TRUE,FALSE,TRUE,486854
-"Harvard","Ivy",TRUE,FALSE,TRUE,486855
-"Hawaii","Big West",TRUE,FALSE,TRUE,486856
-"High Point","Big South",TRUE,TRUE,TRUE,486745
-"Hofstra","CAA",TRUE,FALSE,TRUE,486857
-"Holy Cross","Patriot",TRUE,TRUE,TRUE,486858
-"Houston","AAC",TRUE,FALSE,FALSE,486860
-"Houston Baptist","Southland",TRUE,TRUE,TRUE,486859
-"Howard","MEAC",TRUE,TRUE,TRUE,486861
-"Idaho","Big Sky",TRUE,TRUE,TRUE,486863
-"Idaho St.","Big Sky",TRUE,FALSE,TRUE,486862
-"Illinois","Big 10",TRUE,FALSE,FALSE,486865
-"Illinois St.","MVC",TRUE,TRUE,TRUE,486864
-"Indiana","Big 10",TRUE,FALSE,FALSE,486868
-"Indiana St.","MVC",TRUE,TRUE,TRUE,486867
-"Iona","MAAC",TRUE,TRUE,TRUE,486870
-"Iowa","Big 10",TRUE,FALSE,FALSE,486872
-"Iowa St.","Big 12",TRUE,TRUE,FALSE,486871
-"IUPUI","Horizon",TRUE,TRUE,TRUE,486738
-"Jackson St.","SWAC",TRUE,FALSE,TRUE,486873
-"Jacksonville","A-Sun",TRUE,TRUE,TRUE,486875
-"Jacksonville St.","OVC",TRUE,TRUE,TRUE,486874
-"James Madison","CAA",TRUE,TRUE,TRUE,486876
-"Kansas","Big 12",TRUE,FALSE,FALSE,486878
-"Kansas City","WAC",TRUE,FALSE,TRUE,486739
-"Kansas St.","Big 12",TRUE,FALSE,FALSE,486877
-"Kennesaw St.","A-Sun",TRUE,TRUE,TRUE,486734
-"Kent St.","MAC",TRUE,FALSE,TRUE,486879
-"Kentucky","SEC",TRUE,FALSE,FALSE,486880
-"La Salle","A-10",TRUE,FALSE,TRUE,486881
-"La.-Monroe","Sunbelt",TRUE,FALSE,TRUE,486947
-"Lafayette","Patriot",TRUE,TRUE,TRUE,486882
-"Lamar University","Southland",TRUE,TRUE,TRUE,486883
-"Lehigh","Patriot",TRUE,TRUE,TRUE,486884
-"Liberty","A-Sun",TRUE,FALSE,TRUE,486885
-"Lipscomb","A-Sun",TRUE,TRUE,TRUE,486747
-"Little Rock","Sunbelt",TRUE,FALSE,TRUE,486765
-"LIU","NEC",TRUE,TRUE,TRUE,486886
-"LMU (CA)","WCC",TRUE,TRUE,TRUE,486893
-"Long Beach St.","Big West",TRUE,FALSE,TRUE,486788
-"Longwood","Big South",TRUE,TRUE,TRUE,486887
-"Louisiana","Sunbelt",TRUE,TRUE,TRUE,486670
-"Louisiana Tech","C-USA",TRUE,FALSE,TRUE,486889
-"Louisville","ACC",TRUE,FALSE,FALSE,486890
-"Loyola Chicago","MVC",TRUE,TRUE,TRUE,486894
-"Loyola Maryland","Patriot",TRUE,TRUE,TRUE,486892
-"LSU","SEC",TRUE,FALSE,FALSE,486888
-"Maine","Am. East",TRUE,TRUE,TRUE,486895
-"Manhattan","MAAC",TRUE,TRUE,TRUE,486896
-"Marist","MAAC",TRUE,TRUE,TRUE,486897
-"Marquette","Big East",TRUE,FALSE,FALSE,486898
-"Marshall","C-USA",TRUE,FALSE,TRUE,486899
-"Maryland","Big 10",TRUE,FALSE,FALSE,486901
-"Massachusetts","A-10",TRUE,FALSE,TRUE,486903
-"McNeese","Southland",TRUE,TRUE,TRUE,486904
-"Memphis","AAC",TRUE,FALSE,FALSE,486905
-"Mercer","Southern",TRUE,TRUE,TRUE,486906
-"Merrimack","NEC",FALSE,TRUE,TRUE,487079
-"Miami (FL)","ACC",TRUE,TRUE,FALSE,486908
-"Miami (OH)","MAC",TRUE,FALSE,TRUE,486907
-"Michigan","Big 10",TRUE,FALSE,FALSE,486910
-"Michigan St.","Big 10",TRUE,FALSE,FALSE,486909
-"Middle Tenn.","C-USA",TRUE,FALSE,TRUE,486911
-"Milwaukee","Horizon",TRUE,TRUE,TRUE,486723
-"Minnesota","Big 10",TRUE,FALSE,FALSE,486912
-"Mississippi St.","SEC",TRUE,FALSE,FALSE,486913
-"Mississippi Val.","SWAC",TRUE,FALSE,TRUE,486914
-"Missouri","SEC",TRUE,FALSE,FALSE,486916
-"Missouri St.","MVC",TRUE,TRUE,TRUE,486668
-"Monmouth","MAAC",TRUE,FALSE,TRUE,486917
-"Montana","Big Sky",TRUE,FALSE,TRUE,486919
-"Montana St.","Big Sky",TRUE,FALSE,TRUE,486918
-"Morehead St.","OVC",TRUE,TRUE,TRUE,486920
-"Morgan St.","MEAC",TRUE,FALSE,TRUE,486921
-"Mount St. Mary's","NEC",TRUE,TRUE,TRUE,486922
-"Murray St.","OVC",TRUE,TRUE,TRUE,486923
-"N.C. A&T","MEAC",TRUE,FALSE,TRUE,486941
-"N.C. Central","MEAC",TRUE,FALSE,TRUE,486942
-"Navy","Patriot",TRUE,TRUE,TRUE,486697
-"NC State","ACC",TRUE,FALSE,FALSE,486943
-"Nebraska","Big 10",TRUE,TRUE,FALSE,486929
-"Nevada","MWC",TRUE,TRUE,TRUE,486932
-"New Hampshire","Am. East",TRUE,TRUE,TRUE,486933
-"New Mexico","MWC",TRUE,TRUE,TRUE,486936
-"New Mexico St.","WAC",TRUE,FALSE,TRUE,486935
-"New Orleans","Southland",TRUE,FALSE,TRUE,486937
-"Niagara","MAAC",TRUE,FALSE,TRUE,486938
-"Nicholls St.","Southland",TRUE,FALSE,TRUE,486939
-"NJIT","A-Sun",TRUE,TRUE,TRUE,486934
-"Norfolk St.","MEAC",TRUE,FALSE,TRUE,486940
-"North Ala.","A-Sun",FALSE,TRUE,TRUE,486750
-"North Carolina","ACC",TRUE,TRUE,FALSE,486925
-"North Dakota","Summit",TRUE,TRUE,TRUE,486945
-"North Dakota St.","Summit",TRUE,FALSE,TRUE,486944
-"North Florida","A-Sun",TRUE,TRUE,TRUE,486740
-"North Texas","C-USA",TRUE,FALSE,TRUE,486946
-"Northeastern","CAA",TRUE,TRUE,TRUE,486948
-"Northern Ariz.","Big Sky",TRUE,TRUE,TRUE,486949
-"Northern Colo.","Big Sky",TRUE,FALSE,TRUE,486950
-"Northern Ill.","MAC",TRUE,FALSE,TRUE,486951
-"Northern Ky.","Horizon",TRUE,FALSE,TRUE,486953
-"Northwestern","Big 10",TRUE,TRUE,FALSE,486955
-"Northwestern St.","Southland",TRUE,FALSE,TRUE,486954
-"Notre Dame","ACC",TRUE,FALSE,FALSE,486956
-"Oakland","Horizon",TRUE,TRUE,TRUE,486957
-"Ohio","MAC",TRUE,FALSE,TRUE,486959
-"Ohio St.","Big 10",TRUE,FALSE,FALSE,486958
-"Oklahoma","Big 12",TRUE,FALSE,FALSE,486961
-"Oklahoma St.","Big 12",TRUE,FALSE,FALSE,486960
-"Old Dominion","C-USA",TRUE,TRUE,TRUE,486962
-"Ole Miss","SEC",TRUE,TRUE,FALSE,486915
-"Omaha","Summit",TRUE,TRUE,TRUE,486930
-"Oral Roberts","Summit",TRUE,TRUE,TRUE,486963
-"Oregon","Pac 12",TRUE,FALSE,FALSE,486965
-"Oregon St.","Pac 12",TRUE,FALSE,FALSE,486964
-"Pacific","WCC",TRUE,TRUE,TRUE,486966
-"Penn","Ivy",TRUE,FALSE,TRUE,486969
-"Penn St.","Big 10",TRUE,FALSE,FALSE,486968
-"Pepperdine","WCC",TRUE,TRUE,TRUE,486970
-"Pittsburgh","ACC",TRUE,TRUE,FALSE,486971
-"Portland","WCC",TRUE,TRUE,TRUE,486973
-"Portland St.","Big Sky",TRUE,FALSE,TRUE,486972
-"Prairie View","SWAC",TRUE,TRUE,TRUE,486974
-"Presbyterian","Big South",TRUE,TRUE,TRUE,486735
-"Princeton","Ivy",TRUE,FALSE,TRUE,486975
-"Providence","Big East",TRUE,FALSE,FALSE,486976
-"Purdue","Big 10",TRUE,FALSE,FALSE,486977
-"Purdue Fort Wayne","Summit",TRUE,TRUE,TRUE,486869
-"Quinnipiac","MAAC",TRUE,FALSE,TRUE,486978
-"Radford","Big South",TRUE,TRUE,TRUE,486979
-"Rhode Island","A-10",TRUE,FALSE,TRUE,486980
-"Rice","C-USA",TRUE,TRUE,TRUE,486981
-"Richmond","A-10",TRUE,FALSE,TRUE,486982
-"Rider","MAAC",TRUE,FALSE,TRUE,486983
-"Robert Morris","NEC",TRUE,FALSE,TRUE,486984
-"Rutgers","Big 10",TRUE,FALSE,FALSE,486985
-"Sacramento St.","Big Sky",TRUE,FALSE,TRUE,486790
-"Sacred Heart","NEC",TRUE,TRUE,TRUE,486986
-"Saint Francis (PA)","NEC",TRUE,TRUE,TRUE,486989
-"Saint Joseph's","A-10",TRUE,TRUE,TRUE,486991
-"Saint Louis","A-10",TRUE,FALSE,TRUE,486992
-"Saint Mary's (CA)","WCC",TRUE,TRUE,TRUE,486993
-"Saint Peter's","MAAC",TRUE,FALSE,TRUE,486994
-"Sam Houston St.","Southland",TRUE,TRUE,TRUE,486995
-"Samford","Southern",TRUE,TRUE,TRUE,486996
-"San Diego","WCC",TRUE,TRUE,TRUE,486998
-"San Diego St.","MWC",TRUE,TRUE,TRUE,486997
-"San Francisco","WCC",TRUE,TRUE,TRUE,486999
-"San Jose St.","MWC",TRUE,TRUE,TRUE,487000
-"Santa Clara","WCC",TRUE,TRUE,TRUE,486649
-"Seattle U","WAC",TRUE,FALSE,TRUE,486736
-"Seton Hall","Big East",TRUE,FALSE,FALSE,486651
-"SFA","Southland",TRUE,FALSE,TRUE,486672
-"Siena","MAAC",TRUE,FALSE,TRUE,486652
-"SIUE","OVC",TRUE,FALSE,TRUE,486663
-"SMU","AAC",TRUE,FALSE,FALSE,486664
-"South Alabama","Sunbelt",TRUE,FALSE,TRUE,486653
-"South Carolina","SEC",TRUE,FALSE,FALSE,486655
-"South Carolina St.","MEAC",TRUE,TRUE,TRUE,486654
-"South Dakota","Summit",TRUE,TRUE,TRUE,486657
-"South Dakota St.","Summit",TRUE,TRUE,TRUE,486656
-"South Fla.","AAC",TRUE,FALSE,FALSE,486658
-"Southeast Mo. St.","OVC",TRUE,FALSE,TRUE,486659
-"Southeastern La.","Southland",TRUE,TRUE,TRUE,486660
-"Southern California","Pac 12",TRUE,FALSE,FALSE,486661
-"Southern Ill.","MVC",TRUE,TRUE,TRUE,486662
-"Southern Miss.","C-USA",TRUE,TRUE,TRUE,486665
-"Southern U.","SWAC",TRUE,FALSE,TRUE,486666
-"Southern Utah","Big Sky",TRUE,FALSE,TRUE,486667
-"St. Bonaventure","A-10",TRUE,FALSE,TRUE,486987
-"St. Francis Brooklyn","NEC",TRUE,TRUE,TRUE,486988
-"St. John's (NY)","Big East",TRUE,FALSE,FALSE,486990
-"Stanford","Pac 12",TRUE,TRUE,FALSE,486671
-"Stetson","A-Sun",TRUE,TRUE,TRUE,486673
-"Stony Brook","Am. East",TRUE,TRUE,TRUE,486674
-"Syracuse","ACC",TRUE,FALSE,FALSE,486675
-"TCU","Big 12",TRUE,TRUE,FALSE,486683
-"Temple","AAC",TRUE,FALSE,FALSE,486676
-"Tennessee","SEC",TRUE,FALSE,FALSE,486680
-"Tennessee St.","OVC",TRUE,TRUE,TRUE,486677
-"Tennessee Tech","OVC",TRUE,FALSE,TRUE,486678
-"Texas","Big 12",TRUE,FALSE,FALSE,486687
-"Texas A&M","SEC",TRUE,FALSE,FALSE,486682
-"Texas Southern","SWAC",TRUE,TRUE,TRUE,486684
-"Texas St.","Sunbelt",TRUE,FALSE,TRUE,486669
-"Texas Tech","Big 12",TRUE,FALSE,FALSE,486685
-"The Citadel","Southern",TRUE,TRUE,TRUE,486804
-"Toledo","MAC",TRUE,FALSE,TRUE,486690
-"Towson","CAA",TRUE,TRUE,TRUE,486691
-"Troy","Sunbelt",TRUE,FALSE,TRUE,486692
-"Tulane","AAC",TRUE,FALSE,FALSE,486693
-"Tulsa","AAC",TRUE,FALSE,FALSE,486694
-"UAB","C-USA",TRUE,FALSE,TRUE,486756
-"UC Davis","Big West",TRUE,FALSE,TRUE,486793
-"UC Irvine","Big West",TRUE,FALSE,TRUE,486794
-"UC Riverside","Big West",TRUE,FALSE,TRUE,486796
-"UC Santa Barbara","Big West",TRUE,FALSE,TRUE,486791
-"UCF","AAC",TRUE,FALSE,FALSE,486800
-"UCLA","Pac 12",TRUE,FALSE,FALSE,486795
-"UConn","AAC",TRUE,FALSE,FALSE,486812
-"UIC","Horizon",TRUE,TRUE,TRUE,486866
-"UIW","Southland",TRUE,TRUE,TRUE,486741
-"UMass Lowell","Am. East",TRUE,TRUE,TRUE,486891
-"UMBC","Am. East",TRUE,TRUE,TRUE,486900
-"UMES","MEAC",TRUE,TRUE,TRUE,486902
-"UNC Asheville","Big South",TRUE,TRUE,TRUE,486924
-"UNC Greensboro","Southern",TRUE,TRUE,TRUE,486927
-"UNCW","CAA",TRUE,TRUE,TRUE,486928
-"UNI","MVC",TRUE,TRUE,TRUE,486952
-"UNLV","MWC",TRUE,TRUE,TRUE,486931
-"USC Upstate","Big South",TRUE,TRUE,TRUE,486743
-"UT Arlington","Sunbelt",TRUE,TRUE,TRUE,486686
-"UT Martin","OVC",TRUE,FALSE,TRUE,486681
-"Utah","Pac 12",TRUE,TRUE,FALSE,486699
-"Utah St.","MWC",TRUE,FALSE,TRUE,486698
-"Utah Valley","WAC",TRUE,FALSE,TRUE,486749
-"UTEP","C-USA",TRUE,TRUE,TRUE,486688
-"UTRGV","WAC",TRUE,FALSE,TRUE,486967
-"UTSA","C-USA",TRUE,TRUE,TRUE,486689
-"Valparaiso","MVC",TRUE,TRUE,TRUE,486700
-"Vanderbilt","SEC",TRUE,TRUE,FALSE,486701
-"VCU","A-10",TRUE,FALSE,TRUE,486704
-"Vermont","Am. East",TRUE,FALSE,TRUE,486702
-"Villanova","Big East",TRUE,FALSE,FALSE,486703
-"Virginia","ACC",TRUE,FALSE,FALSE,486707
-"Virginia Tech","ACC",TRUE,TRUE,FALSE,486706
-"VMI","Southern",TRUE,TRUE,TRUE,486705
-"Wagner","NEC",TRUE,FALSE,TRUE,486708
-"Wake Forest","ACC",TRUE,TRUE,FALSE,486709
-"Washington","Pac 12",TRUE,TRUE,FALSE,486711
-"Washington St.","Pac 12",TRUE,FALSE,FALSE,486710
-"Weber St.","Big Sky",TRUE,TRUE,TRUE,486712
-"West Virginia","Big 12",TRUE,FALSE,FALSE,486713
-"Western Caro.","Southern",TRUE,TRUE,TRUE,486714
-"Western Ill.","Summit",TRUE,FALSE,TRUE,486715
-"Western Ky.","C-USA",TRUE,FALSE,TRUE,486716
-"Western Mich.","MAC",TRUE,TRUE,TRUE,486717
-"Wichita St.","AAC",TRUE,FALSE,FALSE,486718
-"William & Mary","CAA",TRUE,TRUE,TRUE,486719
-"Winthrop","Big South",TRUE,FALSE,TRUE,486720
-"Wisconsin","Big 10",TRUE,FALSE,FALSE,486722
-"Wofford","Southern",TRUE,TRUE,TRUE,486742
-"Wright St.","Horizon",TRUE,TRUE,TRUE,486724
-"Wyoming","MWC",TRUE,TRUE,TRUE,486725
-"Xavier","Big East",TRUE,TRUE,FALSE,486726
-"Yale","Ivy",TRUE,FALSE,TRUE,486727
-"Youngstown St.","Horizon",TRUE,TRUE,TRUE,486728
+"team","conference","ncaa_id"
+"A&M-Corpus Christi","Southland",505566
+"Abilene Christian","Southland",505571
+"Air Force","MWC",505515
+"Akron","MAC",505572
+"Alabama","SEC",505575
+"Alabama A&M","SWAC",505573
+"Alabama St.","SWAC",505574
+"Albany (NY)","Am. East",505577
+"Alcorn","SWAC",505578
+"American","Patriot",505579
+"Appalachian St.","Sunbelt",505580
+"Arizona","Pac 12",505582
+"Arizona St.","Pac 12",505581
+"Ark.-Pine Bluff","SWAC",505557
+"Arkansas","SEC",505584
+"Arkansas St.","Sunbelt",505583
+"Army West Point","Patriot",505516
+"Auburn","SEC",505586
+"Austin Peay","OVC",505587
+"Ball St.","MAC",505588
+"Baylor","Big 12",505590
+"Bellarmine","Asun",505877
+"Belmont","OVC",505564
+"Bethune-Cookman","MEAC",505591
+"Binghamton","Am. East",505592
+"Boise St.","MWC",505593
+"Boston College","ACC",505594
+"Boston U.","Patriot",505595
+"Bowling Green","MAC",505596
+"Bradley","MVC",505597
+"Brown","Ivy",505599
+"Bryant","NEC",505600
+"Bucknell","Patriot",505601
+"Buffalo","MAC",505602
+"Butler","Big East",505603
+"BYU","WCC",505598
+"Cal Poly","Big West",505604
+"Cal St. Fullerton","Big West",505607
+"California","Pac 12",505612
+"California Baptist","WAC",505841
+"Campbell","Big South",505617
+"Canisius","MAAC",505618
+"Central Ark.","Southland",505549
+"Central Conn. St.","NEC",505619
+"Central Mich.","MAC",505621
+"Charleston So.","Big South",505589
+"Charlotte","C-USA",505746
+"Chattanooga","Southern",505499
+"Chicago St.","WAC",505622
+"Cincinnati","AAC",505623
+"Clemson","ACC",505625
+"Cleveland St.","Horizon",505626
+"Coastal Carolina","Sunbelt",505627
+"Col. of Charleston","CAA",505550
+"Colgate","Patriot",505628
+"Colorado","Pac 12",505630
+"Colorado St.","MWC",505629
+"Columbia","Ivy",505631
+"Coppin St.","MEAC",505633
+"Cornell","Ivy",505634
+"Creighton","Big East",505635
+"CSU Bakersfield","WAC",505605
+"CSUN","Big West",505609
+"Dartmouth","Ivy",505636
+"Davidson","A-10",505637
+"Dayton","A-10",505638
+"Delaware","CAA",505641
+"Delaware St.","MEAC",505640
+"Denver","Summit",505642
+"DePaul","Big East",505639
+"Detroit Mercy","Horizon",505643
+"Dixie St.","WAC",506427
+"Drake","MVC",505644
+"Drexel","CAA",505645
+"Duke","ACC",505646
+"Duquesne","A-10",505647
+"East Carolina","AAC",505648
+"Eastern Ill.","OVC",505650
+"Eastern Ky.","OVC",505651
+"Eastern Mich.","MAC",505652
+"Eastern Wash.","Big Sky",505653
+"Elon","CAA",505551
+"ETSU","Southern",505649
+"Evansville","MVC",505654
+"Fairfield","MAAC",505655
+"Fairleigh Dickinson","NEC",505656
+"FGCU","A-Sun",505568
+"FIU","C-USA",505659
+"Fla. Atlantic","C-USA",505658
+"Florida","SEC",505661
+"Florida A&M","MEAC",505657
+"Florida St.","ACC",505660
+"Fordham","A-10",505662
+"Fresno St.","MWC",505606
+"Furman","Southern",505663
+"Ga. Southern","Sunbelt",505667
+"Gardner-Webb","Big South",505552
+"George Mason","A-10",505664
+"George Washington","A-10",505665
+"Georgetown","Big East",505666
+"Georgia","SEC",505670
+"Georgia St.","Sunbelt",505668
+"Georgia Tech","ACC",505669
+"Gonzaga","WCC",505671
+"Grambling","SWAC",505672
+"Grand Canyon","WAC",505553
+"Green Bay","Horizon",505541
+"Hampton","Big South",505673
+"Hartford","Am. East",505674
+"Harvard","Ivy",505675
+"Hawaii","Big West",505676
+"High Point","Big South",505565
+"Hofstra","CAA",505677
+"Holy Cross","Patriot",505678
+"Houston","AAC",505680
+"Houston Baptist","Southland",505679
+"Howard","MEAC",505681
+"Idaho","Big Sky",505683
+"Idaho St.","Big Sky",505682
+"Illinois","Big 10",505685
+"Illinois St.","MVC",505684
+"Indiana","Big 10",505688
+"Indiana St.","MVC",505687
+"Iona","MAAC",505690
+"Iowa","Big 10",505692
+"Iowa St.","Big 12",505691
+"IUPUI","Horizon",505558
+"Jackson St.","SWAC",505693
+"Jacksonville","A-Sun",505695
+"Jacksonville St.","OVC",505694
+"James Madison","CAA",505696
+"Kansas","Big 12",505698
+"Kansas City","WAC",505559
+"Kansas St.","Big 12",505697
+"Kennesaw St.","A-Sun",505554
+"Kent St.","MAC",505699
+"Kentucky","SEC",505700
+"La Salle","A-10",505701
+"La.-Monroe","Sunbelt",505767
+"Lafayette","Patriot",505702
+"Lamar University","Southland",505703
+"Lehigh","Patriot",505704
+"Liberty","A-Sun",505705
+"Lipscomb","A-Sun",505567
+"Little Rock","Sunbelt",505585
+"LIU","NEC",505706
+"LMU (CA)","WCC",505713
+"Long Beach St.","Big West",505608
+"Longwood","Big South",505707
+"Louisiana","Sunbelt",505490
+"Louisiana Tech","C-USA",505709
+"Louisville","ACC",505710
+"Loyola Chicago","MVC",505714
+"Loyola Maryland","Patriot",505712
+"LSU","SEC",505708
+"Maine","Am. East",505715
+"Manhattan","MAAC",505716
+"Marist","MAAC",505717
+"Marquette","Big East",505718
+"Marshall","C-USA",505719
+"Maryland","Big 10",505721
+"Massachusetts","A-10",505723
+"McNeese","Southland",505724
+"Memphis","AAC",505725
+"Mercer","Southern",505726
+"Merrimack","NEC",505842
+"Miami (FL)","ACC",505728
+"Miami (OH)","MAC",505727
+"Michigan","Big 10",505730
+"Michigan St.","Big 10",505729
+"Middle Tenn.","C-USA",505731
+"Milwaukee","Horizon",505543
+"Minnesota","Big 10",505732
+"Mississippi St.","SEC",505733
+"Mississippi Val.","SWAC",505734
+"Missouri","SEC",505736
+"Missouri St.","MVC",505488
+"Monmouth","MAAC",505737
+"Montana","Big Sky",505739
+"Montana St.","Big Sky",505738
+"Morehead St.","OVC",505740
+"Morgan St.","MEAC",505741
+"Mount St. Mary's","NEC",505742
+"Murray St.","OVC",505743
+"N.C. A&T","MEAC",505761
+"N.C. Central","MEAC",505762
+"Navy","Patriot",505517
+"NC State","ACC",505763
+"Nebraska","Big 10",505749
+"Nevada","MWC",505752
+"New Hampshire","Am. East",505753
+"New Mexico","MWC",505756
+"New Mexico St.","WAC",505755
+"New Orleans","Southland",505757
+"Niagara","MAAC",505758
+"Nicholls St.","Southland",505759
+"NJIT","A-Sun",505754
+"Norfolk St.","MEAC",505760
+"North Ala.","A-Sun",505570
+"North Carolina","ACC",505745
+"North Dakota","Summit",505765
+"North Dakota St.","Summit",505764
+"North Florida","A-Sun",505560
+"North Texas","C-USA",505766
+"Northeastern","CAA",505768
+"Northern Ariz.","Big Sky",505769
+"Northern Colo.","Big Sky",505770
+"Northern Ill.","MAC",505771
+"Northern Ky.","Horizon",505773
+"Northwestern","Big 10",505775
+"Northwestern St.","Southland",505774
+"Notre Dame","ACC",505776
+"Oakland","Horizon",505777
+"Ohio","MAC",505779
+"Ohio St.","Big 10",505778
+"Oklahoma","Big 12",505781
+"Oklahoma St.","Big 12",505780
+"Old Dominion","C-USA",505782
+"Ole Miss","SEC",505735
+"Omaha","Summit",505750
+"Oral Roberts","Summit",505783
+"Oregon","Pac 12",505785
+"Oregon St.","Pac 12",505784
+"Pacific","WCC",505786
+"Penn","Ivy",505789
+"Penn St.","Big 10",505788
+"Pepperdine","WCC",505790
+"Pittsburgh","ACC",505791
+"Portland","WCC",505793
+"Portland St.","Big Sky",505792
+"Prairie View","SWAC",505794
+"Presbyterian","Big South",505555
+"Princeton","Ivy",505795
+"Providence","Big East",505796
+"Purdue","Big 10",505797
+"Purdue Fort Wayne","Summit",505689
+"Quinnipiac","MAAC",505798
+"Radford","Big South",505799
+"Rhode Island","A-10",505800
+"Rice","C-USA",505801
+"Richmond","A-10",505802
+"Rider","MAAC",505803
+"Robert Morris","NEC",505804
+"Rutgers","Big 10",505805
+"Sacramento St.","Big Sky",505610
+"Sacred Heart","NEC",505806
+"Saint Francis (PA)","NEC",505809
+"Saint Joseph's","A-10",505831
+"Saint Louis","A-10",505832
+"Saint Mary's (CA)","WCC",505833
+"Saint Peter's","MAAC",505834
+"Sam Houston St.","Southland",505835
+"Samford","Southern",505836
+"San Diego","WCC",505838
+"San Diego St.","MWC",505837
+"San Francisco","WCC",505839
+"San Jose St.","MWC",505840
+"Santa Clara","WCC",505470
+"Seattle U","WAC",505556
+"Seton Hall","Big East",505471
+"SFA","Southland",505492
+"Siena","MAAC",505472
+"SIUE","OVC",505483
+"SMU","AAC",505484
+"South Alabama","Sunbelt",505473
+"South Carolina","SEC",505475
+"South Carolina St.","MEAC",505474
+"South Dakota","Summit",505477
+"South Dakota St.","Summit",505476
+"South Fla.","AAC",505478
+"Southeast Mo. St.","OVC",505479
+"Southeastern La.","Southland",505480
+"Southern California","Pac 12",505481
+"Southern Ill.","MVC",505482
+"Southern Miss.","C-USA",505485
+"Southern U.","SWAC",505486
+"Southern Utah","Big Sky",505487
+"St. Bonaventure","A-10",505807
+"St. Francis Brooklyn","NEC",505808
+"St. John's (NY)","Big East",505830
+"Stanford","Pac 12",505491
+"Stetson","A-Sun",505493
+"Stony Brook","Am. East",505494
+"Syracuse","ACC",505495
+"Tarleton St.","WAC",506541
+"TCU","Big 12",505503
+"Temple","AAC",505496
+"Tennessee","SEC",505500
+"Tennessee St.","OVC",505497
+"Tennessee Tech","OVC",505498
+"Texas","Big 12",505507
+"Texas A&M","SEC",505502
+"Texas Southern","SWAC",505504
+"Texas St.","Sunbelt",505489
+"Texas Tech","Big 12",505505
+"The Citadel","Southern",505624
+"Toledo","MAC",505510
+"Towson","CAA",505511
+"Troy","Sunbelt",505512
+"Tulane","AAC",505512
+"Tulsa","AAC",505514
+"UAB","C-USA",505576
+"UC Davis","Big West",505613
+"UC Irvine","Big West",505614
+"UC Riverside","Big West",505616
+"UC San Diego","Big West",505932
+"UC Santa Barbara","Big West",505611
+"UCF","AAC",505620
+"UCLA","Pac 12",505615
+"UConn","AAC",505632
+"UIC","Horizon",505686
+"UIW","Southland",505561
+"UMass Lowell","Am. East",505711
+"UMBC","Am. East",505720
+"UMES","MEAC",505722
+"UNC Asheville","Big South",505744
+"UNC Greensboro","Southern",505747
+"UNCW","CAA",505748
+"UNI","MVC",505772
+"UNLV","MWC",505751
+"USC Upstate","Big South",505563
+"UT Arlington","Sunbelt",505506
+"UT Martin","OVC",505501
+"Utah","Pac 12",505519
+"Utah St.","MWC",505518
+"Utah Valley","WAC",505569
+"UTEP","C-USA",505508
+"UTRGV","WAC",505787
+"UTSA","C-USA",505509
+"Valparaiso","MVC",505520
+"Vanderbilt","SEC",505521
+"VCU","A-10",505524
+"Vermont","Am. East",505522
+"Villanova","Big East",505523
+"Virginia","ACC",505527
+"Virginia Tech","ACC",505526
+"VMI","Southern",505525
+"Wagner","NEC",505528
+"Wake Forest","ACC",505529
+"Washington","Pac 12",505531
+"Washington St.","Pac 12",505530
+"Weber St.","Big Sky",505532
+"West Virginia","Big 12",505533
+"Western Caro.","Southern",505534
+"Western Ill.","Summit",505535
+"Western Ky.","C-USA",505536
+"Western Mich.","MAC",505537
+"Wichita St.","AAC",505538
+"William & Mary","CAA",505539
+"Winthrop","Big South",505540
+"Wisconsin","Big 10",505542
+"Wofford","Southern",505562
+"Wright St.","Horizon",505544
+"Wyoming","MWC",505545
+"Xavier","Big East",505546
+"Yale","Ivy",505547
+"Youngstown St.","Horizon",505548

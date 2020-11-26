@@ -2,12 +2,12 @@
 library(dplyr) 
 library(readr)
 library(lubridate)
-x <- read_csv(paste("3.0_Files/Results/2019-20/NCAA_Hoops_Results",
+x <- read_csv(paste("3.0_Files/Results/2020-21/NCAA_Hoops_Results",
                      month(Sys.Date()), day(Sys.Date()), "2020.csv", sep = "_"))
 train <- read_csv("3.0_Files/Results/2017-18/training.csv")
 confs <- read_csv("3.0_Files/Info/conferences.csv")
 deadlines <- read_csv("3.0_Files/Info/deadlines.csv") %>%
-  mutate(deadline = as.Date(deadline, "%m/%d/%y"))
+  mutate(deadline = as.Date(deadline, "%m/%d/%y") %m+% years(1))
 priors <- read_csv("3.0_Files/Info/prior.csv")
 source("3.0_Files/powerrankings.R")
 source("3.0_Files/Ivy_Sims.R")
@@ -18,26 +18,27 @@ source("3.0_Files/helpers.R")
 source("3.0_Files/tourney_sim.R")
 source("3.0_Files/ncaa_sims.R")
 ########################  Data Cleaning ########################################
-x <- x %>%
+x <- 
+  x %>%
   rename(team_score = teamscore, opp_score = oppscore) %>%
   mutate(date = as.Date(paste(year, month, day, sep = "-")),
          score_diff = team_score - opp_score,
          total_score = team_score + opp_score,
-         season_id = "2019-20", game_id = NA, opp_game_id = NA, 
+         season_id = "2020-21", game_id = NA, opp_game_id = NA, 
          team_conf = NA, opp_conf = NA, conf_game = NA) %>%
   select(date, team, opponent, location, team_score, opp_score,
          score_diff, total_score, game_id, opp_game_id, team_conf, opp_conf,
-         year, month, day, season_id, D1, OT) %>% 
+         year, month, day, season_id, D1, OT, postponed, canceled) %>% 
   filter(D1 == 2)
 
 teams <- sort(unique(x$team))
 
 ### Game IDs
-for(i in 1:length(teams)) {
-  x[x$team == teams[i],] <- x %>%
-    filter(team == teams[i]) %>%
-    mutate(game_id = seq(1, sum(team == teams[i]), 1))
-}
+x <- 
+  x %>% 
+  group_by(team) %>% 
+  mutate('game_id' = 1:n()) %>% 
+  ungroup() 
 
 ### Opp Game IDs
 x <- 
@@ -51,13 +52,14 @@ x <-
   select(-game_id.y)
 
 ### Confs
-x <- mutate(x, team_conf = sapply(x$team, get_conf),
+x <- 
+  mutate(x, team_conf = sapply(x$team, get_conf),
             opp_conf = sapply(x$opponent, get_conf),
             conf_game = team_conf == opp_conf)
-x$conf_game[x$team %in%  c("Arizona St.", "Colorado") & x$date == "2019-11-08"] <- F
 
 ### Reg Season
-x <- inner_join(x, deadlines, by = c("team_conf" = "conf")) %>%
+x <- 
+  inner_join(x, deadlines, by = c("team_conf" = "conf")) %>%
   mutate(reg_season = date < deadline) %>%
   select(-deadline)
 
@@ -90,27 +92,27 @@ priors <- mutate(priors,
 
 w <- sapply(teams, prior_weight)
 
-lm.hoops$coefficients[2:353] <- 
-  lm.hoops$coefficients[2:353] * w[-1] + priors$rel_yusag_coeff[-1] * (1-w[-1])
-lm.hoops$coefficients[354:705] <- 
-  lm.hoops$coefficients[354:705] * w[-1] - priors$rel_yusag_coeff[-1] * (1-w[-1])
-lm.off$coefficients[2:353] <- 
-  lm.off$coefficients[2:353] * w[-1] + priors$rel_off_coeff[-1] * (1-w[-1])
-lm.off$coefficients[354:705] <- 
-  lm.off$coefficients[354:705] * w[-1] - priors$rel_off_coeff[-1] * (1-w[-1])
-lm.def$coefficients[2:353] <- 
-  lm.def$coefficients[2:353] * w[-1] - priors$rel_def_coeff[-1] * (1-w[-1])
-lm.def$coefficients[354:705] <- 
-  lm.def$coefficients[354:705] * w[-1] + priors$rel_def_coeff[-1] * (1-w[-1])
+lm.hoops$coefficients[2:357] <- 
+  lm.hoops$coefficients[2:357] * w[-1] + priors$rel_yusag_coeff[-1] * (1-w[-1])
+lm.hoops$coefficients[358:713] <- 
+  lm.hoops$coefficients[358:713] * w[-1] - priors$rel_yusag_coeff[-1] * (1-w[-1])
+lm.off$coefficients[2:357] <- 
+  lm.off$coefficients[2:357] * w[-1] + priors$rel_off_coeff[-1] * (1-w[-1])
+lm.off$coefficients[358:713] <- 
+  lm.off$coefficients[358:713] * w[-1] - priors$rel_off_coeff[-1] * (1-w[-1])
+lm.def$coefficients[2:357] <- 
+  lm.def$coefficients[2:357] * w[-1] - priors$rel_def_coeff[-1] * (1-w[-1])
+lm.def$coefficients[358:713] <- 
+  lm.def$coefficients[358:713] * w[-1] + priors$rel_def_coeff[-1] * (1-w[-1])
 
-lm.hoops$coefficients[c(1, 706:707)] <- 
-  w[1] * lm.hoops$coefficients[c(1, 706:707)] + 
+lm.hoops$coefficients[c(1, 714:715)] <- 
+  w[1] * lm.hoops$coefficients[c(1, 714:715)] + 
   (1-w[1]) * c(3.34957772, -3.34957772, -6.69915544)
-lm.off$coefficients[c(1, 706:707)] <- 
-  w[1] * lm.off$coefficients[c(1, 706:707)] + 
+lm.off$coefficients[c(1, 714:715)] <- 
+  w[1] * lm.off$coefficients[c(1, 714:715)] + 
   (1-w[1]) * c(68.19705698, -2.93450334,  -3.34957772)
-lm.def$coefficients[c(1, 706:707)] <- 
-  w[1] * lm.def$coefficients[c(1, 706:707)] + 
+lm.def$coefficients[c(1, 714:715)] <- 
+  w[1] * lm.def$coefficients[c(1, 714:715)] + 
   (1-w[1]) * c(64.84747926, 0.41507438,  3.34957772)
 
 ################################ Power Rankings ################################
