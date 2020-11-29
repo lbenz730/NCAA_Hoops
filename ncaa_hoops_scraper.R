@@ -24,7 +24,7 @@ teamid <-
   arrange(team)
 
 ################################################################################
-baseurl <- 'http://stats.ncaa.org/teams/'
+baseurl <- 'https://stats.ncaa.org/teams/'
 tournaments <- c('Empire Classic (Riverside)', 'Myrtle Beach Invitational', 
                  'Maui Invitational (Mainland)', 'Cayman Islands (Mainland)',
                  "- MBB Negro League Baseball Museum Tipoff Classic",
@@ -43,8 +43,7 @@ for (i in 1:nrow(teamid)) {
   # Elegantly scan and handle hiccups:
   ct <- 0
   while (ct >= 0 && ct <= 5) {
-    x <- try(scan(paste(baseurl, teamid$ncaa_id[i], sep=""),
-                  what="", sep="\n"))
+    x <- try(readr::read_lines(paste(baseurl, teamid$ncaa_id[i], sep="")))
     if (class(x) != "try-error") {
       ct <- -1
     } else {
@@ -65,9 +64,10 @@ for (i in 1:nrow(teamid)) {
     datelines <- grep("\\d\\d/\\d\\d/\\d\\d\\d\\d", x)
     
     dates <- stripwhite(gsub("<[^<>]*>", "", x[datelines]))
-    if(length(dates) > 0) {
-      dates <- gsub(" .*", "", dates)
-      ix <- !dates %in% c("Start", "Team", "End")
+    
+    dates <- gsub(" .*", "", dates)
+    ix <- !dates %in% c("Start", "Team", "End")
+    if(sum(ix) > 0) {
       datelines <- datelines[ix]
       dates <- dates[ix]
       dates <- matrix(as.numeric(unlist(strsplit(dates, "/"))),

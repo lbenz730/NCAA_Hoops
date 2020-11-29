@@ -1,8 +1,8 @@
 pr_compute <- function(by_conf) {
   ### Avg to scale coefficintes to 0
-  avg <- mean(lm.hoops$coefficients[2:353], na.rm = T)
-  off_avg <-  mean(lm.off$coefficients[2:353], na.rm = T)
-  def_avg <- mean(lm.def$coefficients[2:353], na.rm = T)
+  avg <- mean(lm.hoops$coefficients[2:length(teams)], na.rm = T)
+  off_avg <-  mean(lm.off$coefficients[2:length(teams)], na.rm = T)
+  def_avg <- mean(lm.def$coefficients[2:length(teams)], na.rm = T)
   
   ### Store Power Rankings Data Frame
   power_rankings <- data.frame("team" = teams,
@@ -10,16 +10,16 @@ pr_compute <- function(by_conf) {
                                stringsAsFactors = F)
   
   power_rankings <- mutate(power_rankings,
-                           yusag_coeff = c(0, lm.hoops$coefficients[2:353]) - avg,
-                           off_coeff = c(0, lm.off$coefficients[2:353]) - off_avg,
-                           def_coeff = -(c(0, lm.def$coefficients[2:353]) - def_avg))
+                           yusag_coeff = c(0, lm.hoops$coefficients[2:length(teams)]) - avg,
+                           off_coeff = c(0, lm.off$coefficients[2:length(teams)]) - off_avg,
+                           def_coeff = -(c(0, lm.def$coefficients[2:length(teams)]) - def_avg))
   power_rankings <- 
     arrange(power_rankings, desc(yusag_coeff)) %>%
-    mutate(rank = 1:353) %>%
+    mutate(rank = 1:length(teams)) %>%
     arrange(desc(off_coeff)) %>%
-    mutate(off_rank = 1:353) %>%
+    mutate(off_rank = 1:length(teams)) %>%
     arrange(desc(def_coeff)) %>%
-    mutate(def_rank = 1:353) %>%
+    mutate(def_rank = 1:length(teams)) %>%
     arrange(desc(yusag_coeff))
   
   ### Return w/out sorting by conference

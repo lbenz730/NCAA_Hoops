@@ -1,42 +1,35 @@
 make_bracket <- function(tourney) {
   bracket <- data.frame("team" = teams,
-                        "conf" = rep(NA, 353),
-                        "yusag_coeff" = rep(NA, 353),
-                        "rpi" = rep(NA, 353),
-                        "sor" = rep(NA, 353),
-                        "wab" = rep(NA, 353),
-                        "qual_bonus" = rep(NA, 353),
-                        "yusag_rank" = rep(NA, 353),
-                        "rpi_rank" = rep(NA, 353),
-                        "sor_rank" = rep(NA, 353),
-                        "resume_rank" = rep(NA, 353),
-                        "wab_rank" = rep(NA, 353),
-                        "mid_major" = rep(NA, 353),
-                        "loss_bonus" = rep(NA, 353),
+                        "conf" = rep(NA, 357),
+                        "yusag_coeff" = rep(NA, 357),
+                        "sor" = rep(NA, 357),
+                        "wab" = rep(NA, 357),
+                        "qual_bonus" = rep(NA, 357),
+                        "yusag_rank" = rep(NA, 357),
+                        "sor_rank" = rep(NA, 357),
+                        "resume_rank" = rep(NA, 357),
+                        "wab_rank" = rep(NA, 357),
+                        "mid_major" = rep(NA, 357),
+                        "loss_bonus" = rep(NA, 357),
                         stringsAsFactors = F)
   
   ### Get Advanced Metric Ranks
-  rpi <- arrange(rpi, desc(rpi)) %>% 
-    mutate(rank = 1:353)
-  
   resumes <- 
     arrange(resumes, desc(sor)) %>%
-    mutate(sor_rank = 1:353) %>%
+    mutate(sor_rank = 1:357) %>%
     arrange(desc(wab)) %>%
-    mutate(wab_rank = 1:353) %>%
+    mutate(wab_rank = 1:357) %>%
     arrange(desc(qual_bonus)) %>%
-    mutate(resume_rank = 1:353)
+    mutate(resume_rank = 1:357)
   
   
   for(i in 1:length(teams)) {
     bracket$yusag_coeff[i] <- power_rankings$yusag_coeff[power_rankings$team == teams[i]]
     bracket$conf[i] <- get_conf(teams[i])
-    bracket$rpi[i] <- rpi$rpi[rpi$team == teams[i]]
     bracket$sor[i] <- resumes$sor[resumes$team == teams[i]]
     bracket$wab[i] <- resumes$wab[resumes$team == teams[i]]
     bracket$qual_bonus[i] <- resumes$qual_bonus[resumes$team == teams[i]]
     bracket$yusag_rank[i] <- power_rankings$rank[power_rankings$team == teams[i]]
-    bracket$rpi_rank[i] <- rpi$rank[rpi$team == teams[i]]
     bracket$sor_rank[i] <- resumes$sor_rank[resumes$team == teams[i]]
     bracket$wab_rank[i] <- resumes$wab_rank[resumes$team == teams[i]]  
     bracket$resume_rank[i] <- resumes$resume_rank[resumes$team == teams[i]]
@@ -47,11 +40,11 @@ make_bracket <- function(tourney) {
     bracket$conf[i] %in% c("Big 10", "Big 12", "Big East", "ACC", "Pac 12", "Big 12")
   }
   
-  bracket$blend <- 0.15 * bracket$rpi_rank + 0.125 * bracket$wab_rank + 
-    0.1 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.425 * bracket$resume_rank
+  bracket$blend <-  0.125 * bracket$wab_rank + 
+    0.15 * bracket$sor_rank + 0.25 * bracket$yusag_rank + 0.475 * bracket$resume_rank
   
-  bracket$avg <- 0.2 * bracket$rpi_rank + 0.2 * bracket$wab_rank + 
-    0.2 * bracket$sor_rank + 0.2 * bracket$yusag_rank + 0.2 * bracket$resume_rank 
+  bracket$avg <-  0.25 * bracket$wab_rank + 
+    0.25 * bracket$sor_rank + 0.25 * bracket$yusag_rank + 0.25 * bracket$resume_rank 
   
   bracket <- arrange(bracket, desc(yusag_coeff))
   
@@ -69,9 +62,9 @@ make_bracket <- function(tourney) {
     bind_rows(read.csv("3.0_Files/Bracketology/historical/bracket_math_2017.csv", as.is = T)) %>%
     bind_rows(read.csv("3.0_Files/Bracketology/historical/bracket_math_2018.csv", as.is = T)) 
   
-  bracket_math$avg <- 0.2 * bracket_math$rpi_rank + 
-    0.2 * bracket_math$wab_rank +  0.2 * bracket_math$sor_rank + 
-    0.2 * bracket_math$yusag_rank + 0.2 * bracket_math$resume_rank 
+  bracket_math$avg <- 
+    0.25 * bracket_math$wab_rank +  0.25 * bracket_math$sor_rank + 
+    0.25 * bracket_math$yusag_rank + 0.25 * bracket_math$resume_rank 
   
   bracket_math$bid <- bracket_math$seed <= 10
   glm.madness <- suppressWarnings(glm(bid ~ blend +
@@ -88,26 +81,28 @@ make_bracket <- function(tourney) {
   bracket$odds <- 
     round(predict(glm.madness, newdata = bracket, type = "response"), 4) * 100
   bracket$odds <- ifelse(bracket$odds > 99.9, 99.99, bracket$odds)
-  bracket$odds[bracket$wins - bracket$losses <= 2] <- 
-    bracket$odds[bracket$wins - bracket$losses <= 2]/4
+  bracket$odds[which(bracket$wins - bracket$losses <= 2)] <- 
+    bracket$odds[which(bracket$wins - bracket$losses <= 2)]/4
   bracket$seed <- 
     predict(lm.seed, newdata = bracket, type = "response")
   
-  correct <- c("Texas Tech", "Saint Mary's (CA)", "Duke", "Baylor")
-  correct2 <- c("Purdue", "UCLA")
-  correct3 <- c("Gonzaga")
-  correct4 <- c("San Diego St.", "Maryland")
-  bracket$odds[bracket$team %in% correct] <- bracket$odds[bracket$team %in% correct] + 0.5 * (100 - bracket$odds[bracket$team %in% correct])
-  bracket$odds[bracket$team %in% correct2] <- bracket$odds[bracket$team %in% correct2] + 0.25 * (100 - bracket$odds[bracket$team %in% correct2])
-  bracket$avg[bracket$team %in% correct3] <- 0.8 * bracket$avg[bracket$team %in% correct3]
-  bracket$avg[bracket$team %in% correct4] <- 3 * bracket$avg[bracket$team %in% correct4]
+  # correct <- c("Texas Tech", "Saint Mary's (CA)", "Duke", "Baylor")
+  # correct2 <- c("Purdue", "UCLA")
+  # correct3 <- c("Gonzaga")
+  # correct4 <- c("San Diego St.", "Maryland")
+  # bracket$odds[bracket$team %in% correct] <- bracket$odds[bracket$team %in% correct] + 0.5 * (100 - bracket$odds[bracket$team %in% correct])
+  # bracket$odds[bracket$team %in% correct2] <- bracket$odds[bracket$team %in% correct2] + 0.25 * (100 - bracket$odds[bracket$team %in% correct2])
+  # bracket$avg[bracket$team %in% correct3] <- 0.8 * bracket$avg[bracket$team %in% correct3]
+  # bracket$avg[bracket$team %in% correct4] <- 3 * bracket$avg[bracket$team %in% correct4]
   bracket <- arrange(bracket, desc(round(odds, 1)), avg)
   
   if(tourney == T) {
     ### Get Autobids
     autobids <- vector()
-    for(j in 1:length(unique(confs$conference))){
-      autobids[j] <- autobid_calc(unique(confs$conference)[j])
+    con <- setdiff(unique(confs$conference), 'Ivy')
+    for(j in 1:length(con)){
+
+      autobids[j] <- autobid_calc(con[j])
     }
     bracket$autobid <- is.element(bracket$team, autobids)
     tmp <- bracket[!bracket$autobid, ]
@@ -116,7 +111,7 @@ make_bracket <- function(tourney) {
     
     ### Get At-Large bids
     atlarge <- vector()
-    while(j <= 36) {
+    while(j <= 37) {
       for(k in z:length(teams)){
         z <- z + 1
         if(confs$eligible[confs$team == tmp$team[k]]) {

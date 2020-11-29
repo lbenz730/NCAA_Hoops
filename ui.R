@@ -183,7 +183,6 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                                        
                                                        tags$ul(
                                                          tags$li(tags$b("Net Rating:"), "Points +/- Average NCAA Team"),
-                                                         tags$li(tags$b("RPI:"), "Outdated committe metric. To be repalced w/ NET soon"),
                                                          tags$li(tags$b("Wins Above Bubble:"), "How you do on schedule compared to how we would expect average bubble team to do on your schedule."),
                                                          tags$li(tags$b("Strength of Record:"), "How you do on schedule compared to how we would expect average Top-25 team to do on your schedule"),
                                                          tags$li(tags$b("Resume:"), "Weighted sum of win quality based on committe team sheet tiers")

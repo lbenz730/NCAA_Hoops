@@ -1,11 +1,16 @@
 record_eval <- function(team) {
   ### Get Team's games
   games <- x[x$team == team,]
+  if(nrow(games) == 0) {
+    return(list('team' = team, "qual_bonus" = NA, "sor" = NA, "wab" = NA,
+                "wins" = NA, "losses" = NA))
+  }
+  
   games <- inner_join(select(games, -opp_rank), 
-             select(power_rankings, team, rank), 
-             by = c("opponent" = "team")) %>%
+                      select(power_rankings, team, rank), 
+                      by = c("opponent" = "team")) %>%
     rename(team_rank = rank.x , opp_rank = rank.y)
-
+  
   ### Classify wins into NCAA's 4 tiers
   tierAw <- 
     sum(games$wins[games$opp_rank <= 50 & games$location == "N"]) + 
@@ -74,29 +79,18 @@ record_eval <- function(team) {
   wins <- sum(games$wins) 
   losses = sum(1 - games$wins) 
   
-  return(list("qual_bonus" = qual_bonus, "sor" = mean(sor), "wab" = mean(wab),
+  return(list('team' = team, "qual_bonus" = qual_bonus, "sor" = mean(sor), "wab" = mean(wab),
               "wins" = wins, "losses" = losses))
 }
 
 
 ### Get and Return Team's resumes
+
+
 get_resumes <- function(new){
   if(new){
-    tmp <- data.frame("team" = teams,
-                      "sor" = rep(0, length(teams)),
-                      "qual_bonus" = rep(0, length(teams)),
-                      "wab" = rep(0, length(teams)),
-                      "wins" = rep(0, length(teams)),
-                      "losses" = rep(0, length(teams)))
-    for(i in 1:nrow(tmp)) {
-      print(paste("Evaluating Team #: ", i, sep = ""))
-      rec_eval <- record_eval(teams[i])
-      tmp$sor[i] <- rec_eval$sor
-      tmp$wab[i] <- rec_eval$wab
-      tmp$qual_bonus[i] <- rec_eval$qual_bonus
-      tmp$wins[i] <- rec_eval$wins
-      tmp$losses[i] <- rec_eval$losses
-    }
+    tmp <- future_map(teams, ~record_eval(.x))
+    tmp <- bind_rows(tmp)
     write.csv(tmp, "3.0_Files/Bracketology/resumes.csv", row.names = F)
   }
   else{

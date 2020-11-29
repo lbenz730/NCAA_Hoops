@@ -2,13 +2,19 @@
 library(dplyr) 
 library(readr)
 library(lubridate)
+library(purrr)
+library(furrr)
+plan(multiprocess)
+options(future.fork.enable = T)
+
 x <- read_csv(paste("3.0_Files/Results/2020-21/NCAA_Hoops_Results",
-                     month(Sys.Date()), day(Sys.Date()), "2020.csv", sep = "_"))
+                     month(Sys.Date()), day(Sys.Date()-1), "2020.csv", sep = "_"))
 train <- read_csv("3.0_Files/Results/2017-18/training.csv")
 confs <- read_csv("3.0_Files/Info/conferences.csv")
 deadlines <- read_csv("3.0_Files/Info/deadlines.csv") %>%
   mutate(deadline = as.Date(deadline, "%m/%d/%y") %m+% years(1))
-priors <- read_csv("3.0_Files/Info/prior.csv")
+priors <- read_csv("3.0_Files/Info/prior.csv") %>% 
+  arrange(team)
 source("3.0_Files/powerrankings.R")
 source("3.0_Files/Ivy_Sims.R")
 source("3.0_Files/rpi.R")
@@ -31,7 +37,7 @@ x <-
          year, month, day, season_id, D1, OT, postponed, canceled) %>% 
   filter(D1 == 2)
 
-teams <- sort(unique(x$team))
+teams <- sort(unique(priors$team))
 
 ### Game IDs
 x <- 
@@ -79,9 +85,17 @@ for(i in 1:nrow(x)) {
 
 ############################### Create Models ##################################
 ### Current Season
-lm.hoops <- lm(score_diff ~ team + opponent + location, weights = weights, data = x) 
-lm.off <- lm(team_score ~ team + opponent + location, weights = weights, data = x) 
-lm.def <- lm(opp_score ~ team + opponent + location, weights = weights, data = x) 
+pad <- tibble('team' = teams,
+              'opponent' = teams, 
+              'location' = sample(c('H', 'V', 'N'), length(teams), replace = T),
+              'weights' = 0.000001,
+              'score_diff' = 0,
+              'team_score' = 0,
+              'opp_score' = 0)
+
+lm.hoops <- lm(score_diff ~ team + opponent + location, weights = weights, data = bind_rows(pad, x)) 
+lm.off <- lm(team_score ~ team + opponent + location, weights = weights, data = bind_rows(pad, x)) 
+lm.def <- lm(opp_score ~ team + opponent + location, weights = weights, data = bind_rows(pad, x)) 
 
 ### Update With Pre-Season Priors
 priors <- mutate(priors, 
@@ -91,6 +105,10 @@ priors <- mutate(priors,
   arrange(team)
 
 w <- sapply(teams, prior_weight)
+
+lm.hoops$coefficients[is.na(lm.hoops$coefficients)] <- 0
+lm.off$coefficients[is.na(lm.off$coefficients)] <- 0
+lm.def$coefficients[is.na(lm.def$coefficients)] <- 0
 
 lm.hoops$coefficients[2:357] <- 
   lm.hoops$coefficients[2:357] * w[-1] + priors$rel_yusag_coeff[-1] * (1-w[-1])
@@ -133,13 +151,13 @@ x <-
 ############################### Predictions ####################################
 x <- 
   mutate(x, "hca" = case_when(location == "H" ~ lm.hoops$coefficients[1],
-                              location == "V" ~ lm.hoops$coefficients[706],
+                              location == "V" ~ lm.hoops$coefficients[714],
                               location == "N" ~ 0),
-         "hca_off" = case_when(location == "H" ~ abs(lm.off$coefficients[706]),
-                               location == "V" ~ lm.off$coefficients[707] - lm.off$coefficients[706],
+         "hca_off" = case_when(location == "H" ~ abs(lm.off$coefficients[714]),
+                               location == "V" ~ lm.off$coefficients[715] - lm.off$coefficients[714],
                                location == "N" ~ 0),
-         "hca_def" = case_when(location == "H" ~ -lm.def$coefficients[706],
-                               location == "V" ~ lm.def$coefficients[707] - lm.def$coefficients[706],
+         "hca_def" = case_when(location == "H" ~ -lm.def$coefficients[714],
+                               location == "V" ~ lm.def$coefficients[715] - lm.def$coefficients[714],
                                location == "N" ~ 0)) %>%
   mutate("pred_score_diff" = round(yusag_coeff - opp_yusag_coeff + hca, 1),
          "pred_team_score" = round(70 + off_coeff - opp_def_coeff + hca_off, 1),
@@ -160,28 +178,18 @@ x$wins[is.na(x$wins)] <-
 by_conf <- pr_compute(by_conf = T)
 write_csv(x, "3.0_Files/Predictions/predictions.csv")
 ########################### Bracketology #######################################
-rpi <- rpi_compute(new = T)
 resumes <- get_resumes(new = T)
 bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
-############################## NCAA Sims #######################################
-#ncaa_sims <- ncaa_sim(10000)
-#write.csv(ncaa_sims, "3.0_Files/Predictions/ncaa_sims.csv", row.names = F)
-
-################################ Ivy Sims ######################################
-# playoffs <- ivy.sim(nsims = 5000)
-# playoff_graphic()
-# psf_results <- psf(nsims = 2500, min_date = Sys.Date(), max_date = Sys.Date() + 2)
-# psf_graphic()
 # ############################# Conference Sims (No Tie-Breaks) ##################
-# for(conf in unique(confs$conference)) {
-#   print(conf)
-#   sims <- conf_fast_sim(conf, 10000)
-#   write_csv(sims, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
-# }
+for(conf in unique(confs$conference)) {
+  print(conf)
+  sims <- conf_fast_sim(conf, 10000)
+  write_csv(sims, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+}
 ############################ System Evaluation #################################
-min_date <- as.Date("2019-11-05")
+min_date <- as.Date("2020-11-25")
 max_date <- Sys.Date()
 y <- filter(x, date >= min_date, date <= max_date)
 cat(paste("System Evaluation:", min_date, "Through", max_date),

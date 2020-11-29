@@ -26,9 +26,9 @@ shinyServer(function(input, output, session) {
     ) %>%
       formatRound(columns = c(4,5,6), 
                   digits = 2) %>%
-      formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[-1]), cm.colors(353)[353:1])) %>%
-      formatStyle("Off. Rating", backgroundColor = styleInterval(sort(rankings$`Off. Rating`[-1]), cm.colors(353)[353:1])) %>%
-      formatStyle("Def. Rating", backgroundColor = styleInterval(sort(rankings$`Def. Rating`[-1]), cm.colors(353)[353:1]))
+      formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[-1]), cm.colors(357)[357:1])) %>%
+      formatStyle("Off. Rating", backgroundColor = styleInterval(sort(rankings$`Off. Rating`[-1]), cm.colors(357)[357:1])) %>%
+      formatStyle("Def. Rating", backgroundColor = styleInterval(sort(rankings$`Def. Rating`[-1]), cm.colors(357)[357:1]))
     
     
   })
@@ -48,7 +48,7 @@ shinyServer(function(input, output, session) {
   ### Conf Summary Table
   conf_table <- eventReactive(input$conf, {
     filter(rankings, Conference == input$conf) %>%
-      inner_join(conf_projections, by = c("Team" = "team",
+      left_join(conf_projections, by = c("Team" = "team",
                                           "Conference" = "team_conf")) %>%
       mutate("Conference Rank" = 1:nrow(.)) %>%
       select(`Conference Rank`, `Team`,  `Net Rating`, `Off. Rating`, `Def. Rating`,
@@ -64,7 +64,7 @@ shinyServer(function(input, output, session) {
   })
   
   output$conf_standings <- DT::renderDataTable({
-    l <- conf_table()$`Proj. Conf. Wins`[1] + conf_table()$`Proj. Conf. Loss`[1]
+    l <- max(c(1, conf_table()$`Proj. Conf. Wins` + conf_table()$`Proj. Conf. Loss`), na.rm = T)
     datatable(conf_table(),
               rownames = F,
               options = list(paging = FALSE,
@@ -74,9 +74,9 @@ shinyServer(function(input, output, session) {
     ) %>%
       formatRound(columns = c(3,4,5,6,7,8,9), 
                   digits = 2) %>%
-      formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[-1]), cm.colors(353)[353:1])) %>%
-      formatStyle("Off. Rating", backgroundColor = styleInterval(sort(rankings$`Off. Rating`[-1]), cm.colors(353)[353:1])) %>%
-      formatStyle("Def. Rating", backgroundColor = styleInterval(sort(rankings$`Def. Rating`[-1]), cm.colors(353)[353:1])) %>%
+      formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[-1]), cm.colors(357)[357:1])) %>%
+      formatStyle("Off. Rating", backgroundColor = styleInterval(sort(rankings$`Off. Rating`[-1]), cm.colors(357)[357:1])) %>%
+      formatStyle("Def. Rating", backgroundColor = styleInterval(sort(rankings$`Def. Rating`[-1]), cm.colors(357)[357:1])) %>%
       formatStyle("Proj. Wins", backgroundColor = styleInterval(0:31, cm.colors(33)[33:1])) %>%
       formatStyle("Proj. Loss", backgroundColor = styleInterval(0:31, cm.colors(33))) %>%
       formatStyle("Proj. Conf. Wins", backgroundColor = styleInterval(0:(l-1), cm.colors(l+1)[(l+1):1])) %>%
@@ -131,6 +131,9 @@ shinyServer(function(input, output, session) {
   ### Standings Plot
   standings_plot <- eventReactive(input$conf, {
     sims <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", input$conf, ".csv"))
+    if(nrow(sims) < 10) {
+      p <- NULL
+    } else{
     
     standings <- 
       group_by(sims, team) %>%
@@ -151,7 +154,8 @@ shinyServer(function(input, output, session) {
     sims$team <- reorder(sims$team, rep(standings$rank, 10000))
     standings <- arrange(standings, avg_wins)
     
-    ggplot(sims, aes(x = n_wins, y = team, fill = team)) + 
+    p <- 
+      ggplot(sims, aes(x = n_wins, y = team, fill = team)) + 
       geom_density_ridges(stat = "binline", scale = 0.7, binwidth = 1) + 
       labs(x ="# of Wins", 
            y = "Team",
@@ -159,6 +163,8 @@ shinyServer(function(input, output, session) {
            subtitle = input$conf) +
       theme(legend.position = "none") +
       scale_fill_manual(values = c(standings$primary_color)) 
+    }
+    p
   })
   
   output$conf_standings_plot <- renderPlot(standings_plot())
@@ -205,6 +211,7 @@ shinyServer(function(input, output, session) {
   ###################################### Game Predictions ##############################################
   gp <- eventReactive(input$proj_date, {
     df <- filter(x, date == input$proj_date) 
+    print(names(df))
     if(nrow(df) > 0) {
       df <- 
         df %>% 
@@ -216,6 +223,9 @@ shinyServer(function(input, output, session) {
         )) %>%
         arrange(rank) %>%
         filter(!duplicated(id)) %>%
+        mutate('team_score' = case_when(postponed ~ "Postponed",
+                                        canceled ~ "Canceled",
+                                        T ~ as.character(team_score))) %>% 
         select(team, opponent, location, rank, opp_rank,
                pred_team_score, pred_opp_score,
                team_score, opp_score, pred_score_diff) %>%
@@ -263,8 +273,8 @@ shinyServer(function(input, output, session) {
                   digits = 1) %>%
       formatPercentage(columns = c(8), 1) %>%
       formatStyle("Win Prob.", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
-      formatStyle("Team Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
-      formatStyle("Opponent Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+      formatStyle("Team Rank", backgroundColor = styleInterval(1:356, cm.colors(357))) %>%
+      formatStyle("Opponent Rank", backgroundColor = styleInterval(1:356, cm.colors(357))) %>%
       formatStyle("Pred. Team Score", backgroundColor = styleInterval(40:100, cm.colors(62)[62:1])) %>%
       formatStyle("Pred. Opp. Score", backgroundColor = styleInterval(40:100, cm.colors(62)[62:1]))
   })
@@ -291,7 +301,7 @@ shinyServer(function(input, output, session) {
     ggplot(filter(history, team == input$team), aes(x = date, y = yusag_coeff)) %>% +
       geom_line(color = color_team, size = 2) +
       scale_y_continuous(limits = c(-3 + m, 3 + M)) +
-      geom_label(data = filter(history, team == input$team, date %in% sapply(as.Date("2019-11-05") + seq(0, 140, 7), function(x) {max(history$date[history$date <= x])})
+      geom_label(data = filter(history, team == input$team, date %in% sapply(as.Date("2020-11-25") + seq(0, 140, 7), function(x) {max(history$date[history$date <= x])})
       ),
       aes(label = sprintf("%.2f", yusag_coeff))) +
       labs(x = "Date",
@@ -316,10 +326,10 @@ shinyServer(function(input, output, session) {
     
     ggplot(filter(history, team == input$team), aes(x = date, y = rank)) %>% +
       geom_line(color = color_team, size = 2) +
-      geom_label(data = filter(history, team == input$team, date %in% sapply(as.Date("2019-11-05") + seq(0, 140, 7), function(x) {max(history$date[history$date <= x])})
+      geom_label(data = filter(history, team == input$team, date %in% sapply(as.Date("2020-11-25") + seq(0, 140, 7), function(x) {max(history$date[history$date <= x])})
       ),
       aes(label = rank)) +
-      scale_y_reverse(limits = c(min(c(353, M + 20)), max(c(1, m - 20))) ) +
+      scale_y_reverse(limits = c(min(c(357, M + 20)), max(c(1, m - 20))) ) +
       labs(x = "Date",
            y = "Rank",
            title = "Evolution of Rank Over Time",
@@ -330,7 +340,7 @@ shinyServer(function(input, output, session) {
   output$rankings_plot <- renderPlot(rahp())
   
   ts1 <- eventReactive(input$team, {
-    df <- read_csv(paste0("3.0_Files/Results/2019-20/NCAA_Hoops_Results_",
+    df <- read_csv(paste0("3.0_Files/Results/2020-21/NCAA_Hoops_Results_",
                           paste(gsub("^0", "", unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)]), collapse = "_"),
                           ".csv")) %>% 
       filter(D1 == 1) %>%
@@ -347,10 +357,13 @@ shinyServer(function(input, output, session) {
                                 opponent == "TBA" ~ 0.5,
                                 T ~ 1.0001)
       ) %>%
-      select(date, opponent, opp_rank, location, team_score, opp_score, pred_team_score, pred_opp_score, wins) %>%
+      select(date, opponent, opp_rank, location, team_score, opp_score, pred_team_score, pred_opp_score, wins, canceled, postponed) %>%
       bind_rows(filter(x, team == input$team) %>%
-                  select(date, opponent, opp_rank, location, team_score, opp_score, pred_team_score, pred_opp_score, wins)) %>% 
+                  select(date, opponent, opp_rank, location, team_score, opp_score, pred_team_score, pred_opp_score, wins, canceled, postponed)) %>% 
       arrange(date) %>%
+      mutate('team_score' = case_when(postponed ~ "Postponed",
+                                      canceled ~ "Canceled",
+                                      T ~ as.character(team_score))) %>% 
       select(date, opponent, opp_rank, location, team_score, opp_score, pred_team_score, pred_opp_score, wins)
     df[df$wins %in% c(0,1), c("pred_team_score", "pred_opp_score")] <- NA
     df$wins[df$wins %in% c(0,1)] <- NA
@@ -393,9 +406,9 @@ shinyServer(function(input, output, session) {
   output$bracket <- DT::renderDataTable({
     df <- select(bracket, seed_line, seed_overall, everything(), -blend, -avg)
     df$odds <- 1/100 * df$odds
-    names(df)[1:15] <- c("Seed Line", "Seed Overall", "Team", "Conference", 
-                         "Net Rating", "RPI", "Strength of Record", "Wins Above Bubble",
-                         "Resume", "Rating Rank", "RPI Rank", "SOR Rank", "WAB Rank",
+    names(df)[1:13] <- c("Seed Line", "Seed Overall", "Team", "Conference", 
+                         "Net Rating", "Strength of Record", "Wins Above Bubble",
+                         "Resume", "Rating Rank", "SOR Rank", "WAB Rank",
                          "Resume Rank", "At-Large Odds")
     
     
@@ -405,25 +418,24 @@ shinyServer(function(input, output, session) {
                              searching = F,
                              info  = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all"),
-                                               list(visible=FALSE, targets=c(15, 16, 17))
+                                               list(visible=FALSE, targets=c(13, 14, 15))
                                                
                              ))
     ) %>% 
-      formatRound(columns = c(5, 7, 8, 9),  digits = 2) %>%
-      formatRound(columns = c(6),  digits = 4) %>%
+      formatRound(columns = c(5, 6, 7, 8),  digits = 2) %>%
       formatStyle("Team",  valueColumns = "autobid", fontWeight = styleEqual(T, "bold")) %>%
       formatStyle("Team",  valueColumns = "first4", "font-style" = styleEqual(T, "italic")) %>%
-      formatPercentage(columns = c(15), 1) %>%
+      formatPercentage(columns = c(13), 1) %>%
       formatStyle("At-Large Odds", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
-      formatStyle("RPI Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
-      formatStyle("WAB Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
-      formatStyle("SOR Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
-      formatStyle("Resume Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
-      formatStyle("Rating Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
+     
+      formatStyle("WAB Rank", backgroundColor = styleInterval(1:356, cm.colors(357))) %>%
+      formatStyle("SOR Rank", backgroundColor = styleInterval(1:356, cm.colors(357))) %>%
+      formatStyle("Resume Rank", backgroundColor = styleInterval(1:356, cm.colors(357))) %>%
+      formatStyle("Rating Rank", backgroundColor = styleInterval(1:356, cm.colors(357))) %>%
       formatStyle("Wins Above Bubble", backgroundColor = styleInterval(sort(bracket_math$wab[1:99]), cm.colors(100)[100:1])) %>%
       formatStyle("Strength of Record", backgroundColor = styleInterval(sort(bracket_math$sor[1:99]), cm.colors(100)[100:1])) %>%
       formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[1:99]), cm.colors(100)[100:1])) %>%
-      formatStyle("RPI", backgroundColor = styleInterval(sort(bracket_math$rpi[1:99]), cm.colors(100)[100:1])) %>%
+      
       formatStyle("Resume", backgroundColor = styleInterval(sort(bracket_math$qual_bonus[1:99]), cm.colors(100)[100:1]))
     
     
@@ -435,9 +447,9 @@ shinyServer(function(input, output, session) {
                  -wins, -losses, -seed, -autobid, -loss_bonus)
     df$odds <- 1/100 * df$odds
     print(names(df))
-    names(df)[1:14] <- c("Seed Overall", "Team", "Conference", 
-                         "Net Rating", "RPI", "Strength of Record", "Wins Above Bubble",
-                         "Resume", "Rating Rank", "RPI Rank", "SOR Rank", "WAB Rank",
+    names(df)[1:12] <- c("Seed Overall", "Team", "Conference", 
+                         "Net Rating",  "Strength of Record", "Wins Above Bubble",
+                         "Resume", "Rating Rank",  "SOR Rank", "WAB Rank",
                          "Resume Rank", "At-Large Odds")
     
     
@@ -450,20 +462,17 @@ shinyServer(function(input, output, session) {
                              
               )
     ) %>% 
-      formatRound(columns = c(4, 6, 7, 8),  digits = 2) %>%
-      formatRound(columns = c(5),  digits = 4) %>%
-      formatPercentage(columns = c(14), 1) %>%
+      formatRound(columns = c(4, 5, 6, 7),  digits = 2) %>%
+      formatPercentage(columns = c(12), 1) %>%
       formatStyle("At-Large Odds", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
-      formatStyle("RPI Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
-      formatStyle("WAB Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
-      formatStyle("SOR Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
-      formatStyle("Resume Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
-      formatStyle("Rating Rank", backgroundColor = styleInterval(1:352, cm.colors(353))) %>%
-      formatStyle("Wins Above Bubble", backgroundColor = styleInterval(sort(bracket_math$wab[1:352]), cm.colors(353)[353:1])) %>%
-      formatStyle("Strength of Record", backgroundColor = styleInterval(sort(bracket_math$sor[1:352]), cm.colors(353)[353:1])) %>%
-      formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[1:352]), cm.colors(353)[353:1])) %>%
-      formatStyle("RPI", backgroundColor = styleInterval(sort(bracket_math$rpi[1:352]), cm.colors(353)[353:1])) %>%
-      formatStyle("Resume", backgroundColor = styleInterval(sort(bracket_math$qual_bonus[1:352]), cm.colors(353)[353:1]))
+      formatStyle("WAB Rank", backgroundColor = styleInterval(1:356, cm.colors(357))) %>%
+      formatStyle("SOR Rank", backgroundColor = styleInterval(1:356, cm.colors(357))) %>%
+      formatStyle("Resume Rank", backgroundColor = styleInterval(1:356, cm.colors(357))) %>%
+      formatStyle("Rating Rank", backgroundColor = styleInterval(1:356, cm.colors(357))) %>% 
+      formatStyle("Wins Above Bubble", backgroundColor = styleInterval(sort(bracket_math$wab[1:356]), cm.colors(357)[357:1])) %>%
+      formatStyle("Strength of Record", backgroundColor = styleInterval(sort(bracket_math$sor[1:356]), cm.colors(357)[357:1])) %>%
+      formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[1:356]), cm.colors(357)[357:1])) %>%
+      formatStyle("Resume", backgroundColor = styleInterval(sort(bracket_math$qual_bonus[1:356]), cm.colors(357)[357:1]))
     
     
   })

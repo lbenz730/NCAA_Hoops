@@ -42,7 +42,7 @@ records <- group_by(x, team, team_conf) %>%
 
 
 
-non_d1 <- read_csv(paste0("3.0_Files/Results/2019-20/NCAA_Hoops_Results_",
+non_d1 <- read_csv(paste0("3.0_Files/Results/2020-21/NCAA_Hoops_Results_",
                           paste(gsub("^0", "", unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)]), collapse = "_"),
                           ".csv")) %>% 
   filter(D1 == 1) %>%
@@ -69,66 +69,90 @@ bracket <- read_csv("3.0_Files/Bracketology/bracket.csv")
 bids <- read_csv("3.0_Files/Bracketology/bids.csv")    
 bubble <- read_csv("3.0_Files/Bracketology/bubble.csv")
 bubble$seed_overall <- 68 + 1:nrow(bubble)
-bracket_math <- read_csv("3.0_Files/Bracketology/bracket_math.csv")
+bracket_math <- read_csv("3.0_Files/Bracketology/bracket_math.csv") 
+bracket_math[is.na(bracket_math)] <- 0
 
-  
+
 visualize_schedule <- function(conf) {
   conf_data <- filter(x, conf_game, team_conf == conf)
-  conf_data <- inner_join(conf_data, select(ncaahoopR::ncaa_colors, ncaa_name, logo_url), 
-                          by = c("opponent" = "ncaa_name"))
-  conf_data$game_id <- rep(1:(nrow(conf_data)/length(unique(conf_data$team))), length(unique(conf_data$team)))
-  
-  colors <- gg_color_hue(5)
-  conf_data <- mutate(conf_data, "result"  = case_when(
-    date == Sys.Date() & is.na(team_score) ~ "Today's Game",
-    is.na(team_score) ~ "Future Game",
-    team_score > opp_score ~ "Win",
-    T ~ "Loss"
-  )) %>%
-    mutate("result" = forcats::fct_relevel(result, "Win", "Loss", "Today's Game", 'Future Game'))
-  
-  gc <- c()
-  lwdc <- c()
-  if(any(conf_data$result == "Win")) {
-    gc <- c(gc, colors[3], colors[1])
-    lwdc <- c(lwdc, rep(1.4, 2))
+  if(nrow(conf_data) == 0) {
+    NULL 
+  } else {
+    
+    
+    conf_data <- 
+      conf_data %>% 
+      inner_join(select(ncaahoopR::ncaa_colors, ncaa_name, logo_url), 
+                 by = c("opponent" = "ncaa_name"))
+    conf_data <- 
+      conf_data %>% 
+      group_by(team) %>% 
+      mutate('game_id' = 1:n()) %>% 
+      ungroup()
+    
+    colors <- gg_color_hue(5)
+    conf_data <- mutate(conf_data, "result"  = case_when(
+      date == Sys.Date() & is.na(team_score) ~ "Today's Game",
+      is.na(team_score) ~ "Future Game",
+      team_score > opp_score ~ "Win",
+      postponed  ~ 'Postponed',
+      canceled ~ 'Canceled',
+      T ~ "Loss"
+    )) %>%
+      mutate("result" = forcats::fct_relevel(result, "Win", "Loss", "Today's Game", 'Future Game',
+                                             'Postponed', 'Canceled'))
+    
+    gc <- c()
+    lwdc <- c()
+    if(any(conf_data$result == "Win")) {
+      gc <- c(gc, colors[3], colors[1])
+      lwdc <- c(lwdc, rep(1.4, 2))
+    }
+    if(any(conf_data$result == "Today's Game")) {
+      gc <- c(gc, colors[5]) 
+      lwdc <- c(lwdc, 1.4)
+    }
+    if(any(conf_data$result == "Future Game")) {
+      gc <- c(gc, "grey") 
+      lwdc <- c(lwdc, 0.5)
+    }
+    if(any(conf_data$result == "Postponed")) {
+      gc <- c(gc, "Blue") 
+      lwdc <- c(lwdc, 1.4)
+    }
+    if(any(conf_data$result == "Canceled")) {
+      gc <- c(gc, "black") 
+      lwdc <- c(lwdc, 1.4)
+    }
+    
+    ggplot(conf_data, aes(x = game_id, y = forcats::fct_reorder(team, desc(team)))) +
+      geom_tile(aes(fill = paste(location, team), 
+                    col = result, lwd = result),
+                alpha = 0.7, width = 0.9, height = 0.9) +
+      geom_image(aes(image = logo_url), size = 0.04) +
+      scale_fill_manual(values = c(ncaahoopR::ncaa_colors$primary_color[ncaahoopR::ncaa_colors$conference == conf],
+                                   rep("grey", sum(conf_data$location == "N")),
+                                   rep("white", length(unique(conf_data$team))))) +
+      scale_color_manual(values = gc) +
+      scale_size_manual(values = lwdc) +
+      theme_minimal() +
+      theme(axis.title = element_text(size = 20),
+            axis.text.y = element_text(size = 16),
+            axis.text.x = element_blank(),
+            plot.title = element_text(size = 24, hjust  = 0.5),
+            plot.subtitle = element_text(size = 18, hjust = 0.5),
+            strip.text = element_text(size = 14),
+            plot.caption = element_text(size = 12, hjust = 0.5),
+            legend.position = "none") +
+      labs(x = "", 
+           y = "",
+           color = "",
+           size = "",
+           title = "Conference Schedule",
+           subtitle = conf,
+           caption = "Home = Colored Background | Away = White Background
+         Green = Win | Red = Loss | Purple = Game Today |\nBlue = Postponed | Black = Cancelled")
   }
-  if(any(conf_data$result == "Today's Game")) {
-    gc <- c(gc, colors[5]) 
-    lwdc <- c(lwdc, 1.4)
-  }
-  if(any(conf_data$result == "Future Game")) {
-    gc <- c(gc, "grey") 
-    lwdc <- c(lwdc, 0.5)
-  }
-  
-  ggplot(conf_data, aes(x = game_id, y = forcats::fct_reorder(team, desc(team)))) +
-    geom_tile(aes(fill = paste(location, team), 
-                  col = result, lwd = result),
-              alpha = 0.7, width = 0.9, height = 0.9) +
-    geom_image(aes(image = logo_url), size = 0.04) +
-    scale_fill_manual(values = c(ncaahoopR::ncaa_colors$primary_color[ncaahoopR::ncaa_colors$conference == conf],
-                                 rep("grey", sum(conf_data$location == "N")),
-                                 rep("white", length(unique(conf_data$team))))) +
-    scale_color_manual(values = gc) +
-    scale_size_manual(values = lwdc) +
-    theme_minimal() +
-    theme(axis.title = element_text(size = 20),
-          axis.text.y = element_text(size = 16),
-          axis.text.x = element_blank(),
-          plot.title = element_text(size = 24, hjust  = 0.5),
-          plot.subtitle = element_text(size = 18, hjust = 0.5),
-          strip.text = element_text(size = 14),
-          plot.caption = element_text(size = 12, hjust = 0.5),
-          legend.position = "none") +
-    labs(x = "", 
-         y = "",
-         color = "",
-         size = "",
-         title = "Conference Schedule",
-         subtitle = conf,
-         caption = "Home = Colored Background | Away = White Background
-         Green = Win | Red = Loss | Purple = Game Today")
 }
 
 

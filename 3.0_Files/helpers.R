@@ -3,6 +3,7 @@ library(ggridges)
 library(viridis)
 library(knitr)
 library(kableExtra)
+library(tidyr)
 library(ncaahoopR)
 
 
@@ -67,6 +68,8 @@ conf_sim <- function(conf, nsims) {
   )
   schedule <- filter(schedule, !duplicated(tmp))
   
+  
+  
   sim_season <- rep(0, nrow(results))
   max_wins <- nrow(schedule) * 2 / nrow(results)
   
@@ -95,42 +98,46 @@ conf_sim <- function(conf, nsims) {
 
 #### Conference Sims
 conf_fast_sim <- function(conf, nsims) {
-  conf_teams <- filter(confs, conference == conf) %>% 
-    pull(team) %>% 
-    unique()
-  results <- data.frame("team" = rep(conf_teams, nsims),
-                        "sim" = rep(1:nsims, each = length(conf_teams)),
-                        "n_wins" = NA,
-                        "place" = NA,
-                        stringsAsFactors = F)
-  
-  
   ### Sim Schedule
-  schedule <- filter(x, conf_game, team_conf == conf, location != "V") %>%
+  schedule <- 
+    x %>% 
+    filter(conf_game, team_conf == conf, location != "V") %>%
     mutate(simwins = 0, opp_simwins = 0)
-  schedule$tmp <- case_when(
-    schedule$team < schedule$opponent ~ paste(schedule$team, schedule$opponent, schedule$date),
-    T ~ paste(schedule$opponent, schedule$team, schedule$date)
-  )
+  
+
+  schedule$tmp <- 
+    case_when(
+      schedule$team < schedule$opponent ~ paste(schedule$team, schedule$opponent, schedule$date),
+      T ~ paste(schedule$opponent, schedule$team, schedule$date)
+    )
   schedule <- filter(schedule, !duplicated(tmp))
   
-  sim_season <- rep(0, length(conf_teams))
+  schedule <- bind_rows(replicate(nsims, schedule, simplify = F))
   
-  for(i in 1:nsims) {
-    if(i %% 100 == 0) {
-      cat("Sim:", i, "\n")
-    }
-    rands <- runif(nrow(schedule))
-    schedule$simwins <- ifelse(rands <= schedule$wins, 1, 0)
-    schedule$opp_simwins <- abs(1 - schedule$simwins)
-    for(j in 1:length(conf_teams)) {
-      sim_season[j] <- sum(schedule$simwins[schedule$team == conf_teams[j]]) +
-        sum(schedule$opp_simwins[schedule$opponent == conf_teams[j]])
-    }
-    
-    results$n_wins[results$sim == i] <- sim_season
-    results$place[results$sim == i] <- rank(-sim_season, ties = "min")
+  if(nrow(schedule) == 0) {
+    return(tibble('team' =  '',
+                  'sim' = '',
+                  'n_wins' = '',
+                  'place' = ''))
   }
+  
+  results <- 
+    schedule %>% 
+    group_by(team, opponent, date) %>% 
+    mutate('sim' = 1:n()) %>% 
+    ungroup() %>% 
+    mutate('rand' = runif(nrow(.))) %>% 
+    mutate('winner' = case_when(rand <= wins ~ team,
+                                T ~ opponent)) %>% 
+    select(sim, team, opponent, winner) %>% 
+    pivot_longer(cols = c('team', 'opponent'),
+                 values_to = 'team') %>% 
+    group_by(sim, team) %>% 
+    summarise('n_wins' = sum(winner == team)) %>% 
+    group_by(sim) %>% 
+    mutate('place' = rank(-n_wins, ties = "min"))
+  
+  
   return(results)
 }
 
@@ -157,10 +164,10 @@ reg_season <- function(date, conf) {
 
 ### Compute Weights for Pre-season prior
 prior_weight <- function(school) {
-  w <- 1.95 * max(c(0, 
-                    filter(x, team == school, !is.na(score_diff)) %>% 
-                      pull(game_id) %>%
-                      max()
+  w <- 0.8 * max(c(0, 
+                   filter(x, team == school, !is.na(score_diff)) %>% 
+                     pull(game_id) %>%
+                     max()
   ), 
   na.rm = T)/(
     max(c(1, 
