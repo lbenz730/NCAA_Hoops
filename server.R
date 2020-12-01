@@ -369,8 +369,8 @@ shinyServer(function(input, output, session) {
     df$wins[df$wins %in% c(0,1)] <- NA
     df$wins[df$wins > 1] <- 1
     df$result <- NA
-    df$result[df$team_score > df$opp_score] <- "W"
-    df$result[df$team_score < df$opp_score] <- "L"
+    df$result[as.numeric(df$team_score) > as.numeric(df$opp_score)] <- "W"
+    df$result[as.numeric(df$team_score) < as.numeric(df$opp_score)] <- "L"
     df <- select(df, date, opponent, result, everything())
     names(df) <- c("Date", "Opponent", "Result", "Opp. Rank", "Location", "Team Score", "Opponent Score", "Pred. Team Score",
                    "Pred. Opp. Score", "Win Probability")
