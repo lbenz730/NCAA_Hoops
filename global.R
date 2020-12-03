@@ -32,7 +32,10 @@ names(rankings) <- c("Rank", "Team", "Conference", "Net Rating", "Off. Rating",
 
 confs <- read_csv("3.0_Files/Info/conferences.csv")
 
-records <- group_by(x, team, team_conf) %>%
+records <- 
+  x %>% 
+  filter(!canceled, !postponed) %>% 
+  group_by(team, team_conf) %>%
   summarise("n_win" = sum(wins),
             "n_loss" = sum(1-wins),
             "conf_wins" = sum(wins[conf_game]),
@@ -46,6 +49,7 @@ non_d1 <- read_csv(paste0("3.0_Files/Results/2020-21/NCAA_Hoops_Results_",
                           paste(gsub("^0", "", unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)]), collapse = "_"),
                           ".csv")) %>% 
   filter(D1 == 1) %>%
+  filter(!canceled, !postponed) %>% 
   group_by(team) %>%
   summarise("n_win" = sum(teamscore > oppscore, na.rm = T) + sum(is.na(teamscore)),
             "n_loss" = sum(teamscore < oppscore, na.rm = T)) %>%
@@ -56,7 +60,8 @@ non_d1 <- read_csv(paste0("3.0_Files/Results/2020-21/NCAA_Hoops_Results_",
   ungroup()
 
 
-conf_projections <- bind_rows(records, non_d1) %>%
+conf_projections <- 
+  bind_rows(records, non_d1) %>%
   group_by(team, team_conf) %>%
   summarise("n_win" = sum(n_win),
             "n_loss" = sum(n_loss),
