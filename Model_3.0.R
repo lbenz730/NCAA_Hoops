@@ -37,7 +37,7 @@ x <-
          year, month, day, season_id, D1, OT, postponed, canceled) %>% 
   filter(D1 == 2)
 
-teams <- sort(unique(priors$team))
+teams <- sort(unique(confs$team))
 
 ### Game IDs
 x <- 

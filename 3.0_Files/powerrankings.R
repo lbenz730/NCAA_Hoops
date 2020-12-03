@@ -25,7 +25,8 @@ pr_compute <- function(by_conf) {
   ### Return w/out sorting by conference
   if(!by_conf) {
     write.csv(power_rankings, "3.0_Files/Power_Rankings/power_rankings.csv", row.names = F)
-    history <- read.csv("3.0_Files/History/history.csv", as.is = T)
+    history <- read.csv("3.0_Files/History/history.csv", as.is = T) %>% 
+      mutate('team' = replace(team, team == 'La.-Monroe', 'ULM'))
     today <- unclass(as.POSIXlt(Sys.time()))
     year <- 1900 + today$year
     month <- 1 + today$mon
