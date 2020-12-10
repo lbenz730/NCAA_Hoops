@@ -174,7 +174,7 @@ prior_weight <- function(school) {
           filter(x, team == school) %>% 
             pull(game_id) %>%
             max()), na.rm = T)
-  w <- 0.25 * num/32
+  w <- 0.4 * num/32
   
   
   w <- min(c(w, 1))
