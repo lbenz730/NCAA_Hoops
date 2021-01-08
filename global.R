@@ -98,10 +98,10 @@ visualize_schedule <- function(conf) {
     colors <- gg_color_hue(5)
     conf_data <- mutate(conf_data, "result"  = case_when(
       date == Sys.Date() & is.na(team_score) ~ "Today's Game",
-      is.na(team_score) ~ "Future Game",
       team_score > opp_score ~ "Win",
       postponed  ~ 'Postponed',
       canceled ~ 'Canceled',
+      is.na(team_score) ~ "Future Game",
       T ~ "Loss"
     )) %>%
       mutate("result" = forcats::fct_relevel(result, "Win", "Loss", "Today's Game", 'Future Game',
