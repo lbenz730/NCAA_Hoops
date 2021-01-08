@@ -57,7 +57,7 @@ for (i in 1:nrow(teamid)) {
       }
     }
   }
-  if (ct <= 5) {
+  if (ct <= 5 & i != 315) { ### UMES cancelled
     x <- x[-grep("^\\s*$", x)]  # Drop lines with only whitespace
     
     # Which lines contain dates surrounded immediately by > ... < ?
@@ -65,8 +65,8 @@ for (i in 1:nrow(teamid)) {
     
     dates <- stripwhite(gsub("<[^<>]*>", "", x[datelines]))
     
-    dates <- gsub(" .*", "", dates)
-    ix <- !dates %in% c("Start", "Team", "End")
+    dates <- gsub("\\(.*", "", gsub(" .*", "", dates))
+    ix <- !dates %in% c("Start", "Team", "End", "UMES")
     if(sum(ix) > 0) {
       datelines <- datelines[ix]
       dates <- dates[ix]

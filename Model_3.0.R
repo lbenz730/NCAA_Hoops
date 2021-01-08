@@ -8,7 +8,7 @@ plan(multiprocess)
 options(future.fork.enable = T)
 
 x <- read_csv(paste("3.0_Files/Results/2020-21/NCAA_Hoops_Results",
-                     month(Sys.Date()), day(Sys.Date()), "2020.csv", sep = "_"))
+                     month(Sys.Date()), day(Sys.Date()), "2021.csv", sep = "_"))
 train <- read_csv("3.0_Files/Results/2017-18/training.csv")
 confs <- read_csv("3.0_Files/Info/conferences.csv")
 deadlines <- read_csv("3.0_Files/Info/deadlines.csv") %>%
