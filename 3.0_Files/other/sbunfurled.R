@@ -6,11 +6,12 @@ x <-
          'win_loss' = WL,
          'trank' = TRK,
          'sagarin' = SAG,
-         'bpi' = EBP) %>% 
+         'bpi' = EBP,
+         'kenpom' = POM) %>% 
   separate(win_loss, c('win', 'loss'), sep = '-') %>% 
   mutate_at(vars(-team), as.numeric) %>% 
   mutate('win_pct' = 100 * win/(win+loss),
-         'avg' = (trank + sagarin + bpi)/3)
+         'avg' = (trank + sagarin + bpi + kenpom)/4)
 
 
 trank <- XML::readHTMLTable(RCurl::getURL('https://www.barttorvik.com/tranketology.php'))
