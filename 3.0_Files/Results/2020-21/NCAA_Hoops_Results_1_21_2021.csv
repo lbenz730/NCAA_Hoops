@@ -91,7 +91,7 @@
 2021,1,12,"Akron","Northern Ill.","V",65,67,FALSE,FALSE,NA,2
 2021,1,16,"Akron","Toledo","H",95,94,FALSE,FALSE,NA,2
 2021,1,19,"Akron","Bowling Green","V",69,57,FALSE,FALSE,NA,2
-2021,1,21,"Akron","Central Mich.","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,21,"Akron","Central Mich.","H",81,67,FALSE,FALSE,NA,2
 2021,1,23,"Akron","Western Mich.","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,26,"Akron","Eastern Mich.","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Akron","Ball St.","H",NA,NA,FALSE,FALSE,NA,2
@@ -1149,7 +1149,7 @@
 2021,1,7,"Central Conn. St.","Bryant","V",68,93,FALSE,FALSE,NA,2
 2021,1,8,"Central Conn. St.","Bryant","V",64,76,FALSE,FALSE,NA,2
 2021,1,14,"Central Conn. St.","Sacred Heart","V",48,65,FALSE,FALSE,NA,2
-2021,1,21,"Central Conn. St.","Mount St. Mary's","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,21,"Central Conn. St.","Mount St. Mary's","H",57,67,FALSE,FALSE,NA,2
 2021,1,22,"Central Conn. St.","Mount St. Mary's","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Central Conn. St.","Saint Francis (PA)","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,31,"Central Conn. St.","Saint Francis (PA)","V",NA,NA,FALSE,FALSE,NA,2
@@ -1178,7 +1178,7 @@
 2021,1,12,"Central Mich.","Kent St.","H",85,94,FALSE,FALSE,NA,2
 2021,1,16,"Central Mich.","Eastern Mich.","H",75,64,FALSE,FALSE,NA,2
 2021,1,19,"Central Mich.","Toledo","V",72,89,FALSE,FALSE,NA,2
-2021,1,21,"Central Mich.","Akron","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,21,"Central Mich.","Akron","V",67,81,FALSE,FALSE,NA,2
 2021,1,26,"Central Mich.","Buffalo","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Central Mich.","Kent St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,2,"Central Mich.","Ohio","H",NA,NA,FALSE,FALSE,NA,2
@@ -2179,7 +2179,7 @@
 2020,12,19,"Fairleigh Dickinson","Drexel","H",68,85,FALSE,FALSE,NA,2
 2020,12,22,"Fairleigh Dickinson","Fairfield","V",69,65,FALSE,FALSE,NA,2
 2021,1,7,"Fairleigh Dickinson","Wagner","H",NA,NA,FALSE,TRUE,NA,2
-2021,1,21,"Fairleigh Dickinson","Merrimack","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,21,"Fairleigh Dickinson","Merrimack","V",51,62,FALSE,FALSE,NA,2
 2021,1,22,"Fairleigh Dickinson","Merrimack","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,26,"Fairleigh Dickinson","Saint Francis (PA)","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,27,"Fairleigh Dickinson","Saint Francis (PA)","V",NA,NA,FALSE,FALSE,NA,2
@@ -4103,7 +4103,7 @@
 2021,1,2,"Memphis","Temple","V",NA,NA,FALSE,TRUE,NA,2
 2021,1,14,"Memphis","SMU","H",NA,NA,FALSE,TRUE,NA,2
 2021,1,17,"Memphis","Tulsa","V",57,58,FALSE,FALSE,NA,2
-2021,1,21,"Memphis","Wichita St.","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,21,"Memphis","Wichita St.","H",72,52,FALSE,FALSE,NA,2
 2021,1,24,"Memphis","East Carolina","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,26,"Memphis","SMU","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,28,"Memphis","SMU","V",NA,NA,FALSE,FALSE,NA,2
@@ -4154,7 +4154,7 @@
 2021,1,8,"Merrimack","Sacred Heart","H",62,68,FALSE,FALSE,NA,2
 2021,1,14,"Merrimack","Mount St. Mary's","V",57,77,FALSE,FALSE,NA,2
 2021,1,15,"Merrimack","Mount St. Mary's","V",52,63,FALSE,FALSE,NA,2
-2021,1,21,"Merrimack","Fairleigh Dickinson","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,21,"Merrimack","Fairleigh Dickinson","H",62,51,FALSE,FALSE,NA,2
 2021,1,22,"Merrimack","Fairleigh Dickinson","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,26,"Merrimack","LIU","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,27,"Merrimack","LIU","V",NA,NA,FALSE,FALSE,NA,2
@@ -4604,7 +4604,7 @@
 2021,1,8,"Mount St. Mary's","St. Francis Brooklyn","V",55,67,FALSE,FALSE,NA,2
 2021,1,14,"Mount St. Mary's","Merrimack","H",77,57,FALSE,FALSE,NA,2
 2021,1,15,"Mount St. Mary's","Merrimack","H",63,52,FALSE,FALSE,NA,2
-2021,1,21,"Mount St. Mary's","Central Conn. St.","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,21,"Mount St. Mary's","Central Conn. St.","V",67,57,FALSE,FALSE,NA,2
 2021,1,22,"Mount St. Mary's","Central Conn. St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,26,"Mount St. Mary's","Wagner","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,27,"Mount St. Mary's","Wagner","H",NA,NA,FALSE,FALSE,NA,2
@@ -6006,12 +6006,12 @@
 2021,2,3,"Quinnipiac","Iona","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,10,"Quinnipiac","Iona","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,10,"Quinnipiac","Marist","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,12,"Quinnipiac","Fairfield","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,19,"Quinnipiac","Rider","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,19,"Quinnipiac","Siena","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"Quinnipiac","Rider","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"Quinnipiac","Siena","V",NA,NA,FALSE,FALSE,NA,2
 2021,3,5,"Quinnipiac","Saint Peter's","H",NA,NA,FALSE,FALSE,NA,2
-2021,3,5,"Quinnipiac","Fairfield","V",NA,NA,FALSE,FALSE,NA,2
 2021,3,6,"Quinnipiac","Saint Peter's","H",NA,NA,FALSE,FALSE,NA,2
 2021,3,6,"Quinnipiac","Fairfield","V",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Radford","Virginia Tech","V",62,77,FALSE,FALSE,NA,2
@@ -6332,7 +6332,7 @@
 2021,1,7,"Sacred Heart","Merrimack","V",90,97,FALSE,FALSE,NA,2
 2021,1,8,"Sacred Heart","Merrimack","V",68,62,FALSE,FALSE,NA,2
 2021,1,14,"Sacred Heart","Central Conn. St.","H",65,48,FALSE,FALSE,NA,2
-2021,1,21,"Sacred Heart","Saint Francis (PA)","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,21,"Sacred Heart","Saint Francis (PA)","H",58,76,FALSE,FALSE,NA,2
 2021,1,22,"Sacred Heart","Saint Francis (PA)","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Sacred Heart","Mount St. Mary's","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,31,"Sacred Heart","Mount St. Mary's","V",NA,NA,FALSE,FALSE,NA,2
@@ -6355,7 +6355,7 @@
 2021,1,8,"Saint Francis (PA)","LIU","V",58,71,FALSE,FALSE,NA,2
 2021,1,14,"Saint Francis (PA)","Bryant","H",89,82,FALSE,FALSE,NA,2
 2021,1,15,"Saint Francis (PA)","Bryant","H",63,72,FALSE,FALSE,NA,2
-2021,1,21,"Saint Francis (PA)","Sacred Heart","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,21,"Saint Francis (PA)","Sacred Heart","V",76,58,FALSE,FALSE,NA,2
 2021,1,22,"Saint Francis (PA)","Sacred Heart","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,26,"Saint Francis (PA)","Fairleigh Dickinson","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,27,"Saint Francis (PA)","Fairleigh Dickinson","H",NA,NA,FALSE,FALSE,NA,2
@@ -6764,8 +6764,8 @@
 2020,12,4,"South Alabama","Auburn","V",81,90,FALSE,FALSE,NA,2
 2020,12,8,"South Alabama","William Carey","H",80,67,FALSE,FALSE,NA,1
 2020,12,12,"South Alabama","Southern Miss.","V",76,75,FALSE,FALSE,NA,2
-2020,12,16,"South Alabama","Florida Tech","H",NA,NA,TRUE,FALSE,NA,1
 2020,12,16,"South Alabama","Flagler","H",103,81,FALSE,FALSE,NA,1
+2020,12,16,"South Alabama","Florida Tech","H",NA,NA,TRUE,FALSE,NA,1
 2020,12,19,"South Alabama","Alabama A&M","V",90,93,FALSE,FALSE,NA,2
 2021,1,1,"South Alabama","Ga. Southern","V",88,59,FALSE,FALSE,NA,2
 2021,1,2,"South Alabama","Ga. Southern","V",49,62,FALSE,FALSE,NA,2
@@ -9018,7 +9018,7 @@
 2021,1,6,"Wichita St.","Houston","V",63,70,FALSE,FALSE,NA,2
 2021,1,10,"Wichita St.","Cincinnati","H",82,76,FALSE,FALSE,NA,2
 2021,1,13,"Wichita St.","Tulsa","H",72,53,FALSE,FALSE,NA,2
-2021,1,21,"Wichita St.","Memphis","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,21,"Wichita St.","Memphis","V",52,72,FALSE,FALSE,NA,2
 2021,1,24,"Wichita St.","South Fla.","H",NA,NA,FALSE,TRUE,NA,2
 2021,1,27,"Wichita St.","Cincinnati","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Wichita St.","UCF","H",NA,NA,FALSE,FALSE,NA,2
