@@ -1,7 +1,8 @@
 library(tidyverse)
 
-x <- 
-  read_csv('https://www.masseyratings.com/cb/compare.csv', skip = 45) %>% 
+x <- read_csv('https://www.masseyratings.com/cb/compare.csv') 
+x <- read_csv('https://www.masseyratings.com/cb/compare.csv',
+              skip = which(x$`College Basketball Ranking Comparison` == 'Team')) %>% 
   select('team' = Team,
          'win_loss' = WL,
          'trank' = TRK,
