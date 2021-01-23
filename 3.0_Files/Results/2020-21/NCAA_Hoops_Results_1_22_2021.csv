@@ -258,7 +258,7 @@
 2021,1,9,"Appalachian St.","Ga. Southern","H",77,71,FALSE,FALSE,NA,2
 2021,1,15,"Appalachian St.","South Alabama","V",64,73,FALSE,FALSE,NA,2
 2021,1,16,"Appalachian St.","South Alabama","V",83,77,FALSE,FALSE,NA,2
-2021,1,22,"Appalachian St.","Georgia St.","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,22,"Appalachian St.","Georgia St.","H",80,71,FALSE,FALSE,NA,2
 2021,1,23,"Appalachian St.","Georgia St.","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,29,"Appalachian St.","Troy","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Appalachian St.","Troy","V",NA,NA,FALSE,FALSE,NA,2
@@ -2554,7 +2554,7 @@
 2021,1,9,"Georgia St.","Troy","V",NA,NA,FALSE,TRUE,NA,2
 2021,1,15,"Georgia St.","Coastal Carolina","H",NA,NA,FALSE,TRUE,NA,2
 2021,1,16,"Georgia St.","Coastal Carolina","H",71,68,FALSE,FALSE,NA,2
-2021,1,22,"Georgia St.","App State","V",NA,NA,FALSE,FALSE,NA,1
+2021,1,22,"Georgia St.","App State","V",71,80,FALSE,FALSE,NA,1
 2021,1,23,"Georgia St.","App State","V",NA,NA,FALSE,FALSE,NA,1
 2021,1,29,"Georgia St.","South Alabama","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Georgia St.","South Alabama","H",NA,NA,FALSE,FALSE,NA,2
@@ -2690,7 +2690,7 @@
 2021,1,9,"Green Bay","Oakland","H",87,78,FALSE,FALSE,NA,2
 2021,1,15,"Green Bay","Detroit Mercy","V",61,86,FALSE,FALSE,NA,2
 2021,1,16,"Green Bay","Detroit Mercy","V",65,68,FALSE,FALSE,NA,2
-2021,1,22,"Green Bay","Purdue Fort Wayne","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,22,"Green Bay","Purdue Fort Wayne","H",77,59,FALSE,FALSE,NA,2
 2021,1,23,"Green Bay","Purdue Fort Wayne","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,29,"Green Bay","Cleveland St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Green Bay","Cleveland St.","V",NA,NA,FALSE,FALSE,NA,2
@@ -3117,22 +3117,22 @@
 2020,12,19,"Iona","Rider","V",72,64,FALSE,FALSE,NA,2
 2020,12,23,"Iona","Coppin St.","H",85,65,FALSE,FALSE,NA,2
 2020,12,29,"Iona","Towson","H",NA,NA,TRUE,FALSE,NA,2
-2021,1,22,"Iona","Niagara","H",NA,NA,FALSE,FALSE,NA,2
-2021,1,23,"Iona","Niagara","H",NA,NA,FALSE,FALSE,NA,2
-2021,1,29,"Iona","Monmouth","H",NA,NA,FALSE,FALSE,NA,2
-2021,1,30,"Iona","Monmouth","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,3,"Iona","Quinnipiac","V",NA,NA,FALSE,FALSE,NA,2
-2021,2,5,"Iona","Siena","H",NA,NA,FALSE,FALSE,NA,2
-2021,2,6,"Iona","Siena","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,6,"Iona","Monmouth","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,7,"Iona","Monmouth","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,10,"Iona","Quinnipiac","V",NA,NA,FALSE,FALSE,NA,2
-2021,2,12,"Iona","Marist","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,12,"Iona","Saint Peter's","H",NA,NA,FALSE,FALSE,NA,2
-2021,2,13,"Iona","Marist","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,12,"Iona","Marist","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Iona","Saint Peter's","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,13,"Iona","Marist","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,17,"Iona","Manhattan","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,19,"Iona","Siena","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,20,"Iona","Siena","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,24,"Iona","Manhattan","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Iona","Canisius","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,28,"Iona","Canisius","V",NA,NA,FALSE,FALSE,NA,2
-2021,3,5,"Iona","Manhattan","H",NA,NA,FALSE,FALSE,NA,2
-2021,3,6,"Iona","Manhattan","H",NA,NA,FALSE,FALSE,NA,2
+2021,3,4,"Iona","Niagara","H",NA,NA,FALSE,FALSE,NA,2
+2021,3,5,"Iona","Niagara","H",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Iowa","N.C. Central","H",97,67,FALSE,FALSE,NA,2
 2020,11,27,"Iowa","Southern U.","H",103,76,FALSE,FALSE,NA,2
 2020,12,3,"Iowa","Western Ill.","H",99,58,FALSE,FALSE,NA,2
@@ -3926,10 +3926,10 @@
 2021,2,6,"Manhattan","Fairfield","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,12,"Manhattan","Siena","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Manhattan","Siena","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,17,"Manhattan","Iona","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,19,"Manhattan","Canisius","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"Manhattan","Canisius","V",NA,NA,FALSE,FALSE,NA,2
-2021,3,5,"Manhattan","Iona","V",NA,NA,FALSE,FALSE,NA,2
-2021,3,6,"Manhattan","Iona","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,24,"Manhattan","Iona","V",NA,NA,FALSE,FALSE,NA,2
 2020,11,28,"Marist","Albany (NY)","V",NA,NA,TRUE,FALSE,NA,2
 2020,12,5,"Marist","Binghamton","V",68,65,FALSE,FALSE,NA,2
 2020,12,6,"Marist","Binghamton","H",64,60,FALSE,FALSE,NA,2
@@ -4478,9 +4478,9 @@
 2021,1,22,"Monmouth","Manhattan","V",NA,NA,FALSE,TRUE,NA,2
 2021,1,23,"Monmouth","Manhattan","V",NA,NA,FALSE,TRUE,NA,2
 2021,1,29,"Monmouth","Fairfield","H",NA,NA,FALSE,FALSE,NA,2
-2021,1,29,"Monmouth","Iona","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Monmouth","Fairfield","H",NA,NA,FALSE,FALSE,NA,2
-2021,1,30,"Monmouth","Iona","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,6,"Monmouth","Iona","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,7,"Monmouth","Iona","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,12,"Monmouth","Niagara","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Monmouth","Niagara","V",NA,NA,FALSE,FALSE,NA,2
 2021,3,5,"Monmouth","Rider","V",NA,NA,FALSE,FALSE,NA,2
@@ -4943,15 +4943,15 @@
 2021,1,15,"Niagara","Manhattan","V",49,58,FALSE,FALSE,NA,2
 2021,1,16,"Niagara","Roberts Wesleyan","H",NA,NA,TRUE,FALSE,NA,1
 2021,1,16,"Niagara","Manhattan","V",55,58,FALSE,FALSE,NA,2
-2021,1,22,"Niagara","Iona","V",NA,NA,FALSE,FALSE,NA,2
-2021,1,22,"Niagara","Quinnipiac","V",NA,NA,FALSE,FALSE,NA,2
-2021,1,23,"Niagara","Iona","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,22,"Niagara","Quinnipiac","V",59,56,FALSE,FALSE,NA,2
 2021,1,23,"Niagara","Quinnipiac","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,29,"Niagara","Siena","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Niagara","Siena","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,12,"Niagara","Monmouth","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Niagara","Monmouth","H",NA,NA,FALSE,FALSE,NA,2
+2021,3,4,"Niagara","Iona","V",NA,NA,FALSE,FALSE,NA,2
 2021,3,5,"Niagara","Canisius","H",NA,NA,FALSE,FALSE,NA,2
+2021,3,5,"Niagara","Iona","V",NA,NA,FALSE,FALSE,NA,2
 2021,3,6,"Niagara","Canisius","H",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Nicholls St.","UC Davis","N",101,93,FALSE,FALSE,NA,2
 2020,11,27,"Nicholls St.","Idaho St.","N",70,51,FALSE,FALSE,NA,2
@@ -5982,7 +5982,7 @@
 2021,1,9,"Purdue Fort Wayne","UIC","H",88,55,FALSE,FALSE,NA,2
 2021,1,15,"Purdue Fort Wayne","Milwaukee","V",81,72,FALSE,FALSE,NA,2
 2021,1,16,"Purdue Fort Wayne","Milwaukee","V",81,74,FALSE,FALSE,NA,2
-2021,1,22,"Purdue Fort Wayne","Green Bay","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,22,"Purdue Fort Wayne","Green Bay","V",59,77,FALSE,FALSE,NA,2
 2021,1,23,"Purdue Fort Wayne","Green Bay","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,29,"Purdue Fort Wayne","Oakland","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Purdue Fort Wayne","Oakland","H",NA,NA,FALSE,FALSE,NA,2
@@ -6004,7 +6004,7 @@
 2021,1,9,"Quinnipiac","Manhattan","H",42,45,FALSE,FALSE,NA,2
 2021,1,15,"Quinnipiac","Monmouth","V",80,92,FALSE,FALSE,NA,2
 2021,1,16,"Quinnipiac","Monmouth","V",63,70,FALSE,FALSE,NA,2
-2021,1,22,"Quinnipiac","Niagara","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,22,"Quinnipiac","Niagara","H",56,59,FALSE,FALSE,NA,2
 2021,1,23,"Quinnipiac","Niagara","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,27,"Quinnipiac","Marist","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Quinnipiac","Canisius","V",NA,NA,FALSE,FALSE,NA,2
@@ -6339,7 +6339,7 @@
 2021,1,8,"Sacred Heart","Merrimack","V",68,62,FALSE,FALSE,NA,2
 2021,1,14,"Sacred Heart","Central Conn. St.","H",65,48,FALSE,FALSE,NA,2
 2021,1,21,"Sacred Heart","Saint Francis (PA)","H",58,76,FALSE,FALSE,NA,2
-2021,1,22,"Sacred Heart","Saint Francis (PA)","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,22,"Sacred Heart","Saint Francis (PA)","H",82,70,FALSE,FALSE,NA,2
 2021,1,30,"Sacred Heart","Mount St. Mary's","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,31,"Sacred Heart","Mount St. Mary's","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,4,"Sacred Heart","Central Conn. St.","V",NA,NA,FALSE,FALSE,NA,2
@@ -6362,7 +6362,7 @@
 2021,1,14,"Saint Francis (PA)","Bryant","H",89,82,FALSE,FALSE,NA,2
 2021,1,15,"Saint Francis (PA)","Bryant","H",63,72,FALSE,FALSE,NA,2
 2021,1,21,"Saint Francis (PA)","Sacred Heart","V",76,58,FALSE,FALSE,NA,2
-2021,1,22,"Saint Francis (PA)","Sacred Heart","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,22,"Saint Francis (PA)","Sacred Heart","V",70,82,FALSE,FALSE,NA,2
 2021,1,26,"Saint Francis (PA)","Fairleigh Dickinson","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,27,"Saint Francis (PA)","Fairleigh Dickinson","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Saint Francis (PA)","Central Conn. St.","H",NA,NA,FALSE,FALSE,NA,2
@@ -6753,11 +6753,11 @@
 2021,1,23,"Siena","Saint Peter's","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,29,"Siena","Niagara","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Siena","Niagara","V",NA,NA,FALSE,FALSE,NA,2
-2021,2,5,"Siena","Iona","V",NA,NA,FALSE,FALSE,NA,2
-2021,2,6,"Siena","Iona","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,12,"Siena","Manhattan","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Siena","Manhattan","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,19,"Siena","Iona","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,19,"Siena","Quinnipiac","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,20,"Siena","Iona","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"Siena","Quinnipiac","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,26,"Siena","Canisius","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Siena","Canisius","H",NA,NA,FALSE,FALSE,NA,2
@@ -7171,8 +7171,8 @@
 2020,12,3,"St. John's (NY)","Texas Tech","V",NA,NA,TRUE,FALSE,NA,2
 2020,12,6,"St. John's (NY)","Sacred Heart","H",NA,NA,TRUE,FALSE,NA,2
 2020,12,6,"St. John's (NY)","Stony Brook","H",89,66,FALSE,FALSE,NA,2
-2020,12,8,"St. John's (NY)","Rider","H",82,79,FALSE,FALSE,NA,2
 2020,12,8,"St. John's (NY)","Fordham","H",NA,NA,TRUE,FALSE,NA,2
+2020,12,8,"St. John's (NY)","Rider","H",82,79,FALSE,FALSE,NA,2
 2020,12,11,"St. John's (NY)","Seton Hall","V",68,77,FALSE,FALSE,NA,2
 2020,12,11,"St. John's (NY)","UConn","V",NA,NA,FALSE,TRUE,NA,2
 2020,12,13,"St. John's (NY)","Georgetown","V",94,97,FALSE,FALSE,NA,2
@@ -8052,7 +8052,7 @@
 2021,1,9,"UIC","Purdue Fort Wayne","V",55,88,FALSE,FALSE,NA,2
 2021,1,15,"UIC","Robert Morris","H",67,53,FALSE,FALSE,NA,2
 2021,1,16,"UIC","Robert Morris","H",66,62,FALSE,FALSE,NA,2
-2021,1,22,"UIC","Youngstown St.","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,22,"UIC","Youngstown St.","V",67,66,FALSE,FALSE,NA,2
 2021,1,23,"UIC","Youngstown St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,29,"UIC","Northern Ky.","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"UIC","Northern Ky.","V",NA,NA,FALSE,FALSE,NA,2
@@ -9240,7 +9240,7 @@
 2021,1,9,"Youngstown St.","Wright St.","V",55,93,FALSE,FALSE,NA,2
 2021,1,15,"Youngstown St.","Oakland","V",65,82,FALSE,FALSE,NA,2
 2021,1,16,"Youngstown St.","Oakland","V",74,81,FALSE,FALSE,NA,2
-2021,1,22,"Youngstown St.","UIC","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,22,"Youngstown St.","UIC","H",66,67,FALSE,FALSE,NA,2
 2021,1,23,"Youngstown St.","UIC","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,29,"Youngstown St.","Detroit Mercy","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Youngstown St.","Detroit Mercy","H",NA,NA,FALSE,FALSE,NA,2
