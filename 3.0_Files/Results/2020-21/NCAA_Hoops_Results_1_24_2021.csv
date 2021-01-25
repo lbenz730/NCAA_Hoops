@@ -2158,13 +2158,13 @@
 2021,1,16,"Fairfield","Marist","V",55,52,FALSE,FALSE,NA,2
 2021,1,29,"Fairfield","Monmouth","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Fairfield","Monmouth","V",NA,NA,FALSE,FALSE,NA,2
-2021,2,5,"Fairfield","Manhattan","V",NA,NA,FALSE,FALSE,NA,2
-2021,2,6,"Fairfield","Manhattan","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,12,"Fairfield","Quinnipiac","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Fairfield","Quinnipiac","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,26,"Fairfield","Saint Peter's","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Fairfield","Saint Peter's","V",NA,NA,FALSE,FALSE,NA,2
+2021,3,4,"Fairfield","Manhattan","V",NA,NA,FALSE,FALSE,NA,2
 2021,3,5,"Fairfield","Canisius","H",NA,NA,FALSE,FALSE,NA,2
+2021,3,5,"Fairfield","Manhattan","V",NA,NA,FALSE,FALSE,NA,2
 2021,3,6,"Fairfield","Canisius","H",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Fairleigh Dickinson","Quinnipiac","V",66,84,FALSE,FALSE,NA,2
 2020,11,27,"Fairleigh Dickinson","Rutgers","V",75,96,FALSE,FALSE,NA,2
@@ -3336,7 +3336,7 @@
 2021,1,15,"Kansas City","Western Ill.","V",NA,NA,TRUE,FALSE,NA,2
 2021,1,16,"Kansas City","Western Ill.","V",NA,NA,TRUE,FALSE,NA,2
 2021,1,23,"Kansas City","Oral Roberts","V",58,60,FALSE,FALSE,NA,2
-2021,1,24,"Kansas City","Oral Roberts","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,24,"Kansas City","Oral Roberts","V",81,76,FALSE,FALSE,NA,2
 2021,1,29,"Kansas City","North Dakota St.","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Kansas City","North Dakota St.","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,12,"Kansas City","Omaha","H",NA,NA,FALSE,FALSE,NA,2
@@ -3912,18 +3912,18 @@
 2021,1,9,"Manhattan","Quinnipiac","V",45,42,FALSE,FALSE,NA,2
 2021,1,15,"Manhattan","Niagara","H",58,49,FALSE,FALSE,NA,2
 2021,1,16,"Manhattan","Niagara","H",58,55,FALSE,FALSE,NA,2
-2021,1,22,"Manhattan","Monmouth","H",NA,NA,FALSE,TRUE,NA,2
-2021,1,23,"Manhattan","Monmouth","H",NA,NA,FALSE,TRUE,NA,2
 2021,1,29,"Manhattan","Saint Peter's","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Manhattan","Saint Peter's","V",NA,NA,FALSE,FALSE,NA,2
-2021,2,5,"Manhattan","Fairfield","H",NA,NA,FALSE,FALSE,NA,2
-2021,2,6,"Manhattan","Fairfield","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,5,"Manhattan","Monmouth","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,6,"Manhattan","Monmouth","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,12,"Manhattan","Siena","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Manhattan","Siena","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,17,"Manhattan","Iona","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,19,"Manhattan","Canisius","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"Manhattan","Canisius","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,24,"Manhattan","Iona","V",NA,NA,FALSE,FALSE,NA,2
+2021,3,4,"Manhattan","Fairfield","H",NA,NA,FALSE,FALSE,NA,2
+2021,3,5,"Manhattan","Fairfield","H",NA,NA,FALSE,FALSE,NA,2
 2020,11,28,"Marist","Albany (NY)","V",NA,NA,TRUE,FALSE,NA,2
 2020,12,5,"Marist","Binghamton","V",68,65,FALSE,FALSE,NA,2
 2020,12,6,"Marist","Binghamton","H",64,60,FALSE,FALSE,NA,2
@@ -4468,11 +4468,11 @@
 2021,1,10,"Monmouth","Marist","H",72,62,FALSE,FALSE,NA,2
 2021,1,15,"Monmouth","Quinnipiac","H",92,80,FALSE,FALSE,NA,2
 2021,1,16,"Monmouth","Quinnipiac","H",70,63,FALSE,FALSE,NA,2
-2021,1,22,"Monmouth","Manhattan","V",NA,NA,FALSE,TRUE,NA,2
-2021,1,23,"Monmouth","Manhattan","V",NA,NA,FALSE,TRUE,NA,2
 2021,1,29,"Monmouth","Fairfield","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Monmouth","Fairfield","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,5,"Monmouth","Manhattan","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,6,"Monmouth","Iona","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,6,"Monmouth","Manhattan","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,7,"Monmouth","Iona","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,12,"Monmouth","Niagara","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Monmouth","Niagara","V",NA,NA,FALSE,FALSE,NA,2
@@ -5619,7 +5619,7 @@
 2021,1,15,"Oral Roberts","Denver","V",88,84,FALSE,FALSE,NA,2
 2021,1,16,"Oral Roberts","Denver","V",91,82,FALSE,FALSE,NA,2
 2021,1,23,"Oral Roberts","Kansas City","H",60,58,FALSE,FALSE,NA,2
-2021,1,24,"Oral Roberts","Kansas City","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,24,"Oral Roberts","Kansas City","H",76,81,FALSE,FALSE,NA,2
 2021,2,5,"Oral Roberts","North Dakota St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,6,"Oral Roberts","North Dakota St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Oral Roberts","South Dakota St.","H",NA,NA,FALSE,FALSE,NA,2
