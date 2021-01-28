@@ -1815,8 +1815,8 @@
 2021,1,23,"Drexel","William & Mary","V",79,64,FALSE,FALSE,NA,2
 2021,1,23,"Drexel","Elon","V",NA,NA,FALSE,TRUE,NA,2
 2021,1,24,"Drexel","Elon","V",NA,NA,FALSE,TRUE,NA,2
-2021,1,30,"Drexel","Northeastern","H",NA,NA,FALSE,FALSE,NA,2
-2021,1,31,"Drexel","Northeastern","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,30,"Drexel","Northeastern","H",NA,NA,FALSE,TRUE,NA,2
+2021,1,31,"Drexel","Northeastern","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,6,"Drexel","Hofstra","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,7,"Drexel","Hofstra","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,11,"Drexel","Delaware","H",NA,NA,FALSE,FALSE,NA,2
@@ -2558,12 +2558,13 @@
 2021,1,16,"Georgia St.","Coastal Carolina","H",71,68,FALSE,FALSE,NA,2
 2021,1,22,"Georgia St.","App State","V",71,80,FALSE,FALSE,NA,1
 2021,1,23,"Georgia St.","App State","V",61,74,FALSE,FALSE,NA,1
-2021,1,29,"Georgia St.","South Alabama","H",NA,NA,FALSE,FALSE,NA,2
-2021,1,30,"Georgia St.","South Alabama","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,29,"Georgia St.","South Alabama","H",NA,NA,FALSE,TRUE,NA,2
+2021,1,30,"Georgia St.","South Alabama","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,5,"Georgia St.","App State","H",NA,NA,FALSE,FALSE,NA,1
 2021,2,6,"Georgia St.","App State","H",NA,NA,FALSE,FALSE,NA,1
 2021,2,11,"Georgia St.","Ga. Southern","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Georgia St.","Ga. Southern","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,16,"Georgia St.","Troy","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,19,"Georgia St.","Troy","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"Georgia St.","Troy","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,26,"Georgia St.","South Alabama","V",NA,NA,FALSE,FALSE,NA,2
@@ -5168,7 +5169,7 @@
 2021,1,16,"North Texas","UTEP","H",74,65,FALSE,FALSE,NA,2
 2021,1,22,"North Texas","Old Dominion","V",NA,NA,FALSE,TRUE,NA,2
 2021,1,23,"North Texas","Old Dominion","V",NA,NA,FALSE,TRUE,NA,2
-2021,1,28,"North Texas","Rice","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,29,"North Texas","Rice","V",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"North Texas","Rice","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,5,"North Texas","Louisiana Tech","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,6,"North Texas","Louisiana Tech","H",NA,NA,FALSE,FALSE,NA,2
@@ -5198,8 +5199,8 @@
 2021,1,17,"Northeastern","Col. of Charleston","V",68,66,FALSE,FALSE,NA,2
 2021,1,23,"Northeastern","James Madison","H",72,63,FALSE,FALSE,NA,2
 2021,1,24,"Northeastern","James Madison","H",72,79,FALSE,FALSE,NA,2
-2021,1,30,"Northeastern","Drexel","V",NA,NA,FALSE,FALSE,NA,2
-2021,1,31,"Northeastern","Drexel","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,30,"Northeastern","Drexel","V",NA,NA,FALSE,TRUE,NA,2
+2021,1,31,"Northeastern","Drexel","V",NA,NA,FALSE,TRUE,NA,2
 2021,2,6,"Northeastern","Delaware","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,7,"Northeastern","Delaware","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Northeastern","Towson","V",NA,NA,FALSE,FALSE,NA,2
@@ -6048,8 +6049,8 @@
 2021,1,20,"Radford","Campbell","V",67,61,FALSE,FALSE,NA,2
 2021,1,24,"Radford","UNC Asheville","V",68,76,FALSE,FALSE,NA,2
 2021,1,25,"Radford","UNC Asheville","V",73,63,FALSE,FALSE,NA,2
-2021,1,29,"Radford","USC Upstate","H",NA,NA,FALSE,FALSE,NA,2
-2021,1,30,"Radford","USC Upstate","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,4,"Radford","USC Upstate","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,5,"Radford","USC Upstate","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,11,"Radford","Winthrop","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,12,"Radford","Winthrop","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,18,"Radford","High Point","V",NA,NA,FALSE,FALSE,NA,2
@@ -6101,7 +6102,7 @@
 2021,1,16,"Rice","Old Dominion","H",58,61,FALSE,FALSE,NA,2
 2021,1,22,"Rice","UAB","V",68,78,FALSE,FALSE,NA,2
 2021,1,23,"Rice","UAB","V",74,86,FALSE,FALSE,NA,2
-2021,1,28,"Rice","North Texas","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,29,"Rice","North Texas","H",NA,NA,FALSE,FALSE,NA,2
 2021,1,30,"Rice","North Texas","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,5,"Rice","Southern Miss.","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,6,"Rice","Southern Miss.","H",NA,NA,FALSE,FALSE,NA,2
@@ -6788,8 +6789,8 @@
 2021,1,16,"South Alabama","App State","H",77,83,FALSE,FALSE,NA,1
 2021,1,22,"South Alabama","Ga. Southern","H",75,84,FALSE,FALSE,NA,2
 2021,1,23,"South Alabama","Ga. Southern","H",62,48,FALSE,FALSE,NA,2
-2021,1,29,"South Alabama","Georgia St.","V",NA,NA,FALSE,FALSE,NA,2
-2021,1,30,"South Alabama","Georgia St.","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,29,"South Alabama","Georgia St.","V",NA,NA,FALSE,TRUE,NA,2
+2021,1,30,"South Alabama","Georgia St.","V",NA,NA,FALSE,TRUE,NA,2
 2021,2,5,"South Alabama","Coastal Carolina","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,6,"South Alabama","Coastal Carolina","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,11,"South Alabama","Troy","H",NA,NA,FALSE,FALSE,NA,2
@@ -7738,6 +7739,7 @@
 2021,2,6,"Troy","Ga. Southern","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,11,"Troy","South Alabama","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Troy","South Alabama","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,16,"Troy","Georgia St.","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,19,"Troy","Georgia St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"Troy","Georgia St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,26,"Troy","Coastal Carolina","H",NA,NA,FALSE,FALSE,NA,2
@@ -7768,6 +7770,7 @@
 2021,2,6,"Tulane","Ga. Southern","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,11,"Tulane","South Alabama","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Tulane","South Alabama","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,16,"Tulane","Georgia St.","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,19,"Tulane","Georgia St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"Tulane","Georgia St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,26,"Tulane","Coastal Carolina","H",NA,NA,FALSE,FALSE,NA,2
@@ -8307,8 +8310,8 @@
 2021,1,10,"USC Upstate","Presbyterian","V",NA,NA,FALSE,TRUE,NA,2
 2021,1,14,"USC Upstate","Hampton","H",68,69,FALSE,FALSE,NA,2
 2021,1,15,"USC Upstate","Hampton","H",74,84,FALSE,FALSE,NA,2
-2021,1,29,"USC Upstate","Radford","V",NA,NA,FALSE,FALSE,NA,2
-2021,1,30,"USC Upstate","Radford","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,4,"USC Upstate","Radford","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,5,"USC Upstate","Radford","V",NA,NA,FALSE,TRUE,NA,2
 2021,2,11,"USC Upstate","UNC Asheville","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,12,"USC Upstate","UNC Asheville","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,18,"USC Upstate","Charleston So.","V",NA,NA,FALSE,FALSE,NA,2
