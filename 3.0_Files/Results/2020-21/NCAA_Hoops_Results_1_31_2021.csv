@@ -776,7 +776,7 @@
 2021,1,24,"Bradley","Loyola Chicago","H",56,69,FALSE,FALSE,NA,2
 2021,1,25,"Bradley","Loyola Chicago","H",58,65,FALSE,FALSE,NA,2
 2021,1,28,"Bradley","Valparaiso","V",85,91,FALSE,FALSE,NA,2
-2021,1,31,"Bradley","Indiana St.","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,31,"Bradley","Indiana St.","V",57,60,FALSE,FALSE,NA,2
 2021,2,1,"Bradley","Indiana St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,6,"Bradley","Southern Ill.","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,7,"Bradley","Southern Ill.","H",NA,NA,FALSE,FALSE,NA,2
@@ -804,7 +804,7 @@
 2021,1,14,"Bryant","Saint Francis (PA)","V",82,89,FALSE,FALSE,NA,2
 2021,1,15,"Bryant","Saint Francis (PA)","V",72,63,FALSE,FALSE,NA,2
 2021,1,30,"Bryant","Fairleigh Dickinson","V",79,81,FALSE,FALSE,NA,2
-2021,1,31,"Bryant","Fairleigh Dickinson","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,31,"Bryant","Fairleigh Dickinson","V",84,95,FALSE,FALSE,NA,2
 2021,2,4,"Bryant","Mount St. Mary's","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,5,"Bryant","Mount St. Mary's","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,11,"Bryant","Sacred Heart","V",NA,NA,FALSE,FALSE,NA,2
@@ -1451,7 +1451,7 @@
 2021,1,30,"Colgate","Army West Point","V",NA,NA,FALSE,TRUE,NA,2
 2021,1,30,"Colgate","Holy Cross","V",74,63,FALSE,FALSE,NA,2
 2021,1,31,"Colgate","Army West Point","V",NA,NA,FALSE,TRUE,NA,2
-2021,1,31,"Colgate","Holy Cross","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,31,"Colgate","Holy Cross","V",78,60,FALSE,FALSE,NA,2
 2021,2,6,"Colgate","Boston U.","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,7,"Colgate","Boston U.","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"Colgate","Lehigh","V",NA,NA,FALSE,FALSE,NA,2
@@ -2199,7 +2199,7 @@
 2021,1,26,"Fairleigh Dickinson","Saint Francis (PA)","V",94,92,FALSE,FALSE,NA,2
 2021,1,27,"Fairleigh Dickinson","Saint Francis (PA)","V",82,90,FALSE,FALSE,NA,2
 2021,1,30,"Fairleigh Dickinson","Bryant","H",81,79,FALSE,FALSE,NA,2
-2021,1,31,"Fairleigh Dickinson","Bryant","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,31,"Fairleigh Dickinson","Bryant","H",95,84,FALSE,FALSE,NA,2
 2021,2,11,"Fairleigh Dickinson","Wagner","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Fairleigh Dickinson","Wagner","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,16,"Fairleigh Dickinson","St. Francis Brooklyn","H",NA,NA,FALSE,FALSE,NA,2
@@ -2858,7 +2858,7 @@
 2021,1,30,"Holy Cross","Boston U.","H",NA,NA,FALSE,TRUE,NA,2
 2021,1,30,"Holy Cross","Colgate","H",63,74,FALSE,FALSE,NA,2
 2021,1,31,"Holy Cross","Boston U.","V",NA,NA,FALSE,TRUE,NA,2
-2021,1,31,"Holy Cross","Colgate","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,31,"Holy Cross","Colgate","H",60,78,FALSE,FALSE,NA,2
 2021,2,6,"Holy Cross","Army West Point","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,7,"Holy Cross","Army West Point","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"Holy Cross","Boston U.","V",NA,NA,FALSE,FALSE,NA,2
@@ -3120,7 +3120,7 @@
 2021,1,17,"Indiana St.","Illinois St.","V",74,68,FALSE,FALSE,NA,2
 2021,1,25,"Indiana St.","Southern Ill.","H",69,66,FALSE,FALSE,NA,2
 2021,1,26,"Indiana St.","Southern Ill.","H",71,59,FALSE,FALSE,NA,2
-2021,1,31,"Indiana St.","Bradley","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,31,"Indiana St.","Bradley","H",60,57,FALSE,FALSE,NA,2
 2021,2,1,"Indiana St.","Bradley","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,26,"Indiana St.","Valparaiso","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Indiana St.","Valparaiso","V",NA,NA,FALSE,FALSE,NA,2
@@ -4882,10 +4882,10 @@
 2021,1,24,"New Hampshire","Albany (NY)","H",64,83,FALSE,FALSE,NA,2
 2021,1,30,"New Hampshire","Binghamton","V",44,65,FALSE,FALSE,NA,2
 2021,1,31,"New Hampshire","Binghamton","V",71,65,FALSE,FALSE,NA,2
+2021,2,5,"New Hampshire","UMass Lowell","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,6,"New Hampshire","UMass Lowell","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,18,"New Hampshire","Vermont","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,19,"New Hampshire","Vermont","V",NA,NA,FALSE,FALSE,NA,2
-2021,2,27,"New Hampshire","UMass Lowell","H",NA,NA,FALSE,FALSE,NA,2
-2021,2,28,"New Hampshire","UMass Lowell","H",NA,NA,FALSE,FALSE,NA,2
 2020,12,13,"New Mexico","Rice","V",72,61,FALSE,FALSE,NA,2
 2020,12,15,"New Mexico","Our Lady of the Lake","N",104,65,FALSE,FALSE,NA,1
 2020,12,17,"New Mexico","LeTourneau","N",90,58,FALSE,FALSE,NA,1
@@ -6274,7 +6274,7 @@
 2021,1,20,"SFA","Northwestern St.","H",86,74,FALSE,FALSE,NA,2
 2021,1,23,"SFA","Lamar University","H",102,72,FALSE,FALSE,NA,2
 2021,1,27,"SFA","Abilene Christian","V",62,82,FALSE,FALSE,NA,2
-2021,1,31,"SFA","Sam Houston","H",NA,NA,FALSE,FALSE,NA,1
+2021,1,31,"SFA","Sam Houston","H",78,68,FALSE,FALSE,NA,1
 2021,2,6,"SFA","New Orleans","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,10,"SFA","A&M-Corpus Christi","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,17,"SFA","Central Ark.","V",NA,NA,FALSE,FALSE,NA,2
@@ -6539,7 +6539,7 @@
 2021,1,16,"Sam Houston St.","Houston Baptist","H",87,80,FALSE,FALSE,NA,2
 2021,1,20,"Sam Houston St.","Abilene Christian","H",64,57,FALSE,FALSE,NA,2
 2021,1,27,"Sam Houston St.","A&M-Corpus Christi","V",75,70,FALSE,FALSE,NA,2
-2021,1,31,"Sam Houston St.","SFA","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,31,"Sam Houston St.","SFA","V",68,78,FALSE,FALSE,NA,2
 2021,2,6,"Sam Houston St.","Nicholls St.","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,10,"Sam Houston St.","Southeastern La.","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Sam Houston St.","Central Ark.","H",NA,NA,FALSE,FALSE,NA,2
@@ -7073,7 +7073,7 @@
 2021,1,25,"Southern Ill.","Indiana St.","V",66,69,FALSE,FALSE,NA,2
 2021,1,26,"Southern Ill.","Indiana St.","V",59,71,FALSE,FALSE,NA,2
 2021,1,30,"Southern Ill.","UNI","H",62,74,FALSE,FALSE,NA,2
-2021,1,31,"Southern Ill.","UNI","H",NA,NA,FALSE,FALSE,NA,2
+2021,1,31,"Southern Ill.","UNI","H",71,68,FALSE,FALSE,NA,2
 2021,2,6,"Southern Ill.","Bradley","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,7,"Southern Ill.","Bradley","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,10,"Southern Ill.","Missouri St.","V",NA,NA,FALSE,FALSE,NA,2
@@ -8294,7 +8294,7 @@
 2021,1,21,"UNI","Cornell College","H",NA,NA,TRUE,FALSE,NA,1
 2021,1,25,"UNI","Coe","H",70,60,FALSE,FALSE,NA,1
 2021,1,30,"UNI","Southern Ill.","V",74,62,FALSE,FALSE,NA,2
-2021,1,31,"UNI","Southern Ill.","V",NA,NA,FALSE,FALSE,NA,2
+2021,1,31,"UNI","Southern Ill.","V",68,71,FALSE,FALSE,NA,2
 2021,2,12,"UNI","Valparaiso","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"UNI","Valparaiso","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,17,"UNI","Drake","H",NA,NA,FALSE,FALSE,NA,2
