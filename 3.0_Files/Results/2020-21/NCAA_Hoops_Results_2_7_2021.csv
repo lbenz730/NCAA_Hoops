@@ -674,7 +674,7 @@
 2021,1,27,"Boise St.","Colorado St.","V",56,78,FALSE,FALSE,NA,2
 2021,1,29,"Boise St.","Colorado St.","V",85,77,FALSE,FALSE,NA,2
 2021,2,5,"Boise St.","Nevada","V",72,74,FALSE,FALSE,NA,2
-2021,2,7,"Boise St.","Nevada","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,7,"Boise St.","Nevada","V",62,73,FALSE,FALSE,NA,2
 2021,2,11,"Boise St.","UNLV","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Boise St.","UNLV","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,17,"Boise St.","Utah St.","H",NA,NA,FALSE,FALSE,NA,2
@@ -774,7 +774,7 @@
 2021,1,31,"Bradley","Indiana St.","V",57,60,FALSE,FALSE,NA,2
 2021,2,1,"Bradley","Indiana St.","V",55,67,FALSE,FALSE,NA,2
 2021,2,6,"Bradley","Southern Ill.","H",74,66,FALSE,FALSE,NA,2
-2021,2,7,"Bradley","Southern Ill.","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,7,"Bradley","Southern Ill.","H",68,69,FALSE,FALSE,NA,2
 2021,2,10,"Bradley","Valparaiso","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Bradley","Missouri St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,14,"Bradley","Missouri St.","V",NA,NA,FALSE,FALSE,NA,2
@@ -1616,7 +1616,7 @@
 2021,2,2,"Dayton","Duquesne","V",64,69,FALSE,FALSE,NA,2
 2021,2,5,"Dayton","Richmond","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,5,"Dayton","George Mason","H",74,65,FALSE,FALSE,NA,2
-2021,2,9,"Dayton","Massachusetts","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,9,"Dayton","Massachusetts","V",NA,NA,FALSE,TRUE,NA,2
 2021,2,9,"Dayton","VCU","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Dayton","Saint Joseph's","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,16,"Dayton","Rhode Island","V",NA,NA,FALSE,FALSE,NA,2
@@ -2388,7 +2388,6 @@
 2021,1,16,"Furman","ETSU","H",78,66,FALSE,FALSE,NA,2
 2021,1,20,"Furman","VMI","V",73,74,FALSE,FALSE,NA,2
 2021,1,23,"Furman","ETSU","V",62,71,FALSE,FALSE,NA,2
-2021,1,25,"Furman","UNC Greensboro","H",NA,NA,FALSE,TRUE,NA,2
 2021,1,30,"Furman","Western Caro.","V",75,69,FALSE,FALSE,NA,2
 2021,1,30,"Furman","Chattanooga","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,3,"Furman","Samford","V",NA,NA,FALSE,TRUE,NA,2
@@ -3136,7 +3135,7 @@
 2021,1,31,"Indiana St.","Bradley","H",60,57,FALSE,FALSE,NA,2
 2021,2,1,"Indiana St.","Bradley","H",67,55,FALSE,FALSE,NA,2
 2021,2,6,"Indiana St.","UNI","V",61,57,FALSE,FALSE,NA,2
-2021,2,7,"Indiana St.","UNI","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,7,"Indiana St.","UNI","V",67,70,FALSE,FALSE,NA,2
 2021,2,26,"Indiana St.","Valparaiso","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Indiana St.","Valparaiso","V",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Iona","Fordham","V",NA,NA,TRUE,FALSE,NA,2
@@ -4118,7 +4117,7 @@
 2021,1,30,"Massachusetts","George Mason","V",NA,NA,FALSE,TRUE,NA,2
 2021,2,3,"Massachusetts","Fordham","H",60,54,FALSE,FALSE,NA,2
 2021,2,6,"Massachusetts","Rhode Island","V",75,63,FALSE,FALSE,NA,2
-2021,2,9,"Massachusetts","Dayton","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,9,"Massachusetts","Dayton","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,12,"Massachusetts","VCU","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,14,"Massachusetts","St. Bonaventure","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"Massachusetts","Duquesne","V",NA,NA,FALSE,FALSE,NA,2
@@ -4890,7 +4889,7 @@
 2021,1,31,"Nevada","UNLV","H",89,60,FALSE,FALSE,NA,2
 2021,2,2,"Nevada","UNLV","H",72,62,FALSE,FALSE,NA,2
 2021,2,5,"Nevada","Boise St.","H",74,72,FALSE,FALSE,NA,2
-2021,2,7,"Nevada","Boise St.","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,7,"Nevada","Boise St.","H",73,62,FALSE,FALSE,NA,2
 2021,2,13,"Nevada","San Jose St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,15,"Nevada","San Jose St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,19,"Nevada","Colorado St.","H",NA,NA,FALSE,FALSE,NA,2
@@ -7114,7 +7113,7 @@
 2021,1,30,"Southern Ill.","UNI","H",62,74,FALSE,FALSE,NA,2
 2021,1,31,"Southern Ill.","UNI","H",71,68,FALSE,FALSE,NA,2
 2021,2,6,"Southern Ill.","Bradley","V",66,74,FALSE,FALSE,NA,2
-2021,2,7,"Southern Ill.","Bradley","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,7,"Southern Ill.","Bradley","V",69,68,FALSE,FALSE,NA,2
 2021,2,10,"Southern Ill.","Missouri St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,13,"Southern Ill.","Illinois St.","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,14,"Southern Ill.","Illinois St.","H",NA,NA,FALSE,FALSE,NA,2
@@ -8285,7 +8284,6 @@
 2021,1,16,"UNC Greensboro","Samford","V",82,70,FALSE,FALSE,NA,2
 2021,1,18,"UNC Greensboro","The Citadel","H",87,73,FALSE,FALSE,NA,2
 2021,1,23,"UNC Greensboro","Chattanooga","V",74,66,FALSE,FALSE,NA,2
-2021,1,25,"UNC Greensboro","Furman","V",NA,NA,FALSE,TRUE,NA,2
 2021,1,27,"UNC Greensboro","Mercer","H",81,68,FALSE,FALSE,NA,2
 2021,1,30,"UNC Greensboro","VMI","H",76,59,FALSE,FALSE,NA,2
 2021,2,3,"UNC Greensboro","The Citadel","V",85,66,FALSE,FALSE,NA,2
