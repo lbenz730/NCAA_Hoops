@@ -1298,7 +1298,7 @@
 2021,2,6,"Chattanooga","ETSU","V",67,65,FALSE,FALSE,NA,2
 2021,2,10,"Chattanooga","Wofford","V",78,66,FALSE,FALSE,NA,2
 2021,2,13,"Chattanooga","The Citadel","H",70,66,FALSE,FALSE,NA,2
-2021,2,15,"Chattanooga","ETSU","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,15,"Chattanooga","ETSU","H",53,51,FALSE,FALSE,NA,2
 2021,2,17,"Chattanooga","Western Caro.","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,21,"Chattanooga","UNC Greensboro","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,24,"Chattanooga","Mercer","V",NA,NA,FALSE,FALSE,NA,2
@@ -1936,7 +1936,7 @@
 2021,2,6,"ETSU","Chattanooga","H",65,67,FALSE,FALSE,NA,2
 2021,2,10,"ETSU","The Citadel","V",71,79,FALSE,FALSE,NA,2
 2021,2,13,"ETSU","Wofford","H",71,49,FALSE,FALSE,NA,2
-2021,2,15,"ETSU","Chattanooga","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,15,"ETSU","Chattanooga","V",51,53,FALSE,FALSE,NA,2
 2021,2,17,"ETSU","Mercer","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"ETSU","Samford","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,24,"ETSU","VMI","V",NA,NA,FALSE,FALSE,NA,2
@@ -2340,7 +2340,7 @@
 2021,2,6,"Florida St.","Pittsburgh","V",NA,NA,FALSE,TRUE,NA,2
 2021,2,9,"Florida St.","Virginia Tech","V",NA,NA,FALSE,TRUE,NA,2
 2021,2,13,"Florida St.","Wake Forest","H",92,85,FALSE,FALSE,NA,2
-2021,2,15,"Florida St.","Virginia","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,15,"Florida St.","Virginia","H",81,60,FALSE,FALSE,NA,2
 2021,2,20,"Florida St.","Virginia Tech","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,24,"Florida St.","Miami (FL)","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Florida St.","North Carolina","V",NA,NA,FALSE,FALSE,NA,2
@@ -5173,6 +5173,7 @@
 2021,2,8,"North Carolina","Miami (FL)","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,13,"North Carolina","Virginia","V",48,60,FALSE,FALSE,NA,2
 2021,2,16,"North Carolina","Virginia Tech","H",NA,NA,FALSE,TRUE,NA,2
+2021,2,17,"North Carolina","Northeastern","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"North Carolina","Louisville","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,23,"North Carolina","Boston College","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"North Carolina","Florida St.","H",NA,NA,FALSE,FALSE,NA,2
@@ -5290,8 +5291,8 @@
 2020,12,9,"Northeastern","UMass Lowell","H",NA,NA,TRUE,FALSE,NA,2
 2020,12,11,"Northeastern","Massachusetts","V",79,94,FALSE,FALSE,NA,2
 2020,12,13,"Northeastern","Massachusetts","H",78,75,FALSE,FALSE,NA,2
-2020,12,16,"Northeastern","Bryant","H",NA,NA,TRUE,FALSE,NA,2
 2020,12,16,"Northeastern","Syracuse","V",56,62,FALSE,FALSE,NA,2
+2020,12,16,"Northeastern","Bryant","H",NA,NA,TRUE,FALSE,NA,2
 2020,12,20,"Northeastern","Old Dominion","V",62,66,FALSE,FALSE,NA,2
 2020,12,22,"Northeastern","Georgia","V",58,76,FALSE,FALSE,NA,2
 2020,12,29,"Northeastern","West Virginia","V",51,73,FALSE,FALSE,NA,2
@@ -5309,6 +5310,7 @@
 2021,2,7,"Northeastern","Delaware","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,13,"Northeastern","Towson","V",76,67,FALSE,FALSE,NA,2
 2021,2,14,"Northeastern","Towson","V",57,68,FALSE,FALSE,NA,2
+2021,2,17,"Northeastern","North Carolina","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,20,"Northeastern","UNCW","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,21,"Northeastern","UNCW","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,27,"Northeastern","William & Mary","V",NA,NA,FALSE,FALSE,NA,2
@@ -8871,7 +8873,7 @@
 2021,2,6,"Virginia","Pittsburgh","H",73,66,FALSE,FALSE,NA,2
 2021,2,10,"Virginia","Georgia Tech","V",57,49,FALSE,FALSE,NA,2
 2021,2,13,"Virginia","North Carolina","H",60,48,FALSE,FALSE,NA,2
-2021,2,15,"Virginia","Florida St.","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,15,"Virginia","Florida St.","V",60,81,FALSE,FALSE,NA,2
 2021,2,20,"Virginia","Duke","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,24,"Virginia","Pittsburgh","H",NA,NA,FALSE,FALSE,NA,2
 2021,3,1,"Virginia","Miami (FL)","H",NA,NA,FALSE,FALSE,NA,2
