@@ -381,7 +381,7 @@
 2021,2,9,"Arkansas","Kentucky","V",81,80,FALSE,FALSE,NA,2
 2021,2,13,"Arkansas","Missouri","V",86,81,FALSE,FALSE,NA,2
 2021,2,16,"Arkansas","Florida","H",75,64,FALSE,FALSE,NA,2
-2021,2,20,"Arkansas","Texas A&M","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,20,"Arkansas","Texas A&M","V",NA,NA,FALSE,TRUE,NA,2
 2021,2,24,"Arkansas","Alabama","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Arkansas","LSU","H",NA,NA,FALSE,FALSE,NA,2
 2021,3,2,"Arkansas","South Carolina","V",NA,NA,FALSE,FALSE,NA,2
@@ -1198,7 +1198,6 @@
 2020,12,20,"Central Mich.","Olivet","H",127,66,FALSE,FALSE,NA,1
 2020,12,22,"Central Mich.","Eastern Mich.","V",NA,NA,FALSE,TRUE,NA,2
 2020,12,29,"Central Mich.","Eastern Mich.","V",87,60,FALSE,FALSE,NA,2
-2021,1,2,"Central Mich.","Miami (OH)","H",NA,NA,FALSE,TRUE,NA,2
 2021,1,5,"Central Mich.","Bowling Green","V",69,90,FALSE,FALSE,NA,2
 2021,1,9,"Central Mich.","Bowling Green","H",65,93,FALSE,FALSE,NA,2
 2021,1,12,"Central Mich.","Kent St.","H",85,94,FALSE,FALSE,NA,2
@@ -1212,6 +1211,7 @@
 2021,2,9,"Central Mich.","Ball St.","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,12,"Central Mich.","Buffalo","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,16,"Central Mich.","Ohio","V",NA,NA,FALSE,TRUE,NA,2
+2021,2,23,"Central Mich.","Miami (OH)","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,23,"Central Mich.","Eastern Mich.","V",NA,NA,TRUE,FALSE,NA,2
 2021,2,25,"Central Mich.","Buffalo","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Central Mich.","Ball St.","V",NA,NA,FALSE,FALSE,NA,2
@@ -2961,7 +2961,7 @@
 2021,2,10,"Houston Baptist","Abilene Christian","V",59,88,FALSE,FALSE,NA,2
 2021,2,13,"Houston Baptist","Lamar University","H",80,75,FALSE,FALSE,NA,2
 2021,2,15,"Houston Baptist","A&M-Corpus Christi","V",NA,NA,FALSE,TRUE,NA,2
-2021,2,20,"Houston Baptist","Sam Houston","H",NA,NA,FALSE,FALSE,NA,1
+2021,2,20,"Houston Baptist","Sam Houston","H",NA,NA,FALSE,TRUE,NA,1
 2021,2,22,"Houston Baptist","Northwestern St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,24,"Houston Baptist","Nicholls St.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Houston Baptist","McNeese","V",NA,NA,FALSE,FALSE,NA,2
@@ -4312,7 +4312,6 @@
 2020,12,21,"Miami (OH)","Defiance","H",NA,NA,TRUE,FALSE,NA,1
 2020,12,23,"Miami (OH)","Bellarmine","H",NA,NA,TRUE,FALSE,NA,2
 2020,12,29,"Miami (OH)","Ohio","H",NA,NA,FALSE,TRUE,NA,2
-2021,1,2,"Miami (OH)","Central Mich.","V",NA,NA,FALSE,TRUE,NA,2
 2021,1,9,"Miami (OH)","Northern Ill.","H",70,58,FALSE,FALSE,NA,2
 2021,1,12,"Miami (OH)","Ohio","V",61,78,FALSE,FALSE,NA,2
 2021,1,19,"Miami (OH)","Ball St.","H",81,71,FALSE,FALSE,NA,2
@@ -4328,6 +4327,7 @@
 2021,2,16,"Miami (OH)","Toledo","V",75,87,FALSE,FALSE,NA,2
 2021,2,20,"Miami (OH)","Northern Ill.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,23,"Miami (OH)","Buffalo","H",NA,NA,TRUE,FALSE,NA,2
+2021,2,23,"Miami (OH)","Central Mich.","V",NA,NA,FALSE,TRUE,NA,2
 2021,2,25,"Miami (OH)","Western Mich.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Miami (OH)","Kent St.","H",NA,NA,FALSE,FALSE,NA,2
 2021,3,2,"Miami (OH)","Bowling Green","V",NA,NA,FALSE,FALSE,NA,2
@@ -6633,7 +6633,7 @@
 2021,2,6,"Sam Houston St.","Nicholls St.","H",78,71,FALSE,FALSE,NA,2
 2021,2,10,"Sam Houston St.","Southeastern La.","H",79,61,FALSE,FALSE,NA,2
 2021,2,13,"Sam Houston St.","Central Ark.","H",97,57,FALSE,FALSE,NA,2
-2021,2,20,"Sam Houston St.","Houston Baptist","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,20,"Sam Houston St.","Houston Baptist","V",NA,NA,FALSE,TRUE,NA,2
 2021,2,22,"Sam Houston St.","Lamar University","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,24,"Sam Houston St.","Abilene Christian","V",NA,NA,FALSE,FALSE,NA,2
 2021,3,3,"Sam Houston St.","A&M-Corpus Christi","H",NA,NA,FALSE,FALSE,NA,2
@@ -7668,7 +7668,7 @@
 2021,2,10,"Texas A&M","Georgia","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,13,"Texas A&M","Florida","V",NA,NA,FALSE,TRUE,NA,2
 2021,2,18,"Texas A&M","Alabama","H",NA,NA,FALSE,TRUE,NA,2
-2021,2,20,"Texas A&M","Arkansas","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,20,"Texas A&M","Arkansas","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,23,"Texas A&M","Kentucky","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Texas A&M","Missouri","V",NA,NA,FALSE,FALSE,NA,2
 2021,3,3,"Texas A&M","Mississippi St.","H",NA,NA,FALSE,FALSE,NA,2
