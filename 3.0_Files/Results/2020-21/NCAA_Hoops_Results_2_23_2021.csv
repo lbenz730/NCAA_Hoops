@@ -272,7 +272,7 @@
 2021,2,13,"Appalachian St.","Coastal Carolina","V",NA,NA,TRUE,FALSE,NA,2
 2021,2,19,"Appalachian St.","South Alabama","H",63,65,FALSE,FALSE,NA,2
 2021,2,20,"Appalachian St.","South Alabama","H",54,56,FALSE,FALSE,NA,2
-2021,2,23,"Appalachian St.","Georgia St.","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,23,"Appalachian St.","Georgia St.","V",71,85,FALSE,FALSE,NA,2
 2021,2,26,"Appalachian St.","Ga. Southern","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Appalachian St.","Ga. Southern","V",NA,NA,FALSE,FALSE,NA,2
 2020,11,27,"Arizona","Grambling","H",74,55,FALSE,FALSE,NA,2
@@ -874,7 +874,7 @@
 2021,2,16,"Buffalo","Eastern Mich.","V",NA,NA,FALSE,TRUE,NA,2
 2021,2,19,"Buffalo","Toledo","H",70,80,FALSE,FALSE,NA,2
 2021,2,23,"Buffalo","Miami (OH)","V",NA,NA,TRUE,FALSE,NA,2
-2021,2,23,"Buffalo","Northern Ill.","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,23,"Buffalo","Northern Ill.","V",102,74,FALSE,FALSE,NA,2
 2021,2,25,"Buffalo","Central Mich.","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Buffalo","Ohio","V",NA,NA,FALSE,FALSE,NA,2
 2021,3,2,"Buffalo","Akron","H",NA,NA,FALSE,FALSE,NA,2
@@ -1220,7 +1220,7 @@
 2021,2,9,"Central Mich.","Ball St.","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,12,"Central Mich.","Buffalo","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,16,"Central Mich.","Ohio","V",NA,NA,FALSE,TRUE,NA,2
-2021,2,23,"Central Mich.","Miami (OH)","H",NA,NA,FALSE,TRUE,NA,2
+2021,2,23,"Central Mich.","Miami (OH)","H",54,96,FALSE,FALSE,NA,2
 2021,2,23,"Central Mich.","Eastern Mich.","V",NA,NA,TRUE,FALSE,NA,2
 2021,2,25,"Central Mich.","Buffalo","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Central Mich.","Ball St.","V",NA,NA,FALSE,FALSE,NA,2
@@ -1280,8 +1280,8 @@
 2021,2,13,"Charlotte","Old Dominion","V",45,64,FALSE,FALSE,NA,2
 2021,2,19,"Charlotte","UTSA","H",NA,NA,TRUE,FALSE,NA,2
 2021,2,20,"Charlotte","UTSA","H",NA,NA,TRUE,FALSE,NA,2
-2021,2,26,"Charlotte","UTEP","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Charlotte","UTEP","V",NA,NA,FALSE,FALSE,NA,2
+2021,2,28,"Charlotte","UTEP","V",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Chattanooga","Lander","H",99,63,FALSE,FALSE,NA,1
 2020,11,28,"Chattanooga","Northern Ky.","H",NA,NA,FALSE,TRUE,NA,2
 2020,11,30,"Chattanooga","Tennessee Tech","V",62,54,FALSE,FALSE,NA,2
@@ -2629,7 +2629,7 @@
 2021,2,16,"Georgia St.","Troy","V",NA,NA,TRUE,FALSE,NA,2
 2021,2,19,"Georgia St.","Troy","H",80,66,FALSE,FALSE,NA,2
 2021,2,20,"Georgia St.","Troy","H",65,53,FALSE,FALSE,NA,2
-2021,2,23,"Georgia St.","App State","H",NA,NA,FALSE,FALSE,NA,1
+2021,2,23,"Georgia St.","App State","H",85,71,FALSE,FALSE,NA,1
 2021,2,26,"Georgia St.","South Alabama","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Georgia St.","South Alabama","V",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Georgia Tech","Georgia St.","H",120,123,FALSE,FALSE,NA,2
@@ -4338,7 +4338,7 @@
 2021,2,16,"Miami (OH)","Toledo","V",75,87,FALSE,FALSE,NA,2
 2021,2,20,"Miami (OH)","Northern Ill.","V",69,64,FALSE,FALSE,NA,2
 2021,2,23,"Miami (OH)","Buffalo","H",NA,NA,TRUE,FALSE,NA,2
-2021,2,23,"Miami (OH)","Central Mich.","V",NA,NA,FALSE,TRUE,NA,2
+2021,2,23,"Miami (OH)","Central Mich.","V",96,54,FALSE,FALSE,NA,2
 2021,2,25,"Miami (OH)","Western Mich.","V",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"Miami (OH)","Kent St.","H",NA,NA,FALSE,FALSE,NA,2
 2021,3,2,"Miami (OH)","Bowling Green","V",NA,NA,FALSE,FALSE,NA,2
@@ -5413,7 +5413,7 @@
 2021,2,13,"Northern Ill.","Kent St.","V",58,80,FALSE,FALSE,NA,2
 2021,2,16,"Northern Ill.","Akron","V",76,81,FALSE,FALSE,NA,2
 2021,2,20,"Northern Ill.","Miami (OH)","H",64,69,FALSE,FALSE,NA,2
-2021,2,23,"Northern Ill.","Buffalo","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,23,"Northern Ill.","Buffalo","H",74,102,FALSE,FALSE,NA,2
 2021,2,27,"Northern Ill.","Eastern Mich.","V",NA,NA,FALSE,FALSE,NA,2
 2021,3,2,"Northern Ill.","Western Mich.","H",NA,NA,FALSE,FALSE,NA,2
 2021,3,5,"Northern Ill.","Central Mich.","V",NA,NA,FALSE,FALSE,NA,2
@@ -8577,8 +8577,8 @@
 2021,2,13,"UTEP","FIU","H",77,68,FALSE,FALSE,NA,2
 2021,2,21,"UTEP","Fla. Atlantic","V",NA,NA,TRUE,FALSE,NA,2
 2021,2,22,"UTEP","Fla. Atlantic","V",NA,NA,TRUE,FALSE,NA,2
-2021,2,26,"UTEP","Charlotte","H",NA,NA,FALSE,FALSE,NA,2
 2021,2,27,"UTEP","Charlotte","H",NA,NA,FALSE,FALSE,NA,2
+2021,2,28,"UTEP","Charlotte","H",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"UTRGV","Texas","V",55,91,FALSE,FALSE,NA,2
 2020,11,28,"UTRGV","UTSA","H",81,64,FALSE,FALSE,NA,2
 2020,12,2,"UTRGV","A&M-Corpus Christi","H",62,59,FALSE,FALSE,NA,2
