@@ -12,7 +12,7 @@ x <- read_csv(paste("3.0_Files/Results/2020-21/NCAA_Hoops_Results",
 train <- read_csv("3.0_Files/Results/2017-18/training.csv")
 confs <- read_csv("3.0_Files/Info/conferences.csv")
 deadlines <- read_csv("3.0_Files/Info/deadlines.csv") %>%
-  mutate(deadline = as.Date(deadline, "%m/%d/%y") %m+% years(1))
+  mutate(deadline = as.Date(deadline, "%m/%d/%y"))
 priors <- read_csv("3.0_Files/Info/prior.csv") %>% 
   arrange(team)
 source("3.0_Files/powerrankings.R")

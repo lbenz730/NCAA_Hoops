@@ -29,10 +29,10 @@ tournaments <- c('Empire Classic (Riverside)', 'Myrtle Beach Invitational',
                  'Maui Invitational (Mainland)', 'Cayman Islands (Mainland)',
                  "- MBB Negro League Baseball Museum Tipoff Classic",
                  'Hawaiian Airlines Diamond Head Classic') 
-conf_tournaments <- paste0(c("Big South", "Patriot League", "Northeast Conference",
+conf_tournaments <- paste0('-\\sMBB\\s+', c("Big South", "Patriot League", "Northeast Conference",
                              "Horizon League", "Mountain West", "ASUN", "MAC", "WCC", 
                              "America East", "Sun Belt", "SWAC", "MEAC", "Big East", 
-                             "Big 10", "Big 12", "ACC", "SEC", "Ivy League"), ".*MBB.*")
+                             "Big 10", "Big 12", "ACC", "SEC", "Ivy League"), "\\s+(Championship)+")
 
 
 z <- NULL

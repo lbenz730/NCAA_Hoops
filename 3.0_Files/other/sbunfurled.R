@@ -59,5 +59,5 @@ bracket_cln <-
   
 
 sbu <- inner_join(x, bracket_cln)
-write_csv(sbu, 'sbunfurled.csv')
+write_csv(sbu, '3.0_Files/other/sbunfurled.csv')
   
