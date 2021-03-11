@@ -87,9 +87,11 @@ make_bracket <- function(tourney) {
     predict(lm.seed, newdata = bracket, type = "response")
 
   correct <- c("Houston")
-  correct2 <- c("UConn")
+  correct2 <- c("UConn", "Duke")
+  correct3 <- c("Drake")
   bracket$odds[bracket$team %in% correct] <- bracket$odds[bracket$team %in% correct] - 0.2
-  bracket$odds[bracket$team %in% correct] <- bracket$odds[bracket$team %in% correct2] - 2
+  bracket$odds[bracket$team %in% correct2] <- bracket$odds[bracket$team %in% correct2] - 2
+  bracket$odds[bracket$team %in% correct2] <- bracket$odds[bracket$team %in% correct3] + 30
   bracket <- arrange(bracket, desc(round(odds, 1)), avg)
   
   if(tourney == T) {
@@ -137,8 +139,8 @@ make_bracket <- function(tourney) {
     write.csv(bracket, "3.0_Files/Bracketology/bracket.csv", row.names = F)
     
     ### First teams out
-    j <- 37
-    z <- 37
+    j <- 38
+    z <- 38
     bubble <- vector()
     while(j <= 52) {
       for(k in z:length(teams)){
