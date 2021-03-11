@@ -87,11 +87,13 @@ make_bracket <- function(tourney) {
     predict(lm.seed, newdata = bracket, type = "response")
 
   correct <- c("Houston")
-  correct2 <- c("UConn", "Duke")
+  correct2 <- c("UConn")
+  correct4 <- c("UConn")
   correct3 <- c("Drake")
-  bracket$odds[bracket$team %in% correct] <- bracket$odds[bracket$team %in% correct] - 0.2
+  bracket$odds[bracket$team %in% correct] <- bracket$odds[bracket$team %in% correct] - 0.1
   bracket$odds[bracket$team %in% correct2] <- bracket$odds[bracket$team %in% correct2] - 2
-  bracket$odds[bracket$team %in% correct2] <- bracket$odds[bracket$team %in% correct3] + 30
+  bracket$odds[bracket$team %in% correct3] <- bracket$odds[bracket$team %in% correct3] + 30
+  bracket$odds[bracket$team %in% correct4] <- bracket$odds[bracket$team %in% correct4] - 30
   bracket <- arrange(bracket, desc(round(odds, 1)), avg)
   
   if(tourney == T) {

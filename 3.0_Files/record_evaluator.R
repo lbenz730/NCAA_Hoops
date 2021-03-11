@@ -1,6 +1,7 @@
 record_eval <- function(team) {
   ### Get Team's games
   games <- x[x$team == team,]
+  games <- games[!games$postponed & !games$canceled,]
   if(nrow(games) == 0) {
     return(list('team' = team, "qual_bonus" = NA, "sor" = NA, "wab" = NA,
                 "wins" = NA, "losses" = NA))
