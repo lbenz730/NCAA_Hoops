@@ -135,7 +135,8 @@
 2021,2,27,"Alabama","Mississippi St.","V",64,59,FALSE,FALSE,NA,2
 2021,3,2,"Alabama","Auburn","H",70,58,FALSE,FALSE,NA,2
 2021,3,6,"Alabama","Georgia","V",89,79,FALSE,FALSE,NA,2
-2021,3,12,"Alabama","Mississippi St.","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,12,"Alabama","Mississippi St.","N",85,48,FALSE,FALSE,NA,2
+2021,3,13,"Alabama","Winner from    Florida (-) vs.   Tennessee (-)","N",NA,NA,FALSE,FALSE,NA,1
 2020,11,29,"Alabama A&M","Samford","V",78,76,FALSE,FALSE,NA,2
 2020,12,5,"Alabama A&M","Ohio St.","V",NA,NA,TRUE,FALSE,NA,2
 2020,12,16,"Alabama A&M","North Ala.","V",NA,NA,TRUE,FALSE,NA,2
@@ -3586,7 +3587,7 @@
 2021,2,27,"Kansas","Baylor","H",71,58,FALSE,FALSE,NA,2
 2021,3,4,"Kansas","UTEP","H",67,62,FALSE,FALSE,NA,2
 2021,3,11,"Kansas","Oklahoma","N",69,62,FALSE,FALSE,NA,2
-2021,3,12,"Kansas","Texas","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,12,"Kansas","Texas","N",NA,NA,TRUE,FALSE,NA,2
 2020,11,25,"Kansas City","Culver-Stockton","H",105,35,FALSE,FALSE,NA,1
 2020,11,27,"Kansas City","Greenville","H",138,97,FALSE,FALSE,NA,1
 2020,11,28,"Kansas City","Southeast Mo. St.","H",66,71,FALSE,FALSE,NA,2
@@ -4371,7 +4372,7 @@
 2021,3,3,"Maryland","Northwestern","V",55,60,FALSE,FALSE,NA,2
 2021,3,7,"Maryland","Penn St.","H",61,66,FALSE,FALSE,NA,2
 2021,3,11,"Maryland","Michigan St.","N",68,57,FALSE,FALSE,NA,2
-2021,3,12,"Maryland","Michigan","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,12,"Maryland","Michigan","N",66,79,FALSE,FALSE,NA,2
 2020,11,26,"Massachusetts","Siena","N",NA,NA,TRUE,FALSE,NA,2
 2020,11,27,"Massachusetts","Delaware","N",NA,NA,TRUE,FALSE,NA,2
 2020,11,29,"Massachusetts","Iona","N",NA,NA,TRUE,FALSE,NA,2
@@ -4595,7 +4596,8 @@
 2021,3,2,"Michigan","Illinois","H",53,76,FALSE,FALSE,NA,2
 2021,3,4,"Michigan","Michigan St.","H",69,50,FALSE,FALSE,NA,2
 2021,3,7,"Michigan","Michigan St.","V",64,70,FALSE,FALSE,NA,2
-2021,3,12,"Michigan","Maryland","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,12,"Michigan","Maryland","N",79,66,FALSE,FALSE,NA,2
+2021,3,13,"Michigan","Winner from    Ohio St. (-) vs.   Purdue (-)","N",NA,NA,FALSE,FALSE,NA,1
 2020,11,25,"Michigan St.","Eastern Mich.","H",83,67,FALSE,FALSE,NA,2
 2020,11,28,"Michigan St.","Notre Dame","H",80,70,FALSE,FALSE,NA,2
 2020,12,1,"Michigan St.","Duke","V",75,69,FALSE,FALSE,NA,2
@@ -4738,7 +4740,7 @@
 2021,3,3,"Mississippi St.","Texas A&M","V",63,57,FALSE,FALSE,NA,2
 2021,3,6,"Mississippi St.","Auburn","V",71,78,FALSE,FALSE,NA,2
 2021,3,11,"Mississippi St.","Kentucky","N",74,73,FALSE,FALSE,NA,2
-2021,3,12,"Mississippi St.","Alabama","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,12,"Mississippi St.","Alabama","N",48,85,FALSE,FALSE,NA,2
 2020,11,25,"Mississippi Val.","Arkansas","V",62,142,FALSE,FALSE,NA,2
 2020,11,26,"Mississippi Val.","North Texas","V",62,116,FALSE,FALSE,NA,2
 2020,11,28,"Mississippi Val.","Wyoming","V",61,97,FALSE,FALSE,NA,2
@@ -7459,7 +7461,7 @@
 2021,3,6,"South Fla.","Tulane","V",NA,NA,TRUE,FALSE,NA,2
 2021,3,6,"South Fla.","Wichita St.","V",63,80,FALSE,FALSE,NA,2
 2021,3,11,"South Fla.","Temple","N",73,71,FALSE,FALSE,NA,2
-2021,3,12,"South Fla.","Wichita St.","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,12,"South Fla.","Wichita St.","N",67,68,FALSE,FALSE,NA,2
 2020,11,28,"Southeast Mo. St.","Kansas City","V",71,66,FALSE,FALSE,NA,2
 2020,11,29,"Southeast Mo. St.","Greenville","N",NA,NA,TRUE,FALSE,NA,1
 2020,12,2,"Southeast Mo. St.","Southern Ill.","H",79,87,FALSE,FALSE,NA,2
@@ -8080,7 +8082,8 @@
 2021,3,4,"Texas","Oklahoma","V",69,65,FALSE,FALSE,NA,2
 2021,3,7,"Texas","TCU","V",76,64,FALSE,FALSE,NA,2
 2021,3,11,"Texas","Texas Tech","N",67,66,FALSE,FALSE,NA,2
-2021,3,12,"Texas","Kansas","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,12,"Texas","Kansas","N",NA,NA,TRUE,FALSE,NA,2
+2021,3,13,"Texas","Winner from    Oklahoma St. (-) vs.   Baylor (-)","N",NA,NA,FALSE,FALSE,NA,1
 2020,11,29,"Texas A&M","New Orleans","H",82,53,FALSE,FALSE,NA,2
 2020,12,2,"Texas A&M","Tarleton St.","H",73,66,FALSE,FALSE,NA,2
 2020,12,6,"Texas A&M","UTRGV","H",81,68,FALSE,FALSE,NA,2
@@ -8416,7 +8419,7 @@
 2021,3,5,"UAB","North Texas","V",65,51,FALSE,FALSE,NA,2
 2021,3,6,"UAB","North Texas","V",65,61,FALSE,FALSE,NA,2
 2021,3,11,"UAB","Rice","N",73,60,FALSE,FALSE,NA,2
-2021,3,12,"UAB","Western Ky.","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,12,"UAB","Western Ky.","N",60,64,FALSE,FALSE,NA,2
 2020,11,25,"UC Davis","Nicholls St.","N",93,101,FALSE,FALSE,NA,2
 2020,11,27,"UC Davis","Santa Clara","V",63,66,FALSE,FALSE,NA,2
 2020,11,28,"UC Davis","Idaho St.","N",70,61,FALSE,FALSE,NA,2
@@ -9665,7 +9668,8 @@
 2021,3,5,"Western Ky.","Old Dominion","H",69,71,FALSE,FALSE,NA,2
 2021,3,6,"Western Ky.","Old Dominion","H",60,57,FALSE,FALSE,NA,2
 2021,3,11,"Western Ky.","UTSA","N",80,67,FALSE,FALSE,NA,2
-2021,3,12,"Western Ky.","UAB","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,12,"Western Ky.","UAB","N",64,60,FALSE,FALSE,NA,2
+2021,3,13,"Western Ky.","Winner from    North Texas (-) vs.   Louisiana Tech (-)","N",NA,NA,FALSE,FALSE,NA,1
 2020,11,25,"Western Mich.","Butler","V",62,66,FALSE,FALSE,NA,2
 2020,11,28,"Western Mich.","Trine","V",NA,NA,TRUE,FALSE,NA,1
 2020,12,2,"Western Mich.","Notre Dame","V",NA,NA,TRUE,FALSE,NA,2
@@ -9712,15 +9716,16 @@
 2021,2,3,"Wichita St.","Tulane","H",75,67,FALSE,FALSE,NA,2
 2021,2,7,"Wichita St.","Temple","H",70,67,FALSE,FALSE,NA,2
 2021,2,10,"Wichita St.","UCF","V",61,60,FALSE,FALSE,NA,2
-2021,2,18,"Wichita St.","Houston","H",68,63,FALSE,FALSE,NA,2
 2021,2,18,"Wichita St.","Memphis","H",NA,NA,FALSE,TRUE,NA,2
+2021,2,18,"Wichita St.","Houston","H",68,63,FALSE,FALSE,NA,2
 2021,2,21,"Wichita St.","East Carolina","V",NA,NA,FALSE,TRUE,NA,2
 2021,2,25,"Wichita St.","SMU","H",NA,NA,FALSE,TRUE,NA,2
 2021,2,28,"Wichita St.","SMU","V",NA,NA,FALSE,TRUE,NA,2
 2021,3,3,"Wichita St.","Tulane","V",78,70,FALSE,FALSE,NA,2
 2021,3,6,"Wichita St.","South Fla.","H",80,63,FALSE,FALSE,NA,2
 2021,3,6,"Wichita St.","Temple","V",NA,NA,TRUE,FALSE,NA,2
-2021,3,12,"Wichita St.","South Fla.","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,12,"Wichita St.","South Fla.","N",68,67,FALSE,FALSE,NA,2
+2021,3,13,"Wichita St.","Winner from    Cincinnati (-) vs.   SMU (-)","N",NA,NA,FALSE,FALSE,NA,1
 2020,11,28,"William & Mary","Old Dominion","V",78,86,FALSE,FALSE,NA,2
 2020,11,30,"William & Mary","NC State","V",NA,NA,TRUE,FALSE,NA,2
 2020,12,3,"William & Mary","Hampton","H",NA,NA,TRUE,FALSE,NA,2
