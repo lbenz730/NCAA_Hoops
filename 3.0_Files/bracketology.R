@@ -88,12 +88,12 @@ make_bracket <- function(tourney) {
 
   correct <- c("Houston")
   correct2 <- c("UConn")
-  correct4 <- c("UConn")
   correct3 <- c("Drake")
+  correct4 <- c("Xavier", "St. John's (NY)")
   bracket$odds[bracket$team %in% correct] <- bracket$odds[bracket$team %in% correct] - 0.1
   bracket$odds[bracket$team %in% correct2] <- bracket$odds[bracket$team %in% correct2] - 2
-  bracket$odds[bracket$team %in% correct3] <- bracket$odds[bracket$team %in% correct3] + 30
-  # bracket$odds[bracket$team %in% correct4] <- bracket$odds[bracket$team %in% correct4] - 30
+  bracket$odds[bracket$team %in% correct3] <- bracket$odds[bracket$team %in% correct3] + 40
+  bracket$odds[bracket$team %in% correct4] <- bracket$odds[bracket$team %in% correct4] - 30
   bracket <- arrange(bracket, desc(round(odds, 1)), avg)
   
   if(tourney == T) {
@@ -132,7 +132,7 @@ make_bracket <- function(tourney) {
                            rep(6,4), rep(7,4), rep(8,4), rep(9,4), rep(10,4),
                            rep(11,6), rep(12,4), rep(13,4), rep(14,4), rep(15,4),
                            rep(16,6))
-    f4 <- bracket$seed_overall[!bracket$autobid][33:36]
+    f4 <- bracket$seed_overall[!bracket$autobid][34:37]
     bracket$first4 <- is.element(bracket$seed_overall, f4) | is.element(bracket$seed_overall, c(65:68))
     ### Not 3 1 seeds from 1 conference
     if(sum(bracket$conf[4] == bracket$conf[1:3]) == 2) {
