@@ -183,11 +183,11 @@ bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
 # ############################# Conference Sims (No Tie-Breaks) ##################
-for(conf in unique(confs$conference)) {
-  print(conf)
-  sims <- conf_fast_sim(conf, 10000)
-  write_csv(sims, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
-}
+# for(conf in unique(confs$conference)) {
+#   print(conf)
+#   sims <- conf_fast_sim(conf, 10000)
+#   write_csv(sims, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+# }
 ############################ System Evaluation #################################
 min_date <- as.Date("2020-11-25")
 max_date <- Sys.Date()

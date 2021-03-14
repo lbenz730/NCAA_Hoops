@@ -89,7 +89,7 @@ make_bracket <- function(tourney) {
   correct <- c("Houston")
   correct2 <- c("UConn")
   correct3 <- c("Drake")
-  correct4 <- c("Xavier", "St. John's (NY)")
+  correct4 <- c("Xavier", "St. John's (NY)", 'SMU')
   bracket$odds[bracket$team %in% correct] <- bracket$odds[bracket$team %in% correct] - 0.1
   bracket$odds[bracket$team %in% correct2] <- bracket$odds[bracket$team %in% correct2] - 2
   bracket$odds[bracket$team %in% correct3] <- bracket$odds[bracket$team %in% correct3] + 40
@@ -148,7 +148,7 @@ make_bracket <- function(tourney) {
       for(k in z:length(teams)){
         z <- z + 1
         if(confs$eligible[confs$team == tmp$team[k]]) {
-          bubble[j - 36] <- as.character(tmp$team)[k]
+          bubble[j - 37] <- as.character(tmp$team)[k]
           j <- j + 1
           break
         }
