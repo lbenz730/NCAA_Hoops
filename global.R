@@ -2,8 +2,12 @@ library(dplyr)
 library(readr)
 library(ggplot2)
 library(ggrepel)
+library(gt)
+library(paletteer)
+library(ncaahoopR)
 
 glm.pointspread <- readRDS("glm_pointspread.rds")
+ncaa_sims <- read_csv('3.0_Files/ncaa_sims/ncaa_sims.csv')
 
 theme_set(theme_bw() +
             theme(axis.title = element_text(size = 20),
@@ -167,3 +171,130 @@ gg_color_hue <- function(n) {
   hues = seq(15, 375, length = n + 1)
   hcl(h = hues, l = 65, c = 100)[1:n]
 }
+
+
+make_table <- function(sim_results, table_region) {
+  
+  df <- 
+    select(ncaa_colors, 'team' = ncaa_name, logo_url) %>% 
+    inner_join(sim_results) 
+  
+  if(table_region != 'all') {
+    df <- filter(df, region == table_region) 
+  }
+  
+  df <- 
+    df %>% 
+    arrange(-champ, -championship_game, 
+            -final_four, -elite_eight, -sweet_sixteen,
+            -second_round, -first_round)
+  
+  df %>% 
+    gt() %>% 
+    
+    ### Ratings 
+    data_color(
+      columns = vars(rating),
+      colors = scales::col_numeric(
+        palette = ggsci::rgb_material('amber', n = 68),
+        domain = c(min(sim_results$rating), max(sim_results$rating)),
+      )
+    ) %>% 
+    fmt_number(
+      columns = vars(rating),
+      decimals = 1
+    ) %>% 
+    
+    ### Tournament Odds 
+    data_color(
+      columns = vars(first_round, second_round,
+                     sweet_sixteen, elite_eight,
+                     final_four, championship_game,
+                     champ),
+      colors = scales::col_numeric(
+        palette = ggsci::rgb_material('amber', n = 68),
+        domain = c(0,1),
+      )
+    ) %>% 
+    
+    fmt_percent(
+      columns = vars(first_round, second_round,
+                     sweet_sixteen, elite_eight,
+                     final_four, championship_game,
+                     champ),
+      decimals = 1) %>% 
+    
+    ### Align Columns
+    cols_align(
+      align = "center",
+      columns = T
+    ) %>% 
+    
+    ### Borders
+    tab_style(
+      style = list(
+        cell_borders(
+          sides = "bottom",
+          color = "black",
+          weight = px(3)
+        )
+      ),
+      locations = list(
+        cells_column_labels(
+          columns = gt::everything()
+        )
+      )
+    ) %>% 
+    tab_style(
+      style = list(
+        cell_borders(
+          sides = "right",
+          color = "black",
+          weight = px(3)
+        )
+      ),
+      locations = list(
+        cells_body(
+          columns = vars(rating)
+        )
+      )
+    ) %>% 
+    text_transform(
+      locations = cells_body(vars(logo_url)),
+      fn = function(x) {
+        web_image(
+          url = x,
+          height = 30
+        )
+      }
+    ) %>% 
+    cols_label(
+      team = '',
+      logo_url = '',
+      region = 'Region',
+      seed = 'Seed',
+      rating = 'Rating',
+      first_round = '1st Round',
+      second_round = '2nd Round',
+      sweet_sixteen = 'Sweet 16',
+      elite_eight = 'Elite 8',
+      final_four = 'Final 4',
+      championship_game = 'NCG',
+      champ = 'Champion'
+    ) %>% 
+    tab_source_note("Based on 10,000 Simulations of NCAA Tournament") %>%
+    # tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
+    tab_header(
+      title = md("**2021 NCAA Men's Basketball Tournament Odds**"),
+      # subtitle = md(paste0('**', table_region, " Region**"))
+    ) %>% 
+    tab_options(column_labels.font.size = 20,
+                heading.title.font.size = 40,
+                heading.subtitle.font.size = 30,
+                heading.title.font.weight = 'bold',
+                heading.subtitle.font.weight = 'bold'
+    )
+}
+
+ncaa_gt <- make_table(ncaa_sims, 'all')
+

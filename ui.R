@@ -206,9 +206,15 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                             )
                    ),
                    
-                   ### ncaahoopR Graphics
-                   tabPanel("ncaahoopR Graphics",
-                            "COMING SOON"
+                   ### NCAA Tournament Odds
+                   tabPanel("NCAA Tournament Odds",
+                            
+                              
+                              
+                              mainPanel(
+                                gt_output('ncaa_sims')
+                              )
+                            
                    ),
                    
                    ### About

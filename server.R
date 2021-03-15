@@ -492,6 +492,9 @@ shinyServer(function(input, output, session) {
     
   })
   
+  ### NCAA Simulations
+  output$ncaa_sims <- render_gt(ncaa_gt)
+  
   
 })
 

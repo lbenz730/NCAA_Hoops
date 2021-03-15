@@ -98,35 +98,7 @@ sim_results <-
          'championship_game' = sum(team == round_winners[[5]])/n_sims,
          'champ' = sum(team == round_winners[[6]])/n_sims) %>% 
   ungroup() %>% 
-  select(-first_four) %>% 
-  arrange(-champ, -championship_game, 
-          -final_four, -elite_eight, -sweet_sixteen,
-          -second_round, -first_round) 
-  
-  
+  select(-first_four) 
 
-
-library(gt)
-sim_results %>% 
-  gt() %>% 
-  data_color(
-    columns = vars(rating),
-    colors = scales::col_numeric(
-      palette = c("#ffffff", "#f2fbd2", "#c9ecb4", "#93d3ab", "#35b0ab"),
-      domain = NULL,
-    )
-  ) %>% 
-  fmt_number(
-    columns = vars(rating),
-    decimals = 1
-    ) %>% 
-  fmt_percent(
-    columns = vars(first_round, second_round,
-                     sweet_sixteen, elite_eight,
-                     final_four, championship_game,
-                     champ),
-    # digits = 1,
-    decimals = 0,
-    pattern = "{x}")
-  
+write_csv(sim_results, 'ncaa_sims.csv')
 
