@@ -177,44 +177,44 @@ x$wins[is.na(x$wins)] <-
   round(predict(glm.pointspread, newdata = x[is.na(x$wins),], type = "response"), 3)
 by_conf <- pr_compute(by_conf = T)
 write_csv(x, "3.0_Files/Predictions/predictions.csv")
-########################### Bracketology #######################################
-resumes <- get_resumes(new = T)
-bracket <- make_bracket(tourney = T)
-bracket_math <- make_bracket(tourney = F)
-
-# ############################# Conference Sims (No Tie-Breaks) ##################
-# for(conf in unique(confs$conference)) {
-#   print(conf)
-#   sims <- conf_fast_sim(conf, 10000)
-#   write_csv(sims, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
-# }
-############################ System Evaluation #################################
-min_date <- as.Date("2020-11-25")
-max_date <- Sys.Date()
-y <- filter(x, date >= min_date, date <= max_date)
-cat(paste("System Evaluation:", min_date, "Through", max_date),
-    "\n-------------------------------------------------------------\n",
-    "Predictive Accuracy: ",
-    round(100 * mean(sign(y$pred_score_diff) == sign(y$score_diff), na.rm = T), 1), "%\n", 
-    "Mean Absolute Error in Predicted Score Differential: ",
-    round(mean(abs(y$pred_score_diff - y$score_diff), na.rm = T), 2), "\n",
-    "Games w/in 2 Points of Observed Score Differential: ",
-    round(100 * mean(abs(y$pred_score_diff - y$score_diff) <= 2, na.rm = T), 2), "%\n",
-    "Games w/in 5 Points of Observed Score Differential: ",
-    round(100 * mean(abs(y$pred_score_diff - y$score_diff) <= 5, na.rm = T), 2), "%\n",
-    "Predicted Totals Score <= Total Score: ",
-    round(100 * mean(y$pred_total_score <= y$total_score, na.rm = T), 1), "%\n",
-    "Predicted Totals Score > Total Score: ",
-    round(100 * mean(y$pred_total_score > y$total_score, na.rm = T), 1), "%\n",
-    "Mean Absolute Error in Total Score Predictions: ",
-    round(mean(abs(y$pred_total_score - y$total_score), na.rm = T),  2), "\n",
-    "Games w/in 2 Points of Observed Total Score: ",
-    round(100 * mean(abs(y$pred_total_score - y$total_score) <= 2, na.rm = T), 2), "%\n",
-    "Games w/in 5 Points of Observed Total Score: ",
-    round(100 * mean(abs(y$pred_total_score - y$total_score) <= 5, na.rm = T), 2), "%\n",
-    sep = "")
-nrow(filter(x, round(pred_team_score) == team_score))
-filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)
+# ########################### Bracketology #######################################
+# resumes <- get_resumes(new = T)
+# bracket <- make_bracket(tourney = T)
+# bracket_math <- make_bracket(tourney = F)
+# 
+# # ############################# Conference Sims (No Tie-Breaks) ##################
+# # for(conf in unique(confs$conference)) {
+# #   print(conf)
+# #   sims <- conf_fast_sim(conf, 10000)
+# #   write_csv(sims, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+# # }
+# ############################ System Evaluation #################################
+# min_date <- as.Date("2020-11-25")
+# max_date <- Sys.Date()
+# y <- filter(x, date >= min_date, date <= max_date)
+# cat(paste("System Evaluation:", min_date, "Through", max_date),
+#     "\n-------------------------------------------------------------\n",
+#     "Predictive Accuracy: ",
+#     round(100 * mean(sign(y$pred_score_diff) == sign(y$score_diff), na.rm = T), 1), "%\n", 
+#     "Mean Absolute Error in Predicted Score Differential: ",
+#     round(mean(abs(y$pred_score_diff - y$score_diff), na.rm = T), 2), "\n",
+#     "Games w/in 2 Points of Observed Score Differential: ",
+#     round(100 * mean(abs(y$pred_score_diff - y$score_diff) <= 2, na.rm = T), 2), "%\n",
+#     "Games w/in 5 Points of Observed Score Differential: ",
+#     round(100 * mean(abs(y$pred_score_diff - y$score_diff) <= 5, na.rm = T), 2), "%\n",
+#     "Predicted Totals Score <= Total Score: ",
+#     round(100 * mean(y$pred_total_score <= y$total_score, na.rm = T), 1), "%\n",
+#     "Predicted Totals Score > Total Score: ",
+#     round(100 * mean(y$pred_total_score > y$total_score, na.rm = T), 1), "%\n",
+#     "Mean Absolute Error in Total Score Predictions: ",
+#     round(mean(abs(y$pred_total_score - y$total_score), na.rm = T),  2), "\n",
+#     "Games w/in 2 Points of Observed Total Score: ",
+#     round(100 * mean(abs(y$pred_total_score - y$total_score) <= 2, na.rm = T), 2), "%\n",
+#     "Games w/in 5 Points of Observed Total Score: ",
+#     round(100 * mean(abs(y$pred_total_score - y$total_score) <= 5, na.rm = T), 2), "%\n",
+#     sep = "")
+# nrow(filter(x, round(pred_team_score) == team_score))
+# filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)
 
 
 devtools::install_github("lbenz730/ncaahoopR")
