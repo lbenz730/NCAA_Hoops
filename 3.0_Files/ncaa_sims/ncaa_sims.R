@@ -34,8 +34,8 @@ sim_round <- function(bracket) {
 
 ### Read in Seed list and team ratings
 seed_list <- read_csv('seed_list.csv')
-power_rankings <- read_csv('Power_Rankings/power_rankings.csv')
-glm_pointspread <- read_rds('../glm_pointspread.rds')
+power_rankings <- read_csv('../Power_Rankings/power_rankings.csv')
+glm_pointspread <- read_rds('../../glm_pointspread.rds')
 
 seed_list <- 
   seed_list %>% 
