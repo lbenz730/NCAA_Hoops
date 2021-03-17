@@ -56,6 +56,10 @@ wp_matrix <-
   ### Win Prob for Team over Opponent
   mutate('win_prob' = predict(glm_pointspread, newdata = ., type = 'response'))
 
+wp_matrix <- 
+  read_csv('~/Desktop/jake_predictions.csv') %>% 
+  mutate('team' = gsub("Mount St. Mary\'s", "Mt. St. Mary's", team)) %>% 
+  mutate('opponent' = gsub("Mount St. Mary\'s", "Mt. St. Mary's", opponent))
 
 ### First Four
 first_four <- 
