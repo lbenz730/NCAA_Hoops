@@ -212,6 +212,7 @@ shinyServer(function(input, output, session) {
   gp <- eventReactive(input$proj_date, {
     df <- filter(x, date == input$proj_date) 
     print(names(df))
+    print(df)
     if(nrow(df) > 0) {
       df <- 
         df %>% 
