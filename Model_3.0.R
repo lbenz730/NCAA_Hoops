@@ -82,8 +82,10 @@ round_dates <-
        '2' = c('2021-03-20', '2021-03-21'),
        '3' = c('2021-03-27', '2021-03-28'),
        '4' = c('2021-03-29', '2021-03-30'),
-       '5' = c('2021-04-05', '2021-04-05'),
-       '6' = c('2021-04-07', '2021-04-07'))
+       '5' = c('2021-04-03', '2021-04-03'),
+       '6' = c('2021-04-05', '2021-04-05'))
+
+eliminate_ncaa_teams(seed_list, round_dates)
 
 
 ################################# Set Weights ##################################
@@ -230,7 +232,7 @@ write_csv(x, "3.0_Files/Predictions/predictions.csv")
 # nrow(filter(x, round(pred_team_score) == team_score))
 # filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)
 
-
+source('3.0_Files/ncaa_sims/ncaa_sims.csv')
 devtools::install_github("lbenz730/ncaahoopR")
 rsconnect::deployApp(forceUpdate = T)
 

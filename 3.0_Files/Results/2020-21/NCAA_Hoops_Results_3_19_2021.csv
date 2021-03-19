@@ -479,7 +479,7 @@
 2020,12,12,"Auburn","Memphis","N",74,71,FALSE,FALSE,NA,2
 2020,12,15,"Auburn","Texas Southern","H",80,63,FALSE,FALSE,NA,2
 2020,12,19,"Auburn","Troy","H",77,41,FALSE,FALSE,NA,2
-2020,12,22,"Auburn","App State","H",67,53,FALSE,FALSE,NA,1
+2020,12,22,"Auburn","Appalachain St.","H",67,53,FALSE,FALSE,NA,1
 2020,12,30,"Auburn","Arkansas","H",85,97,FALSE,FALSE,NA,2
 2021,1,2,"Auburn","Texas A&M","V",66,68,FALSE,FALSE,NA,2
 2021,1,6,"Auburn","Ole Miss","V",61,72,FALSE,FALSE,NA,2
@@ -710,7 +710,8 @@
 2021,2,27,"Boise St.","San Diego St.","V",58,62,FALSE,FALSE,NA,2
 2021,3,2,"Boise St.","Fresno St.","H",64,67,FALSE,FALSE,NA,2
 2021,3,11,"Boise St.","Nevada","N",82,89,FALSE,FALSE,NA,2
-2021,3,18,"Boise St.","SMU","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,18,"Boise St.","SMU","N",85,84,FALSE,FALSE,NA,2
+2021,3,25,"Boise St.","Winner from    Dayton (-) vs.   Memphis (-)","N",NA,NA,FALSE,FALSE,NA,1
 2020,11,25,"Boston College","Villanova","N",67,76,FALSE,FALSE,NA,2
 2020,11,26,"Boston College","Rhode Island","N",69,64,FALSE,FALSE,NA,2
 2020,11,30,"Boston College","St. John's (NY)","N",93,97,FALSE,FALSE,NA,2
@@ -764,7 +765,7 @@
 2021,3,6,"Boston U.","Colgate","V",69,77,FALSE,FALSE,NA,2
 2020,11,25,"Bowling Green","Michigan","V",82,96,FALSE,FALSE,NA,2
 2020,11,28,"Bowling Green","South Carolina St.","H",101,78,FALSE,FALSE,NA,2
-2020,11,30,"Bowling Green","App State","V",78,76,FALSE,FALSE,NA,1
+2020,11,30,"Bowling Green","Appalachain St.","V",78,76,FALSE,FALSE,NA,1
 2020,12,3,"Bowling Green","Western Caro.","V",NA,NA,TRUE,FALSE,NA,2
 2020,12,3,"Bowling Green","Purdue Northwest","H",88,67,FALSE,FALSE,NA,1
 2020,12,6,"Bowling Green","Buffalo","H",86,78,FALSE,FALSE,NA,2
@@ -1265,7 +1266,7 @@
 2020,11,30,"Charlotte","Belmont Abbey","H",NA,NA,TRUE,FALSE,NA,1
 2020,12,4,"Charlotte","Georgia St.","H",65,76,FALSE,FALSE,NA,2
 2020,12,7,"Charlotte","South Carolina St.","H",78,40,FALSE,FALSE,NA,2
-2020,12,11,"Charlotte","App State","H",57,61,FALSE,FALSE,NA,1
+2020,12,11,"Charlotte","Appalachain St.","H",57,61,FALSE,FALSE,NA,1
 2020,12,15,"Charlotte","Davidson","V",63,52,FALSE,FALSE,NA,2
 2020,12,19,"Charlotte","N.C. A&T","H",76,72,FALSE,FALSE,NA,2
 2020,12,22,"Charlotte","George Washington","V",66,65,FALSE,FALSE,NA,2
@@ -1453,14 +1454,14 @@
 2021,1,30,"Coastal Carolina","Ga. Southern","V",58,61,FALSE,FALSE,NA,2
 2021,2,5,"Coastal Carolina","South Alabama","V",65,71,FALSE,FALSE,NA,2
 2021,2,6,"Coastal Carolina","South Alabama","V",66,70,FALSE,FALSE,NA,2
-2021,2,11,"Coastal Carolina","App State","V",NA,NA,TRUE,FALSE,NA,1
-2021,2,13,"Coastal Carolina","App State","H",NA,NA,TRUE,FALSE,NA,1
+2021,2,11,"Coastal Carolina","Appalachain St.","V",NA,NA,TRUE,FALSE,NA,1
+2021,2,13,"Coastal Carolina","Appalachain St.","H",NA,NA,TRUE,FALSE,NA,1
 2021,2,19,"Coastal Carolina","Ga. Southern","H",NA,NA,TRUE,FALSE,NA,2
 2021,2,21,"Coastal Carolina","Ga. Southern","H",65,55,FALSE,FALSE,NA,2
 2021,2,26,"Coastal Carolina","Troy","V",75,59,FALSE,FALSE,NA,2
 2021,2,27,"Coastal Carolina","Troy","V",76,71,FALSE,FALSE,NA,2
 2021,3,6,"Coastal Carolina","Troy","N",86,68,FALSE,FALSE,NA,2
-2021,3,7,"Coastal Carolina","App State","N",61,64,FALSE,FALSE,NA,1
+2021,3,7,"Coastal Carolina","Appalachain St.","N",61,64,FALSE,FALSE,NA,1
 2021,3,22,"Coastal Carolina","Bryant","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Col. of Charleston","North Carolina","V",60,79,FALSE,FALSE,NA,2
 2020,11,28,"Col. of Charleston","Limestone","H",99,59,FALSE,FALSE,NA,1
@@ -2608,8 +2609,8 @@
 2020,12,22,"Ga. Southern","FGCU","V",60,73,FALSE,FALSE,NA,2
 2021,1,1,"Ga. Southern","South Alabama","H",59,88,FALSE,FALSE,NA,2
 2021,1,2,"Ga. Southern","South Alabama","H",62,49,FALSE,FALSE,NA,2
-2021,1,8,"Ga. Southern","App State","V",63,66,FALSE,FALSE,NA,1
-2021,1,9,"Ga. Southern","App State","V",71,77,FALSE,FALSE,NA,1
+2021,1,8,"Ga. Southern","Appalachain St.","V",63,66,FALSE,FALSE,NA,1
+2021,1,9,"Ga. Southern","Appalachain St.","V",71,77,FALSE,FALSE,NA,1
 2021,1,15,"Ga. Southern","Troy","H",67,64,FALSE,FALSE,NA,2
 2021,1,16,"Ga. Southern","Troy","H",63,56,FALSE,FALSE,NA,2
 2021,1,22,"Ga. Southern","South Alabama","V",84,75,FALSE,FALSE,NA,2
@@ -2622,8 +2623,8 @@
 2021,2,13,"Ga. Southern","Georgia St.","H",NA,NA,TRUE,FALSE,NA,2
 2021,2,19,"Ga. Southern","Coastal Carolina","V",NA,NA,TRUE,FALSE,NA,2
 2021,2,21,"Ga. Southern","Coastal Carolina","V",55,65,FALSE,FALSE,NA,2
-2021,2,26,"Ga. Southern","App State","H",78,84,FALSE,FALSE,NA,1
-2021,2,27,"Ga. Southern","App State","H",65,57,FALSE,FALSE,NA,1
+2021,2,26,"Ga. Southern","Appalachain St.","H",78,84,FALSE,FALSE,NA,1
+2021,2,27,"Ga. Southern","Appalachain St.","H",65,57,FALSE,FALSE,NA,1
 2021,3,5,"Ga. Southern","Arkansas St.","N",58,62,FALSE,FALSE,NA,2
 2020,11,29,"Gardner-Webb","Georgia","V",NA,NA,TRUE,FALSE,NA,2
 2020,12,10,"Gardner-Webb","Western Ky.","V",84,86,FALSE,FALSE,NA,2
@@ -2788,24 +2789,24 @@
 2021,1,9,"Georgia St.","Troy","V",NA,NA,FALSE,TRUE,NA,2
 2021,1,15,"Georgia St.","Coastal Carolina","H",NA,NA,FALSE,TRUE,NA,2
 2021,1,16,"Georgia St.","Coastal Carolina","H",71,68,FALSE,FALSE,NA,2
-2021,1,22,"Georgia St.","App State","V",71,80,FALSE,FALSE,NA,1
-2021,1,23,"Georgia St.","App State","V",61,74,FALSE,FALSE,NA,1
+2021,1,22,"Georgia St.","Appalachain St.","V",71,80,FALSE,FALSE,NA,1
+2021,1,23,"Georgia St.","Appalachain St.","V",61,74,FALSE,FALSE,NA,1
 2021,1,29,"Georgia St.","South Alabama","H",NA,NA,FALSE,TRUE,NA,2
 2021,1,30,"Georgia St.","South Alabama","H",NA,NA,FALSE,TRUE,NA,2
-2021,2,5,"Georgia St.","App State","H",NA,NA,FALSE,TRUE,NA,1
-2021,2,6,"Georgia St.","App State","H",NA,NA,FALSE,TRUE,NA,1
+2021,2,5,"Georgia St.","Appalachain St.","H",NA,NA,FALSE,TRUE,NA,1
+2021,2,6,"Georgia St.","Appalachain St.","H",NA,NA,FALSE,TRUE,NA,1
 2021,2,9,"Georgia St.","South Alabama","H",67,70,FALSE,FALSE,NA,2
 2021,2,11,"Georgia St.","Ga. Southern","H",79,75,FALSE,FALSE,NA,2
 2021,2,13,"Georgia St.","Ga. Southern","V",NA,NA,TRUE,FALSE,NA,2
 2021,2,16,"Georgia St.","Troy","V",NA,NA,TRUE,FALSE,NA,2
 2021,2,19,"Georgia St.","Troy","H",80,66,FALSE,FALSE,NA,2
 2021,2,20,"Georgia St.","Troy","H",65,53,FALSE,FALSE,NA,2
-2021,2,23,"Georgia St.","App State","H",85,71,FALSE,FALSE,NA,1
+2021,2,23,"Georgia St.","Appalachain St.","H",85,71,FALSE,FALSE,NA,1
 2021,2,26,"Georgia St.","South Alabama","V",84,81,FALSE,FALSE,NA,2
 2021,2,27,"Georgia St.","South Alabama","V",82,73,FALSE,FALSE,NA,2
 2021,3,6,"Georgia St.","Arkansas St.","N",71,68,FALSE,FALSE,NA,2
 2021,3,7,"Georgia St.","Louisiana","N",84,73,FALSE,FALSE,NA,2
-2021,3,8,"Georgia St.","App State","N",73,80,FALSE,FALSE,NA,1
+2021,3,8,"Georgia St.","Appalachain St.","N",73,80,FALSE,FALSE,NA,1
 2020,11,25,"Georgia Tech","Georgia St.","H",120,123,FALSE,FALSE,NA,2
 2020,11,27,"Georgia Tech","Mercer","H",73,83,FALSE,FALSE,NA,2
 2020,12,6,"Georgia Tech","Kentucky","N",79,62,FALSE,FALSE,NA,2
@@ -3978,7 +3979,7 @@
 2021,2,22,"Little Rock","ULM","V",64,68,FALSE,FALSE,NA,2
 2021,2,26,"Little Rock","Louisiana","H",61,66,FALSE,FALSE,NA,2
 2021,2,27,"Little Rock","Louisiana","H",69,59,FALSE,FALSE,NA,2
-2021,3,5,"Little Rock","App State","N",60,67,FALSE,FALSE,NA,1
+2021,3,5,"Little Rock","Appalachain St.","N",60,67,FALSE,FALSE,NA,1
 2020,12,10,"LIU","Merrimack","H",NA,NA,FALSE,TRUE,NA,2
 2020,12,11,"LIU","Merrimack","H",NA,NA,FALSE,TRUE,NA,2
 2020,12,16,"LIU","Sacred Heart","V",75,55,FALSE,FALSE,NA,2
@@ -5499,7 +5500,7 @@
 2021,3,11,"Norfolk St.","N.C. Central","N",87,58,FALSE,FALSE,NA,2
 2021,3,12,"Norfolk St.","N.C. A&T","N",NA,NA,TRUE,FALSE,NA,2
 2021,3,13,"Norfolk St.","Morgan St.","N",71,63,FALSE,FALSE,NA,2
-2021,3,18,"Norfolk St.","App State","N",54,53,FALSE,FALSE,NA,1
+2021,3,18,"Norfolk St.","Appalachain St.","N",54,53,FALSE,FALSE,NA,1
 2021,3,20,"Norfolk St.","Gonzaga","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"North Ala.","Oakwood","H",98,74,FALSE,FALSE,NA,1
 2020,12,2,"North Ala.","Jackson St.","H",NA,NA,TRUE,FALSE,NA,2
@@ -7413,8 +7414,8 @@
 2021,1,2,"South Alabama","Ga. Southern","V",49,62,FALSE,FALSE,NA,2
 2021,1,8,"South Alabama","Coastal Carolina","V",65,78,FALSE,FALSE,NA,2
 2021,1,9,"South Alabama","Coastal Carolina","V",69,83,FALSE,FALSE,NA,2
-2021,1,15,"South Alabama","App State","H",73,64,FALSE,FALSE,NA,1
-2021,1,16,"South Alabama","App State","H",77,83,FALSE,FALSE,NA,1
+2021,1,15,"South Alabama","Appalachain St.","H",73,64,FALSE,FALSE,NA,1
+2021,1,16,"South Alabama","Appalachain St.","H",77,83,FALSE,FALSE,NA,1
 2021,1,22,"South Alabama","Ga. Southern","H",75,84,FALSE,FALSE,NA,2
 2021,1,23,"South Alabama","Ga. Southern","H",62,48,FALSE,FALSE,NA,2
 2021,1,29,"South Alabama","Georgia St.","V",NA,NA,FALSE,TRUE,NA,2
@@ -7424,8 +7425,8 @@
 2021,2,9,"South Alabama","Georgia St.","V",70,67,FALSE,FALSE,NA,2
 2021,2,11,"South Alabama","Troy","H",73,70,FALSE,FALSE,NA,2
 2021,2,13,"South Alabama","Troy","V",58,51,FALSE,FALSE,NA,2
-2021,2,19,"South Alabama","App State","V",65,63,FALSE,FALSE,NA,1
-2021,2,20,"South Alabama","App State","V",56,54,FALSE,FALSE,NA,1
+2021,2,19,"South Alabama","Appalachain St.","V",65,63,FALSE,FALSE,NA,1
+2021,2,20,"South Alabama","Appalachain St.","V",56,54,FALSE,FALSE,NA,1
 2021,2,26,"South Alabama","Georgia St.","H",81,84,FALSE,FALSE,NA,2
 2021,2,27,"South Alabama","Georgia St.","H",73,82,FALSE,FALSE,NA,2
 2021,3,5,"South Alabama","ULM","N",80,72,FALSE,FALSE,NA,2
@@ -7458,7 +7459,7 @@
 2021,3,2,"South Carolina","Arkansas","H",73,101,FALSE,FALSE,NA,2
 2021,3,6,"South Carolina","Kentucky","V",64,92,FALSE,FALSE,NA,2
 2021,3,11,"South Carolina","Ole Miss","N",59,76,FALSE,FALSE,NA,2
-2020,11,25,"South Carolina St.","App State","H",61,81,FALSE,FALSE,NA,1
+2020,11,25,"South Carolina St.","Appalachain St.","H",61,81,FALSE,FALSE,NA,1
 2020,11,28,"South Carolina St.","Bowling Green","V",78,101,FALSE,FALSE,NA,2
 2020,12,2,"South Carolina St.","Clemson","V",38,75,FALSE,FALSE,NA,2
 2020,12,5,"South Carolina St.","UNC Asheville","V",56,77,FALSE,FALSE,NA,2
@@ -8086,7 +8087,7 @@
 2020,12,8,"Tennessee","Colorado","H",56,47,FALSE,FALSE,NA,2
 2020,12,9,"Tennessee","UT Martin","H",NA,NA,TRUE,FALSE,NA,2
 2020,12,12,"Tennessee","Cincinnati","H",65,56,FALSE,FALSE,NA,2
-2020,12,15,"Tennessee","App State","H",79,38,FALSE,FALSE,NA,1
+2020,12,15,"Tennessee","Appalachain St.","H",79,38,FALSE,FALSE,NA,1
 2020,12,18,"Tennessee","Tennessee Tech","H",103,49,FALSE,FALSE,NA,2
 2020,12,21,"Tennessee","Saint Joseph's","H",102,66,FALSE,FALSE,NA,2
 2020,12,23,"Tennessee","USC Upstate","H",80,60,FALSE,FALSE,NA,2
@@ -8285,7 +8286,7 @@
 2021,2,22,"Texas St.","Arkansas St.","V",57,52,FALSE,FALSE,NA,2
 2021,2,26,"Texas St.","ULM","H",58,49,FALSE,FALSE,NA,2
 2021,2,27,"Texas St.","ULM","H",61,57,FALSE,FALSE,NA,2
-2021,3,6,"Texas St.","App State","N",73,76,FALSE,FALSE,NA,1
+2021,3,6,"Texas St.","Appalachain St.","N",73,76,FALSE,FALSE,NA,1
 2020,11,25,"Texas Tech","Northwestern St.","H",101,58,FALSE,FALSE,NA,2
 2020,11,27,"Texas Tech","Sam Houston St.","H",84,52,FALSE,FALSE,NA,2
 2020,11,29,"Texas Tech","Houston","N",53,64,FALSE,FALSE,NA,2
@@ -8424,16 +8425,16 @@
 2020,12,16,"Troy","Samford","H",79,71,FALSE,FALSE,NA,2
 2020,12,19,"Troy","Auburn","V",41,77,FALSE,FALSE,NA,2
 2020,12,28,"Troy","Carver","H",88,35,FALSE,FALSE,NA,1
-2021,1,1,"Troy","App State","V",69,56,FALSE,FALSE,NA,1
-2021,1,2,"Troy","App State","V",59,90,FALSE,FALSE,NA,1
+2021,1,1,"Troy","Appalachain St.","V",69,56,FALSE,FALSE,NA,1
+2021,1,2,"Troy","Appalachain St.","V",59,90,FALSE,FALSE,NA,1
 2021,1,8,"Troy","Georgia St.","H",NA,NA,FALSE,TRUE,NA,2
 2021,1,9,"Troy","Georgia St.","H",NA,NA,FALSE,TRUE,NA,2
 2021,1,15,"Troy","Ga. Southern","V",64,67,FALSE,FALSE,NA,2
 2021,1,16,"Troy","Ga. Southern","V",56,63,FALSE,FALSE,NA,2
 2021,1,22,"Troy","Coastal Carolina","V",81,90,FALSE,FALSE,NA,2
 2021,1,23,"Troy","Coastal Carolina","V",65,70,FALSE,FALSE,NA,2
-2021,1,29,"Troy","App State","H",71,62,FALSE,FALSE,NA,1
-2021,1,30,"Troy","App State","H",65,59,FALSE,FALSE,NA,1
+2021,1,29,"Troy","Appalachain St.","H",71,62,FALSE,FALSE,NA,1
+2021,1,30,"Troy","Appalachain St.","H",65,59,FALSE,FALSE,NA,1
 2021,2,2,"Troy","Spring Hill","H",90,73,FALSE,FALSE,NA,1
 2021,2,5,"Troy","Ga. Southern","H",68,56,FALSE,FALSE,NA,2
 2021,2,6,"Troy","Ga. Southern","H",64,79,FALSE,FALSE,NA,2
@@ -8457,16 +8458,16 @@
 2020,12,16,"Tulane","Samford","H",79,71,FALSE,FALSE,NA,2
 2020,12,19,"Tulane","Auburn","V",41,77,FALSE,FALSE,NA,2
 2020,12,28,"Tulane","Carver","H",88,35,FALSE,FALSE,NA,1
-2021,1,1,"Tulane","App State","V",69,56,FALSE,FALSE,NA,1
-2021,1,2,"Tulane","App State","V",59,90,FALSE,FALSE,NA,1
+2021,1,1,"Tulane","Appalachain St.","V",69,56,FALSE,FALSE,NA,1
+2021,1,2,"Tulane","Appalachain St.","V",59,90,FALSE,FALSE,NA,1
 2021,1,8,"Tulane","Georgia St.","H",NA,NA,FALSE,TRUE,NA,2
 2021,1,9,"Tulane","Georgia St.","H",NA,NA,FALSE,TRUE,NA,2
 2021,1,15,"Tulane","Ga. Southern","V",64,67,FALSE,FALSE,NA,2
 2021,1,16,"Tulane","Ga. Southern","V",56,63,FALSE,FALSE,NA,2
 2021,1,22,"Tulane","Coastal Carolina","V",81,90,FALSE,FALSE,NA,2
 2021,1,23,"Tulane","Coastal Carolina","V",65,70,FALSE,FALSE,NA,2
-2021,1,29,"Tulane","App State","H",71,62,FALSE,FALSE,NA,1
-2021,1,30,"Tulane","App State","H",65,59,FALSE,FALSE,NA,1
+2021,1,29,"Tulane","Appalachain St.","H",71,62,FALSE,FALSE,NA,1
+2021,1,30,"Tulane","Appalachain St.","H",65,59,FALSE,FALSE,NA,1
 2021,2,2,"Tulane","Spring Hill","H",90,73,FALSE,FALSE,NA,1
 2021,2,5,"Tulane","Ga. Southern","H",68,56,FALSE,FALSE,NA,2
 2021,2,6,"Tulane","Ga. Southern","H",64,79,FALSE,FALSE,NA,2

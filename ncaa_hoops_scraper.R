@@ -136,6 +136,7 @@ for (i in 1:nrow(teamid)) {
 #     z$opponent[grep("@", z$opponent)][1] <- rows[[i]][1]
 #   }
 # }
+z$opponent[z$opponent == 'App State'] <- 'Appalachain St.'
 z$opponent <- stripwhite(z$opponent)
 
 z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team

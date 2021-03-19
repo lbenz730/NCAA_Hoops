@@ -17,9 +17,19 @@ build_bracket <- function(seed_list) {
   n <- nrow(seed_list)
   ix <- seq(1, n, 2)
   tibble('team' = seed_list$team[ix],
-         'opponent' = seed_list$team[-ix]) %>% 
-    inner_join(wp_matrix, by = c('team', 'opponent'))
-  
+         'opponent' = seed_list$team[-ix],
+         'team_elim_round' = seed_list$elim_round[ix],
+         'opp_elim_round' = seed_list$elim_round[-ix]) %>% 
+    inner_join(wp_matrix, by = c('team', 'opponent')) %>% 
+    mutate('win_prob' = 
+             case_when(
+               is.na(team_elim_round) & is.na(opp_elim_round) ~ win_prob,
+               is.na(team_elim_round) & !is.na(opp_elim_round) ~ 1,
+               !is.na(team_elim_round) & is.na(opp_elim_round) ~ 0,
+               team_elim_round < opp_elim_round ~ 1,
+               team_elim_round > opp_elim_round ~ 0)
+    )
+
 }
 
 ### Function to Simulate Games in Round
@@ -30,12 +40,10 @@ sim_round <- function(bracket) {
            sim_game)
 }
 
-
-
 ### Read in Seed list and team ratings
-seed_list <- read_csv('seed_list.csv')
-power_rankings <- read_csv('../Power_Rankings/power_rankings.csv')
-glm_pointspread <- read_rds('../../glm_pointspread.rds')
+seed_list <- read_csv('3.0_Files/ncaa_sims/seed_list.csv')
+power_rankings <- read_csv('3.0_Files//Power_Rankings/power_rankings.csv')
+glm_pointspread <- read_rds('glm_pointspread.rds')
 
 seed_list <- 
   seed_list %>% 
@@ -56,18 +64,13 @@ wp_matrix <-
   ### Win Prob for Team over Opponent
   mutate('win_prob' = predict(glm_pointspread, newdata = ., type = 'response'))
 
-wp_matrix <- 
-  read_csv('~/Desktop/jake_predictions.csv') %>% 
-  mutate('team' = gsub("Mount St. Mary\'s", "Mt. St. Mary's", team)) %>% 
-  mutate('opponent' = gsub("Mount St. Mary\'s", "Mt. St. Mary's", opponent))
-
 ### First Four
 first_four <- 
   seed_list %>% 
   filter(first_four) %>% 
   build_bracket()
-first_four <- map(1:n_sims, ~{first_four})
 
+first_four <- map(1:n_sims, ~{first_four})
 first_four_winners <- future_map(first_four, sim_round)
 
 ### Brackets for Tournament Proper
@@ -104,5 +107,5 @@ sim_results <-
   ungroup() %>% 
   select(-first_four) 
 
-write_csv(sim_results, 'ncaa_sims.csv')
+write_csv(sim_results, '3.0_Files/ncaa_sims/ncaa_sims.csv')
 
