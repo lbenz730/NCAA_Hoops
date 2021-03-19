@@ -11,10 +11,13 @@ x <- read_csv(paste("3.0_Files/Results/2020-21/NCAA_Hoops_Results",
                      month(Sys.Date()), day(Sys.Date()), "2021.csv", sep = "_"))
 train <- read_csv("3.0_Files/Results/2017-18/training.csv")
 confs <- read_csv("3.0_Files/Info/conferences.csv")
-deadlines <- read_csv("3.0_Files/Info/deadlines.csv") %>%
+deadlines <- 
+  read_csv("3.0_Files/Info/deadlines.csv") %>%
   mutate(deadline = as.Date(deadline, "%m/%d/%y"))
-priors <- read_csv("3.0_Files/Info/prior.csv") %>% 
+priors <- 
+  read_csv("3.0_Files/Info/prior.csv") %>% 
   arrange(team)
+seed_list <- read_csv('3.0_Files/ncaa_sims/seed_list.csv')
 source("3.0_Files/powerrankings.R")
 source("3.0_Files/Ivy_Sims.R")
 source("3.0_Files/rpi.R")
@@ -71,6 +74,17 @@ x <-
 
 ### Eliminate Teams from Auto Bid contention
 confs <- eliminate(filter(x, score_diff < 0, !reg_season) %>% pull(team), confs)
+
+### Update NCAA Eliminations:
+round_dates <- 
+  list('0' = c('2021-03-18', '2021-03-18'),
+       '1' = c('2021-03-19', '2021-03-20'),
+       '2' = c('2021-03-20', '2021-03-21'),
+       '3' = c('2021-03-27', '2021-03-28'),
+       '4' = c('2021-03-29', '2021-03-30'),
+       '5' = c('2021-04-05', '2021-04-05'),
+       '6' = c('2021-04-07', '2021-04-07'))
+
 
 ################################# Set Weights ##################################
 x$weights <- 0

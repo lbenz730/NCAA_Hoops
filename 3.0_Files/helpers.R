@@ -104,7 +104,7 @@ conf_fast_sim <- function(conf, nsims) {
     filter(conf_game, team_conf == conf, location != "V") %>%
     mutate(simwins = 0, opp_simwins = 0)
   
-
+  
   schedule$tmp <- 
     case_when(
       schedule$team < schedule$opponent ~ paste(schedule$team, schedule$opponent, schedule$date),
@@ -366,5 +366,18 @@ psf_graphic <- function() {
 
 
 
-
+### Update NCAA Seed list
+eliminate_ncaa_teams <- function(seed_list, round_dates) {
+  for(i in 1:length(round_dates)) {
+    start <- round_dates[[i]][1]
+    end <- round_dates[[i]][2]
+    elim <- 
+      filter(x, date >= start, date <= end) %>% 
+      inner_join(seed_list, by = 'team') %>% 
+      filter(score_diff < 0) %>% 
+      pull(team)
+    seed_list$elim_round[seed_list$team %in% elim] <- as.numeric(i-1)
+  }
+  write_csv(seed_list, '3.0_Files/ncaa_sims/seed_list.csv')
+}
 

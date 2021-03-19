@@ -294,7 +294,7 @@
 2021,3,6,"Appalachian St.","Texas St.","N",76,73,FALSE,FALSE,NA,2
 2021,3,7,"Appalachian St.","Coastal Carolina","N",64,61,FALSE,FALSE,NA,2
 2021,3,8,"Appalachian St.","Georgia St.","N",80,73,FALSE,FALSE,NA,2
-2021,3,18,"Appalachian St.","Norfolk St.","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,18,"Appalachian St.","Norfolk St.","N",53,54,FALSE,FALSE,NA,2
 2020,11,27,"Arizona","Grambling","H",74,55,FALSE,FALSE,NA,2
 2020,11,29,"Arizona","UTEP","H",NA,NA,TRUE,FALSE,NA,2
 2020,12,5,"Arizona","Eastern Wash.","H",70,67,FALSE,FALSE,NA,2
@@ -1731,7 +1731,7 @@
 2021,2,27,"Davidson","VCU","H",65,57,FALSE,FALSE,NA,2
 2021,3,5,"Davidson","George Mason","N",99,67,FALSE,FALSE,NA,2
 2021,3,6,"Davidson","VCU - MBB Atlantic  Championship","V",52,64,FALSE,FALSE,NA,1
-2021,3,18,"Davidson","NC State","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,18,"Davidson","NC State","N",61,75,FALSE,FALSE,NA,2
 2020,11,28,"Dayton","Cedarville","H",NA,NA,TRUE,FALSE,NA,1
 2020,12,1,"Dayton","Eastern Ill.","H",66,63,FALSE,FALSE,NA,2
 2020,12,1,"Dayton","Alcorn","H",NA,NA,TRUE,FALSE,NA,2
@@ -1959,7 +1959,8 @@
 2021,3,5,"Drake","UNI","N",NA,NA,TRUE,FALSE,NA,2
 2021,3,6,"Drake","Missouri St.","N",71,69,FALSE,FALSE,NA,2
 2021,3,7,"Drake","Loyola Chicago","N",65,75,FALSE,FALSE,NA,2
-2021,3,18,"Drake","Wichita St.","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,18,"Drake","Wichita St.","N",53,52,FALSE,FALSE,NA,2
+2021,3,20,"Drake","Southern California","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Drexel","Penn St.","V",NA,NA,FALSE,TRUE,NA,2
 2020,11,28,"Drexel","Pittsburgh","V",74,83,FALSE,FALSE,NA,2
 2020,12,2,"Drexel","Quinnipiac","N",66,48,FALSE,FALSE,NA,2
@@ -2871,7 +2872,7 @@
 2021,2,27,"Gonzaga","LMU (CA)","H",86,69,FALSE,FALSE,NA,2
 2021,3,8,"Gonzaga","Saint Mary's (CA)","N",78,55,FALSE,FALSE,NA,2
 2021,3,9,"Gonzaga","BYU","N",88,78,FALSE,FALSE,NA,2
-2021,3,20,"Gonzaga","Winner from    App State (-) vs.   Norfolk St. (-)","N",NA,NA,FALSE,FALSE,NA,1
+2021,3,20,"Gonzaga","Norfolk St.","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Grambling","Grand Canyon","V",53,69,FALSE,FALSE,NA,2
 2020,11,27,"Grambling","Arizona","V",55,74,FALSE,FALSE,NA,2
 2020,12,3,"Grambling","East Tex. Baptist","H",68,59,FALSE,FALSE,NA,1
@@ -5186,7 +5187,8 @@
 2021,3,3,"NC State","Notre Dame","V",80,69,FALSE,FALSE,NA,2
 2021,3,6,"NC State","Virginia Tech","H",NA,NA,TRUE,FALSE,NA,2
 2021,3,10,"NC State","Syracuse","N",68,89,FALSE,FALSE,NA,2
-2021,3,18,"NC State","Davidson","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,18,"NC State","Davidson","N",75,61,FALSE,FALSE,NA,2
+2021,3,25,"NC State","Winner from    Buffalo (-) vs.   Colorado St. (-)","N",NA,NA,FALSE,FALSE,NA,1
 2020,12,8,"NJIT","Sacred Heart","H",NA,NA,TRUE,FALSE,NA,2
 2020,12,12,"NJIT","New Hampshire","H",NA,NA,FALSE,TRUE,NA,2
 2020,12,13,"NJIT","New Hampshire","H",NA,NA,FALSE,TRUE,NA,2
@@ -5497,7 +5499,8 @@
 2021,3,11,"Norfolk St.","N.C. Central","N",87,58,FALSE,FALSE,NA,2
 2021,3,12,"Norfolk St.","N.C. A&T","N",NA,NA,TRUE,FALSE,NA,2
 2021,3,13,"Norfolk St.","Morgan St.","N",71,63,FALSE,FALSE,NA,2
-2021,3,18,"Norfolk St.","App State","N",NA,NA,FALSE,FALSE,NA,1
+2021,3,18,"Norfolk St.","App State","N",54,53,FALSE,FALSE,NA,1
+2021,3,20,"Norfolk St.","Gonzaga","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"North Ala.","Oakwood","H",98,74,FALSE,FALSE,NA,1
 2020,12,2,"North Ala.","Jackson St.","H",NA,NA,TRUE,FALSE,NA,2
 2020,12,6,"North Ala.","Carver","H",107,40,FALSE,FALSE,NA,1
@@ -7661,7 +7664,7 @@
 2021,3,6,"Southern California","UCLA","V",64,63,FALSE,FALSE,NA,2
 2021,3,11,"Southern California","Utah","N",91,85,FALSE,FALSE,NA,2
 2021,3,12,"Southern California","Colorado","N",70,72,FALSE,FALSE,NA,2
-2021,3,20,"Southern California","Winner from    Drake (-) vs.   Wichita St. (-)","N",NA,NA,FALSE,FALSE,NA,1
+2021,3,20,"Southern California","Drake","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,27,"Southern Ill.","Prairie View","N",NA,NA,TRUE,FALSE,NA,2
 2020,11,29,"Southern Ill.","Winthrop","N",NA,NA,TRUE,FALSE,NA,2
 2020,12,2,"Southern Ill.","Southeast Mo. St.","V",87,79,FALSE,FALSE,NA,2
@@ -9857,7 +9860,7 @@
 2021,3,6,"Wichita St.","Temple","V",NA,NA,TRUE,FALSE,NA,2
 2021,3,12,"Wichita St.","South Fla.","N",68,67,FALSE,FALSE,NA,2
 2021,3,13,"Wichita St.","Cincinnati","N",59,60,FALSE,FALSE,NA,2
-2021,3,18,"Wichita St.","Drake","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,18,"Wichita St.","Drake","N",52,53,FALSE,FALSE,NA,2
 2020,11,28,"William & Mary","Old Dominion","V",78,86,FALSE,FALSE,NA,2
 2020,11,30,"William & Mary","NC State","V",NA,NA,TRUE,FALSE,NA,2
 2020,12,3,"William & Mary","Hampton","H",NA,NA,TRUE,FALSE,NA,2
