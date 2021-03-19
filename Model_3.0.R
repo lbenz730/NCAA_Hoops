@@ -232,7 +232,7 @@ write_csv(x, "3.0_Files/Predictions/predictions.csv")
 # nrow(filter(x, round(pred_team_score) == team_score))
 # filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)
 
-source('3.0_Files/ncaa_sims/ncaa_sims.csv')
+source('3.0_Files/ncaa_sims/ncaa_sims.R')
 devtools::install_github("lbenz730/ncaahoopR")
 rsconnect::deployApp(forceUpdate = T)
 

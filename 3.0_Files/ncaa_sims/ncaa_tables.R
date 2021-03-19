@@ -2,8 +2,9 @@ library(gt)
 library(paletteer)
 library(ncaahoopR)
 library(tidyverse)
+library(here)
 
-sim_results <- read_csv('ncaa_sims.csv')
+sim_results <- read_csv(here('3.0_Files/ncaa_sims/ncaa_sims.csv'))
 make_table <- function(sim_results, table_region) {
   
   df <- 
@@ -18,7 +19,7 @@ make_table <- function(sim_results, table_region) {
     df %>% 
     arrange(-champ, -championship_game, 
             -final_four, -elite_eight, -sweet_sixteen,
-            -second_round, -first_round)
+            -second_round, -first_round, -rating)
   
   df %>% 
     gt() %>% 
@@ -133,9 +134,9 @@ south <- make_table(sim_results, 'South')
 west <- make_table(sim_results, 'West')
 all <- make_table(sim_results, 'all')
 
-gtsave(east, filename = 'figures/east.png', expand = 10)
-gtsave(mw, filename = 'figures/mw.png', expand = 10)
-gtsave(south, filename = 'figures/south.png', expand = 10)
-gtsave(west, filename = 'figures/west.png', expand = 10)
-gtsave(all, filename = 'figures/ncaa_sims.png', expand = 10)
+gtsave(east, filename = here('3.0_Files/ncaa_sims/figures/east.png'), expand = 10)
+gtsave(mw, filename = here('3.0_Files/ncaa_sims/figures/mw.png'), expand = 10)
+gtsave(south, filename = here('3.0_Files/ncaa_sims/figures/south.png'), expand = 10)
+gtsave(west, filename = here('3.0_Files/ncaa_sims/figures/west.png'), expand = 10)
+gtsave(all, filename = here('3.0_Files/ncaa_sims/figures/ncaa_sims.png'), expand = 10)
 
