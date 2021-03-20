@@ -744,7 +744,7 @@
 2021,3,2,"Boise St.","Fresno St.","H",64,67,FALSE,FALSE,NA,2
 2021,3,11,"Boise St.","Nevada","N",82,89,FALSE,FALSE,NA,2
 2021,3,18,"Boise St.","SMU","N",85,84,FALSE,FALSE,NA,2
-2021,3,25,"Boise St.","Winner from    Dayton (-) vs.   Memphis (-)","N",NA,NA,FALSE,FALSE,NA,1
+2021,3,25,"Boise St.","Memphis","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Boston College","Villanova","N",67,76,FALSE,FALSE,NA,2
 2020,11,26,"Boston College","Rhode Island","N",69,64,FALSE,FALSE,NA,2
 2020,11,30,"Boston College","St. John's (NY)","N",93,97,FALSE,FALSE,NA,2
@@ -1611,7 +1611,8 @@
 2021,3,11,"Colorado","California","N",61,58,FALSE,FALSE,NA,2
 2021,3,12,"Colorado","Southern California","N",72,70,FALSE,FALSE,NA,2
 2021,3,13,"Colorado","Oregon St.","N",68,70,FALSE,FALSE,NA,2
-2021,3,20,"Colorado","Georgetown","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Colorado","Georgetown","N",96,73,FALSE,FALSE,NA,2
+2021,3,22,"Colorado","Winner from    UNC Greensboro (-) vs.   Florida St. (-)","N",NA,NA,FALSE,FALSE,NA,1
 2020,11,25,"Colorado St.","California","N",NA,NA,TRUE,FALSE,NA,2
 2020,11,26,"Colorado St.","Oregon St.","V",NA,NA,TRUE,FALSE,NA,2
 2020,12,8,"Colorado St.","Colorado","V",NA,NA,TRUE,FALSE,NA,2
@@ -1766,7 +1767,7 @@
 2021,3,1,"Dayton","St. Bonaventure","V",55,52,FALSE,FALSE,NA,2
 2021,3,4,"Dayton","Rhode Island","N",84,72,FALSE,FALSE,NA,2
 2021,3,5,"Dayton","VCU - MBB Atlantic  Championship","V",68,73,FALSE,FALSE,NA,1
-2021,3,20,"Dayton","Memphis","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Dayton","Memphis","N",60,71,FALSE,FALSE,NA,2
 2020,11,28,"DePaul","Chicago St.","H",NA,NA,TRUE,FALSE,NA,2
 2020,12,1,"DePaul","Alcorn","H",NA,NA,TRUE,FALSE,NA,2
 2020,12,3,"DePaul","Northern Ill.","H",NA,NA,FALSE,TRUE,NA,2
@@ -2518,7 +2519,8 @@
 2021,3,11,"Florida St.","Duke","N",NA,NA,TRUE,FALSE,NA,2
 2021,3,12,"Florida St.","North Carolina","N",69,66,FALSE,FALSE,NA,2
 2021,3,13,"Florida St.","Georgia Tech","N",75,80,FALSE,FALSE,NA,2
-2021,3,20,"Florida St.","UNC Greensboro","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Florida St.","UNC Greensboro","N",64,54,FALSE,FALSE,NA,2
+2021,3,22,"Florida St.","Colorado","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Fordham","Iona","H",NA,NA,TRUE,FALSE,NA,2
 2020,12,3,"Fordham","Manhattan","V",NA,NA,FALSE,TRUE,NA,2
 2020,12,8,"Fordham","St. John's (NY)","V",NA,NA,TRUE,FALSE,NA,2
@@ -2750,7 +2752,7 @@
 2021,3,11,"Georgetown","Villanova","N",72,71,FALSE,FALSE,NA,2
 2021,3,12,"Georgetown","Seton Hall","N",66,58,FALSE,FALSE,NA,2
 2021,3,13,"Georgetown","Creighton","N",73,48,FALSE,FALSE,NA,2
-2021,3,20,"Georgetown","Colorado","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Georgetown","Colorado","N",73,96,FALSE,FALSE,NA,2
 2020,11,25,"Georgia","Columbus St.","H",NA,NA,TRUE,FALSE,NA,1
 2020,11,29,"Georgia","Florida A&M","H",85,75,FALSE,FALSE,NA,2
 2020,11,29,"Georgia","Gardner-Webb","H",NA,NA,TRUE,FALSE,NA,2
@@ -4532,7 +4534,8 @@
 2021,3,7,"Memphis","Houston","V",64,67,FALSE,FALSE,NA,2
 2021,3,12,"Memphis","UCF","N",70,62,FALSE,FALSE,NA,2
 2021,3,13,"Memphis","Houston","N",74,76,FALSE,FALSE,NA,2
-2021,3,20,"Memphis","Dayton","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Memphis","Dayton","N",71,60,FALSE,FALSE,NA,2
+2021,3,25,"Memphis","Boise St.","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Mercer","North Georgia","H",79,48,FALSE,FALSE,NA,1
 2020,11,27,"Mercer","Georgia Tech","V",83,73,FALSE,FALSE,NA,2
 2020,11,30,"Mercer","Georgia St.","H",86,69,FALSE,FALSE,NA,2
@@ -8969,7 +8972,7 @@
 2021,3,6,"UNC Greensboro","The Citadel","N",80,72,FALSE,FALSE,NA,2
 2021,3,7,"UNC Greensboro","ETSU","N",77,65,FALSE,FALSE,NA,2
 2021,3,8,"UNC Greensboro","Mercer","N",69,61,FALSE,FALSE,NA,2
-2021,3,20,"UNC Greensboro","Florida St.","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"UNC Greensboro","Florida St.","N",54,64,FALSE,FALSE,NA,2
 2020,11,25,"UNCW","Western Caro.","N",76,98,FALSE,FALSE,NA,2
 2020,11,27,"UNCW","UNC Asheville","V",76,68,FALSE,FALSE,NA,2
 2020,11,28,"UNCW","Troy","N",73,50,FALSE,FALSE,NA,2
