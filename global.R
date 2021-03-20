@@ -187,7 +187,7 @@ make_table <- function(sim_results, table_region) {
     df %>% 
     arrange(-champ, -championship_game, 
             -final_four, -elite_eight, -sweet_sixteen,
-            -second_round, -first_round)
+            -second_round, -first_round, -rating)
   
   df %>% 
     gt() %>% 
