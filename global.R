@@ -185,9 +185,15 @@ make_table <- function(sim_results, table_region) {
   
   df <- 
     df %>% 
-    arrange(-champ, -championship_game, 
-            -final_four, -elite_eight, -sweet_sixteen,
-            -second_round, -first_round, -rating)
+    mutate('expected_elim_round' = 
+             1 * (1 - first_round) + 
+             2 * (1 - second_round - first_round) +
+             3 * (1 - sweet_sixteen - second_round - first_round) + 
+             4 * (1 - elite_eight - sweet_sixteen - second_round - first_round) +
+             5 * (1 - final_four - elite_eight - sweet_sixteen - second_round - first_round) +
+             6 * (1 -  championship_game - final_four - elite_eight - sweet_sixteen - second_round - first_round)) %>% 
+    arrange(expected_elim_round) %>% 
+    select(-expected_elim_round)
   
   df %>% 
     gt() %>% 
