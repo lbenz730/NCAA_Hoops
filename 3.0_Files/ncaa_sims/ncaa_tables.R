@@ -5,21 +5,28 @@ library(tidyverse)
 library(here)
 
 sim_results <- read_csv(here('3.0_Files/ncaa_sims/ncaa_sims.csv'))
-make_table <- function(sim_results, table_region) {
+make_table <- function(sim_results, table_region, round) {
   
   df <- 
     select(ncaa_colors, 'team' = ncaa_name, logo_url) %>% 
     inner_join(sim_results) 
   
   if(table_region != 'all') {
-    df <- filter(df, region == table_region) 
+    df <- filter(df, region == table_region)
+    df <- df[df[[round]] != 0,]
   }
   
   df <- 
     df %>% 
-    arrange(-champ, -championship_game, 
-            -final_four, -elite_eight, -sweet_sixteen,
-            -second_round, -first_round, -rating)
+    mutate('expected_elim_round' = 
+             1 * (1 - first_round) + 
+             2 * (1 - second_round - first_round) +
+             3 * (1 - sweet_sixteen - second_round - first_round) + 
+             4 * (1 - elite_eight - sweet_sixteen - second_round - first_round) +
+             5 * (1 - final_four - elite_eight - sweet_sixteen - second_round - first_round) +
+             6 * (1 -  championship_game - final_four - elite_eight - sweet_sixteen - second_round - first_round)) %>% 
+    arrange(expected_elim_round) %>% 
+    select(-expected_elim_round)
   
   df %>% 
     gt() %>% 
@@ -128,11 +135,11 @@ make_table <- function(sim_results, table_region) {
                 )
 }
 
-east <- make_table(sim_results, 'East')
-mw <- make_table(sim_results, 'Midwest')
-south <- make_table(sim_results, 'South')
-west <- make_table(sim_results, 'West')
-all <- make_table(sim_results, 'all')
+east <- make_table(sim_results, 'East', round = 'second_round')
+mw <- make_table(sim_results, 'Midwest', round = 'second_round')
+south <- make_table(sim_results, 'South', round = 'second_round')
+west <- make_table(sim_results, 'West', round = 'second_round')
+all <- make_table(sim_results, 'all', round = 'second_round')
 
 gtsave(east, filename = here('3.0_Files/ncaa_sims/figures/east.png'), expand = 10)
 gtsave(mw, filename = here('3.0_Files/ncaa_sims/figures/mw.png'), expand = 10)
