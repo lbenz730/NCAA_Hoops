@@ -2941,7 +2941,7 @@
 2021,3,6,"Grand Canyon","Utah Valley","H",74,64,FALSE,FALSE,NA,2
 2021,3,12,"Grand Canyon","Seattle U","N",81,47,FALSE,FALSE,NA,2
 2021,3,13,"Grand Canyon","New Mexico St.","N",74,56,FALSE,FALSE,NA,2
-2021,3,20,"Grand Canyon","Iowa","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Grand Canyon","Iowa","N",74,86,FALSE,FALSE,NA,2
 2020,11,25,"Green Bay","Minnesota","V",69,99,FALSE,FALSE,NA,2
 2020,12,1,"Green Bay","Wisconsin","V",42,82,FALSE,FALSE,NA,2
 2020,12,5,"Green Bay","Eastern Ill.","H",91,93,FALSE,FALSE,NA,2
@@ -3473,7 +3473,8 @@
 2021,3,7,"Iowa","Wisconsin","H",77,73,FALSE,FALSE,NA,2
 2021,3,12,"Iowa","Wisconsin","N",62,57,FALSE,FALSE,NA,2
 2021,3,13,"Iowa","Illinois","N",71,82,FALSE,FALSE,NA,2
-2021,3,20,"Iowa","Grand Canyon","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Iowa","Grand Canyon","N",86,74,FALSE,FALSE,NA,2
+2021,3,22,"Iowa","Oregon","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,29,"Iowa St.","Ark.-Pine Bluff","H",80,63,FALSE,FALSE,NA,2
 2020,12,2,"Iowa St.","South Dakota St.","H",68,71,FALSE,FALSE,NA,2
 2020,12,6,"Iowa St.","DePaul","H",NA,NA,TRUE,FALSE,NA,2
@@ -6238,7 +6239,8 @@
 2021,3,7,"Oregon","Oregon St.","V",80,67,FALSE,FALSE,NA,2
 2021,3,11,"Oregon","Arizona St.","N",91,73,FALSE,FALSE,NA,2
 2021,3,12,"Oregon","Oregon St.","N",64,75,FALSE,FALSE,NA,2
-2021,3,20,"Oregon","VCU","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Oregon","VCU","N",NA,NA,TRUE,FALSE,NA,2
+2021,3,22,"Oregon","Iowa","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Oregon St.","California","H",71,63,FALSE,FALSE,NA,2
 2020,11,26,"Oregon St.","Colorado St.","H",NA,NA,TRUE,FALSE,NA,2
 2020,11,27,"Oregon St.","Northwest (WA)","H",114,42,FALSE,FALSE,NA,1
@@ -9364,7 +9366,7 @@
 2021,3,5,"VCU","Dayton - MBB Atlantic  Championship","H",73,68,FALSE,FALSE,NA,1
 2021,3,6,"VCU","Davidson - MBB Atlantic  Championship","H",64,52,FALSE,FALSE,NA,1
 2021,3,14,"VCU","St. Bonaventure","N",65,74,FALSE,FALSE,NA,2
-2021,3,20,"VCU","Oregon","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"VCU","Oregon","N",NA,NA,TRUE,FALSE,NA,2
 2020,11,25,"VMI","St. Andrews","H",90,63,FALSE,FALSE,NA,1
 2020,11,28,"VMI","Penn St.","V",65,86,FALSE,FALSE,NA,2
 2020,12,1,"VMI","Longwood","H",84,71,FALSE,FALSE,NA,2
