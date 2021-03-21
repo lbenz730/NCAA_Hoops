@@ -141,7 +141,7 @@
 2021,3,13,"Alabama","Tennessee","N",73,68,FALSE,FALSE,NA,2
 2021,3,14,"Alabama","LSU","N",80,79,FALSE,FALSE,NA,2
 2021,3,20,"Alabama","Iona","N",68,55,FALSE,FALSE,NA,2
-2021,3,22,"Alabama","Winner from    Maryland (-) vs.   UConn (-)","N",NA,NA,FALSE,FALSE,NA,1
+2021,3,22,"Alabama","Maryland","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,29,"Alabama A&M","Samford","V",78,76,FALSE,FALSE,NA,2
 2020,12,5,"Alabama A&M","Ohio St.","V",NA,NA,TRUE,FALSE,NA,2
 2020,12,16,"Alabama A&M","North Ala.","V",NA,NA,TRUE,FALSE,NA,2
@@ -1710,7 +1710,7 @@
 2021,3,12,"Creighton","UConn","N",59,56,FALSE,FALSE,NA,2
 2021,3,13,"Creighton","Georgetown","N",48,73,FALSE,FALSE,NA,2
 2021,3,20,"Creighton","UC Santa Barbara","N",63,62,FALSE,FALSE,NA,2
-2021,3,22,"Creighton","Winner from    Ohio (-) vs.   Virginia (-)","N",NA,NA,FALSE,FALSE,NA,1
+2021,3,22,"Creighton","Ohio","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Davidson","High Point","H",82,73,FALSE,FALSE,NA,2
 2020,11,30,"Davidson","Texas","N",76,78,FALSE,FALSE,NA,2
 2020,12,1,"Davidson","Providence","N",62,63,FALSE,FALSE,NA,2
@@ -4452,7 +4452,8 @@
 2021,3,7,"Maryland","Penn St.","H",61,66,FALSE,FALSE,NA,2
 2021,3,11,"Maryland","Michigan St.","N",68,57,FALSE,FALSE,NA,2
 2021,3,12,"Maryland","Michigan","N",66,79,FALSE,FALSE,NA,2
-2021,3,20,"Maryland","UConn","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Maryland","UConn","N",63,54,FALSE,FALSE,NA,2
+2021,3,22,"Maryland","Alabama","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,26,"Massachusetts","Siena","N",NA,NA,TRUE,FALSE,NA,2
 2020,11,27,"Massachusetts","Delaware","N",NA,NA,TRUE,FALSE,NA,2
 2020,11,29,"Massachusetts","Iona","N",NA,NA,TRUE,FALSE,NA,2
@@ -4886,7 +4887,7 @@
 2021,3,6,"Missouri","LSU","H",80,86,FALSE,FALSE,NA,2
 2021,3,11,"Missouri","Georgia","N",73,70,FALSE,FALSE,NA,2
 2021,3,12,"Missouri","Arkansas","N",64,70,FALSE,FALSE,NA,2
-2021,3,20,"Missouri","Oklahoma","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Missouri","Oklahoma","N",68,72,FALSE,FALSE,NA,2
 2020,11,27,"Missouri St.","Evangel","H",NA,NA,TRUE,FALSE,NA,1
 2020,11,28,"Missouri St.","Ecclesia","H",NA,NA,TRUE,FALSE,NA,1
 2020,12,1,"Missouri St.","Central Ark.","H",NA,NA,TRUE,FALSE,NA,2
@@ -6000,7 +6001,8 @@
 2021,3,11,"Ohio","Kent St.","N",85,63,FALSE,FALSE,NA,2
 2021,3,12,"Ohio","Toledo","N",87,80,FALSE,FALSE,NA,2
 2021,3,13,"Ohio","Buffalo","N",84,69,FALSE,FALSE,NA,2
-2021,3,20,"Ohio","Virginia","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Ohio","Virginia","N",62,58,FALSE,FALSE,NA,2
+2021,3,22,"Ohio","Creighton","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Ohio St.","Illinois St.","H",94,67,FALSE,FALSE,NA,2
 2020,11,29,"Ohio St.","UMass Lowell","H",74,64,FALSE,FALSE,NA,2
 2020,12,2,"Ohio St.","Morehead St.","H",77,44,FALSE,FALSE,NA,2
@@ -6062,7 +6064,8 @@
 2021,3,4,"Oklahoma","Texas","H",65,69,FALSE,FALSE,NA,2
 2021,3,10,"Oklahoma","Iowa St.","N",79,73,FALSE,FALSE,NA,2
 2021,3,11,"Oklahoma","Kansas","N",62,69,FALSE,FALSE,NA,2
-2021,3,20,"Oklahoma","Missouri","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Oklahoma","Missouri","N",72,68,FALSE,FALSE,NA,2
+2021,3,22,"Oklahoma","Winner from    Norfolk St. (-) vs.   Gonzaga (-)","N",NA,NA,FALSE,FALSE,NA,1
 2020,11,25,"Oklahoma St.","UT Arlington","V",75,68,FALSE,FALSE,NA,2
 2020,11,28,"Oklahoma St.","Texas Southern","H",85,65,FALSE,FALSE,NA,2
 2020,12,1,"Oklahoma St.","Marquette","V",70,62,FALSE,FALSE,NA,2
@@ -8810,7 +8813,7 @@
 2021,3,6,"UConn","Georgetown","H",98,82,FALSE,FALSE,NA,2
 2021,3,11,"UConn","DePaul","N",94,60,FALSE,FALSE,NA,2
 2021,3,12,"UConn","Creighton","N",56,59,FALSE,FALSE,NA,2
-2021,3,20,"UConn","Maryland","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"UConn","Maryland","N",54,63,FALSE,FALSE,NA,2
 2020,11,25,"UIC","Northern Ill.","V",65,61,FALSE,FALSE,NA,2
 2020,11,28,"UIC","Central Mich.","H",74,72,FALSE,FALSE,NA,2
 2020,11,28,"UIC","Trinity Int'l","H",NA,NA,TRUE,FALSE,NA,1
@@ -9545,7 +9548,7 @@
 2021,3,6,"Virginia","Louisville","V",68,58,FALSE,FALSE,NA,2
 2021,3,11,"Virginia","Syracuse","N",72,69,FALSE,FALSE,NA,2
 2021,3,12,"Virginia","Georgia Tech","N",NA,NA,TRUE,FALSE,NA,2
-2021,3,20,"Virginia","Ohio","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Virginia","Ohio","N",58,62,FALSE,FALSE,NA,2
 2020,11,25,"Virginia Tech","Radford","H",77,62,FALSE,FALSE,NA,2
 2020,11,28,"Virginia Tech","Temple","N",NA,NA,TRUE,FALSE,NA,2
 2020,11,28,"Virginia Tech","Villanova","N",81,73,FALSE,FALSE,NA,2
