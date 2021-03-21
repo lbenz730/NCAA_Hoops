@@ -140,7 +140,8 @@
 2021,3,12,"Alabama","Mississippi St.","N",85,48,FALSE,FALSE,NA,2
 2021,3,13,"Alabama","Tennessee","N",73,68,FALSE,FALSE,NA,2
 2021,3,14,"Alabama","LSU","N",80,79,FALSE,FALSE,NA,2
-2021,3,20,"Alabama","Iona","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Alabama","Iona","N",68,55,FALSE,FALSE,NA,2
+2021,3,22,"Alabama","Winner from    Maryland (-) vs.   UConn (-)","N",NA,NA,FALSE,FALSE,NA,1
 2020,11,29,"Alabama A&M","Samford","V",78,76,FALSE,FALSE,NA,2
 2020,12,5,"Alabama A&M","Ohio St.","V",NA,NA,TRUE,FALSE,NA,2
 2020,12,16,"Alabama A&M","North Ala.","V",NA,NA,TRUE,FALSE,NA,2
@@ -1966,7 +1967,7 @@
 2021,3,6,"Drake","Missouri St.","N",71,69,FALSE,FALSE,NA,2
 2021,3,7,"Drake","Loyola Chicago","N",65,75,FALSE,FALSE,NA,2
 2021,3,18,"Drake","Wichita St.","N",53,52,FALSE,FALSE,NA,2
-2021,3,20,"Drake","Southern California","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Drake","Southern California","N",56,72,FALSE,FALSE,NA,2
 2020,11,25,"Drexel","Penn St.","V",NA,NA,FALSE,TRUE,NA,2
 2020,11,28,"Drexel","Pittsburgh","V",74,83,FALSE,FALSE,NA,2
 2020,12,2,"Drexel","Quinnipiac","N",66,48,FALSE,FALSE,NA,2
@@ -3441,7 +3442,7 @@
 2021,3,10,"Iona","Siena","N",55,52,FALSE,FALSE,NA,2
 2021,3,12,"Iona","Niagara","N",70,64,FALSE,FALSE,NA,2
 2021,3,13,"Iona","Fairfield","N",60,51,FALSE,FALSE,NA,2
-2021,3,20,"Iona","Alabama","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Iona","Alabama","N",55,68,FALSE,FALSE,NA,2
 2021,4,1,"Iona","Niagara","H",NA,NA,FALSE,TRUE,NA,2
 2020,11,25,"Iowa","N.C. Central","H",97,67,FALSE,FALSE,NA,2
 2020,11,27,"Iowa","Southern U.","H",103,76,FALSE,FALSE,NA,2
@@ -3654,7 +3655,7 @@
 2021,3,11,"Kansas","Oklahoma","N",69,62,FALSE,FALSE,NA,2
 2021,3,12,"Kansas","Texas","N",NA,NA,TRUE,FALSE,NA,2
 2021,3,20,"Kansas","Eastern Wash.","N",93,84,FALSE,FALSE,NA,2
-2021,3,22,"Kansas","Winner from    Drake (-) vs.   Southern California (-)","N",NA,NA,FALSE,FALSE,NA,1
+2021,3,22,"Kansas","Southern California","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Kansas City","Culver-Stockton","H",105,35,FALSE,FALSE,NA,1
 2020,11,27,"Kansas City","Greenville","H",138,97,FALSE,FALSE,NA,1
 2020,11,28,"Kansas City","Southeast Mo. St.","H",66,71,FALSE,FALSE,NA,2
@@ -4825,7 +4826,8 @@
 2021,3,6,"Mississippi St.","Auburn","V",71,78,FALSE,FALSE,NA,2
 2021,3,11,"Mississippi St.","Kentucky","N",74,73,FALSE,FALSE,NA,2
 2021,3,12,"Mississippi St.","Alabama","N",48,85,FALSE,FALSE,NA,2
-2021,3,20,"Mississippi St.","Saint Louis","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Mississippi St.","Saint Louis","N",74,68,FALSE,FALSE,NA,2
+2021,3,25,"Mississippi St.","Richmond","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,25,"Mississippi Val.","Arkansas","V",62,142,FALSE,FALSE,NA,2
 2020,11,26,"Mississippi Val.","North Texas","V",62,116,FALSE,FALSE,NA,2
 2020,11,28,"Mississippi Val.","Wyoming","V",61,97,FALSE,FALSE,NA,2
@@ -6745,7 +6747,7 @@
 2021,3,1,"Richmond","Saint Joseph's","H",73,76,FALSE,FALSE,NA,2
 2021,3,4,"Richmond","Duquesne","N",62,67,FALSE,FALSE,NA,2
 2021,3,17,"Richmond","Toledo","N",76,66,FALSE,FALSE,NA,2
-2021,3,25,"Richmond","Winner from    Mississippi St. (-) vs.   Saint Louis (-)","N",NA,NA,FALSE,FALSE,NA,1
+2021,3,25,"Richmond","Mississippi St.","N",NA,NA,FALSE,FALSE,NA,2
 2020,12,5,"Rider","Syracuse","V",52,87,FALSE,FALSE,NA,2
 2020,12,8,"Rider","UConn","V",NA,NA,TRUE,FALSE,NA,2
 2020,12,8,"Rider","St. John's (NY)","V",79,82,FALSE,FALSE,NA,2
@@ -7060,7 +7062,7 @@
 2021,3,2,"Saint Louis","George Mason","H",NA,NA,TRUE,FALSE,NA,2
 2021,3,5,"Saint Louis","Massachusetts","N",86,72,FALSE,FALSE,NA,2
 2021,3,6,"Saint Louis","St. Bonaventure","N",53,71,FALSE,FALSE,NA,2
-2021,3,20,"Saint Louis","Mississippi St.","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Saint Louis","Mississippi St.","N",68,74,FALSE,FALSE,NA,2
 2020,11,25,"Saint Mary's (CA)","Memphis","N",56,73,FALSE,FALSE,NA,2
 2020,11,26,"Saint Mary's (CA)","UNI","N",66,64,FALSE,FALSE,NA,2
 2020,11,27,"Saint Mary's (CA)","South Dakota St.","N",72,59,FALSE,FALSE,NA,2
@@ -7685,7 +7687,8 @@
 2021,3,6,"Southern California","UCLA","V",64,63,FALSE,FALSE,NA,2
 2021,3,11,"Southern California","Utah","N",91,85,FALSE,FALSE,NA,2
 2021,3,12,"Southern California","Colorado","N",70,72,FALSE,FALSE,NA,2
-2021,3,20,"Southern California","Drake","N",NA,NA,FALSE,FALSE,NA,2
+2021,3,20,"Southern California","Drake","N",72,56,FALSE,FALSE,NA,2
+2021,3,22,"Southern California","Kansas","N",NA,NA,FALSE,FALSE,NA,2
 2020,11,27,"Southern Ill.","Prairie View","N",NA,NA,TRUE,FALSE,NA,2
 2020,11,29,"Southern Ill.","Winthrop","N",NA,NA,TRUE,FALSE,NA,2
 2020,12,2,"Southern Ill.","Southeast Mo. St.","V",87,79,FALSE,FALSE,NA,2
