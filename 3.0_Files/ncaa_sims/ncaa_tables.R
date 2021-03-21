@@ -11,9 +11,10 @@ make_table <- function(sim_results, table_region, round) {
     select(ncaa_colors, 'team' = ncaa_name, logo_url) %>% 
     inner_join(sim_results) 
   
+  df <- df[df[[round]] != 0,]
+    
   if(table_region != 'all') {
     df <- filter(df, region == table_region)
-    df <- df[df[[round]] != 0,]
   }
   
   df <- 
@@ -125,7 +126,7 @@ make_table <- function(sim_results, table_region, round) {
     tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
     tab_header(
       title = md("**2021 NCAA Men's Basketball Tournament Odds**"),
-      subtitle = md(paste0('**', table_region, " Region**"))
+      subtitle = md(paste0('**', ifelse(table_region == 'all', paste0(table_region, " Region**"), '**')))
     ) %>% 
     tab_options(column_labels.font.size = 20,
                 heading.title.font.size = 40,
