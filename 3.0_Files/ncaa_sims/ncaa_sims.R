@@ -26,8 +26,8 @@ build_bracket <- function(seed_list) {
                is.na(team_elim_round) & is.na(opp_elim_round) ~ win_prob,
                is.na(team_elim_round) & !is.na(opp_elim_round) ~ 1,
                !is.na(team_elim_round) & is.na(opp_elim_round) ~ 0,
-               team_elim_round < opp_elim_round ~ 1,
-               team_elim_round > opp_elim_round ~ 0)
+               team_elim_round > opp_elim_round ~ 1,
+               team_elim_round < opp_elim_round ~ 0)
     )
 
 }
