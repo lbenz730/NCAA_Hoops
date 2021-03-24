@@ -15,19 +15,23 @@ make_table <- function(sim_results, table_region, round) {
     
   if(table_region != 'all') {
     df <- filter(df, region == table_region)
+    df <- 
+      df %>% 
+      mutate('expected_elim_round' = 
+               1 * (1 - first_round) + 
+               2 * (1 - second_round - first_round) +
+               3 * (1 - sweet_sixteen - second_round - first_round) + 
+               4 * (1 - elite_eight - sweet_sixteen - second_round - first_round) +
+               5 * (1 - final_four - elite_eight - sweet_sixteen - second_round - first_round) +
+               6 * (1 -  championship_game - final_four - elite_eight - sweet_sixteen - second_round - first_round)) %>% 
+      arrange(expected_elim_round) %>% 
+      select(-expected_elim_round)
+  }
+  else {
+   df <- arrange(df, -champ)
   }
   
-  df <- 
-    df %>% 
-    mutate('expected_elim_round' = 
-             1 * (1 - first_round) + 
-             2 * (1 - second_round - first_round) +
-             3 * (1 - sweet_sixteen - second_round - first_round) + 
-             4 * (1 - elite_eight - sweet_sixteen - second_round - first_round) +
-             5 * (1 - final_four - elite_eight - sweet_sixteen - second_round - first_round) +
-             6 * (1 -  championship_game - final_four - elite_eight - sweet_sixteen - second_round - first_round)) %>% 
-    arrange(expected_elim_round) %>% 
-    select(-expected_elim_round)
+
   
   df %>% 
     gt() %>% 
@@ -126,7 +130,7 @@ make_table <- function(sim_results, table_region, round) {
     tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
     tab_header(
       title = md("**2021 NCAA Men's Basketball Tournament Odds**"),
-      subtitle = md(paste0('**', ifelse(table_region != 'all', paste0(table_region, " Region**"), '**')))
+      subtitle = md(paste0('**', ifelse(table_region != 'all', paste0(table_region, " Region**"), 'Sweet 16**')))
     ) %>% 
     tab_options(column_labels.font.size = 20,
                 heading.title.font.size = 40,
