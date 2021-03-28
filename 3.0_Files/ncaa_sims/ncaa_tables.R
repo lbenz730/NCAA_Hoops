@@ -140,11 +140,11 @@ make_table <- function(sim_results, table_region, round) {
                 )
 }
 
-east <- make_table(sim_results, 'East', round = 'sweet_sixteen')
-mw <- make_table(sim_results, 'Midwest', round = 'sweet_sixteen')
-south <- make_table(sim_results, 'South', round = 'sweet_sixteen')
-west <- make_table(sim_results, 'West', round = 'sweet_sixteen')
-all <- make_table(sim_results, 'all', round = 'sweet_sixteen')
+east <- make_table(sim_results, 'East', round = 'elight_eight')
+mw <- make_table(sim_results, 'Midwest', round = 'elight_eight')
+south <- make_table(sim_results, 'South', round = 'elight_eight')
+west <- make_table(sim_results, 'West', round = 'elight_eight')
+all <- make_table(sim_results, 'all', round = 'elight_eight')
 
 gtsave(east, filename = here('3.0_Files/ncaa_sims/figures/east.png'), expand = 10)
 gtsave(mw, filename = here('3.0_Files/ncaa_sims/figures/mw.png'), expand = 10)
