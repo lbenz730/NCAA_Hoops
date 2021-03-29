@@ -144,7 +144,7 @@ east <- make_table(sim_results, 'East', round = 'elite_eight')
 mw <- make_table(sim_results, 'Midwest', round = 'elite_eight')
 south <- make_table(sim_results, 'South', round = 'elite_eight')
 west <- make_table(sim_results, 'West', round = 'elite_eight')
-all <- make_table(sim_results, 'all', round = 'elite_eight')
+all <- make_table(sim_results, 'all', round = 'elite_eight', 'Elite Eight')
 
 gtsave(east, filename = here('3.0_Files/ncaa_sims/figures/east.png'), expand = 10)
 gtsave(mw, filename = here('3.0_Files/ncaa_sims/figures/mw.png'), expand = 10)
