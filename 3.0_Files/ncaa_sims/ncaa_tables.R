@@ -130,7 +130,8 @@ make_table <- function(sim_results, table_region, round, message = '') {
     tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
     tab_header(
       title = md("**2021 NCAA Men's Basketball Tournament Odds**"),
-      subtitle = md(paste0('**', ifelse(table_region != 'all', paste0(table_region, " Region**"), paste0(message, '**'))))
+      # subtitle = md(paste0('**', ifelse(table_region != 'all', paste0(table_region, " Region**"), paste0(message, '**'))))
+      subtitle = html(web_image("https://upload.wikimedia.org/wikipedia/en/0/04/2021_NCAA_Men%27s_Final_Four_logo.svg"))
     ) %>% 
     tab_options(column_labels.font.size = 20,
                 heading.title.font.size = 40,
@@ -140,11 +141,11 @@ make_table <- function(sim_results, table_region, round, message = '') {
                 )
 }
 
-east <- make_table(sim_results, 'East', round = 'elite_eight')
-mw <- make_table(sim_results, 'Midwest', round = 'elite_eight')
-south <- make_table(sim_results, 'South', round = 'elite_eight')
-west <- make_table(sim_results, 'West', round = 'elite_eight')
-all <- make_table(sim_results, 'all', round = 'elite_eight', 'Elite Eight')
+east <- make_table(sim_results, 'East', round = 'final_four')
+mw <- make_table(sim_results, 'Midwest', round = 'final_four')
+south <- make_table(sim_results, 'South', round = 'final_four')
+west <- make_table(sim_results, 'West', round = 'final_four')
+all <- make_table(sim_results, 'all', round = 'final_four', 'Final Four')
 
 gtsave(east, filename = here('3.0_Files/ncaa_sims/figures/east.png'), expand = 10)
 gtsave(mw, filename = here('3.0_Files/ncaa_sims/figures/mw.png'), expand = 10)
