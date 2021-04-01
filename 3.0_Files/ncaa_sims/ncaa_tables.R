@@ -129,9 +129,9 @@ make_table <- function(sim_results, table_region, round, message = '') {
     tab_source_note("Based on 10,000 Simulations of NCAA Tournament") %>%
     tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
     tab_header(
-      title = md("**2021 NCAA Men's Basketball Tournament Odds**"),
+      # title = md("**2021 NCAA Men's Basketball Tournament Odds**"),
       # subtitle = md(paste0('**', ifelse(table_region != 'all', paste0(table_region, " Region**"), paste0(message, '**'))))
-      subtitle = html(web_image("https://upload.wikimedia.org/wikipedia/en/0/04/2021_NCAA_Men%27s_Final_Four_logo.svg"))
+     title = html(web_image("https://upload.wikimedia.org/wikipedia/en/0/04/2021_NCAA_Men%27s_Final_Four_logo.svg", 170))
     ) %>% 
     tab_options(column_labels.font.size = 20,
                 heading.title.font.size = 40,
@@ -147,9 +147,10 @@ south <- make_table(sim_results, 'South', round = 'final_four')
 west <- make_table(sim_results, 'West', round = 'final_four')
 all <- make_table(sim_results, 'all', round = 'final_four', 'Final Four')
 
-gtsave(east, filename = here('3.0_Files/ncaa_sims/figures/east.png'), expand = 10)
-gtsave(mw, filename = here('3.0_Files/ncaa_sims/figures/mw.png'), expand = 10)
-gtsave(south, filename = here('3.0_Files/ncaa_sims/figures/south.png'), expand = 10)
-gtsave(west, filename = here('3.0_Files/ncaa_sims/figures/west.png'), expand = 10)
-gtsave(all, filename = here('3.0_Files/ncaa_sims/figures/ncaa_sims.png'), expand = 10)
+# gtsave(east, filename = here('3.0_Files/ncaa_sims/figures/east.png'), expand = 10)
+# gtsave(mw, filename = here('3.0_Files/ncaa_sims/figures/mw.png'), expand = 10)
+# gtsave(south, filename = here('3.0_Files/ncaa_sims/figures/south.png'), expand = 10)
+# gtsave(west, filename = here('3.0_Files/ncaa_sims/figures/west.png'), expand = 10)
+# gtsave(all, filename = here('3.0_Files/ncaa_sims/figures/ncaa_sims.png'), expand = 10)
+gtsave(all, filename = here('3.0_Files/ncaa_sims/figures/ncaa_sims.png'))
 
