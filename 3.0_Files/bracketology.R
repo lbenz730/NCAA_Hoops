@@ -1,26 +1,26 @@
 make_bracket <- function(tourney) {
   bracket <- data.frame("team" = teams,
-                        "conf" = rep(NA, 357),
-                        "yusag_coeff" = rep(NA, 357),
-                        "sor" = rep(NA, 357),
-                        "wab" = rep(NA, 357),
-                        "qual_bonus" = rep(NA, 357),
-                        "yusag_rank" = rep(NA, 357),
-                        "sor_rank" = rep(NA, 357),
-                        "resume_rank" = rep(NA, 357),
-                        "wab_rank" = rep(NA, 357),
-                        "mid_major" = rep(NA, 357),
-                        "loss_bonus" = rep(NA, 357),
+                        "conf" = rep(NA, length(teams)),
+                        "yusag_coeff" = rep(NA, length(teams)),
+                        "sor" = rep(NA, length(teams)),
+                        "wab" = rep(NA, length(teams)),
+                        "qual_bonus" = rep(NA, length(teams)),
+                        "yusag_rank" = rep(NA, length(teams)),
+                        "sor_rank" = rep(NA, length(teams)),
+                        "resume_rank" = rep(NA, length(teams)),
+                        "wab_rank" = rep(NA, length(teams)),
+                        "mid_major" = rep(NA, length(teams)),
+                        "loss_bonus" = rep(NA, length(teams)),
                         stringsAsFactors = F)
   
   ### Get Advanced Metric Ranks
   resumes <- 
     arrange(resumes, desc(sor)) %>%
-    mutate(sor_rank = 1:357) %>%
+    mutate(sor_rank = 1:length(teams)) %>%
     arrange(desc(wab)) %>%
-    mutate(wab_rank = 1:357) %>%
+    mutate(wab_rank = 1:length(teams)) %>%
     arrange(desc(qual_bonus)) %>%
-    mutate(resume_rank = 1:357)
+    mutate(resume_rank = 1:length(teams))
   
   
   for(i in 1:length(teams)) {
@@ -86,14 +86,7 @@ make_bracket <- function(tourney) {
   bracket$seed <- 
     predict(lm.seed, newdata = bracket, type = "response")
 
-  correct <- c("Houston")
-  correct2 <- c("UConn")
-  correct3 <- c("Drake")
-  correct4 <- c("Xavier", "St. John's (NY)", 'SMU')
-  bracket$odds[bracket$team %in% correct] <- bracket$odds[bracket$team %in% correct] - 0.1
-  bracket$odds[bracket$team %in% correct2] <- bracket$odds[bracket$team %in% correct2] - 2
-  bracket$odds[bracket$team %in% correct3] <- bracket$odds[bracket$team %in% correct3] + 40
-  bracket$odds[bracket$team %in% correct4] <- bracket$odds[bracket$team %in% correct4] - 30
+
   bracket <- arrange(bracket, desc(round(odds, 1)), avg)
   
   if(tourney == T) {

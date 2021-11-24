@@ -57,7 +57,7 @@ for (i in 1:nrow(teamid)) {
       }
     }
   }
-  if (ct <= 5 & i != 315) { ### UMES cancelled
+  if (ct <= 5) { ### UMES cancelled
     x <- x[-grep("^\\s*$", x)]  # Drop lines with only whitespace
     
     # Which lines contain dates surrounded immediately by > ... < ?
@@ -66,7 +66,7 @@ for (i in 1:nrow(teamid)) {
     dates <- stripwhite(gsub("<[^<>]*>", "", x[datelines]))
     
     dates <- gsub("\\(.*", "", gsub(" .*", "", dates))
-    ix <- !dates %in% c("Start", "Team", "End", "UMES")
+    ix <- !dates %in% c("Start", "Team", "End")
     if(sum(ix) > 0) {
       datelines <- datelines[ix]
       dates <- dates[ix]
@@ -136,12 +136,20 @@ for (i in 1:nrow(teamid)) {
 #     z$opponent[grep("@", z$opponent)][1] <- rows[[i]][1]
 #   }
 # }
-z$opponent[z$opponent == 'App State'] <- 'Appalachian St.'
+z <- 
+  z %>%
+  mutate('opponent' = case_when(
+    opponent == 'App State' ~ 'Appalachian St.',
+    opponent == 'Nicholls' ~ "Nicholls St.",
+    opponent == 'Sam Houston' ~ "Sam Houston St.",
+    grepl('&;', opponent) ~ gsub('&;', "'", opponent),
+    T ~ opponent))
+    
 z$opponent <- stripwhite(z$opponent)
 
 z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team
 
 ### Save Results
-write.csv(z, paste("3.0_Files/Results/2020-21/NCAA_Hoops_Results_", month, "_", 
+write.csv(z, paste("3.0_Files/Results/2021-22/NCAA_Hoops_Results_", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names = F)
 

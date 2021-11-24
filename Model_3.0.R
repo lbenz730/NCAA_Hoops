@@ -4,20 +4,17 @@ library(readr)
 library(lubridate)
 library(purrr)
 library(furrr)
-plan(multiprocess)
+plan(multicore)
 options(future.fork.enable = T)
-
-x <- read_csv(paste("3.0_Files/Results/2020-21/NCAA_Hoops_Results",
-                     month(Sys.Date()), day(Sys.Date()), "2021.csv", sep = "_"))
+x <- read_csv(paste("3.0_Files/Results/2021-22/NCAA_Hoops_Results",
+                    month(Sys.Date()), day(Sys.Date()), "2021.csv", sep = "_"))
 train <- read_csv("3.0_Files/Results/2017-18/training.csv")
 confs <- read_csv("3.0_Files/Info/conferences.csv")
-deadlines <- 
-  read_csv("3.0_Files/Info/deadlines.csv") %>%
-  mutate(deadline = as.Date(deadline, "%m/%d/%y"))
+deadlines <- read_csv("3.0_Files/Info/deadlines.csv")
 priors <- 
   read_csv("3.0_Files/Info/prior.csv") %>% 
   arrange(team)
-seed_list <- read_csv('3.0_Files/ncaa_sims/seed_list.csv')
+# seed_list <- read_csv('3.0_Files/ncaa_sims/seed_list.csv')
 source("3.0_Files/powerrankings.R")
 source("3.0_Files/Ivy_Sims.R")
 source("3.0_Files/rpi.R")
@@ -33,7 +30,7 @@ x <-
   mutate(date = as.Date(paste(year, month, day, sep = "-")),
          score_diff = team_score - opp_score,
          total_score = team_score + opp_score,
-         season_id = "2020-21", game_id = NA, opp_game_id = NA, 
+         season_id = "2021-22", game_id = NA, opp_game_id = NA, 
          team_conf = NA, opp_conf = NA, conf_game = NA) %>%
   select(date, team, opponent, location, team_score, opp_score,
          score_diff, total_score, game_id, opp_game_id, team_conf, opp_conf,
@@ -63,8 +60,8 @@ x <-
 ### Confs
 x <- 
   mutate(x, team_conf = sapply(x$team, get_conf),
-            opp_conf = sapply(x$opponent, get_conf),
-            conf_game = team_conf == opp_conf)
+         opp_conf = sapply(x$opponent, get_conf),
+         conf_game = team_conf == opp_conf)
 
 ### Reg Season
 x <- 
@@ -76,16 +73,16 @@ x <-
 confs <- eliminate(filter(x, score_diff < 0, !reg_season) %>% pull(team), confs)
 
 ### Update NCAA Eliminations:
-round_dates <- 
-  list('0' = c('2021-03-18', '2021-03-18'),
-       '1' = c('2021-03-19', '2021-03-20'),
-       '2' = c('2021-03-21', '2021-03-22'),
-       '3' = c('2021-03-27', '2021-03-28'),
-       '4' = c('2021-03-29', '2021-03-30'),
-       '5' = c('2021-04-03', '2021-04-03'),
-       '6' = c('2021-04-05', '2021-04-05'))
-
-eliminate_ncaa_teams(seed_list, round_dates)
+# round_dates <- 
+#   list('0' = c('2021-03-18', '2021-03-18'),
+#        '1' = c('2021-03-19', '2021-03-20'),
+#        '2' = c('2021-03-21', '2021-03-22'),
+#        '3' = c('2021-03-27', '2021-03-28'),
+#        '4' = c('2021-03-29', '2021-03-30'),
+#        '5' = c('2021-04-03', '2021-04-03'),
+#        '6' = c('2021-04-05', '2021-04-05'))
+# 
+# eliminate_ncaa_teams(seed_list, round_dates)
 
 
 ################################# Set Weights ##################################
@@ -126,27 +123,27 @@ lm.hoops$coefficients[is.na(lm.hoops$coefficients)] <- 0
 lm.off$coefficients[is.na(lm.off$coefficients)] <- 0
 lm.def$coefficients[is.na(lm.def$coefficients)] <- 0
 
-lm.hoops$coefficients[2:357] <- 
-  lm.hoops$coefficients[2:357] * w[-1] + priors$rel_yusag_coeff[-1] * (1-w[-1])
-lm.hoops$coefficients[358:713] <- 
-  lm.hoops$coefficients[358:713] * w[-1] - priors$rel_yusag_coeff[-1] * (1-w[-1])
-lm.off$coefficients[2:357] <- 
-  lm.off$coefficients[2:357] * w[-1] + priors$rel_off_coeff[-1] * (1-w[-1])
-lm.off$coefficients[358:713] <- 
-  lm.off$coefficients[358:713] * w[-1] - priors$rel_off_coeff[-1] * (1-w[-1])
-lm.def$coefficients[2:357] <- 
-  lm.def$coefficients[2:357] * w[-1] - priors$rel_def_coeff[-1] * (1-w[-1])
-lm.def$coefficients[358:713] <- 
-  lm.def$coefficients[358:713] * w[-1] + priors$rel_def_coeff[-1] * (1-w[-1])
+lm.hoops$coefficients[2:length(teams)] <- 
+  lm.hoops$coefficients[2:length(teams)] * w[-1] + priors$rel_yusag_coeff[-1] * (1-w[-1])
+lm.hoops$coefficients[(length(teams)+1):(2 * length(teams)-1)] <- 
+  lm.hoops$coefficients[(length(teams)+1):(2 * length(teams)-1)] * w[-1] - priors$rel_yusag_coeff[-1] * (1-w[-1])
+lm.off$coefficients[2:length(teams)] <- 
+  lm.off$coefficients[2:length(teams)] * w[-1] + priors$rel_off_coeff[-1] * (1-w[-1])
+lm.off$coefficients[(length(teams)+1):(2 * length(teams)-1)] <- 
+  lm.off$coefficients[(length(teams)+1):(2 * length(teams)-1)] * w[-1] - priors$rel_off_coeff[-1] * (1-w[-1])
+lm.def$coefficients[2:length(teams)] <- 
+  lm.def$coefficients[2:length(teams)] * w[-1] - priors$rel_def_coeff[-1] * (1-w[-1])
+lm.def$coefficients[(length(teams)+1):(2 * length(teams)-1)] <- 
+  lm.def$coefficients[(length(teams)+1):(2 * length(teams)-1)] * w[-1] + priors$rel_def_coeff[-1] * (1-w[-1])
 
-lm.hoops$coefficients[c(1, 714:715)] <- 
-  w[1] * lm.hoops$coefficients[c(1, 714:715)] + 
+lm.hoops$coefficients[c(1, (2 * length(teams)):(2 * length(teams)+1))] <- 
+  w[1] * lm.hoops$coefficients[c(1, (2 * length(teams)):(2 * length(teams)+1))] + 
   (1-w[1]) * c(3.34957772, -3.34957772, -6.69915544)
-lm.off$coefficients[c(1, 714:715)] <- 
-  w[1] * lm.off$coefficients[c(1, 714:715)] + 
+lm.off$coefficients[c(1, (2 * length(teams)):(2 * length(teams)+1))] <- 
+  w[1] * lm.off$coefficients[c(1, (2 * length(teams)):(2 * length(teams)+1))] + 
   (1-w[1]) * c(68.19705698, -2.93450334,  -3.34957772)
-lm.def$coefficients[c(1, 714:715)] <- 
-  w[1] * lm.def$coefficients[c(1, 714:715)] + 
+lm.def$coefficients[c(1, (2 * length(teams)):(2 * length(teams)+1))] <- 
+  w[1] * lm.def$coefficients[c(1, (2 * length(teams)):(2 * length(teams)+1))] + 
   (1-w[1]) * c(64.84747926, 0.41507438,  3.34957772)
 
 ################################ Power Rankings ################################
@@ -167,13 +164,13 @@ x <-
 ############################### Predictions ####################################
 x <- 
   mutate(x, "hca" = case_when(location == "H" ~ lm.hoops$coefficients[1],
-                              location == "V" ~ lm.hoops$coefficients[714],
+                              location == "V" ~ lm.hoops$coefficients[(2 * length(teams))],
                               location == "N" ~ 0),
-         "hca_off" = case_when(location == "H" ~ abs(lm.off$coefficients[714]),
-                               location == "V" ~ lm.off$coefficients[715] - lm.off$coefficients[714],
+         "hca_off" = case_when(location == "H" ~ abs(lm.off$coefficients[(2 * length(teams))]),
+                               location == "V" ~ lm.off$coefficients[(2 * length(teams)+1)] - lm.off$coefficients[(2 * length(teams))],
                                location == "N" ~ 0),
-         "hca_def" = case_when(location == "H" ~ -lm.def$coefficients[714],
-                               location == "V" ~ lm.def$coefficients[715] - lm.def$coefficients[714],
+         "hca_def" = case_when(location == "H" ~ -lm.def$coefficients[(2 * length(teams)+1)],
+                               location == "V" ~ lm.def$coefficients[(2 * length(teams)+1)] - lm.def$coefficients[(2 * length(teams))],
                                location == "N" ~ 0)) %>%
   mutate("pred_score_diff" = round(yusag_coeff - opp_yusag_coeff + hca, 1),
          "pred_team_score" = round(70 + off_coeff - opp_def_coeff + hca_off, 1),
@@ -193,47 +190,58 @@ x$wins[is.na(x$wins)] <-
   round(predict(glm.pointspread, newdata = x[is.na(x$wins),], type = "response"), 3)
 by_conf <- pr_compute(by_conf = T)
 write_csv(x, "3.0_Files/Predictions/predictions.csv")
-# ########################### Bracketology #######################################
-# resumes <- get_resumes(new = T)
-# bracket <- make_bracket(tourney = T)
-# bracket_math <- make_bracket(tourney = F)
-# 
-# # ############################# Conference Sims (No Tie-Breaks) ##################
-# # for(conf in unique(confs$conference)) {
-# #   print(conf)
-# #   sims <- conf_fast_sim(conf, 10000)
-# #   write_csv(sims, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
-# # }
-# ############################ System Evaluation #################################
-# min_date <- as.Date("2020-11-25")
-# max_date <- Sys.Date()
-# y <- filter(x, date >= min_date, date <= max_date)
-# cat(paste("System Evaluation:", min_date, "Through", max_date),
-#     "\n-------------------------------------------------------------\n",
-#     "Predictive Accuracy: ",
-#     round(100 * mean(sign(y$pred_score_diff) == sign(y$score_diff), na.rm = T), 1), "%\n", 
-#     "Mean Absolute Error in Predicted Score Differential: ",
-#     round(mean(abs(y$pred_score_diff - y$score_diff), na.rm = T), 2), "\n",
-#     "Games w/in 2 Points of Observed Score Differential: ",
-#     round(100 * mean(abs(y$pred_score_diff - y$score_diff) <= 2, na.rm = T), 2), "%\n",
-#     "Games w/in 5 Points of Observed Score Differential: ",
-#     round(100 * mean(abs(y$pred_score_diff - y$score_diff) <= 5, na.rm = T), 2), "%\n",
-#     "Predicted Totals Score <= Total Score: ",
-#     round(100 * mean(y$pred_total_score <= y$total_score, na.rm = T), 1), "%\n",
-#     "Predicted Totals Score > Total Score: ",
-#     round(100 * mean(y$pred_total_score > y$total_score, na.rm = T), 1), "%\n",
-#     "Mean Absolute Error in Total Score Predictions: ",
-#     round(mean(abs(y$pred_total_score - y$total_score), na.rm = T),  2), "\n",
-#     "Games w/in 2 Points of Observed Total Score: ",
-#     round(100 * mean(abs(y$pred_total_score - y$total_score) <= 2, na.rm = T), 2), "%\n",
-#     "Games w/in 5 Points of Observed Total Score: ",
-#     round(100 * mean(abs(y$pred_total_score - y$total_score) <= 5, na.rm = T), 2), "%\n",
-#     sep = "")
-# nrow(filter(x, round(pred_team_score) == team_score))
-# filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)
+########################### Bracketology #######################################
+resumes <- get_resumes(new = T)
+bracket <- make_bracket(tourney = T)
+bracket_math <- make_bracket(tourney = F)
 
-source('3.0_Files/ncaa_sims/ncaa_sims.R')
+############################# Conference Sims (No Tie-Breaks) ##################
+for(conf in unique(confs$conference)) {
+  print(conf)
+  sims <- conf_fast_sim(conf, 10000)
+  write_csv(sims, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+}
+############################ System Evaluation #################################
+min_date <- as.Date("2021-11-09")
+max_date <- Sys.Date()
+y <- filter(x, date >= min_date, date <= max_date)
+cat(paste("System Evaluation:", min_date, "Through", max_date),
+    "\n-------------------------------------------------------------\n",
+    "Predictive Accuracy: ",
+    round(100 * mean(sign(y$pred_score_diff) == sign(y$score_diff), na.rm = T), 1), "%\n",
+    "Mean Absolute Error in Predicted Score Differential: ",
+    round(mean(abs(y$pred_score_diff - y$score_diff), na.rm = T), 2), "\n",
+    "Games w/in 2 Points of Observed Score Differential: ",
+    round(100 * mean(abs(y$pred_score_diff - y$score_diff) <= 2, na.rm = T), 2), "%\n",
+    "Games w/in 5 Points of Observed Score Differential: ",
+    round(100 * mean(abs(y$pred_score_diff - y$score_diff) <= 5, na.rm = T), 2), "%\n",
+    "Predicted Totals Score <= Total Score: ",
+    round(100 * mean(y$pred_total_score <= y$total_score, na.rm = T), 1), "%\n",
+    "Predicted Totals Score > Total Score: ",
+    round(100 * mean(y$pred_total_score > y$total_score, na.rm = T), 1), "%\n",
+    "Mean Absolute Error in Total Score Predictions: ",
+    round(mean(abs(y$pred_total_score - y$total_score), na.rm = T),  2), "\n",
+    "Games w/in 2 Points of Observed Total Score: ",
+    round(100 * mean(abs(y$pred_total_score - y$total_score) <= 2, na.rm = T), 2), "%\n",
+    "Games w/in 5 Points of Observed Total Score: ",
+    round(100 * mean(abs(y$pred_total_score - y$total_score) <= 5, na.rm = T), 2), "%\n",
+    sep = "")
+nrow(filter(x, round(pred_team_score) == team_score))
+filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)
+
+#### Copy App Specific Files
+file.copy(dir('3.0_Files/Results/2021-22/', full.names = T),  
+          paste0('app/', dir('3.0_Files/Results/2021-22/', full.names = T)), overwrite = T)
+file.copy(dir('3.0_Files/Predictions/', full.names = T, recursive = T),  
+          paste0('app/', dir('3.0_Files/Predictions/', full.names = T, recursive = T)), overwrite = T)
+file.copy(dir('3.0_Files/Bracketology/', full.names = T),  
+          paste0('app/', dir('3.0_Files/Bracketology/', full.names = T)), overwrite = T)
+file.copy(dir('3.0_Files/ncaa_sims/', full.names = T),  
+          paste0('app/', dir('3.0_Files/ncaa_sims/', full.names = T)), overwrite = T)
+file.copy('glm_pointspread.rds', 'app/glm_pointspread.rds')
+file.copy('3.0_Files/History/history.csv', 'app/3.0_Files/History/history.csv')
+file.copy('3.0_Files/Info/conferences.csv', 'app/3.0_Files/Info/conferences.csv')
+
+# source('3.0_Files/ncaa_sims/ncaa_sims.R')
 devtools::install_github("lbenz730/ncaahoopR")
-rsconnect::deployApp(forceUpdate = T)
-
-
+rsconnect::deployApp(forceUpdate = T, appDir = 'app')
