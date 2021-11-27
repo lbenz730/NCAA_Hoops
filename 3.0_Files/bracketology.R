@@ -92,7 +92,7 @@ make_bracket <- function(tourney) {
   if(tourney == T) {
     ### Get Autobids
     autobids <- vector()
-    con <- setdiff(unique(confs$conference), 'Ivy')
+    con <- unique(confs$conference)
     for(j in 1:length(con)){
 
       autobids[j] <- autobid_calc(con[j])

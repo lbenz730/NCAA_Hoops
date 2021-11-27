@@ -238,9 +238,9 @@ file.copy(dir('3.0_Files/Bracketology/', full.names = T),
           paste0('app/', dir('3.0_Files/Bracketology/', full.names = T)), overwrite = T)
 file.copy(dir('3.0_Files/ncaa_sims/', full.names = T),  
           paste0('app/', dir('3.0_Files/ncaa_sims/', full.names = T)), overwrite = T)
-file.copy('glm_pointspread.rds', 'app/glm_pointspread.rds')
-file.copy('3.0_Files/History/history.csv', 'app/3.0_Files/History/history.csv')
-file.copy('3.0_Files/Info/conferences.csv', 'app/3.0_Files/Info/conferences.csv')
+file.copy('glm_pointspread.rds', 'app/glm_pointspread.rds', overwrite = T)
+file.copy('3.0_Files/History/history.csv', 'app/3.0_Files/History/history.csv', overwrite = T)
+file.copy('3.0_Files/Info/conferences.csv', 'app/3.0_Files/Info/conferences.csv', overwrite = T)
 
 # source('3.0_Files/ncaa_sims/ncaa_sims.R')
 devtools::install_github("lbenz730/ncaahoopR")
