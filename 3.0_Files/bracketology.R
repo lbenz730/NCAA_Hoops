@@ -104,7 +104,7 @@ make_bracket <- function(tourney) {
     
     ### Get At-Large bids
     atlarge <- vector()
-    while(j <= 37) {
+    while(j <= 36) {
       for(k in z:length(teams)){
         z <- z + 1
         if(confs$eligible[confs$team == tmp$team[k]]) {
@@ -134,14 +134,14 @@ make_bracket <- function(tourney) {
     write.csv(bracket, "3.0_Files/Bracketology/bracket.csv", row.names = F)
     
     ### First teams out
-    j <- 38
-    z <- 38
+    j <- 37
+    z <- 37
     bubble <- vector()
     while(j <= 52) {
       for(k in z:length(teams)){
         z <- z + 1
         if(confs$eligible[confs$team == tmp$team[k]]) {
-          bubble[j - 37] <- as.character(tmp$team)[k]
+          bubble[j - 36] <- as.character(tmp$team)[k]
           j <- j + 1
           break
         }
