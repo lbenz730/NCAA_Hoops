@@ -201,6 +201,11 @@ for(conf in unique(confs$conference)) {
   sims <- conf_fast_sim(conf, 10000)
   write_csv(sims, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
 }
+
+######################### Ivy League Specific Sims #############################
+playoffs <- ivy.sim(5000)
+playoff_graphic()
+
 ############################ System Evaluation #################################
 min_date <- as.Date("2021-11-09")
 max_date <- Sys.Date()
