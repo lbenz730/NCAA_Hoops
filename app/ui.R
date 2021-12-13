@@ -217,6 +217,17 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                             
                    ),
                    
+                   
+                   ### Ivy League
+                   tabPanel("Ivy League",
+                            
+                            mainPanel(
+                              gt_output('ivy_sims'),
+                              plotOutput('ivy_history')
+                            )
+                            
+                   ),
+                   
                    ### About
                    tabPanel("About",
                             

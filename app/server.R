@@ -498,6 +498,11 @@ shinyServer(function(input, output, session) {
   output$ncaa_sims <- render_gt(ncaa_gt)
   
   
+  ### Ivy
+  output$ivy_sims <- render_gt(ivy_gt)
+  output$ivy_history <- renderPlot(ivy_history_plot)
+  
+  
 })
 
 
