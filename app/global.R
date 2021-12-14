@@ -404,7 +404,7 @@ ivy_gt <-
 cols <- filter(ncaa_colors, conference == "Ivy") %>% 
   pull(primary_color)
 ivy_history_plot <- 
-  ggplot(playoff_history, aes(x = as.Date(date), y = playoff_prob)) + 
+  ggplot(ivy_history, aes(x = as.Date(date), y = playoff_prob)) + 
   geom_line(aes(group = team, col = team), size = 1.5) +
   facet_wrap(~team, ncol = 4) +
   theme_bw() + 
@@ -418,3 +418,24 @@ ivy_history_plot <-
         plot.subtitle = element_text(size = 18, hjust = 0.5)) + 
   scale_y_continuous(labels = function(x) {paste0(x, "%")}, limits = c(0,100)) +
   scale_color_manual(values = cols)
+
+ivy_sim <- read_csv(paste0("3.0_Files/Predictions/conf_sims/Ivy.csv"))
+
+ivy_bar <- 
+  ivy_sim %>% 
+  group_by(n_wins, place) %>%
+  count() %>% 
+  group_by(n_wins) %>% 
+  mutate('pct' = n/sum(n)) %>% 
+  ungroup() %>% 
+  ggplot(aes(x = n_wins, y = pct)) + 
+  geom_col(aes(fill = as.factor(place))) + 
+  scale_x_continuous(breaks = min(ivy_sim$n_wins):max(ivy_sim$n_wins)) + 
+  scale_y_continuous(labels = scales::percent) + 
+  labs(x = '# of Conference Wins',
+       y = 'Frequency',
+       fill = 'Place',
+       title = 'Distribution of Conference Finish By # of Wins',
+       subtitle = 'Ivy League: Tiebreakers Applied')
+
+

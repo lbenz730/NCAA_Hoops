@@ -223,7 +223,8 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                             
                             mainPanel(
                               gt_output('ivy_sims'),
-                              plotOutput('ivy_history')
+                              plotOutput('ivy_history'),
+                              plotOutput('ivy_barplot')
                             )
                             
                    ),
