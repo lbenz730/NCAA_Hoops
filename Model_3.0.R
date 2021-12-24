@@ -203,8 +203,7 @@ for(conf in unique(confs$conference)) {
 }
 
 ######################### Ivy League Specific Sims #############################
-playoffs <- ivy.sim(5000)
-playoff_graphic()
+playoffs <- ivy.sim(10000)
 
 ############################ System Evaluation #################################
 min_date <- as.Date("2021-11-09")
