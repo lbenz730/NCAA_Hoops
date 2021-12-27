@@ -66,7 +66,7 @@ x <-
 ### Reg Season
 x <- 
   inner_join(x, deadlines, by = c("team_conf" = "conf")) %>%
-  mutate(reg_season = date < deadline) %>%
+  mutate(reg_season = date <= deadline) %>%
   select(-deadline)
 
 ### Eliminate Teams from Auto Bid contention
@@ -203,7 +203,8 @@ for(conf in unique(confs$conference)) {
 }
 
 ######################### Ivy League Specific Sims #############################
-playoffs <- ivy.sim(10000)
+playoffs <- ivy.sim(5000)
+ivy_psf <- psf(1000, min_date = Sys.Date(), max_date = Sys.Date() + 10)
 
 ############################ System Evaluation #################################
 min_date <- as.Date("2021-11-09")

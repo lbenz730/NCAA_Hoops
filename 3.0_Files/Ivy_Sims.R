@@ -216,7 +216,7 @@ psf <- function(nsims, min_date, max_date) {
   tochange <- filter(x, date >= min_date, date <= max_date, team_conf == "Ivy",
                      conf_game, location == "H")
   
- 
+  
   ivy <- unique(x$team[x$team_conf == "Ivy"])
   
   # Data Frame to Hold Team Wins by Sim
@@ -227,12 +227,13 @@ psf <- function(nsims, min_date, max_date) {
   names(prebreak.pos) <- ivy
   
   # Create Data Frame to Store SwingFactor
-  swingfactor <- data.frame(date = tochange$date,
-                            home = tochange$team,
-                            away = tochange$opponent,
-                            psf = rep(NA, nrow(tochange)),
-                            auto_bid_sf = rep(NA, nrow(tochange)),
-                            stringsAsFactors = F)
+  swingfactor <- tibble(date = tochange$date,
+                        home = tochange$team,
+                        away = tochange$opponent,
+                        psf = rep(NA, nrow(tochange)),
+                        auto_bid_sf = rep(NA, nrow(tochange)),
+  )
+  df_list <- list()
   
   # Switch
   q = 0
@@ -408,17 +409,64 @@ psf <- function(nsims, min_date, max_date) {
       simplayoffs$auto_bid_2 <- playoffs$auto_bid
       swingfactor$psf[k/2] <- sum(abs(simplayoffs$playoff_prob2 - simplayoffs$playoff_prob1))
       swingfactor$auto_bid_sf[k/2] <- sum(abs(simplayoffs$auto_bid_2 - simplayoffs$auto_bid_1))
+      df_list[[k/2]] <- simplayoffs
     }
-    
   }
+  
+  swingfactor$df <- df_list
+  
   
   psf_history <- read.csv("3.0_Files/Predictions/psf_history.csv", as.is = T) %>%
     mutate(date = as.Date(date)) %>%
     filter(date < Sys.Date())
-  psf_history <- rbind(psf_history, swingfactor) 
-  psf_history <- filter(psf_history, date >= "2019-11-05")
+  psf_history <- rbind(psf_history, swingfactor %>% select(-df))
+  psf_history <- 
+    filter(psf_history, date >= "2021-11-05") %>% 
+    distinct(date, home, away, .keep_all = T)
   write.csv(psf_history, "3.0_Files/Predictions/psf_history.csv", row.names = F) 
-  write.csv(swingfactor, "3.0_Files/Predictions/psf.csv", row.names = F)
+  write.csv(swingfactor  %>% select(-df), "3.0_Files/Predictions/psf.csv", row.names = F)
+  
+  swingfactor$df_home <- map(df_list, ~select(.x, Team, 'playoff' = playoff_prob1))
+  swingfactor$df_away <- map(df_list, ~select(.x, Team, 'playoff' = playoff_prob2))
+  
+  write_rds(swingfactor, '3.0_Files/Predictions/ivy_psf_full.rds')
+  
+  ivy_psf <- swingfactor
+  for(i in 1:nrow(swingfactor)) {
+    df <- ivy_psf$df_home[[i]]
+    df <- inner_join(df, ncaa_colors, by = c('Team' = 'ncaa_name'))
+    labels <- paste0("<img src ='3.0_Files/Predictions/psf_figures/ivy_logos/", df$Team, ".png', width = '20'/>")
+    
+    ggplot(df, aes(x = Team, y = playoff)) + 
+      geom_col(aes(fill = Team)) + 
+      theme_void() +
+      scale_fill_manual(values = df$primary_color) +
+      scale_color_manual(values = df$secondary_color) +
+      scale_y_continuous(limits = c(0, 100)) +
+      scale_x_discrete(labels = labels) +
+      theme(legend.position = 'none',
+            axis.text.x = ggtext::element_markdown())
+    
+    ggsave(filename = paste0('3.0_Files/Predictions/psf_figures/home_', i, '.png'))
+    
+    df <- ivy_psf$df_away[[i]]
+    df <- inner_join(df, ncaa_colors, by = c('Team' = 'ncaa_name'))
+    p <- 
+      ggplot(df, aes(x = Team, y = playoff)) + 
+      geom_col(aes(fill = Team)) + 
+      
+      theme_void() +
+      scale_fill_manual(values = df$primary_color) +
+      scale_color_manual(values = df$secondary_color) +
+      scale_y_continuous(limits = c(0, 100)) +
+      scale_x_discrete(labels = labels) +
+      theme(legend.position = 'none',
+            axis.text.x = ggtext::element_markdown())
+    
+    ggsave(filename = paste0('3.0_Files/Predictions/psf_figures/away_', i, '.png'))
+    
+  }
+  
   return(swingfactor)
 }
 
