@@ -204,7 +204,7 @@ for(conf in unique(confs$conference)) {
 
 ######################### Ivy League Specific Sims #############################
 playoffs <- ivy.sim(5000)
-ivy_psf <- psf(1000, min_date = Sys.Date(), max_date = Sys.Date() + 10)
+ivy_psf <- psf(1000, min_date = Sys.Date(), max_date = Sys.Date() + 6)
 
 ############################ System Evaluation #################################
 min_date <- as.Date("2021-11-09")

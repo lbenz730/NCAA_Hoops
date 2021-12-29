@@ -440,31 +440,48 @@ ivy_bar <-
 
 
 
-ivy_psf <- read_rds('3.0_Files/Predictions/ivy_psf_full.rds')
-ivy_psf_gt <- 
+ivy_psf <- read_rds('3.0_Files/Predictions/ivy_psf_full.rds') 
+
+ivy_psf_gt <-
   ivy_psf %>% 
   inner_join(select(ncaa_colors, ncaa_name, logo_url), by = c('home' = 'ncaa_name')) %>% 
   inner_join(select(ncaa_colors, ncaa_name, logo_url), by = c('away' = 'ncaa_name'), suffix = c('_home', '_away')) %>% 
   mutate_if(is.numeric, ~{.x/100}) %>% 
+  inner_join(x, by = c('home' = 'team', 
+                       'away' = 'opponent',
+                       'date' = 'date')) %>% 
   mutate('home_bar' = paste0('3.0_Files/Predictions/psf_figures/home_', 1:nrow(.), '.png'),
-         'away_bar' = paste0('3.0_Files/Predictions/psf_figures/away_', 1:nrow(.), '.png')) %>% 
-  select(date, logo_url_home, logo_url_away, psf, auto_bid_sf, home_bar, away_bar) %>% 
-  
+         'away_bar' = paste0('3.0_Files/Predictions/psf_figures/away_', 1:nrow(.), '.png'),
+         'delta_bar' = paste0('3.0_Files/Predictions/psf_figures/delta_', 1:nrow(.), '.png')) %>% 
+  mutate('favored' = ifelse(pred_score_diff > 0, logo_url_home, logo_url_away),
+         'win_prob' = ifelse(pred_score_diff > 0, wins, 1-wins),
+         'pred_score' = ifelse(pred_score_diff > 0, 
+                               paste(sprintf('%0.1f', pred_team_score), sprintf('%0.1f', pred_opp_score), sep = '-'),
+                               paste(sprintf('%0.1f', pred_opp_score), sprintf('%0.1f', pred_team_score), sep = '-'))) %>% 
+  select(date, logo_url_away, logo_url_home, favored, pred_score, win_prob,
+         psf, auto_bid_sf, away_bar, home_bar, delta_bar) %>% 
   gt() %>% 
   cols_label('date' = 'Date',
              'logo_url_home' = 'Home',
              'logo_url_away' = 'Away',
+             'favored' = 'Winner', 
+             'pred_score' = 'Score',
+             'win_prob' = 'Win Probability',
              'psf' = 'Playoffs',
              'auto_bid_sf' = 'Auto Bid',
              'home_bar' = 'If Home Wins',
-             'away_bar' = 'If Away Wins') %>% 
+             'away_bar' = 'If Away Wins',
+             'delta_bar' = 'Difference') %>% 
   
+  tab_spanner(label = 'Matchup', columns = c('date', 'logo_url_away', 'logo_url_home')) %>% 
+  tab_spanner(label = 'Game Prediction', columns = c('favored', 'pred_score', 'win_prob')) %>% 
   tab_spanner(label = 'Leverage', columns = c('psf', 'auto_bid_sf')) %>% 
-  tab_spanner(label = 'Playoff Odds', columns = c('home_bar', 'away_bar')) %>% 
+  tab_spanner(label = 'Playoff Odds', columns = c('away_bar', 'home_bar', 'delta_bar')) %>% 
+  
   
   ### Hightlight Columns 
   data_color(
-    columns = c(auto_bid_sf, psf),
+    columns = c(auto_bid_sf, psf, win_prob),
     colors = scales::col_numeric(
       palette = ggsci::rgb_material('amber', n = 100),
       domain = c(0,1),
@@ -473,13 +490,13 @@ ivy_psf_gt <-
   
   ### Percent
   fmt_percent(
-    columns = c(auto_bid_sf, psf),
+    columns = c(auto_bid_sf, psf, win_prob),
     decimals = 1) %>% 
   
   ### Align Columns
   cols_align(
     align = "center",
-    columns = any_of(c('home_bar', 'away_bar', names(ivy_psf)))
+    columns = any_of(c('home_bar', 'away_bar', 'delta_bar', 'favored', names(x), 'pred_score', 'win_prob', names(ivy_psf)))
   ) %>% 
   
   ### Borders
@@ -507,12 +524,12 @@ ivy_psf_gt <-
     ),
     locations = list(
       cells_body(
-        columns = c(logo_url_away, auto_bid_sf, home_bar)
+        columns = c(logo_url_home, auto_bid_sf, home_bar, win_prob, away_bar, delta_bar)
       )
     )
   ) %>% 
   text_transform(
-    locations = cells_body(c(logo_url_home, logo_url_away)),
+    locations = cells_body(c(logo_url_home, logo_url_away, favored)),
     fn = function(x) {
       web_image(
         url = x,
@@ -521,7 +538,7 @@ ivy_psf_gt <-
     }
   ) %>% 
   text_transform(
-    locations = cells_body(c(home_bar, away_bar)),
+    locations = cells_body(c(home_bar, away_bar, delta_bar)),
     fn = function(x) {
       local_image(
         filename  = x,
@@ -531,6 +548,7 @@ ivy_psf_gt <-
   ) %>% 
   tab_source_note('@recspecs730') %>% 
   tab_source_note('Leverage = total swing in all teams\' playoff/auto-bid odds between the two possible outcomes.') %>% 
+  tab_source_note('Difference = delta in playoff odds per team if Home wins (right) vs Away Wins (left)') %>% 
   tab_source_note("2022 Tournament hosted by Harvard University") %>%
   tab_source_note("Based on 1,000 Simulations of each outcome. Ties broken according to official Ivy League tiebreaking rules.") %>% 
   tab_header(title = paste0(

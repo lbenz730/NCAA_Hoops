@@ -432,20 +432,29 @@ psf <- function(nsims, min_date, max_date) {
   write_rds(swingfactor, '3.0_Files/Predictions/ivy_psf_full.rds')
   
   ivy_psf <- swingfactor
-  for(i in 1:nrow(swingfactor)) {
+  delta <- unlist(map(1:nrow(ivy_psf), ~{ivy_psf$df[[.x]]$playoff_prob1 -ivy_psf$df[[.x]]$playoff_prob2}))
+  for(i in 1:nrow(ivy_psf)) {
     df <- ivy_psf$df_home[[i]]
     df <- inner_join(df, ncaa_colors, by = c('Team' = 'ncaa_name'))
     labels <- paste0("<img src ='3.0_Files/Predictions/psf_figures/ivy_logos/", df$Team, ".png', width = '20'/>")
     
-    ggplot(df, aes(x = Team, y = playoff)) + 
+    p <- 
+      ggplot(df, aes(x = Team, y = playoff)) + 
+      coord_flip() + 
       geom_col(aes(fill = Team)) + 
       theme_void() +
+      ggtext::geom_richtext(color = 'white', 
+                            angle = -90,
+                            nudge_y = 5,
+                            size = 8,
+                            aes(fill = Team,
+                                label = paste0(sprintf('%0.1f', abs(playoff)), '%'))) + 
       scale_fill_manual(values = df$primary_color) +
       scale_color_manual(values = df$secondary_color) +
       scale_y_continuous(limits = c(0, 100)) +
-      scale_x_discrete(labels = labels) +
+      scale_x_discrete(limits = rev(df$Team), labels = rev(labels)) + 
       theme(legend.position = 'none',
-            axis.text.x = ggtext::element_markdown())
+            axis.text.y = ggtext::element_markdown())
     
     ggsave(filename = paste0('3.0_Files/Predictions/psf_figures/home_', i, '.png'))
     
@@ -453,17 +462,42 @@ psf <- function(nsims, min_date, max_date) {
     df <- inner_join(df, ncaa_colors, by = c('Team' = 'ncaa_name'))
     p <- 
       ggplot(df, aes(x = Team, y = playoff)) + 
+      coord_flip() + 
       geom_col(aes(fill = Team)) + 
-      
+      ggtext::geom_richtext(color = 'white', 
+                            angle = -90,
+                            nudge_y = 5,
+                            size = 8,
+                            aes(fill = Team,
+                                label = paste0(sprintf('%0.1f', abs(playoff)), '%'))) + 
       theme_void() +
       scale_fill_manual(values = df$primary_color) +
       scale_color_manual(values = df$secondary_color) +
-      scale_y_continuous(limits = c(0, 100)) +
-      scale_x_discrete(labels = labels) +
+      scale_y_continuous(limits = c(0, 105)) +
+      scale_x_discrete(limits = rev(df$Team), labels = rev(labels)) + 
       theme(legend.position = 'none',
-            axis.text.x = ggtext::element_markdown())
-    
+            axis.text.y = ggtext::element_markdown())
     ggsave(filename = paste0('3.0_Files/Predictions/psf_figures/away_', i, '.png'))
+    
+    df <- ivy_psf$df[[i]]
+    df <- inner_join(df, ncaa_colors, by = c('Team' = 'ncaa_name'))
+    
+    ggplot(df, aes(x = Team, y = playoff_prob1 - playoff_prob2)) + 
+      coord_flip() + 
+      geom_col(aes(fill = Team)) + 
+      ggtext::geom_richtext(color = 'white', 
+                            angle = -90 * ifelse(df$playoff_prob1 >= df$playoff_prob2, 1, -1),
+                            nudge_y = 2 * ifelse(df$playoff_prob1 >= df$playoff_prob2, 1, -1),
+                            size = 8,
+                            aes(fill = Team,
+                                label = paste0(sprintf('%0.1f', abs(playoff_prob1 - playoff_prob2)), '%'))) + 
+      theme_void() +
+      scale_fill_manual(values = df$primary_color) +
+      scale_y_continuous(limits = c(-1.25, 1.25) * max(abs(delta))) +
+      scale_x_discrete(limits = rev(df$Team), labels = rev(labels)) + 
+      theme(legend.position = 'none',
+            axis.text.y = ggtext::element_markdown())
+    ggsave(filename = paste0('3.0_Files/Predictions/psf_figures/delta_', i, '.png'))
     
   }
   
