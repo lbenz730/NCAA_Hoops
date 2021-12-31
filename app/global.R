@@ -36,6 +36,7 @@ names(rankings) <- c("Rank", "Team", "Conference", "Net Rating", "Off. Rating",
 
 confs <- read_csv("3.0_Files/Info/conferences.csv")
 
+
 records <- 
   x %>% 
   filter(!canceled, !postponed) %>% 

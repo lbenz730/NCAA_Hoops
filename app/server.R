@@ -163,7 +163,8 @@ shinyServer(function(input, output, session) {
            title = "Distribution of Conference Wins",
            subtitle = input$conf) +
       theme(legend.position = "none") +
-      scale_fill_manual(values = c(standings$primary_color)) 
+      scale_fill_manual(values = c(standings$primary_color)) +
+      scale_x_continuous(breaks = c(0:max(sims$n_wins)))
     }
     p
   })

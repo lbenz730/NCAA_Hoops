@@ -133,7 +133,8 @@ conf_fast_sim <- function(conf, nsims) {
     pivot_longer(cols = c('team', 'opponent'),
                  values_to = 'team') %>% 
     group_by(sim, team) %>% 
-    summarise('n_wins' = sum(winner == team)) %>% 
+    summarise('n_wins' = sum(winner == team),
+              'n_games' = n()) %>% 
     group_by(sim) %>% 
     mutate('place' = rank(-n_wins, ties = "min"))
   

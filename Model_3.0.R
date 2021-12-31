@@ -169,7 +169,7 @@ x <-
          "hca_off" = case_when(location == "H" ~ abs(lm.off$coefficients[(2 * length(teams))]),
                                location == "V" ~ lm.off$coefficients[(2 * length(teams)+1)] - lm.off$coefficients[(2 * length(teams))],
                                location == "N" ~ 0),
-         "hca_def" = case_when(location == "H" ~ -lm.def$coefficients[(2 * length(teams)+1)],
+         "hca_def" = case_when(location == "H" ~ -lm.def$coefficients[(2 * length(teams))],
                                location == "V" ~ lm.def$coefficients[(2 * length(teams)+1)] - lm.def$coefficients[(2 * length(teams))],
                                location == "N" ~ 0)) %>%
   mutate("pred_score_diff" = round(yusag_coeff - opp_yusag_coeff + hca, 1),
