@@ -101,7 +101,7 @@ conf_fast_sim <- function(conf, nsims) {
   ### Sim Schedule
   schedule <- 
     x %>% 
-    filter(conf_game, team_conf == conf, location != "V") %>%
+    filter(conf_game, team_conf == conf, location != "V", !postponed, !cancelled) %>%
     mutate(simwins = 0, opp_simwins = 0)
   
   

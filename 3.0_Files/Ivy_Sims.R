@@ -45,7 +45,7 @@ palestra.sim <- function(teams) {
 ################################### IVY SIMS ##################################
 ### Simulates Ivy League Regular Season
 ivy.sim <- function(nsims) {
-  games <- x[x$location == "H" & x$team_conf == "Ivy" & x$conf_game & x$reg_season & !x$postponed, ]
+  games <- ivy_games(x)
   ivy <- unique(x$team[x$team_conf == "Ivy"])
   champ <- rep(NA, nsims)
   
@@ -213,9 +213,9 @@ ivy.sim <- function(nsims) {
 ############################ Playoff Swing Factor ##############################
 ### compute playoff swing factor (leverage) of each game
 psf <- function(nsims, min_date, max_date) {
-  tochange <- filter(x, date >= min_date, date <= max_date, team_conf == "Ivy",
-                     !postponed,
-                     conf_game, location == "H")
+  tochange <- 
+    filter(x, date >= min_date, date <= max_date) %>% 
+    ivy_games()
   
   
   ivy <- unique(x$team[x$team_conf == "Ivy"])
@@ -541,4 +541,10 @@ fast.sim <- function(nsims) {
     }
   }
   return(simresults)
+}
+
+ivy_games <- function(x) {
+  x %>% 
+    filter(conf_game, team_conf == 'Ivy', location == 'H',
+           !canceled, !duplicated(paste(team, opponent, location), fromLast = T))
 }
