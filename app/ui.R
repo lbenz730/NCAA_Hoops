@@ -3,6 +3,7 @@ library(DT)
 
 # Define UI 
 shinyUI(navbarPage("recspecs730 Basketball Central",
+                   id = 'navbar',
                    tabPanel("Rankings",
                             # Application title
                             titlePanel("NCAA Men's Basketball Power Rankings"),
@@ -58,6 +59,7 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                    
                    ### Conference Breakdowns
                    tabPanel("Conference Breakdowns",
+                            value = 'conf_breakdowns',
                             
                             sidebarLayout(
                               sidebarPanel(
@@ -116,6 +118,7 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                    
                    ### Team Breakdowns
                    tabPanel("Team Breakdowns",
+                            value = 'team_breakdowns',
                             sidebarLayout(
                               sidebarPanel(
                                 
@@ -139,6 +142,7 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                    
                    ### Game Projections
                    tabPanel("Game Projections",
+                            value = 'game_projections',
                             sidebarLayout(
                               sidebarPanel(
                                 "Games are sorted by highest rated team.",
@@ -160,14 +164,15 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                    
                    ### Bracketology
                    tabPanel("Bracketology",
+                            value = 'bracketology',
                             sidebarLayout(position = "left",
                                           sidebarPanel(tags$h3("Bracketology"),
                                                        
-                                                         p(align = "center", 
-                                                           textOutput("update2"),
-                                                           tags$head(tags$style("#update2{text-align: center; color: ; font-weight: bold;}"))
-                                                           
-                                                         ),
+                                                       p(align = "center", 
+                                                         textOutput("update2"),
+                                                         tags$head(tags$style("#update2{text-align: center; color: ; font-weight: bold;}"))
+                                                         
+                                                       ),
                                                        
                                                        "Automatic bids are denoted by", tags$b("bold"), 
                                                        ", while the First Four (last four at-large bids, worst four automatic bids) are denoted by", tags$i("italics."), 
@@ -186,7 +191,7 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                                          tags$li(tags$b("Wins Above Bubble:"), "How you do on schedule compared to how we would expect average bubble team to do on your schedule."),
                                                          tags$li(tags$b("Strength of Record:"), "How you do on schedule compared to how we would expect average Top-25 team to do on your schedule"),
                                                          tags$li(tags$b("Resume:"), "Weighted sum of win quality based on committe team sheet tiers")
-
+                                                         
                                                          
                                                          
                                                        )
@@ -208,18 +213,20 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                    
                    ### NCAA Tournament Odds
                    tabPanel("NCAA Tournament Odds",
+                            value = 'ncaa',
                             
-                              
-                              
-                              mainPanel(
-                                gt_output('ncaa_sims')
-                              )
+                            
+                            
+                            mainPanel(
+                              gt_output('ncaa_sims')
+                            )
                             
                    ),
                    
                    
                    ### Ivy League
                    tabPanel("Ivy League",
+                            value = 'ivy_league',
                             
                             mainPanel(
                               gt_output('ivy_sims'),
@@ -232,6 +239,7 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                    
                    ### About
                    tabPanel("About",
+                            value = 'about',
                             
                             
                             sidebarLayout(position = "left",

@@ -5,7 +5,31 @@ library(ggridges)
 library(ggimage)
 library(rsvg)
 
+html_clean <- function(html) {
+  html <- tools::toTitleCase(gsub('\\+', ' ', gsub('%27s', '\'', html)))
+  print(html)
+  return(html)
+}
+
 shinyServer(function(input, output, session) {
+  
+  observe({
+    query <- parseQueryString(session$clientData$url_search)
+    tab <- query$tab
+    team <- query$team
+    conf <- query$conf
+    
+    if(length(tab) > 0) {
+      updateNavbarPage(session, inputId = "navbar", selected = tab)
+    }
+    if(length(team) > 0) {
+      updateSelectInput(session, inputId = "team", selected = html_clean(team))
+    }
+    if(length(conf) > 0) {
+      updateSelectInput(session, inputId = "conf", selected = html_clean(conf))
+    }
+    
+  })
   
   updateSelectInput(session, inputId = "conf", 
                     choices = sort(unique(confs$conference)), selected = "A-10")
@@ -50,7 +74,7 @@ shinyServer(function(input, output, session) {
   conf_table <- eventReactive(input$conf, {
     filter(rankings, Conference == input$conf) %>%
       left_join(conf_projections, by = c("Team" = "team",
-                                          "Conference" = "team_conf")) %>%
+                                         "Conference" = "team_conf")) %>%
       mutate("Conference Rank" = 1:nrow(.)) %>%
       select(`Conference Rank`, `Team`,  `Net Rating`, `Off. Rating`, `Def. Rating`,
              n_win, n_loss, conf_wins, 
@@ -135,36 +159,36 @@ shinyServer(function(input, output, session) {
     if(nrow(sims) < 10) {
       p <- NULL
     } else{
-    
-    standings <- 
-      group_by(sims, team) %>%
-      summarise("avg_wins" = mean(n_wins)) %>%
-      arrange(desc(avg_wins)) %>%
-      mutate("rank" = nrow(.):1) %>%
-      arrange(team) %>%
-      left_join(select(ncaahoopR::ncaa_colors, ncaa_name, primary_color), 
-                by = c("team" = "ncaa_name"))
-    
-    champion <- 
-      group_by(sims, sim) %>%
-      summarise("n_wins" = max(n_wins)) %>%
-      group_by(n_wins)%>%
-      summarise("champ_freq" = n()/nrow(.))
-    
-    sims$team <- as.factor(sims$team)
-    sims$team <- reorder(sims$team, rep(standings$rank, 10000))
-    standings <- arrange(standings, avg_wins)
-    
-    p <- 
-      ggplot(sims, aes(x = n_wins, y = team, fill = team)) + 
-      geom_density_ridges(stat = "binline", scale = 0.7, binwidth = 1) + 
-      labs(x ="# of Wins", 
-           y = "Team",
-           title = "Distribution of Conference Wins",
-           subtitle = input$conf) +
-      theme(legend.position = "none") +
-      scale_fill_manual(values = c(standings$primary_color)) +
-      scale_x_continuous(breaks = c(0:max(sims$n_wins)))
+      
+      standings <- 
+        group_by(sims, team) %>%
+        summarise("avg_wins" = mean(n_wins)) %>%
+        arrange(desc(avg_wins)) %>%
+        mutate("rank" = nrow(.):1) %>%
+        arrange(team) %>%
+        left_join(select(ncaahoopR::ncaa_colors, ncaa_name, primary_color), 
+                  by = c("team" = "ncaa_name"))
+      
+      champion <- 
+        group_by(sims, sim) %>%
+        summarise("n_wins" = max(n_wins)) %>%
+        group_by(n_wins)%>%
+        summarise("champ_freq" = n()/nrow(.))
+      
+      sims$team <- as.factor(sims$team)
+      sims$team <- reorder(sims$team, rep(standings$rank, 10000))
+      standings <- arrange(standings, avg_wins)
+      
+      p <- 
+        ggplot(sims, aes(x = n_wins, y = team, fill = team)) + 
+        geom_density_ridges(stat = "binline", scale = 0.7, binwidth = 1) + 
+        labs(x ="# of Wins", 
+             y = "Team",
+             title = "Distribution of Conference Wins",
+             subtitle = input$conf) +
+        theme(legend.position = "none") +
+        scale_fill_manual(values = c(standings$primary_color)) +
+        scale_x_continuous(breaks = c(0:max(sims$n_wins)))
     }
     p
   })
@@ -430,7 +454,7 @@ shinyServer(function(input, output, session) {
       formatStyle("Team",  valueColumns = "first4", "font-style" = styleEqual(T, "italic")) %>%
       formatPercentage(columns = c(13), 1) %>%
       formatStyle("At-Large Odds", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
-     
+      
       formatStyle("WAB Rank", backgroundColor = styleInterval(1:357, cm.colors(358))) %>%
       formatStyle("SOR Rank", backgroundColor = styleInterval(1:357, cm.colors(358))) %>%
       formatStyle("Resume Rank", backgroundColor = styleInterval(1:357, cm.colors(358))) %>%
