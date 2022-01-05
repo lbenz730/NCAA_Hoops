@@ -152,9 +152,11 @@ power_rankings <- pr_compute(by_conf = F)
 history <- read.csv("3.0_Files/History/history.csv", as.is = T)
 x <- 
   mutate(x, pr_date = sapply(x$date, max_date, hist_dates = unique(history$date))) %>%
-  inner_join(select(history, team, yusag_coeff, rank, date, off_coeff, def_coeff), 
+  inner_join(select(power_rankings, team, rank),by = c("team" = "team")) %>%
+  inner_join(select(power_rankings, team, rank),by = c("opponent" = "team")) %>% 
+  inner_join(select(history, team, yusag_coeff, date, off_coeff, def_coeff), 
              by = c("team" = "team","pr_date" = "date")) %>%
-  inner_join(select(history, team, yusag_coeff, rank, date, off_coeff, def_coeff), 
+  inner_join(select(history, team, yusag_coeff, date, off_coeff, def_coeff), 
              by = c("opponent" = "team","pr_date" = "date")) %>% 
   rename(rank = rank.x, opp_rank = rank.y, 
          yusag_coeff = yusag_coeff.x, opp_yusag_coeff = yusag_coeff.y,
