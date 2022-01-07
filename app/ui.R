@@ -127,7 +127,22 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                             choices = c(""), 
                                             selected = NULL
                                             
-                                )
+                                ),
+                                
+                                tags$h2('Team Profile', align = 'center'),
+                                htmlOutput('logo'),
+                                tags$head(tags$style('#logo{display: block;margin-left: 42.5%; width: 50%;}')),
+                                htmlOutput('team'),
+                                tags$head(tags$style("#team{text-align: center;}")),
+                                htmlOutput('team_conf'),
+                                tags$head(tags$style("#team_conf{text-align: center;}")),
+                                htmlOutput('team_record'),
+                                tags$head(tags$style("#team_record{text-align: center;}")),
+                                htmlOutput('conf_record'),
+                                tags$head(tags$style("#conf_record{text-align: center;}")),
+                                htmlOutput('ratings'),
+                                tags$head(tags$style("#ratings{text-align: center;}")),
+                                
                               ),
                               
                               mainPanel(

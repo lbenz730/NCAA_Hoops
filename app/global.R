@@ -47,13 +47,36 @@ records <-
             "conf_losses" = sum(1 - wins[conf_game])) %>%
   ungroup()
 
-
-
+records_actual <- 
+  x %>% 
+  filter(!is.na(team_score)) %>% 
+  filter(!canceled, !postponed) %>% 
+  group_by(team, team_conf) %>%
+  summarise("n_win" = sum(wins),
+            "n_loss" = sum(1-wins),
+            "conf_wins" = sum(wins[conf_game]),
+            "conf_losses" = sum(1 - wins[conf_game])) %>%
+  ungroup()
 
 non_d1 <- read_csv(paste0("3.0_Files/Results/2021-22/NCAA_Hoops_Results_",
                           paste(gsub("^0", "", unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)]), collapse = "_"),
                           ".csv")) %>% 
   filter(D1 == 1) %>%
+  filter(!canceled, !postponed) %>% 
+  group_by(team) %>%
+  summarise("n_win" = sum(teamscore > oppscore, na.rm = T) + sum(is.na(teamscore)),
+            "n_loss" = sum(teamscore < oppscore, na.rm = T)) %>%
+  mutate("conf_wins" = 0,
+         "conf_losses" = 0) %>%
+  inner_join(select(confs, team, conference)) %>%
+  rename("team_conf" = conference) %>%
+  ungroup()
+
+non_d1_actual <- read_csv(paste0("3.0_Files/Results/2021-22/NCAA_Hoops_Results_",
+                          paste(gsub("^0", "", unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)]), collapse = "_"),
+                          ".csv")) %>% 
+  filter(D1 == 1) %>%
+  filter(!is.na(teamscore)) %>% 
   filter(!canceled, !postponed) %>% 
   group_by(team) %>%
   summarise("n_win" = sum(teamscore > oppscore, na.rm = T) + sum(is.na(teamscore)),
@@ -73,6 +96,16 @@ conf_projections <-
             "conf_wins" = sum(conf_wins),
             "conf_losses" = sum(conf_losses)) %>%
   ungroup()
+
+win_totals <- 
+  bind_rows(records_actual, non_d1_actual) %>%
+  group_by(team, team_conf) %>%
+  summarise("n_win" = sum(n_win),
+            "n_loss" = sum(n_loss),
+            "conf_wins" = sum(conf_wins),
+            "conf_losses" = sum(conf_losses)) %>%
+  ungroup()
+
 
 
 bracket <- read_csv("3.0_Files/Bracketology/bracket.csv")

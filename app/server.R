@@ -310,6 +310,23 @@ shinyServer(function(input, output, session) {
   
   
   ################################## Team Breakdowns ###########################
+  ### Profile:
+  output$logo <- renderText(paste('<img src=', ncaa_colors$logo_url[ncaa_colors$ncaa_name == input$team], ', height = 100, width = 100</>'))
+  output$team <- renderText(paste('<b>Team:</b>', input$team))
+  output$team_conf <- renderText(paste('<b>Conference:</b>', confs$conference[confs$team == input$team]))
+  output$team_record <- renderText(paste('<b>Record:</b>', paste(win_totals[win_totals$team == input$team, c('n_win', 'n_loss')], collapse = '-')))
+  output$conf_record <- renderText(paste('<b>Conference Record:</b>', paste(win_totals[win_totals$team == input$team, c('conf_wins', 'conf_losses')], collapse = '-')))
+  output$ratings <- renderText(paste('<b>Ratings:</b><br>Overall:',
+                                     sprintf('%0.1f', rankings$`Net Rating`[rankings$Team == input$team]),
+                                     paste0('(', rankings$Rank[rankings$Team == input$team], ')'),
+                                     '<br>Offense:',
+                                     sprintf('%0.1f', rankings$`Off. Rating`[rankings$Team == input$team]),
+                                     paste0('(', rankings$`Off. Rank`[rankings$Team == input$team], ')'),
+                                     '<br>Defense:',
+                                     sprintf('%0.1f', rankings$`Def. Rating`[rankings$Team == input$team]),
+                                     paste0('(', rankings$`Def. Rank`[rankings$Team == input$team], ')')
+                                     ))
+  
   rhp <- eventReactive(input$team, {
     M <- filter(history, team == input$team) %>%
       pull(yusag_coeff) %>%
@@ -365,6 +382,7 @@ shinyServer(function(input, output, session) {
   
   output$ratings_plot <- renderPlot(rhp())
   output$rankings_plot <- renderPlot(rahp())
+  
   
   ts1 <- eventReactive(input$team, {
     df <- read_csv(paste0("3.0_Files/Results/2021-22/NCAA_Hoops_Results_",
