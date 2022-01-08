@@ -4,7 +4,7 @@ library(readr)
 library(lubridate)
 library(purrr)
 library(furrr)
-plan(multicore)
+plan(multicore(workers = 15))
 options(future.fork.enable = T)
 x <- read_csv(paste("3.0_Files/Results/2021-22/NCAA_Hoops_Results",
                     month(Sys.Date()), day(Sys.Date()), paste0(year(Sys.Date()), ".csv"),
@@ -12,6 +12,7 @@ x <- read_csv(paste("3.0_Files/Results/2021-22/NCAA_Hoops_Results",
 train <- read_csv("3.0_Files/Results/2017-18/training.csv")
 confs <- read_csv("3.0_Files/Info/conferences.csv")
 deadlines <- read_csv("3.0_Files/Info/deadlines.csv")
+conf_tournaments <- read_csv('3.0_Files/Info/conf_tournaments.csv')
 priors <- 
   read_csv("3.0_Files/Info/prior.csv") %>% 
   arrange(team)
@@ -199,10 +200,11 @@ bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
 ############################# Conference Sims (No Tie-Breaks) ##################
-for(conf in unique(confs$conference)) {
+for(conf in sort(unique(confs$conference))) {
   print(conf)
   sims <- conf_fast_sim(conf, 10000)
-  write_csv(sims, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+  write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+  write_csv(sims$post_season, paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
 }
 
 ######################### Ivy League Specific Sims #############################

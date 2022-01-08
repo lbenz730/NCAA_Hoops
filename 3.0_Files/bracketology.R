@@ -125,7 +125,7 @@ make_bracket <- function(tourney) {
                            rep(6,4), rep(7,4), rep(8,4), rep(9,4), rep(10,4),
                            rep(11,6), rep(12,4), rep(13,4), rep(14,4), rep(15,4),
                            rep(16,6))
-    f4 <- bracket$seed_overall[!bracket$autobid][34:37]
+    f4 <- bracket$seed_overall[!bracket$autobid][33:36]
     bracket$first4 <- is.element(bracket$seed_overall, f4) | is.element(bracket$seed_overall, c(65:68))
     ### Not 3 1 seeds from 1 conference
     if(sum(bracket$conf[4] == bracket$conf[1:3]) == 2) {

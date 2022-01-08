@@ -136,10 +136,43 @@ conf_fast_sim <- function(conf, nsims) {
     summarise('n_wins' = sum(winner == team),
               'n_games' = n()) %>% 
     group_by(sim) %>% 
-    mutate('place' = rank(-n_wins, ties = "min"))
+    mutate('place' = rank(-n_wins, ties = "random"))
+  
+  ### 1000 sims for short (speed up tourney_sim_single at some point w/ pre-computed wp)
+  params <- 
+    conf_tournaments %>% 
+    rename('conference' = conf) %>% 
+    filter(conference == conf) %>% 
+    transpose() %>% 
+    .[[1]]
+  
+  dfs <- 
+    results %>% 
+    arrange(place) %>% 
+    filter(sim <= 1000) %>%
+    filter(place <= params$n_teams) %>% 
+    group_split()
+  
+  champions <- 
+    future_map_chr(dfs, ~{
+      tourney_sim_single(teams = .x$team,
+                         seeds = .x$place,
+                         hca = params$hca,
+                         byes = params$n_bye,
+                         double_byes = params$n_double_bye)
+    })
+  
+  post_season <- 
+    tibble('team' = factor(champions, levels = unique(schedule$team))) %>% 
+    group_by(team, .drop = F) %>% 
+    summarise('freq' = n()/nrow(.))
+  post_season$freq[post_season$team %in% confs$team[confs$eliminated | !confs$eligible]] <- 0
+  post_season$freq <- post_season$freq/sum(post_season$freq)
   
   
-  return(results)
+  
+  return(list('reg_season' = results,
+              'post_season' = post_season))
 }
 
 ### Jerome EP Calcultor

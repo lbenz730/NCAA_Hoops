@@ -142,6 +142,10 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                 tags$head(tags$style("#conf_record{text-align: center;}")),
                                 htmlOutput('ratings'),
                                 tags$head(tags$style("#ratings{text-align: center;}")),
+                                htmlOutput('record_breakdown'),
+                                tags$head(tags$style("#record_breakdown{text-align: center;}")),
+                                htmlOutput('ncaa_odds'),
+                                tags$head(tags$style("#ncaa_odds{text-align: center;}"))
                                 
                               ),
                               

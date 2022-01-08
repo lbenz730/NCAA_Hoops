@@ -5,6 +5,7 @@ library(ggrepel)
 library(gt)
 library(paletteer)
 library(ncaahoopR)
+library(purrr)
 
 glm.pointspread <- readRDS("glm_pointspread.rds")
 ncaa_sims <- read_csv('3.0_Files/ncaa_sims/ncaa_sims.csv')
@@ -51,9 +52,36 @@ records_actual <-
   x %>% 
   filter(!is.na(team_score)) %>% 
   filter(!canceled, !postponed) %>% 
+  mutate('tier' = 
+           case_when(
+             opp_rank <= 50 & location == "N" ~ 'A',
+             opp_rank <= 30 & location == "H" ~ 'A',
+             opp_rank <=  75 & location == "V" ~ 'A',
+             
+             opp_rank >= 51 & opp_rank <= 100 & location == "N" ~ 'B',
+             opp_rank >= 31 & opp_rank <= 75 & location == "H" ~ 'B', 
+             opp_rank >= 76 & opp_rank <= 135 & location == "V" ~ 'B',
+             
+             opp_rank >= 101 & opp_rank <= 200 & location == "N" ~ 'C',
+             opp_rank >= 76 & opp_rank <= 160 & location == "H" ~ 'C', 
+             opp_rank >= 136 & opp_rank <= 240 & location == "V" ~ 'C',
+             
+             opp_rank >= 201 & location == "N" ~ 'D',
+             opp_rank >= 161 & location == "H" ~ 'D', 
+             opp_rank >= 241 & location == "V" ~ 'D'
+             
+           )) %>% 
   group_by(team, team_conf) %>%
   summarise("n_win" = sum(wins),
             "n_loss" = sum(1-wins),
+            'n_win_a' = sum(wins[tier == 'A']),
+            'n_loss_a' = sum(1-wins[tier == 'A']),
+            'n_win_b' = sum(wins[tier == 'B']),
+            'n_loss_b' = sum(1-wins[tier == 'B']),
+            'n_win_c' = sum(wins[tier == 'C']),
+            'n_loss_c' = sum(1-wins[tier == 'C']),
+            'n_win_d' = sum(wins[tier == 'D']),
+            'n_loss_d' = sum(1-wins[tier == 'D']),
             "conf_wins" = sum(wins[conf_game]),
             "conf_losses" = sum(1 - wins[conf_game])) %>%
   ungroup()
@@ -73,8 +101,8 @@ non_d1 <- read_csv(paste0("3.0_Files/Results/2021-22/NCAA_Hoops_Results_",
   ungroup()
 
 non_d1_actual <- read_csv(paste0("3.0_Files/Results/2021-22/NCAA_Hoops_Results_",
-                          paste(gsub("^0", "", unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)]), collapse = "_"),
-                          ".csv")) %>% 
+                                 paste(gsub("^0", "", unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)]), collapse = "_"),
+                                 ".csv")) %>% 
   filter(D1 == 1) %>%
   filter(!is.na(teamscore)) %>% 
   filter(!canceled, !postponed) %>% 
@@ -596,3 +624,12 @@ ivy_psf_gt <-
               heading.subtitle.font.weight = 'bold'
   )
 
+
+### Bracketology
+bracket_odds <- 
+  map_dfr(dir('3.0_Files/Predictions/conf_sims_ncaa/', full.names = T), read_csv) %>% 
+  filter(!is.na(team)) %>% 
+  right_join(bracket_math, by = 'team') %>% 
+  select(team, 'auto_bid' = freq, 'at_large' = odds) %>% 
+  mutate('at_large' = at_large/100) %>% 
+  mutate('overall' = auto_bid + (1-auto_bid) * at_large)

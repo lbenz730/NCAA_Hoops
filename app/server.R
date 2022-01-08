@@ -4,6 +4,7 @@ library(lubridate)
 library(ggridges)
 library(ggimage)
 library(rsvg)
+library(purrr)
 
 html_clean <- function(html) {
   html <- tools::toTitleCase(gsub('\\+', ' ', gsub('%27s', '\'', html)))
@@ -76,6 +77,7 @@ shinyServer(function(input, output, session) {
       left_join(conf_projections, by = c("Team" = "team",
                                          "Conference" = "team_conf")) %>%
       mutate("Conference Rank" = 1:nrow(.)) %>%
+      inner_join(bracket_odds, by = c("Team" = "team")) %>% 
       select(`Conference Rank`, `Team`,  `Net Rating`, `Off. Rating`, `Def. Rating`,
              n_win, n_loss, conf_wins, 
              conf_losses,
@@ -85,7 +87,12 @@ shinyServer(function(input, output, session) {
              "Proj. Wins" = n_win,
              "Proj. Loss" = n_loss,
              "Proj. Conf. Wins" = conf_wins,
-             "Proj. Conf. Loss" = conf_losses)
+             "Proj. Conf. Loss" = conf_losses,
+             'Auto-Bid' = auto_bid,
+             'At-Large' = at_large,
+             'NCAA Odds' = overall)
+             
+  
   })
   
   output$conf_standings <- DT::renderDataTable({
@@ -97,15 +104,18 @@ shinyServer(function(input, output, session) {
                              info  = F,
                              columnDefs = list(list(className = 'dt-center', targets = "_all")))
     ) %>%
-      formatRound(columns = c(3,4,5,6,7,8,9), 
-                  digits = 2) %>%
+      formatRound(columns = c(3,4,5,6,7,8,9), digits = 2) %>%
+      formatPercentage(columns = 13:15, digits = 1) %>%
       formatStyle("Net Rating", backgroundColor = styleInterval(sort(rankings$`Net Rating`[-1]), cm.colors(358)[358:1])) %>%
       formatStyle("Off. Rating", backgroundColor = styleInterval(sort(rankings$`Off. Rating`[-1]), cm.colors(358)[358:1])) %>%
       formatStyle("Def. Rating", backgroundColor = styleInterval(sort(rankings$`Def. Rating`[-1]), cm.colors(358)[358:1])) %>%
       formatStyle("Proj. Wins", backgroundColor = styleInterval(0:31, cm.colors(33)[33:1])) %>%
       formatStyle("Proj. Loss", backgroundColor = styleInterval(0:31, cm.colors(33))) %>%
       formatStyle("Proj. Conf. Wins", backgroundColor = styleInterval(0:(l-1), cm.colors(l+1)[(l+1):1])) %>%
-      formatStyle("Proj. Conf. Loss", backgroundColor = styleInterval(0:(l-1), cm.colors(l+1)))
+      formatStyle("Proj. Conf. Loss", backgroundColor = styleInterval(0:(l-1), cm.colors(l+1))) %>% 
+      formatStyle("At-Large", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
+      formatStyle("Auto-Bid", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
+      formatStyle("NCAA Odds", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1]))
     
     
   })
@@ -169,12 +179,7 @@ shinyServer(function(input, output, session) {
         left_join(select(ncaahoopR::ncaa_colors, ncaa_name, primary_color), 
                   by = c("team" = "ncaa_name"))
       
-      champion <- 
-        group_by(sims, sim) %>%
-        summarise("n_wins" = max(n_wins)) %>%
-        group_by(n_wins)%>%
-        summarise("champ_freq" = n()/nrow(.))
-      
+
       sims$team <- as.factor(sims$team)
       sims$team <- reorder(sims$team, rep(standings$rank, 10000))
       standings <- arrange(standings, avg_wins)
@@ -327,6 +332,25 @@ shinyServer(function(input, output, session) {
                                      paste0('(', rankings$`Def. Rank`[rankings$Team == input$team], ')')
                                      ))
   
+  output$record_breakdown <- renderText(
+    paste('<b>Record Breakdown</b>',
+          paste0('<br>Tier I: ', records_actual$n_win_a[records_actual$team == input$team], '-', records_actual$n_loss_a[records_actual$team == input$team]),
+          paste0('<br>Tier II: ', records_actual$n_win_b[records_actual$team == input$team], '-', records_actual$n_loss_b[records_actual$team == input$team]),
+          paste0('<br>Tier III: ', records_actual$n_win_c[records_actual$team == input$team], '-', records_actual$n_loss_c[records_actual$team == input$team]),
+          paste0('<br>Tier IV: ', records_actual$n_win_d[records_actual$team == input$team], '-', records_actual$n_loss_d[records_actual$team == input$team]),
+          paste0('<br>Non-D1: ', max(0, non_d1$n_win[non_d1$team == input$team], na.rm = T), '-', max(0, non_d1$n_loss[non_d1$team == input$team], na.rm = T))
+                                              
+    
+  ))
+  
+  output$ncaa_odds <- renderText(
+    paste('<b>NCAA Tournament Odds</b>',
+    paste0('<br>Auto Bid: ', sprintf('%0.1f', 100*bracket_odds$auto_bid[bracket_odds$team == input$team]), '%'),
+    paste0('<br>At-Large Bid: ', sprintf('%0.1f', 100*bracket_odds$at_large[bracket_odds$team == input$team]), '%'),
+    paste0('<br>Overall: ', sprintf('%0.1f', 100*bracket_odds$overall[bracket_odds$team == input$team]), '%')
+    
+  ))
+  
   rhp <- eventReactive(input$team, {
     M <- filter(history, team == input$team) %>%
       pull(yusag_coeff) %>%
@@ -416,8 +440,31 @@ shinyServer(function(input, output, session) {
     df$result <- NA
     df$result[as.numeric(df$team_score) > as.numeric(df$opp_score)] <- "W"
     df$result[as.numeric(df$team_score) < as.numeric(df$opp_score)] <- "L"
-    df <- select(df, date, opponent, result, everything())
-    names(df) <- c("Date", "Opponent", "Result", "Opp. Rank", "Location", "Team Score", "Opponent Score", "Pred. Team Score",
+    df <- 
+      df %>% 
+      mutate('tier' = 
+               case_when(
+                 opp_rank <= 50 & location == "N" ~ 'I',
+                 opp_rank <= 30 & location == "H" ~ 'I',
+                 opp_rank <=  75 & location == "V" ~ 'I',
+                 
+                 opp_rank >= 51 & opp_rank <= 100 & location == "N" ~ 'II',
+                 opp_rank >= 31 & opp_rank <= 75 & location == "H" ~ 'II', 
+                 opp_rank >= 76 & opp_rank <= 135 & location == "V" ~ 'II',
+                 
+                 opp_rank >= 101 & opp_rank <= 200 & location == "N" ~ 'III',
+                 opp_rank >= 76 & opp_rank <= 160 & location == "H" ~ 'III', 
+                 opp_rank >= 136 & opp_rank <= 240 & location == "V" ~ 'III',
+                 
+                 opp_rank >= 201 & location == "N" ~ 'IV',
+                 opp_rank >= 161 & location == "H" ~ 'IV', 
+                 opp_rank >= 241 & location == "V" ~ 'IV',
+                 
+                 T ~ 'Non-D1')
+                 
+               )
+    df <- select(df, date, opponent, tier, result, everything())
+    names(df) <- c("Date", "Opponent", "Tier", "Result", "Opp. Rank", "Location", "Team Score", "Opponent Score", "Pred. Team Score",
                    "Pred. Opp. Score", "Win Probability")
     
     
@@ -436,9 +483,9 @@ shinyServer(function(input, output, session) {
                              
               )
     ) %>%
-      formatRound(columns = c(8, 9), 
+      formatRound(columns = c(9, 10), 
                   digits = 1) %>%
-      formatPercentage(columns = c(10), 1) %>%
+      formatPercentage(columns = c(11), 1) %>%
       formatStyle("Result", target = "row", 
                   backgroundColor = styleEqual(c("W", "L"), c("palegreen", "tomato"))
       )
@@ -449,12 +496,16 @@ shinyServer(function(input, output, session) {
   
   ################################## Bracketology
   output$bracket <- DT::renderDataTable({
-    df <- select(bracket, seed_line, seed_overall, everything(), -blend, -avg)
+    df <- 
+      bracket %>% 
+      inner_join(select(bracket_odds, team, auto_bid, overall)) %>% 
+      select(seed_line, seed_overall, everything(), -blend, -avg)
+  
     df$odds <- 1/100 * df$odds
-    names(df)[1:13] <- c("Seed Line", "Seed Overall", "Team", "Conference", 
+    names(df)[c(1:13, ncol(df) + c(-1, 0))] <- c("Seed Line", "Seed Overall", "Team", "Conference", 
                          "Net Rating", "Strength of Record", "Wins Above Bubble",
                          "Resume", "Rating Rank", "SOR Rank", "WAB Rank",
-                         "Resume Rank", "At-Large Odds")
+                         "Resume Rank", "At-Large Odds", "Auto-Bid Odds", "Overall Odds")
     
     
     datatable(df,
@@ -470,8 +521,10 @@ shinyServer(function(input, output, session) {
       formatRound(columns = c(5, 6, 7, 8),  digits = 2) %>%
       formatStyle("Team",  valueColumns = "autobid", fontWeight = styleEqual(T, "bold")) %>%
       formatStyle("Team",  valueColumns = "first4", "font-style" = styleEqual(T, "italic")) %>%
-      formatPercentage(columns = c(13), 1) %>%
+      formatPercentage(columns = c(13, ncol(df) + c(-1,0)), 1) %>%
       formatStyle("At-Large Odds", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
+      formatStyle("Auto-Bid Odds", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
+      formatStyle("Overall Odds", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
       
       formatStyle("WAB Rank", backgroundColor = styleInterval(1:357, cm.colors(358))) %>%
       formatStyle("SOR Rank", backgroundColor = styleInterval(1:357, cm.colors(358))) %>%
@@ -489,13 +542,14 @@ shinyServer(function(input, output, session) {
   
   output$bubble <- DT::renderDataTable({
     df <- select(bubble, seed_overall, everything(), -blend, -avg, -mid_major,
-                 -wins, -losses, -seed, -autobid, -loss_bonus)
+                 -wins, -losses, -seed, -autobid, -loss_bonus) %>% 
+      inner_join(select(bracket_odds, team, auto_bid, overall))
     df$odds <- 1/100 * df$odds
     print(names(df))
-    names(df)[1:12] <- c("Seed Overall", "Team", "Conference", 
+    names(df)[1:14] <- c("Seed Overall", "Team", "Conference", 
                          "Net Rating",  "Strength of Record", "Wins Above Bubble",
                          "Resume", "Rating Rank",  "SOR Rank", "WAB Rank",
-                         "Resume Rank", "At-Large Odds")
+                         "Resume Rank", "At-Large Odds", "Auto-Bid Odds", 'Overall Odds')
     
     
     datatable(df,
@@ -508,8 +562,10 @@ shinyServer(function(input, output, session) {
               )
     ) %>% 
       formatRound(columns = c(4, 5, 6, 7),  digits = 2) %>%
-      formatPercentage(columns = c(12), 1) %>%
+      formatPercentage(columns = c(12, 13, 14), 1) %>%
       formatStyle("At-Large Odds", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
+      formatStyle("Auto-Bid Odds", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
+      formatStyle("Overall Odds", backgroundColor = styleInterval(seq(0, 0.99, 0.01), cm.colors(101)[101:1])) %>%
       formatStyle("WAB Rank", backgroundColor = styleInterval(1:357, cm.colors(358))) %>%
       formatStyle("SOR Rank", backgroundColor = styleInterval(1:357, cm.colors(358))) %>%
       formatStyle("Resume Rank", backgroundColor = styleInterval(1:357, cm.colors(358))) %>%
