@@ -522,6 +522,7 @@ ivy_psf_gt <-
                                paste(sprintf('%0.1f', pred_opp_score), sprintf('%0.1f', pred_team_score), sep = '-'))) %>% 
   select(date, logo_url_away, logo_url_home, favored, pred_score, win_prob,
          psf, auto_bid_sf, away_bar, home_bar, delta_bar) %>% 
+  arange(date) %>% 
   gt() %>% 
   cols_label('date' = 'Date',
              'logo_url_home' = 'Home',
