@@ -40,7 +40,7 @@ confs <- read_csv("3.0_Files/Info/conferences.csv")
 
 records <- 
   x %>% 
-  filter(!canceled, !postponed) %>% 
+  filter(!canceled, !postponed | (postponed & team_conf == 'Ivy' & conf_game)) %>% 
   group_by(team, team_conf) %>%
   summarise("n_win" = sum(wins),
             "n_loss" = sum(1-wins),

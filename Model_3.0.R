@@ -199,17 +199,25 @@ resumes <- get_resumes(new = T)
 bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
+######################### Ivy League Specific Sims #############################
+playoffs <- ivy.sim(5000)
+ivy_psf <- psf(1000, min_date = Sys.Date(), max_date = Sys.Date() + 6)
+
 ############################# Conference Sims (No Tie-Breaks) ##################
 for(conf in sort(unique(confs$conference))) {
   print(conf)
   sims <- conf_fast_sim(conf, 10000)
   write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
-  write_csv(sims$post_season, paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
+  if(conf != 'Ivy') {
+    write_csv(sims$post_season, paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
+  } else {
+    playoffs %>% 
+      select(team, 'freq' = auto_bid) %>% 
+      mutate('freq' = freq/100) %>% 
+      write_csv(paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
+  }
 }
 
-######################### Ivy League Specific Sims #############################
-playoffs <- ivy.sim(5000)
-ivy_psf <- psf(1000, min_date = Sys.Date(), max_date = Sys.Date() + 6)
 
 ############################ System Evaluation #################################
 min_date <- as.Date("2021-11-09")

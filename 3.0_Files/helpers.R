@@ -99,10 +99,16 @@ conf_sim <- function(conf, nsims) {
 #### Conference Sims
 conf_fast_sim <- function(conf, nsims) {
   ### Sim Schedule
-  schedule <- 
-    x %>% 
-    filter(conf_game, team_conf == conf, location != "V", !postponed, !canceled) %>%
-    mutate(simwins = 0, opp_simwins = 0)
+  if(conf == 'Ivy') {
+    schedule <- 
+      ivy_games(x) %>% 
+      mutate(simwins = 0, opp_simwins = 0)
+  } else {
+    schedule <- 
+      x %>% 
+      filter(conf_game, team_conf == conf, location != "V", !postponed, !canceled) %>%
+      mutate(simwins = 0, opp_simwins = 0)
+  }
   
   
   schedule$tmp <- 
@@ -136,7 +142,8 @@ conf_fast_sim <- function(conf, nsims) {
     summarise('n_wins' = sum(winner == team),
               'n_games' = n()) %>% 
     group_by(sim) %>% 
-    mutate('place' = rank(-n_wins, ties = "random"))
+    mutate('place_tourney' = rank(-n_wins, ties = "random"),
+           'place' = rank(-n_wins, ties.method = 'min'))
   
   ### 1000 sims for short (speed up tourney_sim_single at some point w/ pre-computed wp)
   params <- 
@@ -148,15 +155,15 @@ conf_fast_sim <- function(conf, nsims) {
   
   dfs <- 
     results %>% 
-    arrange(place) %>% 
+    arrange(place_tourney) %>% 
     filter(sim <= 1000) %>%
-    filter(place <= params$n_teams) %>% 
+    filter(place_tourney <= params$n_teams) %>% 
     group_split()
   
   champions <- 
     future_map_chr(dfs, ~{
       tourney_sim_single(teams = .x$team,
-                         seeds = .x$place,
+                         seeds = .x$place_tourney,
                          hca = params$hca,
                          byes = params$n_bye,
                          double_byes = params$n_double_bye)

@@ -206,7 +206,7 @@ ivy.sim <- function(nsims) {
     mutate(date = as.Date(date)) %>%
     filter(date != Sys.Date()) %>%
     rbind(playoffs %>% mutate(date = Sys.Date()))
-  # write.csv(playoff_history, "3.0_Files/Predictions/playoff_history.csv", row.names = F)
+  write.csv(playoff_history, "3.0_Files/Predictions/playoff_history.csv", row.names = F)
   return(playoffs)
 }
 
