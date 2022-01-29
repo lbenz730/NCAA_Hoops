@@ -452,7 +452,7 @@ psf <- function(nsims, min_date, max_date) {
                                 label = paste0(sprintf('%0.1f', abs(playoff)), '%'))) + 
       scale_fill_manual(values = df$primary_color) +
       scale_color_manual(values = df$secondary_color) +
-      scale_y_continuous(limits = c(0, 100)) +
+      scale_y_continuous(limits = c(0, 105)) +
       scale_x_discrete(limits = rev(df$Team), labels = rev(labels)) + 
       theme(legend.position = 'none',
             axis.text.y = ggtext::element_markdown())
