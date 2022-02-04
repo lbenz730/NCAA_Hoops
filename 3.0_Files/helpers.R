@@ -141,6 +141,8 @@ conf_fast_sim <- function(conf, nsims) {
     group_by(sim, team) %>% 
     summarise('n_wins' = sum(winner == team),
               'n_games' = n()) %>% 
+    ungroup() %>% 
+    inner_join(confs) %>% 
     group_by(sim) %>% 
     mutate('place_tourney' = rank(-n_wins, ties = "random"),
            'place' = rank(-n_wins, ties.method = 'min'))
@@ -173,6 +175,7 @@ conf_fast_sim <- function(conf, nsims) {
     tibble('team' = factor(champions, levels = unique(schedule$team))) %>% 
     group_by(team, .drop = F) %>% 
     summarise('freq' = n()/nrow(.))
+  
   post_season$freq[post_season$team %in% confs$team[confs$eliminated | !confs$eligible]] <- 0
   post_season$freq <- post_season$freq/sum(post_season$freq)
   
