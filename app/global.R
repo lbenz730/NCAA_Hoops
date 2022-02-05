@@ -503,6 +503,7 @@ ivy_bar <-
 
 
 ivy_psf <- read_rds('3.0_Files/Predictions/ivy_psf_full.rds') 
+ 
 
 ivy_psf_gt <-
   ivy_psf %>% 
@@ -523,6 +524,7 @@ ivy_psf_gt <-
   select(date, logo_url_away, logo_url_home, favored, pred_score, win_prob,
          psf, auto_bid_sf, away_bar, home_bar, delta_bar) %>% 
   arrange(date) %>% 
+  # filter(date == Sys.Date()) %>%
   gt() %>% 
   cols_label('date' = 'Date',
              'logo_url_home' = 'Home',
@@ -617,7 +619,9 @@ ivy_psf_gt <-
   tab_header(title = paste0(
     'Ivy League Playoff Leverage: ', 
     min(ivy_psf$date), 
-    ifelse(n_distinct(ivy_psf$date) > 1, paste(' -', max(ivy_psf$date)), ''))) %>% 
+    ifelse(n_distinct(ivy_psf$date) > 1, paste(' -', max(ivy_psf$date)), ''),
+    ''
+    )) %>% 
   tab_options(column_labels.font.size = 20,
               heading.title.font.size = 40,
               heading.subtitle.font.size = 30,
