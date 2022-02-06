@@ -165,36 +165,7 @@ shinyServer(function(input, output, session) {
   
   ### Standings Plot
   standings_plot <- eventReactive(input$conf, {
-    sims <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", input$conf, ".csv"))
-    if(nrow(sims) < 10) {
-      p <- NULL
-    } else{
-      
-      standings <- 
-        group_by(sims, team) %>%
-        summarise("avg_wins" = mean(n_wins)) %>%
-        arrange(desc(avg_wins)) %>%
-        mutate("rank" = nrow(.):1) %>%
-        arrange(team) %>%
-        left_join(select(ncaahoopR::ncaa_colors, ncaa_name, primary_color), 
-                  by = c("team" = "ncaa_name"))
-      
-
-      sims$team <- as.factor(sims$team)
-      sims$team <- reorder(sims$team, rep(standings$rank, 10000))
-      standings <- arrange(standings, avg_wins)
-      
-      p <- 
-        ggplot(sims, aes(x = n_wins, y = team, fill = team)) + 
-        geom_density_ridges(stat = "binline", scale = 0.7, binwidth = 1) + 
-        labs(x ="# of Wins", 
-             y = "Team",
-             title = "Distribution of Conference Wins",
-             subtitle = input$conf) +
-        theme(legend.position = "none") +
-        scale_fill_manual(values = c(standings$primary_color)) +
-        scale_x_continuous(breaks = c(0:max(sims$n_wins)))
-    }
+    p <- make_standings_plot(input$conf)
     p
   })
   
@@ -602,7 +573,7 @@ shinyServer(function(input, output, session) {
   output$ivy_psf <- render_gt(ivy_psf_gt)
   output$ivy_history <- renderPlot(ivy_history_plot)
   output$ivy_barplot <- renderPlot(ivy_bar)
-  
+  output$ivy_snap <- renderPlot(ivy_snapsnot)
   
 })
 

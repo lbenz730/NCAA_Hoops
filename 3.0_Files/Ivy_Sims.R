@@ -165,7 +165,7 @@ ivy.sim <- function(nsims) {
         # Tiebreak 3 (Analytics)
         tmp <- power_rankings[is.element(power_rankings$team, teams),]
         tmp <- tmp[order(tmp$team),]
-        winner <- tmp$Team[grep(max(tmp$yusag_coeff), tmp$yusag_coeff)]
+        winner <- tmp$team[grep(max(tmp$yusag_coeff), tmp$yusag_coeff)]
         winnerID <- c(1:8)[ivy == winner]
         # Winner wins tie-break
         simresults[j, winnerID] <- simresults[j, winnerID] + 0.1 * tie
@@ -180,6 +180,29 @@ ivy.sim <- function(nsims) {
                   ivy[as.vector(prebreak.pos[j,] == 3)], ivy[as.vector(prebreak.pos[j,] == 4)])
     champ[j] <- palestra.sim(palestra)
   }
+  
+  
+  df_wins <- 
+    inner_join(simresults %>% 
+                 floor() %>% 
+                 mutate('sim_id' = 1:nrow(.)) %>% 
+                 pivot_longer(-sim_id,
+                              names_to = 'team',
+                              values_to = 'n_wins'),
+               prebreak.pos %>% 
+                 mutate('sim_id' = 1:nrow(.)) %>% 
+                 pivot_longer(-sim_id,
+                              names_to = 'team',
+                              values_to = 'place'),
+               by = c("sim_id", "team")) %>% 
+    mutate('playoff' = (place <= 4)) %>% 
+    group_by(sim_id) %>% 
+    mutate('tiebreak' = 
+             (n_wins == sort(n_wins, decreasing = T)[4]) & 
+             (n_wins == sort(n_wins, decreasing = T)[5])) %>% 
+    ungroup()
+  
+  write_csv(df_wins, '3.0_Files/Predictions/win_place_results.csv')
   
   ### store playoff odds
   playoffs <- data.frame(team = ivy,
@@ -361,7 +384,7 @@ psf <- function(nsims, min_date, max_date) {
           # Tiebreak 3 (Analytics)
           tmp <- power_rankings[is.element(power_rankings$team, teams),]
           tmp <- tmp[order(tmp$team),]
-          winner <- tmp$Team[grep(max(tmp$yusag_coeff), tmp$yusag_coeff)]
+          winner <- tmp$team[grep(max(tmp$yusag_coeff), tmp$yusag_coeff)]
           winnerID <- c(1:8)[ivy == winner]
           # Winner wins tie-break
           simresults[j, winnerID] <- simresults[j, winnerID] + 0.1 * tie

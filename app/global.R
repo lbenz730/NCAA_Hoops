@@ -6,6 +6,9 @@ library(gt)
 library(paletteer)
 library(ncaahoopR)
 library(purrr)
+library(RColorBrewer)
+library(ggridges)
+library(tidyr)
 
 glm.pointspread <- readRDS("glm_pointspread.rds")
 ncaa_sims <- read_csv('3.0_Files/ncaa_sims/ncaa_sims.csv')
@@ -492,6 +495,7 @@ ivy_bar <-
   ungroup() %>% 
   ggplot(aes(x = n_wins, y = pct)) + 
   geom_col(aes(fill = as.factor(place))) + 
+  scale_fill_manual(values = c(brewer.pal(5, 'Greens')[5:2], brewer.pal(5, 'Reds')[2:5])) + 
   scale_x_continuous(breaks = min(ivy_sim$n_wins):max(ivy_sim$n_wins)) + 
   scale_y_continuous(labels = scales::percent) + 
   labs(x = '# of Conference Wins',
@@ -503,7 +507,7 @@ ivy_bar <-
 
 
 ivy_psf <- read_rds('3.0_Files/Predictions/ivy_psf_full.rds') 
- 
+
 
 ivy_psf_gt <-
   ivy_psf %>% 
@@ -621,7 +625,7 @@ ivy_psf_gt <-
     min(ivy_psf$date), 
     ifelse(n_distinct(ivy_psf$date) > 1, paste(' -', max(ivy_psf$date)), ''),
     ''
-    )) %>% 
+  )) %>% 
   tab_options(column_labels.font.size = 20,
               heading.title.font.size = 40,
               heading.subtitle.font.size = 30,
@@ -638,3 +642,75 @@ bracket_odds <-
   select(team, 'auto_bid' = freq, 'at_large' = odds) %>% 
   mutate('at_large' = at_large/100) %>% 
   mutate('overall' = auto_bid + (1-auto_bid) * at_large)
+
+
+make_standings_plot <- function(conf) {
+  sims <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+  if(nrow(sims) < 10) {
+    p <- NULL
+  } else{
+    
+    standings <- 
+      group_by(sims, team) %>%
+      summarise("avg_wins" = mean(n_wins)) %>%
+      arrange(desc(avg_wins)) %>%
+      mutate("rank" = nrow(.):1) %>%
+      arrange(team) %>%
+      left_join(select(ncaahoopR::ncaa_colors, ncaa_name, primary_color), 
+                by = c("team" = "ncaa_name"))
+    
+    
+    sims$team <- as.factor(sims$team)
+    sims$team <- reorder(sims$team, rep(standings$rank, 10000))
+    standings <- arrange(standings, avg_wins)
+    
+    p <- 
+      ggplot(sims, aes(x = n_wins, y = team, fill = team)) + 
+      geom_density_ridges(stat = "binline", scale = 0.7, binwidth = 1) + 
+      labs(x ="# of Wins", 
+           y = "Team",
+           title = "Distribution of Conference Wins",
+           subtitle = conf) +
+      theme(legend.position = "none") +
+      scale_fill_manual(values = c(standings$primary_color)) +
+      scale_x_continuous(breaks = c(0:max(sims$n_wins)))
+  }
+  return(p)
+}
+
+
+df_wins <- 
+  read_csv('3.0_Files/Predictions/win_place_results.csv')
+
+df_summary <- 
+  df_wins %>% 
+  group_by(team, n_wins) %>% 
+  summarise('freq' = n()/nrow(.) * 8,
+            'playoff_prob' = mean(playoff),
+            'tiebreak_prob' = mean(tiebreak),
+            'win_tiebreak' = mean(playoff[tiebreak])) %>% 
+  ungroup() %>% 
+  pivot_longer(-c(team, n_wins),
+               names_to = 'condition',
+               values_to = 'prob') %>% 
+  mutate('condition_prime' = 
+           case_when(condition == 'freq' ~ 'Finish with # of Wins',
+                     condition == 'playoff_prob' ~ 'Make Playoffs',
+                     condition == 'tiebreak_prob' ~ 'Tiebreaker for Final Playoff Spot',
+                     condition == 'win_tiebreak' ~ 'Win Tiebreaker for Final Playoff Spot'))
+
+ivy_snapsnot <- 
+  ggplot(df_summary, aes(x = n_wins, y = prob)) + 
+  facet_grid(team~forcats::fct_reorder(condition_prime, condition)) + 
+  geom_point(aes(col = team), size = 3) +
+  geom_line(aes(col = team)) +
+  scale_x_continuous(breaks = 1:max(df_wins$n_wins)) +
+  scale_y_continuous(labels = scales::percent) + 
+  scale_color_manual(values = cols) + 
+  theme(legend.position = 'none',
+        strip.text = element_text(size = 12)) + 
+  labs(x = '# of Conference Wins',
+       y = 'Probability of Event w/ # of Wins',
+       title = 'Ivy Madness Playoff Snapshot',
+       subtitle = 'Tiebreaking Scenarios Applied',
+       color = '') 
