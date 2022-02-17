@@ -427,10 +427,18 @@ psf <- function(nsims, min_date, max_date) {
                                 auto_bid_2 = rep(NA, length(ivy)))
       simplayoffs$playoff_prob1 <- playoffs$playoff_prob
       simplayoffs$auto_bid_1 <- playoffs$auto_bid
+      simplayoffs$seed1_prob_1 <- playoffs$seed1_prob
+      simplayoffs$seed2_prob_1 <- playoffs$seed2_prob
+      simplayoffs$seed3_prob_1 <- playoffs$seed3_prob
+      simplayoffs$seed4_prob_1 <- playoffs$seed4_prob
     }
     else{
       simplayoffs$playoff_prob2 <- playoffs$playoff_prob
       simplayoffs$auto_bid_2 <- playoffs$auto_bid
+      simplayoffs$seed1_prob_2 <- playoffs$seed1_prob
+      simplayoffs$seed2_prob_2 <- playoffs$seed2_prob
+      simplayoffs$seed3_prob_2 <- playoffs$seed3_prob
+      simplayoffs$seed4_prob_2 <- playoffs$seed4_prob
       swingfactor$psf[k/2] <- sum(abs(simplayoffs$playoff_prob2 - simplayoffs$playoff_prob1))
       swingfactor$auto_bid_sf[k/2] <- sum(abs(simplayoffs$auto_bid_2 - simplayoffs$auto_bid_1))
       df_list[[k/2]] <- simplayoffs
