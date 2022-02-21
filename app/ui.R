@@ -97,7 +97,7 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                 br(),
                                 
                                 ### Conf Sims
-                                tags$h2("Distributions of Regular Season Conference Finish"),
+                                tags$h2("Distributions of Regular Season Conference Finish (Based on Win%)"),
                                 tags$i("Ties left unbroken."),
                                 br(),
                                 

@@ -144,8 +144,8 @@ conf_fast_sim <- function(conf, nsims) {
     ungroup() %>% 
     inner_join(confs) %>% 
     group_by(sim) %>% 
-    mutate('place_tourney' = rank(-n_wins, ties = "random"),
-           'place' = rank(-n_wins, ties.method = 'min'))
+    mutate('place_tourney' = rank(-(n_wins/n_games), ties = "random"),
+           'place' = rank(-(n_wins/n_games), ties.method = 'min'))
   
   ### 1000 sims for short (speed up tourney_sim_single at some point w/ pre-computed wp)
   params <- 

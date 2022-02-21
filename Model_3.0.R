@@ -204,7 +204,7 @@ playoffs <- ivy.sim(10000)
 ivy_psf <- psf(2500, min_date = Sys.Date(), max_date = Sys.Date() + 6)
 source('3.0_Files/ivy_graphics.R')
 ############################# Conference Sims (No Tie-Breaks) ##################
-for(conf in sort(unique(confs$conference))) {
+for(conf in sort(unique(confs$conference))[16:32]) {
   print(conf)
   sims <- conf_fast_sim(conf, 10000)
   write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
@@ -263,3 +263,4 @@ file.copy('3.0_Files/Info/conferences.csv', 'app/3.0_Files/Info/conferences.csv'
 # source('3.0_Files/ncaa_sims/ncaa_sims.R')
 devtools::install_github("lbenz730/ncaahoopR")
 rsconnect::deployApp(forceUpdate = T, appDir = 'app')
+

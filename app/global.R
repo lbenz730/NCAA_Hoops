@@ -376,7 +376,7 @@ ivy_playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
 
 ivy_gt <- 
   ivy_playoffs %>% 
-  arrange(desc(playoff_prob)) %>% 
+  arrange(desc(playoff_prob), desc(seed1_prob), desc(seed2_prob), desc(seed3_prob), desc(seed4_prob)) %>% 
   mutate_if(is.numeric, ~.x/100) %>% 
   inner_join(select(ncaa_colors, 'team' = ncaa_name, logo_url)) %>% 
   select(team, logo_url, everything()) %>% 
