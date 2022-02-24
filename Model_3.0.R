@@ -204,7 +204,7 @@ playoffs <- ivy.sim(10000)
 ivy_psf <- psf(2500, min_date = Sys.Date(), max_date = Sys.Date() + 6)
 source('3.0_Files/ivy_graphics.R')
 ############################# Conference Sims (No Tie-Breaks) ##################
-for(conf in sort(unique(confs$conference))[16:32]) {
+for(conf in sort(unique(confs$conference))) {
   print(conf)
   sims <- conf_fast_sim(conf, 10000)
   write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
