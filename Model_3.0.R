@@ -6,6 +6,7 @@ library(purrr)
 library(furrr)
 plan(multicore(workers = 15))
 options(future.fork.enable = T)
+options(dplyr.summarise.inform = FALSE)
 x <- read_csv(paste("3.0_Files/Results/2021-22/NCAA_Hoops_Results",
                     month(Sys.Date()), day(Sys.Date()), paste0(year(Sys.Date()), ".csv"),
                     sep = "_"))
@@ -26,6 +27,7 @@ source("3.0_Files/helpers.R")
 source("3.0_Files/tourney_sim.R")
 source("3.0_Files/conf_tourney_sims.R")
 # source("3.0_Files/ncaa_sims/ncaa_sims.R")
+
 ########################  Data Cleaning ########################################
 x <- 
   x %>%
@@ -205,8 +207,9 @@ playoffs <- ivy.sim(5000)
 ivy_psf <- psf(2500, min_date = Sys.Date(), max_date = Sys.Date() + 6)
 source('3.0_Files/ivy_graphics.R')
 ############################# Conference Sims (No Tie-Breaks) ##################
-update_conf_seeds() 
+confs <- update_conf_seeds() 
 for(conf in sort(unique(confs$conference))) {
+  # for(conf in sort(unique(confs$conference[!is.na(confs$conf_seed)]))) {
   print(conf)
   sims <- conf_fast_sim(conf, 10000)
   write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))

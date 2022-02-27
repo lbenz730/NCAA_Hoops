@@ -113,6 +113,7 @@ conf_fast_sim <- function(conf, nsims) {
   
   ### Only Sim Regular Season up to 1 day after Deadline
   if(Sys.Date() <= deadlines$deadline[deadlines$conf == conf] + 1) {
+    print('Regular Season')
     schedule$tmp <- 
       case_when(
         schedule$team < schedule$opponent ~ paste(schedule$team, schedule$opponent, schedule$date),
@@ -154,6 +155,7 @@ conf_fast_sim <- function(conf, nsims) {
   
   ### Only Sim Conference Tournament from RS results up to deadline
   if(Sys.Date() <= deadlines$deadline[deadlines$conf == conf]) {
+    print('Post Season')
     ### 1000 sims for short (speed up tourney_sim_single at some point w/ pre-computed wp)
     params <- 
       conf_tournaments %>% 
@@ -187,6 +189,7 @@ conf_fast_sim <- function(conf, nsims) {
     post_season$freq[post_season$team %in% confs$team[confs$eliminated | !confs$eligible]] <- 0
     post_season$freq <- post_season$freq/sum(post_season$freq)
   } else {
+    print('Champ Week')
     params <- 
       conf_tournaments %>% 
       rename('conference' = conf) %>% 
@@ -201,6 +204,11 @@ conf_fast_sim <- function(conf, nsims) {
       arrange(conf_seed) 
     
     dfs <- map(1:3000, ~df_conf)
+    
+    if(conf == 'WCC') {
+      keep <- map(1:3000, ~c(1:6, sample(c(7,10), 1), sample(c(8,9),1))) 
+      dfs <- map2(dfs, keep, ~filter(.x, conf_seed %in% .y))
+    }
     
     outputs <- 
       future_map(dfs, ~{
