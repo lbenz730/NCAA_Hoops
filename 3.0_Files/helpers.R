@@ -98,6 +98,7 @@ conf_sim <- function(conf, nsims) {
 
 #### Conference Sims
 conf_fast_sim <- function(conf, nsims) {
+  
   ### Sim Schedule
   if(conf == 'Ivy') {
     schedule <- 
@@ -110,74 +111,128 @@ conf_fast_sim <- function(conf, nsims) {
       mutate(simwins = 0, opp_simwins = 0)
   }
   
-  
-  schedule$tmp <- 
-    case_when(
-      schedule$team < schedule$opponent ~ paste(schedule$team, schedule$opponent, schedule$date),
-      T ~ paste(schedule$opponent, schedule$team, schedule$date)
-    )
-  schedule <- filter(schedule, !duplicated(tmp))
-  
-  schedule <- bind_rows(replicate(nsims, schedule, simplify = F))
-  
-  if(nrow(schedule) == 0) {
-    return(tibble('team' =  '',
-                  'sim' = '',
-                  'n_wins' = '',
-                  'place' = ''))
+  ### Only Sim Regular Season up to 1 day after Deadline
+  if(Sys.Date() <= deadlines$deadline[deadlines$conf == conf] + 1) {
+    schedule$tmp <- 
+      case_when(
+        schedule$team < schedule$opponent ~ paste(schedule$team, schedule$opponent, schedule$date),
+        T ~ paste(schedule$opponent, schedule$team, schedule$date)
+      )
+    schedule <- filter(schedule, !duplicated(tmp))
+    
+    schedule <- bind_rows(replicate(nsims, schedule, simplify = F))
+    
+    if(nrow(schedule) == 0) {
+      return(tibble('team' =  '',
+                    'sim' = '',
+                    'n_wins' = '',
+                    'place' = ''))
+    }
+    
+    results <- 
+      schedule %>% 
+      group_by(team, opponent, date) %>% 
+      mutate('sim' = 1:n()) %>% 
+      ungroup() %>% 
+      mutate('rand' = runif(nrow(.))) %>% 
+      mutate('winner' = case_when(rand <= wins ~ team,
+                                  T ~ opponent)) %>% 
+      select(sim, team, opponent, winner) %>% 
+      pivot_longer(cols = c('team', 'opponent'),
+                   values_to = 'team') %>% 
+      group_by(sim, team) %>% 
+      summarise('n_wins' = sum(winner == team),
+                'n_games' = n()) %>% 
+      ungroup() %>% 
+      inner_join(confs) %>% 
+      group_by(sim) %>% 
+      mutate('place_tourney' = rank(-(n_wins/n_games), ties = "random"),
+             'place' = rank(-(n_wins/n_games), ties.method = 'min'))
+  } else {
+    results <- read_csv(paste0('3.0_Files/Predictions/conf_sims/', conf, '.csv'))
   }
   
-  results <- 
-    schedule %>% 
-    group_by(team, opponent, date) %>% 
-    mutate('sim' = 1:n()) %>% 
-    ungroup() %>% 
-    mutate('rand' = runif(nrow(.))) %>% 
-    mutate('winner' = case_when(rand <= wins ~ team,
-                                T ~ opponent)) %>% 
-    select(sim, team, opponent, winner) %>% 
-    pivot_longer(cols = c('team', 'opponent'),
-                 values_to = 'team') %>% 
-    group_by(sim, team) %>% 
-    summarise('n_wins' = sum(winner == team),
-              'n_games' = n()) %>% 
-    ungroup() %>% 
-    inner_join(confs) %>% 
-    group_by(sim) %>% 
-    mutate('place_tourney' = rank(-(n_wins/n_games), ties = "random"),
-           'place' = rank(-(n_wins/n_games), ties.method = 'min'))
-  
-  ### 1000 sims for short (speed up tourney_sim_single at some point w/ pre-computed wp)
-  params <- 
-    conf_tournaments %>% 
-    rename('conference' = conf) %>% 
-    filter(conference == conf) %>% 
-    transpose() %>% 
-    .[[1]]
-  
-  dfs <- 
-    results %>% 
-    arrange(place_tourney) %>% 
-    filter(sim <= 1000) %>%
-    filter(place_tourney <= params$n_teams) %>% 
-    group_split()
-  
-  champions <- 
-    future_map_chr(dfs, ~{
-      tourney_sim_single(teams = .x$team,
-                         seeds = .x$place_tourney,
-                         hca = params$hca,
-                         byes = params$n_bye,
-                         double_byes = params$n_double_bye)
-    })
-  
-  post_season <- 
-    tibble('team' = factor(champions, levels = unique(schedule$team))) %>% 
-    group_by(team, .drop = F) %>% 
-    summarise('freq' = n()/nrow(.))
-  
-  post_season$freq[post_season$team %in% confs$team[confs$eliminated | !confs$eligible]] <- 0
-  post_season$freq <- post_season$freq/sum(post_season$freq)
+  ### Only Sim Conference Tournament from RS results up to deadline
+  if(Sys.Date() <= deadlines$deadline[deadlines$conf == conf]) {
+    ### 1000 sims for short (speed up tourney_sim_single at some point w/ pre-computed wp)
+    params <- 
+      conf_tournaments %>% 
+      rename('conference' = conf) %>% 
+      filter(conference == conf) %>% 
+      transpose() %>% 
+      .[[1]]
+    
+    dfs <- 
+      results %>% 
+      arrange(place_tourney) %>% 
+      filter(sim <= 1000) %>%
+      filter(place_tourney <= params$n_teams) %>% 
+      group_split()
+    
+    champions <- 
+      future_map_chr(dfs, ~{
+        tourney_sim_single(teams = .x$team,
+                           seeds = .x$place_tourney,
+                           hca = params$hca,
+                           eliminated = rep(F, length(.x$team)),
+                           byes = params$n_bye,
+                           double_byes = params$n_double_bye)
+      })
+    
+    post_season <- 
+      tibble('team' = factor(champions, levels = unique(schedule$team))) %>% 
+      group_by(team, .drop = F) %>% 
+      summarise('freq' = n()/nrow(.))
+    
+    post_season$freq[post_season$team %in% confs$team[confs$eliminated | !confs$eligible]] <- 0
+    post_season$freq <- post_season$freq/sum(post_season$freq)
+  } else {
+    params <- 
+      conf_tournaments %>% 
+      rename('conference' = conf) %>% 
+      filter(conference == conf) %>% 
+      transpose() %>% 
+      .[[1]]
+    
+    df_conf <- 
+      confs %>% 
+      filter(conference == conf) %>% 
+      filter(!is.na(conf_seed)) %>% 
+      arrange(conf_seed) 
+    
+    dfs <- map(1:3000, ~df_conf)
+    
+    outputs <- 
+      future_map(dfs, ~{
+        tourney_sim_single(teams = .x$team,
+                           seeds = .x$conf_seed,
+                           hca = params$hca,
+                           eliminated = .x$eliminated,
+                           byes = params$n_bye,
+                           double_byes = params$n_double_bye,
+                           return_list = T) 
+      })
+    
+    champ <- map_chr(outputs, ~.x[1])
+    finalist <- map_chr(outputs, ~.x[2])
+    
+    conf_tourney <- 
+      df_conf %>% 
+      select(team, 'seed' = conf_seed) %>% 
+      mutate('finals' = map_dbl(team, ~mean((.x == champ) | (.x == finalist))),
+             'champ' = map_dbl(team, ~mean(.x == champ)))
+    
+    write_csv(conf_tourney, paste0('3.0_Files/Predictions/conf_tourney_sims/', conf, '.csv'))
+    
+    post_season <- 
+      tibble('team' = factor(champ, levels = unique(schedule$team))) %>% 
+      group_by(team, .drop = F) %>% 
+      summarise('freq' = n()/nrow(.))
+    
+    post_season$freq[post_season$team %in% confs$team[confs$eliminated | !confs$eligible]] <- 0
+    post_season$freq <- post_season$freq/sum(post_season$freq)
+    
+  }
   
   
   
