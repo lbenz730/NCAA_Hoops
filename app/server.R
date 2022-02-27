@@ -35,6 +35,9 @@ shinyServer(function(input, output, session) {
   updateSelectInput(session, inputId = "conf", 
                     choices = sort(unique(confs$conference)), selected = "A-10")
   
+  updateSelectInput(session, inputId = "conft", 
+                    choices = sort(t_confs), selected = sort(t_confs)[1])
+  
   updateSelectInput(session, inputId = "team", 
                     choices = sort(unique(x$team)), selected = rankings_clean$team[1])
   
@@ -574,6 +577,120 @@ shinyServer(function(input, output, session) {
   output$ivy_history <- renderPlot(ivy_history_plot)
   output$ivy_barplot <- renderPlot(ivy_bar)
   output$ivy_snap <- renderPlot(ivy_snapsnot)
+  
+  
+  ### Conf T Sims
+  ctsim <- eventReactive(input$conft, {
+    df_sim <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/',input$conft, '.csv'))
+    
+    
+    df <- 
+      df_sim %>% 
+      inner_join(select(ncaa_colors, 'team' = ncaa_name, logo_url)) %>% 
+      inner_join(select(rankings_clean, team, yusag_coeff)) %>% 
+      arrange(desc(champ), desc(finals)) %>% 
+      select(team, logo_url, seed, yusag_coeff, finals, champ)
+  
+    table <- 
+      gt(df) %>% 
+      cols_label('team' = '', 
+                 'logo_url' = '',
+                 'seed' = 'Seed',
+                 'yusag_coeff' = 'Rating',
+                 'finals' = 'Finals',
+                 'champ' = 'Champ') %>% 
+      
+      ### Hightlight Columns 
+      data_color(
+        columns = c(finals, champ),
+        colors = scales::col_numeric(
+          palette = ggsci::rgb_material('amber', n = 68),
+          domain = c(0,1),
+        )
+      ) %>% 
+      
+      data_color(
+        columns = c(yusag_coeff),
+        colors = scales::col_numeric(
+          palette = ggsci::rgb_material('amber', n = 358),
+          domain = range(df$yusag_coeff)
+        ),
+      ) %>% 
+      
+      ### Percent
+      fmt_percent(
+        columns = c(finals, champ),
+        decimals = 1) %>% 
+      
+      fmt_number(
+        columns = c(yusag_coeff),
+        decimals = 1) %>% 
+      
+      
+      ### Align Columns
+      cols_align(
+        align = "center",
+        columns = gt::everything()
+      ) %>% 
+      
+      ### Borders
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "bottom",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_column_labels(
+            columns = gt::everything()
+          )
+        )
+      ) %>% 
+      tab_style(
+        style = list(
+          cell_borders(
+            sides = "right",
+            color = "black",
+            weight = px(3)
+          )
+        ),
+        locations = list(
+          cells_body(
+            columns = c(yusag_coeff)
+          )
+        )
+      ) %>% 
+      text_transform(
+        locations = cells_body(c(logo_url)),
+        fn = function(x) {
+          web_image(
+            url = x,
+            height = 30
+          )
+        }
+      ) %>% 
+      # tab_source_note("2022 Tournament hosted by Harvard University") %>%
+      # tab_source_note("Based on 5,000 Simulations. Ties broken according to official Ivy League tiebreaking rules.") %>%
+      
+      tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>%
+      tab_header(
+        title = md(paste("**2022", input$tconf, "Men's Basketball Tournament Odds**")),
+        # subtitle = md(paste0('**', table_region, " Region**"))
+      ) %>% 
+      tab_options(column_labels.font.size = 16,
+                  heading.title.font.size = 30,
+                  heading.subtitle.font.size = 20,
+                  heading.title.font.weight = 'bold',
+                  heading.subtitle.font.weight = 'bold'
+      )
+    
+    table
+    
+  })
+  
+  output$ct_sims <- render_gt(ctsim())
   
 })
 

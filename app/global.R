@@ -12,6 +12,7 @@ library(tidyr)
 
 glm.pointspread <- readRDS("glm_pointspread.rds")
 ncaa_sims <- read_csv('3.0_Files/ncaa_sims/ncaa_sims.csv')
+t_confs <- gsub('\\.csv', '', dir('3.0_Files/Predictions/conf_tourney_sims/', full.names = F))
 
 theme_set(theme_bw() +
             theme(axis.title = element_text(size = 20),
