@@ -59,9 +59,11 @@ update_conf_seeds <- function() {
                   'BYU', 'Portland', 'San Diego', 'Pacific', 'LMU (CA)', 'Pepperdine')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
-  # MWC
-  # seed_teams <- c()
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  # Southern
+  seed_teams <- c('Chattanooga', 'Furman', 'Samford', 'Wofford', 
+                  'VMI', 'UNC Greensboro', 'Mercer', 'ETSU',
+                  'The Citadel', 'Western Caro.')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
   write_csv(confs, '3.0_Files/Info/conferences.csv')
   return(confs)
