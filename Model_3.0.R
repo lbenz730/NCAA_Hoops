@@ -203,9 +203,9 @@ bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
 ######################### Ivy League Specific Sims #############################
-playoffs <- ivy.sim(5000)
-ivy_psf <- psf(2500, min_date = Sys.Date(), max_date = Sys.Date() + 6)
-source('3.0_Files/ivy_graphics.R')
+# playoffs <- ivy.sim(5000)
+# ivy_psf <- psf(2500, min_date = Sys.Date(), max_date = Sys.Date() + 6)
+# source('3.0_Files/ivy_graphics.R')
 ############################# Conference Sims (No Tie-Breaks) ##################
 confs <- update_conf_seeds() 
 for(conf in sort(unique(confs$conference))) {

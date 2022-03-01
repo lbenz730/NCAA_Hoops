@@ -65,6 +65,13 @@ update_conf_seeds <- function() {
                   'The Citadel', 'Western Caro.')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
+  # CAA 
+  seed_teams <- c('Towson', 'UNCW', 'Hofstra', 'Drexel',
+                  'Delaware', 'Col. of Charleston', 'Elon', 
+                  'William & Mary', 'Noretheastern')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  
   write_csv(confs, '3.0_Files/Info/conferences.csv')
   return(confs)
 }
@@ -80,6 +87,8 @@ conf_tourney_graphics <- function() {
         df_sim %>% 
         inner_join(select(ncaa_colors, 'team' = ncaa_name, logo_url)) %>% 
         inner_join(select(power_rankings, team, yusag_coeff)) %>% 
+        inner_join(select(confs, team, eliminated)) %>% 
+        filter(!eliminated) %>% 
         arrange(desc(champ), desc(finals)) %>% 
         select(team, logo_url, seed, yusag_coeff, finals, champ)
       

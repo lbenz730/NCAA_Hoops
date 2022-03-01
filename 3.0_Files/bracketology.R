@@ -73,7 +73,7 @@ make_bracket <- function(tourney) {
                                       + (loss_bonus & yusag_rank <= 10), 
                                       data = bracket_math, family = "binomial"))
   lm.seed <- lm(seed ~ blend 
-                  + (mid_major & yusag_rank > 50) 
+                + (mid_major & yusag_rank > 50) 
                 + (mid_major & yusag_rank > 25) 
                 + (loss_bonus & yusag_rank <= 10) 
                 + (losses <= 3), 
@@ -85,16 +85,33 @@ make_bracket <- function(tourney) {
     bracket$odds[which(bracket$wins - bracket$losses <= 2)]/4
   bracket$seed <- 
     predict(lm.seed, newdata = bracket, type = "response")
-
-
-  bracket <- arrange(bracket, desc(round(odds, 1)), avg)
+  
+  ### Regression Towards Bracket Matrix 
+  df_bm <- bracket_matix()
+  bracket <- left_join(bracket, df_bm, 'team')
+  # converter <- mgcv::gam(odds ~ s(seed_line), data = bracket)
+  # write_rds(converter, '3.0_Files/Bracketology/bm_converter.rds')
+  converter <- read_rds('3.0_Files/Bracketology/bm_converter.rds')
+  bracket$bm_odds <- as.vector(predict(converter, newdata = tibble('seed_line' = bracket$seed_avg)))
+  bracket$bm_odds <- case_when(bracket$bm_odds > 100 ~ 100,
+                               bracket$bm_odds < 0 ~ 0,
+                               T ~ bracket$bm_odds)
+  bm_weight <- 1/2
+  bracket <- 
+    bracket %>% 
+    mutate('odds' = case_when(
+      is.na(seed_avg) ~ odds,
+      T ~ (1 - bm_weight * pct_brackets) * odds +  bm_weight * pct_brackets * bm_odds
+    ))
+  bracket$odds <- ifelse(bracket$odds > 99.9, 99.99, bracket$odds)
+  bracket <- arrange(bracket, desc(round(odds, 1)), seed_avg)
   
   if(tourney == T) {
     ### Get Autobids
     autobids <- vector()
     con <- unique(confs$conference)
     for(j in 1:length(con)){
-
+      
       autobids[j] <- autobid_calc(con[j])
     }
     bracket$autobid <- is.element(bracket$team, autobids)
@@ -118,8 +135,9 @@ make_bracket <- function(tourney) {
     ### Write Bracket    
     bracket$atlarge <- is.element(bracket$team, atlarge)
     bracket <- rbind(bracket[bracket$autobid,], bracket[bracket$atlarge,])
-    bracket <- arrange(bracket, desc(round(odds, 1)), avg)
-    bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus, -seed)
+    bracket <- arrange(bracket, desc(round(odds, 1)), seed_avg)
+    bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus, -seed,
+                      -seed_avg, -bm_odds, -pct_brackets, -n_brackets)
     bracket$seed_overall <- 1:68
     bracket$seed_line <- c(rep(1,4), rep(2,4), rep(3,4), rep(4,4), rep(5,4),
                            rep(6,4), rep(7,4), rep(8,4), rep(9,4), rep(10,4),
@@ -158,8 +176,44 @@ make_bracket <- function(tourney) {
     return(bracket)
   }
   else{
-    bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus, -seed)
+    bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus, -seed,
+                      -seed_avg, -bm_odds, -pct_brackets, -n_brackets)
     write.csv(bracket, "3.0_Files/Bracketology/bracket_math.csv", row.names = F)
     return(bracket)
   }
+}
+
+
+bracket_matix <- function() {
+  bracket <- XML::readHTMLTable('http://www.bracketmatrix.com/')
+  ix <- which(bracket[[1]]$V2 == 'OTHER AUTO QUALIFIERS')
+  bracket_cln <- 
+    bracket[[1]] %>% 
+    select('team' = V2,
+           'seed_avg' = V4,
+           'n_brackets' = V5) %>% 
+    mutate('seed_avg' = suppressWarnings(as.numeric(seed_avg)),
+           'n_brackets' = suppressWarnings(as.numeric(n_brackets)),
+           'pct_brackets' = n_brackets/max(n_brackets, na.rm = T),
+           'team' = gsub('State', 'St.', as.character(team))) %>% 
+    slice(1:(ix-1)) %>% 
+    filter(!is.na(seed_avg)) %>% 
+    mutate('team' = case_when(
+      team == 'Connecticut' ~ 'UConn',
+      team == 'Loyola-Chicago' ~ 'Loyola Chicago',
+      team == 'Miami (FLA.)' ~ 'Miami (FL)',
+      team == 'USC' ~ 'Southern California',
+      team == "St. Mary's (CA)" ~ 'Saint Mary\'s (CA)',
+      team == 'Northern Iowa' ~ 'UNI',
+      team == 'Seattle' ~ 'Seattle U',
+      team == 'NC-Wilmington' ~ 'UNCW',
+      team == 'Southern' ~ 'Southern U,',
+      team == 'Alcorn St.' ~ 'Alcorn',
+      team == 'Purdue-Fort Wayne' ~ 'Purdue Fort Wayne',
+      team == 'Detroit' ~ 'Detroit Mercy',
+      team == 'Northern Colorado' ~ 'Northern Colo.',
+      team == 'Northern Kentucky' ~ 'Nothern Ky.',
+      T ~ team)
+    ) 
+  return(bracket_cln)
 }

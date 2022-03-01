@@ -199,6 +199,13 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                                        "and linear regression to predict the seed of selected teams based on historical data since the 2015-2016 season.",
                                                        
                                                        br(),
+                                                       br(),
+                                                       
+                                                       "NOTE: As of 3/1/2022, some regression towards the BracketMatrix wisdom of crowds consensus is applied, using weights",
+                                                       "based on both the average seed in the matrix as well as the percentage of bracketologists putting a team in their bracket.",
+                                                       
+                                                       br(),
+                                                       br(),
                                                        
                                                        "All metrics are projected end of season values/ranks.",
                                                        

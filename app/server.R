@@ -588,6 +588,8 @@ shinyServer(function(input, output, session) {
       df_sim %>% 
       inner_join(select(ncaa_colors, 'team' = ncaa_name, logo_url)) %>% 
       inner_join(select(rankings_clean, team, yusag_coeff)) %>% 
+      inner_join(select(confs, team, eliminated)) %>% 
+      filter(!eliminated) %>% 
       arrange(desc(champ), desc(finals)) %>% 
       select(team, logo_url, seed, yusag_coeff, finals, champ)
   
