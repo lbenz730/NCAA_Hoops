@@ -68,7 +68,7 @@ update_conf_seeds <- function() {
   # CAA 
   seed_teams <- c('Towson', 'UNCW', 'Hofstra', 'Drexel',
                   'Delaware', 'Col. of Charleston', 'Elon', 
-                  'William & Mary', 'Noretheastern')
+                  'William & Mary', 'Northeastern')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
   

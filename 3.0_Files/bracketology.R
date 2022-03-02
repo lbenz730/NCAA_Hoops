@@ -1,3 +1,4 @@
+library(mgcv)
 make_bracket <- function(tourney) {
   bracket <- data.frame("team" = teams,
                         "conf" = rep(NA, length(teams)),
@@ -166,6 +167,10 @@ make_bracket <- function(tourney) {
       }
     }
     bubble <- tmp[is.element(tmp$team, bubble),]
+    bubble <- 
+      bubble %>% 
+      select(-seed_avg, -bm_odds, -pct_brackets, -n_brackets)
+      
     write.csv(bubble, "3.0_Files/Bracketology/bubble.csv", row.names = F)
     
     ### Bid Summary by Conference
