@@ -354,6 +354,8 @@ tourney_sim_single  <- function(teams, seeds, byes, double_byes, hca, eliminated
           next_round <- (next_round[length(next_round)] + 1):(next_round[length(next_round)] + length(next_round)/2)
         }
       }
+      
+      
       if(!return_list) {
         games$winner[n-1]
       }else {
