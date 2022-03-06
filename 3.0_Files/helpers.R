@@ -205,7 +205,7 @@ conf_fast_sim <- function(conf, nsims) {
     
     dfs <- map(1:3000, ~df_conf)
     
-    if(conf == 'WCC') {
+    if(conf == 'WCC' | conf == 'WAC') {
       keep <- map(1:3000, ~c(1:6, sample(c(7,10), 1), sample(c(8,9),1))) 
       dfs <- map2(dfs, keep, ~filter(.x, conf_seed %in% .y))
     }
