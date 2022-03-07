@@ -203,7 +203,7 @@ bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
 ######################### Ivy League Specific Sims #############################
-# playoffs <- ivy.sim(5000)
+playoffs <- ivy.sim(50)
 # ivy_psf <- psf(2500, min_date = Sys.Date(), max_date = Sys.Date() + 6)
 # source('3.0_Files/ivy_graphics.R')
 playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
@@ -212,7 +212,10 @@ confs <- update_conf_seeds()
 for(conf in sort(unique(confs$conference))) {
   # for(conf in sort(unique(confs$conference[!is.na(confs$conf_seed)]))) {
   print(conf)
-  sims <- conf_fast_sim(conf, 10000)
+  df_f <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+  f <- !all(group_by(df_f, team, place) %>% count() %>% pull(n) == 10000)
+  
+  sims <- conf_fast_sim(conf, 10000, force = f)
   write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
   if(conf != 'Ivy') {
     write_csv(sims$post_season, paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))

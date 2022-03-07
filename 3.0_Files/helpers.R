@@ -97,7 +97,7 @@ conf_sim <- function(conf, nsims) {
 }
 
 #### Conference Sims
-conf_fast_sim <- function(conf, nsims) {
+conf_fast_sim <- function(conf, nsims, force = F) {
   
   ### Sim Schedule
   if(conf == 'Ivy') {
@@ -112,7 +112,7 @@ conf_fast_sim <- function(conf, nsims) {
   }
   
   ### Only Sim Regular Season up to 1 day after Deadline
-  if(Sys.Date() <= deadlines$deadline[deadlines$conf == conf] + 1) {
+  if(Sys.Date() <= deadlines$deadline[deadlines$conf == conf] + 1 | force) {
     print('Regular Season')
     schedule$tmp <- 
       case_when(

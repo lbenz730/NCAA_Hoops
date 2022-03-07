@@ -132,7 +132,8 @@ update_conf_seeds <- function() {
   # SEC
   seed_teams <- c('Auburn', 'Tennessee', 'Kentucky', 'Arkansas', 
                   'LSU', 'Alabama', 'South Carolina', 'Texas A&M',
-                  'Florida', 'Vanderbilt', 'Missouri', 'Ole Miss', 'Georgia')
+                  'Florida', 'Mississippi St.', 'Vanderbilt', 'Missouri', 
+                  'Ole Miss', 'Georgia')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
   # ACC 
@@ -177,14 +178,17 @@ update_conf_seeds <- function() {
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
   # AAC
-  # seed_teams <- c('Houston', 'SMU', 'Memphis', 'Tulane', 'Temple',
-  #                 'UCF', 'Wichita St.', 'Cincinnati', 'East Carolina',
-  #                 'Tulsa', 'South Fla.')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  seed_teams <- c('Houston', 'SMU', 'Memphis', 'Temple', 'Tulane',
+                  'UCF', 'Wichita St.', 'Cincinnati', 'East Carolina',
+                  'Tulsa', 'South Fla.')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
   # Big 10
-  
-  
+  seed_teams <- c('Illinois', 'Wisconsin', 'Purdue', 'Rutgers',
+                  'Iowa', 'Ohio St.', 'Michigan St.', 'Michigan', 
+                  'Indiana', 'Maryland', 'Penn St.', 'Northwestern',
+                  'Nebraska', 'Minnesota')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
   write_csv(confs, '3.0_Files/Info/conferences.csv')
   return(confs)
@@ -193,6 +197,7 @@ update_conf_seeds <- function() {
 
 conf_tourney_graphics <- function() {
   for(conf in sort(unique(confs$conference))) {
+    print(conf)
     if(file.exists(paste0('3.0_Files/Predictions/conf_tourney_sims/', conf, '.csv'))) {
       df_sim <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/', conf, '.csv'))
       

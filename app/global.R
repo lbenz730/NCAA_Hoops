@@ -48,8 +48,8 @@ records <-
   group_by(team, team_conf) %>%
   summarise("n_win" = sum(wins),
             "n_loss" = sum(1-wins),
-            "conf_wins" = sum(wins[conf_game]),
-            "conf_losses" = sum(1 - wins[conf_game])) %>%
+            "conf_wins" = sum(wins[conf_game & reg_season]),
+            "conf_losses" = sum(1 - wins[conf_game & reg_season])) %>%
   ungroup()
 
 records_actual <- 
@@ -149,7 +149,7 @@ bracket_math[is.na(bracket_math)] <- 0
 
 
 visualize_schedule <- function(conf) {
-  conf_data <- filter(x, conf_game, team_conf == conf)
+  conf_data <- filter(x, conf_game, team_conf == conf, reg_season)
   if(nrow(conf_data) == 0) {
     NULL 
   } else {

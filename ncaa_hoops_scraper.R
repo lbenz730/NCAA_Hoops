@@ -149,6 +149,7 @@ z <-
     opponent == 'App State' ~ 'Appalachian St.',
     opponent == 'Nicholls' ~ "Nicholls St.",
     opponent == 'Sam Houston' ~ "Sam Houston St.",
+    opponent == 'NIU' ~ 'Northern Ill.',
     grepl('&;', opponent) ~ gsub('&;', "'", opponent),
     T ~ opponent))
 
