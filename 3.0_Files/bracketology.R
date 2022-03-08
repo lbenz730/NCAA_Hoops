@@ -181,8 +181,7 @@ make_bracket <- function(tourney) {
     return(bracket)
   }
   else{
-    bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus, -seed,
-                      -seed_avg, -bm_odds, -pct_brackets, -n_brackets)
+    bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus, -seed)
     write.csv(bracket, "3.0_Files/Bracketology/bracket_math.csv", row.names = F)
     return(bracket)
   }
