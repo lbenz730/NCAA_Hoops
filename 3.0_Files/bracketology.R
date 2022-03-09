@@ -50,6 +50,9 @@ make_bracket <- function(tourney) {
   bracket <- arrange(bracket, desc(yusag_coeff))
   
   autobid_calc <- function(conf) {
+    if(conf == 'A-Sun') {
+     return('Jacksonville St.')  
+    }
     tmp <- bracket$team[bracket$conf == conf]
     for(i in 1:length(tmp)) {
       if(confs$eligible[confs$team == tmp[i]] & !confs$eliminated[confs$team == tmp[i]]) {
