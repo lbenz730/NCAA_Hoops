@@ -208,25 +208,27 @@ bracket_math <- make_bracket(tourney = F)
 # source('3.0_Files/ivy_graphics.R')
 playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
 ############################# Conference Sims (No Tie-Breaks) ##################
-confs <- update_conf_seeds() 
-for(conf in sort(unique(confs$conference))) {
-  # for(conf in sort(unique(confs$conference[!is.na(confs$conf_seed)]))) {
-  print(conf)
-  df_f <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
-  f <- !all(group_by(df_f, team, place) %>% count() %>% pull(n) == 10000)
-  
-  sims <- conf_fast_sim(conf, 10000, force = f)
-  write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
-  if(conf != 'Ivy') {
-    write_csv(sims$post_season, paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
-  } else {
-    playoffs %>% 
-      select(team, 'freq' = auto_bid) %>% 
-      mutate('freq' = freq/100) %>% 
-      write_csv(paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
+if(lubridate::hour(Sys.time())  < 12) {
+  confs <- update_conf_seeds() 
+  for(conf in sort(unique(confs$conference))) {
+    # for(conf in sort(unique(confs$conference[!is.na(confs$conf_seed)]))) {
+    print(conf)
+    df_f <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+    f <- !all(group_by(df_f, team, place) %>% count() %>% pull(n) == 10000)
+    
+    sims <- conf_fast_sim(conf, 10000, force = f)
+    write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+    if(conf != 'Ivy') {
+      write_csv(sims$post_season, paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
+    } else {
+      playoffs %>% 
+        select(team, 'freq' = auto_bid) %>% 
+        mutate('freq' = freq/100) %>% 
+        write_csv(paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
+    }
   }
+  conf_tourney_graphics()
 }
-conf_tourney_graphics()
 
 ############################ System Evaluation #################################
 min_date <- as.Date("2021-11-09")

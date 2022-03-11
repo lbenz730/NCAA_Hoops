@@ -103,7 +103,7 @@ make_bracket <- function(tourney) {
   bracket <- 
     bracket %>% 
     mutate('delta' = odds - bm_odds * pct_brackets) %>% 
-    mutate('bm_weight' = ifelse(abs(delta > 10), 1/2, 3/4)) %>% 
+    mutate('bm_weight' = ifelse(abs(delta) < 10, 1/2, 1)) %>% 
     mutate('odds' = case_when(
       is.na(seed_avg) ~ odds,
       
@@ -143,7 +143,7 @@ make_bracket <- function(tourney) {
     bracket <- rbind(bracket[bracket$autobid,], bracket[bracket$atlarge,])
     bracket <- arrange(bracket, desc(round(odds, 1)), seed_avg)
     bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus, -seed,
-                      -seed_avg, -bm_odds, -pct_brackets, -n_brackets)
+                      -seed_avg, -bm_odds, -pct_brackets, -n_brackets,  -bm_weight, -delta)
     bracket$seed_overall <- 1:68
     bracket$seed_line <- c(rep(1,4), rep(2,4), rep(3,4), rep(4,4), rep(5,4),
                            rep(6,4), rep(7,4), rep(8,4), rep(9,4), rep(10,4),
@@ -174,7 +174,7 @@ make_bracket <- function(tourney) {
     bubble <- tmp[is.element(tmp$team, bubble),]
     bubble <- 
       bubble %>% 
-      select(-seed_avg, -bm_odds, -pct_brackets, -n_brackets)
+      select(-seed_avg, -bm_odds, -pct_brackets, -n_brackets, -bm_weight, -delta)
       
     write.csv(bubble, "3.0_Files/Bracketology/bubble.csv", row.names = F)
     
