@@ -100,11 +100,13 @@ make_bracket <- function(tourney) {
   bracket$bm_odds <- case_when(bracket$bm_odds > 100 ~ 100,
                                bracket$bm_odds < 0 ~ 0,
                                T ~ bracket$bm_odds)
-  bm_weight <- 1/2
   bracket <- 
     bracket %>% 
+    mutate('delta' = odds - bm_odds * pct_brackets) %>% 
+    mutate('bm_weight' = ifelse(abs(delta > 10), 1/2, 3/4)) %>% 
     mutate('odds' = case_when(
       is.na(seed_avg) ~ odds,
+      
       T ~ (1 - bm_weight * pct_brackets) * odds +  bm_weight * pct_brackets * bm_odds
     ))
   bracket$odds <- ifelse(bracket$odds > 99.9, 99.99, bracket$odds)

@@ -203,7 +203,7 @@ bracket <- make_bracket(tourney = T)
 bracket_math <- make_bracket(tourney = F)
 
 ######################### Ivy League Specific Sims #############################
-playoffs <- ivy.sim(50)
+# playoffs <- ivy.sim(50)
 # ivy_psf <- psf(2500, min_date = Sys.Date(), max_date = Sys.Date() + 6)
 # source('3.0_Files/ivy_graphics.R')
 playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
