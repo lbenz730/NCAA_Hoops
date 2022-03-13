@@ -203,7 +203,9 @@ conf_fast_sim <- function(conf, nsims, force = F) {
       filter(!is.na(conf_seed)) %>% 
       arrange(conf_seed) 
     
-    if(sum(!df_conf$eliminated) > 1) {
+    post_season <- read_csv(paste0('3.0_Files/Predictions/conf_sims_ncaa/', conf, '.csv'))
+    
+    if(sum(post_season$freq > 0) > 1) {
       
       
       
@@ -243,10 +245,7 @@ conf_fast_sim <- function(conf, nsims, force = F) {
       
       post_season$freq[post_season$team %in% confs$team[confs$eliminated | !confs$eligible]] <- 0
       post_season$freq <- post_season$freq/sum(post_season$freq)
-    } else {
-      post_season <- read_csv(paste0('3.0_Files/Predictions/conf_sims_ncaa/', conf, '.csv'))
-    }
-    
+    } 
   }
   
   
