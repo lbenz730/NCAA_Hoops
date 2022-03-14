@@ -252,13 +252,15 @@ make_table <- function(sim_results, table_region) {
   df <- 
     df %>% 
     mutate('expected_elim_round' = 
-             1 * (1 - first_round) + 
-             2 * (1 - second_round - first_round) +
-             3 * (1 - sweet_sixteen - second_round - first_round) + 
-             4 * (1 - elite_eight - sweet_sixteen - second_round - first_round) +
-             5 * (1 - final_four - elite_eight - sweet_sixteen - second_round - first_round) +
-             6 * (1 -  championship_game - final_four - elite_eight - sweet_sixteen - second_round - first_round)) %>% 
-    arrange(expected_elim_round) %>% 
+             0 * (1 - first_round) +
+             -1 * (second_round - first_round) +
+             -2 * (sweet_sixteen - second_round) +
+             -3 * (elite_eight - sweet_sixteen) +
+             -4 * (final_four - elite_eight) +
+             -5 * (championship_game - final_four) + 
+             -6 * (champ - championship_game) + 
+             7 * champ) %>% 
+    arrange(-expected_elim_round, -rating) %>% 
     select(-expected_elim_round)
   
   df %>% 
@@ -355,10 +357,10 @@ make_table <- function(sim_results, table_region) {
       champ = 'Champion'
     ) %>% 
     tab_source_note("Based on 10,000 Simulations of NCAA Tournament") %>%
-    # tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
+    tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>%
     tab_header(
-      title = md("**2021 NCAA Men's Basketball Tournament Odds**"),
-      # subtitle = md(paste0('**', table_region, " Region**"))
+      title = md("**2022 NCAA Men's Basketball Tournament Odds**"),
+      subtitle = md(ifelse(table_region == 'all', '', paste0('**', table_region, " Region**")))
     ) %>% 
     tab_options(column_labels.font.size = 20,
                 heading.title.font.size = 40,
@@ -367,9 +369,6 @@ make_table <- function(sim_results, table_region) {
                 heading.subtitle.font.weight = 'bold'
     )
 }
-
-ncaa_gt <- make_table(ncaa_sims, 'all')
-
 
 ### Ivy League
 ivy_history <- read_csv('3.0_Files/Predictions/playoff_history.csv')

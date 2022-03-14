@@ -94,8 +94,8 @@ shinyServer(function(input, output, session) {
              'Auto-Bid' = auto_bid,
              'At-Large' = at_large,
              'NCAA Odds' = overall)
-             
-  
+    
+    
   })
   
   output$conf_standings <- DT::renderDataTable({
@@ -123,7 +123,7 @@ shinyServer(function(input, output, session) {
     
   })
   
-  #### Universe Plote
+  #### Universe Plots
   universe_plot <- eventReactive(input$conf, {
     df <- rankings_clean %>%
       inner_join(select(ncaahoopR::ncaa_colors, -conference),
@@ -304,7 +304,7 @@ shinyServer(function(input, output, session) {
                                      '<br>Defense:',
                                      sprintf('%0.1f', rankings$`Def. Rating`[rankings$Team == input$team]),
                                      paste0('(', rankings$`Def. Rank`[rankings$Team == input$team], ')')
-                                     ))
+  ))
   
   output$record_breakdown <- renderText(
     paste('<b>Record Breakdown</b>',
@@ -313,17 +313,17 @@ shinyServer(function(input, output, session) {
           paste0('<br>Tier III: ', records_actual$n_win_c[records_actual$team == input$team], '-', records_actual$n_loss_c[records_actual$team == input$team]),
           paste0('<br>Tier IV: ', records_actual$n_win_d[records_actual$team == input$team], '-', records_actual$n_loss_d[records_actual$team == input$team]),
           paste0('<br>Non-D1: ', max(0, non_d1$n_win[non_d1$team == input$team], na.rm = T), '-', max(0, non_d1$n_loss[non_d1$team == input$team], na.rm = T))
-                                              
-    
-  ))
+          
+          
+    ))
   
   output$ncaa_odds <- renderText(
     paste('<b>NCAA Tournament Odds</b>',
-    paste0('<br>Auto Bid: ', sprintf('%0.1f', 100*bracket_odds$auto_bid[bracket_odds$team == input$team]), '%'),
-    paste0('<br>At-Large Bid: ', sprintf('%0.1f', 100*bracket_odds$at_large[bracket_odds$team == input$team]), '%'),
-    paste0('<br>Overall: ', sprintf('%0.1f', 100*bracket_odds$overall[bracket_odds$team == input$team]), '%')
-    
-  ))
+          paste0('<br>Auto Bid: ', sprintf('%0.1f', 100*bracket_odds$auto_bid[bracket_odds$team == input$team]), '%'),
+          paste0('<br>At-Large Bid: ', sprintf('%0.1f', 100*bracket_odds$at_large[bracket_odds$team == input$team]), '%'),
+          paste0('<br>Overall: ', sprintf('%0.1f', 100*bracket_odds$overall[bracket_odds$team == input$team]), '%')
+          
+    ))
   
   rhp <- eventReactive(input$team, {
     M <- filter(history, team == input$team) %>%
@@ -435,8 +435,8 @@ shinyServer(function(input, output, session) {
                  opp_rank >= 241 & location == "V" ~ 'IV',
                  
                  T ~ 'Non-D1')
-                 
-               )
+             
+      )
     df <- select(df, date, opponent, tier, result, everything())
     names(df) <- c("Date", "Opponent", "Tier", "Result", "Opp. Rank", "Location", "Team Score", "Opponent Score", "Pred. Team Score",
                    "Pred. Opp. Score", "Win Probability")
@@ -474,12 +474,12 @@ shinyServer(function(input, output, session) {
       bracket %>% 
       inner_join(select(bracket_odds, team, auto_bid, overall)) %>% 
       select(seed_line, seed_overall, everything(), -blend, -avg)
-  
+    
     df$odds <- 1/100 * df$odds
     names(df)[c(1:13, ncol(df) + c(-1, 0))] <- c("Seed Line", "Seed Overall", "Team", "Conference", 
-                         "Net Rating", "Strength of Record", "Wins Above Bubble",
-                         "Resume", "Rating Rank", "SOR Rank", "WAB Rank",
-                         "Resume Rank", "At-Large Odds", "Auto-Bid Odds", "Overall Odds")
+                                                 "Net Rating", "Strength of Record", "Wins Above Bubble",
+                                                 "Resume", "Rating Rank", "SOR Rank", "WAB Rank",
+                                                 "Resume Rank", "At-Large Odds", "Auto-Bid Odds", "Overall Odds")
     
     
     datatable(df,
@@ -568,7 +568,10 @@ shinyServer(function(input, output, session) {
   })
   
   ### NCAA Simulations
-  output$ncaa_sims <- render_gt(ncaa_gt)
+  ncaa_gt <- eventReactive(input$region, {
+    make_table(ncaa_sims, input$region)
+  })
+  output$ncaa_sims <- render_gt(ncaa_gt())
   
   
   ### Ivy
@@ -592,7 +595,7 @@ shinyServer(function(input, output, session) {
       filter(!eliminated) %>% 
       arrange(desc(champ), desc(finals)) %>% 
       select(team, logo_url, seed, yusag_coeff, finals, champ)
-  
+    
     table <- 
       gt(df) %>% 
       cols_label('team' = '', 
@@ -679,7 +682,7 @@ shinyServer(function(input, output, session) {
       tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>%
       tab_header(
         title = md(paste("**2022", input$tconf, "Men's Basketball Tournament Odds**")),
-        # subtitle = md(paste0('**', table_region, " Region**"))
+        # subtitle = md(ifelse(region == 'all', '', paste0('**', table_region, " Region**")))
       ) %>% 
       tab_options(column_labels.font.size = 16,
                   heading.title.font.size = 30,

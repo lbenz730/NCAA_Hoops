@@ -203,9 +203,10 @@ conf_fast_sim <- function(conf, nsims, force = F) {
       filter(!is.na(conf_seed)) %>% 
       arrange(conf_seed) 
     
-    post_season <- read_csv(paste0('3.0_Files/Predictions/conf_sims_ncaa/', conf, '.csv'))
+    post_season <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/', conf, '.csv'))
+    ct_sims <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/', conf, '.csv'))
     
-    if(sum(post_season$freq > 0) > 1) {
+    if(sum(ct_sims$champ > 0) > 1) {
       
       
       

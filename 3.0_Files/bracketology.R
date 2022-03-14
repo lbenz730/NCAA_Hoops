@@ -103,10 +103,11 @@ make_bracket <- function(tourney) {
   bracket <- 
     bracket %>% 
     mutate('delta' = odds - bm_odds * pct_brackets) %>% 
-    mutate('bm_weight' = case_when(abs(delta) < 10  ~ 1/2,
+    mutate('bm_weight' = case_when(seed_avg <= 3 ~ 3/4,
+                                   abs(delta) < 10  ~ 1/2,
                                    T ~ 1)) %>% 
     mutate('odds' = case_when(
-      team %in% c('Texas A&M', 'Indiana') ~ odds,
+      team %in% c('Texas A&M', 'Indiana') ~ odds * 0.8,
       is.na(seed_avg) & odds > 0.3 ~ odds/2,
       is.na(seed_avg) ~ odds,
       T ~ (1 - bm_weight) * odds * pct_brackets +  bm_weight * pct_brackets * bm_odds

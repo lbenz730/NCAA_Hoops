@@ -207,6 +207,15 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                                        br(),
                                                        br(),
                                                        
+                                                       tags$b('FINAL 2022 Submission Contingencies'),
+                                                       tags$ul(
+                                                         tags$li(tags$b("Richmond over Davidson:"), "Richmond replaces SMU as 12 Seed"),
+                                                         tags$li(tags$b("Yale Over Princeton"), "Yale replaces Princeton as 14 Seed"),
+                                                       ),
+                                                       
+                                                       br(),
+                                                       br(),
+                                                       
                                                        "All metrics are projected end of season values/ranks.",
                                                        
                                                        br(),
@@ -249,28 +258,42 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                             choices = c(""), 
                                             selected = NULL
                                             
-                                
+                                            
+                                )
+                              ),
+                              
+                              
+                              
+                              mainPanel(
+                                gt_output('ct_sims')
                               )
-                            ),
-                            
-                            
-                            
-                            mainPanel(
-                              gt_output('ct_sims')
-                            )
-                   )),
+                            )),
                    
                    ### NCAA Tournament Odds
                    tabPanel("NCAA Tournament Odds",
                             value = 'ncaa',
                             
-                            
-                            
-                            mainPanel(
-                              gt_output('ncaa_sims')
-                            )
-                            
-                   ),
+                            sidebarLayout(
+                              sidebarPanel(
+                                
+                                selectInput("region", 
+                                            label = "Select Region",
+                                            choices = c("All" = "all", 
+                                                        "East" = "East", 
+                                                        "West" = "West",
+                                                        'Midwest' = 'Midwest',
+                                                        'South' = 'South'), 
+                                            selected = "All")
+                                
+                                
+                                
+                              ),
+                              
+                              mainPanel(
+                                gt_output('ncaa_sims')
+                              )
+                              
+                            )),
                    
                    
                    

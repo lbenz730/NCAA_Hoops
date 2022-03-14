@@ -1,6 +1,6 @@
 "team","conference","eligible","eliminated","mid_major","ncaa_id","conf_seed"
 "A&M-Corpus Christi","Southland",TRUE,FALSE,TRUE,527481,4
-"Abilene Christian","WAC",TRUE,FALSE,TRUE,527486,6
+"Abilene Christian","WAC",TRUE,TRUE,TRUE,527486,6
 "Air Force","MWC",TRUE,TRUE,TRUE,527430,10
 "Akron","MAC",TRUE,FALSE,TRUE,527487,4
 "Alabama","SEC",TRUE,TRUE,FALSE,527490,6
@@ -63,7 +63,7 @@
 "CSU Bakersfield","Big West",TRUE,TRUE,TRUE,527520,9
 "CSUN","Big West",TRUE,TRUE,TRUE,527524,8
 "Dartmouth","Ivy",TRUE,FALSE,TRUE,527551,NA
-"Davidson","A-10",TRUE,FALSE,TRUE,527552,1
+"Davidson","A-10",TRUE,TRUE,TRUE,527552,1
 "Dayton","A-10",TRUE,TRUE,TRUE,527553,2
 "Delaware","CAA",TRUE,FALSE,TRUE,527556,5
 "Delaware St.","MEAC",TRUE,TRUE,TRUE,527555,8
@@ -145,10 +145,10 @@
 "Little Rock","Sunbelt",TRUE,TRUE,TRUE,527500,12
 "LIU","NEC",TRUE,TRUE,TRUE,527621,3
 "LMU (CA)","WCC",TRUE,TRUE,TRUE,527628,9
-"Long Beach St.","Big West",TRUE,FALSE,TRUE,527523,1
+"Long Beach St.","Big West",TRUE,TRUE,TRUE,527523,1
 "Longwood","Big South",TRUE,FALSE,TRUE,527622,1
 "Louisiana","Sunbelt",TRUE,TRUE,TRUE,527405,8
-"Louisiana Tech","C-USA",TRUE,FALSE,TRUE,527624,5
+"Louisiana Tech","C-USA",TRUE,TRUE,TRUE,527624,5
 "Louisville","ACC",TRUE,TRUE,FALSE,527625,11
 "Loyola Chicago","MVC",TRUE,FALSE,TRUE,527629,4
 "Loyola Maryland","Patriot",TRUE,TRUE,TRUE,527627,6
@@ -161,7 +161,7 @@
 "Maryland","Big 10",TRUE,TRUE,FALSE,527636,10
 "Massachusetts","A-10",TRUE,TRUE,TRUE,527638,10
 "McNeese","Southland",TRUE,TRUE,TRUE,527639,7
-"Memphis","AAC",TRUE,FALSE,FALSE,527640,3
+"Memphis","AAC",TRUE,TRUE,FALSE,527640,3
 "Mercer","Southern",TRUE,TRUE,TRUE,527641,7
 "Merrimack","NEC",FALSE,TRUE,TRUE,527737,NA
 "Miami (FL)","ACC",TRUE,TRUE,FALSE,527643,4
@@ -230,9 +230,9 @@
 "Portland St.","Big Sky",TRUE,TRUE,TRUE,527707,7
 "Prairie View","SWAC",TRUE,TRUE,TRUE,527709,8
 "Presbyterian","Big South",TRUE,TRUE,TRUE,527470,11
-"Princeton","Ivy",TRUE,FALSE,TRUE,527710,1
+"Princeton","Ivy",TRUE,TRUE,TRUE,527710,1
 "Providence","Big East",TRUE,TRUE,FALSE,527711,1
-"Purdue","Big 10",TRUE,FALSE,FALSE,527712,3
+"Purdue","Big 10",TRUE,TRUE,FALSE,527712,3
 "Purdue Fort Wayne","Horizon",TRUE,TRUE,TRUE,527604,2
 "Quinnipiac","MAAC",TRUE,TRUE,TRUE,527713,11
 "Radford","Big South",TRUE,TRUE,TRUE,527714,8
@@ -269,7 +269,7 @@
 "South Dakota St.","Summit",TRUE,FALSE,TRUE,527391,1
 "South Fla.","AAC",TRUE,TRUE,FALSE,527393,11
 "Southeast Mo. St.","OVC",TRUE,TRUE,TRUE,527394,4
-"Southeastern La.","Southland",TRUE,FALSE,TRUE,527395,2
+"Southeastern La.","Southland",TRUE,TRUE,TRUE,527395,2
 "Southern California","Pac 12",TRUE,TRUE,FALSE,527396,3
 "Southern Ill.","MVC",TRUE,TRUE,TRUE,527397,6
 "Southern Miss.","C-USA",TRUE,TRUE,TRUE,527400,14
@@ -290,7 +290,7 @@
 "Tennessee St.","OVC",TRUE,TRUE,TRUE,527412,5
 "Tennessee Tech","OVC",TRUE,TRUE,TRUE,527413,7
 "Texas","Big 12",TRUE,TRUE,FALSE,527422,4
-"Texas A&M","SEC",TRUE,FALSE,FALSE,527417,8
+"Texas A&M","SEC",TRUE,TRUE,FALSE,527417,8
 "Texas Southern","SWAC",TRUE,FALSE,TRUE,527419,3
 "Texas St.","Sunbelt",TRUE,TRUE,TRUE,527404,1
 "Texas Tech","Big 12",TRUE,TRUE,FALSE,527420,3
@@ -307,7 +307,7 @@
 "UC San Diego","Big West",FALSE,TRUE,TRUE,527739,NA
 "UC Santa Barbara","Big West",TRUE,TRUE,TRUE,527526,5
 "UCF","AAC",TRUE,TRUE,FALSE,527535,6
-"UCLA","Pac 12",TRUE,FALSE,FALSE,527530,2
+"UCLA","Pac 12",TRUE,TRUE,FALSE,527530,2
 "UConn","Big East",TRUE,TRUE,FALSE,527547,3
 "UIC","Horizon",TRUE,TRUE,TRUE,527601,8
 "UIW","Southland",TRUE,TRUE,TRUE,527476,8
