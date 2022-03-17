@@ -8,7 +8,7 @@ New Mexico St.,West,12,FALSE,NA
 Arkansas,West,4,FALSE,NA
 Vermont,West,13,FALSE,NA
 Alabama,West,6,FALSE,NA
-Rutgers,West,11,TRUE,NA
+Rutgers,West,11,TRUE,0
 Notre Dame,West,11,TRUE,NA
 Texas Tech,West,3,FALSE,NA
 Montana St.,West,14,FALSE,NA
@@ -22,7 +22,7 @@ North Carolina,East,8,FALSE,NA
 Marquette,East,9,FALSE,NA
 Saint Mary's (CA),East,5,FALSE,NA
 Indiana,East,12,TRUE,NA
-Wyoming,East,12,TRUE,NA
+Wyoming,East,12,TRUE,0
 UCLA,East,4,FALSE,NA
 Akron,East,13,FALSE,NA
 Texas,East,6,FALSE,NA
@@ -35,7 +35,7 @@ Kentucky,East,2,FALSE,NA
 Saint Peter's,East,15,FALSE,NA
 Arizona,South,1,FALSE,NA
 Wright St.,South,16,TRUE,NA
-Bryant,South,16,TRUE,NA
+Bryant,South,16,TRUE,0
 Seton Hall,South,8,FALSE,NA
 TCU,South,9,FALSE,NA
 Houston,South,5,FALSE,NA
@@ -52,7 +52,7 @@ Villanova,South,2,FALSE,NA
 Delaware,South,15,FALSE,NA
 Kansas,Midwest,1,FALSE,NA
 Texas Southern,Midwest,16,TRUE,NA
-A&M-Corpus Christi,Midwest,16,TRUE,NA
+A&M-Corpus Christi,Midwest,16,TRUE,0
 San Diego St.,Midwest,8,FALSE,NA
 Creighton,Midwest,9,FALSE,NA
 Iowa,Midwest,5,FALSE,NA

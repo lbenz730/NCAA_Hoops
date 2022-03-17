@@ -12,26 +12,25 @@ make_table <- function(sim_results, table_region, message = '') {
     inner_join(sim_results) 
   
   # df <- df[df[[round]] != 0,]
+  
+  df <- 
+    df %>% 
+    mutate('expected_elim_round' = 
+             0 * (1 - first_round) +
+             -1 * (second_round - first_round) +
+             -2 * (sweet_sixteen - second_round) +
+             -3 * (elite_eight - sweet_sixteen) +
+             -4 * (final_four - elite_eight) +
+             -5 * (championship_game - final_four) + 
+             -6 * (champ - championship_game) + 
+             7 * champ) %>% 
+    arrange(-expected_elim_round, -rating) %>% 
+    select(-expected_elim_round)
+  
     
   if(table_region != 'all') {
     df <- filter(df, region == table_region)
-    df <- 
-      df %>% 
-      mutate('expected_elim_round' = 
-               0 * (1 - first_round) +
-               -1 * (second_round - first_round) +
-               -2 * (sweet_sixteen - second_round) +
-               -3 * (elite_eight - sweet_sixteen) +
-               -4 * (final_four - elite_eight) +
-               -5 * (championship_game - final_four) + 
-               -6 * (champ - championship_game) + 
-               7 * champ) %>% 
-      arrange(-expected_elim_round, -rating) %>% 
-      select(-expected_elim_round)
-    
-  }
-  else {
-   df <- arrange(df, -champ)
+   
   }
   
 
