@@ -4,7 +4,10 @@ library(ncaahoopR)
 library(tidyverse)
 library(here)
 
+
+
 sim_results <- read_csv(here('3.0_Files/ncaa_sims/ncaa_sims.csv'))
+seed_list <-  read_csv(here('3.0_Files/ncaa_sims/seed_list.csv'))
 make_table <- function(sim_results, table_region, message = '') {
   
   df <- 
@@ -12,6 +15,10 @@ make_table <- function(sim_results, table_region, message = '') {
     inner_join(sim_results) 
   
   # df <- df[df[[round]] != 0,]
+  elim <- 
+    seed_list %>% 
+    filter(!is.na(elim_round)) %>% 
+    pull(team)
   
   df <- 
     df %>% 
@@ -27,15 +34,17 @@ make_table <- function(sim_results, table_region, message = '') {
     arrange(-expected_elim_round, -rating) %>% 
     select(-expected_elim_round)
   
-    
+  
   if(table_region != 'all') {
     df <- filter(df, region == table_region)
-   
+    
   }
   
-
+  
   
   df %>% 
+    filter(!team %in% elim) %>% 
+    select(-first_round) %>% 
     gt() %>% 
     
     ### Ratings 
@@ -53,10 +62,10 @@ make_table <- function(sim_results, table_region, message = '') {
     
     ### Tournament Odds 
     data_color(
-      columns = c(first_round, second_round,
-                     sweet_sixteen, elite_eight,
-                     final_four, championship_game,
-                     champ),
+      columns = any_of(c('first_round', 'second_round',
+                         'sweet_sixteen', 'elite_eight',
+                         'final_four', 'championship_game',
+                         'champ')),
       colors = scales::col_numeric(
         palette = ggsci::rgb_material('amber', n = 68),
         domain = c(0,1),
@@ -64,10 +73,10 @@ make_table <- function(sim_results, table_region, message = '') {
     ) %>% 
     
     fmt_percent(
-      columns = c(first_round, second_round,
-                     sweet_sixteen, elite_eight,
-                     final_four, championship_game,
-                     champ),
+      columns = any_of(c('first_round', 'second_round',
+                         'sweet_sixteen', 'elite_eight',
+                         'final_four', 'championship_game',
+                         'champ')),
       decimals = 1) %>% 
     
     ### Align Columns
@@ -120,7 +129,7 @@ make_table <- function(sim_results, table_region, message = '') {
       region = 'Region',
       seed = 'Seed',
       rating = 'Rating',
-      first_round = '1st Round',
+      # first_round = '1st Round',
       second_round = '2nd Round',
       sweet_sixteen = 'Sweet 16',
       elite_eight = 'Elite 8',
@@ -133,14 +142,14 @@ make_table <- function(sim_results, table_region, message = '') {
     tab_header(
       title = md("**2022 NCAA Men's Basketball Tournament Odds**"),
       subtitle = md(paste0('**', ifelse(table_region != 'all', paste0(table_region, " Region**"), paste0(message, '**'))))
-     # title = html(web_image("https://upload.wikimedia.org/wikipedia/en/0/04/2021_NCAA_Men%27s_Final_Four_logo.svg", 170))
+      # title = html(web_image("https://upload.wikimedia.org/wikipedia/en/0/04/2021_NCAA_Men%27s_Final_Four_logo.svg", 170))
     ) %>% 
     tab_options(column_labels.font.size = 20,
                 heading.title.font.size = 40,
                 heading.subtitle.font.size = 30,
                 heading.title.font.weight = 'bold',
                 heading.subtitle.font.weight = 'bold'
-                )
+    )
 }
 
 east <- make_table(sim_results, 'East')
