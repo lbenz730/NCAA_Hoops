@@ -2,9 +2,9 @@ team,region,seed,first_four,elim_round
 Gonzaga,West,1,FALSE,NA
 Georgia St.,West,16,FALSE,1
 Boise St.,West,8,FALSE,1
-Memphis,West,9,FALSE,NA
+Memphis,West,9,FALSE,2
 UConn,West,5,FALSE,1
-New Mexico St.,West,12,FALSE,NA
+New Mexico St.,West,12,FALSE,2
 Arkansas,West,4,FALSE,NA
 Vermont,West,13,FALSE,1
 Alabama,West,6,FALSE,1
@@ -16,11 +16,11 @@ Michigan St.,West,7,FALSE,NA
 Davidson,West,10,FALSE,1
 Duke,West,2,FALSE,NA
 Cal St. Fullerton,West,15,FALSE,1
-Baylor,East,1,FALSE,NA
+Baylor,East,1,FALSE,2
 Norfolk St.,East,16,FALSE,1
 North Carolina,East,8,FALSE,NA
 Marquette,East,9,FALSE,1
-Saint Mary's (CA),East,5,FALSE,NA
+Saint Mary's (CA),East,5,FALSE,2
 Indiana,East,12,TRUE,1
 Wyoming,East,12,TRUE,0
 UCLA,East,4,FALSE,NA
@@ -29,7 +29,7 @@ Texas,East,6,FALSE,NA
 Virginia Tech,East,11,FALSE,1
 Purdue,East,3,FALSE,NA
 Yale,East,14,FALSE,1
-Murray St.,East,7,FALSE,NA
+Murray St.,East,7,FALSE,2
 San Francisco,East,10,FALSE,1
 Kentucky,East,2,FALSE,1
 Saint Peter's,East,15,FALSE,NA
@@ -44,7 +44,7 @@ Illinois,South,4,FALSE,NA
 Chattanooga,South,13,FALSE,1
 Colorado St.,South,6,FALSE,1
 Michigan,South,11,FALSE,NA
-Tennessee,South,3,FALSE,NA
+Tennessee,South,3,FALSE,2
 Longwood,South,14,FALSE,1
 Ohio St.,South,7,FALSE,NA
 Loyola Chicago,South,10,FALSE,1
@@ -54,9 +54,9 @@ Kansas,Midwest,1,FALSE,NA
 Texas Southern,Midwest,16,TRUE,1
 A&M-Corpus Christi,Midwest,16,TRUE,0
 San Diego St.,Midwest,8,FALSE,1
-Creighton,Midwest,9,FALSE,NA
+Creighton,Midwest,9,FALSE,2
 Iowa,Midwest,5,FALSE,1
-Richmond,Midwest,12,FALSE,NA
+Richmond,Midwest,12,FALSE,2
 Providence,Midwest,4,FALSE,NA
 South Dakota St.,Midwest,13,FALSE,1
 LSU,Midwest,6,FALSE,1
