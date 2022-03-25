@@ -43,9 +43,11 @@ make_table <- function(sim_results, table_region, message = '') {
   
   
   df %>% 
+    arrange(-champ) %>% 
     filter(!team %in% elim) %>% 
     select(-first_round) %>% 
     select(-second_round) %>% 
+    select(-sweet_sixteen) %>% 
     gt() %>% 
     
     ### Ratings 
@@ -132,7 +134,7 @@ make_table <- function(sim_results, table_region, message = '') {
       rating = 'Rating',
       # first_round = '1st Round',
       # second_round = '2nd Round',
-      sweet_sixteen = 'Sweet 16',
+      # sweet_sixteen = 'Sweet 16',
       elite_eight = 'Elite 8',
       final_four = 'Final 4',
       championship_game = 'NCG',
