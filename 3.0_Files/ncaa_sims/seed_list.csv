@@ -5,7 +5,7 @@ Boise St.,West,8,FALSE,1
 Memphis,West,9,FALSE,2
 UConn,West,5,FALSE,1
 New Mexico St.,West,12,FALSE,2
-Arkansas,West,4,FALSE,NA
+Arkansas,West,4,FALSE,4
 Vermont,West,13,FALSE,1
 Alabama,West,6,FALSE,1
 Rutgers,West,11,TRUE,0
@@ -23,11 +23,11 @@ Marquette,East,9,FALSE,1
 Saint Mary's (CA),East,5,FALSE,2
 Indiana,East,12,TRUE,1
 Wyoming,East,12,TRUE,0
-UCLA,East,4,FALSE,NA
+UCLA,East,4,FALSE,3
 Akron,East,13,FALSE,1
 Texas,East,6,FALSE,2
 Virginia Tech,East,11,FALSE,1
-Purdue,East,3,FALSE,NA
+Purdue,East,3,FALSE,3
 Yale,East,14,FALSE,1
 Murray St.,East,7,FALSE,2
 San Francisco,East,10,FALSE,1
@@ -38,7 +38,7 @@ Wright St.,South,16,TRUE,1
 Bryant,South,16,TRUE,0
 Seton Hall,South,8,FALSE,1
 TCU,South,9,FALSE,2
-Houston,South,5,FALSE,NA
+Houston,South,5,FALSE,4
 UAB,South,12,FALSE,1
 Illinois,South,4,FALSE,2
 Chattanooga,South,13,FALSE,1
@@ -57,10 +57,10 @@ San Diego St.,Midwest,8,FALSE,1
 Creighton,Midwest,9,FALSE,2
 Iowa,Midwest,5,FALSE,1
 Richmond,Midwest,12,FALSE,2
-Providence,Midwest,4,FALSE,NA
+Providence,Midwest,4,FALSE,3
 South Dakota St.,Midwest,13,FALSE,1
 LSU,Midwest,6,FALSE,1
-Iowa St.,Midwest,11,FALSE,NA
+Iowa St.,Midwest,11,FALSE,3
 Wisconsin,Midwest,3,FALSE,2
 Colgate,Midwest,14,FALSE,1
 Southern California,Midwest,7,FALSE,1
