@@ -50,9 +50,6 @@ make_bracket <- function(tourney) {
   bracket <- arrange(bracket, desc(yusag_coeff))
   
   autobid_calc <- function(conf) {
-    if(conf == 'A-Sun') {
-      return('Jacksonville St.')  
-    }
     tmp <- bracket$team[bracket$conf == conf]
     for(i in 1:length(tmp)) {
       if(confs$eligible[confs$team == tmp[i]] & !confs$eliminated[confs$team == tmp[i]]) {
@@ -91,34 +88,36 @@ make_bracket <- function(tourney) {
     predict(lm.seed, newdata = bracket, type = "response")
   
   ### Regression Towards Bracket Matrix 
-  df_bm <- bracket_matix()
-  bracket <- left_join(bracket, df_bm, 'team')
+  # df_bm <- bracket_matix()
+  # bracket <- left_join(bracket, df_bm, 'team')
   # converter <- mgcv::gam(odds ~ s(seed_line), data = bracket)
   # write_rds(converter, '3.0_Files/Bracketology/bm_converter.rds')
-  converter <- read_rds('3.0_Files/Bracketology/bm_converter.rds')
-  bracket$bm_odds <- as.vector(predict(converter, newdata = tibble('seed_line' = bracket$seed_avg)))
-  bracket$bm_odds <- case_when(bracket$bm_odds > 100 ~ 100,
-                               bracket$bm_odds < 0 ~ 0,
-                               T ~ bracket$bm_odds)
-  bracket <- 
-    bracket %>% 
-    mutate('delta' = odds - bm_odds * pct_brackets) %>% 
-    mutate('bm_weight' = case_when(seed_avg <= 3 ~ 3/4,
-                                   abs(delta) < 10  ~ 1/2,
-                                   T ~ 1)) %>% 
-    mutate('odds' = case_when(
-      team %in% c('Texas A&M', 'Indiana') ~ odds * 0.8,
-      is.na(seed_avg) & odds > 0.3 ~ odds/2,
-      is.na(seed_avg) ~ odds,
-      T ~ (1 - bm_weight) * odds * pct_brackets +  bm_weight * pct_brackets * bm_odds
-    ))
+  # converter <- read_rds('3.0_Files/Bracketology/bm_converter.rds')
+  # bracket$bm_odds <- as.vector(predict(converter, newdata = tibble('seed_line' = bracket$seed_avg)))
+  # bracket$bm_odds <- case_when(bracket$bm_odds > 100 ~ 100,
+  #                              bracket$bm_odds < 0 ~ 0,
+  #                              T ~ bracket$bm_odds)
+  # bracket <- 
+  #   bracket %>% 
+  #   mutate('delta' = odds - bm_odds * pct_brackets) %>% 
+  #   mutate('bm_weight' = case_when(seed_avg <= 3 ~ 3/4,
+  #                                  abs(delta) < 10  ~ 1/2,
+  #                                  T ~ 1)) %>% 
+  #   mutate('odds' = case_when(
+  #     team %in% c('Texas A&M', 'Indiana') ~ odds * 0.8,
+  #     is.na(seed_avg) & odds > 0.3 ~ odds/2,
+  #     is.na(seed_avg) ~ odds,
+  #     T ~ (1 - bm_weight) * odds * pct_brackets +  bm_weight * pct_brackets * bm_odds
+  #   ))
   bracket$odds <- ifelse(bracket$odds > 99.9, 99.99, bracket$odds)
-  bracket <- arrange(bracket, desc(round(odds, 1)), seed_avg)
+  bracket <- arrange(bracket, desc(round(odds, 1)), 
+                     # seed_avg
+                     )
   
   if(tourney == T) {
     ### Get Autobids
     autobids <- vector()
-    con <- unique(confs$conference)
+    con <- setdiff(unique(confs$conference), 'Independent')
     for(j in 1:length(con)){
       
       autobids[j] <- autobid_calc(con[j])
@@ -144,9 +143,12 @@ make_bracket <- function(tourney) {
     ### Write Bracket    
     bracket$atlarge <- is.element(bracket$team, atlarge)
     bracket <- rbind(bracket[bracket$autobid,], bracket[bracket$atlarge,])
-    bracket <- arrange(bracket, desc(round(odds, 1)), seed_avg)
+    bracket <- arrange(bracket, desc(round(odds, 1)), 
+                       # seed_avg)
+    )
     bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus, -seed,
-                      -seed_avg, -bm_odds, -pct_brackets, -n_brackets,  -bm_weight, -delta)
+                      -any_of(c('seed_avg', 'bm_odds', 'pct_brackets', 'n_brackets',  
+                              'bm_weight', 'delta')))
     bracket$seed_overall <- 1:68
     bracket$seed_line <- c(rep(1,4), rep(2,4), rep(3,4), rep(4,4), rep(5,4),
                            rep(6,4), rep(7,4), rep(8,4), rep(9,4), rep(10,4),
@@ -177,7 +179,8 @@ make_bracket <- function(tourney) {
     bubble <- tmp[is.element(tmp$team, bubble),]
     bubble <- 
       bubble %>% 
-      select(-seed_avg, -bm_odds, -pct_brackets, -n_brackets, -bm_weight, -delta)
+      select(-any_of(c('seed_avg', 'bm_odds', 'pct_brackets', 'n_brackets',  
+                       'bm_weight', 'delta')))
     
     write.csv(bubble, "3.0_Files/Bracketology/bubble.csv", row.names = F)
     

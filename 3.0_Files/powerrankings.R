@@ -32,6 +32,9 @@ pr_compute <- function(by_conf) {
     day <- today$mday
     today <- as.Date(paste(year, month, day, sep = "-"))
     history <- filter(history, as.Date(date) != today)
+    if(nrow(history) == 0) {
+      history <- NULL 
+    }
     history <- bind_rows(history, mutate(power_rankings, date = Sys.Date()))
     write.csv(history, "3.0_Files/History/history.csv", row.names = F)
     return(power_rankings)

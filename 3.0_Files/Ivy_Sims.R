@@ -7,14 +7,14 @@ palestra.sim <- function(teams) {
   tmp$location <- "N"
   
   ### Find Penn in Tournament
-  if(teams[1] == "Harvard") {
+  if(teams[1] == "Princeton") {
     tmp$location[1] <- "H"
-  }else if(teams[4] == "Harvard") {
+  }else if(teams[4] == "Princeton") {
     tmp$location[1] <- "V"
   }
-  if(teams[2] == "Harvard") {
+  if(teams[2] == "Princeton") {
     tmp$location[2] <- "H"
-  }else if(teams[3] == "Harvard") {
+  }else if(teams[3] == "Princeton") {
     tmp$location[2] <- "V"
   }
   
@@ -26,9 +26,9 @@ palestra.sim <- function(teams) {
   tmp[3, c("team", "opponent")] <- ifelse(rands <= tmp$winprob[1:2], tmp$team, tmp$opponent)
   
   ### Finals
-  if(tmp$team[3] == "Harvard") {
+  if(tmp$team[3] == "Princeton") {
     tmp$location[3] <- "H"
-  }else if(tmp$opponent[3] == "Harvard") {
+  }else if(tmp$opponent[3] == "Princeton") {
     tmp$location[3] <- "V"
   }
   

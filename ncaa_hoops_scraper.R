@@ -143,13 +143,13 @@ for (i in 1:nrow(teamid)) {
 #     z$opponent[grep("@", z$opponent)][1] <- rows[[i]][1]
 #   }
 # }
-z <- 
+z <-
   z %>%
   mutate('opponent' = case_when(
-    opponent == 'App State' ~ 'Appalachian St.',
-    opponent == 'Nicholls' ~ "Nicholls St.",
-    opponent == 'Sam Houston' ~ "Sam Houston St.",
-    opponent == 'NIU' ~ 'Northern Ill.',
+    # opponent == 'App State' ~ 'Appalachian St.',
+    # opponent == 'Nicholls' ~ "Nicholls St.",
+    # opponent == 'Sam Houston' ~ "Sam Houston St.",
+    # opponent == 'NIU' ~ 'Northern Ill.',
     grepl('&;', opponent) ~ gsub('&;', "'", opponent),
     T ~ opponent))
 
@@ -158,6 +158,6 @@ z$opponent <- stripwhite(z$opponent)
 z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team
 
 ### Save Results
-write.csv(z, paste("3.0_Files/Results/2021-22/NCAA_Hoops_Results_", month, "_", 
+write.csv(z, paste("3.0_Files/Results/2022-23/NCAA_Hoops_Results_", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names = F)
 

@@ -97,7 +97,7 @@ conf_sim <- function(conf, nsims) {
 }
 
 #### Conference Sims
-conf_fast_sim <- function(conf, nsims, force = F) {
+conf_fast_sim <- function(conf, nsims, pct_postseason, force = F) {
   
   ### Sim Schedule
   if(conf == 'Ivy') {
@@ -167,7 +167,7 @@ conf_fast_sim <- function(conf, nsims, force = F) {
     dfs <- 
       results %>% 
       arrange(place_tourney) %>% 
-      filter(sim <= 1000) %>%
+      filter(sim <= nrow(.) * pct_postseason) %>%
       filter(place_tourney <= params$n_teams) %>% 
       group_split()
     
