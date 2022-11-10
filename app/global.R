@@ -111,7 +111,7 @@ non_d1_actual <- read_csv(paste0("3.0_Files/Results/2022-23/NCAA_Hoops_Results_"
   filter(!is.na(teamscore)) %>% 
   filter(!canceled, !postponed) %>% 
   group_by(team) %>%
-  summarise("n_win" = sum(teamscore > oppscore, na.rm = T) + sum(is.na(teamscore)),
+  summarise("n_win" = sum(teamscore > oppscore, na.rm = T) ,
             "n_loss" = sum(teamscore < oppscore, na.rm = T)) %>%
   mutate("conf_wins" = 0,
          "conf_losses" = 0) %>%

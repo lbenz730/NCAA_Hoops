@@ -312,7 +312,7 @@ shinyServer(function(input, output, session) {
           paste0('<br>Tier II: ', records_actual$n_win_b[records_actual$team == input$team], '-', records_actual$n_loss_b[records_actual$team == input$team]),
           paste0('<br>Tier III: ', records_actual$n_win_c[records_actual$team == input$team], '-', records_actual$n_loss_c[records_actual$team == input$team]),
           paste0('<br>Tier IV: ', records_actual$n_win_d[records_actual$team == input$team], '-', records_actual$n_loss_d[records_actual$team == input$team]),
-          paste0('<br>Non-D1: ', max(0, non_d1$n_win[non_d1$team == input$team], na.rm = T), '-', max(0, non_d1$n_loss[non_d1$team == input$team], na.rm = T))
+          paste0('<br>Non-D1: ', max(0, non_d1_actual$n_win[non_d1_actual$team == input$team], na.rm = T), '-', max(0, non_d1_actual$n_loss[non_d1_actual$team == input$team], na.rm = T))
           
           
     ))
