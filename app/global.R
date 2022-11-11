@@ -661,7 +661,7 @@ make_standings_plot <- function(conf) {
     
     
     sims$team <- as.factor(sims$team)
-    sims$team <- reorder(sims$team, rep(standings$rank, 10000))
+    sims$team <- reorder(sims$team, rep(standings$rank, n_distinct(sims$sim)))
     standings <- arrange(standings, avg_wins)
     
     p <- 

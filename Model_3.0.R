@@ -263,7 +263,7 @@ cat(paste("System Evaluation:", min_date, "Through", max_date),
     round(100 * mean(abs(y$pred_total_score - y$total_score) <= 2, na.rm = T), 2), "%\n",
     "Games w/in 5 Points of Observed Total Score: ",
     round(100 * mean(abs(y$pred_total_score - y$total_score) <= 5, na.rm = T), 2), "%\n",
-    sep = "")
+    sep = "") 
 nrow(filter(x, round(pred_team_score) == team_score))
 filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)
 
