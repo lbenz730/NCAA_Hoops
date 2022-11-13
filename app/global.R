@@ -450,7 +450,7 @@ ivy_gt <-
       )
     }
   ) %>% 
-  tab_source_note("2023 Tournament hosted by Harvard University") %>%
+  tab_source_note("2023 Tournament hosted by Princeton University") %>%
   tab_source_note("Based on 5,000 Simulations. Ties broken according to official Ivy League tiebreaking rules.") %>%
   
   # tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
@@ -618,7 +618,7 @@ ivy_psf <- read_rds('3.0_Files/Predictions/ivy_psf_full.rds')
 #   tab_source_note('@recspecs730') %>% 
 #   tab_source_note('Leverage = total swing in all teams\' playoff/auto-bid odds between the two possible outcomes.') %>% 
 #   tab_source_note('Difference = delta in playoff odds per team if Home wins (right) vs Away Wins (left)') %>% 
-#   tab_source_note("2022 Tournament hosted by Harvard University") %>%
+#   tab_source_note("2022 Tournament hosted by Princeton University") %>%
 #   tab_source_note("Based on 1,000 Simulations of each outcome. Ties broken according to official Ivy League tiebreaking rules.") %>% 
 #   tab_header(title = paste0(
 #     'Ivy League Playoff Leverage: ', 
