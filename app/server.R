@@ -177,7 +177,7 @@ shinyServer(function(input, output, session) {
   cs <- eventReactive(input$conf, {
     df <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", input$conf, ".csv")) %>%
       group_by(team, place) %>%
-      summarise("pct" = n()/10000) %>%
+      summarise("pct" = n()/n_distinct(df$sim)) %>%
       ungroup() %>%
       tidyr::spread(key = "place", value = "pct") %>%
       mutate_if(is.numeric, ~replace(., is.na(.), 0)) %>%
