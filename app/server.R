@@ -175,7 +175,9 @@ shinyServer(function(input, output, session) {
   output$conf_standings_plot <- renderPlot(standings_plot())
   
   cs <- eventReactive(input$conf, {
-    df <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", input$conf, ".csv")) %>%
+    df <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", input$conf, ".csv")) 
+    df <- 
+      df %>%
       group_by(team, place) %>%
       summarise("pct" = n()/n_distinct(df$sim)) %>%
       ungroup() %>%
