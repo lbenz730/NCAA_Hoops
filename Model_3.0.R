@@ -31,6 +31,7 @@ source("3.0_Files/conf_tourney_sims.R")
 params <- 
   list('conf_sims' = 1000,
        'ivy_sims' = 1000,
+       'psf_sims' = 1000,
        'pct_post' = 0.25)
 
 ########################  Data Cleaning ########################################
@@ -209,8 +210,8 @@ bracket_math <- make_bracket(tourney = F)
 
 ######################### Ivy League Specific Sims #############################
 playoffs <- ivy.sim(params$ivy_sims)
-# ivy_psf <- psf(2500, min_date = Sys.Date(), max_date = Sys.Date() + 6)
-# source('3.0_Files/ivy_graphics.R')
+ivy_psf <- psf(params$psf_sims, min_date = Sys.Date(), max_date = Sys.Date() + 6)
+source('3.0_Files/ivy_graphics.R')
 playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
 ############################# Conference Sims (No Tie-Breaks) ##################
 if(lubridate::hour(Sys.time())  <= 12) {
