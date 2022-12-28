@@ -76,8 +76,8 @@ x <-
 
 ### Reg Season
 x <- 
-  inner_join(x, deadlines, by = c("team_conf" = "conf")) %>%
-  mutate(reg_season = date <= deadline) %>%
+  left_join(x, deadlines, by = c("team_conf" = "conf")) %>%
+  mutate('reg_season' = date <= deadline) %>%
   select(-deadline)
 
 # ### Eliminate Teams from Auto Bid contention

@@ -376,15 +376,19 @@ ivy_playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
 
 ivy_gt <- 
   ivy_playoffs %>% 
-  arrange(desc(playoff_prob), desc(seed1_prob), desc(seed2_prob), desc(seed3_prob), desc(seed4_prob)) %>% 
+  
   mutate_if(is.numeric, ~.x/100) %>% 
   inner_join(select(ncaa_colors, 'team' = ncaa_name, logo_url)) %>% 
-  select(team, logo_url, everything()) %>% 
-  
+  inner_join(select(records_actual, team, conf_wins, conf_losses)) %>% 
+  mutate('record' = paste0(' (', conf_wins, '-', conf_losses, ')')) %>% 
+  select(-conf_wins, -conf_losses) %>% 
+  arrange(desc(playoff_prob), desc(seed1_prob), desc(seed2_prob), desc(seed3_prob), desc(seed4_prob)) %>% 
+  select(team, logo_url, record, everything()) %>% 
   
   gt() %>% 
   cols_label('team' = '', 
              'logo_url' = '',
+             'record' = '',
              'auto_bid' = 'Auto Bid',
              'playoff_prob' = 'Make Playoffs',
              'seed1_prob' = '1-Seed',
@@ -437,7 +441,7 @@ ivy_gt <-
     ),
     locations = list(
       cells_body(
-        columns = c(logo_url)
+        columns = c(record)
       )
     )
   ) %>% 
@@ -507,7 +511,6 @@ ivy_bar <-
 
 
 ivy_psf <- read_rds('3.0_Files/Predictions/ivy_psf_full.rds') 
-
 
 ivy_psf_gt <-
   ivy_psf %>%
