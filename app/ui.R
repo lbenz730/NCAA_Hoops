@@ -201,20 +201,20 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                                        br(),
                                                        br(),
                                                        
-                                                       "NOTE: As of 3/1/2022, some regression towards the BracketMatrix wisdom of crowds consensus is applied, using weights",
-                                                       "based on both the average seed in the matrix as well as the percentage of bracketologists putting a team in their bracket.",
-                                                       
-                                                       br(),
-                                                       br(),
-                                                       
-                                                       tags$b('FINAL 2022 Submission Contingencies'),
-                                                       tags$ul(
-                                                         tags$li(tags$b("Richmond over Davidson:"), "Richmond replaces SMU as 12 Seed"),
-                                                         tags$li(tags$b("Yale Over Princeton"), "Yale replaces Princeton as 14 Seed"),
-                                                       ),
-                                                       
-                                                       br(),
-                                                       br(),
+                                                       # "NOTE: As of 3/1/2022, some regression towards the BracketMatrix wisdom of crowds consensus is applied, using weights",
+                                                       # "based on both the average seed in the matrix as well as the percentage of bracketologists putting a team in their bracket.",
+                                                       # 
+                                                       # br(),
+                                                       # br(),
+                                                       # 
+                                                       # tags$b('FINAL 2022 Submission Contingencies'),
+                                                       # tags$ul(
+                                                       #   tags$li(tags$b("Richmond over Davidson:"), "Richmond replaces SMU as 12 Seed"),
+                                                       #   tags$li(tags$b("Yale Over Princeton"), "Yale replaces Princeton as 14 Seed"),
+                                                       # ),
+                                                       # 
+                                                       # br(),
+                                                       # br(),
                                                        
                                                        "All metrics are projected end of season values/ranks.",
                                                        
