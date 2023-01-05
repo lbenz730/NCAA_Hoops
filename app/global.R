@@ -707,7 +707,7 @@ ivy_snapsnot <-
   facet_grid(team~forcats::fct_reorder(condition_prime, condition)) + 
   geom_point(aes(col = team), size = 3) +
   geom_line(aes(col = team)) +
-  scale_x_continuous(breaks = 1:max(df_wins$n_wins)) +
+  scale_x_continuous(breaks = 0:max(df_wins$n_wins)) +
   scale_y_continuous(labels = scales::percent) + 
   scale_color_manual(values = cols) + 
   theme(legend.position = 'none',
