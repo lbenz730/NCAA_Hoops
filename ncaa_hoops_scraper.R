@@ -2,12 +2,6 @@
 ### Introductory Data Analysis (STAT 230), Spring 2016
 library(dplyr)
 
-# Get date materials
-today <- unclass(as.POSIXlt(Sys.time()))
-year <- 1900 + today$year
-month <- 1 + today$mon
-day <- today$mday
-
 # Stripwhite function 
 stripwhite <- function(x) gsub("\\s*$", "", gsub("^\\s*", "", x))
 
@@ -156,6 +150,13 @@ z <-
 z$opponent <- stripwhite(z$opponent)
 
 z$D1 <- z$team %in% teamid$team + z$opponent %in% teamid$team
+
+
+# Get date materials
+today <- unclass(as.POSIXlt(Sys.time()))
+year <- 1900 + today$year
+month <- 1 + today$mon
+day <- today$mday
 
 ### Save Results
 write.csv(z, paste("3.0_Files/Results/2022-23/NCAA_Hoops_Results_", month, "_", 
