@@ -480,8 +480,8 @@ shinyServer(function(input, output, session) {
     df$odds <- 1/100 * df$odds
     names(df)[c(1:13, ncol(df) + c(-1, 0))] <- c("Seed Line", "Seed Overall", "Team", "Conference", 
                                                  "Net Rating", "Strength of Record", "Wins Above Bubble",
-                                                 "Resume", "Rating Rank", "SOR Rank", "WAB Rank",
-                                                 "Resume Rank", "At-Large Odds", "Auto-Bid Odds", "Overall Odds")
+                                                 "Resume", "Rating Rank", "SOR Rank", "Resume Rank", 
+                                                 "WAB Rank", "At-Large Odds", "Auto-Bid Odds", "Overall Odds")
     
     
     datatable(df,
@@ -524,8 +524,8 @@ shinyServer(function(input, output, session) {
     print(names(df))
     names(df)[1:14] <- c("Seed Overall", "Team", "Conference", 
                          "Net Rating",  "Strength of Record", "Wins Above Bubble",
-                         "Resume", "Rating Rank",  "SOR Rank", "WAB Rank",
-                         "Resume Rank", "At-Large Odds", "Auto-Bid Odds", 'Overall Odds')
+                         "Resume", "Rating Rank",  "SOR Rank","Resume Rank", "WAB Rank",
+                          "At-Large Odds", "Auto-Bid Odds", 'Overall Odds')
     
     
     datatable(df,
