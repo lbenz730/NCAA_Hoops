@@ -202,14 +202,14 @@ visualize_schedule <- function(conf) {
     
     ggplot(conf_data, aes(x = game_id, y = forcats::fct_reorder(team, desc(team)))) +
       geom_tile(aes(fill = paste(location, team), 
-                    col = result, lwd = result),
+                    col = result, linewidth = result),
                 alpha = 0.7, width = 0.9, height = 0.9) +
       geom_image(aes(image = logo_url), size = 0.04) +
       scale_fill_manual(values = c(ncaahoopR::ncaa_colors$primary_color[ncaahoopR::ncaa_colors$conference == conf],
                                    rep("grey", sum(conf_data$location == "N")),
                                    rep("white", length(unique(conf_data$team))))) +
       scale_color_manual(values = gc) +
-      scale_size_manual(values = lwdc) +
+      scale_linewidth_manual(values = lwdc) +
       theme_minimal() +
       theme(axis.title = element_text(size = 20),
             axis.text.y = element_text(size = 16),
