@@ -721,8 +721,9 @@ clinch_scenarios <- function() {
     df_cases %>% 
     mutate('seed_1' = NA, 'seed_2' = NA, 'seed_3' = NA, 'seed_4' = NA, 'prob' = NA)
   names(df_results)[1:nrow(to_play)] <- paste(to_play$opponent, '@', to_play$team)
-  
-  for(i in 1:nrow(df_cases)) {
+  n <- nrow(df_cases)
+  for(i in 1:n) {
+    cat(i, 'of', n, '\n')
     df_tmp <- games
     df_tmp$wins[ix_toplay] <- as.numeric(df_tmp$team[ix_toplay] == df_cases[i,])
     playoffs <- tiebreak(df_tmp)
