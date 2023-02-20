@@ -556,7 +556,7 @@ ivy_psf_gt <-
     columns = c(auto_bid_sf, psf, win_prob),
     colors = scales::col_numeric(
       palette = ggsci::rgb_material('amber', n = 100),
-      domain = c(0,1),
+      domain = c(0,1.25),
     )
   ) %>%
 
