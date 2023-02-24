@@ -30,7 +30,7 @@ source("3.0_Files/conf_tourney_sims.R")
 
 params <- 
   list('conf_sims' = 1000,
-       'ivy_sims' = 5000,
+       'ivy_sims' = 1000,
        'psf_sims' = 1000,
        'pct_post' = 0.25)
 
@@ -77,7 +77,7 @@ x <-
 ### Reg Season
 x <- 
   left_join(x, deadlines, by = c("team_conf" = "conf")) %>%
-  mutate('reg_season' = date <= deadline) %>%
+  mutate('reg_season' = date < deadline) %>%
   select(-deadline)
 
 # ### Eliminate Teams from Auto Bid contention
