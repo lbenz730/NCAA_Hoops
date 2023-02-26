@@ -97,7 +97,7 @@ conf_sim <- function(conf, nsims) {
 }
 
 #### Conference Sims
-conf_fast_sim <- function(conf, nsims, pct_postseason, force = F) {
+conf_fast_sim <- function(conf, nsims, pct_postseason, force = F, year = '2022-23') {
   
   ### Sim Schedule
   if(conf == 'Ivy') {
@@ -145,12 +145,12 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, force = F) {
       summarise('n_wins' = sum(winner == team),
                 'n_games' = n()) %>% 
       ungroup() %>% 
-      inner_join(confs) %>% 
+      inner_join(confs, by = 'team') %>% 
       group_by(sim) %>% 
       mutate('place_tourney' = rank(-(n_wins/n_games), ties = "random"),
              'place' = rank(-(n_wins/n_games), ties.method = 'min'))
   } else {
-    results <- read_csv(paste0('3.0_Files/Predictions/conf_sims/', conf, '.csv'))
+    results <- read_csv(paste0('3.0_Files/Predictions/conf_sims/', conf, '.csv'), col_types = cols())
   }
   
   ### Only Sim Conference Tournament from RS results up to deadline
@@ -179,7 +179,7 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, force = F) {
                            eliminated = rep(F, length(.x$team)),
                            byes = params$n_bye,
                            double_byes = params$n_double_bye)
-      })
+      },.options = furrr_options(seed = 69))
     
     post_season <- 
       tibble('team' = factor(champions, levels = unique(schedule$team))) %>% 
@@ -203,13 +203,15 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, force = F) {
       filter(!is.na(conf_seed)) %>% 
       arrange(conf_seed) 
     
-    post_season <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/', conf, '.csv'))
-    ct_sims <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/', conf, '.csv'))
+    if(file.exists(paste0('3.0_Files/Predictions/conf_tourney_sims/',  year, '/', conf, '.csv'))) {
+      post_season <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/',  year, '/', conf, '.csv'), col_types = cols())
+      ct_sims <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/', year, '/', conf, '.csv'), col_types = cols())
+      run <- sum(ct_sims$champ > 0) > 1 
+    } else {
+      run <- T
+    }
     
-    if(sum(ct_sims$champ > 0) > 1) {
-      
-      
-      
+    if(run) {
       dfs <- map(1:3000, ~df_conf)
       
       if(conf == 'WCC' | conf == 'WAC') {
@@ -225,8 +227,8 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, force = F) {
                              eliminated = .x$eliminated,
                              byes = params$n_bye,
                              double_byes = params$n_double_bye,
-                             return_list = T) 
-        })
+                             return_list = T)
+        },.options = furrr_options(seed = 69))
       
       champ <- map_chr(outputs, ~.x[1])
       finalist <- map_chr(outputs, ~.x[2])
@@ -237,7 +239,7 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, force = F) {
         mutate('finals' = map_dbl(team, ~mean((.x == champ) | (.x == finalist))),
                'champ' = map_dbl(team, ~mean(.x == champ)))
       
-      write_csv(conf_tourney, paste0('3.0_Files/Predictions/conf_tourney_sims/', conf, '.csv'))
+      write_csv(conf_tourney, paste0('3.0_Files/Predictions/conf_tourney_sims/', year, '/', conf, '.csv'))
       
       post_season <- 
         tibble('team' = factor(champ, levels = unique(schedule$team))) %>% 

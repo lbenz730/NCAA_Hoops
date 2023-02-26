@@ -87,28 +87,28 @@ make_bracket <- function(tourney) {
   bracket$seed <- 
     predict(lm.seed, newdata = bracket, type = "response")
   
-  ### Regression Towards Bracket Matrix 
-  # df_bm <- bracket_matix()
-  # bracket <- left_join(bracket, df_bm, 'team')
+  ## Regression Towards Bracket Matrix
+  df_bm <- bracket_matrix()
+  bracket <- left_join(bracket, df_bm, 'team')
   # converter <- mgcv::gam(odds ~ s(seed_line), data = bracket)
   # write_rds(converter, '3.0_Files/Bracketology/bm_converter.rds')
-  # converter <- read_rds('3.0_Files/Bracketology/bm_converter.rds')
-  # bracket$bm_odds <- as.vector(predict(converter, newdata = tibble('seed_line' = bracket$seed_avg)))
-  # bracket$bm_odds <- case_when(bracket$bm_odds > 100 ~ 100,
-  #                              bracket$bm_odds < 0 ~ 0,
-  #                              T ~ bracket$bm_odds)
-  # bracket <- 
-  #   bracket %>% 
-  #   mutate('delta' = odds - bm_odds * pct_brackets) %>% 
-  #   mutate('bm_weight' = case_when(seed_avg <= 3 ~ 3/4,
-  #                                  abs(delta) < 10  ~ 1/2,
-  #                                  T ~ 1)) %>% 
-  #   mutate('odds' = case_when(
-  #     team %in% c('Texas A&M', 'Indiana') ~ odds * 0.8,
-  #     is.na(seed_avg) & odds > 0.3 ~ odds/2,
-  #     is.na(seed_avg) ~ odds,
-  #     T ~ (1 - bm_weight) * odds * pct_brackets +  bm_weight * pct_brackets * bm_odds
-  #   ))
+  converter <- read_rds('3.0_Files/Bracketology/bm_converter.rds')
+  bracket$bm_odds <- as.vector(predict(converter, newdata = tibble('seed_line' = bracket$seed_avg)))
+  bracket$bm_odds <- case_when(bracket$bm_odds > 100 ~ 100,
+                               bracket$bm_odds < 0 ~ 0,
+                               T ~ bracket$bm_odds)
+  bracket <-
+    bracket %>%
+    mutate('delta' = odds - bm_odds * pct_brackets) %>%
+    mutate('bm_weight' = case_when(seed_avg <= 3 ~ 3/4,
+                                   abs(delta) < 10  ~ 1/2,
+                                   T ~ 1)) %>%
+    mutate('odds' = case_when(
+      # team %in% c('Texas A&M', 'Indiana') ~ odds * 0.8,
+      is.na(seed_avg) & odds > 0.3 ~ odds/2,
+      is.na(seed_avg) ~ odds,
+      T ~ (1 - bm_weight) * odds * pct_brackets +  bm_weight * pct_brackets * bm_odds
+    ))
   bracket$odds <- ifelse(bracket$odds > 99.9, 99.99, bracket$odds)
   bracket <- arrange(bracket, desc(round(odds, 1)), 
                      # seed_avg
@@ -199,9 +199,9 @@ make_bracket <- function(tourney) {
 }
 
 
-bracket_matix <- function() {
+bracket_matrix <- function() {
   bracket <- XML::readHTMLTable('http://www.bracketmatrix.com/')
-  ix <- which(bracket[[1]]$V2 == 'OTHER AUTO QUALIFIERS')
+  ix <- which(bracket[[1]]$V2 == 'OTHER AUTOMATIC QUALIFIERS')
   bracket_cln <- 
     bracket[[1]] %>% 
     select('team' = V2,

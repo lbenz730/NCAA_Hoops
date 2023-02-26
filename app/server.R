@@ -19,6 +19,7 @@ shinyServer(function(input, output, session) {
     tab <- query$tab
     team <- query$team
     conf <- query$conf
+    conft <- query$conft
     
     if(length(tab) > 0) {
       updateNavbarPage(session, inputId = "navbar", selected = tab)
@@ -28,6 +29,9 @@ shinyServer(function(input, output, session) {
     }
     if(length(conf) > 0) {
       updateSelectInput(session, inputId = "conf", selected = html_clean(conf))
+    }
+    if(length(conft) > 0) {
+      updateSelectInput(session, inputId = "conft", selected = html_clean(conft))
     }
     
   })
@@ -586,7 +590,7 @@ shinyServer(function(input, output, session) {
   
   ### Conf T Sims
   ctsim <- eventReactive(input$conft, {
-    df_sim <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/',input$conft, '.csv'))
+    df_sim <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/2022-23/',input$conft, '.csv'))
     
     
     df <- 
@@ -683,7 +687,7 @@ shinyServer(function(input, output, session) {
       
       tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>%
       tab_header(
-        title = md(paste("**2022", input$tconf, "Men's Basketball Tournament Odds**")),
+        title = md(paste("**2023", input$tconf, "Men's Basketball Tournament Odds**")),
         # subtitle = md(ifelse(region == 'all', '', paste0('**', table_region, " Region**")))
       ) %>% 
       tab_options(column_labels.font.size = 16,
