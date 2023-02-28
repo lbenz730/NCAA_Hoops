@@ -212,12 +212,21 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, force = F, year = '2022-2
     }
     
     if(run) {
+      ### 9-10 and 7-8 games 
+      if(conf == 'A-Sun' | conf == 'Big Sky') {
+        df_conf <- df_conf[c(1:7, 9, 10, 8),]
+        df_conf$conf_seed <- 1:10
+      }
+      
       dfs <- map(1:3000, ~df_conf)
       
-      if(conf == 'WCC' | conf == 'WAC') {
+      ### Treat Triple Byes as 8-2-2 w/ sampling of first round teams
+      if(conf == 'WCC') {
         keep <- map(1:3000, ~c(1:6, sample(c(7,10), 1), sample(c(8,9),1))) 
         dfs <- map2(dfs, keep, ~filter(.x, conf_seed %in% .y))
       }
+      
+  
       
       outputs <- 
         future_map(dfs, ~{
@@ -238,6 +247,11 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, force = F, year = '2022-2
         select(team, 'seed' = conf_seed) %>% 
         mutate('finals' = map_dbl(team, ~mean((.x == champ) | (.x == finalist))),
                'champ' = map_dbl(team, ~mean(.x == champ)))
+      
+      if(conf == 'A-Sun' | conf == 'Big Sky') {
+        df_conf <- df_conf[c(1:7, 10, 8, 9),]
+        df_conf$conf_seed <- 1:10
+      }
       
       write_csv(conf_tourney, paste0('3.0_Files/Predictions/conf_tourney_sims/', year, '/', conf, '.csv'))
       
