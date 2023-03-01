@@ -226,7 +226,7 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, force = F, year = '2022-2
         dfs <- map2(dfs, keep, ~filter(.x, conf_seed %in% .y))
       }
       
-  
+      
       
       outputs <- 
         future_map(dfs, ~{
@@ -249,8 +249,11 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, force = F, year = '2022-2
                'champ' = map_dbl(team, ~mean(.x == champ)))
       
       if(conf == 'A-Sun' | conf == 'Big Sky') {
-        df_conf <- df_conf[c(1:7, 10, 8, 9),]
-        df_conf$conf_seed <- 1:10
+        conf_tourney <- 
+          conf_tourney %>% 
+          arrange(seed) %>% 
+          slice(c(1:7, 10, 8, 9)) %>% 
+          mutate('seed' = 1:10)
       }
       
       write_csv(conf_tourney, paste0('3.0_Files/Predictions/conf_tourney_sims/', year, '/', conf, '.csv'))
