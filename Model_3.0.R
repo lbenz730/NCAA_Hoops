@@ -204,31 +204,31 @@ x$wins[is.na(x$wins)] <-
 by_conf <- pr_compute(by_conf = T)
 write_csv(x, "3.0_Files/Predictions/predictions.csv")
 ######################### Ivy League Specific Sims #############################
-playoffs <- ivy.sim(params$ivy_sims)
-ivy_psf <- psf(params$psf_sims, min_date = Sys.Date(), max_date = Sys.Date() + 6)
-playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
+# playoffs <- ivy.sim(params$ivy_sims)
+# ivy_psf <- psf(params$psf_sims, min_date = Sys.Date(), max_date = Sys.Date() + 6)
+# playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
 ############################# Conference Sims (No Tie-Breaks) ##################
-if(lubridate::hour(Sys.time())  <= 12) {
-  confs <- update_conf_seeds()
-  for(conf in setdiff(sort(unique(confs$conference)), 'Independent')) {
+# if(lubridate::hour(Sys.time())  <= 12) {
+confs <- update_conf_seeds()
+for(conf in setdiff(sort(unique(confs$conference)), 'Independent')) {
   # for(conf in sort(unique(confs$conference[!is.na(confs$conf_seed)]))) {
-    print(conf)
-    df_f <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"), col_types = cols())
-    f <- !all(group_by(df_f, team, place) %>% count() %>% pull(n) == params$conf_sims)
-    
-    sims <- conf_fast_sim(conf, params$conf_sims, params$pct_post, force = f)
-    write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
-    if(conf != 'Ivy ') {
-      write_csv(sims$post_season, paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
-    } else {
-      playoffs %>%
-        select(team, 'freq' = auto_bid) %>%
-        mutate('freq' = freq/100) %>%
-        write_csv(paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
-    }
+  print(conf)
+  df_f <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"), col_types = cols())
+  f <- !all(group_by(df_f, team, place) %>% count() %>% pull(n) == params$conf_sims)
+  
+  sims <- conf_fast_sim(conf, params$conf_sims, params$pct_post, force = f)
+  write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+  if(conf != 'Ivy ') {
+    write_csv(sims$post_season, paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
+  } else {
+    playoffs %>%
+      select(team, 'freq' = auto_bid) %>%
+      mutate('freq' = freq/100) %>%
+      write_csv(paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
   }
-  conf_tourney_graphics()
 }
+conf_tourney_graphics()
+# }
 
 source('3.0_Files/ivy_graphics.R')
 ########################### Bracketology #######################################

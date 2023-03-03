@@ -113,11 +113,11 @@ update_conf_seeds <- function() {
   #                 'Seton Hall', 'St. John\'s (NY)', 'Xavier', 'Butler', 'DePaul', 'Georgetown')
   # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   # 
-  # # Southkand
-  # seed_teams <- c('Nicholls St.', 'Southeastern La.', 'New Orleans', 'A&M-Corpus Christi',
-  #                 'Houston Baptist', 'Northwestern St.', 'McNeese', 'UIW')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
+  # Southkand
+  seed_teams <- c('A&M-Corpus Christi', 'Northwestern St.',  'Southeastern La.','Nicholls',
+                  'Tex. A&M-Commerce', 'Houston Christian','New Orleans',  'McNeese')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+
   # # SWAC
   # seed_teams <- c('Alcorn', 'Southern U.', 'Texas Southern', 'Florida A&M', 
   #                 'Alabama A&M', 'Grambling', 'Jackson St.', 'Prairie View')
