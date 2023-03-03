@@ -76,10 +76,10 @@ update_conf_seeds <- function() {
                   'Binghamton','Bryant', 'Maine',  'NJIT')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
 
-  # # MEAC
-  # seed_teams <- c('Norfolk St.', 'Howard', 'N.C. Central', 'Morgan St.',
-  #                 'South Carolina St.', 'UMES', 'Coppin St.', 'Delaware St.')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  # MEAC
+  seed_teams <- c('Howard', 'N.C. Central', 'Norfolk St.', 'UMES', 'Morgan St.',
+                  'Coppin St.', 'South Carolina St.','Delaware St.')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   # 
   # # MAC
   # seed_teams <- c('Toledo', 'Kent St.', 'Ohio', 'Akron', 
