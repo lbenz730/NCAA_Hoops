@@ -75,120 +75,115 @@ update_conf_seeds <- function() {
   seed_teams <- c('Vermont', 'UMass Lowell', 'New Hampshire', 'UMBC', 
                   'Binghamton','Bryant', 'Maine',  'NJIT')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-
+  
   # MEAC
   seed_teams <- c('Howard', 'N.C. Central', 'Norfolk St.', 'UMES', 'Morgan St.',
                   'Coppin St.', 'South Carolina St.','Delaware St.')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-
+  
   # MAC
   seed_teams <- c('Toledo', 'Kent St.', 'Akron', 'Ball St.', 'Ohio',
                   'Buffalo','NIU','Miami (OH)')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-
-  # # MWC
-  # seed_teams <- c('Boise St.', 'Colorado St.', 'San Diego St.', 'Wyoming',
-  #                 'UNLV', 'Fresno St.', 'Utah St.', 'Nevada', 'New Mexico',
-  #                 'Air Force', 'San Jose St.')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # WAC
-  # seed_teams <- c('New Mexico St.', 'Seattle U', 'SFA', 'Grand Canyon',
-  #                 'Sam Houston St.', 'Abilene Christian', 'Utah Valley',
-  #                 'California Baptist', 'UTRGV', 'Chicago St.')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # Ivy
-  # seed_teams <- c('Princeton', 'Yale', 'Penn', 'Cornell')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
+  
+  # MWC
+  seed_teams <- c('San Diego St.', 'Boise St.',  'Utah St.', 'Nevada', 'San Jose St.', 
+                  'New Mexico', 'UNLV', 'Colorado St.', 'Fresno St.', 'Air Force', 'Wyoming')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # WAC
+  seed_teams <-
+    c('Sam Houston', 'Utah Valley',  'Southern Utah', 'Seattle U', 'Grand Canyon',  'SFA', 
+      'Tarleton St.', 'California Baptist', 'Abilene Christian', 'UTRGV', 'Utah Tech','UT Arlington')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # Ivy
+  seed_teams <- c('Yale', 'Princeton', 'Penn', 'Cornell')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
   # Big Sky
   seed_teams <- c('Eastern Wash.', 'Montana St.', 'Weber St.', 'Montana',  
                   'Idaho St.','Sacramento St.','Portland St.', 'Northern Colo.',
                   'Northern Ariz.', 'Idaho')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
-  # # Big East
-  # seed_teams <- c('Providence', 'Villanova', 'UConn', 'Creighton', 'Marquette',
-  #                 'Seton Hall', 'St. John\'s (NY)', 'Xavier', 'Butler', 'DePaul', 'Georgetown')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
+  # Big East
+  seed_teams <- c('Marquette', 'Xavier', 'Creighton', 'UConn', 'Providence', 
+                  'Villanova', 'Seton Hall', "St. John's (NY)", 'Butler', 'DePaul', 'Georgetown')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
   # Southkand
   seed_teams <- c('A&M-Corpus Christi', 'Northwestern St.',  'Southeastern La.','Nicholls',
                   'Tex. A&M-Commerce', 'Houston Christian','New Orleans',  'McNeese')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # SWAC
+  seed_teams <- c('Alcorn', 'Grambling',  'Jackson St.', 'Southern U.', 'Alabama A&M', 
+                  'Prairie View', 'Bethune-Cookman', 'Texas Southern')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # Pac 12
+  seed_teams <- c('UCLA', 'Arizona', 'Southern California', 'Oregon', 
+                  'Washington St.', 'Arizona St.', 'Utah',  'Washington', 'Colorado',
+                  'Stanford', 'Oregon St.', 'California')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
 
-  # # SWAC
-  # seed_teams <- c('Alcorn', 'Southern U.', 'Texas Southern', 'Florida A&M', 
-  #                 'Alabama A&M', 'Grambling', 'Jackson St.', 'Prairie View')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # Pac 12
-  # seed_teams <- c('Arizona', 'UCLA', 'Southern California', 'Colorado', 'Oregon',
-  #                 'Washington', 'Washington St.', 'Arizona St.', 'Stanford',
-  #                 'California', 'Utah', 'Oregon St.')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # SEC
-  # seed_teams <- c('Auburn', 'Tennessee', 'Kentucky', 'Arkansas', 
-  #                 'LSU', 'Alabama', 'South Carolina', 'Texas A&M',
-  #                 'Florida', 'Mississippi St.', 'Vanderbilt', 'Missouri', 
-  #                 'Ole Miss', 'Georgia')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # ACC 
-  # seed_teams <- c('Duke', 'Notre Dame', 'North Carolina', 'Miami (FL)',
-  #                 'Wake Forest', 'Virginia', 'Virginia Tech', 'Florida St.',
-  #                 'Syracuse', 'Clemson', 'Louisville', 'Pittsburgh',
-  #                 'Boston College', 'Georgia Tech', 'NC State')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # C-USA
-  # seed_teams <- c('North Texas', 'UAB', 'Middle Tenn.', 'Western Ky.', 
-  #                 'Louisiana Tech', 'UTEP', 'Fla. Atlantic', 'Charlotte',
-  #                 'Rice', 'Old Dominion', 'UTSA', 'FIU', 'Marshall',
-  #                 'Southern Miss.')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  #                 
-  # 
-  # # MAAC
-  # seed_teams <- c('Iona', 'Saint Peter\'s', 'Siena', 'Monmouth',
-  #                 'Niagara', 'Marist', 'Fairfield', 'Manhattan',
-  #                 'Rider', 'Canisius', 'Quinnipiac')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # A-10
-  # seed_teams <- c('Davidson', 'Dayton', 'VCU', 'St. Bonaventure',
-  #                 'Saint Louis', 'Richmond', 'George Washington', 'Fordham',
-  #                 'George Mason', 'Massachusetts', 'Rhode Island',
-  #                 'La Salle', 'Saint Joseph\'s',
-  #                 'Duquesne')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # 
-  # # Big 12
-  # seed_teams <- c('Kansas', 'Baylor', 'Texas Tech', 'Texas', 'TCU', 'Iowa St.',
-  #                 'Oklahoma', 'Kansas St.', 'West Virginia')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # Big West
-  # seed_teams <- c('Long Beach St.', 'Cal St. Fullerton', "Hawaii", 'UC Irvine',
-  #                 'UC Santa Barbara', 'UC Riverside', 'UC Davis', 'CSUN', 
-  #                 'CSU Bakersfield', 'Cal Poly')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # AAC
-  # seed_teams <- c('Houston', 'SMU', 'Memphis', 'Temple', 'Tulane',
-  #                 'UCF', 'Wichita St.', 'Cincinnati', 'East Carolina',
-  #                 'Tulsa', 'South Fla.')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # Big 10
-  # seed_teams <- c('Illinois', 'Wisconsin', 'Purdue', 'Rutgers',
-  #                 'Iowa', 'Ohio St.', 'Michigan St.', 'Michigan', 
-  #                 'Indiana', 'Maryland', 'Penn St.', 'Northwestern',
-  #                 'Nebraska', 'Minnesota')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  # SEC
+  seed_teams <- c('Alabama', 'Texas A&M',  'Kentucky', 'Missouri', 
+                  'Tennessee', 'Vanderbilt', 'Auburn', 'Florida', 'Mississippi St.', 'Arkansas', 
+                  'Georgia', 'South Carolina', 'Ole Miss', 'LSU')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # ACC
+  seed_teams <- c('Miami (FL)', 'Virginia', 'Clemson', 'Duke',
+                  'Pittsburgh', 'NC State', 'North Carolina', 'Syracuse',
+                  'Wake Forest', 'Boston College',  'Virginia Tech', 'Florida St.', 
+                  'Georgia Tech', 'Notre Dame', 'Louisville')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # C-USA
+  seed_teams <- c('Fla. Atlantic', 'North Texas', 'UAB', 'Middle Tenn.', 
+                  'Charlotte', 'Rice', 'FIU', 'Western Ky.', 'UTEP', 'Louisiana Tech', 'UTSA')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # MAAC
+  seed_teams <- c('Iona', 'Rider','Quinnipiac', 'Siena', 'Niagara', 'Manhattan', 
+                  'Fairfield', 'Mount St. Mary\'s', 'Canisius', 'Saint Peter\'s', 'Marist')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # A-10
+  seed_teams <- c('VCU', 'Dayton', 'Fordham', 'Saint Louis', 
+                  'George Mason',  'Duquesne', 'George Washington', 'Davidson', 
+                  'St. Bonaventure', 'Saint Joseph\'s', 'La Salle',  'Richmond', 
+                  'Massachusetts', 'Rhode Island', 'Loyola Chicago')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # Big 12
+  seed_teams <- c('Kansas', 'Texas', 'Kansas St.', 'Baylor', 'Iowa St.', 'TCU', 
+                  'Oklahoma St.', 'West Virginia', 'Texas Tech', 'Oklahoma')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # Big West
+  seed_teams <- c('UC Irvine', 'UC Santa Barbara', 'UC Riverside',
+                  'Cal St. Fullerton', 'Hawaii', 'UC Davis', 'Long Beach St.',
+                  'CSU Bakersfield', 'CSUN', 'Cal Poly')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+
+  # AAC
+  seed_teams <- c('Houston', 'Memphis',  'Tulane', 'Cincinnati', 'Temple',
+                  'Wichita St.', 'UCF', 'South Fla.', 'East Carolina', 'SMU', 
+                  'Tulsa')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+
+  # Big 10
+  seed_teams <- c('Purdue', 'Indiana', 'Northwestern', 'Michigan St.', 
+                  'Iowa', 'Maryland', 'Illinois', 'Michigan',
+                  'Rutgers', 'Penn St.', 'Nebraska', 'Wisconsin',
+                  'Ohio St.', 'Minnesota')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  
+    
   
   ### Elimiate teams that didn't even make their conf tournament
   confs <- 

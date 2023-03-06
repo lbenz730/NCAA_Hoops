@@ -50,6 +50,10 @@ make_bracket <- function(tourney) {
   bracket <- arrange(bracket, desc(yusag_coeff))
   
   autobid_calc <- function(conf) {
+    if(conf == 'NEC') {
+      return('Fairleigh Dickinson') 
+    }
+    
     tmp <- bracket$team[bracket$conf == conf]
     for(i in 1:length(tmp)) {
       if(confs$eligible[confs$team == tmp[i]] & !confs$eliminated[confs$team == tmp[i]]) {
@@ -112,7 +116,7 @@ make_bracket <- function(tourney) {
   bracket$odds <- ifelse(bracket$odds > 99.9, 99.99, bracket$odds)
   bracket <- arrange(bracket, desc(round(odds, 1)), 
                      # seed_avg
-                     )
+  )
   
   if(tourney == T) {
     ### Get Autobids
@@ -148,7 +152,7 @@ make_bracket <- function(tourney) {
     )
     bracket <- select(bracket, -mid_major, -wins, -losses, -loss_bonus, -seed,
                       -any_of(c('seed_avg', 'bm_odds', 'pct_brackets', 'n_brackets',  
-                              'bm_weight', 'delta')))
+                                'bm_weight', 'delta')))
     bracket$seed_overall <- 1:68
     bracket$seed_line <- c(rep(1,4), rep(2,4), rep(3,4), rep(4,4), rep(5,4),
                            rep(6,4), rep(7,4), rep(8,4), rep(9,4), rep(10,4),

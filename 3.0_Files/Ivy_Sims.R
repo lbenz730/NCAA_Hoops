@@ -97,8 +97,8 @@ ivy.sim <- function(nsims) {
       prebreak.pos[j,z] <- c(1:length(ivy))[preBreak == simresults[j, z]][1]
     }
     
-    ### Duplicate so we keep Pre-break position for Tiebreaker 2 (groups) 
-    pre_prebreak.pos <- prebreak.pos
+    # ### Duplicate so we keep Pre-break position for Tiebreaker 2 (groups) 
+    # pre_prebreak.pos <- prebreak.pos
     
     # Break any ties 
     for(i in 1:(length(ivy) - 1)) {
@@ -134,7 +134,7 @@ ivy.sim <- function(nsims) {
           if(z == i) {
             next
           }
-          comp_teams <- ivy[pre_prebreak.pos[j,] == z]
+          comp_teams <- ivy[prebreak.pos[j,] == z]
           if(length(comp_teams) == 0) {
             next
           }
@@ -319,8 +319,8 @@ psf <- function(nsims, min_date, max_date) {
         prebreak.pos[j,z] <- c(1:length(ivy))[preBreak == simresults[j, z]][1]
       }
       
-      ### Duplicate so we keep Pre-break position for Tiebreaker 2 (groups) 
-      pre_prebreak.pos <- prebreak.pos
+      # ### Duplicate so we keep Pre-break position for Tiebreaker 2 (groups) 
+      # pre_prebreak.pos <- prebreak.pos
       
       # Break any ties 
       for(i in 1:(length(ivy) - 1)) {
@@ -356,7 +356,7 @@ psf <- function(nsims, min_date, max_date) {
             if(z == i) {
               next
             }
-            comp_teams <- ivy[pre_prebreak.pos[j,] == z]
+            comp_teams <- ivy[prebreak.pos[j,] == z]
             if(length(comp_teams) == 0) {
               next
             }
@@ -626,8 +626,8 @@ tiebreak <- function(games) {
     prebreak.pos[z] <- c(1:length(ivy))[preBreak == simresults[z]][1]
   }
   
-  ### Duplicate so we keep Pre-break position for Tiebreaker 2 (groups) 
-  pre_prebreak.pos <- prebreak.pos
+  # ### Duplicate so we keep Pre-break position for Tiebreaker 2 (groups) 
+  # pre_prebreak.pos <- prebreak.pos
   
   # Break any ties 
   for(i in 1:(length(ivy) - 1)) {
@@ -663,7 +663,7 @@ tiebreak <- function(games) {
         if(z == i) {
           next
         }
-        comp_teams <- ivy[pre_prebreak.pos == z]
+        comp_teams <- ivy[prebreak.pos == z]
         if(length(comp_teams) == 0) {
           next
         }
