@@ -176,7 +176,7 @@ update_conf_seeds <- function() {
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
 
   # Big 10
-  seed_teams <- c('Purdue', 'Indiana', 'Northwestern', 'Michigan St.', 
+  seed_teams <- c('Purdue', 'Northwestern', 'Indiana', 'Michigan St.', 
                   'Iowa', 'Maryland', 'Illinois', 'Michigan',
                   'Rutgers', 'Penn St.', 'Nebraska', 'Wisconsin',
                   'Ohio St.', 'Minnesota')
