@@ -105,18 +105,26 @@ make_bracket <- function(tourney) {
     bracket %>%
     mutate('delta' = odds - bm_odds * pct_brackets) %>%
     mutate('bm_weight' = case_when(seed_avg <= 3 ~ 3/4,
+                                   # seed_avg >= 13 ~ 2/3,
                                    abs(delta) < 10  ~ 1/2,
                                    T ~ 1)) %>%
     mutate('odds' = case_when(
-      # team %in% c('Saint Mary\'s (CA)', 'San Diego St.') ~ odds * 0.99,
+      team %in% c('UCLA') ~ odds * 0.999,
+      team %in% c('Baylor') ~ odds * 1.002,
+      team %in% c('Saint Mary\'s (CA)', 'San Diego St.') ~ odds * 0.99,
+      team %in% c('Memphis') ~ odds * 0.98,
+      team %in% c('Fla. Atlantic') ~ odds * 1.01,
+      team %in% c('Louisana') ~ odds * 1.02,
+      team %in% c('Vermont', 'Montana St.') ~ odds * 0.99,
+      team %in% c('UNC Asheville') ~ odds * 0.95,
       is.na(seed_avg) & odds > 0.3 ~ odds/2,
       is.na(seed_avg) ~ odds,
       T ~ (1 - bm_weight) * odds * pct_brackets +  bm_weight * pct_brackets * bm_odds
     ))
   bracket$odds <- ifelse(bracket$odds > 99.9, 99.99, bracket$odds)
-  bracket <- arrange(bracket, desc(round(odds, 1)), 
+  bracket <- arrange(bracket, desc(round(odds, 1)))
                      # seed_avg
-  )
+  
   
   if(tourney == T) {
     ### Get Autobids
@@ -220,6 +228,10 @@ bracket_matrix <- function() {
     mutate('team' = case_when(
       team == 'Connecticut' ~ 'UConn',
       team == 'Loyola-Chicago' ~ 'Loyola Chicago',
+      team == 'Louisiana-Lafayette' ~ 'Louisiana',
+      team == 'Texas A&M-Corpus Christi' ~ 'A&M-Corpus Christi',
+      team == 'NC-Asheville' ~ 'UNC Asheville',
+      team == 'Kennesaw State' ~ 'Kennesaw St.',
       team == 'Miami (FLA.)' ~ 'Miami (FL)',
       team == 'USC' ~ 'Southern California',
       team == "St. Mary's (CA)" ~ 'Saint Mary\'s (CA)',
