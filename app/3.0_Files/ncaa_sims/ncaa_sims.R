@@ -64,7 +64,7 @@ wp_matrix <-
   mutate('pred_score_diff' = rating_team - rating_opponent) %>%  
   ### Win Prob for Team over Opponent
   mutate('win_prob' = predict(glm_pointspread, newdata = ., type = 'response'))
-write_csv(wp_matrix, '3.0_Files/ncaa_sims/ncaa_wp_matrix_2022.csv')
+write_csv(wp_matrix, '3.0_Files/ncaa_sims/ncaa_wp_matrix_2023.csv')
 
 ### First Four
 first_four <- 
@@ -73,7 +73,7 @@ first_four <-
   build_bracket()
 
 first_four <- map(1:n_sims, ~{first_four})
-first_four_winners <- future_map(first_four, sim_round)
+first_four_winners <- future_map(first_four, sim_round, .options = furrr_options(seed = 781))
 
 ### Brackets for Tournament Proper
 ncaa_brackets <- 
@@ -89,7 +89,7 @@ for(i in 1:6) {
   cat('Simulating Round', i, 'of', 6, '\n')
   ### in bracket Form
   brackets <- future_map(ncaa_brackets, build_bracket)
-  winners <- future_map(brackets, sim_round)
+  winners <- future_map(brackets, sim_round,.options = furrr_options(seed = 781 + i))
   round_winners[[i]] <- unlist(winners)
   ncaa_brackets <- map2(ncaa_brackets, winners, ~{filter(.x, team %in% .y)})
 }

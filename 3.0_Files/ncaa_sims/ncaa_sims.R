@@ -30,7 +30,7 @@ build_bracket <- function(seed_list) {
                team_elim_round > opp_elim_round ~ 1,
                team_elim_round < opp_elim_round ~ 0)
     )
-
+  
 }
 
 ### Function to Simulate Games in Round
@@ -50,6 +50,9 @@ seed_list <-
   seed_list %>% 
   inner_join(select(power_rankings, team, 'rating' = yusag_coeff), by = 'team')
 
+seed <- seed_list$seed
+names(seed) <- seed_list$team
+
 
 ### Compute a win-probability matrix for each possible combination of teams
 wp_matrix <- 
@@ -64,7 +67,7 @@ wp_matrix <-
   mutate('pred_score_diff' = rating_team - rating_opponent) %>%  
   ### Win Prob for Team over Opponent
   mutate('win_prob' = predict(glm_pointspread, newdata = ., type = 'response'))
-write_csv(wp_matrix, '3.0_Files/ncaa_sims/ncaa_wp_matrix_2022.csv')
+write_csv(wp_matrix, '3.0_Files/ncaa_sims/ncaa_wp_matrix_2023.csv')
 
 ### First Four
 first_four <- 
@@ -73,7 +76,7 @@ first_four <-
   build_bracket()
 
 first_four <- map(1:n_sims, ~{first_four})
-first_four_winners <- future_map(first_four, sim_round)
+first_four_winners <- future_map(first_four, sim_round, .options = furrr_options(seed = 781))
 
 ### Brackets for Tournament Proper
 ncaa_brackets <- 
@@ -83,14 +86,28 @@ ncaa_brackets <-
 
 ### Keep Track of Winners
 round_winners <- list()
+round_points <- c(1,2,3,4,5,10)
+df_upsets <- NULL
 
 ### Simulate Tournament
 for(i in 1:6) {
   cat('Simulating Round', i, 'of', 6, '\n')
   ### in bracket Form
   brackets <- future_map(ncaa_brackets, build_bracket)
-  winners <- future_map(brackets, sim_round)
+  winners <- future_map(brackets, sim_round,.options = furrr_options(seed = 781 + i))
+  losers <- future_map2(brackets, winners, ~{setdiff(c(rbind(.x$team, .x$opponent)), .y)})
+  upsets <- future_map2(winners, losers, ~{seed[.x] > seed[.y]})
+  
   round_winners[[i]] <- unlist(winners)
+  
+  ### Points
+  df_round <- 
+    tibble('round' = i,
+           'team' = unlist(winners),
+           'upset' = unlist(upsets))
+  df_upsets <- bind_rows(df_upsets, df_round)
+  
+  
   ncaa_brackets <- map2(ncaa_brackets, winners, ~{filter(.x, team %in% .y)})
 }
 

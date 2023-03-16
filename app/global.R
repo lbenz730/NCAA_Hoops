@@ -357,9 +357,10 @@ make_table <- function(sim_results, table_region) {
       champ = 'Champion'
     ) %>% 
     tab_source_note("Based on 10,000 Simulations of NCAA Tournament") %>%
+    tab_source_note("Rating: Points relative to baseline NCAA team on neutral floor") %>% 
     tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>%
     tab_header(
-      title = md("**2022 NCAA Men's Basketball Tournament Odds**"),
+      title = md("**2023 NCAA Men's Basketball Tournament Odds**"),
       subtitle = md(ifelse(table_region == 'all', '', paste0('**', table_region, " Region**")))
     ) %>% 
     tab_options(column_labels.font.size = 20,

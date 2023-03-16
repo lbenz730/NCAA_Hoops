@@ -109,11 +109,11 @@ make_bracket <- function(tourney) {
                                    abs(delta) < 10  ~ 1/2,
                                    T ~ 1)) %>%
     mutate('odds' = case_when(
-      team %in% c('UCLA') ~ odds * 0.999,
+      team %in% c('UCLA') ~ odds * 0.99999,
       team %in% c('Baylor') ~ odds * 1.002,
       team %in% c('Saint Mary\'s (CA)', 'San Diego St.') ~ odds * 0.99,
-      team %in% c('Memphis') ~ odds * 0.98,
-      team %in% c('Fla. Atlantic') ~ odds * 1.01,
+      team %in% c('Memphis') ~ odds * 0.97,
+      team %in% c('Fla. Atlantic') ~ odds * 0.96,
       team %in% c('Louisana') ~ odds * 1.02,
       team %in% c('Vermont', 'Montana St.') ~ odds * 0.99,
       team %in% c('UNC Asheville') ~ odds * 0.95,

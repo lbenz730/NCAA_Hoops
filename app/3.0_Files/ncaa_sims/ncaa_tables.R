@@ -3,6 +3,7 @@ library(paletteer)
 library(ncaahoopR)
 library(tidyverse)
 library(here)
+library(gtExtras)
 
 
 
@@ -43,12 +44,9 @@ make_table <- function(sim_results, table_region, message = '') {
   
   
   df %>% 
-    arrange(-champ) %>% 
-    filter(!team %in% elim) %>% 
-    select(-first_round) %>% 
-    select(-second_round) %>% 
-    select(-sweet_sixteen) %>% 
+    arrange(-final_four) %>% 
     gt() %>% 
+    
     
     ### Ratings 
     data_color(
@@ -132,22 +130,24 @@ make_table <- function(sim_results, table_region, message = '') {
       region = 'Region',
       seed = 'Seed',
       rating = 'Rating',
-      # first_round = '1st Round',
-      # second_round = '2nd Round',
-      # sweet_sixteen = 'Sweet 16',
+      first_round = '1st Round',
+      second_round = '2nd Round',
+      sweet_sixteen = 'Sweet 16',
       elite_eight = 'Elite 8',
       final_four = 'Final 4',
       championship_game = 'NCG',
       champ = 'Champion'
     ) %>% 
     tab_source_note("Based on 10,000 Simulations of NCAA Tournament") %>%
+    tab_source_note("Rating: Points relative to baseline NCAA team on neutral floor") %>% 
     tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
     tab_header(
-      title = md("**2022 NCAA Men's Basketball Tournament Odds**"),
+      title = md("**2023 NCAA Men's Basketball Tournament Odds**"),
       subtitle = md(paste0('**', ifelse(table_region != 'all', paste0(table_region, " Region**"), paste0(message, '**'))))
       # title = html(web_image("https://upload.wikimedia.org/wikipedia/en/0/04/2021_NCAA_Men%27s_Final_Four_logo.svg", 170))
     ) %>% 
     tab_options(column_labels.font.size = 20,
+                column_labels.font.weight = 'bold',
                 heading.title.font.size = 40,
                 heading.subtitle.font.size = 30,
                 heading.title.font.weight = 'bold',
@@ -161,9 +161,9 @@ south <- make_table(sim_results, 'South')
 west <- make_table(sim_results, 'West')
 all <- make_table(sim_results, 'all')
 
-gtsave(east, filename = here('graphics/ncaa_tourney/east.png'), expand = 10)
-gtsave(mw, filename = here('graphics/ncaa_tourney/mw.png'), expand = 10)
-gtsave(south, filename = here('graphics/ncaa_tourney/south.png'), expand = 10)
-gtsave(west, filename = here('graphics/ncaa_tourney/west.png'), expand = 10)
-gtsave(all, filename = here('graphics/ncaa_tourney/ncaa_sims.png'), expand = 10)
+gtsave_extra(east, filename = here('graphics/ncaa_tourney/east.png'), expand = 10)
+gtsave_extra(mw, filename = here('graphics/ncaa_tourney/mw.png'), expand = 10)
+gtsave_extra(south, filename = here('graphics/ncaa_tourney/south.png'), expand = 10)
+gtsave_extra(west, filename = here('graphics/ncaa_tourney/west.png'), expand = 10)
+gtsave_extra(all, filename = here('graphics/ncaa_tourney/ncaa_sims.png'), expand = 10)
 
