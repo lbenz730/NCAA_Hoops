@@ -1,5 +1,5 @@
 "team","conference","eligible","eliminated","mid_major","conf_seed","ncaa_id"
-"A&M-Corpus Christi","Southland",TRUE,FALSE,TRUE,1,541982
+"A&M-Corpus Christi","Southland",TRUE,TRUE,TRUE,1,541982
 "Abilene Christian","WAC",TRUE,TRUE,TRUE,9,541987
 "Air Force","MWC",TRUE,TRUE,TRUE,10,542492
 "Akron","MAC",TRUE,TRUE,TRUE,3,541988
@@ -9,7 +9,7 @@
 "Alcorn","SWAC",TRUE,TRUE,TRUE,1,541994
 "American","Patriot",TRUE,TRUE,TRUE,7,541995
 "App State","Sunbelt",TRUE,TRUE,TRUE,9,541996
-"Arizona","Pac 12",TRUE,FALSE,FALSE,2,541998
+"Arizona","Pac 12",TRUE,TRUE,FALSE,2,541998
 "Arizona St.","Pac 12",TRUE,TRUE,FALSE,6,541997
 "Ark.-Pine Bluff","SWAC",TRUE,TRUE,TRUE,NA,541973
 "Arkansas","SEC",TRUE,TRUE,FALSE,10,542000
@@ -51,8 +51,8 @@
 "Clemson","ACC",TRUE,TRUE,FALSE,3,542041
 "Cleveland St.","Horizon",TRUE,TRUE,TRUE,3,542042
 "Coastal Carolina","Sunbelt",TRUE,TRUE,TRUE,12,542043
-"Col. of Charleston","CAA",TRUE,FALSE,TRUE,2,541966
-"Colgate","Patriot",TRUE,FALSE,TRUE,1,542044
+"Col. of Charleston","CAA",TRUE,TRUE,TRUE,2,541966
+"Colgate","Patriot",TRUE,TRUE,TRUE,1,542044
 "Colorado","Pac 12",TRUE,TRUE,FALSE,9,542046
 "Colorado St.","MWC",TRUE,TRUE,TRUE,8,542045
 "Columbia","Ivy",TRUE,TRUE,TRUE,NA,542047
@@ -113,7 +113,7 @@
 "Holy Cross","Patriot",TRUE,TRUE,TRUE,9,542127
 "Houston","AAC",TRUE,TRUE,FALSE,1,542130
 "Houston Christian","Southland",TRUE,TRUE,TRUE,6,542128
-"Howard","MEAC",TRUE,FALSE,TRUE,1,542132
+"Howard","MEAC",TRUE,TRUE,TRUE,1,542132
 "Idaho","Big Sky",TRUE,TRUE,TRUE,10,542136
 "Idaho St.","Big Sky",TRUE,TRUE,TRUE,5,542134
 "Illinois","Big 10",TRUE,TRUE,FALSE,7,542138
@@ -146,7 +146,7 @@
 "LMU (CA)","WCC",TRUE,TRUE,TRUE,4,542192
 "Long Beach St.","Big West",TRUE,TRUE,TRUE,7,542024
 "Longwood","Big South",TRUE,TRUE,TRUE,2,542181
-"Louisiana","Sunbelt",TRUE,FALSE,TRUE,2,542442
+"Louisiana","Sunbelt",TRUE,TRUE,TRUE,2,542442
 "Louisiana Tech","C-USA",TRUE,TRUE,TRUE,10,542185
 "Louisville","ACC",TRUE,TRUE,FALSE,15,542187
 "Loyola Chicago","A-10",TRUE,TRUE,TRUE,15,542193
@@ -205,7 +205,7 @@
 "Northeastern","CAA",TRUE,TRUE,TRUE,11,542292
 "Northern Ariz.","Big Sky",TRUE,TRUE,TRUE,9,542294
 "Northern Colo.","Big Sky",TRUE,TRUE,TRUE,8,542296
-"Northern Ky.","Horizon",TRUE,FALSE,TRUE,4,542301
+"Northern Ky.","Horizon",TRUE,TRUE,TRUE,4,542301
 "Northwestern","Big 10",TRUE,TRUE,FALSE,2,542307
 "Northwestern St.","Southland",TRUE,TRUE,TRUE,2,542305
 "Notre Dame","ACC",TRUE,TRUE,FALSE,14,542309
@@ -217,7 +217,7 @@
 "Old Dominion","Sunbelt",TRUE,TRUE,TRUE,6,542321
 "Ole Miss","SEC",TRUE,TRUE,FALSE,13,542232
 "Omaha","Summit",TRUE,TRUE,TRUE,10,542259
-"Oral Roberts","Summit",TRUE,FALSE,TRUE,1,542323
+"Oral Roberts","Summit",TRUE,TRUE,TRUE,1,542323
 "Oregon","Pac 12",TRUE,TRUE,FALSE,4,542327
 "Oregon St.","Pac 12",TRUE,TRUE,FALSE,11,542325
 "Pacific","WCC",TRUE,TRUE,TRUE,7,542329
@@ -268,7 +268,7 @@
 "South Dakota","Summit",TRUE,TRUE,TRUE,6,542419
 "South Dakota St.","Summit",TRUE,TRUE,TRUE,2,542417
 "South Fla.","AAC",TRUE,TRUE,FALSE,8,542420
-"Southeast Mo. St.","OVC",TRUE,FALSE,TRUE,5,542422
+"Southeast Mo. St.","OVC",TRUE,TRUE,TRUE,5,542422
 "Southeastern La.","Southland",TRUE,TRUE,TRUE,3,542424
 "Southern California","Pac 12",TRUE,TRUE,FALSE,3,542425
 "Southern Ill.","MVC",TRUE,TRUE,TRUE,3,542427
@@ -294,7 +294,7 @@
 "Tex. A&M-Commerce","Southland",FALSE,TRUE,TRUE,5,542631
 "Texas","Big 12",TRUE,FALSE,FALSE,2,542477
 "Texas A&M","SEC",TRUE,TRUE,FALSE,2,542467
-"Texas Southern","SWAC",TRUE,FALSE,TRUE,8,542471
+"Texas Southern","SWAC",TRUE,TRUE,TRUE,8,542471
 "Texas St.","Sunbelt",TRUE,TRUE,TRUE,11,542440
 "Texas Tech","Big 12",TRUE,TRUE,FALSE,9,542473
 "The Citadel","Southern",TRUE,TRUE,TRUE,9,542040
@@ -319,7 +319,7 @@
 "UMass Lowell","Am. East",TRUE,TRUE,TRUE,2,542188
 "UMBC","Am. East",TRUE,TRUE,TRUE,4,542204
 "UMES","MEAC",TRUE,TRUE,TRUE,4,542207
-"UNC Asheville","Big South",TRUE,FALSE,TRUE,1,542248
+"UNC Asheville","Big South",TRUE,TRUE,TRUE,1,542248
 "UNC Greensboro","Southern",TRUE,TRUE,TRUE,3,542253
 "UNCW","CAA",TRUE,TRUE,TRUE,4,542255
 "UNI","MVC",TRUE,TRUE,TRUE,8,542299

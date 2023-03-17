@@ -232,9 +232,9 @@ write_csv(x, "3.0_Files/Predictions/predictions.csv")
 
 # source('3.0_Files/ivy_graphics.R')
 ########################### Bracketology #######################################
-resumes <- get_resumes(new = T)
-bracket <- make_bracket(tourney = T)
-bracket_math <- make_bracket(tourney = F)
+# resumes <- get_resumes(new = T)
+# bracket <- make_bracket(tourney = T)
+# bracket_math <- make_bracket(tourney = F)
 
 ####################### NCAA Simulations #######################################
 source('3.0_Files/ncaa_sims/ncaa_sims.R')

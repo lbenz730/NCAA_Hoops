@@ -1,24 +1,24 @@
 team,region,seed,first_four,elim_round
 Kansas,West,1,FALSE,NA
-Howard,West,16,FALSE,NA
+Howard,West,16,FALSE,1
 Arkansas,West,8,FALSE,NA
-Illinois,West,9,FALSE,NA
+Illinois,West,9,FALSE,1
 Saint Mary's (CA),West,5,FALSE,NA
 VCU,West,12,FALSE,NA
 UConn,West,4,FALSE,NA
 Iona,West,13,FALSE,NA
 TCU,West,6,FALSE,NA
 Arizona St.,West,11,TRUE,NA
-Nevada,West,11,TRUE,NA
+Nevada,West,11,TRUE,0
 Gonzaga,West,3,FALSE,NA
 Grand Canyon,West,14,FALSE,NA
 Northwestern,West,7,FALSE,NA
-Boise St.,West,10,FALSE,NA
+Boise St.,West,10,FALSE,1
 UCLA,West,2,FALSE,NA
-UNC Asheville,West,15,FALSE,NA
+UNC Asheville,West,15,FALSE,1
 Houston,Midwest,1,FALSE,NA
-Northern Ky.,Midwest,16,FALSE,NA
-Iowa,Midwest,8,FALSE,NA
+Northern Ky.,Midwest,16,FALSE,1
+Iowa,Midwest,8,FALSE,1
 Auburn,Midwest,9,FALSE,NA
 Miami (FL),Midwest,5,FALSE,NA
 Drake,Midwest,12,FALSE,NA
@@ -26,39 +26,39 @@ Indiana,Midwest,4,FALSE,NA
 Kent St.,Midwest,13,FALSE,NA
 Iowa St.,Midwest,6,FALSE,NA
 Pittsburgh,Midwest,11,TRUE,NA
-Mississippi St.,Midwest,11,TRUE,NA
+Mississippi St.,Midwest,11,TRUE,0
 Xavier,Midwest,3,FALSE,NA
 Kennesaw St.,Midwest,14,FALSE,NA
-Texas A&M,Midwest,7,FALSE,NA
+Texas A&M,Midwest,7,FALSE,1
 Penn St.,Midwest,10,FALSE,NA
 Texas,Midwest,2,FALSE,NA
-Colgate,Midwest,15,FALSE,NA
+Colgate,Midwest,15,FALSE,1
 Alabama,South,1,FALSE,NA
-A&M-Corpus Christi,South,16,TRUE,NA
-Southeast Mo. St.,South,16,TRUE,NA
+A&M-Corpus Christi,South,16,TRUE,1
+Southeast Mo. St.,South,16,TRUE,0
 Maryland,South,8,FALSE,NA
-West Virginia,South,9,FALSE,NA
+West Virginia,South,9,FALSE,1
 San Diego St.,South,5,FALSE,NA
-Col. of Charleston,South,12,FALSE,NA
-Virginia,South,4,FALSE,NA
+Col. of Charleston,South,12,FALSE,1
+Virginia,South,4,FALSE,1
 Furman,South,13,FALSE,NA
 Creighton,South,6,FALSE,NA
 NC State,South,11,FALSE,NA
 Baylor,South,3,FALSE,NA
 UC Santa Barbara,South,14,FALSE,NA
 Missouri,South,7,FALSE,NA
-Utah St.,South,10,FALSE,NA
-Arizona,South,2,FALSE,NA
+Utah St.,South,10,FALSE,1
+Arizona,South,2,FALSE,1
 Princeton,South,15,FALSE,NA
 Purdue,East,1,FALSE,NA
-Texas Southern,East,16,TRUE,NA
+Texas Southern,East,16,TRUE,0
 Fairleigh Dickinson,East,16,TRUE,NA
 Memphis,East,8,FALSE,NA
 Fla. Atlantic,East,9,FALSE,NA
 Duke,East,5,FALSE,NA
-Oral Roberts,East,12,FALSE,NA
+Oral Roberts,East,12,FALSE,1
 Tennessee,East,4,FALSE,NA
-Louisiana,East,13,FALSE,NA
+Louisiana,East,13,FALSE,1
 Kentucky,East,6,FALSE,NA
 Providence,East,11,FALSE,NA
 Kansas St.,East,3,FALSE,NA

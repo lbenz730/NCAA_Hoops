@@ -30,7 +30,7 @@ build_bracket <- function(seed_list) {
                team_elim_round > opp_elim_round ~ 1,
                team_elim_round < opp_elim_round ~ 0)
     )
-
+  
 }
 
 ### Function to Simulate Games in Round
@@ -49,6 +49,9 @@ glm_pointspread <- read_rds('glm_pointspread.rds')
 seed_list <- 
   seed_list %>% 
   inner_join(select(power_rankings, team, 'rating' = yusag_coeff), by = 'team')
+
+seed <- seed_list$seed
+names(seed) <- seed_list$team
 
 
 ### Compute a win-probability matrix for each possible combination of teams
@@ -83,6 +86,8 @@ ncaa_brackets <-
 
 ### Keep Track of Winners
 round_winners <- list()
+round_points <- c(1,2,3,4,5,10)
+df_upsets <- NULL
 
 ### Simulate Tournament
 for(i in 1:6) {
@@ -90,7 +95,19 @@ for(i in 1:6) {
   ### in bracket Form
   brackets <- future_map(ncaa_brackets, build_bracket)
   winners <- future_map(brackets, sim_round,.options = furrr_options(seed = 781 + i))
+  losers <- future_map2(brackets, winners, ~{setdiff(c(rbind(.x$team, .x$opponent)), .y)})
+  upsets <- future_map2(winners, losers, ~{seed[.x] > seed[.y]})
+  
   round_winners[[i]] <- unlist(winners)
+  
+  ### Points
+  df_round <- 
+    tibble('round' = i,
+           'team' = unlist(winners),
+           'upset' = unlist(upsets))
+  df_upsets <- bind_rows(df_upsets, df_round)
+  
+  
   ncaa_brackets <- map2(ncaa_brackets, winners, ~{filter(.x, team %in% .y)})
 }
 
