@@ -94,7 +94,7 @@ table <-
     logo_opp = '',
     pred_team_score = 'Team 1 Score',
     pred_opp_score = 'Team 2 Score',
-    wins = 'Win %',get
+    wins = 'Win %'
   ) %>% 
   tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
   tab_header(
