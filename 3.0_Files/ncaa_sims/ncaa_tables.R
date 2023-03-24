@@ -15,7 +15,9 @@ make_table <- function(sim_results, table_region, message = '') {
     select(ncaa_colors, 'team' = ncaa_name, logo_url) %>% 
     inner_join(sim_results) 
   
-  # df <- df[df[[round]] != 0,]
+  round <- 'sweet_sixteen'
+  df <- df[df[[round]] != 0,]
+  
   elim <- 
     seed_list %>% 
     filter(!is.na(elim_round)) %>% 
@@ -45,6 +47,8 @@ make_table <- function(sim_results, table_region, message = '') {
   
   df %>% 
     arrange(-final_four) %>% 
+    select(-c(first_round, second_round, sweet_sixteen)) %>% 
+    
     gt() %>% 
     
     
@@ -130,9 +134,9 @@ make_table <- function(sim_results, table_region, message = '') {
       region = 'Region',
       seed = 'Seed',
       rating = 'Rating',
-      first_round = '1st Round',
-      second_round = '2nd Round',
-      sweet_sixteen = 'Sweet 16',
+      # first_round = '1st Round',
+      # second_round = '2nd Round',
+      # sweet_sixteen = 'Sweet 16',
       elite_eight = 'Elite 8',
       final_four = 'Final 4',
       championship_game = 'NCG',

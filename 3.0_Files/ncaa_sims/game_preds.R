@@ -10,7 +10,7 @@ df_games <-
   x %>% 
   inner_join(seed_list, by = c('team')) %>% 
   inner_join(seed_list, by = c('opponent' = 'team')) %>% 
-  filter(date == Sys.Date()) %>% 
+  filter(date == Sys.Date() | date == Sys.Date() + 1) %>% 
   filter(seed.x < seed.y) %>% 
   inner_join(ncaa_colors %>% select(ncaa_name, logo_url), by = c('team' = 'ncaa_name')) %>% 
   inner_join(ncaa_colors %>% select(ncaa_name, logo_url), by = c('opponent' = 'ncaa_name')) %>% 
@@ -99,7 +99,7 @@ table <-
   tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
   tab_header(
     title = md("**2023 NCAA Men's Basketball Tournament Odds**"),
-    subtitle = md(paste0('**Game Predictions: ', Sys.Date(), '**'))) %>% 
+    subtitle = md(paste0('**Game Predictions: ', 'Sweet Sixteen', '**'))) %>% 
   tab_options(column_labels.font.size = 20,
               column_labels.font.weight = 'bold',
               heading.title.font.size = 40,

@@ -1,20 +1,20 @@
 team,region,seed,first_four,elim_round
 Kansas,West,1,FALSE,2
 Howard,West,16,FALSE,1
-Arkansas,West,8,FALSE,NA
+Arkansas,West,8,FALSE,3
 Illinois,West,9,FALSE,1
-Saint Mary's (CA),West,5,FALSE,NA
+Saint Mary's (CA),West,5,FALSE,2
 VCU,West,12,FALSE,1
 UConn,West,4,FALSE,NA
 Iona,West,13,FALSE,1
-TCU,West,6,FALSE,NA
+TCU,West,6,FALSE,2
 Arizona St.,West,11,TRUE,1
 Nevada,West,11,TRUE,0
 Gonzaga,West,3,FALSE,NA
 Grand Canyon,West,14,FALSE,1
 Northwestern,West,7,FALSE,2
 Boise St.,West,10,FALSE,1
-UCLA,West,2,FALSE,NA
+UCLA,West,2,FALSE,3
 UNC Asheville,West,15,FALSE,1
 Houston,Midwest,1,FALSE,NA
 Northern Ky.,Midwest,16,FALSE,1
@@ -22,10 +22,10 @@ Iowa,Midwest,8,FALSE,1
 Auburn,Midwest,9,FALSE,2
 Miami (FL),Midwest,5,FALSE,NA
 Drake,Midwest,12,FALSE,1
-Indiana,Midwest,4,FALSE,NA
+Indiana,Midwest,4,FALSE,2
 Kent St.,Midwest,13,FALSE,1
 Iowa St.,Midwest,6,FALSE,1
-Pittsburgh,Midwest,11,TRUE,NA
+Pittsburgh,Midwest,11,TRUE,2
 Mississippi St.,Midwest,11,TRUE,0
 Xavier,Midwest,3,FALSE,NA
 Kennesaw St.,Midwest,14,FALSE,1
@@ -44,7 +44,7 @@ Virginia,South,4,FALSE,1
 Furman,South,13,FALSE,2
 Creighton,South,6,FALSE,NA
 NC State,South,11,FALSE,1
-Baylor,South,3,FALSE,NA
+Baylor,South,3,FALSE,2
 UC Santa Barbara,South,14,FALSE,1
 Missouri,South,7,FALSE,2
 Utah St.,South,10,FALSE,1
@@ -52,18 +52,18 @@ Arizona,South,2,FALSE,1
 Princeton,South,15,FALSE,NA
 Purdue,East,1,FALSE,1
 Texas Southern,East,16,TRUE,0
-Fairleigh Dickinson,East,16,TRUE,NA
+Fairleigh Dickinson,East,16,TRUE,2
 Memphis,East,8,FALSE,1
 Fla. Atlantic,East,9,FALSE,NA
 Duke,East,5,FALSE,2
 Oral Roberts,East,12,FALSE,1
-Tennessee,East,4,FALSE,NA
+Tennessee,East,4,FALSE,3
 Louisiana,East,13,FALSE,1
-Kentucky,East,6,FALSE,NA
+Kentucky,East,6,FALSE,2
 Providence,East,11,FALSE,1
 Kansas St.,East,3,FALSE,NA
 Montana St.,East,14,FALSE,1
-Michigan St.,East,7,FALSE,NA
+Michigan St.,East,7,FALSE,3
 Southern California,East,10,FALSE,1
-Marquette,East,2,FALSE,NA
+Marquette,East,2,FALSE,2
 Vermont,East,15,FALSE,1
