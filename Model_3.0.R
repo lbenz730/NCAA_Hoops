@@ -8,7 +8,7 @@ plan(multicore(workers = 12))
 options(future.fork.enable = T)
 options(future.rng.onMisue = "ignore")
 options(dplyr.summarise.inform = FALSE)
-x <- read_csv(paste("3.0_Files/Results/2022-23/NCAA_Hoops_Results",
+x <- read_csv(paste("3.0_Files/Results/2023-24/NCAA_Hoops_Results",
                     month(Sys.Date()), day(Sys.Date()), paste0(year(Sys.Date()), ".csv"),
                     sep = "_"))
 train <- read_csv("3.0_Files/Results/2017-18/training.csv")
@@ -30,7 +30,7 @@ source("3.0_Files/conf_tourney_sims.R")
 
 params <- 
   list('conf_sims' = 1000,
-       'ivy_sims' = 3000,
+       'ivy_sims' = 1000,
        'psf_sims' = 100,
        'pct_post' = 0.25)
 
@@ -48,7 +48,7 @@ x <-
          year, month, day, season_id, D1, OT, postponed, canceled) %>% 
   filter(D1 == 2)
 
-teams <- sort(unique(confs$team))
+teams <- unique(confs$team)
 
 ### Game IDs
 x <- 
@@ -60,6 +60,7 @@ x <-
 ### Opp Game IDs
 x <- 
   inner_join(x, select(x, date, team, opponent, game_id), 
+             relationship = "many-to-many",
              by = c("team" = "opponent",
                     "opponent" = "team", 
                     "date" = "date")) %>%
@@ -76,24 +77,24 @@ x <-
 
 ### Reg Season
 x <- 
-  left_join(x, deadlines, by = c("team_conf" = "conf")) %>%
+  left_join(x, deadlines, by = c("team_conf" = "conference")) %>%
   mutate('reg_season' = date <= deadline) %>%
   select(-deadline)
 
 ### Eliminate Teams from Auto Bid contention
 confs <- eliminate(filter(x, score_diff < 0, !reg_season) %>% pull(team), confs)
 
-### Update NCAA Eliminations:
-round_dates <-
-  list('0' = c('2023-03-14', '2023-03-15'),
-       '1' = c('2023-03-16', '2023-03-17'),
-       '2' = c('2023-03-18', '2023-03-19'),
-       '3' = c('2023-03-23', '2023-03-24'),
-       '4' = c('2023-03-25', '2023-03-26'),
-       '5' = c('2023-04-01', '2023-04-01'),
-       '6' = c('2023-04-03', '2023-04-03'))
-
-eliminate_ncaa_teams(seed_list, round_dates)
+# ### Update NCAA Eliminations:
+# round_dates <-
+#   list('0' = c('2023-03-14', '2023-03-15'),
+#        '1' = c('2023-03-16', '2023-03-17'),
+#        '2' = c('2023-03-18', '2023-03-19'),
+#        '3' = c('2023-03-23', '2023-03-24'),
+#        '4' = c('2023-03-25', '2023-03-26'),
+#        '5' = c('2023-04-01', '2023-04-01'),
+#        '6' = c('2023-04-03', '2023-04-03'))
+# 
+# eliminate_ncaa_teams(seed_list, round_dates)
 
 
 ################################# Set Weights ##################################
@@ -204,44 +205,44 @@ x$wins[is.na(x$wins)] <-
 by_conf <- pr_compute(by_conf = T)
 write_csv(x, "3.0_Files/Predictions/predictions.csv")
 ######################### Ivy League Specific Sims #############################
-# playoffs <- ivy.sim(params$ivy_sims)
+playoffs <- ivy.sim(params$ivy_sims)
 # ivy_psf <- psf(params$psf_sims, min_date = Sys.Date(), max_date = Sys.Date() + 6)
-# playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
-############################# Conference Sims (No Tie-Breaks) ##################
-# if(lubridate::hour(Sys.time())  <= 12) {
-# confs <- update_conf_seeds()
-# for(conf in setdiff(sort(unique(confs$conference)), 'Independent')) {
-#   # for(conf in sort(unique(confs$conference[!is.na(confs$conf_seed)]))) {
-#   print(conf)
-#   df_f <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"), col_types = cols())
-#   f <- !all(group_by(df_f, team, place) %>% count() %>% pull(n) == params$conf_sims)
-# 
-#   sims <- conf_fast_sim(conf, params$conf_sims, params$pct_post, force = f)
-#   write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
-#   if(conf != 'Ivy ') {
-#     write_csv(sims$post_season, paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
-#   } else {
-#     playoffs %>%
-#       select(team, 'freq' = auto_bid) %>%
-#       mutate('freq' = freq/100) %>%
-#       write_csv(paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
-#   }
-# }
-# conf_tourney_graphics()
-# # }
+playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
+############################ Conference Sims (No Tie-Breaks) ##################
+if(lubridate::hour(Sys.time())  <= 12) {
+  # confs <- update_conf_seeds()
+  for(conf in setdiff(sort(unique(confs$conference)), 'Independent')) {
+    # for(conf in sort(unique(confs$conference[!is.na(confs$conf_seed)]))) {
+    print(conf)
+    df_f <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"), col_types = cols())
+    f <- !all(group_by(df_f, team, place) %>% count() %>% pull(n) == params$conf_sims)
+    
+    sims <- conf_fast_sim(conf, params$conf_sims, params$pct_post, force = f)
+    write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+    if(conf != 'Ivy ') {
+      write_csv(sims$post_season, paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
+    } else {
+      playoffs %>%
+        select(team, 'freq' = auto_bid) %>%
+        mutate('freq' = freq/100) %>%
+        write_csv(paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
+    }
+  }
+  # conf_tourney_graphics()
+}
 
 # source('3.0_Files/ivy_graphics.R')
 ########################### Bracketology #######################################
-# resumes <- get_resumes(new = T)
-# bracket <- make_bracket(tourney = T)
-# bracket_math <- make_bracket(tourney = F)
+resumes <- get_resumes(new = T)
+bracket <- make_bracket(tourney = T)
+bracket_math <- make_bracket(tourney = F)
 
 ####################### NCAA Simulations #######################################
-source('3.0_Files/ncaa_sims/ncaa_sims.R')
-source('3.0_Files/ncaa_sims/ncaa_tables.R')
+# source('3.0_Files/ncaa_sims/ncaa_sims.R')
+# source('3.0_Files/ncaa_sims/ncaa_tables.R')
 
 ############################ System Evaluation #################################
-min_date <- as.Date("2022-11-07")
+min_date <- as.Date("2023-11-04")
 max_date <- Sys.Date()
 y <- filter(x, date >= min_date, date <= max_date)
 cat(paste("System Evaluation:", min_date, "Through", max_date),
@@ -269,8 +270,8 @@ nrow(filter(x, round(pred_team_score) == team_score))
 filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)
 
 #### Copy App Specific Files
-file.copy(dir('3.0_Files/Results/2022-23/', full.names = T),  
-          paste0('app/', dir('3.0_Files/Results/2022-23/', full.names = T)), overwrite = T)
+file.copy(dir('3.0_Files/Results/2023-24/', full.names = T),  
+          paste0('app/', dir('3.0_Files/Results/2023-24/', full.names = T)), overwrite = T)
 file.copy(dir('3.0_Files/Predictions/', full.names = T, recursive = T),  
           paste0('app/', dir('3.0_Files/Predictions/', full.names = T, recursive = T)), overwrite = T)
 file.copy(dir('3.0_Files/Bracketology/', full.names = T),  

@@ -214,6 +214,9 @@ make_bracket <- function(tourney) {
 bracket_matrix <- function() {
   bracket <- XML::readHTMLTable(RCurl::getURL('http://www.bracketmatrix.com/'))
   ix <- which(bracket[[1]]$V2 == 'OTHER AUTOMATIC QUALIFIERS')
+  if(length(ix) == 0) {
+   ix <- nrow(bracket[[1]]) 
+  }
   bracket_cln <- 
     bracket[[1]] %>% 
     select('team' = V2,

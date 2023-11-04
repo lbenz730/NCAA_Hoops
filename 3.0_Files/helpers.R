@@ -112,7 +112,7 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, force = F, year = '2022-2
   }
   
   ### Only Sim Regular Season up to 1 day after Deadline
-  if(Sys.Date() <= deadlines$deadline[deadlines$conf == conf] + 1 | force) {
+  if(Sys.Date() <= deadlines$deadline[deadlines$conference == conf] + 1 | force) {
     print('Regular Season')
     schedule$tmp <- 
       case_when(
@@ -154,7 +154,7 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, force = F, year = '2022-2
   }
   
   ### Only Sim Conference Tournament from RS results up to deadline
-  if(Sys.Date() <= deadlines$deadline[deadlines$conf == conf]) {
+  if(Sys.Date() <= deadlines$deadline[deadlines$conference == conf]) {
     print('Post Season')
     ### 1000 sims for short (speed up tourney_sim_single at some point w/ pre-computed wp)
     params <- 
