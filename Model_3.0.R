@@ -17,7 +17,7 @@ deadlines <- read_csv("3.0_Files/Info/deadlines.csv")
 conf_tournaments <- read_csv('3.0_Files/Info/conf_tournaments.csv')
 priors <- 
   read_csv("3.0_Files/Info/prior.csv") %>% 
-  arrange(team)
+  arrange(tolower(team))
 seed_list <- read_csv('3.0_Files/ncaa_sims/seed_list.csv')
 source("3.0_Files/powerrankings.R")
 source("3.0_Files/Ivy_Sims.R")
@@ -46,9 +46,11 @@ x <-
   select(date, team, opponent, location, team_score, opp_score,
          score_diff, total_score, game_id, opp_game_id, team_conf, opp_conf,
          year, month, day, season_id, D1, OT, postponed, canceled) %>% 
-  filter(D1 == 2)
+  filter(D1 == 2) 
 
-teams <- unique(confs$team)
+
+teams <- priors$team
+# teams <- teams[order(tolower(teams))]
 
 ### Game IDs
 x <- 
@@ -127,9 +129,9 @@ priors <- mutate(priors,
                  rel_yusag_coeff = yusag_coeff - yusag_coeff[1],
                  rel_off_coeff = off_coeff - off_coeff[1],
                  rel_def_coeff = def_coeff - def_coeff[1]) %>%
-  arrange(team)
+  arrange(tolower(team))
 
-w <- sapply(teams, prior_weight)
+w <- sapply(priors$team, prior_weight)
 
 lm.hoops$coefficients[is.na(lm.hoops$coefficients)] <- 0
 lm.off$coefficients[is.na(lm.off$coefficients)] <- 0
@@ -160,9 +162,10 @@ lm.def$coefficients[c(1, (2 * length(teams)):(2 * length(teams)+1))] <-
 
 ################################ Power Rankings ################################
 power_rankings <- pr_compute(by_conf = F)
-history <- read.csv("3.0_Files/History/history.csv", as.is = T)
+history <- read_csv("3.0_Files/History/history.csv")
+
 x <- 
-  mutate(x, pr_date = sapply(x$date, max_date, hist_dates = unique(history$date))) %>%
+  mutate(x, pr_date = as.Date(unlist(map(x$date, ~max_date(.x, hist_dates = unique(history$date)))), origin = '1970-01-01')) %>%
   inner_join(select(power_rankings, team, rank),by = c("team" = "team")) %>%
   inner_join(select(power_rankings, team, rank),by = c("opponent" = "team")) %>% 
   inner_join(select(history, team, yusag_coeff, date, off_coeff, def_coeff), 
@@ -208,6 +211,7 @@ write_csv(x, "3.0_Files/Predictions/predictions.csv")
 playoffs <- ivy.sim(params$ivy_sims)
 # ivy_psf <- psf(params$psf_sims, min_date = Sys.Date(), max_date = Sys.Date() + 6)
 playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
+
 ############################ Conference Sims (No Tie-Breaks) ##################
 if(lubridate::hour(Sys.time())  <= 12) {
   # confs <- update_conf_seeds()
@@ -216,7 +220,7 @@ if(lubridate::hour(Sys.time())  <= 12) {
     print(conf)
     df_f <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"), col_types = cols())
     f <- !all(group_by(df_f, team, place) %>% count() %>% pull(n) == params$conf_sims)
-    
+
     sims <- conf_fast_sim(conf, params$conf_sims, params$pct_post, force = f)
     write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
     if(conf != 'Ivy ') {
@@ -265,18 +269,18 @@ cat(paste("System Evaluation:", min_date, "Through", max_date),
     round(100 * mean(abs(y$pred_total_score - y$total_score) <= 2, na.rm = T), 2), "%\n",
     "Games w/in 5 Points of Observed Total Score: ",
     round(100 * mean(abs(y$pred_total_score - y$total_score) <= 5, na.rm = T), 2), "%\n",
-    sep = "") 
+    sep = "")
 nrow(filter(x, round(pred_team_score) == team_score))
 filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)
 
 #### Copy App Specific Files
-file.copy(dir('3.0_Files/Results/2023-24/', full.names = T),  
+file.copy(dir('3.0_Files/Results/2023-24/', full.names = T),
           paste0('app/', dir('3.0_Files/Results/2023-24/', full.names = T)), overwrite = T)
-file.copy(dir('3.0_Files/Predictions/', full.names = T, recursive = T),  
+file.copy(dir('3.0_Files/Predictions/', full.names = T, recursive = T),
           paste0('app/', dir('3.0_Files/Predictions/', full.names = T, recursive = T)), overwrite = T)
-file.copy(dir('3.0_Files/Bracketology/', full.names = T),  
+file.copy(dir('3.0_Files/Bracketology/', full.names = T),
           paste0('app/', dir('3.0_Files/Bracketology/', full.names = T)), overwrite = T)
-file.copy(dir('3.0_Files/ncaa_sims/', full.names = T),  
+file.copy(dir('3.0_Files/ncaa_sims/', full.names = T),
           paste0('app/', dir('3.0_Files/ncaa_sims/', full.names = T)), overwrite = T)
 file.copy('glm_pointspread.rds', 'app/glm_pointspread.rds', overwrite = T)
 file.copy('3.0_Files/History/history.csv', 'app/3.0_Files/History/history.csv', overwrite = T)
