@@ -371,7 +371,9 @@ make_table <- function(sim_results, table_region) {
 }
 
 ### Ivy League
-ivy_history <- read_csv('3.0_Files/Predictions/playoff_history.csv')
+ivy_history <- 
+  read_csv('3.0_Files/Predictions/playoff_history.csv') %>% 
+  filter(date >= '2023-11-01')
 ivy_playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
 
 ivy_gt <- 
@@ -488,7 +490,9 @@ ivy_history_plot <-
   scale_y_continuous(labels = function(x) {paste0(x, "%")}, limits = c(0,100)) +
   scale_color_manual(values = cols)
 
-ivy_sim <- read_csv(paste0("3.0_Files/Predictions/conf_sims/Ivy.csv"))
+ivy_sim <- 
+  read_csv(paste0("3.0_Files/Predictions/conf_sims/Ivy.csv")) %>% 
+  select(sim, team, n_wins, place)
 
 ivy_bar <- 
   ivy_sim %>% 
