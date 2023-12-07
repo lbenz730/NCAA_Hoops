@@ -50,9 +50,9 @@ make_bracket <- function(tourney) {
   bracket <- arrange(bracket, desc(yusag_coeff))
   
   autobid_calc <- function(conf) {
-    if(conf == 'NEC') {
-      return('Fairleigh Dickinson') 
-    }
+    # if(conf == 'NEC') {
+    #   return('Fairleigh Dickinson') 
+    # }
     
     tmp <- bracket$team[bracket$conf == conf]
     for(i in 1:length(tmp)) {

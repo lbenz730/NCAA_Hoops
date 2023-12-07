@@ -10,6 +10,11 @@ library(RColorBrewer)
 library(ggridges)
 library(tidyr)
 
+replace_na <- function(x, r) {
+ x[is.na(x)] <- r 
+ return(x)
+}
+
 glm.pointspread <- readRDS("glm_pointspread.rds")
 ncaa_sims <- read_csv('3.0_Files/ncaa_sims/ncaa_sims.csv')
 t_confs <- gsub('\\.csv', '', dir('3.0_Files/Predictions/conf_tourney_sims/2023-24', full.names = F))
@@ -148,7 +153,10 @@ bracket_math[is.na(bracket_math)] <- 0
 
 
 visualize_schedule <- function(conf) {
-  conf_data <- filter(x, conf_game, team_conf == conf, reg_season)
+  conf_data <- 
+    filter(x, conf_game, team_conf == conf, reg_season) %>% 
+    select(date, location, team, opponent, team_score, opp_score, postponed, canceled) 
+  
   if(nrow(conf_data) == 0) {
     NULL 
   } else {
@@ -199,25 +207,29 @@ visualize_schedule <- function(conf) {
       lwdc <- c(lwdc, 1.4)
     }
     
-    ggplot(conf_data, aes(x = game_id, y = forcats::fct_reorder(team, desc(team)))) +
+    print('Making Plot')
+    p <- ggplot(conf_data, aes(x = game_id, y = forcats::fct_reorder(team, desc(team)))) +
       geom_tile(aes(fill = paste(location, team), 
                     col = result, linewidth = result),
                 alpha = 0.7, width = 0.9, height = 0.9) +
-      geom_image(aes(image = logo_url), size = 0.04) +
-      scale_fill_manual(values = c(ncaahoopR::ncaa_colors$primary_color[ncaahoopR::ncaa_colors$conference == conf],
-                                   rep("grey", sum(conf_data$location == "N")),
-                                   rep("white", length(unique(conf_data$team))))) +
+      geom_image(aes(image = logo_url)) +
+      scale_fill_manual(values = replace_na(c(ncaahoopR::ncaa_colors$primary_color[ncaahoopR::ncaa_colors$conference == conf],
+                                              rep("grey", sum(conf_data$location == "N")),
+                                              rep("white", length(unique(conf_data$team)))), 
+                                            'white')) +
       scale_color_manual(values = gc) +
       scale_linewidth_manual(values = lwdc) +
       theme_minimal() +
       theme(axis.title = element_text(size = 20),
             axis.text.y = element_text(size = 16),
             axis.text.x = element_blank(),
+            panel.grid = element_blank(),
             plot.title = element_text(size = 24, hjust  = 0.5),
             plot.subtitle = element_text(size = 18, hjust = 0.5),
             strip.text = element_text(size = 14),
             plot.caption = element_text(size = 12, hjust = 0.5),
-            legend.position = "none") +
+            legend.position = "none"
+      ) +
       labs(x = "", 
            y = "",
            color = "",
@@ -226,6 +238,8 @@ visualize_schedule <- function(conf) {
            subtitle = conf,
            caption = "Home = Colored Background | Away = White Background
          Green = Win | Red = Loss | Purple = Game Today |\nBlue = Postponed | Black = Cancelled")
+    print('Done Plot')
+    return(p)
   }
 }
 
@@ -652,11 +666,14 @@ bracket_odds <-
 
 
 make_standings_plot <- function(conf) {
-  sims <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+  sims <- 
+    read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv")) %>% 
+    select(sim, team, n_wins)
+  
   if(nrow(sims) < 10) {
     p <- NULL
   } else{
-
+    
     standings <-
       group_by(sims, team) %>%
       summarise("avg_wins" = mean(n_wins)) %>%
@@ -665,12 +682,12 @@ make_standings_plot <- function(conf) {
       arrange(team) %>%
       left_join(select(ncaahoopR::ncaa_colors, ncaa_name, primary_color),
                 by = c("team" = "ncaa_name"))
-
-
+    
+    
     sims$team <- as.factor(sims$team)
     sims$team <- reorder(sims$team, rep(standings$rank, n_distinct(sims$sim)))
     standings <- arrange(standings, avg_wins)
-
+    
     p <-
       ggplot(sims, aes(x = n_wins, y = team, fill = team)) +
       geom_density_ridges(stat = "binline", scale = 0.7, binwidth = 1) +
@@ -681,6 +698,9 @@ make_standings_plot <- function(conf) {
       theme(legend.position = "none") +
       scale_fill_manual(values = c(standings$primary_color)) +
       scale_x_continuous(breaks = c(0:max(sims$n_wins)))
+    
+    rm(sims)
+    gc()
   }
   return(p)
 }
@@ -721,3 +741,17 @@ ivy_snapsnot <-
        title = 'Ivy Madness Playoff Snapshot',
        subtitle = 'Tiebreaking Scenarios Applied',
        color = '') 
+
+x <- 
+  x %>% 
+  select(date, team, conf_game, rank, 
+         team_conf, reg_season, opponent, 
+         opp_rank, location, team_score, 
+         opp_score, pred_team_score, 
+         pred_score_diff,
+         pred_opp_score, wins, canceled, postponed)
+
+rm(ivy_history)
+gc()
+
+

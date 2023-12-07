@@ -80,6 +80,7 @@ shinyServer(function(input, output, session) {
   ############################ Conference Breakdown ##############################  
   ### Conf Summary Table
   conf_table <- eventReactive(input$conf, {
+    print('Conf Table') 
     filter(rankings, Conference == input$conf) %>%
       left_join(conf_projections, by = c("Team" = "team",
                                          "Conference" = "team_conf")) %>%
@@ -98,7 +99,6 @@ shinyServer(function(input, output, session) {
              'Auto-Bid' = auto_bid,
              'At-Large' = at_large,
              'NCAA Odds' = overall)
-    
     
   })
   
@@ -129,6 +129,7 @@ shinyServer(function(input, output, session) {
   
   #### Universe Plots
   universe_plot <- eventReactive(input$conf, {
+    print('Universe Plot')
     df <- rankings_clean %>%
       inner_join(select(ncaahoopR::ncaa_colors, -conference),
                  by = c("team" = "ncaa_name"))
@@ -152,6 +153,7 @@ shinyServer(function(input, output, session) {
   
   ### Conference Box Plot
   box_plot <- eventReactive(input$conf, {
+    print('Conf Box Plot')
     mutate(rankings_clean, conference = reorder(conference, yusag_coeff, median)) %>%
       ggplot(aes(x = conference, y = yusag_coeff)) +
       geom_boxplot(alpha = 0) + 
@@ -172,6 +174,7 @@ shinyServer(function(input, output, session) {
   
   ### Standings Plot
   standings_plot <- eventReactive(input$conf, {
+    print('Standings Plot')
     p <- make_standings_plot(input$conf)
     p
   })
@@ -179,7 +182,9 @@ shinyServer(function(input, output, session) {
   output$conf_standings_plot <- renderPlot(standings_plot())
   
   cs <- eventReactive(input$conf, {
-    df <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", input$conf, ".csv")) 
+    print('Standings Place Table')
+    df <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", input$conf, ".csv")) %>% 
+      select(sim, team, place)
     df <- 
       df %>%
       group_by(team, place) %>%
@@ -208,13 +213,17 @@ shinyServer(function(input, output, session) {
                              columnDefs = list(list(className = 'dt-center', targets = "_all")))) %>%
       formatPercentage(columns = 2:ncol(cs()), 1) %>%
       formatStyle(names(cs())[-1], backgroundColor = styleInterval(seq(0, 1, 0.01), heat.colors(102)[102:1]))
-    
+
   })
   
-  conf_schedule <- eventReactive(input$conf, { visualize_schedule(input$conf) })
+  conf_schedule <- eventReactive(input$conf, { 
+    ### Schedule Plot
+    print('Schedule Plot')
+    visualize_schedule(input$conf)
+    })
   
   output$conf_schedule_plot <- renderPlot(conf_schedule())
-  
+
   
   
   
