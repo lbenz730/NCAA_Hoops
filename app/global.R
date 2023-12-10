@@ -19,6 +19,8 @@ glm.pointspread <- readRDS("glm_pointspread.rds")
 ncaa_sims <- read_csv('3.0_Files/ncaa_sims/ncaa_sims.csv')
 t_confs <- gsub('\\.csv', '', dir('3.0_Files/Predictions/conf_tourney_sims/2023-24', full.names = F))
 
+
+
 theme_set(theme_bw() +
             theme(axis.title = element_text(size = 20),
                   axis.text = element_text(size = 12),
@@ -29,6 +31,11 @@ theme_set(theme_bw() +
 
 x <- read_csv("3.0_Files/Predictions/predictions.csv")
 teams <- sort(unique(x$team))
+
+img_files <- dir('www/')
+df_img <- 
+  tibble('team' = teams,
+         'logo_file' = paste0('www/', map_chr(teams, ~ifelse(paste0(.x, '.png') %in% img_files, paste0(.x, '.png'), paste0(.x, '.svg')))))
 
 history <- read_csv("3.0_Files/History/history.csv") %>%
   mutate("date" = as.Date(date)) 
@@ -153,27 +160,18 @@ bracket_math[is.na(bracket_math)] <- 0
 
 
 visualize_schedule <- function(conf) {
+  conf_data <- read_csv(paste0('3.0_Files/schedule_data/', conf, '.csv'))
   conf_data <- 
-    filter(x, conf_game, team_conf == conf, reg_season) %>% 
-    select(date, location, team, opponent, team_score, opp_score, postponed, canceled) 
+    conf_data %>% 
+    inner_join(df_img, by = c('opponent' = 'team'))
   
   if(nrow(conf_data) == 0) {
     NULL 
   } else {
     
-    
-    conf_data <- 
-      conf_data %>% 
-      inner_join(select(ncaahoopR::ncaa_colors, ncaa_name, logo_url), 
-                 by = c("opponent" = "ncaa_name"))
-    conf_data <- 
-      conf_data %>% 
-      group_by(team) %>% 
-      mutate('game_id' = 1:n()) %>% 
-      ungroup()
-    
     colors <- gg_color_hue(5)
-    conf_data <- mutate(conf_data, "result"  = case_when(
+    conf_data <- 
+      mutate(conf_data, "result"  = case_when(
       date == Sys.Date() & is.na(team_score) ~ "Today's Game",
       team_score > opp_score ~ "Win",
       postponed  ~ 'Postponed',
@@ -183,7 +181,7 @@ visualize_schedule <- function(conf) {
     )) %>%
       mutate("result" = forcats::fct_relevel(result, "Win", "Loss", "Today's Game", 'Future Game',
                                              'Postponed', 'Canceled'))
-    
+  
     gc <- c()
     lwdc <- c()
     if(any(conf_data$result == "Win")) {
@@ -212,7 +210,7 @@ visualize_schedule <- function(conf) {
       geom_tile(aes(fill = paste(location, team), 
                     col = result, linewidth = result),
                 alpha = 0.7, width = 0.9, height = 0.9) +
-      geom_image(aes(image = logo_url)) +
+      geom_image(aes(image = logo_file)) +
       scale_fill_manual(values = replace_na(c(ncaahoopR::ncaa_colors$primary_color[ncaahoopR::ncaa_colors$conference == conf],
                                               rep("grey", sum(conf_data$location == "N")),
                                               rep("white", length(unique(conf_data$team)))), 
@@ -666,26 +664,17 @@ bracket_odds <-
 
 
 make_standings_plot <- function(conf) {
-  sims <- 
-    read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv")) %>% 
-    select(sim, team, n_wins)
+  standings <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, "_standings.csv"))
+  sims <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
   
   if(nrow(sims) < 10) {
     p <- NULL
   } else{
     
-    standings <-
-      group_by(sims, team) %>%
-      summarise("avg_wins" = mean(n_wins)) %>%
-      arrange(desc(avg_wins)) %>%
-      mutate("rank" = nrow(.):1) %>%
-      arrange(team) %>%
-      left_join(select(ncaahoopR::ncaa_colors, ncaa_name, primary_color),
-                by = c("team" = "ncaa_name"))
     
     
     sims$team <- as.factor(sims$team)
-    sims$team <- reorder(sims$team, rep(standings$rank, n_distinct(sims$sim)))
+    sims$team <- reorder(sims$team, rep(standings$rank, 1000))
     standings <- arrange(standings, avg_wins)
     
     p <-
@@ -699,9 +688,8 @@ make_standings_plot <- function(conf) {
       scale_fill_manual(values = c(standings$primary_color)) +
       scale_x_continuous(breaks = c(0:max(sims$n_wins)))
     
-    rm(sims)
-    gc()
   }
+  print('Done Plot')
   return(p)
 }
 

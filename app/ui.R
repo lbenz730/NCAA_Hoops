@@ -66,8 +66,8 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                                 
                                 selectInput("conf", 
                                             label = "Select a Conference",
-                                            choices = c(""), 
-                                            selected = NULL
+                                            choices = sort(unique(x$team_conf)), 
+                                            selected = 'A-10'
                                             
                                 )
                               ),

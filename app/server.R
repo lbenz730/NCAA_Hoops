@@ -36,8 +36,6 @@ shinyServer(function(input, output, session) {
     
   })
   
-  updateSelectInput(session, inputId = "conf", 
-                    choices = sort(unique(confs$conference)), selected = "A-10")
   
   updateSelectInput(session, inputId = "conft", 
                     choices = sort(t_confs), selected = sort(t_confs)[1])
@@ -130,9 +128,8 @@ shinyServer(function(input, output, session) {
   #### Universe Plots
   universe_plot <- eventReactive(input$conf, {
     print('Universe Plot')
-    df <- rankings_clean %>%
-      inner_join(select(ncaahoopR::ncaa_colors, -conference),
-                 by = c("team" = "ncaa_name"))
+    df <- rankings_clean %>% 
+      inner_join(df_img, by  = 'team')
     
     
     ggplot(df, aes(x = off_coeff, y = def_coeff)) +
@@ -140,7 +137,7 @@ shinyServer(function(input, output, session) {
       geom_vline(xintercept = 0, lty = 1, alpha = 0.5, size = 2) + 
       geom_abline(slope = rep(-1, 11), intercept = seq(25, -25, -5), alpha = 0.5, lty  = 2) +
       geom_point(alpha = 0.5, aes(color = yusag_coeff), size = 3) +
-      geom_image(data = filter(df, conference == input$conf), aes(image = logo_url)) +
+      geom_image(data = filter(df, conference == input$conf), aes(image = logo_file)) +
       scale_color_viridis_c(option = "C") +
       labs(x = "Offensive Points Relative to Average \nNCAA Division 1 Team",
            y = "Defensive Points Relative to Average \nNCAA Division 1 Team",
@@ -149,7 +146,9 @@ shinyServer(function(input, output, session) {
       )
   })
   
-  output$uni_plot <- renderPlot(universe_plot())
+  output$uni_plot <- renderPlot(universe_plot(),
+                                width = 1000, 
+                                height = 600)
   
   ### Conference Box Plot
   box_plot <- eventReactive(input$conf, {
@@ -179,29 +178,14 @@ shinyServer(function(input, output, session) {
     p
   })
   
-  output$conf_standings_plot <- renderPlot(standings_plot())
+  output$conf_standings_plot <- renderPlot(standings_plot(),
+                                           height = 600,
+                                           width = 1200)
   
   cs <- eventReactive(input$conf, {
     print('Standings Place Table')
-    df <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", input$conf, ".csv")) %>% 
-      select(sim, team, place)
-    df <- 
-      df %>%
-      group_by(team, place) %>%
-      summarise("pct" = n()/n_distinct(df$sim)) %>%
-      ungroup() %>%
-      tidyr::spread(key = "place", value = "pct") %>%
-      mutate_if(is.numeric, ~replace(., is.na(.), 0)) %>%
-      rename("Team" = team) 
-    
-    df$avg_seed <- apply(df[,-1], 1, function(x) {sum(x * as.numeric(names(df)[-1]))})
-    df <- arrange(df, avg_seed) %>%
-      select(-avg_seed)
-    
-    
-    
+    df <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", input$conf, "_win_matrix.csv"))
     df
-    
   })
   
   output$conf_sims <- DT::renderDataTable({
@@ -222,7 +206,9 @@ shinyServer(function(input, output, session) {
     visualize_schedule(input$conf)
     })
   
-  output$conf_schedule_plot <- renderPlot(conf_schedule())
+  output$conf_schedule_plot <- renderPlot(conf_schedule(),
+                                          height = 600,
+                                          width = 1200)
 
   
   
@@ -710,7 +696,20 @@ shinyServer(function(input, output, session) {
     
   })
   
-  output$ct_sims <- render_gt(ctsim())
+  output$ct_sims <- render_gt(ctsim(),
+                              width = 1200,
+                              height = 600)
+  
+  
+  
+  # outputOptions(output, 'conf_schedule_plot', suspendWhenHidden = FALSE,  priority = 3)
+  # outputOptions(output, 'conf_standings', suspendWhenHidden = FALSE, priority = 2)
+  # outputOptions(output, 'rankings', suspendWhenHidden = FALSE, priority = 20)
+  # outputOptions(output, 'uni_plot', suspendWhenHidden = FALSE, priority = 3)
+  
+  # outputOptions(output, 'conf_sims', suspendWhenHidden = FALSE, priority = 5)
+  # # outputOptions(output, 'conf_box_plot', suspendWhenHidden = FALSE, priority = 6)
+  # outputOptions(output, 'conf_standings_plot', suspendWhenHidden = FALSE, priority = 7)
   
 })
 

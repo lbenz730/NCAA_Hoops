@@ -514,3 +514,21 @@ eliminate_ncaa_teams <- function(seed_list, round_dates) {
   write_csv(seed_list, '3.0_Files/ncaa_sims/seed_list.csv')
 }
 
+
+visualize_schedule_data <- function(conf) {
+  conf_data <- 
+    filter(x, conf_game, team_conf == conf, reg_season) %>% 
+    select(date, location, team, opponent, team_score, opp_score, postponed, canceled) 
+  
+  conf_data <- 
+    conf_data %>% 
+    inner_join(select(ncaahoopR::ncaa_colors, ncaa_name, logo_url), 
+               by = c("opponent" = "ncaa_name"))
+  conf_data <- 
+    conf_data %>% 
+    group_by(team) %>% 
+    mutate('game_id' = 1:n()) %>% 
+    ungroup()
+  
+  write_csv(conf_data, paste0('3.0_Files/schedule_data/', conf, '.csv'))
+}

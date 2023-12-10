@@ -220,9 +220,37 @@ if(lubridate::hour(Sys.time())  <= 12) {
     print(conf)
     df_f <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"), col_types = cols())
     f <- !all(group_by(df_f, team, place) %>% count() %>% pull(n) == params$conf_sims)
-
+    
     sims <- conf_fast_sim(conf, params$conf_sims, params$pct_post, force = f)
     write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
+    
+    df <- 
+      sims$reg_season %>% 
+      group_by(team, place) %>%
+      summarise("pct" = n()/n_distinct(.$sim)) %>%
+      ungroup() %>%
+      tidyr::spread(key = "place", value = "pct") %>%
+      mutate_if(is.numeric, ~replace(., is.na(.), 0)) %>%
+      rename("Team" = team) 
+    
+    df$avg_seed <- apply(df[,-1], 1, function(x) {sum(x * as.numeric(names(df)[-1]))})
+    df <- 
+      arrange(df, avg_seed) %>%
+      select(-avg_seed)
+    
+    write_csv(df, paste0("3.0_Files/Predictions/conf_sims/", conf, "_win_matrix.csv"))
+    
+    standings <-
+      group_by(sims$reg_season, team) %>%
+      summarise("avg_wins" = mean(n_wins)) %>%
+      arrange(desc(avg_wins)) %>%
+      mutate("rank" = nrow(.):1) %>%
+      arrange(team) %>%
+      left_join(select(ncaahoopR::ncaa_colors, ncaa_name, primary_color),
+                by = c("team" = "ncaa_name"))
+    
+    write_csv(standings, paste0("3.0_Files/Predictions/conf_sims/", conf, "_standings.csv"))
+    
     if(conf != 'Ivy ') {
       write_csv(sims$post_season, paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
     } else {
@@ -234,6 +262,14 @@ if(lubridate::hour(Sys.time())  <= 12) {
   }
   # conf_tourney_graphics()
 }
+
+### Conf Schedule Data
+for(conf in setdiff(sort(unique(confs$conference)), 'Independent')) {
+  # for(conf in sort(unique(confs$conference[!is.na(confs$conf_seed)]))) {
+  print(conf)
+  visualize_schedule_data(conf)
+}
+
 
 # source('3.0_Files/ivy_graphics.R')
 ########################### Bracketology #######################################
@@ -282,6 +318,8 @@ file.copy(dir('3.0_Files/Bracketology/', full.names = T),
           paste0('app/', dir('3.0_Files/Bracketology/', full.names = T)), overwrite = T)
 file.copy(dir('3.0_Files/ncaa_sims/', full.names = T),
           paste0('app/', dir('3.0_Files/ncaa_sims/', full.names = T)), overwrite = T)
+file.copy(dir('3.0_Files/schedule_data/', full.names = T),
+          paste0('app/', dir('3.0_Files/schedule_data/', full.names = T)), overwrite = T)
 file.copy('glm_pointspread.rds', 'app/glm_pointspread.rds', overwrite = T)
 file.copy('3.0_Files/History/history.csv', 'app/3.0_Files/History/history.csv', overwrite = T)
 file.copy('3.0_Files/Info/conferences.csv', 'app/3.0_Files/Info/conferences.csv', overwrite = T)
