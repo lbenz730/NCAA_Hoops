@@ -41,7 +41,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-09,V,Arizona St.,UCLA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,20
 2023-12-29,H,California,Arizona,81,100,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Arizona_Wildcats_logo.svg/200px-Arizona_Wildcats_logo.svg.png,1
 2023-12-31,H,California,Arizona St.,69,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Arizona_State_Sun_Devils_logo.svg/245px-Arizona_State_Sun_Devils_logo.svg.png,2
-2024-01-03,V,California,Southern California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,3
+2024-01-03,V,California,Southern California,74,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,3
 2024-01-06,V,California,UCLA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,4
 2024-01-10,H,California,Colorado,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Colorado_Buffaloes_logo.svg/320px-Colorado_Buffaloes_logo.svg.png,5
 2024-01-13,V,California,Oregon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,6
@@ -121,7 +121,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-09,H,Oregon St.,Colorado,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Colorado_Buffaloes_logo.svg/320px-Colorado_Buffaloes_logo.svg.png,20
 2023-12-28,V,Southern California,Oregon,74,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,1
 2023-12-30,V,Southern California,Oregon St.,70,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Oregon_State_Beavers_logo.svg/320px-Oregon_State_Beavers_logo.svg.png,2
-2024-01-03,H,Southern California,California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,3
+2024-01-03,H,Southern California,California,82,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,3
 2024-01-06,H,Southern California,Stanford,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,4
 2024-01-10,H,Southern California,Washington St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Washington_State_Cougars_logo.svg/252px-Washington_State_Cougars_logo.svg.png,5
 2024-01-13,V,Southern California,Colorado,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Colorado_Buffaloes_logo.svg/320px-Colorado_Buffaloes_logo.svg.png,6
@@ -141,7 +141,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-09,H,Southern California,Arizona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Arizona_Wildcats_logo.svg/200px-Arizona_Wildcats_logo.svg.png,20
 2023-12-29,H,Stanford,Arizona St.,73,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Arizona_State_Sun_Devils_logo.svg/245px-Arizona_State_Sun_Devils_logo.svg.png,1
 2023-12-31,H,Stanford,Arizona,100,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Arizona_Wildcats_logo.svg/200px-Arizona_Wildcats_logo.svg.png,2
-2024-01-03,V,Stanford,UCLA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,3
+2024-01-03,V,Stanford,UCLA,59,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,3
 2024-01-06,V,Stanford,Southern California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,4
 2024-01-11,V,Stanford,Oregon St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Oregon_State_Beavers_logo.svg/320px-Oregon_State_Beavers_logo.svg.png,5
 2024-01-14,H,Stanford,Utah,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Utah_Utes_logo.svg/263px-Utah_Utes_logo.svg.png,6
@@ -161,7 +161,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-07,H,Stanford,California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,20
 2023-12-28,V,UCLA,Oregon St.,69,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Oregon_State_Beavers_logo.svg/320px-Oregon_State_Beavers_logo.svg.png,1
 2023-12-30,V,UCLA,Oregon,59,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,2
-2024-01-03,H,UCLA,Stanford,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,3
+2024-01-03,H,UCLA,Stanford,53,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,3
 2024-01-06,H,UCLA,California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,4
 2024-01-11,V,UCLA,Utah,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Utah_Utes_logo.svg/263px-Utah_Utes_logo.svg.png,5
 2024-01-14,H,UCLA,Washington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,6
