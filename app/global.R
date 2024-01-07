@@ -392,16 +392,16 @@ ivy_gt <-
   ivy_playoffs %>% 
   
   mutate_if(is.numeric, ~.x/100) %>% 
-  inner_join(select(ncaa_colors, 'team' = ncaa_name, logo_url)) %>% 
+  inner_join(df_img, by = 'team') %>% 
   inner_join(select(records_actual, team, conf_wins, conf_losses)) %>% 
   mutate('record' = paste0(' (', conf_wins, '-', conf_losses, ')')) %>% 
   select(-conf_wins, -conf_losses) %>% 
   arrange(desc(playoff_prob), desc(seed1_prob), desc(seed2_prob), desc(seed3_prob), desc(seed4_prob)) %>% 
-  select(team, logo_url, record, everything()) %>% 
+  select(team, logo_file, record, everything()) %>% 
   
   gt() %>% 
   cols_label('team' = '', 
-             'logo_url' = '',
+             'logo_file' = '',
              'record' = '',
              'auto_bid' = 'Auto Bid',
              'playoff_prob' = 'Make Playoffs',
@@ -460,10 +460,10 @@ ivy_gt <-
     )
   ) %>% 
   text_transform(
-    locations = cells_body(c(logo_url)),
+    locations = cells_body(c(logo_file)),
     fn = function(x) {
-      web_image(
-        url = x,
+      local_image(
+        filename  = x,
         height = 30
       )
     }
@@ -528,10 +528,10 @@ ivy_bar <-
 
 ivy_psf <- read_rds('3.0_Files/Predictions/ivy_psf_full.rds')
 
-# ivy_psf_gt <-
-ivy_psf %>%
-  inner_join(df_img, by = c('home' = 'logo_file')) %>%
-  inner_join(df_img, by = c('away' = 'logo_file'), suffix = c('_home', '_away')) %>%
+ivy_psf_gt <-
+  ivy_psf %>%
+  inner_join(df_img, by = c('home' = 'team')) %>%
+  inner_join(df_img, by = c('away' = 'team'), suffix = c('_home', '_away')) %>%
   mutate_if(is.numeric, ~{.x/100}) %>%
   inner_join(x, by = c('home' = 'team',
                        'away' = 'opponent',
@@ -539,7 +539,7 @@ ivy_psf %>%
   mutate('home_bar' = paste0('3.0_Files/Predictions/psf_figures/home_', 1:nrow(.), '.png'),
          'away_bar' = paste0('3.0_Files/Predictions/psf_figures/away_', 1:nrow(.), '.png'),
          'delta_bar' = paste0('3.0_Files/Predictions/psf_figures/delta_', 1:nrow(.), '.png')) %>%
-  mutate('favored' = ifelse(pred_score_diff > 0, logo_url_home, logo_url_away),
+  mutate('favored' = ifelse(pred_score_diff > 0, logo_file_home, logo_file_away),
          'win_prob' = ifelse(pred_score_diff > 0, wins, 1-wins),
          'pred_score' = ifelse(pred_score_diff > 0,
                                paste(sprintf('%0.1f', pred_team_score), sprintf('%0.1f', pred_opp_score), sep = '-'),
@@ -550,8 +550,8 @@ ivy_psf %>%
   # filter(date == Sys.Date()) %>%
   gt() %>%
   cols_label('date' = 'Date',
-             'logo_url_home' = 'Home',
-             'logo_url_away' = 'Away',
+             'logo_file_home' = 'Home',
+             'logo_file_away' = 'Away',
              'favored' = 'Winner',
              'pred_score' = 'Score',
              'win_prob' = 'Win Probability',
@@ -561,7 +561,7 @@ ivy_psf %>%
              'away_bar' = 'If Away Wins',
              'delta_bar' = 'Difference') %>%
   
-  tab_spanner(label = 'Matchup', columns = c('date', 'logo_url_away', 'logo_url_home')) %>%
+  tab_spanner(label = 'Matchup', columns = c('date', 'logo_file_away', 'logo_file_home')) %>%
   tab_spanner(label = 'Game Prediction', columns = c('favored', 'pred_score', 'win_prob')) %>%
   tab_spanner(label = 'Leverage', columns = c('psf', 'auto_bid_sf')) %>%
   tab_spanner(label = 'Playoff Odds', columns = c('away_bar', 'home_bar', 'delta_bar')) %>%
@@ -612,15 +612,15 @@ ivy_psf %>%
     ),
     locations = list(
       cells_body(
-        columns = c(logo_url_home, auto_bid_sf, home_bar, win_prob, away_bar, delta_bar)
+        columns = c(logo_file_home, auto_bid_sf, home_bar, win_prob, away_bar, delta_bar)
       )
     )
   ) %>%
   text_transform(
-    locations = cells_body(c(logo_url_home, logo_url_away, favored)),
+    locations = cells_body(c(logo_file_home, logo_file_away, favored)),
     fn = function(x) {
-      web_image(
-        url = x,
+      local_image(
+        filename  = x,
         height = 50
       )
     }

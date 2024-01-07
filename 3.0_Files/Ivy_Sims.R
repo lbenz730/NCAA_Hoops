@@ -474,9 +474,9 @@ psf <- function(nsims, min_date, max_date) {
   for(i in 1:nrow(ivy_psf)) {
     df <- ivy_psf$df_home[[i]]
     df <- inner_join(df, ncaa_colors, by = c('Team' = 'ncaa_name'))
-    labels <- paste0("<img src ='3.0_Files/Predictions/psf_figures/ivy_logos/", df$Team, ".png', width = '20'/>")
+    labels <- paste0('<img src ="www/', df$Team, '.png", width = 20/>')
     
-    p <- 
+    p <-
       ggplot(df, aes(x = Team, y = playoff)) + 
       coord_flip() + 
       geom_col(aes(fill = Team)) + 
@@ -490,9 +490,9 @@ psf <- function(nsims, min_date, max_date) {
       scale_fill_manual(values = df$primary_color) +
       scale_color_manual(values = df$secondary_color) +
       scale_y_continuous(limits = c(0, 105)) +
-      scale_x_discrete(limits = rev(df$Team), labels = rev(labels)) + 
+      scale_x_discrete(limits = rev(df$Team)) +
       theme(legend.position = 'none',
-            axis.text.y = ggtext::element_markdown())
+            axis.text.y = cbbplotR::element_cbb_teams(size = 0.9))
     
     ggsave(filename = paste0('3.0_Files/Predictions/psf_figures/home_', i, '.png'))
     
@@ -512,9 +512,9 @@ psf <- function(nsims, min_date, max_date) {
       scale_fill_manual(values = df$primary_color) +
       scale_color_manual(values = df$secondary_color) +
       scale_y_continuous(limits = c(0, 105)) +
-      scale_x_discrete(limits = rev(df$Team), labels = rev(labels)) + 
+      scale_x_discrete(limits = rev(df$Team)) + 
       theme(legend.position = 'none',
-            axis.text.y = ggtext::element_markdown())
+            axis.text.y = cbbplotR::element_cbb_teams(size = 0.9))
     ggsave(filename = paste0('3.0_Files/Predictions/psf_figures/away_', i, '.png'))
     
     df <- ivy_psf$df[[i]]
@@ -532,9 +532,9 @@ psf <- function(nsims, min_date, max_date) {
       theme_void() +
       scale_fill_manual(values = df$primary_color) +
       scale_y_continuous(limits = c(-1.25, 1.25) * max(abs(delta))) +
-      scale_x_discrete(limits = rev(df$Team), labels = rev(labels)) + 
+      scale_x_discrete(limits = rev(df$Team)) + 
       theme(legend.position = 'none',
-            axis.text.y = ggtext::element_markdown())
+            axis.text.y = cbbplotR::element_cbb_teams(size = 0.9))
     ggsave(filename = paste0('3.0_Files/Predictions/psf_figures/delta_', i, '.png'))
     
   }
