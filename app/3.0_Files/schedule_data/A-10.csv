@@ -1,6 +1,6 @@
 date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,game_id
 2024-01-03,H,Davidson,Dayton,59,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Dayton_Flyers_logo.svg/320px-Dayton_Flyers_logo.svg.png,1
-2024-01-09,H,Davidson,Rhode Island,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Rhode_Island_Rams_logo.svg/187px-Rhode_Island_Rams_logo.svg.png,2
+2024-01-09,H,Davidson,Rhode Island,74,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Rhode_Island_Rams_logo.svg/187px-Rhode_Island_Rams_logo.svg.png,2
 2024-01-13,V,Davidson,George Washington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/George_Washington_Colonials_logo.svg/320px-George_Washington_Colonials_logo.svg.png,3
 2024-01-17,V,Davidson,Fordham,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Fordham_Rams_logo.svg/268px-Fordham_Rams_logo.svg.png,4
 2024-01-20,H,Davidson,Richmond,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Richmond_Spiders_logo.svg/175px-Richmond_Spiders_logo.svg.png,5
@@ -18,7 +18,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-06,H,Davidson,Loyola Chicago,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Loyola_Ramblers_logo.svg/301px-Loyola_Ramblers_logo.svg.png,17
 2024-03-09,V,Davidson,Saint Joseph's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Saint_Joseph%27s_Hawks_logo.svg/320px-Saint_Joseph%27s_Hawks_logo.svg.png,18
 2024-01-03,V,Dayton,Davidson,72,59,FALSE,FALSE,https://img.covers.com/covers/data/svg_logos/ncaab/dav.svg,1
-2024-01-07,H,Dayton,Massachusetts,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,2
+2024-01-07,H,Dayton,Massachusetts,64,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,2
 2024-01-12,V,Dayton,Duquesne,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Duquesne_Dukes.svg/115px-Duquesne_Dukes.svg.png,3
 2024-01-16,H,Dayton,Saint Louis,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Saint_Louis_Billikens_logo.svg/249px-Saint_Louis_Billikens_logo.svg.png,4
 2024-01-20,H,Dayton,Rhode Island,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Rhode_Island_Rams_logo.svg/187px-Rhode_Island_Rams_logo.svg.png,5
@@ -73,7 +73,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-09,H,Fordham,Rhode Island,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Rhode_Island_Rams_logo.svg/187px-Rhode_Island_Rams_logo.svg.png,18
 2024-01-03,V,George Mason,La Salle,77,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/b/bf/La_Salle_Explorers_wordmark.png,1
 2024-01-06,H,George Mason,Saint Louis,79,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Saint_Louis_Billikens_logo.svg/249px-Saint_Louis_Billikens_logo.svg.png,2
-2024-01-09,H,George Mason,VCU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/VCU_Rams_logo.svg/320px-VCU_Rams_logo.svg.png,3
+2024-01-09,H,George Mason,VCU,50,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/VCU_Rams_logo.svg/320px-VCU_Rams_logo.svg.png,3
 2024-01-13,V,George Mason,Richmond,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Richmond_Spiders_logo.svg/175px-Richmond_Spiders_logo.svg.png,4
 2024-01-15,V,George Mason,George Washington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/George_Washington_Colonials_logo.svg/320px-George_Washington_Colonials_logo.svg.png,5
 2024-01-20,H,George Mason,St. Bonaventure,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/St._Bonaventure_Bonnies_logo.svg/320px-St._Bonaventure_Bonnies_logo.svg.png,6
@@ -127,7 +127,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-09,V,La Salle,Loyola Chicago,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Loyola_Ramblers_logo.svg/301px-Loyola_Ramblers_logo.svg.png,18
 2024-01-03,V,Loyola Chicago,Saint Louis,80,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Saint_Louis_Billikens_logo.svg/249px-Saint_Louis_Billikens_logo.svg.png,1
 2024-01-06,H,Loyola Chicago,Duquesne,72,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Duquesne_Dukes.svg/115px-Duquesne_Dukes.svg.png,2
-2024-01-09,H,Loyola Chicago,Richmond,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Richmond_Spiders_logo.svg/175px-Richmond_Spiders_logo.svg.png,3
+2024-01-09,H,Loyola Chicago,Richmond,56,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Richmond_Spiders_logo.svg/175px-Richmond_Spiders_logo.svg.png,3
 2024-01-13,V,Loyola Chicago,Saint Joseph's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Saint_Joseph%27s_Hawks_logo.svg/320px-Saint_Joseph%27s_Hawks_logo.svg.png,4
 2024-01-17,H,Loyola Chicago,Massachusetts,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,5
 2024-01-20,V,Loyola Chicago,Fordham,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Fordham_Rams_logo.svg/268px-Fordham_Rams_logo.svg.png,6
@@ -144,7 +144,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-06,V,Loyola Chicago,Davidson,NA,NA,FALSE,FALSE,https://img.covers.com/covers/data/svg_logos/ncaab/dav.svg,17
 2024-03-09,H,Loyola Chicago,La Salle,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/b/bf/La_Salle_Explorers_wordmark.png,18
 2024-01-03,H,Massachusetts,Duquesne,80,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Duquesne_Dukes.svg/115px-Duquesne_Dukes.svg.png,1
-2024-01-07,V,Massachusetts,Dayton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Dayton_Flyers_logo.svg/320px-Dayton_Flyers_logo.svg.png,2
+2024-01-07,V,Massachusetts,Dayton,60,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Dayton_Flyers_logo.svg/320px-Dayton_Flyers_logo.svg.png,2
 2024-01-10,H,Massachusetts,La Salle,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/b/bf/La_Salle_Explorers_wordmark.png,3
 2024-01-13,V,Massachusetts,Rhode Island,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Rhode_Island_Rams_logo.svg/187px-Rhode_Island_Rams_logo.svg.png,4
 2024-01-17,V,Massachusetts,Loyola Chicago,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Loyola_Ramblers_logo.svg/301px-Loyola_Ramblers_logo.svg.png,5
@@ -162,7 +162,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-02,V,Massachusetts,Davidson,NA,NA,FALSE,FALSE,https://img.covers.com/covers/data/svg_logos/ncaab/dav.svg,17
 2024-03-06,H,Massachusetts,Fordham,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Fordham_Rams_logo.svg/268px-Fordham_Rams_logo.svg.png,18
 2024-01-03,H,Rhode Island,Saint Joseph's,78,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Saint_Joseph%27s_Hawks_logo.svg/320px-Saint_Joseph%27s_Hawks_logo.svg.png,1
-2024-01-09,V,Rhode Island,Davidson,NA,NA,FALSE,FALSE,https://img.covers.com/covers/data/svg_logos/ncaab/dav.svg,2
+2024-01-09,V,Rhode Island,Davidson,79,74,FALSE,FALSE,https://img.covers.com/covers/data/svg_logos/ncaab/dav.svg,2
 2024-01-13,H,Rhode Island,Massachusetts,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,3
 2024-01-17,V,Rhode Island,St. Bonaventure,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/St._Bonaventure_Bonnies_logo.svg/320px-St._Bonaventure_Bonnies_logo.svg.png,4
 2024-01-20,V,Rhode Island,Dayton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Dayton_Flyers_logo.svg/320px-Dayton_Flyers_logo.svg.png,5
@@ -180,7 +180,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-06,H,Rhode Island,George Mason,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/George_Mason_Patriots_logo.svg/287px-George_Mason_Patriots_logo.svg.png,17
 2024-03-09,V,Rhode Island,Fordham,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Fordham_Rams_logo.svg/268px-Fordham_Rams_logo.svg.png,18
 2024-01-06,H,Richmond,St. Bonaventure,65,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/St._Bonaventure_Bonnies_logo.svg/320px-St._Bonaventure_Bonnies_logo.svg.png,1
-2024-01-09,V,Richmond,Loyola Chicago,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Loyola_Ramblers_logo.svg/301px-Loyola_Ramblers_logo.svg.png,2
+2024-01-09,V,Richmond,Loyola Chicago,58,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Loyola_Ramblers_logo.svg/301px-Loyola_Ramblers_logo.svg.png,2
 2024-01-13,H,Richmond,George Mason,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/George_Mason_Patriots_logo.svg/287px-George_Mason_Patriots_logo.svg.png,3
 2024-01-16,V,Richmond,Duquesne,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Duquesne_Dukes.svg/115px-Duquesne_Dukes.svg.png,4
 2024-01-20,V,Richmond,Davidson,NA,NA,FALSE,FALSE,https://img.covers.com/covers/data/svg_logos/ncaab/dav.svg,5
@@ -253,7 +253,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-09,H,St. Bonaventure,Saint Louis,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Saint_Louis_Billikens_logo.svg/249px-Saint_Louis_Billikens_logo.svg.png,18
 2024-01-03,H,VCU,St. Bonaventure,78,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/St._Bonaventure_Bonnies_logo.svg/320px-St._Bonaventure_Bonnies_logo.svg.png,1
 2024-01-06,H,VCU,George Washington,82,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/George_Washington_Colonials_logo.svg/320px-George_Washington_Colonials_logo.svg.png,2
-2024-01-09,V,VCU,George Mason,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/George_Mason_Patriots_logo.svg/287px-George_Mason_Patriots_logo.svg.png,3
+2024-01-09,V,VCU,George Mason,54,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/George_Mason_Patriots_logo.svg/287px-George_Mason_Patriots_logo.svg.png,3
 2024-01-13,V,VCU,La Salle,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/b/bf/La_Salle_Explorers_wordmark.png,4
 2024-01-19,H,VCU,Saint Louis,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Saint_Louis_Billikens_logo.svg/249px-Saint_Louis_Billikens_logo.svg.png,5
 2024-01-23,H,VCU,Loyola Chicago,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Loyola_Ramblers_logo.svg/301px-Loyola_Ramblers_logo.svg.png,6
