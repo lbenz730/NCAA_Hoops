@@ -1,6 +1,6 @@
 date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,game_id
 2024-01-06,V,FIU,Jacksonville St.,63,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Jacksonville_State_Gamecocks_logo.svg/320px-Jacksonville_State_Gamecocks_logo.svg.png,1
-2024-01-11,H,FIU,New Mexico St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/New_Mexico_State_Aggies_logo.svg/320px-New_Mexico_State_Aggies_logo.svg.png,2
+2024-01-11,H,FIU,New Mexico St.,77,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/New_Mexico_State_Aggies_logo.svg/320px-New_Mexico_State_Aggies_logo.svg.png,2
 2024-01-13,H,FIU,UTEP,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/UTEP_Miners_logo.svg/238px-UTEP_Miners_logo.svg.png,3
 2024-01-18,V,FIU,Liberty,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Liberty_Flames_logo.svg/266px-Liberty_Flames_logo.svg.png,4
 2024-01-25,V,FIU,Western Ky.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/WKU_Athletics_logo.svg/320px-WKU_Athletics_logo.svg.png,5
@@ -48,7 +48,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-05,V,Liberty,Middle Tenn.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/e/ea/Middle_Tennessee_MT_Logomark.svg,15
 2024-03-09,H,Liberty,Western Ky.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/WKU_Athletics_logo.svg/320px-WKU_Athletics_logo.svg.png,16
 2024-01-06,V,Louisiana Tech,Sam Houston,77,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/d/de/SHSU_athletics_logo.svg,1
-2024-01-11,V,Louisiana Tech,Middle Tenn.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/e/ea/Middle_Tennessee_MT_Logomark.svg,2
+2024-01-11,V,Louisiana Tech,Middle Tenn.,60,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/e/ea/Middle_Tennessee_MT_Logomark.svg,2
 2024-01-14,H,Louisiana Tech,Liberty,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Liberty_Flames_logo.svg/266px-Liberty_Flames_logo.svg.png,3
 2024-01-20,V,Louisiana Tech,Jacksonville St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/20/Jacksonville_State_Gamecocks_logo.svg/320px-Jacksonville_State_Gamecocks_logo.svg.png,4
 2024-01-25,H,Louisiana Tech,UTEP,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/UTEP_Miners_logo.svg/238px-UTEP_Miners_logo.svg.png,5
@@ -63,7 +63,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-28,V,Louisiana Tech,Western Ky.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/WKU_Athletics_logo.svg/320px-WKU_Athletics_logo.svg.png,14
 2024-03-07,H,Louisiana Tech,Sam Houston,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/d/de/SHSU_athletics_logo.svg,15
 2024-03-09,H,Louisiana Tech,Middle Tenn.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/e/ea/Middle_Tennessee_MT_Logomark.svg,16
-2024-01-11,H,Middle Tenn.,Louisiana Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Louisiana_Tech_Athletics_logo.svg/320px-Louisiana_Tech_Athletics_logo.svg.png,1
+2024-01-11,H,Middle Tenn.,Louisiana Tech,52,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Louisiana_Tech_Athletics_logo.svg/320px-Louisiana_Tech_Athletics_logo.svg.png,1
 2024-01-13,H,Middle Tenn.,Sam Houston,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/d/de/SHSU_athletics_logo.svg,2
 2024-01-18,V,Middle Tenn.,UTEP,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/UTEP_Miners_logo.svg/238px-UTEP_Miners_logo.svg.png,3
 2024-01-20,V,Middle Tenn.,New Mexico St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/New_Mexico_State_Aggies_logo.svg/320px-New_Mexico_State_Aggies_logo.svg.png,4
@@ -80,7 +80,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-05,H,Middle Tenn.,Liberty,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Liberty_Flames_logo.svg/266px-Liberty_Flames_logo.svg.png,15
 2024-03-09,V,Middle Tenn.,Louisiana Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Louisiana_Tech_Athletics_logo.svg/320px-Louisiana_Tech_Athletics_logo.svg.png,16
 2024-01-04,H,New Mexico St.,UTEP,63,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/UTEP_Miners_logo.svg/238px-UTEP_Miners_logo.svg.png,1
-2024-01-11,V,New Mexico St.,FIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/FIU_Panthers_logo.svg/185px-FIU_Panthers_logo.svg.png,2
+2024-01-11,V,New Mexico St.,FIU,67,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/FIU_Panthers_logo.svg/185px-FIU_Panthers_logo.svg.png,2
 2024-01-18,H,New Mexico St.,Western Ky.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/WKU_Athletics_logo.svg/320px-WKU_Athletics_logo.svg.png,3
 2024-01-20,H,New Mexico St.,Middle Tenn.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/e/ea/Middle_Tennessee_MT_Logomark.svg,4
 2024-01-25,V,New Mexico St.,Sam Houston,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/d/de/SHSU_athletics_logo.svg,5

@@ -1,7 +1,7 @@
 date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,game_id
 2024-01-06,V,Alabama A&M,Ark.-Pine Bluff,63,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg/290px-Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg.png,1
 2024-01-08,V,Alabama A&M,Mississippi Val.,78,70,FALSE,FALSE,https://i.imgur.com/TOQFibH.jpg,2
-2024-01-11,H,Alabama A&M,Alcorn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Alcorn_State_athletics_logo.svg/280px-Alcorn_State_athletics_logo.svg.png,3
+2024-01-11,H,Alabama A&M,Alcorn,71,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Alcorn_State_athletics_logo.svg/280px-Alcorn_State_athletics_logo.svg.png,3
 2024-01-13,H,Alabama A&M,Jackson St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jackson_State_athletics_logo.svg/320px-Jackson_State_athletics_logo.svg.png,4
 2024-01-15,N,Alabama A&M,Alabama St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Alabama_State_Hornets_logo.svg/320px-Alabama_State_Hornets_logo.svg.png,5
 2024-01-27,V,Alabama A&M,Texas Southern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Texas_Southern_Tigers_logo.svg/254px-Texas_Southern_Tigers_logo.svg.png,6
@@ -19,7 +19,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-09,H,Alabama A&M,Southern U.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Southern_Jaguars_logo.svg/273px-Southern_Jaguars_logo.svg.png,18
 2024-01-06,V,Alabama St.,Mississippi Val.,54,51,FALSE,FALSE,https://i.imgur.com/TOQFibH.jpg,1
 2024-01-08,V,Alabama St.,Ark.-Pine Bluff,83,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg/290px-Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg.png,2
-2024-01-11,H,Alabama St.,Jackson St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jackson_State_athletics_logo.svg/320px-Jackson_State_athletics_logo.svg.png,3
+2024-01-11,H,Alabama St.,Jackson St.,63,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jackson_State_athletics_logo.svg/320px-Jackson_State_athletics_logo.svg.png,3
 2024-01-13,H,Alabama St.,Alcorn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Alcorn_State_athletics_logo.svg/280px-Alcorn_State_athletics_logo.svg.png,4
 2024-01-15,N,Alabama St.,Alabama A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Alabama_A%26M_Bulldogs_logo.svg/201px-Alabama_A%26M_Bulldogs_logo.svg.png,5
 2024-01-27,V,Alabama St.,Prairie View,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Prairie_View_A%26M_Panthers_logo.svg/320px-Prairie_View_A%26M_Panthers_logo.svg.png,6
@@ -37,7 +37,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-09,H,Alabama St.,Southern U.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Southern_Jaguars_logo.svg/273px-Southern_Jaguars_logo.svg.png,18
 2024-03-09,H,Alabama St.,Grambling,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Grambling_State_Tigers_logo.svg/320px-Grambling_State_Tigers_logo.svg.png,19
 2024-01-06,V,Alcorn,Jackson St.,80,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jackson_State_athletics_logo.svg/320px-Jackson_State_athletics_logo.svg.png,1
-2024-01-11,V,Alcorn,Alabama A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Alabama_A%26M_Bulldogs_logo.svg/201px-Alabama_A%26M_Bulldogs_logo.svg.png,2
+2024-01-11,V,Alcorn,Alabama A&M,74,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Alabama_A%26M_Bulldogs_logo.svg/201px-Alabama_A%26M_Bulldogs_logo.svg.png,2
 2024-01-13,V,Alcorn,Alabama St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Alabama_State_Hornets_logo.svg/320px-Alabama_State_Hornets_logo.svg.png,3
 2024-01-20,H,Alcorn,Texas Southern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Texas_Southern_Tigers_logo.svg/254px-Texas_Southern_Tigers_logo.svg.png,4
 2024-01-22,H,Alcorn,Prairie View,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Prairie_View_A%26M_Panthers_logo.svg/320px-Prairie_View_A%26M_Panthers_logo.svg.png,5
@@ -128,7 +128,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-07,V,Grambling,Alabama A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Alabama_A%26M_Bulldogs_logo.svg/201px-Alabama_A%26M_Bulldogs_logo.svg.png,18
 2024-03-09,V,Grambling,Alabama St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Alabama_State_Hornets_logo.svg/320px-Alabama_State_Hornets_logo.svg.png,19
 2024-01-06,H,Jackson St.,Alcorn,88,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Alcorn_State_athletics_logo.svg/280px-Alcorn_State_athletics_logo.svg.png,1
-2024-01-11,V,Jackson St.,Alabama St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Alabama_State_Hornets_logo.svg/320px-Alabama_State_Hornets_logo.svg.png,2
+2024-01-11,V,Jackson St.,Alabama St.,73,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Alabama_State_Hornets_logo.svg/320px-Alabama_State_Hornets_logo.svg.png,2
 2024-01-13,V,Jackson St.,Alabama A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Alabama_A%26M_Bulldogs_logo.svg/201px-Alabama_A%26M_Bulldogs_logo.svg.png,3
 2024-01-20,H,Jackson St.,Prairie View,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Prairie_View_A%26M_Panthers_logo.svg/320px-Prairie_View_A%26M_Panthers_logo.svg.png,4
 2024-01-22,H,Jackson St.,Texas Southern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Texas_Southern_Tigers_logo.svg/254px-Texas_Southern_Tigers_logo.svg.png,5
