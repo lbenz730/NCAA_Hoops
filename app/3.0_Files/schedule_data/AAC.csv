@@ -2,7 +2,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-02,V,Charlotte,SMU,54,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,1
 2024-01-06,H,Charlotte,Fla. Atlantic,70,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Florida_Atlantic_Owls_logo.svg/320px-Florida_Atlantic_Owls_logo.svg.png,2
 2024-01-10,H,Charlotte,Tulsa,84,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Tulsa_Golden_Hurricane_logo.svg/319px-Tulsa_Golden_Hurricane_logo.svg.png,3
-2024-01-13,V,Charlotte,UTSA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/UTSA_Roadrunners_logo.svg/320px-UTSA_Roadrunners_logo.svg.png,4
+2024-01-13,V,Charlotte,UTSA,66,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/UTSA_Roadrunners_logo.svg/320px-UTSA_Roadrunners_logo.svg.png,4
 2024-01-16,V,Charlotte,Rice,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Rice_Owls_logo.svg/200px-Rice_Owls_logo.svg.png,5
 2024-01-20,H,Charlotte,North Texas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/North_Texas_Mean_Green_logo.svg/215px-North_Texas_Mean_Green_logo.svg.png,6
 2024-01-23,H,Charlotte,UAB,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/UAB_Blazers_logo.svg/283px-UAB_Blazers_logo.svg.png,7
@@ -20,7 +20,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-02,V,East Carolina,Fla. Atlantic,64,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Florida_Atlantic_Owls_logo.svg/320px-Florida_Atlantic_Owls_logo.svg.png,1
 2024-01-07,H,East Carolina,Tulsa,62,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Tulsa_Golden_Hurricane_logo.svg/319px-Tulsa_Golden_Hurricane_logo.svg.png,2
 2024-01-10,V,East Carolina,Temple,73,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/212px-Temple_T_logo.svg.png,3
-2024-01-13,H,East Carolina,SMU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,4
+2024-01-13,H,East Carolina,SMU,64,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,4
 2024-01-17,H,East Carolina,North Texas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/North_Texas_Mean_Green_logo.svg/215px-North_Texas_Mean_Green_logo.svg.png,5
 2024-01-20,V,East Carolina,UAB,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/UAB_Blazers_logo.svg/283px-UAB_Blazers_logo.svg.png,6
 2024-01-24,V,East Carolina,Wichita St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Wichita_State_Shockers_logo.svg/288px-Wichita_State_Shockers_logo.svg.png,7
@@ -38,7 +38,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-02,H,Fla. Atlantic,East Carolina,79,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/East_Carolina_Pirates_logo.svg/226px-East_Carolina_Pirates_logo.svg.png,1
 2024-01-06,V,Fla. Atlantic,Charlotte,68,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/33/Charlotte_49ers_logo.svg,2
 2024-01-11,V,Fla. Atlantic,Tulane,85,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Tulane_Green_Wave_logo.svg/320px-Tulane_Green_Wave_logo.svg.png,3
-2024-01-14,H,Fla. Atlantic,UAB,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/UAB_Blazers_logo.svg/283px-UAB_Blazers_logo.svg.png,4
+2024-01-14,H,Fla. Atlantic,UAB,86,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/UAB_Blazers_logo.svg/283px-UAB_Blazers_logo.svg.png,4
 2024-01-18,H,Fla. Atlantic,Wichita St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Wichita_State_Shockers_logo.svg/288px-Wichita_State_Shockers_logo.svg.png,5
 2024-01-21,V,Fla. Atlantic,UTSA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/UTSA_Roadrunners_logo.svg/320px-UTSA_Roadrunners_logo.svg.png,6
 2024-01-24,V,Fla. Atlantic,Rice,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Rice_Owls_logo.svg/200px-Rice_Owls_logo.svg.png,7
@@ -56,7 +56,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,V,Memphis,Tulsa,78,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Tulsa_Golden_Hurricane_logo.svg/319px-Tulsa_Golden_Hurricane_logo.svg.png,1
 2024-01-07,H,Memphis,SMU,62,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,2
 2024-01-10,H,Memphis,UTSA,107,101,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/UTSA_Roadrunners_logo.svg/320px-UTSA_Roadrunners_logo.svg.png,3
-2024-01-14,V,Memphis,Wichita St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Wichita_State_Shockers_logo.svg/288px-Wichita_State_Shockers_logo.svg.png,4
+2024-01-14,V,Memphis,Wichita St.,112,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Wichita_State_Shockers_logo.svg/288px-Wichita_State_Shockers_logo.svg.png,4
 2024-01-18,H,Memphis,South Fla.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/South_Florida_Bulls_logo.svg/300px-South_Florida_Bulls_logo.svg.png,5
 2024-01-21,V,Memphis,Tulane,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Tulane_Green_Wave_logo.svg/320px-Tulane_Green_Wave_logo.svg.png,6
 2024-01-28,V,Memphis,UAB,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/UAB_Blazers_logo.svg/283px-UAB_Blazers_logo.svg.png,7
@@ -73,7 +73,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-09,V,Memphis,Fla. Atlantic,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Florida_Atlantic_Owls_logo.svg/320px-Florida_Atlantic_Owls_logo.svg.png,18
 2024-01-04,V,North Texas,Wichita St.,74,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Wichita_State_Shockers_logo.svg/288px-Wichita_State_Shockers_logo.svg.png,1
 2024-01-06,H,North Texas,Tulane,70,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Tulane_Green_Wave_logo.svg/320px-Tulane_Green_Wave_logo.svg.png,2
-2024-01-13,H,North Texas,Temple,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/212px-Temple_T_logo.svg.png,3
+2024-01-13,H,North Texas,Temple,69,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/212px-Temple_T_logo.svg.png,3
 2024-01-17,V,North Texas,East Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/East_Carolina_Pirates_logo.svg/226px-East_Carolina_Pirates_logo.svg.png,4
 2024-01-20,V,North Texas,Charlotte,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/33/Charlotte_49ers_logo.svg,5
 2024-01-25,H,North Texas,SMU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,6
@@ -109,7 +109,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-09,H,Rice,North Texas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/North_Texas_Mean_Green_logo.svg/215px-North_Texas_Mean_Green_logo.svg.png,18
 2024-01-02,H,SMU,Charlotte,66,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/33/Charlotte_49ers_logo.svg,1
 2024-01-07,V,SMU,Memphis,59,62,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/235.png&h=200&w=200,2
-2024-01-13,V,SMU,East Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/East_Carolina_Pirates_logo.svg/226px-East_Carolina_Pirates_logo.svg.png,3
+2024-01-13,V,SMU,East Carolina,75,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/East_Carolina_Pirates_logo.svg/226px-East_Carolina_Pirates_logo.svg.png,3
 2024-01-16,H,SMU,Temple,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/212px-Temple_T_logo.svg.png,4
 2024-01-20,H,SMU,Tulsa,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Tulsa_Golden_Hurricane_logo.svg/319px-Tulsa_Golden_Hurricane_logo.svg.png,5
 2024-01-25,V,SMU,North Texas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/North_Texas_Mean_Green_logo.svg/215px-North_Texas_Mean_Green_logo.svg.png,6
@@ -146,7 +146,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,V,Temple,South Fla.,68,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/South_Florida_Bulls_logo.svg/300px-South_Florida_Bulls_logo.svg.png,1
 2024-01-07,H,Temple,Wichita St.,68,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Wichita_State_Shockers_logo.svg/288px-Wichita_State_Shockers_logo.svg.png,2
 2024-01-10,H,Temple,East Carolina,62,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/East_Carolina_Pirates_logo.svg/226px-East_Carolina_Pirates_logo.svg.png,3
-2024-01-13,V,Temple,North Texas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/North_Texas_Mean_Green_logo.svg/215px-North_Texas_Mean_Green_logo.svg.png,4
+2024-01-13,V,Temple,North Texas,51,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/North_Texas_Mean_Green_logo.svg/215px-North_Texas_Mean_Green_logo.svg.png,4
 2024-01-16,V,Temple,SMU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,5
 2024-01-20,H,Temple,Rice,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Rice_Owls_logo.svg/200px-Rice_Owls_logo.svg.png,6
 2024-01-24,H,Temple,South Fla.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/South_Florida_Bulls_logo.svg/300px-South_Florida_Bulls_logo.svg.png,7
@@ -164,7 +164,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-03,H,Tulane,Rice,84,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Rice_Owls_logo.svg/200px-Rice_Owls_logo.svg.png,1
 2024-01-06,V,Tulane,North Texas,56,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/North_Texas_Mean_Green_logo.svg/215px-North_Texas_Mean_Green_logo.svg.png,2
 2024-01-11,H,Tulane,Fla. Atlantic,84,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Florida_Atlantic_Owls_logo.svg/320px-Florida_Atlantic_Owls_logo.svg.png,3
-2024-01-14,V,Tulane,Tulsa,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Tulsa_Golden_Hurricane_logo.svg/319px-Tulsa_Golden_Hurricane_logo.svg.png,4
+2024-01-14,V,Tulane,Tulsa,94,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Tulsa_Golden_Hurricane_logo.svg/319px-Tulsa_Golden_Hurricane_logo.svg.png,4
 2024-01-17,V,Tulane,UAB,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/UAB_Blazers_logo.svg/283px-UAB_Blazers_logo.svg.png,5
 2024-01-21,H,Tulane,Memphis,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/235.png&h=200&w=200,6
 2024-01-24,V,Tulane,UTSA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/UTSA_Roadrunners_logo.svg/320px-UTSA_Roadrunners_logo.svg.png,7
@@ -182,7 +182,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,H,Tulsa,Memphis,75,78,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/235.png&h=200&w=200,1
 2024-01-07,V,Tulsa,East Carolina,57,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/East_Carolina_Pirates_logo.svg/226px-East_Carolina_Pirates_logo.svg.png,2
 2024-01-10,V,Tulsa,Charlotte,76,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/33/Charlotte_49ers_logo.svg,3
-2024-01-14,H,Tulsa,Tulane,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Tulane_Green_Wave_logo.svg/320px-Tulane_Green_Wave_logo.svg.png,4
+2024-01-14,H,Tulsa,Tulane,87,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Tulane_Green_Wave_logo.svg/320px-Tulane_Green_Wave_logo.svg.png,4
 2024-01-17,H,Tulsa,UTSA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/UTSA_Roadrunners_logo.svg/320px-UTSA_Roadrunners_logo.svg.png,5
 2024-01-20,V,Tulsa,SMU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,6
 2024-01-27,V,Tulsa,Rice,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Rice_Owls_logo.svg/200px-Rice_Owls_logo.svg.png,7
@@ -199,7 +199,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-09,H,Tulsa,South Fla.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/South_Florida_Bulls_logo.svg/300px-South_Florida_Bulls_logo.svg.png,18
 2024-01-02,V,UAB,UTSA,78,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/UTSA_Roadrunners_logo.svg/320px-UTSA_Roadrunners_logo.svg.png,1
 2024-01-07,H,UAB,South Fla.,75,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/South_Florida_Bulls_logo.svg/300px-South_Florida_Bulls_logo.svg.png,2
-2024-01-14,V,UAB,Fla. Atlantic,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Florida_Atlantic_Owls_logo.svg/320px-Florida_Atlantic_Owls_logo.svg.png,3
+2024-01-14,V,UAB,Fla. Atlantic,73,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Florida_Atlantic_Owls_logo.svg/320px-Florida_Atlantic_Owls_logo.svg.png,3
 2024-01-17,H,UAB,Tulane,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Tulane_Green_Wave_logo.svg/320px-Tulane_Green_Wave_logo.svg.png,4
 2024-01-20,H,UAB,East Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/East_Carolina_Pirates_logo.svg/226px-East_Carolina_Pirates_logo.svg.png,5
 2024-01-23,V,UAB,Charlotte,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/33/Charlotte_49ers_logo.svg,6
@@ -218,7 +218,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-02,H,UTSA,UAB,76,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/UAB_Blazers_logo.svg/283px-UAB_Blazers_logo.svg.png,1
 2024-01-06,V,UTSA,Rice,89,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Rice_Owls_logo.svg/200px-Rice_Owls_logo.svg.png,2
 2024-01-10,V,UTSA,Memphis,101,107,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/235.png&h=200&w=200,3
-2024-01-13,H,UTSA,Charlotte,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/33/Charlotte_49ers_logo.svg,4
+2024-01-13,H,UTSA,Charlotte,58,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/33/Charlotte_49ers_logo.svg,4
 2024-01-17,V,UTSA,Tulsa,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Tulsa_Golden_Hurricane_logo.svg/319px-Tulsa_Golden_Hurricane_logo.svg.png,5
 2024-01-21,H,UTSA,Fla. Atlantic,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Florida_Atlantic_Owls_logo.svg/320px-Florida_Atlantic_Owls_logo.svg.png,6
 2024-01-24,H,UTSA,Tulane,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Tulane_Green_Wave_logo.svg/320px-Tulane_Green_Wave_logo.svg.png,7
@@ -235,7 +235,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-03-10,H,UTSA,Temple,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/212px-Temple_T_logo.svg.png,18
 2024-01-04,H,Wichita St.,North Texas,62,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/North_Texas_Mean_Green_logo.svg/215px-North_Texas_Mean_Green_logo.svg.png,1
 2024-01-07,V,Wichita St.,Temple,61,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/212px-Temple_T_logo.svg.png,2
-2024-01-14,H,Wichita St.,Memphis,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/235.png&h=200&w=200,3
+2024-01-14,H,Wichita St.,Memphis,86,112,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/235.png&h=200&w=200,3
 2024-01-18,V,Wichita St.,Fla. Atlantic,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Florida_Atlantic_Owls_logo.svg/320px-Florida_Atlantic_Owls_logo.svg.png,4
 2024-01-21,V,Wichita St.,South Fla.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/South_Florida_Bulls_logo.svg/300px-South_Florida_Bulls_logo.svg.png,5
 2024-01-24,H,Wichita St.,East Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/East_Carolina_Pirates_logo.svg/226px-East_Carolina_Pirates_logo.svg.png,6

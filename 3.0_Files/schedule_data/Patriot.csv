@@ -2,7 +2,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-03,H,American,Lehigh,75,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/LehighMountainHawks.svg/245px-LehighMountainHawks.svg.png,1
 2024-01-06,V,American,Bucknell,71,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Bucknell_Bison_logo.svg/286px-Bucknell_Bison_logo.svg.png,2
 2024-01-10,V,American,Boston U.,68,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Boston_University_Terriers_logo.svg/262px-Boston_University_Terriers_logo.svg.png,3
-2024-01-13,H,American,Army West Point,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Army_West_Point_logo.svg/206px-Army_West_Point_logo.svg.png,4
+2024-01-13,H,American,Army West Point,79,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Army_West_Point_logo.svg/206px-Army_West_Point_logo.svg.png,4
 2024-01-15,V,American,Loyola Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Loyola_Greyhounds_logo.svg/186px-Loyola_Greyhounds_logo.svg.png,5
 2024-01-20,V,American,Lehigh,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/LehighMountainHawks.svg/245px-LehighMountainHawks.svg.png,6
 2024-01-24,H,American,Holy Cross,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Holy_Cross_Crusaders_logo.svg/204px-Holy_Cross_Crusaders_logo.svg.png,7
@@ -20,7 +20,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-03,V,Army West Point,Lafayette,47,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Lafayette_Leopards_logo.svg/320px-Lafayette_Leopards_logo.svg.png,1
 2024-01-06,H,Army West Point,Holy Cross,70,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Holy_Cross_Crusaders_logo.svg/204px-Holy_Cross_Crusaders_logo.svg.png,2
 2024-01-10,H,Army West Point,Loyola Maryland,65,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Loyola_Greyhounds_logo.svg/186px-Loyola_Greyhounds_logo.svg.png,3
-2024-01-13,V,Army West Point,American,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/American_Eagles_logo.svg/240px-American_Eagles_logo.svg.png,4
+2024-01-13,V,Army West Point,American,60,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/American_Eagles_logo.svg/240px-American_Eagles_logo.svg.png,4
 2024-01-17,H,Army West Point,Colgate,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Colgate_Raiders_logo.svg/189px-Colgate_Raiders_logo.svg.png,5
 2024-01-20,V,Army West Point,Navy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Navy_Athletics_logo.svg/195px-Navy_Athletics_logo.svg.png,6
 2024-01-24,V,Army West Point,Boston U.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Boston_University_Terriers_logo.svg/262px-Boston_University_Terriers_logo.svg.png,7
@@ -38,7 +38,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-03,V,Boston U.,Navy,60,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Navy_Athletics_logo.svg/195px-Navy_Athletics_logo.svg.png,1
 2024-01-06,H,Boston U.,Lafayette,51,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Lafayette_Leopards_logo.svg/320px-Lafayette_Leopards_logo.svg.png,2
 2024-01-10,H,Boston U.,American,72,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/American_Eagles_logo.svg/240px-American_Eagles_logo.svg.png,3
-2024-01-13,V,Boston U.,Loyola Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Loyola_Greyhounds_logo.svg/186px-Loyola_Greyhounds_logo.svg.png,4
+2024-01-13,V,Boston U.,Loyola Maryland,60,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Loyola_Greyhounds_logo.svg/186px-Loyola_Greyhounds_logo.svg.png,4
 2024-01-17,H,Boston U.,Bucknell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Bucknell_Bison_logo.svg/286px-Bucknell_Bison_logo.svg.png,5
 2024-01-20,V,Boston U.,Colgate,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Colgate_Raiders_logo.svg/189px-Colgate_Raiders_logo.svg.png,6
 2024-01-24,H,Boston U.,Army West Point,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Army_West_Point_logo.svg/206px-Army_West_Point_logo.svg.png,7
@@ -56,7 +56,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-03,H,Bucknell,Holy Cross,70,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Holy_Cross_Crusaders_logo.svg/204px-Holy_Cross_Crusaders_logo.svg.png,1
 2024-01-06,H,Bucknell,American,63,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/American_Eagles_logo.svg/240px-American_Eagles_logo.svg.png,2
 2024-01-10,V,Bucknell,Lehigh,86,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/LehighMountainHawks.svg/245px-LehighMountainHawks.svg.png,3
-2024-01-13,H,Bucknell,Colgate,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Colgate_Raiders_logo.svg/189px-Colgate_Raiders_logo.svg.png,4
+2024-01-13,H,Bucknell,Colgate,73,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Colgate_Raiders_logo.svg/189px-Colgate_Raiders_logo.svg.png,4
 2024-01-17,V,Bucknell,Boston U.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Boston_University_Terriers_logo.svg/262px-Boston_University_Terriers_logo.svg.png,5
 2024-01-20,V,Bucknell,Lafayette,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Lafayette_Leopards_logo.svg/320px-Lafayette_Leopards_logo.svg.png,6
 2024-01-24,H,Bucknell,Navy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Navy_Athletics_logo.svg/195px-Navy_Athletics_logo.svg.png,7
@@ -74,7 +74,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-03,H,Colgate,Loyola Maryland,78,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Loyola_Greyhounds_logo.svg/186px-Loyola_Greyhounds_logo.svg.png,1
 2024-01-06,V,Colgate,Navy,80,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Navy_Athletics_logo.svg/195px-Navy_Athletics_logo.svg.png,2
 2024-01-10,H,Colgate,Lafayette,64,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Lafayette_Leopards_logo.svg/320px-Lafayette_Leopards_logo.svg.png,3
-2024-01-13,V,Colgate,Bucknell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Bucknell_Bison_logo.svg/286px-Bucknell_Bison_logo.svg.png,4
+2024-01-13,V,Colgate,Bucknell,84,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Bucknell_Bison_logo.svg/286px-Bucknell_Bison_logo.svg.png,4
 2024-01-17,V,Colgate,Army West Point,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Army_West_Point_logo.svg/206px-Army_West_Point_logo.svg.png,5
 2024-01-20,H,Colgate,Boston U.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Boston_University_Terriers_logo.svg/262px-Boston_University_Terriers_logo.svg.png,6
 2024-01-22,H,Colgate,Lehigh,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/LehighMountainHawks.svg/245px-LehighMountainHawks.svg.png,7
@@ -92,7 +92,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-03,V,Holy Cross,Bucknell,58,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Bucknell_Bison_logo.svg/286px-Bucknell_Bison_logo.svg.png,1
 2024-01-06,V,Holy Cross,Army West Point,57,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Army_West_Point_logo.svg/206px-Army_West_Point_logo.svg.png,2
 2024-01-10,H,Holy Cross,Navy,70,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Navy_Athletics_logo.svg/195px-Navy_Athletics_logo.svg.png,3
-2024-01-13,V,Holy Cross,Lehigh,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/LehighMountainHawks.svg/245px-LehighMountainHawks.svg.png,4
+2024-01-13,V,Holy Cross,Lehigh,69,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/LehighMountainHawks.svg/245px-LehighMountainHawks.svg.png,4
 2024-01-17,H,Holy Cross,Lafayette,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Lafayette_Leopards_logo.svg/320px-Lafayette_Leopards_logo.svg.png,5
 2024-01-20,H,Holy Cross,Loyola Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Loyola_Greyhounds_logo.svg/186px-Loyola_Greyhounds_logo.svg.png,6
 2024-01-24,V,Holy Cross,American,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/American_Eagles_logo.svg/240px-American_Eagles_logo.svg.png,7
@@ -110,7 +110,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-03,H,Lafayette,Army West Point,52,47,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Army_West_Point_logo.svg/206px-Army_West_Point_logo.svg.png,1
 2024-01-06,V,Lafayette,Boston U.,59,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Boston_University_Terriers_logo.svg/262px-Boston_University_Terriers_logo.svg.png,2
 2024-01-10,V,Lafayette,Colgate,69,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Colgate_Raiders_logo.svg/189px-Colgate_Raiders_logo.svg.png,3
-2024-01-13,H,Lafayette,Navy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Navy_Athletics_logo.svg/195px-Navy_Athletics_logo.svg.png,4
+2024-01-13,H,Lafayette,Navy,78,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Navy_Athletics_logo.svg/195px-Navy_Athletics_logo.svg.png,4
 2024-01-17,V,Lafayette,Holy Cross,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Holy_Cross_Crusaders_logo.svg/204px-Holy_Cross_Crusaders_logo.svg.png,5
 2024-01-20,H,Lafayette,Bucknell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Bucknell_Bison_logo.svg/286px-Bucknell_Bison_logo.svg.png,6
 2024-01-24,V,Lafayette,Loyola Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Loyola_Greyhounds_logo.svg/186px-Loyola_Greyhounds_logo.svg.png,7
@@ -128,7 +128,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-03,V,Lehigh,American,66,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/American_Eagles_logo.svg/240px-American_Eagles_logo.svg.png,1
 2024-01-06,V,Lehigh,Loyola Maryland,88,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Loyola_Greyhounds_logo.svg/186px-Loyola_Greyhounds_logo.svg.png,2
 2024-01-10,H,Lehigh,Bucknell,80,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Bucknell_Bison_logo.svg/286px-Bucknell_Bison_logo.svg.png,3
-2024-01-13,H,Lehigh,Holy Cross,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Holy_Cross_Crusaders_logo.svg/204px-Holy_Cross_Crusaders_logo.svg.png,4
+2024-01-13,H,Lehigh,Holy Cross,66,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Holy_Cross_Crusaders_logo.svg/204px-Holy_Cross_Crusaders_logo.svg.png,4
 2024-01-17,V,Lehigh,Navy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Navy_Athletics_logo.svg/195px-Navy_Athletics_logo.svg.png,5
 2024-01-20,H,Lehigh,American,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/American_Eagles_logo.svg/240px-American_Eagles_logo.svg.png,6
 2024-01-22,V,Lehigh,Colgate,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Colgate_Raiders_logo.svg/189px-Colgate_Raiders_logo.svg.png,7
@@ -146,7 +146,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-03,V,Loyola Maryland,Colgate,55,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Colgate_Raiders_logo.svg/189px-Colgate_Raiders_logo.svg.png,1
 2024-01-06,H,Loyola Maryland,Lehigh,76,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/LehighMountainHawks.svg/245px-LehighMountainHawks.svg.png,2
 2024-01-10,V,Loyola Maryland,Army West Point,71,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Army_West_Point_logo.svg/206px-Army_West_Point_logo.svg.png,3
-2024-01-13,H,Loyola Maryland,Boston U.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Boston_University_Terriers_logo.svg/262px-Boston_University_Terriers_logo.svg.png,4
+2024-01-13,H,Loyola Maryland,Boston U.,58,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Boston_University_Terriers_logo.svg/262px-Boston_University_Terriers_logo.svg.png,4
 2024-01-15,H,Loyola Maryland,American,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/American_Eagles_logo.svg/240px-American_Eagles_logo.svg.png,5
 2024-01-20,V,Loyola Maryland,Holy Cross,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Holy_Cross_Crusaders_logo.svg/204px-Holy_Cross_Crusaders_logo.svg.png,6
 2024-01-24,H,Loyola Maryland,Lafayette,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Lafayette_Leopards_logo.svg/320px-Lafayette_Leopards_logo.svg.png,7
@@ -164,7 +164,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-03,H,Navy,Boston U.,62,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Boston_University_Terriers_logo.svg/262px-Boston_University_Terriers_logo.svg.png,1
 2024-01-06,H,Navy,Colgate,72,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Colgate_Raiders_logo.svg/189px-Colgate_Raiders_logo.svg.png,2
 2024-01-10,V,Navy,Holy Cross,80,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Holy_Cross_Crusaders_logo.svg/204px-Holy_Cross_Crusaders_logo.svg.png,3
-2024-01-13,V,Navy,Lafayette,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Lafayette_Leopards_logo.svg/320px-Lafayette_Leopards_logo.svg.png,4
+2024-01-13,V,Navy,Lafayette,62,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Lafayette_Leopards_logo.svg/320px-Lafayette_Leopards_logo.svg.png,4
 2024-01-17,H,Navy,Lehigh,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/LehighMountainHawks.svg/245px-LehighMountainHawks.svg.png,5
 2024-01-20,H,Navy,Army West Point,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Army_West_Point_logo.svg/206px-Army_West_Point_logo.svg.png,6
 2024-01-24,V,Navy,Bucknell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Bucknell_Bison_logo.svg/286px-Bucknell_Bison_logo.svg.png,7

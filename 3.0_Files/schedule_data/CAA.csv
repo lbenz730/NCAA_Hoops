@@ -2,7 +2,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,V,Campbell,N.C. A&T,62,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/North_Carolina_A%26T_Aggies_logo.svg/198px-North_Carolina_A%26T_Aggies_logo.svg.png,1
 2024-01-06,V,Campbell,Hampton,80,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Hampton_Pirates_logo.svg/218px-Hampton_Pirates_logo.svg.png,2
 2024-01-11,H,Campbell,Delaware,62,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Delaware_Fightin%27_Blue_Hens_logo.svg/320px-Delaware_Fightin%27_Blue_Hens_logo.svg.png,3
-2024-01-13,H,Campbell,Hofstra,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Hofstra_Pride_logo.svg/320px-Hofstra_Pride_logo.svg.png,4
+2024-01-13,H,Campbell,Hofstra,69,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Hofstra_Pride_logo.svg/320px-Hofstra_Pride_logo.svg.png,4
 2024-01-18,V,Campbell,William & Mary,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/William_%26_Mary_Athletics_logo.svg/150px-William_%26_Mary_Athletics_logo.svg.png,5
 2024-01-20,V,Campbell,Towson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Towson_Tigers_logo.svg/320px-Towson_Tigers_logo.svg.png,6
 2024-01-25,H,Campbell,Elon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Elon_Phoenix_logo.svg/310px-Elon_Phoenix_logo.svg.png,7
@@ -20,7 +20,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,V,Col. of Charleston,Hofstra,73,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Hofstra_Pride_logo.svg/320px-Hofstra_Pride_logo.svg.png,1
 2024-01-06,V,Col. of Charleston,Stony Brook,93,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Stony_Brook_Seawolves_logo.svg/320px-Stony_Brook_Seawolves_logo.svg.png,2
 2024-01-11,H,Col. of Charleston,Elon,80,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Elon_Phoenix_logo.svg/310px-Elon_Phoenix_logo.svg.png,3
-2024-01-13,H,Col. of Charleston,Monmouth,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Monmouth_Hawks.svg/309px-Monmouth_Hawks.svg.png,4
+2024-01-13,H,Col. of Charleston,Monmouth,94,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Monmouth_Hawks.svg/309px-Monmouth_Hawks.svg.png,4
 2024-01-18,H,Col. of Charleston,Towson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Towson_Tigers_logo.svg/320px-Towson_Tigers_logo.svg.png,5
 2024-01-20,V,Col. of Charleston,UNCW,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/UNC_Wilmington_Seahawks_logo.svg/211px-UNC_Wilmington_Seahawks_logo.svg.png,6
 2024-01-25,V,Col. of Charleston,Hampton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Hampton_Pirates_logo.svg/218px-Hampton_Pirates_logo.svg.png,7
@@ -38,7 +38,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,H,Delaware,Hampton,80,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Hampton_Pirates_logo.svg/218px-Hampton_Pirates_logo.svg.png,1
 2024-01-06,V,Delaware,Hofstra,71,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Hofstra_Pride_logo.svg/320px-Hofstra_Pride_logo.svg.png,2
 2024-01-11,V,Delaware,Campbell,68,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Campbell_Fighting_Camels_logo.svg/320px-Campbell_Fighting_Camels_logo.svg.png,3
-2024-01-14,V,Delaware,UNCW,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/UNC_Wilmington_Seahawks_logo.svg/211px-UNC_Wilmington_Seahawks_logo.svg.png,4
+2024-01-14,V,Delaware,UNCW,74,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/UNC_Wilmington_Seahawks_logo.svg/211px-UNC_Wilmington_Seahawks_logo.svg.png,4
 2024-01-18,H,Delaware,Stony Brook,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Stony_Brook_Seawolves_logo.svg/320px-Stony_Brook_Seawolves_logo.svg.png,5
 2024-01-20,V,Delaware,Drexel,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Drexel_Dragons_logo.svg/308px-Drexel_Dragons_logo.svg.png,6
 2024-01-25,H,Delaware,N.C. A&T,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/North_Carolina_A%26T_Aggies_logo.svg/198px-North_Carolina_A%26T_Aggies_logo.svg.png,7
@@ -57,7 +57,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,H,Drexel,UNCW,78,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/UNC_Wilmington_Seahawks_logo.svg/211px-UNC_Wilmington_Seahawks_logo.svg.png,2
 2024-01-06,V,Drexel,William & Mary,77,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/William_%26_Mary_Athletics_logo.svg/150px-William_%26_Mary_Athletics_logo.svg.png,3
 2024-01-11,V,Drexel,N.C. A&T,67,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/North_Carolina_A%26T_Aggies_logo.svg/198px-North_Carolina_A%26T_Aggies_logo.svg.png,4
-2024-01-13,V,Drexel,Elon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Elon_Phoenix_logo.svg/310px-Elon_Phoenix_logo.svg.png,5
+2024-01-13,V,Drexel,Elon,89,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Elon_Phoenix_logo.svg/310px-Elon_Phoenix_logo.svg.png,5
 2024-01-18,H,Drexel,Monmouth,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Monmouth_Hawks.svg/309px-Monmouth_Hawks.svg.png,6
 2024-01-20,H,Drexel,Delaware,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Delaware_Fightin%27_Blue_Hens_logo.svg/320px-Delaware_Fightin%27_Blue_Hens_logo.svg.png,7
 2024-01-25,V,Drexel,Towson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Towson_Tigers_logo.svg/320px-Towson_Tigers_logo.svg.png,8
@@ -74,7 +74,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,V,Elon,William & Mary,70,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/William_%26_Mary_Athletics_logo.svg/150px-William_%26_Mary_Athletics_logo.svg.png,1
 2024-01-06,H,Elon,N.C. A&T,77,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/North_Carolina_A%26T_Aggies_logo.svg/198px-North_Carolina_A%26T_Aggies_logo.svg.png,2
 2024-01-11,V,Elon,Col. of Charleston,62,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/College_of_Charleston_Cougars_logo.svg/206px-College_of_Charleston_Cougars_logo.svg.png,3
-2024-01-13,H,Elon,Drexel,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Drexel_Dragons_logo.svg/308px-Drexel_Dragons_logo.svg.png,4
+2024-01-13,H,Elon,Drexel,69,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Drexel_Dragons_logo.svg/308px-Drexel_Dragons_logo.svg.png,4
 2024-01-18,H,Elon,UNCW,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/UNC_Wilmington_Seahawks_logo.svg/211px-UNC_Wilmington_Seahawks_logo.svg.png,5
 2024-01-20,H,Elon,Northeastern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Northeastern_Huskies_primary_logo.svg/245px-Northeastern_Huskies_primary_logo.svg.png,6
 2024-01-25,V,Elon,Campbell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Campbell_Fighting_Camels_logo.svg/320px-Campbell_Fighting_Camels_logo.svg.png,7
@@ -110,7 +110,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,H,Hofstra,Col. of Charleston,61,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/College_of_Charleston_Cougars_logo.svg/206px-College_of_Charleston_Cougars_logo.svg.png,1
 2024-01-06,H,Hofstra,Delaware,76,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Delaware_Fightin%27_Blue_Hens_logo.svg/320px-Delaware_Fightin%27_Blue_Hens_logo.svg.png,2
 2024-01-11,V,Hofstra,Northeastern,68,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Northeastern_Huskies_primary_logo.svg/245px-Northeastern_Huskies_primary_logo.svg.png,3
-2024-01-13,V,Hofstra,Campbell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Campbell_Fighting_Camels_logo.svg/320px-Campbell_Fighting_Camels_logo.svg.png,4
+2024-01-13,V,Hofstra,Campbell,68,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Campbell_Fighting_Camels_logo.svg/320px-Campbell_Fighting_Camels_logo.svg.png,4
 2024-01-18,H,Hofstra,Hampton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Hampton_Pirates_logo.svg/218px-Hampton_Pirates_logo.svg.png,5
 2024-01-22,V,Hofstra,Stony Brook,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Stony_Brook_Seawolves_logo.svg/320px-Stony_Brook_Seawolves_logo.svg.png,6
 2024-01-25,H,Hofstra,William & Mary,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/William_%26_Mary_Athletics_logo.svg/150px-William_%26_Mary_Athletics_logo.svg.png,7
@@ -128,7 +128,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,H,Monmouth,Towson,51,43,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Towson_Tigers_logo.svg/320px-Towson_Tigers_logo.svg.png,1
 2024-01-08,H,Monmouth,Northeastern,81,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Northeastern_Huskies_primary_logo.svg/245px-Northeastern_Huskies_primary_logo.svg.png,2
 2024-01-11,V,Monmouth,UNCW,56,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/UNC_Wilmington_Seahawks_logo.svg/211px-UNC_Wilmington_Seahawks_logo.svg.png,3
-2024-01-13,V,Monmouth,Col. of Charleston,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/College_of_Charleston_Cougars_logo.svg/206px-College_of_Charleston_Cougars_logo.svg.png,4
+2024-01-13,V,Monmouth,Col. of Charleston,83,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/College_of_Charleston_Cougars_logo.svg/206px-College_of_Charleston_Cougars_logo.svg.png,4
 2024-01-18,V,Monmouth,Drexel,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Drexel_Dragons_logo.svg/308px-Drexel_Dragons_logo.svg.png,5
 2024-01-20,H,Monmouth,Hampton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Hampton_Pirates_logo.svg/218px-Hampton_Pirates_logo.svg.png,6
 2024-01-25,V,Monmouth,Stony Brook,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Stony_Brook_Seawolves_logo.svg/320px-Stony_Brook_Seawolves_logo.svg.png,7
@@ -164,7 +164,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,H,Northeastern,Stony Brook,53,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Stony_Brook_Seawolves_logo.svg/320px-Stony_Brook_Seawolves_logo.svg.png,1
 2024-01-08,V,Northeastern,Monmouth,62,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Monmouth_Hawks.svg/309px-Monmouth_Hawks.svg.png,2
 2024-01-11,H,Northeastern,Hofstra,71,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Hofstra_Pride_logo.svg/320px-Hofstra_Pride_logo.svg.png,3
-2024-01-13,H,Northeastern,Towson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Towson_Tigers_logo.svg/320px-Towson_Tigers_logo.svg.png,4
+2024-01-13,H,Northeastern,Towson,67,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Towson_Tigers_logo.svg/320px-Towson_Tigers_logo.svg.png,4
 2024-01-18,V,Northeastern,N.C. A&T,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/North_Carolina_A%26T_Aggies_logo.svg/198px-North_Carolina_A%26T_Aggies_logo.svg.png,5
 2024-01-20,V,Northeastern,Elon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Elon_Phoenix_logo.svg/310px-Elon_Phoenix_logo.svg.png,6
 2024-01-25,H,Northeastern,UNCW,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/UNC_Wilmington_Seahawks_logo.svg/211px-UNC_Wilmington_Seahawks_logo.svg.png,7
@@ -182,7 +182,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,V,Stony Brook,Northeastern,62,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Northeastern_Huskies_primary_logo.svg/245px-Northeastern_Huskies_primary_logo.svg.png,1
 2024-01-06,H,Stony Brook,Col. of Charleston,87,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/College_of_Charleston_Cougars_logo.svg/206px-College_of_Charleston_Cougars_logo.svg.png,2
 2024-01-11,V,Stony Brook,Towson,64,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Towson_Tigers_logo.svg/320px-Towson_Tigers_logo.svg.png,3
-2024-01-13,V,Stony Brook,William & Mary,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/William_%26_Mary_Athletics_logo.svg/150px-William_%26_Mary_Athletics_logo.svg.png,4
+2024-01-13,V,Stony Brook,William & Mary,63,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/William_%26_Mary_Athletics_logo.svg/150px-William_%26_Mary_Athletics_logo.svg.png,4
 2024-01-18,V,Stony Brook,Delaware,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Delaware_Fightin%27_Blue_Hens_logo.svg/320px-Delaware_Fightin%27_Blue_Hens_logo.svg.png,5
 2024-01-22,H,Stony Brook,Hofstra,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Hofstra_Pride_logo.svg/320px-Hofstra_Pride_logo.svg.png,6
 2024-01-25,H,Stony Brook,Monmouth,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Monmouth_Hawks.svg/309px-Monmouth_Hawks.svg.png,7
@@ -200,7 +200,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,V,Towson,Monmouth,43,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Monmouth_Hawks.svg/309px-Monmouth_Hawks.svg.png,1
 2024-01-06,H,Towson,UNCW,67,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/UNC_Wilmington_Seahawks_logo.svg/211px-UNC_Wilmington_Seahawks_logo.svg.png,2
 2024-01-11,H,Towson,Stony Brook,73,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Stony_Brook_Seawolves_logo.svg/320px-Stony_Brook_Seawolves_logo.svg.png,3
-2024-01-13,V,Towson,Northeastern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Northeastern_Huskies_primary_logo.svg/245px-Northeastern_Huskies_primary_logo.svg.png,4
+2024-01-13,V,Towson,Northeastern,59,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Northeastern_Huskies_primary_logo.svg/245px-Northeastern_Huskies_primary_logo.svg.png,4
 2024-01-18,V,Towson,Col. of Charleston,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/College_of_Charleston_Cougars_logo.svg/206px-College_of_Charleston_Cougars_logo.svg.png,5
 2024-01-20,H,Towson,Campbell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Campbell_Fighting_Camels_logo.svg/320px-Campbell_Fighting_Camels_logo.svg.png,6
 2024-01-25,H,Towson,Drexel,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Drexel_Dragons_logo.svg/308px-Drexel_Dragons_logo.svg.png,7
@@ -218,7 +218,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,V,UNCW,Drexel,63,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Drexel_Dragons_logo.svg/308px-Drexel_Dragons_logo.svg.png,1
 2024-01-06,V,UNCW,Towson,64,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Towson_Tigers_logo.svg/320px-Towson_Tigers_logo.svg.png,2
 2024-01-11,H,UNCW,Monmouth,69,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/18/Monmouth_Hawks.svg/309px-Monmouth_Hawks.svg.png,3
-2024-01-14,H,UNCW,Delaware,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Delaware_Fightin%27_Blue_Hens_logo.svg/320px-Delaware_Fightin%27_Blue_Hens_logo.svg.png,4
+2024-01-14,H,UNCW,Delaware,79,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Delaware_Fightin%27_Blue_Hens_logo.svg/320px-Delaware_Fightin%27_Blue_Hens_logo.svg.png,4
 2024-01-18,V,UNCW,Elon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Elon_Phoenix_logo.svg/310px-Elon_Phoenix_logo.svg.png,5
 2024-01-20,H,UNCW,Col. of Charleston,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/College_of_Charleston_Cougars_logo.svg/206px-College_of_Charleston_Cougars_logo.svg.png,6
 2024-01-25,V,UNCW,Northeastern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Northeastern_Huskies_primary_logo.svg/245px-Northeastern_Huskies_primary_logo.svg.png,7
@@ -236,7 +236,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,H,William & Mary,Elon,77,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Elon_Phoenix_logo.svg/310px-Elon_Phoenix_logo.svg.png,1
 2024-01-06,H,William & Mary,Drexel,55,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Drexel_Dragons_logo.svg/308px-Drexel_Dragons_logo.svg.png,2
 2024-01-11,V,William & Mary,Hampton,73,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Hampton_Pirates_logo.svg/218px-Hampton_Pirates_logo.svg.png,3
-2024-01-13,H,William & Mary,Stony Brook,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Stony_Brook_Seawolves_logo.svg/320px-Stony_Brook_Seawolves_logo.svg.png,4
+2024-01-13,H,William & Mary,Stony Brook,59,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Stony_Brook_Seawolves_logo.svg/320px-Stony_Brook_Seawolves_logo.svg.png,4
 2024-01-18,H,William & Mary,Campbell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Campbell_Fighting_Camels_logo.svg/320px-Campbell_Fighting_Camels_logo.svg.png,5
 2024-01-20,V,William & Mary,N.C. A&T,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/North_Carolina_A%26T_Aggies_logo.svg/198px-North_Carolina_A%26T_Aggies_logo.svg.png,6
 2024-01-25,V,William & Mary,Hofstra,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Hofstra_Pride_logo.svg/320px-Hofstra_Pride_logo.svg.png,7
