@@ -26,7 +26,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,H,Detroit Mercy,Green Bay,51,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Green_Bay_Phoenix_logo.svg/308px-Green_Bay_Phoenix_logo.svg.png,5
 2024-01-06,H,Detroit Mercy,Milwaukee,61,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/36/Milwaukee_Panthers_letter_logo.svg,6
 2024-01-13,H,Detroit Mercy,Northern Ky.,76,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Northern_Kentucky_Norse_logo.svg/320px-Northern_Kentucky_Norse_logo.svg.png,7
-2024-01-17,V,Detroit Mercy,Robert Morris,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=200&w=200,8
+2024-01-17,V,Detroit Mercy,Robert Morris,99,102,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=200&w=200,8
 2024-01-20,H,Detroit Mercy,Youngstown St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,9
 2024-01-25,V,Detroit Mercy,Milwaukee,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/36/Milwaukee_Panthers_letter_logo.svg,10
 2024-01-27,V,Detroit Mercy,Green Bay,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Green_Bay_Phoenix_logo.svg/308px-Green_Bay_Phoenix_logo.svg.png,11
@@ -67,7 +67,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-07,V,IUPUI,Youngstown St.,65,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,6
 2024-01-10,H,IUPUI,Green Bay,58,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Green_Bay_Phoenix_logo.svg/308px-Green_Bay_Phoenix_logo.svg.png,7
 2024-01-13,H,IUPUI,Oakland,66,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Oakland_Golden_Grizzlies_logo.svg/303px-Oakland_Golden_Grizzlies_logo.svg.png,8
-2024-01-17,V,IUPUI,Purdue Fort Wayne,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Purdue_Fort_Wayne_Mastodons_logo.svg/202px-Purdue_Fort_Wayne_Mastodons_logo.svg.png,9
+2024-01-17,V,IUPUI,Purdue Fort Wayne,85,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Purdue_Fort_Wayne_Mastodons_logo.svg/202px-Purdue_Fort_Wayne_Mastodons_logo.svg.png,9
 2024-01-20,H,IUPUI,Robert Morris,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=200&w=200,10
 2024-01-25,H,IUPUI,Youngstown St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,11
 2024-01-28,H,IUPUI,Wright St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Wright_State_Raiders_logo.svg/313px-Wright_State_Raiders_logo.svg.png,12
@@ -127,7 +127,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-06,H,Oakland,Green Bay,79,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Green_Bay_Phoenix_logo.svg/308px-Green_Bay_Phoenix_logo.svg.png,6
 2024-01-10,H,Oakland,Northern Ky.,70,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Northern_Kentucky_Norse_logo.svg/320px-Northern_Kentucky_Norse_logo.svg.png,7
 2024-01-13,V,Oakland,IUPUI,88,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/IUPUI_Jaguars_logo.svg/300px-IUPUI_Jaguars_logo.svg.png,8
-2024-01-17,H,Oakland,Youngstown St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,9
+2024-01-17,H,Oakland,Youngstown St.,70,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,9
 2024-01-25,V,Oakland,Green Bay,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Green_Bay_Phoenix_logo.svg/308px-Green_Bay_Phoenix_logo.svg.png,10
 2024-01-27,V,Oakland,Milwaukee,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/36/Milwaukee_Panthers_letter_logo.svg,11
 2024-02-01,H,Oakland,Robert Morris,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=200&w=200,12
@@ -146,7 +146,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-06,H,Purdue Fort Wayne,Wright St.,98,106,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Wright_State_Raiders_logo.svg/313px-Wright_State_Raiders_logo.svg.png,5
 2024-01-10,V,Purdue Fort Wayne,Youngstown St.,85,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,6
 2024-01-12,V,Purdue Fort Wayne,Robert Morris,88,91,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=200&w=200,7
-2024-01-17,H,Purdue Fort Wayne,IUPUI,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/IUPUI_Jaguars_logo.svg/300px-IUPUI_Jaguars_logo.svg.png,8
+2024-01-17,H,Purdue Fort Wayne,IUPUI,79,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/IUPUI_Jaguars_logo.svg/300px-IUPUI_Jaguars_logo.svg.png,8
 2024-01-20,V,Purdue Fort Wayne,Cleveland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Cleveland_State_Vikings_logo.svg/311px-Cleveland_State_Vikings_logo.svg.png,9
 2024-01-25,V,Purdue Fort Wayne,Northern Ky.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Northern_Kentucky_Norse_logo.svg/320px-Northern_Kentucky_Norse_logo.svg.png,10
 2024-02-01,H,Purdue Fort Wayne,Milwaukee,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/36/Milwaukee_Panthers_letter_logo.svg,11
@@ -166,7 +166,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-04,H,Robert Morris,IUPUI,92,48,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/IUPUI_Jaguars_logo.svg/300px-IUPUI_Jaguars_logo.svg.png,5
 2024-01-10,H,Robert Morris,Wright St.,76,101,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Wright_State_Raiders_logo.svg/313px-Wright_State_Raiders_logo.svg.png,6
 2024-01-12,H,Robert Morris,Purdue Fort Wayne,91,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Purdue_Fort_Wayne_Mastodons_logo.svg/202px-Purdue_Fort_Wayne_Mastodons_logo.svg.png,7
-2024-01-17,H,Robert Morris,Detroit Mercy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Detroit_Titans_logo.svg/320px-Detroit_Titans_logo.svg.png,8
+2024-01-17,H,Robert Morris,Detroit Mercy,102,99,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Detroit_Titans_logo.svg/320px-Detroit_Titans_logo.svg.png,8
 2024-01-20,V,Robert Morris,IUPUI,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/IUPUI_Jaguars_logo.svg/300px-IUPUI_Jaguars_logo.svg.png,9
 2024-01-28,V,Robert Morris,Cleveland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Cleveland_State_Vikings_logo.svg/311px-Cleveland_State_Vikings_logo.svg.png,10
 2024-02-01,V,Robert Morris,Oakland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Oakland_Golden_Grizzlies_logo.svg/303px-Oakland_Golden_Grizzlies_logo.svg.png,11
@@ -206,7 +206,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-07,H,Youngstown St.,IUPUI,75,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/IUPUI_Jaguars_logo.svg/300px-IUPUI_Jaguars_logo.svg.png,5
 2024-01-10,H,Youngstown St.,Purdue Fort Wayne,93,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Purdue_Fort_Wayne_Mastodons_logo.svg/202px-Purdue_Fort_Wayne_Mastodons_logo.svg.png,6
 2024-01-12,H,Youngstown St.,Wright St.,81,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Wright_State_Raiders_logo.svg/313px-Wright_State_Raiders_logo.svg.png,7
-2024-01-17,V,Youngstown St.,Oakland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Oakland_Golden_Grizzlies_logo.svg/303px-Oakland_Golden_Grizzlies_logo.svg.png,8
+2024-01-17,V,Youngstown St.,Oakland,67,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Oakland_Golden_Grizzlies_logo.svg/303px-Oakland_Golden_Grizzlies_logo.svg.png,8
 2024-01-20,V,Youngstown St.,Detroit Mercy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Detroit_Titans_logo.svg/320px-Detroit_Titans_logo.svg.png,9
 2024-01-25,V,Youngstown St.,IUPUI,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/IUPUI_Jaguars_logo.svg/300px-IUPUI_Jaguars_logo.svg.png,10
 2024-01-28,H,Youngstown St.,Northern Ky.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Northern_Kentucky_Norse_logo.svg/320px-Northern_Kentucky_Norse_logo.svg.png,11
