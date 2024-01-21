@@ -39,7 +39,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-06,V,Alcorn,Jackson St.,80,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jackson_State_athletics_logo.svg/320px-Jackson_State_athletics_logo.svg.png,1
 2024-01-11,V,Alcorn,Alabama A&M,74,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Alabama_A%26M_Bulldogs_logo.svg/201px-Alabama_A%26M_Bulldogs_logo.svg.png,2
 2024-01-13,V,Alcorn,Alabama St.,53,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Alabama_State_Hornets_logo.svg/320px-Alabama_State_Hornets_logo.svg.png,3
-2024-01-20,H,Alcorn,Texas Southern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Texas_Southern_Tigers_logo.svg/254px-Texas_Southern_Tigers_logo.svg.png,4
+2024-01-20,H,Alcorn,Texas Southern,61,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Texas_Southern_Tigers_logo.svg/254px-Texas_Southern_Tigers_logo.svg.png,4
 2024-01-22,H,Alcorn,Prairie View,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Prairie_View_A%26M_Panthers_logo.svg/320px-Prairie_View_A%26M_Panthers_logo.svg.png,5
 2024-01-27,V,Alcorn,Florida A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/78/FAMU_Rattler.png,6
 2024-01-29,V,Alcorn,Bethune-Cookman,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Bethune%E2%80%93Cookman_Wildcats_logo.svg/230px-Bethune%E2%80%93Cookman_Wildcats_logo.svg.png,7
@@ -58,7 +58,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-08,H,Ark.-Pine Bluff,Alabama St.,72,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Alabama_State_Hornets_logo.svg/320px-Alabama_State_Hornets_logo.svg.png,2
 2024-01-13,V,Ark.-Pine Bluff,Texas Southern,70,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Texas_Southern_Tigers_logo.svg/254px-Texas_Southern_Tigers_logo.svg.png,3
 2024-01-15,V,Ark.-Pine Bluff,Prairie View,NA,NA,TRUE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Prairie_View_A%26M_Panthers_logo.svg/320px-Prairie_View_A%26M_Panthers_logo.svg.png,4
-2024-01-20,H,Ark.-Pine Bluff,Florida A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/78/FAMU_Rattler.png,5
+2024-01-20,H,Ark.-Pine Bluff,Florida A&M,99,97,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/78/FAMU_Rattler.png,5
 2024-01-22,H,Ark.-Pine Bluff,Bethune-Cookman,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Bethune%E2%80%93Cookman_Wildcats_logo.svg/230px-Bethune%E2%80%93Cookman_Wildcats_logo.svg.png,6
 2024-01-27,V,Ark.-Pine Bluff,Southern U.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Southern_Jaguars_logo.svg/273px-Southern_Jaguars_logo.svg.png,7
 2024-01-29,V,Ark.-Pine Bluff,Grambling,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Grambling_State_Tigers_logo.svg/320px-Grambling_State_Tigers_logo.svg.png,8
@@ -75,7 +75,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-06,H,Bethune-Cookman,Florida A&M,98,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/78/FAMU_Rattler.png,1
 2024-01-13,H,Bethune-Cookman,Grambling,69,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Grambling_State_Tigers_logo.svg/320px-Grambling_State_Tigers_logo.svg.png,2
 2024-01-15,H,Bethune-Cookman,Southern U.,83,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Southern_Jaguars_logo.svg/273px-Southern_Jaguars_logo.svg.png,3
-2024-01-20,V,Bethune-Cookman,Mississippi Val.,NA,NA,FALSE,FALSE,https://i.imgur.com/TOQFibH.jpg,4
+2024-01-20,V,Bethune-Cookman,Mississippi Val.,80,64,FALSE,FALSE,https://i.imgur.com/TOQFibH.jpg,4
 2024-01-22,V,Bethune-Cookman,Ark.-Pine Bluff,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg/290px-Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg.png,5
 2024-01-27,H,Bethune-Cookman,Jackson St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jackson_State_athletics_logo.svg/320px-Jackson_State_athletics_logo.svg.png,6
 2024-01-29,H,Bethune-Cookman,Alcorn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Alcorn_State_athletics_logo.svg/280px-Alcorn_State_athletics_logo.svg.png,7
@@ -93,7 +93,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-06,V,Florida A&M,Bethune-Cookman,86,98,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Bethune%E2%80%93Cookman_Wildcats_logo.svg/230px-Bethune%E2%80%93Cookman_Wildcats_logo.svg.png,1
 2024-01-13,H,Florida A&M,Southern U.,65,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Southern_Jaguars_logo.svg/273px-Southern_Jaguars_logo.svg.png,2
 2024-01-15,H,Florida A&M,Grambling,52,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Grambling_State_Tigers_logo.svg/320px-Grambling_State_Tigers_logo.svg.png,3
-2024-01-20,V,Florida A&M,Ark.-Pine Bluff,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg/290px-Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg.png,4
+2024-01-20,V,Florida A&M,Ark.-Pine Bluff,97,99,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg/290px-Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg.png,4
 2024-01-22,V,Florida A&M,Mississippi Val.,NA,NA,FALSE,FALSE,https://i.imgur.com/TOQFibH.jpg,5
 2024-01-27,H,Florida A&M,Alcorn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Alcorn_State_athletics_logo.svg/280px-Alcorn_State_athletics_logo.svg.png,6
 2024-01-29,H,Florida A&M,Jackson St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jackson_State_athletics_logo.svg/320px-Jackson_State_athletics_logo.svg.png,7
@@ -112,7 +112,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-08,H,Grambling,Texas Southern,52,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Texas_Southern_Tigers_logo.svg/254px-Texas_Southern_Tigers_logo.svg.png,2
 2024-01-13,V,Grambling,Bethune-Cookman,79,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Bethune%E2%80%93Cookman_Wildcats_logo.svg/230px-Bethune%E2%80%93Cookman_Wildcats_logo.svg.png,3
 2024-01-15,V,Grambling,Florida A&M,65,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/78/FAMU_Rattler.png,4
-2024-01-20,H,Grambling,Southern U.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Southern_Jaguars_logo.svg/273px-Southern_Jaguars_logo.svg.png,5
+2024-01-20,H,Grambling,Southern U.,79,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Southern_Jaguars_logo.svg/273px-Southern_Jaguars_logo.svg.png,5
 2024-01-27,H,Grambling,Mississippi Val.,NA,NA,FALSE,FALSE,https://i.imgur.com/TOQFibH.jpg,6
 2024-01-29,H,Grambling,Ark.-Pine Bluff,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg/290px-Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg.png,7
 2024-02-03,V,Grambling,Jackson St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jackson_State_athletics_logo.svg/320px-Jackson_State_athletics_logo.svg.png,8
@@ -130,7 +130,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-06,H,Jackson St.,Alcorn,88,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Alcorn_State_athletics_logo.svg/280px-Alcorn_State_athletics_logo.svg.png,1
 2024-01-11,V,Jackson St.,Alabama St.,73,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Alabama_State_Hornets_logo.svg/320px-Alabama_State_Hornets_logo.svg.png,2
 2024-01-13,V,Jackson St.,Alabama A&M,75,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Alabama_A%26M_Bulldogs_logo.svg/201px-Alabama_A%26M_Bulldogs_logo.svg.png,3
-2024-01-20,H,Jackson St.,Prairie View,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Prairie_View_A%26M_Panthers_logo.svg/320px-Prairie_View_A%26M_Panthers_logo.svg.png,4
+2024-01-20,H,Jackson St.,Prairie View,62,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Prairie_View_A%26M_Panthers_logo.svg/320px-Prairie_View_A%26M_Panthers_logo.svg.png,4
 2024-01-22,H,Jackson St.,Texas Southern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Texas_Southern_Tigers_logo.svg/254px-Texas_Southern_Tigers_logo.svg.png,5
 2024-01-27,V,Jackson St.,Bethune-Cookman,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Bethune%E2%80%93Cookman_Wildcats_logo.svg/230px-Bethune%E2%80%93Cookman_Wildcats_logo.svg.png,6
 2024-01-29,V,Jackson St.,Florida A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/78/FAMU_Rattler.png,7
@@ -149,7 +149,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-08,H,Mississippi Val.,Alabama A&M,70,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Alabama_A%26M_Bulldogs_logo.svg/201px-Alabama_A%26M_Bulldogs_logo.svg.png,2
 2024-01-13,V,Mississippi Val.,Prairie View,60,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Prairie_View_A%26M_Panthers_logo.svg/320px-Prairie_View_A%26M_Panthers_logo.svg.png,3
 2024-01-15,V,Mississippi Val.,Texas Southern,61,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Texas_Southern_Tigers_logo.svg/254px-Texas_Southern_Tigers_logo.svg.png,4
-2024-01-20,H,Mississippi Val.,Bethune-Cookman,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Bethune%E2%80%93Cookman_Wildcats_logo.svg/230px-Bethune%E2%80%93Cookman_Wildcats_logo.svg.png,5
+2024-01-20,H,Mississippi Val.,Bethune-Cookman,64,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Bethune%E2%80%93Cookman_Wildcats_logo.svg/230px-Bethune%E2%80%93Cookman_Wildcats_logo.svg.png,5
 2024-01-22,H,Mississippi Val.,Florida A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/78/FAMU_Rattler.png,6
 2024-01-27,V,Mississippi Val.,Grambling,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Grambling_State_Tigers_logo.svg/320px-Grambling_State_Tigers_logo.svg.png,7
 2024-01-29,V,Mississippi Val.,Southern U.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Southern_Jaguars_logo.svg/273px-Southern_Jaguars_logo.svg.png,8
@@ -167,7 +167,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-08,V,Prairie View,Southern U.,58,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Southern_Jaguars_logo.svg/273px-Southern_Jaguars_logo.svg.png,2
 2024-01-13,H,Prairie View,Mississippi Val.,71,60,FALSE,FALSE,https://i.imgur.com/TOQFibH.jpg,3
 2024-01-15,H,Prairie View,Ark.-Pine Bluff,NA,NA,TRUE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg/290px-Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg.png,4
-2024-01-20,V,Prairie View,Jackson St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jackson_State_athletics_logo.svg/320px-Jackson_State_athletics_logo.svg.png,5
+2024-01-20,V,Prairie View,Jackson St.,71,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jackson_State_athletics_logo.svg/320px-Jackson_State_athletics_logo.svg.png,5
 2024-01-22,V,Prairie View,Alcorn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Alcorn_State_athletics_logo.svg/280px-Alcorn_State_athletics_logo.svg.png,6
 2024-01-27,H,Prairie View,Alabama St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Alabama_State_Hornets_logo.svg/320px-Alabama_State_Hornets_logo.svg.png,7
 2024-01-29,H,Prairie View,Alabama A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Alabama_A%26M_Bulldogs_logo.svg/201px-Alabama_A%26M_Bulldogs_logo.svg.png,8
@@ -185,7 +185,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-08,H,Southern U.,Prairie View,79,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Prairie_View_A%26M_Panthers_logo.svg/320px-Prairie_View_A%26M_Panthers_logo.svg.png,2
 2024-01-13,V,Southern U.,Florida A&M,74,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/78/FAMU_Rattler.png,3
 2024-01-15,V,Southern U.,Bethune-Cookman,81,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Bethune%E2%80%93Cookman_Wildcats_logo.svg/230px-Bethune%E2%80%93Cookman_Wildcats_logo.svg.png,4
-2024-01-20,V,Southern U.,Grambling,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Grambling_State_Tigers_logo.svg/320px-Grambling_State_Tigers_logo.svg.png,5
+2024-01-20,V,Southern U.,Grambling,62,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Grambling_State_Tigers_logo.svg/320px-Grambling_State_Tigers_logo.svg.png,5
 2024-01-27,H,Southern U.,Ark.-Pine Bluff,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg/290px-Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg.png,6
 2024-01-29,H,Southern U.,Mississippi Val.,NA,NA,FALSE,FALSE,https://i.imgur.com/TOQFibH.jpg,7
 2024-02-03,V,Southern U.,Alcorn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Alcorn_State_athletics_logo.svg/280px-Alcorn_State_athletics_logo.svg.png,8
@@ -203,7 +203,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-08,V,Texas Southern,Grambling,54,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Grambling_State_Tigers_logo.svg/320px-Grambling_State_Tigers_logo.svg.png,2
 2024-01-13,H,Texas Southern,Ark.-Pine Bluff,67,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg/290px-Arkansas%E2%80%93Pine_Bluff_Golden_Lions_logo.svg.png,3
 2024-01-15,H,Texas Southern,Mississippi Val.,93,61,FALSE,FALSE,https://i.imgur.com/TOQFibH.jpg,4
-2024-01-20,V,Texas Southern,Alcorn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Alcorn_State_athletics_logo.svg/280px-Alcorn_State_athletics_logo.svg.png,5
+2024-01-20,V,Texas Southern,Alcorn,72,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Alcorn_State_athletics_logo.svg/280px-Alcorn_State_athletics_logo.svg.png,5
 2024-01-22,V,Texas Southern,Jackson St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jackson_State_athletics_logo.svg/320px-Jackson_State_athletics_logo.svg.png,6
 2024-01-27,H,Texas Southern,Alabama A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Alabama_A%26M_Bulldogs_logo.svg/201px-Alabama_A%26M_Bulldogs_logo.svg.png,7
 2024-01-30,H,Texas Southern,Alabama St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Alabama_State_Hornets_logo.svg/320px-Alabama_State_Hornets_logo.svg.png,8
