@@ -21,6 +21,7 @@ priors <-
 seed_list <- read_csv('3.0_Files/ncaa_sims/seed_list.csv')
 source("3.0_Files/powerrankings.R")
 source("3.0_Files/Ivy_Sims.R")
+source("3.0_Files/tiebreak.R")
 source("3.0_Files/rpi.R")
 source("3.0_Files/record_evaluator.R")
 source("3.0_Files/bracketology.R")
