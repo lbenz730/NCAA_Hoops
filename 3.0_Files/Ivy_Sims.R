@@ -221,6 +221,16 @@ psf <- function(nsims, min_date, max_date) {
                  'game_id' = 1:nrow(.))
       )
     
+    games$win[games$win_prob == 1] <- 1
+    games$win[games$win_prob == 0] <- 0
+    
+    df_left <- 
+      games %>% 
+      filter(win_prob > 0, win_prob < 1)
+    
+    home_ix <- games$game_id %in% df_left$game_id & games$home_flag == 1
+    away_ix <- games$game_id %in% df_left$game_id & games$home_flag == 0
+    
     ### Simulate Games
     champ <- rep(NA, nsims)
     for (j in 1:nrow(simresults)){

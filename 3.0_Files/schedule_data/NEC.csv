@@ -4,8 +4,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,H,Central Conn. St.,Merrimack,75,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,3
 2024-01-19,H,Central Conn. St.,Le Moyne,73,75,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,4
 2024-01-21,V,Central Conn. St.,LIU,72,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,5
-2024-01-25,V,Central Conn. St.,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,6
-2024-01-27,H,Central Conn. St.,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,7
+2024-01-25,V,Central Conn. St.,Fairleigh Dickinson,76,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,6
+2024-01-27,H,Central Conn. St.,Wagner,69,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,7
 2024-02-01,H,Central Conn. St.,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,8
 2024-02-03,V,Central Conn. St.,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,9
 2024-02-08,H,Central Conn. St.,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,10
@@ -20,8 +20,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-13,H,Fairleigh Dickinson,Stonehill,81,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,3
 2024-01-15,V,Fairleigh Dickinson,Saint Francis (PA),81,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,4
 2024-01-19,V,Fairleigh Dickinson,Stonehill,76,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,5
-2024-01-25,H,Fairleigh Dickinson,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,6
-2024-01-27,H,Fairleigh Dickinson,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,7
+2024-01-25,H,Fairleigh Dickinson,Central Conn. St.,60,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,6
+2024-01-27,H,Fairleigh Dickinson,Sacred Heart,93,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,7
 2024-02-01,H,Fairleigh Dickinson,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,8
 2024-02-08,H,Fairleigh Dickinson,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,9
 2024-02-10,V,Fairleigh Dickinson,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,10
@@ -36,8 +36,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-13,V,LIU,Sacred Heart,55,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,3
 2024-01-19,V,LIU,Saint Francis (PA),66,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,4
 2024-01-21,H,LIU,Central Conn. St.,63,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,5
-2024-01-25,H,LIU,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,6
-2024-01-27,V,LIU,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,7
+2024-01-25,H,LIU,Stonehill,63,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,6
+2024-01-27,V,LIU,Le Moyne,74,87,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,7
 2024-02-01,V,LIU,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,8
 2024-02-03,H,LIU,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,9
 2024-02-08,H,LIU,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,10
@@ -52,7 +52,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,H,Le Moyne,Sacred Heart,73,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,3
 2024-01-19,V,Le Moyne,Central Conn. St.,75,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,4
 2024-01-21,H,Le Moyne,Saint Francis (PA),94,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,5
-2024-01-27,H,Le Moyne,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,6
+2024-01-27,H,Le Moyne,LIU,87,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,6
 2024-02-01,V,Le Moyne,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,7
 2024-02-03,V,Le Moyne,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,8
 2024-02-08,V,Le Moyne,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,9
@@ -69,8 +69,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,V,Merrimack,Central Conn. St.,70,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,4
 2024-01-19,H,Merrimack,Wagner,65,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,5
 2024-01-21,H,Merrimack,Stonehill,63,47,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,6
-2024-01-25,V,Merrimack,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,7
-2024-01-27,V,Merrimack,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,8
+2024-01-25,V,Merrimack,Wagner,60,44,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,7
+2024-01-27,V,Merrimack,Saint Francis (PA),74,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,8
 2024-02-03,H,Merrimack,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,9
 2024-02-08,V,Merrimack,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,10
 2024-02-10,H,Merrimack,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,11
@@ -84,8 +84,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-13,H,Sacred Heart,LIU,89,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,3
 2024-01-15,V,Sacred Heart,Le Moyne,80,73,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,4
 2024-01-21,H,Sacred Heart,Wagner,66,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,5
-2024-01-25,V,Sacred Heart,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,6
-2024-01-27,V,Sacred Heart,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,7
+2024-01-25,V,Sacred Heart,Saint Francis (PA),71,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,6
+2024-01-27,V,Sacred Heart,Fairleigh Dickinson,91,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,7
 2024-02-01,H,Sacred Heart,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,8
 2024-02-03,H,Sacred Heart,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,9
 2024-02-08,V,Sacred Heart,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,10
@@ -101,8 +101,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,H,Saint Francis (PA),Fairleigh Dickinson,71,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,4
 2024-01-19,H,Saint Francis (PA),LIU,72,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,5
 2024-01-21,V,Saint Francis (PA),Le Moyne,57,94,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,6
-2024-01-25,H,Saint Francis (PA),Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,7
-2024-01-27,H,Saint Francis (PA),Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,8
+2024-01-25,H,Saint Francis (PA),Sacred Heart,75,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,7
+2024-01-27,H,Saint Francis (PA),Merrimack,55,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,8
 2024-02-01,V,Saint Francis (PA),Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,9
 2024-02-03,V,Saint Francis (PA),LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,10
 2024-02-10,H,Saint Francis (PA),Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,11
@@ -117,7 +117,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,V,Stonehill,Wagner,54,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,4
 2024-01-19,H,Stonehill,Fairleigh Dickinson,69,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,5
 2024-01-21,V,Stonehill,Merrimack,47,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,6
-2024-01-25,V,Stonehill,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,7
+2024-01-25,V,Stonehill,LIU,60,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,7
 2024-02-01,V,Stonehill,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,8
 2024-02-03,H,Stonehill,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,9
 2024-02-08,H,Stonehill,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,10
@@ -132,8 +132,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,H,Wagner,Stonehill,64,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,3
 2024-01-19,V,Wagner,Merrimack,71,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,4
 2024-01-21,V,Wagner,Sacred Heart,61,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,5
-2024-01-25,H,Wagner,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,6
-2024-01-27,V,Wagner,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,7
+2024-01-25,H,Wagner,Merrimack,44,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,6
+2024-01-27,V,Wagner,Central Conn. St.,68,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,7
 2024-02-01,H,Wagner,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,8
 2024-02-03,V,Wagner,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,9
 2024-02-08,V,Wagner,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,10
