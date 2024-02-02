@@ -743,3 +743,27 @@ rm(ivy_history)
 gc()
 
 
+ivy_4th <- 
+  df_wins %>% 
+  filter(place == 4) %>% 
+  group_by(n_wins) %>% 
+  summarise('n' = n(), 
+            tiebreak = mean(tiebreak)) %>% 
+  ungroup() %>%
+  mutate('pct' = n/sum(n)) %>% 
+  select(n_wins, pct,  tiebreak) %>% 
+  gt() %>% 
+  cols_align('center') %>% 
+  fmt_percent(c(pct, tiebreak), decimals = 1) %>% 
+  cols_label(n_wins = '# of Wins for 4th Seed', 
+             pct = 'Frequency', 
+             tiebreak = 'Tiebreak for 4th Seed') %>% 
+  tab_header(subtitle = md('**Distribution of Wins Need for Last Ivy Playoff Spot**'),
+             title = md("<img src='https://content.sportslogos.net/logos/153/4824/full/ivy_league_logo_primary_2019_sportslogosnet-9024.png' style='height: 100px; width: auto; vertical-align: middle;'> ")) %>% 
+  tab_options(column_labels.font.size = 16,
+              column_labels.font.weight = 'bold',
+              heading.title.font.size = 30,
+              heading.subtitle.font.size = 20,
+              heading.title.font.weight = 'bold',
+              heading.subtitle.font.weight = 'bold'
+  ) 

@@ -303,6 +303,7 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                             
                             mainPanel(
                               gt_output('ivy_sims'),
+                              gt_output('ivy_4th') %>% 
                               plotOutput('ivy_history', height = '500px'),
                               gt_output('ivy_psf'),
                               plotOutput('ivy_snap',  height = '700px'),
