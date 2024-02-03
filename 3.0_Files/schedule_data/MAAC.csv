@@ -28,7 +28,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-19,H,Fairfield,Saint Peter's,76,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,7
 2024-01-21,V,Fairfield,Manhattan,82,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,8
 2024-01-28,H,Fairfield,Quinnipiac,64,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,9
-2024-02-02,V,Fairfield,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,10
+2024-02-02,V,Fairfield,Iona,82,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,10
 2024-02-04,H,Fairfield,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,11
 2024-02-08,H,Fairfield,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,12
 2024-02-10,V,Fairfield,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,13
@@ -47,7 +47,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-19,H,Iona,Canisius,70,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,6
 2024-01-21,V,Iona,Quinnipiac,87,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,7
 2024-01-26,V,Iona,Siena,70,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,8
-2024-02-02,H,Iona,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,9
+2024-02-02,H,Iona,Fairfield,91,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,9
 2024-02-04,H,Iona,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,10
 2024-02-08,V,Iona,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,11
 2024-02-10,V,Iona,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,12
@@ -68,7 +68,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-21,H,Manhattan,Fairfield,75,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,7
 2024-01-26,V,Manhattan,Canisius,70,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,8
 2024-01-28,V,Manhattan,Niagara,84,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,9
-2024-02-02,H,Manhattan,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,10
+2024-02-02,H,Manhattan,Quinnipiac,71,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,10
 2024-02-04,V,Manhattan,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,11
 2024-02-08,V,Manhattan,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,12
 2024-02-10,H,Manhattan,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,13
@@ -88,7 +88,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-21,H,Marist,Siena,50,48,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,7
 2024-01-26,V,Marist,Niagara,62,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,8
 2024-01-28,V,Marist,Canisius,80,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,9
-2024-02-02,H,Marist,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,10
+2024-02-02,H,Marist,Mount St. Mary's,58,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,10
 2024-02-04,H,Marist,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,11
 2024-02-08,V,Marist,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,12
 2024-02-10,V,Marist,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,13
@@ -108,7 +108,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-21,H,Mount St. Mary's,Niagara,71,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,7
 2024-01-25,V,Mount St. Mary's,Quinnipiac,65,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,8
 2024-01-27,H,Mount St. Mary's,Rider,62,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,9
-2024-02-02,V,Mount St. Mary's,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,10
+2024-02-02,V,Mount St. Mary's,Marist,76,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,10
 2024-02-04,V,Mount St. Mary's,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,11
 2024-02-08,H,Mount St. Mary's,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,12
 2024-02-10,H,Mount St. Mary's,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,13
@@ -129,7 +129,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-21,V,Niagara,Mount St. Mary's,82,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,8
 2024-01-26,H,Niagara,Marist,67,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,9
 2024-01-28,H,Niagara,Manhattan,78,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,10
-2024-02-02,V,Niagara,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,11
+2024-02-02,V,Niagara,Saint Peter's,68,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,11
 2024-02-06,H,Niagara,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,12
 2024-02-08,H,Niagara,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,13
 2024-02-16,V,Niagara,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,14
@@ -148,7 +148,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-21,H,Quinnipiac,Iona,91,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,7
 2024-01-25,H,Quinnipiac,Mount St. Mary's,79,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,8
 2024-01-28,V,Quinnipiac,Fairfield,66,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,9
-2024-02-02,V,Quinnipiac,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,10
+2024-02-02,V,Quinnipiac,Manhattan,77,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,10
 2024-02-04,H,Quinnipiac,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,11
 2024-02-08,H,Quinnipiac,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,12
 2024-02-10,V,Quinnipiac,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,13
@@ -168,7 +168,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-19,H,Rider,Niagara,74,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,7
 2024-01-25,V,Rider,Saint Peter's,62,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,8
 2024-01-27,V,Rider,Mount St. Mary's,66,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,9
-2024-02-02,H,Rider,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,10
+2024-02-02,H,Rider,Siena,91,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,10
 2024-02-04,V,Rider,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,11
 2024-02-08,V,Rider,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,12
 2024-02-10,H,Rider,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,13
@@ -188,7 +188,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-21,H,Saint Peter's,Canisius,70,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,7
 2024-01-25,H,Saint Peter's,Rider,57,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,8
 2024-01-28,V,Saint Peter's,Siena,63,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,9
-2024-02-02,H,Saint Peter's,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,10
+2024-02-02,H,Saint Peter's,Niagara,59,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,10
 2024-02-04,V,Saint Peter's,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,11
 2024-02-08,V,Saint Peter's,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,12
 2024-02-10,H,Saint Peter's,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,13
@@ -208,7 +208,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-21,V,Siena,Marist,48,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,7
 2024-01-26,H,Siena,Iona,51,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,8
 2024-01-28,H,Siena,Saint Peter's,52,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,9
-2024-02-02,V,Siena,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,10
+2024-02-02,V,Siena,Rider,50,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,10
 2024-02-04,H,Siena,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,11
 2024-02-08,H,Siena,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,12
 2024-02-10,V,Siena,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,13

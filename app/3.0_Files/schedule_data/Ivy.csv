@@ -3,7 +3,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,V,Brown,Harvard,74,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Harvard_Crimson_logo.svg/203px-Harvard_Crimson_logo.svg.png,2
 2024-01-20,H,Brown,Cornell,83,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Cornell_Big_Red_logo.svg/231px-Cornell_Big_Red_logo.svg.png,3
 2024-01-27,V,Brown,Dartmouth,71,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Dartmouth_College_Big_Green_logo.svg/189px-Dartmouth_College_Big_Green_logo.svg.png,4
-2024-02-02,H,Brown,Penn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Penn_Quakers_logo.svg/197px-Penn_Quakers_logo.svg.png,5
+2024-02-02,H,Brown,Penn,70,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Penn_Quakers_logo.svg/197px-Penn_Quakers_logo.svg.png,5
 2024-02-03,H,Brown,Princeton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Princeton_Tigers_logo.svg/210px-Princeton_Tigers_logo.svg.png,6
 2024-02-10,H,Brown,Columbia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Columbia_Lions_logo.svg/206px-Columbia_Lions_logo.svg.png,7
 2024-02-16,V,Brown,Princeton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Princeton_Tigers_logo.svg/210px-Princeton_Tigers_logo.svg.png,8
@@ -17,7 +17,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,V,Columbia,Yale,70,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Yale_Bulldogs_script.svg/1024px-Yale_Bulldogs_script.svg.png,2
 2024-01-20,H,Columbia,Princeton,62,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Princeton_Tigers_logo.svg/210px-Princeton_Tigers_logo.svg.png,3
 2024-01-27,H,Columbia,Penn,84,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Penn_Quakers_logo.svg/197px-Penn_Quakers_logo.svg.png,4
-2024-02-02,V,Columbia,Harvard,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Harvard_Crimson_logo.svg/203px-Harvard_Crimson_logo.svg.png,5
+2024-02-02,V,Columbia,Harvard,59,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Harvard_Crimson_logo.svg/203px-Harvard_Crimson_logo.svg.png,5
 2024-02-03,V,Columbia,Dartmouth,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Dartmouth_College_Big_Green_logo.svg/189px-Dartmouth_College_Big_Green_logo.svg.png,6
 2024-02-10,V,Columbia,Brown,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Brown_Bears_Athletics_logo.svg/150px-Brown_Bears_Athletics_logo.svg.png,7
 2024-02-16,H,Columbia,Dartmouth,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Dartmouth_College_Big_Green_logo.svg/189px-Dartmouth_College_Big_Green_logo.svg.png,8
@@ -31,7 +31,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,H,Cornell,Penn,77,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Penn_Quakers_logo.svg/197px-Penn_Quakers_logo.svg.png,2
 2024-01-20,V,Cornell,Brown,84,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Brown_Bears_Athletics_logo.svg/150px-Brown_Bears_Athletics_logo.svg.png,3
 2024-01-27,H,Cornell,Princeton,83,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Princeton_Tigers_logo.svg/210px-Princeton_Tigers_logo.svg.png,4
-2024-02-02,V,Cornell,Dartmouth,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Dartmouth_College_Big_Green_logo.svg/189px-Dartmouth_College_Big_Green_logo.svg.png,5
+2024-02-02,V,Cornell,Dartmouth,56,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Dartmouth_College_Big_Green_logo.svg/189px-Dartmouth_College_Big_Green_logo.svg.png,5
 2024-02-03,V,Cornell,Harvard,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Harvard_Crimson_logo.svg/203px-Harvard_Crimson_logo.svg.png,6
 2024-02-10,V,Cornell,Yale,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Yale_Bulldogs_script.svg/1024px-Yale_Bulldogs_script.svg.png,7
 2024-02-16,H,Cornell,Harvard,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Harvard_Crimson_logo.svg/203px-Harvard_Crimson_logo.svg.png,8
@@ -45,7 +45,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,V,Dartmouth,Princeton,58,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Princeton_Tigers_logo.svg/210px-Princeton_Tigers_logo.svg.png,2
 2024-01-20,H,Dartmouth,Yale,51,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Yale_Bulldogs_script.svg/1024px-Yale_Bulldogs_script.svg.png,3
 2024-01-27,H,Dartmouth,Brown,75,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Brown_Bears_Athletics_logo.svg/150px-Brown_Bears_Athletics_logo.svg.png,4
-2024-02-02,H,Dartmouth,Cornell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Cornell_Big_Red_logo.svg/231px-Cornell_Big_Red_logo.svg.png,5
+2024-02-02,H,Dartmouth,Cornell,53,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Cornell_Big_Red_logo.svg/231px-Cornell_Big_Red_logo.svg.png,5
 2024-02-03,H,Dartmouth,Columbia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Columbia_Lions_logo.svg/206px-Columbia_Lions_logo.svg.png,6
 2024-02-10,V,Dartmouth,Harvard,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Harvard_Crimson_logo.svg/203px-Harvard_Crimson_logo.svg.png,7
 2024-02-16,V,Dartmouth,Columbia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Columbia_Lions_logo.svg/206px-Columbia_Lions_logo.svg.png,8
@@ -59,7 +59,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,H,Harvard,Brown,72,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Brown_Bears_Athletics_logo.svg/150px-Brown_Bears_Athletics_logo.svg.png,2
 2024-01-20,V,Harvard,Penn,70,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Penn_Quakers_logo.svg/197px-Penn_Quakers_logo.svg.png,3
 2024-01-27,H,Harvard,Yale,65,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Yale_Bulldogs_script.svg/1024px-Yale_Bulldogs_script.svg.png,4
-2024-02-02,H,Harvard,Columbia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Columbia_Lions_logo.svg/206px-Columbia_Lions_logo.svg.png,5
+2024-02-02,H,Harvard,Columbia,62,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Columbia_Lions_logo.svg/206px-Columbia_Lions_logo.svg.png,5
 2024-02-03,H,Harvard,Cornell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Cornell_Big_Red_logo.svg/231px-Cornell_Big_Red_logo.svg.png,6
 2024-02-10,H,Harvard,Dartmouth,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Dartmouth_College_Big_Green_logo.svg/189px-Dartmouth_College_Big_Green_logo.svg.png,7
 2024-02-16,V,Harvard,Cornell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Cornell_Big_Red_logo.svg/231px-Cornell_Big_Red_logo.svg.png,8
@@ -73,7 +73,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,V,Penn,Cornell,60,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Cornell_Big_Red_logo.svg/231px-Cornell_Big_Red_logo.svg.png,2
 2024-01-20,H,Penn,Harvard,61,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Harvard_Crimson_logo.svg/203px-Harvard_Crimson_logo.svg.png,3
 2024-01-27,V,Penn,Columbia,81,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Columbia_Lions_logo.svg/206px-Columbia_Lions_logo.svg.png,4
-2024-02-02,V,Penn,Brown,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Brown_Bears_Athletics_logo.svg/150px-Brown_Bears_Athletics_logo.svg.png,5
+2024-02-02,V,Penn,Brown,61,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Brown_Bears_Athletics_logo.svg/150px-Brown_Bears_Athletics_logo.svg.png,5
 2024-02-03,V,Penn,Yale,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Yale_Bulldogs_script.svg/1024px-Yale_Bulldogs_script.svg.png,6
 2024-02-10,V,Penn,Princeton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Princeton_Tigers_logo.svg/210px-Princeton_Tigers_logo.svg.png,7
 2024-02-16,H,Penn,Yale,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Yale_Bulldogs_script.svg/1024px-Yale_Bulldogs_script.svg.png,8
@@ -87,7 +87,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,H,Princeton,Dartmouth,76,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Dartmouth_College_Big_Green_logo.svg/189px-Dartmouth_College_Big_Green_logo.svg.png,2
 2024-01-20,V,Princeton,Columbia,70,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Columbia_Lions_logo.svg/206px-Columbia_Lions_logo.svg.png,3
 2024-01-27,V,Princeton,Cornell,68,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Cornell_Big_Red_logo.svg/231px-Cornell_Big_Red_logo.svg.png,4
-2024-02-02,V,Princeton,Yale,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Yale_Bulldogs_script.svg/1024px-Yale_Bulldogs_script.svg.png,5
+2024-02-02,V,Princeton,Yale,64,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Yale_Bulldogs_script.svg/1024px-Yale_Bulldogs_script.svg.png,5
 2024-02-03,V,Princeton,Brown,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Brown_Bears_Athletics_logo.svg/150px-Brown_Bears_Athletics_logo.svg.png,6
 2024-02-10,H,Princeton,Penn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Penn_Quakers_logo.svg/197px-Penn_Quakers_logo.svg.png,7
 2024-02-16,H,Princeton,Brown,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Brown_Bears_Athletics_logo.svg/150px-Brown_Bears_Athletics_logo.svg.png,8
@@ -101,7 +101,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-15,H,Yale,Columbia,89,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Columbia_Lions_logo.svg/206px-Columbia_Lions_logo.svg.png,2
 2024-01-20,V,Yale,Dartmouth,76,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Dartmouth_College_Big_Green_logo.svg/189px-Dartmouth_College_Big_Green_logo.svg.png,3
 2024-01-27,V,Yale,Harvard,78,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Harvard_Crimson_logo.svg/203px-Harvard_Crimson_logo.svg.png,4
-2024-02-02,H,Yale,Princeton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Princeton_Tigers_logo.svg/210px-Princeton_Tigers_logo.svg.png,5
+2024-02-02,H,Yale,Princeton,70,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Princeton_Tigers_logo.svg/210px-Princeton_Tigers_logo.svg.png,5
 2024-02-03,H,Yale,Penn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Penn_Quakers_logo.svg/197px-Penn_Quakers_logo.svg.png,6
 2024-02-10,H,Yale,Cornell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Cornell_Big_Red_logo.svg/231px-Cornell_Big_Red_logo.svg.png,7
 2024-02-16,V,Yale,Penn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Penn_Quakers_logo.svg/197px-Penn_Quakers_logo.svg.png,8

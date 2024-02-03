@@ -474,6 +474,7 @@ ivy_gt <-
   tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>%
   tab_header(
     title = md("**2024 Ivy League Men's Basketball Tournament Odds**"),
+    subtitle = md("<img src='https://content.sportslogos.net/logos/153/4824/full/ivy_league_logo_primary_2019_sportslogosnet-9024.png' style='height: 50px; width: auto; vertical-align: middle;'> ")
     # subtitle = md(paste0('**', table_region, " Region**"))
   ) %>% 
   tab_options(column_labels.font.size = 16,
@@ -482,8 +483,6 @@ ivy_gt <-
               heading.title.font.weight = 'bold',
               heading.subtitle.font.weight = 'bold'
   )
-
-
 cols <- filter(ncaa_colors, conference == "Ivy") %>% 
   pull(primary_color)
 ivy_history_plot <- 
