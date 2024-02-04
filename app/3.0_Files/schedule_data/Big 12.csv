@@ -6,7 +6,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-20,V,BYU,Texas Tech,78,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Texas_Tech_Athletics_logo.svg/207px-Texas_Tech_Athletics_logo.svg.png,5
 2024-01-23,H,BYU,Houston,68,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Houston_Cougars_primary_logo.svg/252px-Houston_Cougars_primary_logo.svg.png,6
 2024-01-27,H,BYU,Texas,84,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Texas_Longhorns_logo.svg/320px-Texas_Longhorns_logo.svg.png,7
-2024-02-03,V,BYU,West Virginia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/West_Virginia_Mountaineers_logo.svg/233px-West_Virginia_Mountaineers_logo.svg.png,8
+2024-02-03,V,BYU,West Virginia,86,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/West_Virginia_Mountaineers_logo.svg/233px-West_Virginia_Mountaineers_logo.svg.png,8
 2024-02-06,V,BYU,Oklahoma,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Oklahoma_Sooners_logo.svg/186px-Oklahoma_Sooners_logo.svg.png,9
 2024-02-10,H,BYU,Kansas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Kansas_State_Wildcats_logo.svg/320px-Kansas_State_Wildcats_logo.svg.png,10
 2024-02-13,H,BYU,UCF,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/UCF_Knights_logo.svg/299px-UCF_Knights_logo.svg.png,11
@@ -24,7 +24,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-20,V,Baylor,Texas,73,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Texas_Longhorns_logo.svg/320px-Texas_Longhorns_logo.svg.png,5
 2024-01-27,H,Baylor,TCU,102,105,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/TCU_Horned_Frogs_logo.svg/320px-TCU_Horned_Frogs_logo.svg.png,6
 2024-01-31,V,Baylor,UCF,77,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/UCF_Knights_logo.svg/299px-UCF_Knights_logo.svg.png,7
-2024-02-03,H,Baylor,Iowa St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Iowa_State_Cyclones_logo.svg/320px-Iowa_State_Cyclones_logo.svg.png,8
+2024-02-03,H,Baylor,Iowa St.,70,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Iowa_State_Cyclones_logo.svg/320px-Iowa_State_Cyclones_logo.svg.png,8
 2024-02-06,H,Baylor,Texas Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Texas_Tech_Athletics_logo.svg/207px-Texas_Tech_Athletics_logo.svg.png,9
 2024-02-10,V,Baylor,Kansas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Kansas_Jayhawks_1946_logo.svg/300px-Kansas_Jayhawks_1946_logo.svg.png,10
 2024-02-13,H,Baylor,Oklahoma,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Oklahoma_Sooners_logo.svg/186px-Oklahoma_Sooners_logo.svg.png,11
@@ -43,7 +43,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-22,V,Cincinnati,Kansas,69,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Kansas_Jayhawks_1946_logo.svg/300px-Kansas_Jayhawks_1946_logo.svg.png,6
 2024-01-27,H,Cincinnati,UCF,68,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/UCF_Knights_logo.svg/299px-UCF_Knights_logo.svg.png,7
 2024-01-31,V,Cincinnati,West Virginia,65,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/West_Virginia_Mountaineers_logo.svg/233px-West_Virginia_Mountaineers_logo.svg.png,8
-2024-02-03,V,Cincinnati,Texas Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Texas_Tech_Athletics_logo.svg/207px-Texas_Tech_Athletics_logo.svg.png,9
+2024-02-03,V,Cincinnati,Texas Tech,75,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Texas_Tech_Athletics_logo.svg/207px-Texas_Tech_Athletics_logo.svg.png,9
 2024-02-10,H,Cincinnati,Houston,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Houston_Cougars_primary_logo.svg/252px-Houston_Cougars_primary_logo.svg.png,10
 2024-02-13,H,Cincinnati,Iowa St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Iowa_State_Cyclones_logo.svg/320px-Iowa_State_Cyclones_logo.svg.png,11
 2024-02-17,V,Cincinnati,UCF,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/UCF_Knights_logo.svg/299px-UCF_Knights_logo.svg.png,12
@@ -61,7 +61,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,V,Houston,BYU,75,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BYU_Cougars_logo.svg/320px-BYU_Cougars_logo.svg.png,6
 2024-01-27,H,Houston,Kansas St.,74,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Kansas_State_Wildcats_logo.svg/320px-Kansas_State_Wildcats_logo.svg.png,7
 2024-01-29,V,Houston,Texas,76,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Texas_Longhorns_logo.svg/320px-Texas_Longhorns_logo.svg.png,8
-2024-02-03,V,Houston,Kansas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Kansas_Jayhawks_1946_logo.svg/300px-Kansas_Jayhawks_1946_logo.svg.png,9
+2024-02-03,V,Houston,Kansas,65,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Kansas_Jayhawks_1946_logo.svg/300px-Kansas_Jayhawks_1946_logo.svg.png,9
 2024-02-06,H,Houston,Oklahoma St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Oklahoma_State_University_system_logo.svg/320px-Oklahoma_State_University_system_logo.svg.png,10
 2024-02-10,V,Houston,Cincinnati,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cincinnati_Bearcats_logo.svg/89px-Cincinnati_Bearcats_logo.svg.png,11
 2024-02-17,H,Houston,Texas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Texas_Longhorns_logo.svg/320px-Texas_Longhorns_logo.svg.png,12
@@ -78,7 +78,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-20,V,Iowa St.,TCU,73,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/TCU_Horned_Frogs_logo.svg/320px-TCU_Horned_Frogs_logo.svg.png,5
 2024-01-24,H,Iowa St.,Kansas St.,78,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Kansas_State_Wildcats_logo.svg/320px-Kansas_State_Wildcats_logo.svg.png,6
 2024-01-27,H,Iowa St.,Kansas,79,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Kansas_Jayhawks_1946_logo.svg/300px-Kansas_Jayhawks_1946_logo.svg.png,7
-2024-02-03,V,Iowa St.,Baylor,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/2018_Baylor_Athletics_Logo.png/208px-2018_Baylor_Athletics_Logo.png,8
+2024-02-03,V,Iowa St.,Baylor,68,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/2018_Baylor_Athletics_Logo.png/208px-2018_Baylor_Athletics_Logo.png,8
 2024-02-06,V,Iowa St.,Texas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Texas_Longhorns_logo.svg/320px-Texas_Longhorns_logo.svg.png,9
 2024-02-10,H,Iowa St.,TCU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/TCU_Horned_Frogs_logo.svg/320px-TCU_Horned_Frogs_logo.svg.png,10
 2024-02-13,V,Iowa St.,Cincinnati,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cincinnati_Bearcats_logo.svg/89px-Cincinnati_Bearcats_logo.svg.png,11
@@ -97,7 +97,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-22,H,Kansas,Cincinnati,74,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cincinnati_Bearcats_logo.svg/89px-Cincinnati_Bearcats_logo.svg.png,6
 2024-01-27,V,Kansas,Iowa St.,75,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Iowa_State_Cyclones_logo.svg/320px-Iowa_State_Cyclones_logo.svg.png,7
 2024-01-30,H,Kansas,Oklahoma St.,83,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Oklahoma_State_University_system_logo.svg/320px-Oklahoma_State_University_system_logo.svg.png,8
-2024-02-03,H,Kansas,Houston,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Houston_Cougars_primary_logo.svg/252px-Houston_Cougars_primary_logo.svg.png,9
+2024-02-03,H,Kansas,Houston,78,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Houston_Cougars_primary_logo.svg/252px-Houston_Cougars_primary_logo.svg.png,9
 2024-02-05,V,Kansas,Kansas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Kansas_State_Wildcats_logo.svg/320px-Kansas_State_Wildcats_logo.svg.png,10
 2024-02-10,H,Kansas,Baylor,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/2018_Baylor_Athletics_Logo.png/208px-2018_Baylor_Athletics_Logo.png,11
 2024-02-12,V,Kansas,Texas Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Texas_Tech_Athletics_logo.svg/207px-Texas_Tech_Athletics_logo.svg.png,12
@@ -115,7 +115,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-24,V,Kansas St.,Iowa St.,67,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Iowa_State_Cyclones_logo.svg/320px-Iowa_State_Cyclones_logo.svg.png,6
 2024-01-27,V,Kansas St.,Houston,52,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Houston_Cougars_primary_logo.svg/252px-Houston_Cougars_primary_logo.svg.png,7
 2024-01-30,H,Kansas St.,Oklahoma,53,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Oklahoma_Sooners_logo.svg/186px-Oklahoma_Sooners_logo.svg.png,8
-2024-02-03,V,Kansas St.,Oklahoma St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Oklahoma_State_University_system_logo.svg/320px-Oklahoma_State_University_system_logo.svg.png,9
+2024-02-03,V,Kansas St.,Oklahoma St.,72,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Oklahoma_State_University_system_logo.svg/320px-Oklahoma_State_University_system_logo.svg.png,9
 2024-02-05,H,Kansas St.,Kansas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Kansas_Jayhawks_1946_logo.svg/300px-Kansas_Jayhawks_1946_logo.svg.png,10
 2024-02-10,V,Kansas St.,BYU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BYU_Cougars_logo.svg/320px-BYU_Cougars_logo.svg.png,11
 2024-02-17,H,Kansas St.,TCU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/TCU_Horned_Frogs_logo.svg/320px-TCU_Horned_Frogs_logo.svg.png,12
@@ -133,7 +133,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,H,Oklahoma,Texas,60,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Texas_Longhorns_logo.svg/320px-Texas_Longhorns_logo.svg.png,6
 2024-01-27,H,Oklahoma,Texas Tech,84,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Texas_Tech_Athletics_logo.svg/207px-Texas_Tech_Athletics_logo.svg.png,7
 2024-01-30,V,Oklahoma,Kansas St.,73,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Kansas_State_Wildcats_logo.svg/320px-Kansas_State_Wildcats_logo.svg.png,8
-2024-02-03,V,Oklahoma,UCF,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/UCF_Knights_logo.svg/299px-UCF_Knights_logo.svg.png,9
+2024-02-03,V,Oklahoma,UCF,63,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/UCF_Knights_logo.svg/299px-UCF_Knights_logo.svg.png,9
 2024-02-06,H,Oklahoma,BYU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BYU_Cougars_logo.svg/320px-BYU_Cougars_logo.svg.png,10
 2024-02-10,H,Oklahoma,Oklahoma St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Oklahoma_State_University_system_logo.svg/320px-Oklahoma_State_University_system_logo.svg.png,11
 2024-02-13,V,Oklahoma,Baylor,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/2018_Baylor_Athletics_Logo.png/208px-2018_Baylor_Athletics_Logo.png,12
@@ -151,7 +151,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,H,Oklahoma St.,TCU,69,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/TCU_Horned_Frogs_logo.svg/320px-TCU_Horned_Frogs_logo.svg.png,6
 2024-01-27,H,Oklahoma St.,West Virginia,70,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/West_Virginia_Mountaineers_logo.svg/233px-West_Virginia_Mountaineers_logo.svg.png,7
 2024-01-30,V,Oklahoma St.,Kansas,54,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Kansas_Jayhawks_1946_logo.svg/300px-Kansas_Jayhawks_1946_logo.svg.png,8
-2024-02-03,H,Oklahoma St.,Kansas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Kansas_State_Wildcats_logo.svg/320px-Kansas_State_Wildcats_logo.svg.png,9
+2024-02-03,H,Oklahoma St.,Kansas St.,75,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Kansas_State_Wildcats_logo.svg/320px-Kansas_State_Wildcats_logo.svg.png,9
 2024-02-06,V,Oklahoma St.,Houston,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Houston_Cougars_primary_logo.svg/252px-Houston_Cougars_primary_logo.svg.png,10
 2024-02-10,V,Oklahoma St.,Oklahoma,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Oklahoma_Sooners_logo.svg/186px-Oklahoma_Sooners_logo.svg.png,11
 2024-02-17,H,Oklahoma St.,BYU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BYU_Cougars_logo.svg/320px-BYU_Cougars_logo.svg.png,12
@@ -169,7 +169,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,V,TCU,Oklahoma St.,74,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Oklahoma_State_University_system_logo.svg/320px-Oklahoma_State_University_system_logo.svg.png,6
 2024-01-27,V,TCU,Baylor,105,102,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/2018_Baylor_Athletics_Logo.png/208px-2018_Baylor_Athletics_Logo.png,7
 2024-01-30,H,TCU,Texas Tech,85,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Texas_Tech_Athletics_logo.svg/207px-Texas_Tech_Athletics_logo.svg.png,8
-2024-02-03,H,TCU,Texas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Texas_Longhorns_logo.svg/320px-Texas_Longhorns_logo.svg.png,9
+2024-02-03,H,TCU,Texas,66,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Texas_Longhorns_logo.svg/320px-Texas_Longhorns_logo.svg.png,9
 2024-02-10,V,TCU,Iowa St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Iowa_State_Cyclones_logo.svg/320px-Iowa_State_Cyclones_logo.svg.png,10
 2024-02-12,H,TCU,West Virginia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/West_Virginia_Mountaineers_logo.svg/233px-West_Virginia_Mountaineers_logo.svg.png,11
 2024-02-17,V,TCU,Kansas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Kansas_State_Wildcats_logo.svg/320px-Kansas_State_Wildcats_logo.svg.png,12
@@ -187,7 +187,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,V,Texas,Oklahoma,75,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Oklahoma_Sooners_logo.svg/186px-Oklahoma_Sooners_logo.svg.png,6
 2024-01-27,V,Texas,BYU,72,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BYU_Cougars_logo.svg/320px-BYU_Cougars_logo.svg.png,7
 2024-01-29,H,Texas,Houston,72,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Houston_Cougars_primary_logo.svg/252px-Houston_Cougars_primary_logo.svg.png,8
-2024-02-03,V,Texas,TCU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/TCU_Horned_Frogs_logo.svg/320px-TCU_Horned_Frogs_logo.svg.png,9
+2024-02-03,V,Texas,TCU,77,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/TCU_Horned_Frogs_logo.svg/320px-TCU_Horned_Frogs_logo.svg.png,9
 2024-02-06,H,Texas,Iowa St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Iowa_State_Cyclones_logo.svg/320px-Iowa_State_Cyclones_logo.svg.png,10
 2024-02-10,H,Texas,West Virginia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/West_Virginia_Mountaineers_logo.svg/233px-West_Virginia_Mountaineers_logo.svg.png,11
 2024-02-17,V,Texas,Houston,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Houston_Cougars_primary_logo.svg/252px-Houston_Cougars_primary_logo.svg.png,12
@@ -204,7 +204,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-20,H,Texas Tech,BYU,85,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BYU_Cougars_logo.svg/320px-BYU_Cougars_logo.svg.png,5
 2024-01-27,V,Texas Tech,Oklahoma,85,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Oklahoma_Sooners_logo.svg/186px-Oklahoma_Sooners_logo.svg.png,6
 2024-01-30,V,Texas Tech,TCU,78,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/TCU_Horned_Frogs_logo.svg/320px-TCU_Horned_Frogs_logo.svg.png,7
-2024-02-03,H,Texas Tech,Cincinnati,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cincinnati_Bearcats_logo.svg/89px-Cincinnati_Bearcats_logo.svg.png,8
+2024-02-03,H,Texas Tech,Cincinnati,72,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cincinnati_Bearcats_logo.svg/89px-Cincinnati_Bearcats_logo.svg.png,8
 2024-02-06,V,Texas Tech,Baylor,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/2018_Baylor_Athletics_Logo.png/208px-2018_Baylor_Athletics_Logo.png,9
 2024-02-10,H,Texas Tech,UCF,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/UCF_Knights_logo.svg/299px-UCF_Knights_logo.svg.png,10
 2024-02-12,H,Texas Tech,Kansas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Kansas_Jayhawks_1946_logo.svg/300px-Kansas_Jayhawks_1946_logo.svg.png,11
@@ -223,7 +223,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,H,UCF,West Virginia,72,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/West_Virginia_Mountaineers_logo.svg/233px-West_Virginia_Mountaineers_logo.svg.png,6
 2024-01-27,V,UCF,Cincinnati,57,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cincinnati_Bearcats_logo.svg/89px-Cincinnati_Bearcats_logo.svg.png,7
 2024-01-31,H,UCF,Baylor,69,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/2018_Baylor_Athletics_Logo.png/208px-2018_Baylor_Athletics_Logo.png,8
-2024-02-03,H,UCF,Oklahoma,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Oklahoma_Sooners_logo.svg/186px-Oklahoma_Sooners_logo.svg.png,9
+2024-02-03,H,UCF,Oklahoma,74,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Oklahoma_Sooners_logo.svg/186px-Oklahoma_Sooners_logo.svg.png,9
 2024-02-10,V,UCF,Texas Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Texas_Tech_Athletics_logo.svg/207px-Texas_Tech_Athletics_logo.svg.png,10
 2024-02-13,V,UCF,BYU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BYU_Cougars_logo.svg/320px-BYU_Cougars_logo.svg.png,11
 2024-02-17,H,UCF,Cincinnati,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cincinnati_Bearcats_logo.svg/89px-Cincinnati_Bearcats_logo.svg.png,12
@@ -241,7 +241,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,V,West Virginia,UCF,59,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/UCF_Knights_logo.svg/299px-UCF_Knights_logo.svg.png,6
 2024-01-27,V,West Virginia,Oklahoma St.,66,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Oklahoma_State_University_system_logo.svg/320px-Oklahoma_State_University_system_logo.svg.png,7
 2024-01-31,H,West Virginia,Cincinnati,69,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cincinnati_Bearcats_logo.svg/89px-Cincinnati_Bearcats_logo.svg.png,8
-2024-02-03,H,West Virginia,BYU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BYU_Cougars_logo.svg/320px-BYU_Cougars_logo.svg.png,9
+2024-02-03,H,West Virginia,BYU,73,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BYU_Cougars_logo.svg/320px-BYU_Cougars_logo.svg.png,9
 2024-02-10,V,West Virginia,Texas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Texas_Longhorns_logo.svg/320px-Texas_Longhorns_logo.svg.png,10
 2024-02-12,V,West Virginia,TCU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/TCU_Horned_Frogs_logo.svg/320px-TCU_Horned_Frogs_logo.svg.png,11
 2024-02-17,H,West Virginia,Baylor,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/2018_Baylor_Athletics_Logo.png/208px-2018_Baylor_Athletics_Logo.png,12

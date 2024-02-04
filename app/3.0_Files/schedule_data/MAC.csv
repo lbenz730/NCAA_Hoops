@@ -26,7 +26,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,V,Ball St.,Buffalo,87,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,7
 2024-01-27,H,Ball St.,NIU,81,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,8
 2024-01-30,H,Ball St.,Bowling Green,72,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,9
-2024-02-03,V,Ball St.,Western Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,10
+2024-02-03,V,Ball St.,Western Mich.,77,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,10
 2024-02-06,H,Ball St.,Ohio,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,11
 2024-02-17,V,Ball St.,Miami (OH),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,12
 2024-02-20,V,Ball St.,NIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,13
@@ -44,7 +44,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,H,Bowling Green,Kent St.,84,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,7
 2024-01-27,V,Bowling Green,Toledo,72,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,8
 2024-01-30,V,Bowling Green,Ball St.,81,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,9
-2024-02-03,H,Bowling Green,Central Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,10
+2024-02-03,H,Bowling Green,Central Mich.,76,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,10
 2024-02-06,H,Bowling Green,Buffalo,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,11
 2024-02-17,V,Bowling Green,Eastern Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,12
 2024-02-20,V,Bowling Green,Central Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,13
@@ -80,7 +80,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,H,Central Mich.,Miami (OH),71,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,7
 2024-01-27,V,Central Mich.,Western Mich.,62,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,8
 2024-01-30,H,Central Mich.,NIU,84,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,9
-2024-02-03,V,Central Mich.,Bowling Green,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,10
+2024-02-03,V,Central Mich.,Bowling Green,77,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,10
 2024-02-06,V,Central Mich.,Akron,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,11
 2024-02-17,H,Central Mich.,Western Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,12
 2024-02-20,H,Central Mich.,Bowling Green,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,13
@@ -98,7 +98,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,V,Eastern Mich.,Western Mich.,56,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,7
 2024-01-27,H,Eastern Mich.,Buffalo,75,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,8
 2024-01-30,H,Eastern Mich.,Akron,46,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,9
-2024-02-03,V,Eastern Mich.,NIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,10
+2024-02-03,V,Eastern Mich.,NIU,66,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,10
 2024-02-06,H,Eastern Mich.,Toledo,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,11
 2024-02-17,H,Eastern Mich.,Bowling Green,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,12
 2024-02-20,V,Eastern Mich.,Buffalo,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,13
@@ -134,7 +134,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,V,Miami (OH),Central Mich.,55,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,7
 2024-01-27,H,Miami (OH),Akron,70,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,8
 2024-01-30,V,Miami (OH),Kent St.,71,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,9
-2024-02-03,V,Miami (OH),Ohio,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,10
+2024-02-03,V,Miami (OH),Ohio,69,78,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,10
 2024-02-06,H,Miami (OH),NIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,11
 2024-02-17,H,Miami (OH),Ball St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,12
 2024-02-20,V,Miami (OH),Western Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,13
@@ -151,7 +151,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,H,NIU,Toledo,73,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,6
 2024-01-27,V,NIU,Ball St.,71,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,7
 2024-01-30,V,NIU,Central Mich.,77,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,8
-2024-02-03,H,NIU,Eastern Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,9
+2024-02-03,H,NIU,Eastern Mich.,76,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,9
 2024-02-06,V,NIU,Miami (OH),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,10
 2024-02-13,H,NIU,Buffalo,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,11
 2024-02-17,V,NIU,Kent St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,12
@@ -170,7 +170,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,V,Ohio,Akron,58,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,7
 2024-01-26,V,Ohio,Kent St.,71,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,8
 2024-01-30,H,Ohio,Buffalo,91,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,9
-2024-02-03,H,Ohio,Miami (OH),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,10
+2024-02-03,H,Ohio,Miami (OH),78,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,10
 2024-02-06,V,Ohio,Ball St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,11
 2024-02-16,V,Ohio,Toledo,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,12
 2024-02-20,H,Ohio,Kent St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,13
@@ -206,7 +206,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-23,H,Western Mich.,Eastern Mich.,73,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,7
 2024-01-27,H,Western Mich.,Central Mich.,55,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,8
 2024-01-30,V,Western Mich.,Toledo,63,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,9
-2024-02-03,H,Western Mich.,Ball St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,10
+2024-02-03,H,Western Mich.,Ball St.,67,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,10
 2024-02-06,V,Western Mich.,Kent St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,11
 2024-02-17,V,Western Mich.,Central Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,12
 2024-02-20,H,Western Mich.,Miami (OH),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,13

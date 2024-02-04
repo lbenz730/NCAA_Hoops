@@ -4,7 +4,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-20,H,Coppin St.,Morgan St.,86,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Morgan_State_Bears_logo.svg/320px-Morgan_State_Bears_logo.svg.png,3
 2024-01-27,V,Coppin St.,Norfolk St.,58,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Norfork_State_Spartans_logo.svg/240px-Norfork_State_Spartans_logo.svg.png,4
 2024-01-29,H,Coppin St.,Howard,66,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Howard_Bison_logo.svg/186px-Howard_Bison_logo.svg.png,5
-2024-02-03,V,Coppin St.,N.C. Central,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/1/13/NCCU_Eagles_head_mark_logo.svg,6
+2024-02-03,V,Coppin St.,N.C. Central,46,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/1/13/NCCU_Eagles_head_mark_logo.svg,6
 2024-02-05,V,Coppin St.,South Carolina St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/South_Carolina_State_Bulldogs_logo.svg/197px-South_Carolina_State_Bulldogs_logo.svg.png,7
 2024-02-17,H,Coppin St.,Delaware St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Delaware_State_Hornets_logo.svg/316px-Delaware_State_Hornets_logo.svg.png,8
 2024-02-19,V,Coppin St.,UMES,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Maryland_Eastern_Shore_Hawks_logo.svg/320px-Maryland_Eastern_Shore_Hawks_logo.svg.png,9
@@ -18,7 +18,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-20,H,Delaware St.,UMES,67,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Maryland_Eastern_Shore_Hawks_logo.svg/320px-Maryland_Eastern_Shore_Hawks_logo.svg.png,3
 2024-01-27,H,Delaware St.,South Carolina St.,64,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/South_Carolina_State_Bulldogs_logo.svg/197px-South_Carolina_State_Bulldogs_logo.svg.png,4
 2024-01-29,H,Delaware St.,N.C. Central,66,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/1/13/NCCU_Eagles_head_mark_logo.svg,5
-2024-02-03,V,Delaware St.,Norfolk St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Norfork_State_Spartans_logo.svg/240px-Norfork_State_Spartans_logo.svg.png,6
+2024-02-03,V,Delaware St.,Norfolk St.,64,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Norfork_State_Spartans_logo.svg/240px-Norfork_State_Spartans_logo.svg.png,6
 2024-02-05,H,Delaware St.,Howard,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Howard_Bison_logo.svg/186px-Howard_Bison_logo.svg.png,7
 2024-02-17,V,Delaware St.,Coppin St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Coppin_State_Eagles_logo.svg/320px-Coppin_State_Eagles_logo.svg.png,8
 2024-02-19,H,Delaware St.,Morgan St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Morgan_State_Bears_logo.svg/320px-Morgan_State_Bears_logo.svg.png,9
@@ -46,7 +46,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-20,V,Morgan St.,Coppin St.,89,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Coppin_State_Eagles_logo.svg/320px-Coppin_State_Eagles_logo.svg.png,3
 2024-01-27,H,Morgan St.,Howard,85,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Howard_Bison_logo.svg/186px-Howard_Bison_logo.svg.png,4
 2024-01-29,V,Morgan St.,Norfolk St.,73,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Norfork_State_Spartans_logo.svg/240px-Norfork_State_Spartans_logo.svg.png,5
-2024-02-03,V,Morgan St.,South Carolina St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/South_Carolina_State_Bulldogs_logo.svg/197px-South_Carolina_State_Bulldogs_logo.svg.png,6
+2024-02-03,V,Morgan St.,South Carolina St.,72,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/South_Carolina_State_Bulldogs_logo.svg/197px-South_Carolina_State_Bulldogs_logo.svg.png,6
 2024-02-05,V,Morgan St.,N.C. Central,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/1/13/NCCU_Eagles_head_mark_logo.svg,7
 2024-02-17,H,Morgan St.,UMES,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Maryland_Eastern_Shore_Hawks_logo.svg/320px-Maryland_Eastern_Shore_Hawks_logo.svg.png,8
 2024-02-19,V,Morgan St.,Delaware St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Delaware_State_Hornets_logo.svg/316px-Delaware_State_Hornets_logo.svg.png,9
@@ -60,7 +60,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-20,V,N.C. Central,South Carolina St.,68,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/South_Carolina_State_Bulldogs_logo.svg/197px-South_Carolina_State_Bulldogs_logo.svg.png,3
 2024-01-27,V,N.C. Central,UMES,65,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Maryland_Eastern_Shore_Hawks_logo.svg/320px-Maryland_Eastern_Shore_Hawks_logo.svg.png,4
 2024-01-29,V,N.C. Central,Delaware St.,69,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Delaware_State_Hornets_logo.svg/316px-Delaware_State_Hornets_logo.svg.png,5
-2024-02-03,H,N.C. Central,Coppin St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Coppin_State_Eagles_logo.svg/320px-Coppin_State_Eagles_logo.svg.png,6
+2024-02-03,H,N.C. Central,Coppin St.,77,46,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Coppin_State_Eagles_logo.svg/320px-Coppin_State_Eagles_logo.svg.png,6
 2024-02-05,H,N.C. Central,Morgan St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Morgan_State_Bears_logo.svg/320px-Morgan_State_Bears_logo.svg.png,7
 2024-02-17,V,N.C. Central,Howard,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Howard_Bison_logo.svg/186px-Howard_Bison_logo.svg.png,8
 2024-02-19,V,N.C. Central,Norfolk St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Norfork_State_Spartans_logo.svg/240px-Norfork_State_Spartans_logo.svg.png,9
@@ -74,7 +74,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-20,V,Norfolk St.,Howard,65,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Howard_Bison_logo.svg/186px-Howard_Bison_logo.svg.png,3
 2024-01-27,H,Norfolk St.,Coppin St.,68,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Coppin_State_Eagles_logo.svg/320px-Coppin_State_Eagles_logo.svg.png,4
 2024-01-29,H,Norfolk St.,Morgan St.,83,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Morgan_State_Bears_logo.svg/320px-Morgan_State_Bears_logo.svg.png,5
-2024-02-03,H,Norfolk St.,Delaware St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Delaware_State_Hornets_logo.svg/316px-Delaware_State_Hornets_logo.svg.png,6
+2024-02-03,H,Norfolk St.,Delaware St.,65,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Delaware_State_Hornets_logo.svg/316px-Delaware_State_Hornets_logo.svg.png,6
 2024-02-05,V,Norfolk St.,UMES,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Maryland_Eastern_Shore_Hawks_logo.svg/320px-Maryland_Eastern_Shore_Hawks_logo.svg.png,7
 2024-02-17,H,Norfolk St.,South Carolina St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/South_Carolina_State_Bulldogs_logo.svg/197px-South_Carolina_State_Bulldogs_logo.svg.png,8
 2024-02-19,H,Norfolk St.,N.C. Central,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/1/13/NCCU_Eagles_head_mark_logo.svg,9
@@ -88,7 +88,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-20,H,South Carolina St.,N.C. Central,71,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/1/13/NCCU_Eagles_head_mark_logo.svg,3
 2024-01-27,V,South Carolina St.,Delaware St.,66,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Delaware_State_Hornets_logo.svg/316px-Delaware_State_Hornets_logo.svg.png,4
 2024-01-29,V,South Carolina St.,UMES,63,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Maryland_Eastern_Shore_Hawks_logo.svg/320px-Maryland_Eastern_Shore_Hawks_logo.svg.png,5
-2024-02-03,H,South Carolina St.,Morgan St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Morgan_State_Bears_logo.svg/320px-Morgan_State_Bears_logo.svg.png,6
+2024-02-03,H,South Carolina St.,Morgan St.,70,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Morgan_State_Bears_logo.svg/320px-Morgan_State_Bears_logo.svg.png,6
 2024-02-05,H,South Carolina St.,Coppin St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Coppin_State_Eagles_logo.svg/320px-Coppin_State_Eagles_logo.svg.png,7
 2024-02-17,V,South Carolina St.,Norfolk St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/78/Norfork_State_Spartans_logo.svg/240px-Norfork_State_Spartans_logo.svg.png,8
 2024-02-19,V,South Carolina St.,Howard,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Howard_Bison_logo.svg/186px-Howard_Bison_logo.svg.png,9

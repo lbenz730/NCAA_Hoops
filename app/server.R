@@ -582,6 +582,7 @@ shinyServer(function(input, output, session) {
   output$ivy_barplot <- renderPlot(ivy_bar)
   output$ivy_snap <- renderPlot(ivy_snapsnot)
   output$ivy_4th <- render_gt(ivy_4th)
+  output$ivy_matrix <- render_gt(tab)
   
   
   ### Conf T Sims

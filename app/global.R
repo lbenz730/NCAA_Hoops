@@ -766,3 +766,83 @@ ivy_4th <-
               heading.title.font.weight = 'bold',
               heading.subtitle.font.weight = 'bold'
   ) 
+
+df <- 
+  x %>% 
+  filter(team_conf == 'Ivy') %>% 
+  filter(conf_game) %>% 
+  group_by(team, opponent) %>% 
+  summarise('n_win' = sum(team_score > opp_score, na.rm = T),
+            'n_loss' = sum(team_score < opp_score, na.rm = T)) %>% 
+  mutate('record' = paste0(n_win, '-', n_loss)) %>% 
+  select(team, opponent, record) %>% 
+  ungroup() %>% 
+  gt_cbb_teams(team, team, logo_height = 50, include_name = F) %>% 
+  gt_cbb_teams(opponent, opponent, logo_height = 50, include_name = F) %>% 
+  pivot_wider(names_from = opponent,
+              values_from = record) %>% 
+  select(1, 9, everything()) 
+
+tab <- 
+  gt(df) %>% 
+  cols_align('center') %>% 
+  fmt_markdown('team') %>% 
+  fmt_missing(missing_text = '---') %>% 
+  cols_label(team = '') %>% 
+  cols_label_with(columns = 2:9, fn = md) %>% 
+  tab_header(subtitle = md('**Head-to-Head Win Matrix**'),
+             title = md("<img src='https://content.sportslogos.net/logos/153/4824/full/ivy_league_logo_primary_2019_sportslogosnet-9024.png' style='height: 100px; width: auto; vertical-align: middle;'> ")) %>% 
+  tab_options(column_labels.font.size = 16,
+              column_labels.font.weight = 'bold',
+              heading.title.font.size = 30,
+              heading.subtitle.font.size = 40,
+              heading.title.font.weight = 'bold',
+              heading.subtitle.font.weight = 'bold') 
+
+
+for(j in 2:9) {
+  for(i in 1:8) {
+    if(!is.na(df[i,j]) & df[i,j] == '0-1') {
+      tab <- 
+        tab %>% 
+        tab_style(style = cell_fill(color = 'pink'),
+                  locations = cells_body(columns = j, 
+                                         rows = i)
+        )
+    } else if(!is.na(df[i,j]) & df[i,j] == '0-2') {
+      tab <- 
+        tab %>% 
+        tab_style(style = cell_fill(color = 'darkred'),
+                  locations = cells_body(columns = j, 
+                                         rows = i)
+        )
+    } else if(!is.na(df[i,j]) & df[i,j] == '1-0') {
+      tab <- 
+        tab %>% 
+        tab_style(style = cell_fill(color = 'lightgreen'),
+                  locations = cells_body(columns = j, 
+                                         rows = i)
+        )
+    } else if(!is.na(df[i,j]) & df[i,j] == '2-0') {
+      tab <- 
+        tab %>% 
+        tab_style(style = cell_fill(color = 'darkgreen'),
+                  locations = cells_body(columns = j, 
+                                         rows = i)
+        )
+    } else if(!is.na(df[i,j]) & df[i,j] == '1-1') {
+      tab <- 
+        tab %>% 
+        tab_style(style = cell_fill(color = 'lightyellow'),
+                  locations = cells_body(columns = j, 
+                                         rows = i)
+        )
+    }
+    
+    
+    
+    
+    
+  }
+}
+
