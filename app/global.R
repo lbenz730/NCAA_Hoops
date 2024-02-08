@@ -9,6 +9,9 @@ library(purrr)
 library(RColorBrewer)
 library(ggridges)
 library(tidyr)
+library(cbbplotR)
+library(arrow)
+
 
 replace_na <- function(x, r) {
   x[is.na(x)] <- r 
@@ -777,8 +780,8 @@ df <-
   mutate('record' = paste0(n_win, '-', n_loss)) %>% 
   select(team, opponent, record) %>% 
   ungroup() %>% 
-  gt_cbb_teams(team, team, logo_height = 50, include_name = F) %>% 
-  gt_cbb_teams(opponent, opponent, logo_height = 50, include_name = F) %>% 
+  cbbplotR::gt_cbb_teams(team, team, logo_height = 50, include_name = F) %>% 
+  cbbplotR::gt_cbb_teams(opponent, opponent, logo_height = 50, include_name = F) %>% 
   pivot_wider(names_from = opponent,
               values_from = record) %>% 
   select(1, 9, everything()) 
