@@ -9,7 +9,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-25,H,Abilene Christian,Utah Tech,82,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Utah_Tech_Trailblazers_logo_2022.svg/200px-Utah_Tech_Trailblazers_logo_2022.svg.png,8
 2024-01-27,H,Abilene Christian,Southern Utah,67,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Southern_Utah_Thunderbirds_logo.svg/320px-Southern_Utah_Thunderbirds_logo.svg.png,9
 2024-02-01,H,Abilene Christian,Tarleton St.,73,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/5/56/Tarleton_State_athletics_logo.svg,10
-2024-02-08,V,Abilene Christian,Seattle U,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Seattle_Redhawks_logo.svg/214px-Seattle_Redhawks_logo.svg.png,11
+2024-02-08,V,Abilene Christian,Seattle U,52,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Seattle_Redhawks_logo.svg/214px-Seattle_Redhawks_logo.svg.png,11
 2024-02-10,V,Abilene Christian,Utah Valley,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Utah_Valley_Wolverines_logo.svg/320px-Utah_Valley_Wolverines_logo.svg.png,12
 2024-02-15,V,Abilene Christian,UTRGV,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg/320px-Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg.png,13
 2024-02-17,V,Abilene Christian,SFA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Stephen_F._Austin_Athletics_wordmark.svg/240px-Stephen_F._Austin_Athletics_wordmark.svg.png,14
@@ -29,7 +29,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-25,V,California Baptist,UTRGV,63,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg/320px-Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg.png,8
 2024-01-27,V,California Baptist,SFA,81,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Stephen_F._Austin_Athletics_wordmark.svg/240px-Stephen_F._Austin_Athletics_wordmark.svg.png,9
 2024-02-03,H,California Baptist,Seattle U,60,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Seattle_Redhawks_logo.svg/214px-Seattle_Redhawks_logo.svg.png,10
-2024-02-08,H,California Baptist,UT Arlington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/UT_Arlington_Mavericks_logo.svg/310px-UT_Arlington_Mavericks_logo.svg.png,11
+2024-02-08,H,California Baptist,UT Arlington,64,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/UT_Arlington_Mavericks_logo.svg/310px-UT_Arlington_Mavericks_logo.svg.png,11
 2024-02-10,V,California Baptist,Utah Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Utah_Tech_Trailblazers_logo_2022.svg/200px-Utah_Tech_Trailblazers_logo_2022.svg.png,12
 2024-02-15,H,California Baptist,Utah Valley,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Utah_Valley_Wolverines_logo.svg/320px-Utah_Valley_Wolverines_logo.svg.png,13
 2024-02-17,V,California Baptist,Grand Canyon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Grand_Canyon_Antelopes_logo.svg/320px-Grand_Canyon_Antelopes_logo.svg.png,14
@@ -70,7 +70,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-27,H,SFA,California Baptist,79,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/California_Baptist_Lancers_wordmark.svg/1200px-California_Baptist_Lancers_wordmark.svg.png,9
 2024-02-01,H,SFA,Utah Valley,77,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Utah_Valley_Wolverines_logo.svg/320px-Utah_Valley_Wolverines_logo.svg.png,10
 2024-02-03,V,SFA,Tarleton St.,64,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/5/56/Tarleton_State_athletics_logo.svg,11
-2024-02-08,H,SFA,UTRGV,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg/320px-Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg.png,12
+2024-02-08,H,SFA,UTRGV,92,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg/320px-Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg.png,12
 2024-02-10,V,SFA,UT Arlington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/UT_Arlington_Mavericks_logo.svg/310px-UT_Arlington_Mavericks_logo.svg.png,13
 2024-02-17,H,SFA,Abilene Christian,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Abilene_Christian_Wildcats_logo.svg/320px-Abilene_Christian_Wildcats_logo.svg.png,14
 2024-02-22,V,SFA,Seattle U,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Seattle_Redhawks_logo.svg/214px-Seattle_Redhawks_logo.svg.png,15
@@ -90,7 +90,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-26,H,Seattle U,Utah Valley,62,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Utah_Valley_Wolverines_logo.svg/320px-Utah_Valley_Wolverines_logo.svg.png,9
 2024-02-01,V,Seattle U,Grand Canyon,88,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Grand_Canyon_Antelopes_logo.svg/320px-Grand_Canyon_Antelopes_logo.svg.png,10
 2024-02-03,V,Seattle U,California Baptist,61,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/California_Baptist_Lancers_wordmark.svg/1200px-California_Baptist_Lancers_wordmark.svg.png,11
-2024-02-08,H,Seattle U,Abilene Christian,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Abilene_Christian_Wildcats_logo.svg/320px-Abilene_Christian_Wildcats_logo.svg.png,12
+2024-02-08,H,Seattle U,Abilene Christian,75,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Abilene_Christian_Wildcats_logo.svg/320px-Abilene_Christian_Wildcats_logo.svg.png,12
 2024-02-10,H,Seattle U,Tarleton St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/5/56/Tarleton_State_athletics_logo.svg,13
 2024-02-15,V,Seattle U,Southern Utah,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Southern_Utah_Thunderbirds_logo.svg/320px-Southern_Utah_Thunderbirds_logo.svg.png,14
 2024-02-17,V,Seattle U,Utah Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Utah_Tech_Trailblazers_logo_2022.svg/200px-Utah_Tech_Trailblazers_logo_2022.svg.png,15
@@ -110,7 +110,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-27,V,Southern Utah,Abilene Christian,82,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Abilene_Christian_Wildcats_logo.svg/320px-Abilene_Christian_Wildcats_logo.svg.png,9
 2024-02-01,H,Southern Utah,UT Arlington,68,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/UT_Arlington_Mavericks_logo.svg/310px-UT_Arlington_Mavericks_logo.svg.png,10
 2024-02-03,H,Southern Utah,UTRGV,79,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg/320px-Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg.png,11
-2024-02-08,V,Southern Utah,Utah Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Utah_Tech_Trailblazers_logo_2022.svg/200px-Utah_Tech_Trailblazers_logo_2022.svg.png,12
+2024-02-08,V,Southern Utah,Utah Tech,68,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Utah_Tech_Trailblazers_logo_2022.svg/200px-Utah_Tech_Trailblazers_logo_2022.svg.png,12
 2024-02-10,V,Southern Utah,Grand Canyon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Grand_Canyon_Antelopes_logo.svg/320px-Grand_Canyon_Antelopes_logo.svg.png,13
 2024-02-15,H,Southern Utah,Seattle U,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Seattle_Redhawks_logo.svg/214px-Seattle_Redhawks_logo.svg.png,14
 2024-02-17,H,Southern Utah,Utah Valley,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Utah_Valley_Wolverines_logo.svg/320px-Utah_Valley_Wolverines_logo.svg.png,15
@@ -130,7 +130,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-27,H,Tarleton St.,Utah Tech,86,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Utah_Tech_Trailblazers_logo_2022.svg/200px-Utah_Tech_Trailblazers_logo_2022.svg.png,9
 2024-02-01,V,Tarleton St.,Abilene Christian,76,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Abilene_Christian_Wildcats_logo.svg/320px-Abilene_Christian_Wildcats_logo.svg.png,10
 2024-02-03,H,Tarleton St.,SFA,75,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Stephen_F._Austin_Athletics_wordmark.svg/240px-Stephen_F._Austin_Athletics_wordmark.svg.png,11
-2024-02-08,V,Tarleton St.,Utah Valley,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Utah_Valley_Wolverines_logo.svg/320px-Utah_Valley_Wolverines_logo.svg.png,12
+2024-02-08,V,Tarleton St.,Utah Valley,72,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Utah_Valley_Wolverines_logo.svg/320px-Utah_Valley_Wolverines_logo.svg.png,12
 2024-02-10,V,Tarleton St.,Seattle U,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Seattle_Redhawks_logo.svg/214px-Seattle_Redhawks_logo.svg.png,13
 2024-02-15,V,Tarleton St.,UT Arlington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/UT_Arlington_Mavericks_logo.svg/310px-UT_Arlington_Mavericks_logo.svg.png,14
 2024-02-22,H,Tarleton St.,Grand Canyon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Grand_Canyon_Antelopes_logo.svg/320px-Grand_Canyon_Antelopes_logo.svg.png,15
@@ -150,7 +150,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-27,H,UT Arlington,Grand Canyon,61,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Grand_Canyon_Antelopes_logo.svg/320px-Grand_Canyon_Antelopes_logo.svg.png,9
 2024-02-01,V,UT Arlington,Southern Utah,76,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Southern_Utah_Thunderbirds_logo.svg/320px-Southern_Utah_Thunderbirds_logo.svg.png,10
 2024-02-03,V,UT Arlington,Utah Tech,87,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Utah_Tech_Trailblazers_logo_2022.svg/200px-Utah_Tech_Trailblazers_logo_2022.svg.png,11
-2024-02-08,V,UT Arlington,California Baptist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/California_Baptist_Lancers_wordmark.svg/1200px-California_Baptist_Lancers_wordmark.svg.png,12
+2024-02-08,V,UT Arlington,California Baptist,63,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/California_Baptist_Lancers_wordmark.svg/1200px-California_Baptist_Lancers_wordmark.svg.png,12
 2024-02-10,H,UT Arlington,SFA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Stephen_F._Austin_Athletics_wordmark.svg/240px-Stephen_F._Austin_Athletics_wordmark.svg.png,13
 2024-02-15,H,UT Arlington,Tarleton St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/5/56/Tarleton_State_athletics_logo.svg,14
 2024-02-17,V,UT Arlington,UTRGV,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg/320px-Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg.png,15
@@ -170,7 +170,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-25,H,UTRGV,California Baptist,54,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/California_Baptist_Lancers_wordmark.svg/1200px-California_Baptist_Lancers_wordmark.svg.png,9
 2024-02-01,V,UTRGV,Utah Tech,64,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Utah_Tech_Trailblazers_logo_2022.svg/200px-Utah_Tech_Trailblazers_logo_2022.svg.png,10
 2024-02-03,V,UTRGV,Southern Utah,59,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Southern_Utah_Thunderbirds_logo.svg/320px-Southern_Utah_Thunderbirds_logo.svg.png,11
-2024-02-08,V,UTRGV,SFA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Stephen_F._Austin_Athletics_wordmark.svg/240px-Stephen_F._Austin_Athletics_wordmark.svg.png,12
+2024-02-08,V,UTRGV,SFA,84,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Stephen_F._Austin_Athletics_wordmark.svg/240px-Stephen_F._Austin_Athletics_wordmark.svg.png,12
 2024-02-15,H,UTRGV,Abilene Christian,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Abilene_Christian_Wildcats_logo.svg/320px-Abilene_Christian_Wildcats_logo.svg.png,13
 2024-02-17,H,UTRGV,UT Arlington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/UT_Arlington_Mavericks_logo.svg/310px-UT_Arlington_Mavericks_logo.svg.png,14
 2024-02-22,V,UTRGV,Utah Valley,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Utah_Valley_Wolverines_logo.svg/320px-Utah_Valley_Wolverines_logo.svg.png,15
@@ -190,7 +190,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-27,V,Utah Tech,Tarleton St.,68,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/5/56/Tarleton_State_athletics_logo.svg,9
 2024-02-01,H,Utah Tech,UTRGV,81,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg/320px-Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg.png,10
 2024-02-03,H,Utah Tech,UT Arlington,66,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/35/UT_Arlington_Mavericks_logo.svg/310px-UT_Arlington_Mavericks_logo.svg.png,11
-2024-02-08,H,Utah Tech,Southern Utah,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Southern_Utah_Thunderbirds_logo.svg/320px-Southern_Utah_Thunderbirds_logo.svg.png,12
+2024-02-08,H,Utah Tech,Southern Utah,70,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Southern_Utah_Thunderbirds_logo.svg/320px-Southern_Utah_Thunderbirds_logo.svg.png,12
 2024-02-10,H,Utah Tech,California Baptist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/California_Baptist_Lancers_wordmark.svg/1200px-California_Baptist_Lancers_wordmark.svg.png,13
 2024-02-15,V,Utah Tech,Grand Canyon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Grand_Canyon_Antelopes_logo.svg/320px-Grand_Canyon_Antelopes_logo.svg.png,14
 2024-02-17,H,Utah Tech,Seattle U,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Seattle_Redhawks_logo.svg/214px-Seattle_Redhawks_logo.svg.png,15
@@ -210,7 +210,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-26,V,Utah Valley,Seattle U,61,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Seattle_Redhawks_logo.svg/214px-Seattle_Redhawks_logo.svg.png,9
 2024-02-01,V,Utah Valley,SFA,72,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Stephen_F._Austin_Athletics_wordmark.svg/240px-Stephen_F._Austin_Athletics_wordmark.svg.png,10
 2024-02-03,H,Utah Valley,Grand Canyon,67,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Grand_Canyon_Antelopes_logo.svg/320px-Grand_Canyon_Antelopes_logo.svg.png,11
-2024-02-08,H,Utah Valley,Tarleton St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/5/56/Tarleton_State_athletics_logo.svg,12
+2024-02-08,H,Utah Valley,Tarleton St.,61,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/5/56/Tarleton_State_athletics_logo.svg,12
 2024-02-10,H,Utah Valley,Abilene Christian,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Abilene_Christian_Wildcats_logo.svg/320px-Abilene_Christian_Wildcats_logo.svg.png,13
 2024-02-15,V,Utah Valley,California Baptist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/California_Baptist_Lancers_wordmark.svg/1200px-California_Baptist_Lancers_wordmark.svg.png,14
 2024-02-17,V,Utah Valley,Southern Utah,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Southern_Utah_Thunderbirds_logo.svg/320px-Southern_Utah_Thunderbirds_logo.svg.png,15
