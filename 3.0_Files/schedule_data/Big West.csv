@@ -11,7 +11,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-01,H,CSU Bakersfield,Long Beach St.,82,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Long_Beach_State_Athletics_logo.svg/197px-Long_Beach_State_Athletics_logo.svg.png,10
 2024-02-03,H,CSU Bakersfield,UC Santa Barbara,59,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/UC_Santa_Barbara_Gauchos_logo.svg/320px-UC_Santa_Barbara_Gauchos_logo.svg.png,11
 2024-02-08,V,CSU Bakersfield,UC Riverside,63,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/UC_Riverside_Highlanders_logo.svg/240px-UC_Riverside_Highlanders_logo.svg.png,12
-2024-02-10,H,CSU Bakersfield,Cal St. Fullerton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_State_Fullerton_Titans_logo.svg/200px-Cal_State_Fullerton_Titans_logo.svg.png,13
+2024-02-10,H,CSU Bakersfield,Cal St. Fullerton,73,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_State_Fullerton_Titans_logo.svg/200px-Cal_State_Fullerton_Titans_logo.svg.png,13
 2024-02-15,H,CSU Bakersfield,CSUN,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/51/CSUN_Matadors_logo.svg/188px-CSUN_Matadors_logo.svg.png,14
 2024-02-17,V,CSU Bakersfield,UC Irvine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/UC_Irvine_Anteaters_logo.svg/227px-UC_Irvine_Anteaters_logo.svg.png,15
 2024-02-22,V,CSU Bakersfield,Long Beach St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Long_Beach_State_Athletics_logo.svg/197px-Long_Beach_State_Athletics_logo.svg.png,16
@@ -69,7 +69,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-27,H,Cal St. Fullerton,CSU Bakersfield,68,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Cal_State_Bakersfield_Roadrunners_logo.svg/320px-Cal_State_Bakersfield_Roadrunners_logo.svg.png,9
 2024-02-01,H,Cal St. Fullerton,Hawaii,68,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hawaii_Warriors_logo.svg/318px-Hawaii_Warriors_logo.svg.png,10
 2024-02-08,V,Cal St. Fullerton,UC Davis,58,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/13/UC_Davis_Aggies_logo.svg,11
-2024-02-10,V,Cal St. Fullerton,CSU Bakersfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Cal_State_Bakersfield_Roadrunners_logo.svg/320px-Cal_State_Bakersfield_Roadrunners_logo.svg.png,12
+2024-02-10,V,Cal St. Fullerton,CSU Bakersfield,71,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Cal_State_Bakersfield_Roadrunners_logo.svg/320px-Cal_State_Bakersfield_Roadrunners_logo.svg.png,12
 2024-02-15,H,Cal St. Fullerton,UC Riverside,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/UC_Riverside_Highlanders_logo.svg/240px-UC_Riverside_Highlanders_logo.svg.png,13
 2024-02-17,V,Cal St. Fullerton,UC San Diego,NA,NA,FALSE,FALSE,https://ucsdtritons.com/images/logos/site/site.png,14
 2024-02-22,H,Cal St. Fullerton,Cal Poly,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/175px-Cal_Poly_Mustangs_logo.svg.png,15
@@ -89,7 +89,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-27,H,Hawaii,Cal Poly,83,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/175px-Cal_Poly_Mustangs_logo.svg.png,9
 2024-02-01,V,Hawaii,Cal St. Fullerton,76,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_State_Fullerton_Titans_logo.svg/200px-Cal_State_Fullerton_Titans_logo.svg.png,10
 2024-02-03,V,Hawaii,UC Irvine,68,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/UC_Irvine_Anteaters_logo.svg/227px-UC_Irvine_Anteaters_logo.svg.png,11
-2024-02-09,H,Hawaii,UC San Diego,NA,NA,FALSE,FALSE,https://ucsdtritons.com/images/logos/site/site.png,12
+2024-02-08,H,Hawaii,UC San Diego,94,86,FALSE,FALSE,https://ucsdtritons.com/images/logos/site/site.png,12
 2024-02-11,H,Hawaii,UC Davis,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/13/UC_Davis_Aggies_logo.svg,13
 2024-02-15,V,Hawaii,Cal Poly,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/175px-Cal_Poly_Mustangs_logo.svg.png,14
 2024-02-17,V,Hawaii,UC Santa Barbara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/UC_Santa_Barbara_Gauchos_logo.svg/320px-UC_Santa_Barbara_Gauchos_logo.svg.png,15
@@ -188,7 +188,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-27,V,UC San Diego,UC Davis,92,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/13/UC_Davis_Aggies_logo.svg,9
 2024-02-01,H,UC San Diego,CSUN,83,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/51/CSUN_Matadors_logo.svg/188px-CSUN_Matadors_logo.svg.png,10
 2024-02-03,V,UC San Diego,Long Beach St.,76,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Long_Beach_State_Athletics_logo.svg/197px-Long_Beach_State_Athletics_logo.svg.png,11
-2024-02-09,V,UC San Diego,Hawaii,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hawaii_Warriors_logo.svg/318px-Hawaii_Warriors_logo.svg.png,12
+2024-02-08,V,UC San Diego,Hawaii,86,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hawaii_Warriors_logo.svg/318px-Hawaii_Warriors_logo.svg.png,12
 2024-02-15,H,UC San Diego,UC Santa Barbara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/UC_Santa_Barbara_Gauchos_logo.svg/320px-UC_Santa_Barbara_Gauchos_logo.svg.png,13
 2024-02-17,H,UC San Diego,Cal St. Fullerton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_State_Fullerton_Titans_logo.svg/200px-Cal_State_Fullerton_Titans_logo.svg.png,14
 2024-02-22,V,UC San Diego,UC Riverside,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/UC_Riverside_Highlanders_logo.svg/240px-UC_Riverside_Highlanders_logo.svg.png,15

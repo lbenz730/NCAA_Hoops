@@ -9,7 +9,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-31,V,Austin Peay,Jacksonville,43,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Jacksonville_Dolphins_logo_2018.svg/320px-Jacksonville_Dolphins_logo_2018.svg.png,8
 2024-02-03,H,Austin Peay,North Florida,95,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/North_Florida_Ospreys_logo.svg/320px-North_Florida_Ospreys_logo.svg.png,9
 2024-02-08,H,Austin Peay,Kennesaw St.,85,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kennesaw_State_Owls_logo.svg/254px-Kennesaw_State_Owls_logo.svg.png,10
-2024-02-10,H,Austin Peay,Queens (NC),NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2511.png,11
+2024-02-10,H,Austin Peay,Queens (NC),79,76,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2511.png,11
 2024-02-15,V,Austin Peay,Central Ark.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Central_Arkansas_Athletics_logo.svg/293px-Central_Arkansas_Athletics_logo.svg.png,12
 2024-02-17,V,Austin Peay,North Ala.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/North_Alabama_Lions_logo.svg/320px-North_Alabama_Lions_logo.svg.png,13
 2024-02-24,H,Austin Peay,Lipscomb,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/1c/Lipscomb_L.png,14
@@ -41,7 +41,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-01,H,Central Ark.,FGCU,59,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Florida_Gulf_Coast_Eagles_logo.svg/320px-Florida_Gulf_Coast_Eagles_logo.svg.png,8
 2024-02-03,H,Central Ark.,Stetson,62,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/1/17/Stetson_Hatters_logo_%282018%29.png,9
 2024-02-08,V,Central Ark.,Jacksonville,55,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Jacksonville_Dolphins_logo_2018.svg/320px-Jacksonville_Dolphins_logo_2018.svg.png,10
-2024-02-10,V,Central Ark.,North Florida,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/North_Florida_Ospreys_logo.svg/320px-North_Florida_Ospreys_logo.svg.png,11
+2024-02-10,V,Central Ark.,North Florida,79,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/North_Florida_Ospreys_logo.svg/320px-North_Florida_Ospreys_logo.svg.png,11
 2024-02-15,H,Central Ark.,Austin Peay,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Austin_Peay_Governors_logo.svg/262px-Austin_Peay_Governors_logo.svg.png,12
 2024-02-17,H,Central Ark.,Lipscomb,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/1c/Lipscomb_L.png,13
 2024-02-22,V,Central Ark.,Bellarmine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/4/4e/Bellarmine_Knights_logo.svg,14
@@ -57,7 +57,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-01,V,Eastern Ky.,Queens (NC),76,94,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2511.png,8
 2024-02-03,V,Eastern Ky.,Kennesaw St.,86,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kennesaw_State_Owls_logo.svg/254px-Kennesaw_State_Owls_logo.svg.png,9
 2024-02-07,H,Eastern Ky.,FGCU,90,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Florida_Gulf_Coast_Eagles_logo.svg/320px-Florida_Gulf_Coast_Eagles_logo.svg.png,10
-2024-02-10,V,Eastern Ky.,Stetson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/1/17/Stetson_Hatters_logo_%282018%29.png,11
+2024-02-10,V,Eastern Ky.,Stetson,79,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/1/17/Stetson_Hatters_logo_%282018%29.png,11
 2024-02-17,V,Eastern Ky.,Bellarmine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/4/4e/Bellarmine_Knights_logo.svg,12
 2024-02-22,H,Eastern Ky.,North Ala.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/North_Alabama_Lions_logo.svg/320px-North_Alabama_Lions_logo.svg.png,13
 2024-02-24,H,Eastern Ky.,Central Ark.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Central_Arkansas_Athletics_logo.svg/293px-Central_Arkansas_Athletics_logo.svg.png,14
@@ -89,7 +89,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-31,H,Jacksonville,Austin Peay,63,43,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Austin_Peay_Governors_logo.svg/262px-Austin_Peay_Governors_logo.svg.png,8
 2024-02-03,V,Jacksonville,Lipscomb,82,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/1c/Lipscomb_L.png,9
 2024-02-08,H,Jacksonville,Central Ark.,59,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Central_Arkansas_Athletics_logo.svg/293px-Central_Arkansas_Athletics_logo.svg.png,10
-2024-02-10,H,Jacksonville,North Ala.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/North_Alabama_Lions_logo.svg/320px-North_Alabama_Lions_logo.svg.png,11
+2024-02-10,H,Jacksonville,North Ala.,67,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/North_Alabama_Lions_logo.svg/320px-North_Alabama_Lions_logo.svg.png,11
 2024-02-14,V,Jacksonville,Kennesaw St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kennesaw_State_Owls_logo.svg/254px-Kennesaw_State_Owls_logo.svg.png,12
 2024-02-16,V,Jacksonville,Queens (NC),NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2511.png,13
 2024-02-23,H,Jacksonville,North Florida,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/North_Florida_Ospreys_logo.svg/320px-North_Florida_Ospreys_logo.svg.png,14
@@ -105,7 +105,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-01,H,Kennesaw St.,Bellarmine,95,96,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/4/4e/Bellarmine_Knights_logo.svg,8
 2024-02-03,H,Kennesaw St.,Eastern Ky.,76,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Eastern_Kentucky_Colonels_logo.svg/320px-Eastern_Kentucky_Colonels_logo.svg.png,9
 2024-02-08,V,Kennesaw St.,Austin Peay,69,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Austin_Peay_Governors_logo.svg/262px-Austin_Peay_Governors_logo.svg.png,10
-2024-02-10,V,Kennesaw St.,Lipscomb,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/1c/Lipscomb_L.png,11
+2024-02-10,V,Kennesaw St.,Lipscomb,95,101,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/1c/Lipscomb_L.png,11
 2024-02-14,H,Kennesaw St.,Jacksonville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Jacksonville_Dolphins_logo_2018.svg/320px-Jacksonville_Dolphins_logo_2018.svg.png,12
 2024-02-16,H,Kennesaw St.,North Florida,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/North_Florida_Ospreys_logo.svg/320px-North_Florida_Ospreys_logo.svg.png,13
 2024-02-22,V,Kennesaw St.,FGCU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Florida_Gulf_Coast_Eagles_logo.svg/320px-Florida_Gulf_Coast_Eagles_logo.svg.png,14
@@ -121,7 +121,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-31,V,Lipscomb,North Florida,76,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/North_Florida_Ospreys_logo.svg/320px-North_Florida_Ospreys_logo.svg.png,8
 2024-02-03,H,Lipscomb,Jacksonville,84,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Jacksonville_Dolphins_logo_2018.svg/320px-Jacksonville_Dolphins_logo_2018.svg.png,9
 2024-02-08,H,Lipscomb,Queens (NC),90,88,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2511.png,10
-2024-02-10,H,Lipscomb,Kennesaw St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kennesaw_State_Owls_logo.svg/254px-Kennesaw_State_Owls_logo.svg.png,11
+2024-02-10,H,Lipscomb,Kennesaw St.,101,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kennesaw_State_Owls_logo.svg/254px-Kennesaw_State_Owls_logo.svg.png,11
 2024-02-15,V,Lipscomb,North Ala.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/North_Alabama_Lions_logo.svg/320px-North_Alabama_Lions_logo.svg.png,12
 2024-02-17,V,Lipscomb,Central Ark.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Central_Arkansas_Athletics_logo.svg/293px-Central_Arkansas_Athletics_logo.svg.png,13
 2024-02-24,V,Lipscomb,Austin Peay,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Austin_Peay_Governors_logo.svg/262px-Austin_Peay_Governors_logo.svg.png,14
@@ -137,7 +137,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-01,H,North Ala.,Stetson,79,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/1/17/Stetson_Hatters_logo_%282018%29.png,8
 2024-02-03,H,North Ala.,FGCU,70,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Florida_Gulf_Coast_Eagles_logo.svg/320px-Florida_Gulf_Coast_Eagles_logo.svg.png,9
 2024-02-08,V,North Ala.,North Florida,79,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/North_Florida_Ospreys_logo.svg/320px-North_Florida_Ospreys_logo.svg.png,10
-2024-02-10,V,North Ala.,Jacksonville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Jacksonville_Dolphins_logo_2018.svg/320px-Jacksonville_Dolphins_logo_2018.svg.png,11
+2024-02-10,V,North Ala.,Jacksonville,63,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Jacksonville_Dolphins_logo_2018.svg/320px-Jacksonville_Dolphins_logo_2018.svg.png,11
 2024-02-15,H,North Ala.,Lipscomb,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/1c/Lipscomb_L.png,12
 2024-02-17,H,North Ala.,Austin Peay,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Austin_Peay_Governors_logo.svg/262px-Austin_Peay_Governors_logo.svg.png,13
 2024-02-22,V,North Ala.,Eastern Ky.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Eastern_Kentucky_Colonels_logo.svg/320px-Eastern_Kentucky_Colonels_logo.svg.png,14
@@ -153,7 +153,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-31,H,North Florida,Lipscomb,85,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/1c/Lipscomb_L.png,8
 2024-02-03,V,North Florida,Austin Peay,91,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Austin_Peay_Governors_logo.svg/262px-Austin_Peay_Governors_logo.svg.png,9
 2024-02-08,H,North Florida,North Ala.,74,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/North_Alabama_Lions_logo.svg/320px-North_Alabama_Lions_logo.svg.png,10
-2024-02-10,H,North Florida,Central Ark.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Central_Arkansas_Athletics_logo.svg/293px-Central_Arkansas_Athletics_logo.svg.png,11
+2024-02-10,H,North Florida,Central Ark.,77,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Central_Arkansas_Athletics_logo.svg/293px-Central_Arkansas_Athletics_logo.svg.png,11
 2024-02-14,V,North Florida,Queens (NC),NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2511.png,12
 2024-02-16,V,North Florida,Kennesaw St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kennesaw_State_Owls_logo.svg/254px-Kennesaw_State_Owls_logo.svg.png,13
 2024-02-23,V,North Florida,Jacksonville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Jacksonville_Dolphins_logo_2018.svg/320px-Jacksonville_Dolphins_logo_2018.svg.png,14
@@ -169,7 +169,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-01,H,Queens (NC),Eastern Ky.,94,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Eastern_Kentucky_Colonels_logo.svg/320px-Eastern_Kentucky_Colonels_logo.svg.png,8
 2024-02-03,H,Queens (NC),Bellarmine,85,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/4/4e/Bellarmine_Knights_logo.svg,9
 2024-02-08,V,Queens (NC),Lipscomb,88,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/1c/Lipscomb_L.png,10
-2024-02-10,V,Queens (NC),Austin Peay,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Austin_Peay_Governors_logo.svg/262px-Austin_Peay_Governors_logo.svg.png,11
+2024-02-10,V,Queens (NC),Austin Peay,76,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Austin_Peay_Governors_logo.svg/262px-Austin_Peay_Governors_logo.svg.png,11
 2024-02-14,H,Queens (NC),North Florida,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ac/North_Florida_Ospreys_logo.svg/320px-North_Florida_Ospreys_logo.svg.png,12
 2024-02-16,H,Queens (NC),Jacksonville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Jacksonville_Dolphins_logo_2018.svg/320px-Jacksonville_Dolphins_logo_2018.svg.png,13
 2024-02-22,V,Queens (NC),Stetson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/1/17/Stetson_Hatters_logo_%282018%29.png,14
@@ -185,7 +185,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-01,V,Stetson,North Ala.,72,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/North_Alabama_Lions_logo.svg/320px-North_Alabama_Lions_logo.svg.png,8
 2024-02-03,V,Stetson,Central Ark.,73,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/Central_Arkansas_Athletics_logo.svg/293px-Central_Arkansas_Athletics_logo.svg.png,9
 2024-02-07,V,Stetson,Bellarmine,84,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/4/4e/Bellarmine_Knights_logo.svg,10
-2024-02-10,H,Stetson,Eastern Ky.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Eastern_Kentucky_Colonels_logo.svg/320px-Eastern_Kentucky_Colonels_logo.svg.png,11
+2024-02-10,H,Stetson,Eastern Ky.,87,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Eastern_Kentucky_Colonels_logo.svg/320px-Eastern_Kentucky_Colonels_logo.svg.png,11
 2024-02-17,H,Stetson,FGCU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Florida_Gulf_Coast_Eagles_logo.svg/320px-Florida_Gulf_Coast_Eagles_logo.svg.png,12
 2024-02-22,H,Stetson,Queens (NC),NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2511.png,13
 2024-02-24,H,Stetson,Kennesaw St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Kennesaw_State_Owls_logo.svg/254px-Kennesaw_State_Owls_logo.svg.png,14
