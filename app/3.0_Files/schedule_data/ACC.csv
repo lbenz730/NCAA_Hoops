@@ -51,7 +51,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,Duke,North Carolina,84,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,10
 2024-02-07,H,Duke,Notre Dame,71,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,11
 2024-02-10,H,Duke,Boston College,80,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,12
-2024-02-12,H,Duke,Wake Forest,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,13
+2024-02-12,H,Duke,Wake Forest,77,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,13
 2024-02-17,V,Duke,Florida St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,14
 2024-02-21,V,Duke,Miami (FL),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,15
 2024-02-24,V,Duke,Wake Forest,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,16
@@ -70,7 +70,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-27,H,Florida St.,North Carolina,68,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,9
 2024-02-03,V,Florida St.,Louisville,92,101,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,10
 2024-02-06,V,Florida St.,Boston College,63,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,11
-2024-02-10,H,Florida St.,Virginia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,12
+2024-02-10,H,Florida St.,Virginia,76,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,12
 2024-02-13,V,Florida St.,Virginia Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,13
 2024-02-17,H,Florida St.,Duke,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,14
 2024-02-20,H,Florida St.,Boston College,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,15
@@ -91,7 +91,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-30,H,Georgia Tech,North Carolina,74,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,10
 2024-02-03,V,Georgia Tech,NC State,76,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,11
 2024-02-06,H,Georgia Tech,Wake Forest,51,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,12
-2024-02-10,V,Georgia Tech,Louisville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,13
+2024-02-10,V,Georgia Tech,Louisville,67,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,13
 2024-02-14,V,Georgia Tech,Notre Dame,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,14
 2024-02-17,H,Georgia Tech,Syracuse,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,15
 2024-02-21,H,Georgia Tech,Clemson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,16
@@ -111,7 +111,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-30,V,Louisville,Clemson,64,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,10
 2024-02-03,H,Louisville,Florida St.,101,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,11
 2024-02-07,V,Louisville,Syracuse,92,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,12
-2024-02-10,H,Louisville,Georgia Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,13
+2024-02-10,H,Louisville,Georgia Tech,79,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,13
 2024-02-13,V,Louisville,Boston College,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,14
 2024-02-17,V,Louisville,Pittsburgh,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,15
 2024-02-21,H,Louisville,Notre Dame,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,16
@@ -251,7 +251,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-31,H,Virginia,Notre Dame,65,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,10
 2024-02-03,V,Virginia,Clemson,66,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,11
 2024-02-05,H,Virginia,Miami (FL),60,38,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,12
-2024-02-10,V,Virginia,Florida St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,13
+2024-02-10,V,Virginia,Florida St.,80,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,13
 2024-02-13,H,Virginia,Pittsburgh,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,14
 2024-02-17,H,Virginia,Wake Forest,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,15
 2024-02-19,V,Virginia,Virginia Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,16
@@ -291,7 +291,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,Wake Forest,Syracuse,99,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,10
 2024-02-06,V,Wake Forest,Georgia Tech,80,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,11
 2024-02-10,H,Wake Forest,NC State,83,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,12
-2024-02-12,V,Wake Forest,Duke,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,13
+2024-02-12,V,Wake Forest,Duke,69,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,13
 2024-02-17,V,Wake Forest,Virginia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,14
 2024-02-20,H,Wake Forest,Pittsburgh,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,15
 2024-02-24,H,Wake Forest,Duke,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,16
