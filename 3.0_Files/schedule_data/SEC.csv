@@ -27,7 +27,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-31,V,Arkansas,Missouri,91,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Missouri_Tigers_logo.svg/320px-Missouri_Tigers_logo.svg.png,8
 2024-02-03,V,Arkansas,LSU,74,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LSU_Athletics_logo.svg/220px-LSU_Athletics_logo.svg.png,9
 2024-02-10,H,Arkansas,Georgia,78,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Georgia_Athletics_logo.svg/320px-Georgia_Athletics_logo.svg.png,10
-2024-02-14,H,Arkansas,Tennessee,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Tennessee_Volunteers_logo.svg/240px-Tennessee_Volunteers_logo.svg.png,11
+2024-02-14,H,Arkansas,Tennessee,63,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Tennessee_Volunteers_logo.svg/240px-Tennessee_Volunteers_logo.svg.png,11
 2024-02-17,V,Arkansas,Mississippi St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mississippi_State_Bulldogs_logo.svg/320px-Mississippi_State_Bulldogs_logo.svg.png,12
 2024-02-20,V,Arkansas,Texas A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Texas_A%26M_University_logo.svg/292px-Texas_A%26M_University_logo.svg.png,13
 2024-02-24,H,Arkansas,Missouri,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Missouri_Tigers_logo.svg/320px-Missouri_Tigers_logo.svg.png,14
@@ -46,7 +46,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,Auburn,Ole Miss,91,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Ole_Miss_Rebels_logo.svg/320px-Ole_Miss_Rebels_logo.svg.png,9
 2024-02-07,H,Auburn,Alabama,99,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Alabama_Crimson_Tide_logo.svg/200px-Alabama_Crimson_Tide_logo.svg.png,10
 2024-02-10,V,Auburn,Florida,65,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Florida_Gators_gator_logo.svg/320px-Florida_Gators_gator_logo.svg.png,11
-2024-02-14,H,Auburn,South Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/South_Carolina_Gamecocks_logo.svg/219px-South_Carolina_Gamecocks_logo.svg.png,12
+2024-02-14,H,Auburn,South Carolina,101,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/South_Carolina_Gamecocks_logo.svg/219px-South_Carolina_Gamecocks_logo.svg.png,12
 2024-02-17,H,Auburn,Kentucky,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Kentucky_Wildcats_logo.svg/293px-Kentucky_Wildcats_logo.svg.png,13
 2024-02-24,V,Auburn,Georgia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Georgia_Athletics_logo.svg/320px-Georgia_Athletics_logo.svg.png,14
 2024-02-28,V,Auburn,Tennessee,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Tennessee_Volunteers_logo.svg/240px-Tennessee_Volunteers_logo.svg.png,15
@@ -63,7 +63,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-31,V,Florida,Kentucky,94,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Kentucky_Wildcats_logo.svg/293px-Kentucky_Wildcats_logo.svg.png,8
 2024-02-03,V,Florida,Texas A&M,66,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Texas_A%26M_University_logo.svg/292px-Texas_A%26M_University_logo.svg.png,9
 2024-02-10,H,Florida,Auburn,81,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Auburn_Tigers_logo.svg/200px-Auburn_Tigers_logo.svg.png,10
-2024-02-13,H,Florida,LSU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LSU_Athletics_logo.svg/220px-LSU_Athletics_logo.svg.png,11
+2024-02-13,H,Florida,LSU,82,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LSU_Athletics_logo.svg/220px-LSU_Athletics_logo.svg.png,11
 2024-02-17,V,Florida,Georgia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Georgia_Athletics_logo.svg/320px-Georgia_Athletics_logo.svg.png,12
 2024-02-21,V,Florida,Alabama,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Alabama_Crimson_Tide_logo.svg/200px-Alabama_Crimson_Tide_logo.svg.png,13
 2024-02-24,H,Florida,Vanderbilt,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Vanderbilt_Commodores_logo.svg/246px-Vanderbilt_Commodores_logo.svg.png,14
@@ -99,7 +99,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-31,H,Kentucky,Florida,91,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Florida_Gators_gator_logo.svg/320px-Florida_Gators_gator_logo.svg.png,8
 2024-02-03,H,Kentucky,Tennessee,92,103,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Tennessee_Volunteers_logo.svg/240px-Tennessee_Volunteers_logo.svg.png,9
 2024-02-06,V,Kentucky,Vanderbilt,109,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Vanderbilt_Commodores_logo.svg/246px-Vanderbilt_Commodores_logo.svg.png,10
-2024-02-13,H,Kentucky,Ole Miss,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Ole_Miss_Rebels_logo.svg/320px-Ole_Miss_Rebels_logo.svg.png,11
+2024-02-13,H,Kentucky,Ole Miss,75,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Ole_Miss_Rebels_logo.svg/320px-Ole_Miss_Rebels_logo.svg.png,11
 2024-02-17,V,Kentucky,Auburn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Auburn_Tigers_logo.svg/200px-Auburn_Tigers_logo.svg.png,12
 2024-02-21,V,Kentucky,LSU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LSU_Athletics_logo.svg/220px-LSU_Athletics_logo.svg.png,13
 2024-02-24,H,Kentucky,Alabama,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Alabama_Crimson_Tide_logo.svg/200px-Alabama_Crimson_Tide_logo.svg.png,14
@@ -117,7 +117,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,LSU,Arkansas,95,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Arkansas_Razorbacks_logo.svg/200px-Arkansas_Razorbacks_logo.svg.png,8
 2024-02-07,V,LSU,Tennessee,68,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Tennessee_Volunteers_logo.svg/240px-Tennessee_Volunteers_logo.svg.png,9
 2024-02-10,H,LSU,Alabama,92,109,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Alabama_Crimson_Tide_logo.svg/200px-Alabama_Crimson_Tide_logo.svg.png,10
-2024-02-13,V,LSU,Florida,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Florida_Gators_gator_logo.svg/320px-Florida_Gators_gator_logo.svg.png,11
+2024-02-13,V,LSU,Florida,80,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Florida_Gators_gator_logo.svg/320px-Florida_Gators_gator_logo.svg.png,11
 2024-02-17,V,LSU,South Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/South_Carolina_Gamecocks_logo.svg/219px-South_Carolina_Gamecocks_logo.svg.png,12
 2024-02-21,H,LSU,Kentucky,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Kentucky_Wildcats_logo.svg/293px-Kentucky_Wildcats_logo.svg.png,13
 2024-02-24,H,LSU,Mississippi St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mississippi_State_Bulldogs_logo.svg/320px-Mississippi_State_Bulldogs_logo.svg.png,14
@@ -171,7 +171,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-01-30,H,Ole Miss,Mississippi St.,86,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mississippi_State_Bulldogs_logo.svg/320px-Mississippi_State_Bulldogs_logo.svg.png,8
 2024-02-03,H,Ole Miss,Auburn,77,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Auburn_Tigers_logo.svg/200px-Auburn_Tigers_logo.svg.png,9
 2024-02-06,V,Ole Miss,South Carolina,65,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/South_Carolina_Gamecocks_logo.svg/219px-South_Carolina_Gamecocks_logo.svg.png,10
-2024-02-13,V,Ole Miss,Kentucky,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Kentucky_Wildcats_logo.svg/293px-Kentucky_Wildcats_logo.svg.png,11
+2024-02-13,V,Ole Miss,Kentucky,63,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Kentucky_Wildcats_logo.svg/293px-Kentucky_Wildcats_logo.svg.png,11
 2024-02-17,H,Ole Miss,Missouri,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Missouri_Tigers_logo.svg/320px-Missouri_Tigers_logo.svg.png,12
 2024-02-21,V,Ole Miss,Mississippi St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mississippi_State_Bulldogs_logo.svg/320px-Mississippi_State_Bulldogs_logo.svg.png,13
 2024-02-24,H,Ole Miss,South Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/South_Carolina_Gamecocks_logo.svg/219px-South_Carolina_Gamecocks_logo.svg.png,14
@@ -190,7 +190,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,South Carolina,Georgia,72,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Georgia_Athletics_logo.svg/320px-Georgia_Athletics_logo.svg.png,9
 2024-02-06,H,South Carolina,Ole Miss,68,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Ole_Miss_Rebels_logo.svg/320px-Ole_Miss_Rebels_logo.svg.png,10
 2024-02-10,H,South Carolina,Vanderbilt,75,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Vanderbilt_Commodores_logo.svg/246px-Vanderbilt_Commodores_logo.svg.png,11
-2024-02-14,V,South Carolina,Auburn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Auburn_Tigers_logo.svg/200px-Auburn_Tigers_logo.svg.png,12
+2024-02-14,V,South Carolina,Auburn,61,101,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Auburn_Tigers_logo.svg/200px-Auburn_Tigers_logo.svg.png,12
 2024-02-17,H,South Carolina,LSU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LSU_Athletics_logo.svg/220px-LSU_Athletics_logo.svg.png,13
 2024-02-24,V,South Carolina,Ole Miss,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Ole_Miss_Rebels_logo.svg/320px-Ole_Miss_Rebels_logo.svg.png,14
 2024-02-28,V,South Carolina,Texas A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Texas_A%26M_University_logo.svg/292px-Texas_A%26M_University_logo.svg.png,15
@@ -207,7 +207,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,Tennessee,Kentucky,103,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Kentucky_Wildcats_logo.svg/293px-Kentucky_Wildcats_logo.svg.png,8
 2024-02-07,H,Tennessee,LSU,88,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LSU_Athletics_logo.svg/220px-LSU_Athletics_logo.svg.png,9
 2024-02-10,V,Tennessee,Texas A&M,69,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Texas_A%26M_University_logo.svg/292px-Texas_A%26M_University_logo.svg.png,10
-2024-02-14,V,Tennessee,Arkansas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Arkansas_Razorbacks_logo.svg/200px-Arkansas_Razorbacks_logo.svg.png,11
+2024-02-14,V,Tennessee,Arkansas,92,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Arkansas_Razorbacks_logo.svg/200px-Arkansas_Razorbacks_logo.svg.png,11
 2024-02-17,H,Tennessee,Vanderbilt,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Vanderbilt_Commodores_logo.svg/246px-Vanderbilt_Commodores_logo.svg.png,12
 2024-02-20,V,Tennessee,Missouri,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Missouri_Tigers_logo.svg/320px-Missouri_Tigers_logo.svg.png,13
 2024-02-24,H,Tennessee,Texas A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Texas_A%26M_University_logo.svg/292px-Texas_A%26M_University_logo.svg.png,14
@@ -225,7 +225,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,Texas A&M,Florida,67,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Florida_Gators_gator_logo.svg/320px-Florida_Gators_gator_logo.svg.png,8
 2024-02-07,V,Texas A&M,Missouri,79,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Missouri_Tigers_logo.svg/320px-Missouri_Tigers_logo.svg.png,9
 2024-02-10,H,Texas A&M,Tennessee,85,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Tennessee_Volunteers_logo.svg/240px-Tennessee_Volunteers_logo.svg.png,10
-2024-02-13,V,Texas A&M,Vanderbilt,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Vanderbilt_Commodores_logo.svg/246px-Vanderbilt_Commodores_logo.svg.png,11
+2024-02-13,V,Texas A&M,Vanderbilt,73,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Vanderbilt_Commodores_logo.svg/246px-Vanderbilt_Commodores_logo.svg.png,11
 2024-02-17,V,Texas A&M,Alabama,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Alabama_Crimson_Tide_logo.svg/200px-Alabama_Crimson_Tide_logo.svg.png,12
 2024-02-20,H,Texas A&M,Arkansas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Arkansas_Razorbacks_logo.svg/200px-Arkansas_Razorbacks_logo.svg.png,13
 2024-02-24,V,Texas A&M,Tennessee,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Tennessee_Volunteers_logo.svg/240px-Tennessee_Volunteers_logo.svg.png,14
@@ -243,7 +243,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,Vanderbilt,Missouri,68,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Missouri_Tigers_logo.svg/320px-Missouri_Tigers_logo.svg.png,8
 2024-02-06,H,Vanderbilt,Kentucky,77,109,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Kentucky_Wildcats_logo.svg/293px-Kentucky_Wildcats_logo.svg.png,9
 2024-02-10,V,Vanderbilt,South Carolina,60,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/South_Carolina_Gamecocks_logo.svg/219px-South_Carolina_Gamecocks_logo.svg.png,10
-2024-02-13,H,Vanderbilt,Texas A&M,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Texas_A%26M_University_logo.svg/292px-Texas_A%26M_University_logo.svg.png,11
+2024-02-13,H,Vanderbilt,Texas A&M,74,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Texas_A%26M_University_logo.svg/292px-Texas_A%26M_University_logo.svg.png,11
 2024-02-17,V,Vanderbilt,Tennessee,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Tennessee_Volunteers_logo.svg/240px-Tennessee_Volunteers_logo.svg.png,12
 2024-02-21,H,Vanderbilt,Georgia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Georgia_Athletics_logo.svg/320px-Georgia_Athletics_logo.svg.png,13
 2024-02-24,V,Vanderbilt,Florida,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Florida_Gators_gator_logo.svg/320px-Florida_Gators_gator_logo.svg.png,14

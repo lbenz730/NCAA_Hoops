@@ -10,7 +10,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,Eastern Wash.,Montana,78,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Montana_Griz_logo.svg/320px-Montana_Griz_logo.svg.png,9
 2024-02-05,V,Eastern Wash.,Portland St.,90,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,10
 2024-02-10,H,Eastern Wash.,Idaho,87,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,11
-2024-02-15,H,Eastern Wash.,Idaho St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,12
+2024-02-15,H,Eastern Wash.,Idaho St.,88,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,12
 2024-02-17,H,Eastern Wash.,Weber St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,13
 2024-02-22,V,Eastern Wash.,Northern Ariz.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,14
 2024-02-24,V,Eastern Wash.,Northern Colo.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,15
@@ -28,7 +28,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,Idaho,Montana St.,81,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,9
 2024-02-05,V,Idaho,Sacramento St.,61,45,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,10
 2024-02-10,V,Idaho,Eastern Wash.,79,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,11
-2024-02-15,H,Idaho,Weber St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,12
+2024-02-15,H,Idaho,Weber St.,69,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,12
 2024-02-17,H,Idaho,Idaho St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,13
 2024-02-22,V,Idaho,Northern Colo.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,14
 2024-02-24,V,Idaho,Northern Ariz.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,15
@@ -47,7 +47,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,Idaho St.,Northern Ariz.,81,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,10
 2024-02-08,H,Idaho St.,Sacramento St.,68,40,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,11
 2024-02-10,H,Idaho St.,Portland St.,68,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,12
-2024-02-15,V,Idaho St.,Eastern Wash.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,13
+2024-02-15,V,Idaho St.,Eastern Wash.,82,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,13
 2024-02-17,V,Idaho St.,Idaho,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,14
 2024-02-24,H,Idaho St.,Weber St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,15
 2024-02-29,H,Idaho St.,Northern Ariz.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,16
@@ -100,7 +100,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,Northern Ariz.,Idaho St.,79,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,9
 2024-02-08,H,Northern Ariz.,Montana,66,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Montana_Griz_logo.svg/320px-Montana_Griz_logo.svg.png,10
 2024-02-10,H,Northern Ariz.,Montana St.,76,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,11
-2024-02-15,V,Northern Ariz.,Sacramento St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,12
+2024-02-15,V,Northern Ariz.,Sacramento St.,73,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,12
 2024-02-17,V,Northern Ariz.,Portland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,13
 2024-02-22,H,Northern Ariz.,Eastern Wash.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,14
 2024-02-24,H,Northern Ariz.,Idaho,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,15
@@ -118,7 +118,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,Northern Colo.,Weber St.,63,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,9
 2024-02-08,H,Northern Colo.,Montana St.,73,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,10
 2024-02-10,H,Northern Colo.,Montana,87,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Montana_Griz_logo.svg/320px-Montana_Griz_logo.svg.png,11
-2024-02-15,V,Northern Colo.,Portland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,12
+2024-02-15,V,Northern Colo.,Portland St.,72,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,12
 2024-02-17,V,Northern Colo.,Sacramento St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,13
 2024-02-22,H,Northern Colo.,Idaho,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,14
 2024-02-24,H,Northern Colo.,Eastern Wash.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,15
@@ -137,7 +137,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-05,H,Portland St.,Eastern Wash.,77,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,10
 2024-02-08,V,Portland St.,Weber St.,72,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,11
 2024-02-10,V,Portland St.,Idaho St.,65,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,12
-2024-02-15,H,Portland St.,Northern Colo.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,13
+2024-02-15,H,Portland St.,Northern Colo.,82,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,13
 2024-02-17,H,Portland St.,Northern Ariz.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,14
 2024-02-22,V,Portland St.,Montana St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,15
 2024-02-24,V,Portland St.,Montana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Montana_Griz_logo.svg/320px-Montana_Griz_logo.svg.png,16
@@ -155,7 +155,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-05,H,Sacramento St.,Idaho,45,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,10
 2024-02-08,V,Sacramento St.,Idaho St.,40,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,11
 2024-02-10,V,Sacramento St.,Weber St.,53,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,12
-2024-02-15,H,Sacramento St.,Northern Ariz.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,13
+2024-02-15,H,Sacramento St.,Northern Ariz.,58,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,13
 2024-02-17,H,Sacramento St.,Northern Colo.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,14
 2024-02-22,V,Sacramento St.,Montana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Montana_Griz_logo.svg/320px-Montana_Griz_logo.svg.png,15
 2024-02-24,V,Sacramento St.,Montana St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,16
@@ -173,7 +173,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,Weber St.,Northern Colo.,82,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,10
 2024-02-08,H,Weber St.,Portland St.,84,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,11
 2024-02-10,H,Weber St.,Sacramento St.,58,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,12
-2024-02-15,V,Weber St.,Idaho,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,13
+2024-02-15,V,Weber St.,Idaho,70,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,13
 2024-02-17,V,Weber St.,Eastern Wash.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,14
 2024-02-24,V,Weber St.,Idaho St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,15
 2024-02-29,H,Weber St.,Northern Colo.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,16
