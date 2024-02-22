@@ -93,6 +93,10 @@ ivy.sim <- function(nsims) {
     df_tmp$win[home_ix] <- ifelse(p <= df_tmp$win_prob[home_ix], 1, 0)
     df_tmp$win[away_ix] <- ifelse(p <= df_tmp$win_prob[home_ix], 0, 1)
     
+    df_tmp <-
+      df_tmp %>% 
+      left_join(select(power_rankings, team, 'net_rtg' = 'yusag_coeff'), by = 'team')
+    
     standings <- 
       compute_final_standings(df_tmp, 'Basketball (M)')
     simresults[j,] <- 
@@ -242,6 +246,9 @@ psf <- function(nsims, min_date, max_date) {
       p <- runif(sum(home_ix))
       df_tmp$win[home_ix] <- ifelse(p <= df_tmp$win_prob[home_ix], 1, 0)
       df_tmp$win[away_ix] <- ifelse(p <= df_tmp$win_prob[home_ix], 0, 1)
+      df_tmp <-
+        df_tmp %>% 
+        left_join(select(power_rankings, team, 'net_rtg' = 'yusag_coeff'), by = 'team')
       
       standings <- 
         compute_final_standings(df_tmp, 'Basketball (M)')

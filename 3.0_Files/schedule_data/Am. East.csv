@@ -10,7 +10,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-08,H,Binghamton,UAlbany,69,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Albany_Great_Danes_logo.svg/200px-Albany_Great_Danes_logo.svg.png,9
 2024-02-10,H,Binghamton,Bryant,69,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Bryant_Bulldogs_logo.svg/296px-Bryant_Bulldogs_logo.svg.png,10
 2024-02-15,H,Binghamton,UMBC,78,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/UMBC_Retrievers_logo.svg/259px-UMBC_Retrievers_logo.svg.png,11
-2024-02-17,V,Binghamton,NJIT,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/30/NJIT_Highlanders_logo.svg/274px-NJIT_Highlanders_logo.svg.png,12
+2024-02-17,V,Binghamton,NJIT,69,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/30/NJIT_Highlanders_logo.svg/274px-NJIT_Highlanders_logo.svg.png,12
 2024-02-22,V,Binghamton,UMass Lowell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/43/UMass_Lowell_River_Hawks_logo.svg/320px-UMass_Lowell_River_Hawks_logo.svg.png,13
 2024-02-29,H,Binghamton,Maine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Maine_Black_Bears_logo.svg/313px-Maine_Black_Bears_logo.svg.png,14
 2024-03-02,H,Binghamton,New Hampshire,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/New_Hampshire_Wildcats_logo.svg/284px-New_Hampshire_Wildcats_logo.svg.png,15
@@ -26,7 +26,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-08,H,Bryant,New Hampshire,85,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/New_Hampshire_Wildcats_logo.svg/284px-New_Hampshire_Wildcats_logo.svg.png,9
 2024-02-10,V,Bryant,Binghamton,70,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Binghamton_Bearcats_logo.svg/320px-Binghamton_Bearcats_logo.svg.png,10
 2024-02-15,H,Bryant,Maine,77,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Maine_Black_Bears_logo.svg/313px-Maine_Black_Bears_logo.svg.png,11
-2024-02-17,H,Bryant,UMass Lowell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/43/UMass_Lowell_River_Hawks_logo.svg/320px-UMass_Lowell_River_Hawks_logo.svg.png,12
+2024-02-17,H,Bryant,UMass Lowell,77,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/43/UMass_Lowell_River_Hawks_logo.svg/320px-UMass_Lowell_River_Hawks_logo.svg.png,12
 2024-02-24,V,Bryant,Vermont,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Vermont_Catamounts_logo.svg/246px-Vermont_Catamounts_logo.svg.png,13
 2024-02-29,V,Bryant,UMass Lowell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/43/UMass_Lowell_River_Hawks_logo.svg/320px-UMass_Lowell_River_Hawks_logo.svg.png,14
 2024-03-02,H,Bryant,NJIT,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/30/NJIT_Highlanders_logo.svg/274px-NJIT_Highlanders_logo.svg.png,15
@@ -41,7 +41,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,Maine,Bryant,79,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Bryant_Bulldogs_logo.svg/296px-Bryant_Bulldogs_logo.svg.png,8
 2024-02-10,V,Maine,New Hampshire,57,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/New_Hampshire_Wildcats_logo.svg/284px-New_Hampshire_Wildcats_logo.svg.png,9
 2024-02-15,V,Maine,Bryant,72,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Bryant_Bulldogs_logo.svg/296px-Bryant_Bulldogs_logo.svg.png,10
-2024-02-17,H,Maine,Vermont,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Vermont_Catamounts_logo.svg/246px-Vermont_Catamounts_logo.svg.png,11
+2024-02-17,H,Maine,Vermont,57,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Vermont_Catamounts_logo.svg/246px-Vermont_Catamounts_logo.svg.png,11
 2024-02-22,H,Maine,UMBC,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/UMBC_Retrievers_logo.svg/259px-UMBC_Retrievers_logo.svg.png,12
 2024-02-24,H,Maine,NJIT,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/30/NJIT_Highlanders_logo.svg/274px-NJIT_Highlanders_logo.svg.png,13
 2024-02-29,V,Maine,Binghamton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Binghamton_Bearcats_logo.svg/320px-Binghamton_Bearcats_logo.svg.png,14
@@ -58,7 +58,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-08,H,NJIT,Vermont,63,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Vermont_Catamounts_logo.svg/246px-Vermont_Catamounts_logo.svg.png,9
 2024-02-10,H,NJIT,UMass Lowell,71,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/43/UMass_Lowell_River_Hawks_logo.svg/320px-UMass_Lowell_River_Hawks_logo.svg.png,10
 2024-02-15,V,NJIT,UAlbany,58,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Albany_Great_Danes_logo.svg/200px-Albany_Great_Danes_logo.svg.png,11
-2024-02-17,H,NJIT,Binghamton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Binghamton_Bearcats_logo.svg/320px-Binghamton_Bearcats_logo.svg.png,12
+2024-02-17,H,NJIT,Binghamton,55,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Binghamton_Bearcats_logo.svg/320px-Binghamton_Bearcats_logo.svg.png,12
 2024-02-22,V,NJIT,New Hampshire,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/New_Hampshire_Wildcats_logo.svg/284px-New_Hampshire_Wildcats_logo.svg.png,13
 2024-02-24,V,NJIT,Maine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Maine_Black_Bears_logo.svg/313px-Maine_Black_Bears_logo.svg.png,14
 2024-02-29,H,NJIT,UMBC,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/UMBC_Retrievers_logo.svg/259px-UMBC_Retrievers_logo.svg.png,15
@@ -89,7 +89,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,UAlbany,UMBC,102,114,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/UMBC_Retrievers_logo.svg/259px-UMBC_Retrievers_logo.svg.png,8
 2024-02-08,V,UAlbany,Binghamton,57,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Binghamton_Bearcats_logo.svg/320px-Binghamton_Bearcats_logo.svg.png,9
 2024-02-15,H,UAlbany,NJIT,83,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/30/NJIT_Highlanders_logo.svg/274px-NJIT_Highlanders_logo.svg.png,10
-2024-02-17,V,UAlbany,UMBC,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/UMBC_Retrievers_logo.svg/259px-UMBC_Retrievers_logo.svg.png,11
+2024-02-17,V,UAlbany,UMBC,75,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/UMBC_Retrievers_logo.svg/259px-UMBC_Retrievers_logo.svg.png,11
 2024-02-22,H,UAlbany,Vermont,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Vermont_Catamounts_logo.svg/246px-Vermont_Catamounts_logo.svg.png,12
 2024-02-24,V,UAlbany,UMass Lowell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/43/UMass_Lowell_River_Hawks_logo.svg/320px-UMass_Lowell_River_Hawks_logo.svg.png,13
 2024-02-29,H,UAlbany,New Hampshire,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/New_Hampshire_Wildcats_logo.svg/284px-New_Hampshire_Wildcats_logo.svg.png,14
@@ -106,7 +106,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-08,H,UMBC,UMass Lowell,80,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/43/UMass_Lowell_River_Hawks_logo.svg/320px-UMass_Lowell_River_Hawks_logo.svg.png,9
 2024-02-10,H,UMBC,Vermont,70,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Vermont_Catamounts_logo.svg/246px-Vermont_Catamounts_logo.svg.png,10
 2024-02-15,V,UMBC,Binghamton,89,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Binghamton_Bearcats_logo.svg/320px-Binghamton_Bearcats_logo.svg.png,11
-2024-02-17,H,UMBC,UAlbany,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Albany_Great_Danes_logo.svg/200px-Albany_Great_Danes_logo.svg.png,12
+2024-02-17,H,UMBC,UAlbany,80,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Albany_Great_Danes_logo.svg/200px-Albany_Great_Danes_logo.svg.png,12
 2024-02-22,V,UMBC,Maine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Maine_Black_Bears_logo.svg/313px-Maine_Black_Bears_logo.svg.png,13
 2024-02-24,V,UMBC,New Hampshire,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/New_Hampshire_Wildcats_logo.svg/284px-New_Hampshire_Wildcats_logo.svg.png,14
 2024-02-29,V,UMBC,NJIT,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/30/NJIT_Highlanders_logo.svg/274px-NJIT_Highlanders_logo.svg.png,15
@@ -121,7 +121,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,UMass Lowell,New Hampshire,73,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/New_Hampshire_Wildcats_logo.svg/284px-New_Hampshire_Wildcats_logo.svg.png,8
 2024-02-08,V,UMass Lowell,UMBC,93,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/UMBC_Retrievers_logo.svg/259px-UMBC_Retrievers_logo.svg.png,9
 2024-02-10,V,UMass Lowell,NJIT,64,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/30/NJIT_Highlanders_logo.svg/274px-NJIT_Highlanders_logo.svg.png,10
-2024-02-17,V,UMass Lowell,Bryant,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Bryant_Bulldogs_logo.svg/296px-Bryant_Bulldogs_logo.svg.png,11
+2024-02-17,V,UMass Lowell,Bryant,86,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Bryant_Bulldogs_logo.svg/296px-Bryant_Bulldogs_logo.svg.png,11
 2024-02-22,H,UMass Lowell,Binghamton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Binghamton_Bearcats_logo.svg/320px-Binghamton_Bearcats_logo.svg.png,12
 2024-02-24,H,UMass Lowell,UAlbany,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Albany_Great_Danes_logo.svg/200px-Albany_Great_Danes_logo.svg.png,13
 2024-02-29,H,UMass Lowell,Bryant,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Bryant_Bulldogs_logo.svg/296px-Bryant_Bulldogs_logo.svg.png,14
@@ -138,7 +138,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-08,V,Vermont,NJIT,61,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/30/NJIT_Highlanders_logo.svg/274px-NJIT_Highlanders_logo.svg.png,9
 2024-02-10,V,Vermont,UMBC,72,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/UMBC_Retrievers_logo.svg/259px-UMBC_Retrievers_logo.svg.png,10
 2024-02-15,H,Vermont,New Hampshire,70,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/New_Hampshire_Wildcats_logo.svg/284px-New_Hampshire_Wildcats_logo.svg.png,11
-2024-02-17,V,Vermont,Maine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Maine_Black_Bears_logo.svg/313px-Maine_Black_Bears_logo.svg.png,12
+2024-02-17,V,Vermont,Maine,68,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Maine_Black_Bears_logo.svg/313px-Maine_Black_Bears_logo.svg.png,12
 2024-02-22,V,Vermont,UAlbany,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Albany_Great_Danes_logo.svg/200px-Albany_Great_Danes_logo.svg.png,13
 2024-02-24,H,Vermont,Bryant,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Bryant_Bulldogs_logo.svg/296px-Bryant_Bulldogs_logo.svg.png,14
 2024-03-02,H,Vermont,UMass Lowell,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/43/UMass_Lowell_River_Hawks_logo.svg/320px-UMass_Lowell_River_Hawks_logo.svg.png,15

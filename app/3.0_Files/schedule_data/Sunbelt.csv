@@ -12,7 +12,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,App State,Ga. Southern,85,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Georgia_Southern_Eagles_logo.svg/320px-Georgia_Southern_Eagles_logo.svg.png,11
 2024-02-07,V,App State,Texas St.,56,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Texas_State_Bobcats_logo.svg/206px-Texas_State_Bobcats_logo.svg.png,12
 2024-02-15,H,App State,Marshall,73,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marshall_Thundering_Herd_logo.svg/320px-Marshall_Thundering_Herd_logo.svg.png,13
-2024-02-17,H,App State,Louisiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Ragin_Cajuns_logo.svg/320px-Ragin_Cajuns_logo.svg.png,14
+2024-02-17,H,App State,Louisiana,85,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Ragin_Cajuns_logo.svg/320px-Ragin_Cajuns_logo.svg.png,14
 2024-02-22,V,App State,Old Dominion,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Old_Dominion_Athletics_logo.svg/284px-Old_Dominion_Athletics_logo.svg.png,15
 2024-02-24,V,App State,Marshall,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marshall_Thundering_Herd_logo.svg/320px-Marshall_Thundering_Herd_logo.svg.png,16
 2024-02-28,H,App State,Old Dominion,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Old_Dominion_Athletics_logo.svg/284px-Old_Dominion_Athletics_logo.svg.png,17
@@ -30,7 +30,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,Arkansas St.,ULM,95,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Louisiana-Monroe_Warhawks_logo.svg/320px-Louisiana-Monroe_Warhawks_logo.svg.png,11
 2024-02-07,H,Arkansas St.,James Madison,73,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/James_Madison_University_Athletics_logo.svg/320px-James_Madison_University_Athletics_logo.svg.png,12
 2024-02-15,V,Arkansas St.,Troy,82,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/34/Troy_Trojans_logo.svg,13
-2024-02-17,V,Arkansas St.,South Alabama,NA,NA,FALSE,FALSE,https://giving.usajaguars.com/image/USA-00001_PrimaryMaster2c.png,14
+2024-02-17,V,Arkansas St.,South Alabama,76,73,FALSE,FALSE,https://giving.usajaguars.com/image/USA-00001_PrimaryMaster2c.png,14
 2024-02-22,H,Arkansas St.,Troy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/34/Troy_Trojans_logo.svg,15
 2024-02-24,H,Arkansas St.,South Alabama,NA,NA,FALSE,FALSE,https://giving.usajaguars.com/image/USA-00001_PrimaryMaster2c.png,16
 2024-02-28,V,Arkansas St.,Coastal Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Coastal_Carolina_Chanticleers_logo.svg/214px-Coastal_Carolina_Chanticleers_logo.svg.png,17
@@ -48,8 +48,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,Coastal Carolina,Marshall,74,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marshall_Thundering_Herd_logo.svg/320px-Marshall_Thundering_Herd_logo.svg.png,11
 2024-02-07,V,Coastal Carolina,ULM,75,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Louisiana-Monroe_Warhawks_logo.svg/320px-Louisiana-Monroe_Warhawks_logo.svg.png,12
 2024-02-15,H,Coastal Carolina,Ga. Southern,82,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Georgia_Southern_Eagles_logo.svg/320px-Georgia_Southern_Eagles_logo.svg.png,13
-2024-02-17,H,Coastal Carolina,Marshall,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marshall_Thundering_Herd_logo.svg/320px-Marshall_Thundering_Herd_logo.svg.png,14
-2024-02-21,V,Coastal Carolina,Georgia St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Georgia_State_Athletics_logo.svg/292px-Georgia_State_Athletics_logo.svg.png,15
+2024-02-17,H,Coastal Carolina,Marshall,74,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marshall_Thundering_Herd_logo.svg/320px-Marshall_Thundering_Herd_logo.svg.png,14
+2024-02-21,V,Coastal Carolina,Georgia St.,71,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Georgia_State_Athletics_logo.svg/292px-Georgia_State_Athletics_logo.svg.png,15
 2024-02-24,V,Coastal Carolina,Old Dominion,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Old_Dominion_Athletics_logo.svg/284px-Old_Dominion_Athletics_logo.svg.png,16
 2024-02-28,H,Coastal Carolina,Arkansas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Arkansas_State_Red_Wolves_wordmark.svg/200px-Arkansas_State_Red_Wolves_wordmark.svg.png,17
 2024-03-01,H,Coastal Carolina,James Madison,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/James_Madison_University_Athletics_logo.svg/320px-James_Madison_University_Athletics_logo.svg.png,18
@@ -66,7 +66,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,Ga. Southern,App State,84,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Appalachian_State_Mountaineers_logo.svg/200px-Appalachian_State_Mountaineers_logo.svg.png,11
 2024-02-07,V,Ga. Southern,South Alabama,65,78,FALSE,FALSE,https://giving.usajaguars.com/image/USA-00001_PrimaryMaster2c.png,12
 2024-02-15,V,Ga. Southern,Coastal Carolina,75,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Coastal_Carolina_Chanticleers_logo.svg/214px-Coastal_Carolina_Chanticleers_logo.svg.png,13
-2024-02-17,V,Ga. Southern,James Madison,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/James_Madison_University_Athletics_logo.svg/320px-James_Madison_University_Athletics_logo.svg.png,14
+2024-02-17,V,Ga. Southern,James Madison,80,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/James_Madison_University_Athletics_logo.svg/320px-James_Madison_University_Athletics_logo.svg.png,14
 2024-02-22,H,Ga. Southern,Texas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Texas_State_Bobcats_logo.svg/206px-Texas_State_Bobcats_logo.svg.png,15
 2024-02-24,H,Ga. Southern,James Madison,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/James_Madison_University_Athletics_logo.svg/320px-James_Madison_University_Athletics_logo.svg.png,16
 2024-02-28,H,Ga. Southern,Marshall,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marshall_Thundering_Herd_logo.svg/320px-Marshall_Thundering_Herd_logo.svg.png,17
@@ -84,8 +84,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,Georgia St.,Troy,74,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/34/Troy_Trojans_logo.svg,11
 2024-02-07,V,Georgia St.,Louisiana,78,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Ragin_Cajuns_logo.svg/320px-Ragin_Cajuns_logo.svg.png,12
 2024-02-15,V,Georgia St.,James Madison,63,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/James_Madison_University_Athletics_logo.svg/320px-James_Madison_University_Athletics_logo.svg.png,13
-2024-02-17,V,Georgia St.,Old Dominion,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Old_Dominion_Athletics_logo.svg/284px-Old_Dominion_Athletics_logo.svg.png,14
-2024-02-21,H,Georgia St.,Coastal Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Coastal_Carolina_Chanticleers_logo.svg/214px-Coastal_Carolina_Chanticleers_logo.svg.png,15
+2024-02-17,V,Georgia St.,Old Dominion,68,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Old_Dominion_Athletics_logo.svg/284px-Old_Dominion_Athletics_logo.svg.png,14
+2024-02-21,H,Georgia St.,Coastal Carolina,72,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Coastal_Carolina_Chanticleers_logo.svg/214px-Coastal_Carolina_Chanticleers_logo.svg.png,15
 2024-02-24,H,Georgia St.,Texas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Texas_State_Bobcats_logo.svg/206px-Texas_State_Bobcats_logo.svg.png,16
 2024-02-28,H,Georgia St.,James Madison,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/James_Madison_University_Athletics_logo.svg/320px-James_Madison_University_Athletics_logo.svg.png,17
 2024-03-01,H,Georgia St.,Marshall,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marshall_Thundering_Herd_logo.svg/320px-Marshall_Thundering_Herd_logo.svg.png,18
@@ -103,8 +103,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,James Madison,Old Dominion,78,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Old_Dominion_Athletics_logo.svg/284px-Old_Dominion_Athletics_logo.svg.png,12
 2024-02-07,V,James Madison,Arkansas St.,77,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Arkansas_State_Red_Wolves_wordmark.svg/200px-Arkansas_State_Red_Wolves_wordmark.svg.png,13
 2024-02-15,H,James Madison,Georgia St.,83,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Georgia_State_Athletics_logo.svg/292px-Georgia_State_Athletics_logo.svg.png,14
-2024-02-17,H,James Madison,Ga. Southern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Georgia_Southern_Eagles_logo.svg/320px-Georgia_Southern_Eagles_logo.svg.png,15
-2024-02-21,V,James Madison,Marshall,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marshall_Thundering_Herd_logo.svg/320px-Marshall_Thundering_Herd_logo.svg.png,16
+2024-02-17,H,James Madison,Ga. Southern,87,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Georgia_Southern_Eagles_logo.svg/320px-Georgia_Southern_Eagles_logo.svg.png,15
+2024-02-21,V,James Madison,Marshall,84,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marshall_Thundering_Herd_logo.svg/320px-Marshall_Thundering_Herd_logo.svg.png,16
 2024-02-24,V,James Madison,Ga. Southern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Georgia_Southern_Eagles_logo.svg/320px-Georgia_Southern_Eagles_logo.svg.png,17
 2024-02-28,V,James Madison,Georgia St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Georgia_State_Athletics_logo.svg/292px-Georgia_State_Athletics_logo.svg.png,18
 2024-03-01,V,James Madison,Coastal Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Coastal_Carolina_Chanticleers_logo.svg/214px-Coastal_Carolina_Chanticleers_logo.svg.png,19
@@ -121,7 +121,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,Louisiana,South Alabama,80,60,FALSE,FALSE,https://giving.usajaguars.com/image/USA-00001_PrimaryMaster2c.png,11
 2024-02-07,H,Louisiana,Georgia St.,69,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Georgia_State_Athletics_logo.svg/292px-Georgia_State_Athletics_logo.svg.png,12
 2024-02-15,V,Louisiana,Old Dominion,68,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Old_Dominion_Athletics_logo.svg/284px-Old_Dominion_Athletics_logo.svg.png,13
-2024-02-17,V,Louisiana,App State,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Appalachian_State_Mountaineers_logo.svg/200px-Appalachian_State_Mountaineers_logo.svg.png,14
+2024-02-17,V,Louisiana,App State,73,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Appalachian_State_Mountaineers_logo.svg/200px-Appalachian_State_Mountaineers_logo.svg.png,14
 2024-02-22,V,Louisiana,ULM,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Louisiana-Monroe_Warhawks_logo.svg/320px-Louisiana-Monroe_Warhawks_logo.svg.png,15
 2024-02-24,V,Louisiana,Southern Miss.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Southern_Miss_Athletics_logo.svg/320px-Southern_Miss_Athletics_logo.svg.png,16
 2024-02-28,H,Louisiana,Troy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/34/Troy_Trojans_logo.svg,17
@@ -139,8 +139,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,Marshall,Coastal Carolina,91,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Coastal_Carolina_Chanticleers_logo.svg/214px-Coastal_Carolina_Chanticleers_logo.svg.png,11
 2024-02-07,V,Marshall,Troy,66,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/34/Troy_Trojans_logo.svg,12
 2024-02-15,V,Marshall,App State,58,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Appalachian_State_Mountaineers_logo.svg/200px-Appalachian_State_Mountaineers_logo.svg.png,13
-2024-02-17,V,Marshall,Coastal Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Coastal_Carolina_Chanticleers_logo.svg/214px-Coastal_Carolina_Chanticleers_logo.svg.png,14
-2024-02-21,H,Marshall,James Madison,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/James_Madison_University_Athletics_logo.svg/320px-James_Madison_University_Athletics_logo.svg.png,15
+2024-02-17,V,Marshall,Coastal Carolina,67,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Coastal_Carolina_Chanticleers_logo.svg/214px-Coastal_Carolina_Chanticleers_logo.svg.png,14
+2024-02-21,H,Marshall,James Madison,58,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/James_Madison_University_Athletics_logo.svg/320px-James_Madison_University_Athletics_logo.svg.png,15
 2024-02-24,H,Marshall,App State,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Appalachian_State_Mountaineers_logo.svg/200px-Appalachian_State_Mountaineers_logo.svg.png,16
 2024-02-28,V,Marshall,Ga. Southern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Georgia_Southern_Eagles_logo.svg/320px-Georgia_Southern_Eagles_logo.svg.png,17
 2024-03-01,V,Marshall,Georgia St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Georgia_State_Athletics_logo.svg/292px-Georgia_State_Athletics_logo.svg.png,18
@@ -158,7 +158,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,Old Dominion,James Madison,63,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/James_Madison_University_Athletics_logo.svg/320px-James_Madison_University_Athletics_logo.svg.png,12
 2024-02-07,V,Old Dominion,Southern Miss.,73,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Southern_Miss_Athletics_logo.svg/320px-Southern_Miss_Athletics_logo.svg.png,13
 2024-02-15,H,Old Dominion,Louisiana,60,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Ragin_Cajuns_logo.svg/320px-Ragin_Cajuns_logo.svg.png,14
-2024-02-17,H,Old Dominion,Georgia St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Georgia_State_Athletics_logo.svg/292px-Georgia_State_Athletics_logo.svg.png,15
+2024-02-17,H,Old Dominion,Georgia St.,65,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Georgia_State_Athletics_logo.svg/292px-Georgia_State_Athletics_logo.svg.png,15
 2024-02-22,H,Old Dominion,App State,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Appalachian_State_Mountaineers_logo.svg/200px-Appalachian_State_Mountaineers_logo.svg.png,16
 2024-02-24,H,Old Dominion,Coastal Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Coastal_Carolina_Chanticleers_logo.svg/214px-Coastal_Carolina_Chanticleers_logo.svg.png,17
 2024-02-28,V,Old Dominion,App State,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Appalachian_State_Mountaineers_logo.svg/200px-Appalachian_State_Mountaineers_logo.svg.png,18
@@ -176,7 +176,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,South Alabama,Louisiana,60,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Ragin_Cajuns_logo.svg/320px-Ragin_Cajuns_logo.svg.png,11
 2024-02-07,H,South Alabama,Ga. Southern,78,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Georgia_Southern_Eagles_logo.svg/320px-Georgia_Southern_Eagles_logo.svg.png,12
 2024-02-15,H,South Alabama,Texas St.,72,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Texas_State_Bobcats_logo.svg/206px-Texas_State_Bobcats_logo.svg.png,13
-2024-02-17,H,South Alabama,Arkansas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Arkansas_State_Red_Wolves_wordmark.svg/200px-Arkansas_State_Red_Wolves_wordmark.svg.png,14
+2024-02-17,H,South Alabama,Arkansas St.,73,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Arkansas_State_Red_Wolves_wordmark.svg/200px-Arkansas_State_Red_Wolves_wordmark.svg.png,14
 2024-02-22,V,South Alabama,Southern Miss.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Southern_Miss_Athletics_logo.svg/320px-Southern_Miss_Athletics_logo.svg.png,15
 2024-02-24,V,South Alabama,Arkansas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Arkansas_State_Red_Wolves_wordmark.svg/200px-Arkansas_State_Red_Wolves_wordmark.svg.png,16
 2024-02-28,H,South Alabama,Southern Miss.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Southern_Miss_Athletics_logo.svg/320px-Southern_Miss_Athletics_logo.svg.png,17
@@ -194,7 +194,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,Southern Miss.,Texas St.,55,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Texas_State_Bobcats_logo.svg/206px-Texas_State_Bobcats_logo.svg.png,11
 2024-02-07,H,Southern Miss.,Old Dominion,78,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Old_Dominion_Athletics_logo.svg/284px-Old_Dominion_Athletics_logo.svg.png,12
 2024-02-15,H,Southern Miss.,ULM,59,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Louisiana-Monroe_Warhawks_logo.svg/320px-Louisiana-Monroe_Warhawks_logo.svg.png,13
-2024-02-17,H,Southern Miss.,Texas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Texas_State_Bobcats_logo.svg/206px-Texas_State_Bobcats_logo.svg.png,14
+2024-02-17,H,Southern Miss.,Texas St.,78,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Texas_State_Bobcats_logo.svg/206px-Texas_State_Bobcats_logo.svg.png,14
 2024-02-22,H,Southern Miss.,South Alabama,NA,NA,FALSE,FALSE,https://giving.usajaguars.com/image/USA-00001_PrimaryMaster2c.png,15
 2024-02-24,H,Southern Miss.,Louisiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Ragin_Cajuns_logo.svg/320px-Ragin_Cajuns_logo.svg.png,16
 2024-02-28,V,Southern Miss.,South Alabama,NA,NA,FALSE,FALSE,https://giving.usajaguars.com/image/USA-00001_PrimaryMaster2c.png,17
@@ -212,7 +212,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,H,Texas St.,Southern Miss.,60,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Southern_Miss_Athletics_logo.svg/320px-Southern_Miss_Athletics_logo.svg.png,11
 2024-02-07,H,Texas St.,App State,63,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Appalachian_State_Mountaineers_logo.svg/200px-Appalachian_State_Mountaineers_logo.svg.png,12
 2024-02-15,V,Texas St.,South Alabama,55,72,FALSE,FALSE,https://giving.usajaguars.com/image/USA-00001_PrimaryMaster2c.png,13
-2024-02-17,V,Texas St.,Southern Miss.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Southern_Miss_Athletics_logo.svg/320px-Southern_Miss_Athletics_logo.svg.png,14
+2024-02-17,V,Texas St.,Southern Miss.,74,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Southern_Miss_Athletics_logo.svg/320px-Southern_Miss_Athletics_logo.svg.png,14
 2024-02-22,V,Texas St.,Ga. Southern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Georgia_Southern_Eagles_logo.svg/320px-Georgia_Southern_Eagles_logo.svg.png,15
 2024-02-24,V,Texas St.,Georgia St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Georgia_State_Athletics_logo.svg/292px-Georgia_State_Athletics_logo.svg.png,16
 2024-02-27,H,Texas St.,ULM,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Louisiana-Monroe_Warhawks_logo.svg/320px-Louisiana-Monroe_Warhawks_logo.svg.png,17
@@ -230,7 +230,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,Troy,Georgia St.,78,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Georgia_State_Athletics_logo.svg/292px-Georgia_State_Athletics_logo.svg.png,11
 2024-02-07,H,Troy,Marshall,82,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marshall_Thundering_Herd_logo.svg/320px-Marshall_Thundering_Herd_logo.svg.png,12
 2024-02-15,H,Troy,Arkansas St.,71,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Arkansas_State_Red_Wolves_wordmark.svg/200px-Arkansas_State_Red_Wolves_wordmark.svg.png,13
-2024-02-17,H,Troy,ULM,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Louisiana-Monroe_Warhawks_logo.svg/320px-Louisiana-Monroe_Warhawks_logo.svg.png,14
+2024-02-17,H,Troy,ULM,85,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Louisiana-Monroe_Warhawks_logo.svg/320px-Louisiana-Monroe_Warhawks_logo.svg.png,14
 2024-02-22,V,Troy,Arkansas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Arkansas_State_Red_Wolves_wordmark.svg/200px-Arkansas_State_Red_Wolves_wordmark.svg.png,15
 2024-02-24,V,Troy,ULM,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Louisiana-Monroe_Warhawks_logo.svg/320px-Louisiana-Monroe_Warhawks_logo.svg.png,16
 2024-02-28,V,Troy,Louisiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Ragin_Cajuns_logo.svg/320px-Ragin_Cajuns_logo.svg.png,17
@@ -248,7 +248,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-03,V,ULM,Arkansas St.,80,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Arkansas_State_Red_Wolves_wordmark.svg/200px-Arkansas_State_Red_Wolves_wordmark.svg.png,11
 2024-02-07,H,ULM,Coastal Carolina,79,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Coastal_Carolina_Chanticleers_logo.svg/214px-Coastal_Carolina_Chanticleers_logo.svg.png,12
 2024-02-15,V,ULM,Southern Miss.,68,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Southern_Miss_Athletics_logo.svg/320px-Southern_Miss_Athletics_logo.svg.png,13
-2024-02-17,V,ULM,Troy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/34/Troy_Trojans_logo.svg,14
+2024-02-17,V,ULM,Troy,57,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/34/Troy_Trojans_logo.svg,14
 2024-02-22,H,ULM,Louisiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Ragin_Cajuns_logo.svg/320px-Ragin_Cajuns_logo.svg.png,15
 2024-02-24,H,ULM,Troy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/34/Troy_Trojans_logo.svg,16
 2024-02-27,V,ULM,Texas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Texas_State_Bobcats_logo.svg/206px-Texas_State_Bobcats_logo.svg.png,17

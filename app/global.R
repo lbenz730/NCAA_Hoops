@@ -815,7 +815,8 @@ for(j in 2:9) {
     } else if(!is.na(df[i,j]) & df[i,j] == '0-2') {
       tab <- 
         tab %>% 
-        tab_style(style = cell_fill(color = 'darkred'),
+        tab_style(style = list(cell_fill(color = 'darkred'),
+                               cell_text(color = "white")),
                   locations = cells_body(columns = j, 
                                          rows = i)
         )
@@ -829,7 +830,8 @@ for(j in 2:9) {
     } else if(!is.na(df[i,j]) & df[i,j] == '2-0') {
       tab <- 
         tab %>% 
-        tab_style(style = cell_fill(color = 'darkgreen'),
+        tab_style(style = list(cell_fill(color = 'darkgreen'),
+                               cell_text(color = "white")),
                   locations = cells_body(columns = j, 
                                          rows = i)
         )
