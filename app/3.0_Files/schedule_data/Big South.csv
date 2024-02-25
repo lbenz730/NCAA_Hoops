@@ -12,7 +12,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-14,H,Charleston So.,Gardner-Webb,77,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Gardner-Webb_Runnin%27_Bulldogs_logo.svg/320px-Gardner-Webb_Runnin%27_Bulldogs_logo.svg.png,11
 2024-02-17,V,Charleston So.,UNC Asheville,55,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/93/UNC_Asheville_Bulldogs_logo.svg/320px-UNC_Asheville_Bulldogs_logo.svg.png,12
 2024-02-21,V,Charleston So.,USC Upstate,63,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/USC_Upstate_Spartans_logo.svg/320px-USC_Upstate_Spartans_logo.svg.png,13
-2024-02-24,H,Charleston So.,High Point,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/High_Point_Panthers_logo.svg/320px-High_Point_Panthers_logo.svg.png,14
+2024-02-24,H,Charleston So.,High Point,59,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/High_Point_Panthers_logo.svg/320px-High_Point_Panthers_logo.svg.png,14
 2024-02-28,H,Charleston So.,Radford,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Radford_Highlanders_logo.svg/284px-Radford_Highlanders_logo.svg.png,15
 2024-03-02,V,Charleston So.,Presbyterian,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Presbyterian_College_logo.svg/237px-Presbyterian_College_logo.svg.png,16
 2024-01-06,V,Gardner-Webb,High Point,76,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/High_Point_Panthers_logo.svg/320px-High_Point_Panthers_logo.svg.png,1
@@ -28,7 +28,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-14,V,Gardner-Webb,Charleston So.,85,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Charleston_Southern_Buccaneers_logo.svg/273px-Charleston_Southern_Buccaneers_logo.svg.png,11
 2024-02-17,V,Gardner-Webb,USC Upstate,73,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/USC_Upstate_Spartans_logo.svg/320px-USC_Upstate_Spartans_logo.svg.png,12
 2024-02-22,H,Gardner-Webb,Radford,74,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Radford_Highlanders_logo.svg/284px-Radford_Highlanders_logo.svg.png,13
-2024-02-24,V,Gardner-Webb,UNC Asheville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/93/UNC_Asheville_Bulldogs_logo.svg/320px-UNC_Asheville_Bulldogs_logo.svg.png,14
+2024-02-24,V,Gardner-Webb,UNC Asheville,78,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/93/UNC_Asheville_Bulldogs_logo.svg/320px-UNC_Asheville_Bulldogs_logo.svg.png,14
 2024-02-28,H,Gardner-Webb,Longwood,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Longwood_Lancers_logo.svg/320px-Longwood_Lancers_logo.svg.png,15
 2024-03-02,V,Gardner-Webb,Winthrop,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Winthrop_Eagles_logo.svg/274px-Winthrop_Eagles_logo.svg.png,16
 2024-01-03,V,High Point,Radford,85,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Radford_Highlanders_logo.svg/284px-Radford_Highlanders_logo.svg.png,1
@@ -44,7 +44,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-10,V,High Point,Gardner-Webb,78,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Gardner-Webb_Runnin%27_Bulldogs_logo.svg/320px-Gardner-Webb_Runnin%27_Bulldogs_logo.svg.png,11
 2024-02-14,H,High Point,USC Upstate,81,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/USC_Upstate_Spartans_logo.svg/320px-USC_Upstate_Spartans_logo.svg.png,12
 2024-02-17,H,High Point,Radford,99,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Radford_Highlanders_logo.svg/284px-Radford_Highlanders_logo.svg.png,13
-2024-02-24,V,High Point,Charleston So.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Charleston_Southern_Buccaneers_logo.svg/273px-Charleston_Southern_Buccaneers_logo.svg.png,14
+2024-02-24,V,High Point,Charleston So.,74,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Charleston_Southern_Buccaneers_logo.svg/273px-Charleston_Southern_Buccaneers_logo.svg.png,14
 2024-02-28,H,High Point,Winthrop,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Winthrop_Eagles_logo.svg/274px-Winthrop_Eagles_logo.svg.png,15
 2024-03-02,V,High Point,Longwood,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Longwood_Lancers_logo.svg/320px-Longwood_Lancers_logo.svg.png,16
 2024-01-03,V,Longwood,Winthrop,60,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Winthrop_Eagles_logo.svg/274px-Winthrop_Eagles_logo.svg.png,1
@@ -60,7 +60,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-10,H,Longwood,Winthrop,84,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Winthrop_Eagles_logo.svg/274px-Winthrop_Eagles_logo.svg.png,11
 2024-02-17,V,Longwood,Presbyterian,81,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Presbyterian_College_logo.svg/237px-Presbyterian_College_logo.svg.png,12
 2024-02-21,H,Longwood,UNC Asheville,80,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/93/UNC_Asheville_Bulldogs_logo.svg/320px-UNC_Asheville_Bulldogs_logo.svg.png,13
-2024-02-24,V,Longwood,Radford,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Radford_Highlanders_logo.svg/284px-Radford_Highlanders_logo.svg.png,14
+2024-02-24,V,Longwood,Radford,82,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Radford_Highlanders_logo.svg/284px-Radford_Highlanders_logo.svg.png,14
 2024-02-28,V,Longwood,Gardner-Webb,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Gardner-Webb_Runnin%27_Bulldogs_logo.svg/320px-Gardner-Webb_Runnin%27_Bulldogs_logo.svg.png,15
 2024-03-02,H,Longwood,High Point,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/High_Point_Panthers_logo.svg/320px-High_Point_Panthers_logo.svg.png,16
 2024-01-03,V,Presbyterian,Charleston So.,68,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Charleston_Southern_Buccaneers_logo.svg/273px-Charleston_Southern_Buccaneers_logo.svg.png,1
@@ -92,7 +92,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-15,H,Radford,Winthrop,69,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Winthrop_Eagles_logo.svg/274px-Winthrop_Eagles_logo.svg.png,11
 2024-02-17,V,Radford,High Point,74,99,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/High_Point_Panthers_logo.svg/320px-High_Point_Panthers_logo.svg.png,12
 2024-02-22,V,Radford,Gardner-Webb,90,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Gardner-Webb_Runnin%27_Bulldogs_logo.svg/320px-Gardner-Webb_Runnin%27_Bulldogs_logo.svg.png,13
-2024-02-24,H,Radford,Longwood,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Longwood_Lancers_logo.svg/320px-Longwood_Lancers_logo.svg.png,14
+2024-02-24,H,Radford,Longwood,88,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Longwood_Lancers_logo.svg/320px-Longwood_Lancers_logo.svg.png,14
 2024-02-28,V,Radford,Charleston So.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Charleston_Southern_Buccaneers_logo.svg/273px-Charleston_Southern_Buccaneers_logo.svg.png,15
 2024-03-02,H,Radford,UNC Asheville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/93/UNC_Asheville_Bulldogs_logo.svg/320px-UNC_Asheville_Bulldogs_logo.svg.png,16
 2024-01-03,H,UNC Asheville,USC Upstate,95,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/USC_Upstate_Spartans_logo.svg/320px-USC_Upstate_Spartans_logo.svg.png,1
@@ -109,7 +109,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-14,H,UNC Asheville,Presbyterian,71,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Presbyterian_College_logo.svg/237px-Presbyterian_College_logo.svg.png,12
 2024-02-17,H,UNC Asheville,Charleston So.,86,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Charleston_Southern_Buccaneers_logo.svg/273px-Charleston_Southern_Buccaneers_logo.svg.png,13
 2024-02-21,V,UNC Asheville,Longwood,75,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Longwood_Lancers_logo.svg/320px-Longwood_Lancers_logo.svg.png,14
-2024-02-24,H,UNC Asheville,Gardner-Webb,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Gardner-Webb_Runnin%27_Bulldogs_logo.svg/320px-Gardner-Webb_Runnin%27_Bulldogs_logo.svg.png,15
+2024-02-24,H,UNC Asheville,Gardner-Webb,77,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Gardner-Webb_Runnin%27_Bulldogs_logo.svg/320px-Gardner-Webb_Runnin%27_Bulldogs_logo.svg.png,15
 2024-03-02,V,UNC Asheville,Radford,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Radford_Highlanders_logo.svg/284px-Radford_Highlanders_logo.svg.png,16
 2024-01-03,V,USC Upstate,UNC Asheville,67,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/93/UNC_Asheville_Bulldogs_logo.svg/320px-UNC_Asheville_Bulldogs_logo.svg.png,1
 2024-01-06,H,USC Upstate,Winthrop,80,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Winthrop_Eagles_logo.svg/274px-Winthrop_Eagles_logo.svg.png,2
@@ -125,7 +125,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-14,V,USC Upstate,High Point,86,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/High_Point_Panthers_logo.svg/320px-High_Point_Panthers_logo.svg.png,12
 2024-02-17,H,USC Upstate,Gardner-Webb,65,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Gardner-Webb_Runnin%27_Bulldogs_logo.svg/320px-Gardner-Webb_Runnin%27_Bulldogs_logo.svg.png,13
 2024-02-21,H,USC Upstate,Charleston So.,60,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Charleston_Southern_Buccaneers_logo.svg/273px-Charleston_Southern_Buccaneers_logo.svg.png,14
-2024-02-24,V,USC Upstate,Winthrop,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Winthrop_Eagles_logo.svg/274px-Winthrop_Eagles_logo.svg.png,15
+2024-02-24,V,USC Upstate,Winthrop,74,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Winthrop_Eagles_logo.svg/274px-Winthrop_Eagles_logo.svg.png,15
 2024-02-28,H,USC Upstate,Presbyterian,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Presbyterian_College_logo.svg/237px-Presbyterian_College_logo.svg.png,16
 2024-01-03,H,Winthrop,Longwood,68,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Longwood_Lancers_logo.svg/320px-Longwood_Lancers_logo.svg.png,1
 2024-01-06,V,Winthrop,USC Upstate,82,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/USC_Upstate_Spartans_logo.svg/320px-USC_Upstate_Spartans_logo.svg.png,2
@@ -140,6 +140,6 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-10,V,Winthrop,Longwood,74,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Longwood_Lancers_logo.svg/320px-Longwood_Lancers_logo.svg.png,11
 2024-02-15,V,Winthrop,Radford,85,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Radford_Highlanders_logo.svg/284px-Radford_Highlanders_logo.svg.png,12
 2024-02-21,H,Winthrop,Presbyterian,55,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Presbyterian_College_logo.svg/237px-Presbyterian_College_logo.svg.png,13
-2024-02-24,H,Winthrop,USC Upstate,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/USC_Upstate_Spartans_logo.svg/320px-USC_Upstate_Spartans_logo.svg.png,14
+2024-02-24,H,Winthrop,USC Upstate,83,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/USC_Upstate_Spartans_logo.svg/320px-USC_Upstate_Spartans_logo.svg.png,14
 2024-02-28,V,Winthrop,High Point,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/High_Point_Panthers_logo.svg/320px-High_Point_Panthers_logo.svg.png,15
 2024-03-02,H,Winthrop,Gardner-Webb,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Gardner-Webb_Runnin%27_Bulldogs_logo.svg/320px-Gardner-Webb_Runnin%27_Bulldogs_logo.svg.png,16

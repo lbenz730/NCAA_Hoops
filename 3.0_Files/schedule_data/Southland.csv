@@ -12,7 +12,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-12,V,A&M-Corpus Christi,Nicholls,63,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,11
 2024-02-17,H,A&M-Corpus Christi,Tex. A&M-Commerce,86,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Texas_A%26M%E2%80%93Commerce_Lions_logo.svg/200px-Texas_A%26M%E2%80%93Commerce_Lions_logo.svg.png,12
 2024-02-19,H,A&M-Corpus Christi,Northwestern St.,72,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Northwestern_State_Demons_wordmark.svg/320px-Northwestern_State_Demons_wordmark.svg.png,13
-2024-02-24,V,A&M-Corpus Christi,Lamar University,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Lamar_Cardinals_logo.svg/320px-Lamar_Cardinals_logo.svg.png,14
+2024-02-24,V,A&M-Corpus Christi,Lamar University,75,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Lamar_Cardinals_logo.svg/320px-Lamar_Cardinals_logo.svg.png,14
 2024-02-26,V,A&M-Corpus Christi,Houston Christian,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Houston_Baptist_Huskies_logo.svg/227px-Houston_Baptist_Huskies_logo.svg.png,15
 2024-03-02,H,A&M-Corpus Christi,Southeastern La.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Southeastern_Louisiana_Lions_script.svg/175px-Southeastern_Louisiana_Lions_script.svg.png,16
 2024-03-04,H,A&M-Corpus Christi,New Orleans,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/27/New_Orleans_Privateers_logo.svg/278px-New_Orleans_Privateers_logo.svg.png,17
@@ -30,7 +30,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-10,H,Houston Christian,UIW,86,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Incarnate_Word_Cardinals_logo.svg/320px-Incarnate_Word_Cardinals_logo.svg.png,11
 2024-02-12,H,Houston Christian,McNeese,54,105,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,12
 2024-02-17,V,Houston Christian,Southeastern La.,78,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Southeastern_Louisiana_Lions_script.svg/175px-Southeastern_Louisiana_Lions_script.svg.png,13
-2024-02-24,H,Houston Christian,Northwestern St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Northwestern_State_Demons_wordmark.svg/320px-Northwestern_State_Demons_wordmark.svg.png,14
+2024-02-24,H,Houston Christian,Northwestern St.,73,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Northwestern_State_Demons_wordmark.svg/320px-Northwestern_State_Demons_wordmark.svg.png,14
 2024-02-26,H,Houston Christian,A&M-Corpus Christi,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg/260px-Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg.png,15
 2024-03-02,H,Houston Christian,Tex. A&M-Commerce,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Texas_A%26M%E2%80%93Commerce_Lions_logo.svg/200px-Texas_A%26M%E2%80%93Commerce_Lions_logo.svg.png,16
 2024-03-04,V,Houston Christian,McNeese,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,17
@@ -48,7 +48,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-12,V,Lamar University,UIW,67,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Incarnate_Word_Cardinals_logo.svg/320px-Incarnate_Word_Cardinals_logo.svg.png,11
 2024-02-17,V,Lamar University,New Orleans,94,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/27/New_Orleans_Privateers_logo.svg/278px-New_Orleans_Privateers_logo.svg.png,12
 2024-02-19,V,Lamar University,Southeastern La.,77,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Southeastern_Louisiana_Lions_script.svg/175px-Southeastern_Louisiana_Lions_script.svg.png,13
-2024-02-24,H,Lamar University,A&M-Corpus Christi,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg/260px-Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg.png,14
+2024-02-24,H,Lamar University,A&M-Corpus Christi,61,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg/260px-Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg.png,14
 2024-02-26,H,Lamar University,McNeese,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,15
 2024-03-02,V,Lamar University,Northwestern St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Northwestern_State_Demons_wordmark.svg/320px-Northwestern_State_Demons_wordmark.svg.png,16
 2024-03-04,V,Lamar University,Tex. A&M-Commerce,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Texas_A%26M%E2%80%93Commerce_Lions_logo.svg/200px-Texas_A%26M%E2%80%93Commerce_Lions_logo.svg.png,17
@@ -66,7 +66,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-10,H,McNeese,A&M-Corpus Christi,74,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg/260px-Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg.png,11
 2024-02-12,V,McNeese,Houston Christian,105,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Houston_Baptist_Huskies_logo.svg/227px-Houston_Baptist_Huskies_logo.svg.png,12
 2024-02-17,V,McNeese,Nicholls,74,47,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,13
-2024-02-24,H,McNeese,UIW,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Incarnate_Word_Cardinals_logo.svg/320px-Incarnate_Word_Cardinals_logo.svg.png,14
+2024-02-24,H,McNeese,UIW,87,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Incarnate_Word_Cardinals_logo.svg/320px-Incarnate_Word_Cardinals_logo.svg.png,14
 2024-02-26,V,McNeese,Lamar University,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Lamar_Cardinals_logo.svg/320px-Lamar_Cardinals_logo.svg.png,15
 2024-03-02,H,McNeese,Nicholls,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,16
 2024-03-04,H,McNeese,Houston Christian,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Houston_Baptist_Huskies_logo.svg/227px-Houston_Baptist_Huskies_logo.svg.png,17
@@ -85,7 +85,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-12,V,New Orleans,Northwestern St.,59,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Northwestern_State_Demons_wordmark.svg/320px-Northwestern_State_Demons_wordmark.svg.png,12
 2024-02-17,H,New Orleans,Lamar University,72,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Lamar_Cardinals_logo.svg/320px-Lamar_Cardinals_logo.svg.png,13
 2024-02-19,H,New Orleans,Nicholls,77,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,14
-2024-02-24,V,New Orleans,Southeastern La.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Southeastern_Louisiana_Lions_script.svg/175px-Southeastern_Louisiana_Lions_script.svg.png,15
+2024-02-24,V,New Orleans,Southeastern La.,67,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Southeastern_Louisiana_Lions_script.svg/175px-Southeastern_Louisiana_Lions_script.svg.png,15
 2024-03-02,V,New Orleans,UIW,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Incarnate_Word_Cardinals_logo.svg/320px-Incarnate_Word_Cardinals_logo.svg.png,16
 2024-03-04,V,New Orleans,A&M-Corpus Christi,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg/260px-Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg.png,17
 2024-03-06,H,New Orleans,McNeese,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,18
@@ -102,7 +102,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-12,H,Nicholls,A&M-Corpus Christi,67,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg/260px-Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg.png,11
 2024-02-17,H,Nicholls,McNeese,47,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,12
 2024-02-19,V,Nicholls,New Orleans,89,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/27/New_Orleans_Privateers_logo.svg/278px-New_Orleans_Privateers_logo.svg.png,13
-2024-02-24,H,Nicholls,Tex. A&M-Commerce,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Texas_A%26M%E2%80%93Commerce_Lions_logo.svg/200px-Texas_A%26M%E2%80%93Commerce_Lions_logo.svg.png,14
+2024-02-24,H,Nicholls,Tex. A&M-Commerce,85,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Texas_A%26M%E2%80%93Commerce_Lions_logo.svg/200px-Texas_A%26M%E2%80%93Commerce_Lions_logo.svg.png,14
 2024-02-26,H,Nicholls,UIW,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Incarnate_Word_Cardinals_logo.svg/320px-Incarnate_Word_Cardinals_logo.svg.png,15
 2024-03-02,V,Nicholls,McNeese,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,16
 2024-03-04,V,Nicholls,Northwestern St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Northwestern_State_Demons_wordmark.svg/320px-Northwestern_State_Demons_wordmark.svg.png,17
@@ -121,7 +121,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-12,H,Northwestern St.,New Orleans,70,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/27/New_Orleans_Privateers_logo.svg/278px-New_Orleans_Privateers_logo.svg.png,12
 2024-02-17,V,Northwestern St.,UIW,81,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Incarnate_Word_Cardinals_logo.svg/320px-Incarnate_Word_Cardinals_logo.svg.png,13
 2024-02-19,V,Northwestern St.,A&M-Corpus Christi,61,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg/260px-Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg.png,14
-2024-02-24,V,Northwestern St.,Houston Christian,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Houston_Baptist_Huskies_logo.svg/227px-Houston_Baptist_Huskies_logo.svg.png,15
+2024-02-24,V,Northwestern St.,Houston Christian,86,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Houston_Baptist_Huskies_logo.svg/227px-Houston_Baptist_Huskies_logo.svg.png,15
 2024-03-02,H,Northwestern St.,Lamar University,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Lamar_Cardinals_logo.svg/320px-Lamar_Cardinals_logo.svg.png,16
 2024-03-04,H,Northwestern St.,Nicholls,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,17
 2024-03-06,V,Northwestern St.,Tex. A&M-Commerce,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Texas_A%26M%E2%80%93Commerce_Lions_logo.svg/200px-Texas_A%26M%E2%80%93Commerce_Lions_logo.svg.png,18
@@ -139,7 +139,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-12,V,Southeastern La.,Tex. A&M-Commerce,79,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Texas_A%26M%E2%80%93Commerce_Lions_logo.svg/200px-Texas_A%26M%E2%80%93Commerce_Lions_logo.svg.png,12
 2024-02-17,H,Southeastern La.,Houston Christian,81,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Houston_Baptist_Huskies_logo.svg/227px-Houston_Baptist_Huskies_logo.svg.png,13
 2024-02-19,H,Southeastern La.,Lamar University,72,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Lamar_Cardinals_logo.svg/320px-Lamar_Cardinals_logo.svg.png,14
-2024-02-24,H,Southeastern La.,New Orleans,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/27/New_Orleans_Privateers_logo.svg/278px-New_Orleans_Privateers_logo.svg.png,15
+2024-02-24,H,Southeastern La.,New Orleans,77,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/27/New_Orleans_Privateers_logo.svg/278px-New_Orleans_Privateers_logo.svg.png,15
 2024-03-02,V,Southeastern La.,A&M-Corpus Christi,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg/260px-Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg.png,16
 2024-03-04,V,Southeastern La.,UIW,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Incarnate_Word_Cardinals_logo.svg/320px-Incarnate_Word_Cardinals_logo.svg.png,17
 2024-03-06,H,Southeastern La.,Nicholls,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,18
@@ -157,7 +157,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-12,H,Tex. A&M-Commerce,Southeastern La.,77,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Southeastern_Louisiana_Lions_script.svg/175px-Southeastern_Louisiana_Lions_script.svg.png,12
 2024-02-17,V,Tex. A&M-Commerce,A&M-Corpus Christi,63,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg/260px-Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg.png,13
 2024-02-19,V,Tex. A&M-Commerce,UIW,76,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Incarnate_Word_Cardinals_logo.svg/320px-Incarnate_Word_Cardinals_logo.svg.png,14
-2024-02-24,V,Tex. A&M-Commerce,Nicholls,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,15
+2024-02-24,V,Tex. A&M-Commerce,Nicholls,70,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,15
 2024-03-02,V,Tex. A&M-Commerce,Houston Christian,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Houston_Baptist_Huskies_logo.svg/227px-Houston_Baptist_Huskies_logo.svg.png,16
 2024-03-04,H,Tex. A&M-Commerce,Lamar University,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Lamar_Cardinals_logo.svg/320px-Lamar_Cardinals_logo.svg.png,17
 2024-03-06,H,Tex. A&M-Commerce,Northwestern St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Northwestern_State_Demons_wordmark.svg/320px-Northwestern_State_Demons_wordmark.svg.png,18
@@ -174,7 +174,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-12,H,UIW,Lamar University,76,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Lamar_Cardinals_logo.svg/320px-Lamar_Cardinals_logo.svg.png,11
 2024-02-17,H,UIW,Northwestern St.,61,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Northwestern_State_Demons_wordmark.svg/320px-Northwestern_State_Demons_wordmark.svg.png,12
 2024-02-19,H,UIW,Tex. A&M-Commerce,72,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Texas_A%26M%E2%80%93Commerce_Lions_logo.svg/200px-Texas_A%26M%E2%80%93Commerce_Lions_logo.svg.png,13
-2024-02-24,V,UIW,McNeese,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,14
+2024-02-24,V,UIW,McNeese,71,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,14
 2024-02-26,V,UIW,Nicholls,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,15
 2024-03-02,H,UIW,New Orleans,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/27/New_Orleans_Privateers_logo.svg/278px-New_Orleans_Privateers_logo.svg.png,16
 2024-03-04,H,UIW,Southeastern La.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Southeastern_Louisiana_Lions_script.svg/175px-Southeastern_Louisiana_Lions_script.svg.png,17
