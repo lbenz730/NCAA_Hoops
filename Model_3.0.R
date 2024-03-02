@@ -261,14 +261,7 @@ if(lubridate::hour(Sys.time())  <= 12) {
         write_csv(paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
     }
   }
-  # conf_tourney_graphics()
-}
-
-### Conf Schedule Data
-for(conf in setdiff(sort(unique(confs$conference)), 'Independent')) {
-  # for(conf in sort(unique(confs$conference[!is.na(confs$conf_seed)]))) {
-  print(conf)
-  visualize_schedule_data(conf)
+  conf_tourney_graphics()
 }
 
 

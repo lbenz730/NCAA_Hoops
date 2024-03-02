@@ -15,8 +15,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,H,Eastern Ill.,Lindenwood,72,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Lindenwood_Athletics_wordmark.svg/250px-Lindenwood_Athletics_wordmark.svg.png,14
 2024-02-22,V,Eastern Ill.,Tennessee St.,73,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Tennessee_State_Tigers_wordmark.svg/200px-Tennessee_State_Tigers_wordmark.svg.png,15
 2024-02-24,V,Eastern Ill.,Tennessee Tech,67,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Tennessee_Tech_Golden_Eagles_logo.svg/315px-Tennessee_Tech_Golden_Eagles_logo.svg.png,16
-2024-02-27,H,Eastern Ill.,SIUE,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/SIUE_Cougars_logo.svg/400px-SIUE_Cougars_logo.svg.png,17
-2024-02-29,V,Eastern Ill.,Western Ill.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Western_Illinois_Leathernecks_logo.svg/249px-Western_Illinois_Leathernecks_logo.svg.png,18
+2024-02-27,H,Eastern Ill.,SIUE,84,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/SIUE_Cougars_logo.svg/400px-SIUE_Cougars_logo.svg.png,17
+2024-02-29,V,Eastern Ill.,Western Ill.,66,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Western_Illinois_Leathernecks_logo.svg/249px-Western_Illinois_Leathernecks_logo.svg.png,18
 2023-12-31,H,Lindenwood,Southern Ind.,62,73,FALSE,FALSE,https://sports.cbsimg.net/fly/images/ncaa/logos/team/light/161012.svg,1
 2024-01-06,V,Lindenwood,Western Ill.,57,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Western_Illinois_Leathernecks_logo.svg/249px-Western_Illinois_Leathernecks_logo.svg.png,2
 2024-01-11,V,Lindenwood,Southeast Mo. St.,74,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/38/SEMO_Red_Wordmark.png,3
@@ -33,7 +33,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,V,Lindenwood,Eastern Ill.,57,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Eastern_Illinois_Panthers_logo.svg/280px-Eastern_Illinois_Panthers_logo.svg.png,14
 2024-02-22,H,Lindenwood,UT Martin,82,106,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/UT_Martin_Skyhawks_logo.svg/299px-UT_Martin_Skyhawks_logo.svg.png,15
 2024-02-24,H,Lindenwood,Little Rock,73,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Little_Rock_Trojans_logo.svg/320px-Little_Rock_Trojans_logo.svg.png,16
-2024-02-29,V,Lindenwood,Southern Ind.,NA,NA,FALSE,FALSE,https://sports.cbsimg.net/fly/images/ncaa/logos/team/light/161012.svg,17
+2024-02-29,V,Lindenwood,Southern Ind.,67,63,FALSE,FALSE,https://sports.cbsimg.net/fly/images/ncaa/logos/team/light/161012.svg,17
 2024-03-02,V,Lindenwood,Morehead St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Morehead_State_Eagles_logo.svg/243px-Morehead_State_Eagles_logo.svg.png,18
 2023-12-28,V,Little Rock,Tennessee Tech,81,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Tennessee_Tech_Golden_Eagles_logo.svg/315px-Tennessee_Tech_Golden_Eagles_logo.svg.png,1
 2023-12-30,V,Little Rock,Tennessee St.,82,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Tennessee_State_Tigers_wordmark.svg/200px-Tennessee_State_Tigers_wordmark.svg.png,2
@@ -51,7 +51,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,H,Little Rock,Southern Ind.,80,62,FALSE,FALSE,https://sports.cbsimg.net/fly/images/ncaa/logos/team/light/161012.svg,14
 2024-02-22,V,Little Rock,Southeast Mo. St.,83,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/38/SEMO_Red_Wordmark.png,15
 2024-02-24,V,Little Rock,Lindenwood,82,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Lindenwood_Athletics_wordmark.svg/250px-Lindenwood_Athletics_wordmark.svg.png,16
-2024-02-29,H,Little Rock,Tennessee St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Tennessee_State_Tigers_wordmark.svg/200px-Tennessee_State_Tigers_wordmark.svg.png,17
+2024-02-29,H,Little Rock,Tennessee St.,85,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Tennessee_State_Tigers_wordmark.svg/200px-Tennessee_State_Tigers_wordmark.svg.png,17
 2024-03-02,H,Little Rock,Tennessee Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Tennessee_Tech_Golden_Eagles_logo.svg/315px-Tennessee_Tech_Golden_Eagles_logo.svg.png,18
 2023-12-31,V,Morehead St.,Southeast Mo. St.,83,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/38/SEMO_Red_Wordmark.png,1
 2024-01-04,H,Morehead St.,Tennessee Tech,82,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Tennessee_Tech_Golden_Eagles_logo.svg/315px-Tennessee_Tech_Golden_Eagles_logo.svg.png,2
@@ -69,7 +69,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,V,Morehead St.,UT Martin,82,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/UT_Martin_Skyhawks_logo.svg/299px-UT_Martin_Skyhawks_logo.svg.png,14
 2024-02-20,H,Morehead St.,Southern Ind.,73,80,FALSE,FALSE,https://sports.cbsimg.net/fly/images/ncaa/logos/team/light/161012.svg,15
 2024-02-22,V,Morehead St.,Western Ill.,78,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Western_Illinois_Leathernecks_logo.svg/249px-Western_Illinois_Leathernecks_logo.svg.png,16
-2024-02-29,H,Morehead St.,Southeast Mo. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/38/SEMO_Red_Wordmark.png,17
+2024-02-29,H,Morehead St.,Southeast Mo. St.,72,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/38/SEMO_Red_Wordmark.png,17
 2024-03-02,H,Morehead St.,Lindenwood,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Lindenwood_Athletics_wordmark.svg/250px-Lindenwood_Athletics_wordmark.svg.png,18
 2023-12-29,H,SIUE,Eastern Ill.,67,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Eastern_Illinois_Panthers_logo.svg/280px-Eastern_Illinois_Panthers_logo.svg.png,1
 2023-12-31,H,SIUE,Western Ill.,70,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Western_Illinois_Leathernecks_logo.svg/249px-Western_Illinois_Leathernecks_logo.svg.png,2
@@ -87,7 +87,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,H,SIUE,Southeast Mo. St.,80,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/38/SEMO_Red_Wordmark.png,14
 2024-02-22,V,SIUE,Tennessee Tech,78,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Tennessee_Tech_Golden_Eagles_logo.svg/315px-Tennessee_Tech_Golden_Eagles_logo.svg.png,15
 2024-02-24,V,SIUE,Tennessee St.,71,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Tennessee_State_Tigers_wordmark.svg/200px-Tennessee_State_Tigers_wordmark.svg.png,16
-2024-02-27,V,SIUE,Eastern Ill.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Eastern_Illinois_Panthers_logo.svg/280px-Eastern_Illinois_Panthers_logo.svg.png,17
+2024-02-27,V,SIUE,Eastern Ill.,79,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Eastern_Illinois_Panthers_logo.svg/280px-Eastern_Illinois_Panthers_logo.svg.png,17
 2024-03-02,V,SIUE,Western Ill.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Western_Illinois_Leathernecks_logo.svg/249px-Western_Illinois_Leathernecks_logo.svg.png,18
 2023-12-29,H,Southeast Mo. St.,Southern Ind.,93,91,FALSE,FALSE,https://sports.cbsimg.net/fly/images/ncaa/logos/team/light/161012.svg,1
 2023-12-31,H,Southeast Mo. St.,Morehead St.,64,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Morehead_State_Eagles_logo.svg/243px-Morehead_State_Eagles_logo.svg.png,2
@@ -105,7 +105,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,V,Southeast Mo. St.,SIUE,76,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/SIUE_Cougars_logo.svg/400px-SIUE_Cougars_logo.svg.png,14
 2024-02-22,H,Southeast Mo. St.,Little Rock,61,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Little_Rock_Trojans_logo.svg/320px-Little_Rock_Trojans_logo.svg.png,15
 2024-02-24,H,Southeast Mo. St.,UT Martin,72,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/UT_Martin_Skyhawks_logo.svg/299px-UT_Martin_Skyhawks_logo.svg.png,16
-2024-02-29,V,Southeast Mo. St.,Morehead St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Morehead_State_Eagles_logo.svg/243px-Morehead_State_Eagles_logo.svg.png,17
+2024-02-29,V,Southeast Mo. St.,Morehead St.,50,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Morehead_State_Eagles_logo.svg/243px-Morehead_State_Eagles_logo.svg.png,17
 2024-03-02,V,Southeast Mo. St.,Southern Ind.,NA,NA,FALSE,FALSE,https://sports.cbsimg.net/fly/images/ncaa/logos/team/light/161012.svg,18
 2023-12-29,V,Southern Ind.,Southeast Mo. St.,91,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/38/SEMO_Red_Wordmark.png,1
 2023-12-31,V,Southern Ind.,Lindenwood,73,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Lindenwood_Athletics_wordmark.svg/250px-Lindenwood_Athletics_wordmark.svg.png,2
@@ -123,7 +123,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,V,Southern Ind.,Little Rock,62,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Little_Rock_Trojans_logo.svg/320px-Little_Rock_Trojans_logo.svg.png,14
 2024-02-20,V,Southern Ind.,Morehead St.,80,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Morehead_State_Eagles_logo.svg/243px-Morehead_State_Eagles_logo.svg.png,15
 2024-02-24,V,Southern Ind.,Western Ill.,76,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Western_Illinois_Leathernecks_logo.svg/249px-Western_Illinois_Leathernecks_logo.svg.png,16
-2024-02-29,H,Southern Ind.,Lindenwood,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Lindenwood_Athletics_wordmark.svg/250px-Lindenwood_Athletics_wordmark.svg.png,17
+2024-02-29,H,Southern Ind.,Lindenwood,63,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Lindenwood_Athletics_wordmark.svg/250px-Lindenwood_Athletics_wordmark.svg.png,17
 2024-03-02,H,Southern Ind.,Southeast Mo. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/38/SEMO_Red_Wordmark.png,18
 2023-12-28,H,Tennessee St.,UT Martin,75,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/UT_Martin_Skyhawks_logo.svg/299px-UT_Martin_Skyhawks_logo.svg.png,1
 2023-12-30,H,Tennessee St.,Little Rock,90,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Little_Rock_Trojans_logo.svg/320px-Little_Rock_Trojans_logo.svg.png,2
@@ -141,7 +141,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,H,Tennessee St.,Western Ill.,61,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Western_Illinois_Leathernecks_logo.svg/249px-Western_Illinois_Leathernecks_logo.svg.png,14
 2024-02-22,H,Tennessee St.,Eastern Ill.,78,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Eastern_Illinois_Panthers_logo.svg/280px-Eastern_Illinois_Panthers_logo.svg.png,15
 2024-02-24,H,Tennessee St.,SIUE,76,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/SIUE_Cougars_logo.svg/400px-SIUE_Cougars_logo.svg.png,16
-2024-02-29,V,Tennessee St.,Little Rock,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Little_Rock_Trojans_logo.svg/320px-Little_Rock_Trojans_logo.svg.png,17
+2024-02-29,V,Tennessee St.,Little Rock,60,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Little_Rock_Trojans_logo.svg/320px-Little_Rock_Trojans_logo.svg.png,17
 2024-03-02,V,Tennessee St.,UT Martin,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/UT_Martin_Skyhawks_logo.svg/299px-UT_Martin_Skyhawks_logo.svg.png,18
 2023-12-28,H,Tennessee Tech,Little Rock,75,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Little_Rock_Trojans_logo.svg/320px-Little_Rock_Trojans_logo.svg.png,1
 2023-12-30,H,Tennessee Tech,UT Martin,73,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/UT_Martin_Skyhawks_logo.svg/299px-UT_Martin_Skyhawks_logo.svg.png,2
@@ -159,7 +159,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-15,H,Tennessee Tech,Western Ill.,55,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/16/Western_Illinois_Leathernecks_logo.svg/249px-Western_Illinois_Leathernecks_logo.svg.png,14
 2024-02-22,H,Tennessee Tech,SIUE,77,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/SIUE_Cougars_logo.svg/400px-SIUE_Cougars_logo.svg.png,15
 2024-02-24,H,Tennessee Tech,Eastern Ill.,75,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Eastern_Illinois_Panthers_logo.svg/280px-Eastern_Illinois_Panthers_logo.svg.png,16
-2024-02-29,V,Tennessee Tech,UT Martin,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/UT_Martin_Skyhawks_logo.svg/299px-UT_Martin_Skyhawks_logo.svg.png,17
+2024-02-29,V,Tennessee Tech,UT Martin,69,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/UT_Martin_Skyhawks_logo.svg/299px-UT_Martin_Skyhawks_logo.svg.png,17
 2024-03-02,V,Tennessee Tech,Little Rock,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Little_Rock_Trojans_logo.svg/320px-Little_Rock_Trojans_logo.svg.png,18
 2023-12-28,V,UT Martin,Tennessee St.,91,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Tennessee_State_Tigers_wordmark.svg/200px-Tennessee_State_Tigers_wordmark.svg.png,1
 2023-12-30,V,UT Martin,Tennessee Tech,81,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Tennessee_Tech_Golden_Eagles_logo.svg/315px-Tennessee_Tech_Golden_Eagles_logo.svg.png,2
@@ -177,7 +177,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,H,UT Martin,Morehead St.,88,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Morehead_State_Eagles_logo.svg/243px-Morehead_State_Eagles_logo.svg.png,14
 2024-02-22,V,UT Martin,Lindenwood,106,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Lindenwood_Athletics_wordmark.svg/250px-Lindenwood_Athletics_wordmark.svg.png,15
 2024-02-24,V,UT Martin,Southeast Mo. St.,82,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/38/SEMO_Red_Wordmark.png,16
-2024-02-29,H,UT Martin,Tennessee Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Tennessee_Tech_Golden_Eagles_logo.svg/315px-Tennessee_Tech_Golden_Eagles_logo.svg.png,17
+2024-02-29,H,UT Martin,Tennessee Tech,80,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Tennessee_Tech_Golden_Eagles_logo.svg/315px-Tennessee_Tech_Golden_Eagles_logo.svg.png,17
 2024-03-02,H,UT Martin,Tennessee St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Tennessee_State_Tigers_wordmark.svg/200px-Tennessee_State_Tigers_wordmark.svg.png,18
 2023-12-31,V,Western Ill.,SIUE,78,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/SIUE_Cougars_logo.svg/400px-SIUE_Cougars_logo.svg.png,1
 2024-01-04,H,Western Ill.,Southeast Mo. St.,68,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/38/SEMO_Red_Wordmark.png,2
@@ -195,5 +195,5 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,V,Western Ill.,Tennessee St.,68,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Tennessee_State_Tigers_wordmark.svg/200px-Tennessee_State_Tigers_wordmark.svg.png,14
 2024-02-22,H,Western Ill.,Morehead St.,57,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Morehead_State_Eagles_logo.svg/243px-Morehead_State_Eagles_logo.svg.png,15
 2024-02-24,H,Western Ill.,Southern Ind.,82,76,FALSE,FALSE,https://sports.cbsimg.net/fly/images/ncaa/logos/team/light/161012.svg,16
-2024-02-29,H,Western Ill.,Eastern Ill.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Eastern_Illinois_Panthers_logo.svg/280px-Eastern_Illinois_Panthers_logo.svg.png,17
+2024-02-29,H,Western Ill.,Eastern Ill.,70,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Eastern_Illinois_Panthers_logo.svg/280px-Eastern_Illinois_Panthers_logo.svg.png,17
 2024-03-02,H,Western Ill.,SIUE,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/SIUE_Cougars_logo.svg/400px-SIUE_Cougars_logo.svg.png,18

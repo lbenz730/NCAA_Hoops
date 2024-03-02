@@ -35,7 +35,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-18,H,Indiana,Northwestern,72,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,14
 2024-02-21,H,Indiana,Nebraska,70,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,15
 2024-02-24,V,Indiana,Penn St.,74,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,16
-2024-02-27,H,Indiana,Wisconsin,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,17
+2024-02-27,H,Indiana,Wisconsin,74,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,17
 2024-03-03,V,Indiana,Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,18
 2024-03-06,V,Indiana,Minnesota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,19
 2024-03-10,H,Indiana,Michigan St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,20
@@ -56,7 +56,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,H,Iowa,Wisconsin,88,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,15
 2024-02-20,V,Iowa,Michigan St.,78,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,16
 2024-02-24,V,Iowa,Illinois,85,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,17
-2024-02-27,H,Iowa,Penn St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,18
+2024-02-27,H,Iowa,Penn St.,90,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,18
 2024-03-02,V,Iowa,Northwestern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,19
 2024-03-10,H,Iowa,Illinois,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,20
 2023-12-01,V,Maryland,Indiana,53,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,1
@@ -75,7 +75,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-14,H,Maryland,Iowa,78,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,14
 2024-02-17,H,Maryland,Illinois,80,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,15
 2024-02-20,V,Maryland,Wisconsin,70,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,16
-2024-02-25,V,Maryland,Rutgers,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,17
+2024-02-25,V,Maryland,Rutgers,63,46,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,17
 2024-02-28,H,Maryland,Northwestern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,18
 2024-03-03,H,Maryland,Indiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,19
 2024-03-10,V,Maryland,Penn St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,20
@@ -95,7 +95,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-13,V,Michigan,Illinois,68,97,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,14
 2024-02-17,H,Michigan,Michigan St.,63,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,15
 2024-02-22,V,Michigan,Northwestern,62,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,16
-2024-02-25,H,Michigan,Purdue,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,17
+2024-02-25,H,Michigan,Purdue,76,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,17
 2024-02-29,V,Michigan,Rutgers,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,18
 2024-03-03,V,Michigan,Ohio St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,19
 2024-03-10,H,Michigan,Nebraska,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,20
@@ -115,7 +115,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-14,V,Michigan St.,Penn St.,80,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,14
 2024-02-17,V,Michigan St.,Michigan,73,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,15
 2024-02-20,H,Michigan St.,Iowa,71,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,16
-2024-02-25,H,Michigan St.,Ohio St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,17
+2024-02-25,H,Michigan St.,Ohio St.,57,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,17
 2024-03-02,V,Michigan St.,Purdue,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,18
 2024-03-06,H,Michigan St.,Northwestern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,19
 2024-03-10,V,Michigan St.,Indiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,20
@@ -134,7 +134,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-15,V,Minnesota,Purdue,76,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,13
 2024-02-18,H,Minnesota,Rutgers,81,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,14
 2024-02-22,H,Minnesota,Ohio St.,88,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,15
-2024-02-25,V,Minnesota,Nebraska,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,16
+2024-02-25,V,Minnesota,Nebraska,55,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,16
 2024-02-28,V,Minnesota,Illinois,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,17
 2024-03-02,H,Minnesota,Penn St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,18
 2024-03-06,H,Minnesota,Indiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,19
@@ -155,7 +155,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-10,H,Nebraska,Michigan,79,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,14
 2024-02-17,H,Nebraska,Penn St.,68,49,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,15
 2024-02-21,V,Nebraska,Indiana,85,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,16
-2024-02-25,H,Nebraska,Minnesota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,17
+2024-02-25,H,Nebraska,Minnesota,73,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,17
 2024-02-29,V,Nebraska,Ohio St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,18
 2024-03-03,H,Nebraska,Rutgers,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,19
 2024-03-10,V,Nebraska,Michigan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,20
@@ -195,7 +195,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-13,V,Ohio St.,Wisconsin,54,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,14
 2024-02-18,H,Ohio St.,Purdue,73,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,15
 2024-02-22,V,Ohio St.,Minnesota,79,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,16
-2024-02-25,V,Ohio St.,Michigan St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,17
+2024-02-25,V,Ohio St.,Michigan St.,60,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,17
 2024-02-29,H,Ohio St.,Nebraska,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,18
 2024-03-03,H,Ohio St.,Michigan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,19
 2024-03-10,V,Ohio St.,Rutgers,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,20
@@ -216,7 +216,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,V,Penn St.,Nebraska,49,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,15
 2024-02-21,H,Penn St.,Illinois,90,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,16
 2024-02-24,H,Penn St.,Indiana,83,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,17
-2024-02-27,V,Penn St.,Iowa,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,18
+2024-02-27,V,Penn St.,Iowa,81,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,18
 2024-03-02,V,Penn St.,Minnesota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,19
 2024-03-10,H,Penn St.,Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,20
 2023-12-01,V,Purdue,Northwestern,88,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,1
@@ -235,7 +235,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-15,H,Purdue,Minnesota,84,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,14
 2024-02-18,V,Purdue,Ohio St.,69,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,15
 2024-02-22,H,Purdue,Rutgers,96,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,16
-2024-02-25,V,Purdue,Michigan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,17
+2024-02-25,V,Purdue,Michigan,84,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,17
 2024-03-02,H,Purdue,Michigan St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,18
 2024-03-05,V,Purdue,Illinois,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,19
 2024-03-10,H,Purdue,Wisconsin,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,20
@@ -254,7 +254,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-15,H,Rutgers,Northwestern,63,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,13
 2024-02-18,V,Rutgers,Minnesota,70,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,14
 2024-02-22,V,Rutgers,Purdue,68,96,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,15
-2024-02-25,H,Rutgers,Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,16
+2024-02-25,H,Rutgers,Maryland,46,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,16
 2024-02-29,H,Rutgers,Michigan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,17
 2024-03-03,V,Rutgers,Nebraska,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,18
 2024-03-07,V,Rutgers,Wisconsin,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,19
@@ -275,7 +275,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-13,H,Wisconsin,Ohio St.,62,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,14
 2024-02-17,V,Wisconsin,Iowa,86,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,15
 2024-02-20,H,Wisconsin,Maryland,74,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,16
-2024-02-27,V,Wisconsin,Indiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,17
+2024-02-27,V,Wisconsin,Indiana,70,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,17
 2024-03-02,H,Wisconsin,Illinois,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,18
 2024-03-07,H,Wisconsin,Rutgers,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,19
 2024-03-10,V,Wisconsin,Purdue,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,20

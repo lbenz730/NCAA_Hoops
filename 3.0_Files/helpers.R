@@ -97,7 +97,7 @@ conf_sim <- function(conf, nsims) {
 }
 
 #### Conference Sims
-conf_fast_sim <- function(conf, nsims, pct_postseason, force = F, year = '2022-23') {
+conf_fast_sim <- function(conf, nsims, pct_postseason, force = F, year = '2023-24') {
   
   ### Sim Schedule
   if(conf == 'Ivy') {
