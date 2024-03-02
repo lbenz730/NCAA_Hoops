@@ -246,28 +246,28 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                             )
                    ),
                    
-                   # ### Conference Tournament Odds
-                   # tabPanel("Conference Tournament Odds",
-                   #          value = 'conf_odds',
-                   #          
-                   #          sidebarLayout(
-                   #            sidebarPanel(
-                   #              
-                   #              selectInput("conft", 
-                   #                          label = "Select a Conference",
-                   #                          choices = c(""), 
-                   #                          selected = NULL
-                   #                          
-                   #                          
-                   #              )
-                   #            ),
-                   #            
-                   #            
-                   #            
-                   #            mainPanel(
-                   #              gt_output('ct_sims')
-                   #            )
-                   #          )),
+                   ### Conference Tournament Odds
+                   tabPanel("Conference Tournament Odds",
+                            value = 'conf_odds',
+
+                            sidebarLayout(
+                              sidebarPanel(
+
+                                selectInput("conft",
+                                            label = "Select a Conference",
+                                            choices = c(""),
+                                            selected = NULL
+
+
+                                )
+                              ),
+
+
+
+                              mainPanel(
+                                gt_output('ct_sims')
+                              )
+                            )),
                    
                    ### NCAA Tournament Odds
                    tabPanel("NCAA Tournament Odds",

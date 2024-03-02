@@ -31,6 +31,7 @@ source("3.0_Files/conf_tourney_sims.R")
 
 params <- 
   list('conf_sims' = 1000,
+       'n_ct' = 5000,
        'ivy_sims' = 5000,
        'psf_sims' = 500,
        'pct_post' = 0.25)
@@ -209,20 +210,20 @@ x$wins[is.na(x$wins)] <-
 by_conf <- pr_compute(by_conf = T)
 write_csv(x, "3.0_Files/Predictions/predictions.csv")
 ######################### Ivy League Specific Sims #############################
-playoffs <- ivy.sim(params$ivy_sims)
-ivy_psf <- psf(params$psf_sims, min_date = Sys.Date(), max_date = Sys.Date()+5)
+# playoffs <- ivy.sim(params$ivy_sims)
+# ivy_psf <- psf(params$psf_sims, min_date = Sys.Date(), max_date = Sys.Date()+5)
 playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
 
 ############################ Conference Sims (No Tie-Breaks) ##################
 if(lubridate::hour(Sys.time())  <= 12) {
-  # confs <- update_conf_seeds()
+  confs <- update_conf_seeds()
   for(conf in setdiff(sort(unique(confs$conference)), 'Independent')) {
     # for(conf in sort(unique(confs$conference[!is.na(confs$conf_seed)]))) {
     print(conf)
     df_f <- read_csv(paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"), col_types = cols())
     f <- !all(group_by(df_f, team, place) %>% count() %>% pull(n) == params$conf_sims)
     
-    sims <- conf_fast_sim(conf, params$conf_sims, params$pct_post, force = f)
+    sims <- conf_fast_sim(conf, params$conf_sims, params$pct_post, params$n_ct, force = )
     write_csv(sims$reg_season, paste0("3.0_Files/Predictions/conf_sims/", conf, ".csv"))
     
     df <- 

@@ -2,18 +2,38 @@
 
 update_conf_seeds <- function() {
   # Sunbelt
-  seed_teams <- c('Southern Miss.', 'Louisiana', 'Marshall', 
-                  'James Madison',  'Troy', 'Old Dominion',  'Ga. Southern', 'South Alabama', 
-                  'App State','ULM', 'Texas St.', 'Coastal Carolina', 'Arkansas St.', 'Georgia St.')
+  seed_teams <- 
+    c('App State',
+      'James Madison',
+      'Troy',
+      'Arkansas St.',
+      'Louisiana',
+      'Southern Miss.',
+      'Georgia St.',
+      'South Alabama',
+      'Ga. Southern',
+      'Marshall',
+      'Texas St.',
+      'ULM',
+      'Coastal Carolina',
+      'Old Dominion')
   
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
-  # # A-Sun
-  # seed_teams <- c('Kennesaw St.', 'Liberty', 'Eastern Ky.', 'Stetson', 
-  #                 'Lipscomb', 'North Ala.', 'North Florida', 'Bellarmine',
-  #                 'Queens (NC)', 'FGCU')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
+  # A-Sun
+  seed_teams <- 
+    c('Eastern Ky.',
+      'Stetson',
+      'Lipscomb',
+      'Austin Peay',
+      'North Florida',
+      'North Ala.',
+      'FGCU',
+      'Queens (NC)',
+      'Kennesaw St.',
+      'Jacksonville')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
   # # Patriot
   # seed_teams <- c('Colgate', 'Navy', 'Lehigh', 'Army West Point', 'Boston U.', 
   #                 'Lafayette', 'American', 'Loyola Maryland', 'Holy Cross', 'Bucknell')
@@ -183,7 +203,7 @@ update_conf_seeds <- function() {
   # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
   
-    
+  
   
   ### Elimiate teams that didn't even make their conf tournament
   confs <- 
@@ -204,6 +224,12 @@ conf_tourney_graphics <- function(year = '2023-24') {
     dir.create(paste0('graphics/conf_tourneys/', year))
   }
   
+  img_files <- dir('app/www/')
+  df_img <- 
+    tibble('team' = teams,
+           'logo_file' = paste0('app/www/', map_chr(teams, ~ifelse(paste0(.x, '.png') %in% img_files, paste0(.x, '.png'), paste0(.x, '.svg')))))
+  
+  
   for(conf in sort(unique(confs$conference))) {
     print(conf)
     if(file.exists(paste0('3.0_Files/Predictions/conf_tourney_sims/', year, '/', conf, '.csv'))) {
@@ -212,18 +238,18 @@ conf_tourney_graphics <- function(year = '2023-24') {
       
       df <- 
         df_sim %>% 
-        inner_join(select(ncaa_colors, 'team' = ncaa_name, logo_url), by = 'team') %>% 
+        inner_join(df_img, by = 'team') %>% 
         inner_join(select(power_rankings, team, yusag_coeff), by = 'team') %>% 
         inner_join(select(confs, team, eliminated), by = 'team') %>% 
         filter(!eliminated) %>% 
         arrange(desc(champ), desc(finals)) %>% 
-        select(team, logo_url, seed, yusag_coeff, finals, champ)
+        select(team, logo_file, seed, yusag_coeff, finals, champ)
       
       library(gt)
-      table <- 
+      table <-
         gt(df) %>% 
         cols_label('team' = '', 
-                   'logo_url' = '',
+                   'logo_file' = '',
                    'seed' = 'Seed',
                    'yusag_coeff' = 'Rating',
                    'finals' = 'Finals',
@@ -232,7 +258,7 @@ conf_tourney_graphics <- function(year = '2023-24') {
         ### Hightlight Columns 
         data_color(
           columns = c(finals, champ),
-          colors = scales::col_numeric(
+          fn = scales::col_numeric(
             palette = ggsci::rgb_material('amber', n = 68),
             domain = c(0,1),
           )
@@ -240,8 +266,8 @@ conf_tourney_graphics <- function(year = '2023-24') {
         
         data_color(
           columns = c(yusag_coeff),
-          colors = scales::col_numeric(
-            palette = ggsci::rgb_material('amber', n = 358),
+          fn = scales::col_numeric(
+            palette = 'RdYlGn',
             domain = range(df$yusag_coeff)
           ),
         ) %>% 
@@ -292,29 +318,27 @@ conf_tourney_graphics <- function(year = '2023-24') {
           )
         ) %>% 
         text_transform(
-          locations = cells_body(c(logo_url)),
+          locations = cells_body(c(logo_file)),
           fn = function(x) {
-            web_image(
-              url = x,
+            local_image(
+              filename = x,
               height = 30
             )
           }
         ) %>% 
-        # tab_source_note("2022 Tournament hosted by Harvard University") %>%
-        # tab_source_note("Based on 5,000 Simulations. Ties broken according to official Ivy League tiebreaking rules.") %>%
-        
         tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>%
+        tab_source_note("Rating = Points relative to average NCAA team on neutral court") %>%
         tab_header(
           title = md(paste("**2024", conf, "Men's Basketball Tournament Odds**")),
-          # subtitle = md(paste0('**', table_region, " Region**"))
         ) %>% 
         tab_options(column_labels.font.size = 16,
+                    column_labels.font.weight = 'bold',
                     heading.title.font.size = 30,
                     heading.subtitle.font.size = 20,
                     heading.title.font.weight = 'bold',
                     heading.subtitle.font.weight = 'bold'
         )
-      gtsave(table, paste0('graphics/conf_tourneys/', year, '/', conf, '.png'))
+      gtExtras::gtsave_extra(table, paste0('graphics/conf_tourneys/', year, '/', conf, '.png'))
     }
   }
 }
@@ -333,5 +357,5 @@ conf_seeding <- function(conf_) {
     arrange(-n_wins) %>% 
     pull(team)  
   
-  cat('c(',  paste(paste0("'", teams, "'"), collapse = ', '), ')', sep = '')
+  cat('c(',  paste(paste0("'", teams, "'"), collapse = ',\n'), ')', sep = '')
 }

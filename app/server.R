@@ -592,17 +592,17 @@ shinyServer(function(input, output, session) {
     
     df <- 
       df_sim %>% 
-      inner_join(select(ncaa_colors, 'team' = ncaa_name, logo_url)) %>% 
+      inner_join(df_img, by = 'team') %>% 
       inner_join(select(rankings_clean, team, yusag_coeff)) %>% 
       inner_join(select(confs, team, eliminated)) %>% 
       filter(!eliminated) %>% 
       arrange(desc(champ), desc(finals)) %>% 
-      select(team, logo_url, seed, yusag_coeff, finals, champ)
+      select(team, logo_file, seed, yusag_coeff, finals, champ)
     
-    table <- 
+    table <-
       gt(df) %>% 
       cols_label('team' = '', 
-                 'logo_url' = '',
+                 'logo_file' = '',
                  'seed' = 'Seed',
                  'yusag_coeff' = 'Rating',
                  'finals' = 'Finals',
@@ -611,7 +611,7 @@ shinyServer(function(input, output, session) {
       ### Hightlight Columns 
       data_color(
         columns = c(finals, champ),
-        colors = scales::col_numeric(
+        fn = scales::col_numeric(
           palette = ggsci::rgb_material('amber', n = 68),
           domain = c(0,1),
         )
@@ -619,8 +619,8 @@ shinyServer(function(input, output, session) {
       
       data_color(
         columns = c(yusag_coeff),
-        colors = scales::col_numeric(
-          palette = ggsci::rgb_material('amber', n = 362),
+        fn = scales::col_numeric(
+          palette = 'RdYlGn',
           domain = range(df$yusag_coeff)
         ),
       ) %>% 
@@ -671,23 +671,21 @@ shinyServer(function(input, output, session) {
         )
       ) %>% 
       text_transform(
-        locations = cells_body(c(logo_url)),
+        locations = cells_body(c(logo_file)),
         fn = function(x) {
-          web_image(
-            url = x,
+          local_image(
+            filename = x,
             height = 30
           )
         }
       ) %>% 
-      # tab_source_note("2022 Tournament hosted by Harvard University") %>%
-      # tab_source_note("Based on 5,000 Simulations. Ties broken according to official Ivy League tiebreaking rules.") %>%
-      
       tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>%
+      tab_source_note("Rating = Points relative to average NCAA team on neutral court") %>%
       tab_header(
-        title = md(paste("**2024", input$tconf, "Men's Basketball Tournament Odds**")),
-        # subtitle = md(ifelse(region == 'all', '', paste0('**', table_region, " Region**")))
+        title = md(paste("**2024", conf, "Men's Basketball Tournament Odds**")),
       ) %>% 
       tab_options(column_labels.font.size = 16,
+                  column_labels.font.weight = 'bold',
                   heading.title.font.size = 30,
                   heading.subtitle.font.size = 20,
                   heading.title.font.weight = 'bold',
@@ -700,7 +698,7 @@ shinyServer(function(input, output, session) {
   
   output$ct_sims <- render_gt(ctsim(),
                               width = 1200,
-                              height = 600)
+                              height = 700)
   
   
   

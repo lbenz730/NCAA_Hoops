@@ -97,7 +97,7 @@ conf_sim <- function(conf, nsims) {
 }
 
 #### Conference Sims
-conf_fast_sim <- function(conf, nsims, pct_postseason, force = F, year = '2023-24') {
+conf_fast_sim <- function(conf, nsims, pct_postseason, n_ct, force = F, year = '2023-24') {
   
   ### Sim Schedule
   if(conf == 'Ivy') {
@@ -218,11 +218,11 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, force = F, year = '2023-2
         df_conf$conf_seed <- 1:10
       }
       
-      dfs <- map(1:3000, ~df_conf)
+      dfs <- map(1:n_ct, ~df_conf)
       
       ### Treat Triple Byes as 8-2-2 w/ sampling of first round teams
       if(conf == 'WCC') {
-        keep <- map(1:3000, ~c(1:6, sample(c(7,10), 1), sample(c(8,9),1))) 
+        keep <- map(1:n_ct, ~c(1:6, sample(c(7,10), 1), sample(c(8,9),1))) 
         dfs <- map2(dfs, keep, ~filter(.x, conf_seed %in% .y))
       }
       
@@ -492,7 +492,6 @@ psf_graphic <- function() {
            "Playoff Swing Factor" = psf,
            "Auto Bid Swing Factor" = auto_bid_sf) %>%
     kable(., escape = F, align = "ccccccc") %>%
-    kable_styling("striped", full_width = F, position = "center") %>%
     row_spec(0, bold = T, font_size = 16) %>%
     add_header_above(c("Ivy League Men's Basketball Predictions" = 5), bold = T)
 }

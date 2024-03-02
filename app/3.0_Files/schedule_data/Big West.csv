@@ -16,7 +16,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,V,CSU Bakersfield,UC Irvine,71,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/UC_Irvine_Anteaters_logo.svg/227px-UC_Irvine_Anteaters_logo.svg.png,15
 2024-02-22,V,CSU Bakersfield,Long Beach St.,66,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Long_Beach_State_Athletics_logo.svg/197px-Long_Beach_State_Athletics_logo.svg.png,16
 2024-02-24,H,CSU Bakersfield,UC Davis,75,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/13/UC_Davis_Aggies_logo.svg,17
-2024-02-29,H,CSU Bakersfield,UC San Diego,NA,NA,FALSE,FALSE,https://ucsdtritons.com/images/logos/site/site.png,18
+2024-02-29,H,CSU Bakersfield,UC San Diego,70,57,FALSE,FALSE,https://ucsdtritons.com/images/logos/site/site.png,18
 2024-03-02,V,CSU Bakersfield,Cal Poly,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/175px-Cal_Poly_Mustangs_logo.svg.png,19
 2023-12-28,V,CSUN,Cal Poly,83,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/175px-Cal_Poly_Mustangs_logo.svg.png,1
 2023-12-30,V,CSUN,Long Beach St.,84,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Long_Beach_State_Athletics_logo.svg/197px-Long_Beach_State_Athletics_logo.svg.png,2
@@ -35,7 +35,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,H,CSUN,Long Beach St.,73,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Long_Beach_State_Athletics_logo.svg/197px-Long_Beach_State_Athletics_logo.svg.png,15
 2024-02-22,H,CSUN,UC Davis,65,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/13/UC_Davis_Aggies_logo.svg,16
 2024-02-24,V,CSUN,Cal St. Fullerton,65,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_State_Fullerton_Titans_logo.svg/200px-Cal_State_Fullerton_Titans_logo.svg.png,17
-2024-02-29,H,CSUN,UC Irvine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/UC_Irvine_Anteaters_logo.svg/227px-UC_Irvine_Anteaters_logo.svg.png,18
+2024-02-29,H,CSUN,UC Irvine,64,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/UC_Irvine_Anteaters_logo.svg/227px-UC_Irvine_Anteaters_logo.svg.png,18
 2024-03-02,H,CSUN,UC San Diego,NA,NA,FALSE,FALSE,https://ucsdtritons.com/images/logos/site/site.png,19
 2024-03-07,V,CSUN,Hawaii,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hawaii_Warriors_logo.svg/318px-Hawaii_Warriors_logo.svg.png,20
 2023-12-28,H,Cal Poly,CSUN,73,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/51/CSUN_Matadors_logo.svg/188px-CSUN_Matadors_logo.svg.png,1
@@ -54,7 +54,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-15,H,Cal Poly,Hawaii,51,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hawaii_Warriors_logo.svg/318px-Hawaii_Warriors_logo.svg.png,14
 2024-02-22,V,Cal Poly,Cal St. Fullerton,50,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_State_Fullerton_Titans_logo.svg/200px-Cal_State_Fullerton_Titans_logo.svg.png,15
 2024-02-24,H,Cal Poly,UC Riverside,78,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/UC_Riverside_Highlanders_logo.svg/240px-UC_Riverside_Highlanders_logo.svg.png,16
-2024-02-29,V,Cal Poly,UC Santa Barbara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/UC_Santa_Barbara_Gauchos_logo.svg/320px-UC_Santa_Barbara_Gauchos_logo.svg.png,17
+2024-02-29,V,Cal Poly,UC Santa Barbara,75,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/UC_Santa_Barbara_Gauchos_logo.svg/320px-UC_Santa_Barbara_Gauchos_logo.svg.png,17
 2024-03-02,H,Cal Poly,CSU Bakersfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Cal_State_Bakersfield_Roadrunners_logo.svg/320px-Cal_State_Bakersfield_Roadrunners_logo.svg.png,18
 2024-03-07,V,Cal Poly,UC Irvine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/UC_Irvine_Anteaters_logo.svg/227px-UC_Irvine_Anteaters_logo.svg.png,19
 2024-03-09,V,Cal Poly,UC San Diego,NA,NA,FALSE,FALSE,https://ucsdtritons.com/images/logos/site/site.png,20
@@ -74,7 +74,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,V,Cal St. Fullerton,UC San Diego,69,76,FALSE,FALSE,https://ucsdtritons.com/images/logos/site/site.png,14
 2024-02-22,H,Cal St. Fullerton,Cal Poly,68,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/175px-Cal_Poly_Mustangs_logo.svg.png,15
 2024-02-24,H,Cal St. Fullerton,CSUN,60,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/51/CSUN_Matadors_logo.svg/188px-CSUN_Matadors_logo.svg.png,16
-2024-02-29,V,Cal St. Fullerton,Long Beach St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Long_Beach_State_Athletics_logo.svg/197px-Long_Beach_State_Athletics_logo.svg.png,17
+2024-02-29,V,Cal St. Fullerton,Long Beach St.,76,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Long_Beach_State_Athletics_logo.svg/197px-Long_Beach_State_Athletics_logo.svg.png,17
 2024-03-02,H,Cal St. Fullerton,UC Santa Barbara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/UC_Santa_Barbara_Gauchos_logo.svg/320px-UC_Santa_Barbara_Gauchos_logo.svg.png,18
 2024-03-07,V,Cal St. Fullerton,UC Riverside,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/UC_Riverside_Highlanders_logo.svg/240px-UC_Riverside_Highlanders_logo.svg.png,19
 2024-03-09,H,Cal St. Fullerton,UC Irvine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/UC_Irvine_Anteaters_logo.svg/227px-UC_Irvine_Anteaters_logo.svg.png,20
@@ -94,7 +94,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-15,V,Hawaii,Cal Poly,80,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/175px-Cal_Poly_Mustangs_logo.svg.png,14
 2024-02-17,V,Hawaii,UC Santa Barbara,71,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/UC_Santa_Barbara_Gauchos_logo.svg/320px-UC_Santa_Barbara_Gauchos_logo.svg.png,15
 2024-02-24,H,Hawaii,Long Beach St.,73,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Long_Beach_State_Athletics_logo.svg/197px-Long_Beach_State_Athletics_logo.svg.png,16
-2024-02-29,V,Hawaii,UC Davis,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/13/UC_Davis_Aggies_logo.svg,17
+2024-02-29,V,Hawaii,UC Davis,63,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/13/UC_Davis_Aggies_logo.svg,17
 2024-03-02,V,Hawaii,UC Riverside,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/UC_Riverside_Highlanders_logo.svg/240px-UC_Riverside_Highlanders_logo.svg.png,18
 2024-03-07,H,Hawaii,CSUN,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/51/CSUN_Matadors_logo.svg/188px-CSUN_Matadors_logo.svg.png,19
 2023-12-28,V,Long Beach St.,Cal St. Fullerton,81,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_State_Fullerton_Titans_logo.svg/200px-Cal_State_Fullerton_Titans_logo.svg.png,1
@@ -113,7 +113,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,V,Long Beach St.,CSUN,87,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/51/CSUN_Matadors_logo.svg/188px-CSUN_Matadors_logo.svg.png,14
 2024-02-22,H,Long Beach St.,CSU Bakersfield,79,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Cal_State_Bakersfield_Roadrunners_logo.svg/320px-Cal_State_Bakersfield_Roadrunners_logo.svg.png,15
 2024-02-24,V,Long Beach St.,Hawaii,65,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hawaii_Warriors_logo.svg/318px-Hawaii_Warriors_logo.svg.png,16
-2024-02-29,H,Long Beach St.,Cal St. Fullerton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_State_Fullerton_Titans_logo.svg/200px-Cal_State_Fullerton_Titans_logo.svg.png,17
+2024-02-29,H,Long Beach St.,Cal St. Fullerton,71,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_State_Fullerton_Titans_logo.svg/200px-Cal_State_Fullerton_Titans_logo.svg.png,17
 2024-03-02,V,Long Beach St.,UC Irvine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/UC_Irvine_Anteaters_logo.svg/227px-UC_Irvine_Anteaters_logo.svg.png,18
 2024-03-07,H,Long Beach St.,UC Santa Barbara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/UC_Santa_Barbara_Gauchos_logo.svg/320px-UC_Santa_Barbara_Gauchos_logo.svg.png,19
 2024-03-09,H,Long Beach St.,UC Davis,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/13/UC_Davis_Aggies_logo.svg,20
@@ -134,7 +134,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,H,UC Davis,UC Riverside,61,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/UC_Riverside_Highlanders_logo.svg/240px-UC_Riverside_Highlanders_logo.svg.png,15
 2024-02-22,V,UC Davis,CSUN,66,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/51/CSUN_Matadors_logo.svg/188px-CSUN_Matadors_logo.svg.png,16
 2024-02-24,V,UC Davis,CSU Bakersfield,56,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Cal_State_Bakersfield_Roadrunners_logo.svg/320px-Cal_State_Bakersfield_Roadrunners_logo.svg.png,17
-2024-02-29,H,UC Davis,Hawaii,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hawaii_Warriors_logo.svg/318px-Hawaii_Warriors_logo.svg.png,18
+2024-02-29,H,UC Davis,Hawaii,75,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hawaii_Warriors_logo.svg/318px-Hawaii_Warriors_logo.svg.png,18
 2024-03-07,V,UC Davis,UC San Diego,NA,NA,FALSE,FALSE,https://ucsdtritons.com/images/logos/site/site.png,19
 2024-03-09,V,UC Davis,Long Beach St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Long_Beach_State_Athletics_logo.svg/197px-Long_Beach_State_Athletics_logo.svg.png,20
 2023-12-28,H,UC Irvine,UC Riverside,73,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/UC_Riverside_Highlanders_logo.svg/240px-UC_Riverside_Highlanders_logo.svg.png,1
@@ -153,7 +153,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,H,UC Irvine,CSU Bakersfield,77,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Cal_State_Bakersfield_Roadrunners_logo.svg/320px-Cal_State_Bakersfield_Roadrunners_logo.svg.png,14
 2024-02-22,H,UC Irvine,UC Santa Barbara,81,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/UC_Santa_Barbara_Gauchos_logo.svg/320px-UC_Santa_Barbara_Gauchos_logo.svg.png,15
 2024-02-24,V,UC Irvine,UC San Diego,88,92,FALSE,FALSE,https://ucsdtritons.com/images/logos/site/site.png,16
-2024-02-29,V,UC Irvine,CSUN,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/51/CSUN_Matadors_logo.svg/188px-CSUN_Matadors_logo.svg.png,17
+2024-02-29,V,UC Irvine,CSUN,89,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/51/CSUN_Matadors_logo.svg/188px-CSUN_Matadors_logo.svg.png,17
 2024-03-02,H,UC Irvine,Long Beach St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Long_Beach_State_Athletics_logo.svg/197px-Long_Beach_State_Athletics_logo.svg.png,18
 2024-03-07,H,UC Irvine,Cal Poly,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/175px-Cal_Poly_Mustangs_logo.svg.png,19
 2024-03-09,V,UC Irvine,Cal St. Fullerton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_State_Fullerton_Titans_logo.svg/200px-Cal_State_Fullerton_Titans_logo.svg.png,20
@@ -193,7 +193,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-17,H,UC San Diego,Cal St. Fullerton,76,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_State_Fullerton_Titans_logo.svg/200px-Cal_State_Fullerton_Titans_logo.svg.png,14
 2024-02-22,V,UC San Diego,UC Riverside,77,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/UC_Riverside_Highlanders_logo.svg/240px-UC_Riverside_Highlanders_logo.svg.png,15
 2024-02-24,H,UC San Diego,UC Irvine,92,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/UC_Irvine_Anteaters_logo.svg/227px-UC_Irvine_Anteaters_logo.svg.png,16
-2024-02-29,V,UC San Diego,CSU Bakersfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Cal_State_Bakersfield_Roadrunners_logo.svg/320px-Cal_State_Bakersfield_Roadrunners_logo.svg.png,17
+2024-02-29,V,UC San Diego,CSU Bakersfield,57,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Cal_State_Bakersfield_Roadrunners_logo.svg/320px-Cal_State_Bakersfield_Roadrunners_logo.svg.png,17
 2024-03-02,V,UC San Diego,CSUN,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/51/CSUN_Matadors_logo.svg/188px-CSUN_Matadors_logo.svg.png,18
 2024-03-07,H,UC San Diego,UC Davis,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/1/13/UC_Davis_Aggies_logo.svg,19
 2024-03-09,H,UC San Diego,Cal Poly,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/175px-Cal_Poly_Mustangs_logo.svg.png,20
@@ -213,7 +213,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-02-15,V,UC Santa Barbara,UC San Diego,46,61,FALSE,FALSE,https://ucsdtritons.com/images/logos/site/site.png,14
 2024-02-17,H,UC Santa Barbara,Hawaii,77,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Hawaii_Warriors_logo.svg/318px-Hawaii_Warriors_logo.svg.png,15
 2024-02-22,V,UC Santa Barbara,UC Irvine,69,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/UC_Irvine_Anteaters_logo.svg/227px-UC_Irvine_Anteaters_logo.svg.png,16
-2024-02-29,H,UC Santa Barbara,Cal Poly,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/175px-Cal_Poly_Mustangs_logo.svg.png,17
+2024-02-29,H,UC Santa Barbara,Cal Poly,83,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_Poly_Mustangs_logo.svg/175px-Cal_Poly_Mustangs_logo.svg.png,17
 2024-03-02,V,UC Santa Barbara,Cal St. Fullerton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cal_State_Fullerton_Titans_logo.svg/200px-Cal_State_Fullerton_Titans_logo.svg.png,18
 2024-03-07,V,UC Santa Barbara,Long Beach St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Long_Beach_State_Athletics_logo.svg/197px-Long_Beach_State_Athletics_logo.svg.png,19
 2024-03-09,H,UC Santa Barbara,UC Riverside,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/UC_Riverside_Highlanders_logo.svg/240px-UC_Riverside_Highlanders_logo.svg.png,20
