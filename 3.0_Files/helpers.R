@@ -206,7 +206,7 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, n_ct, force = F, year = '
     if(file.exists(paste0('3.0_Files/Predictions/conf_tourney_sims/',  year, '/', conf, '.csv'))) {
       post_season <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/',  year, '/', conf, '.csv'), col_types = cols())
       ct_sims <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/', year, '/', conf, '.csv'), col_types = cols())
-      run <- sum(ct_sims$champ > 0) > 1 
+      run <- sum(ct_sims$champ > 0) > 1 & any(x$conf_game & x$team_conf == conf & !x$reg_season & x$date == Sys.Date() - 1)
     } else {
       run <- T
     }
@@ -222,7 +222,7 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, n_ct, force = F, year = '
       
       ### Treat Triple Byes as 8-2-2 w/ sampling of first round teams
       if(conf == 'WCC') {
-        keep <- map(1:n_ct, ~c(1:6, sample(c(7,10), 1), sample(c(8,9),1))) 
+        keep <- map(1:n_ct, ~c(1:7, sample(c(8,9),1))) 
         dfs <- map2(dfs, keep, ~filter(.x, conf_seed %in% .y))
       }
       

@@ -106,7 +106,7 @@ update_conf_seeds <- function() {
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
   
-
+  
   # OVC
   seed_teams <-
     c('Little Rock',
@@ -118,38 +118,70 @@ update_conf_seeds <- function() {
       'Eastern Ill.',
       'Southern Ind.')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-
   
-  # 
-  # # MVC
-  # seed_teams <- c('Bradley', 'Drake', 'Southern Ill.', 'Belmont', 'Indiana St.', 
-  #                 'Missouri St.', 'Murray St.', 'UNI', 'Illinois St.', 
-  #                 'Valparaiso', 'UIC', 'Evansville')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # Horizon
-  # seed_teams <- c('Youngstown St.', 'Milwaukee', 'Cleveland St.',
-  #                 'Northern Ky.', 'Oakland', 'Robert Morris', 'Wright St.', 
-  #                 'Detroit Mercy', 'Purdue Fort Wayne', 'Green Bay', 'IUPUI')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # Summit
-  # seed_teams <- c('Oral Roberts', 'South Dakota St.', 'North Dakota St.',
-  #                 'Western Ill.', 'St. Thomas (MN)', 'South Dakota',
-  #                 'Kansas City', 'Denver', 'North Dakota', 'Omaha')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # WCC
-  # seed_teams <- c( "Saint Mary's (CA)", 'Gonzaga', 'Santa Clara', 'LMU (CA)', 
-  #                  'BYU', 'San Francisco', 'Pacific', 'Portland', 'San Diego',  'Pepperdine')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # 
+  # Horizon
+  seed_teams <- 
+    c('Oakland',
+      'Youngstown St.',
+      'Green Bay',
+      'Wright St.',
+      'Northern Ky.',
+      'Milwaukee',
+      'Cleveland St.',
+      'Purdue Fort Wayne',
+      'Robert Morris',
+      'IUPUI',
+      'Detroit Mercy')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # WCC
+  seed_teams <- 
+    c('Saint Mary\'s (CA)',
+      'Gonzaga',
+      'San Francisco',
+      'Santa Clara',
+      'San Diego',
+      'Portland',
+      'LMU (CA)',
+      'Pepperdine',
+      'Pacific')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # Summit
+  seed_teams <- 
+    c('South Dakota St.', 
+      'Kansas City',
+      'North Dakota',
+      'St. Thomas (MN)',
+      'North Dakota St.',
+      'Omaha',
+      'Denver',
+      'Oral Roberts',
+      'South Dakota')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # MVC
+  seed_teams <- 
+    c('Indiana St.',
+      'Drake', 
+      'Bradley',
+      'UNI', 
+      'Belmont', 
+      'Southern Ill.', 
+      'Illinois St.',
+      'Murray St.', 
+      'Missouri St.', 
+      'Evansville',
+      'UIC',
+      'Valparaiso')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  
   # # Am. East
-  # seed_teams <- c('Vermont', 'UMass Lowell', 'New Hampshire', 'UMBC', 
+  # seed_teams <- c('Vermont', 'UMass Lowell', 'New Hampshire', 'UMBC',
   #                 'Binghamton','Bryant', 'Maine',  'NJIT')
   # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
+  
   # # MEAC
   # seed_teams <- c('Howard', 'N.C. Central', 'Norfolk St.', 'UMES', 'Morgan St.',
   #                 'Coppin St.', 'South Carolina St.','Delaware St.')
@@ -284,10 +316,11 @@ conf_tourney_graphics <- function(year = '2023-24') {
            'logo_file' = paste0('app/www/', map_chr(teams, ~ifelse(paste0(.x, '.png') %in% img_files, paste0(.x, '.png'), paste0(.x, '.svg')))))
   
   
+  
   for(conf in sort(unique(confs$conference))) {
     print(conf)
     if(file.exists(paste0('3.0_Files/Predictions/conf_tourney_sims/', year, '/', conf, '.csv'))) {
-      df_sim <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/', year, '/', conf, '.csv'), col_types = cols())
+      df_sim <- read_csv(paste0('3.0_Files/Predictions/conf_tourney_sims/', year, '/', conf, '.csv'), col_types = cols()) 
       
       
       df <- 
@@ -375,7 +408,7 @@ conf_tourney_graphics <- function(year = '2023-24') {
           locations = cells_body(c(logo_file)),
           fn = function(x) {
             local_image(
-              filename = x,
+              filename = gsub('amp;', '', x),
               height = 30
             )
           }

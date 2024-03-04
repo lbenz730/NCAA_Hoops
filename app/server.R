@@ -674,7 +674,7 @@ shinyServer(function(input, output, session) {
         locations = cells_body(c(logo_file)),
         fn = function(x) {
           local_image(
-            filename = x,
+            filename = gsub('amp;', '', x),
             height = 30
           )
         }
