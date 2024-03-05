@@ -265,7 +265,12 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, n_ct, force = F, year = '
       
       post_season$freq[post_season$team %in% confs$team[confs$eliminated | !confs$eligible]] <- 0
       post_season$freq <- post_season$freq/sum(post_season$freq)
-    } 
+    } else {
+     post_season <- 
+       post_season %>% 
+       select('team' = team, 
+              'freq' = champ)
+    }
   }
   
   

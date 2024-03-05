@@ -176,6 +176,20 @@ update_conf_seeds <- function() {
       'Valparaiso')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
+  # Big Sky
+  seed_teams <- 
+    c('Eastern Wash.',
+      'Northern Colo.',
+      'Montana', 
+      'Weber St.', 
+      'Montana St.', 
+      'Portland St.', 
+      'Northern Ariz.',
+      'Idaho',
+      'Idaho St.',
+      'Sacramento St.')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
   
   # # Am. East
   # seed_teams <- c('Vermont', 'UMass Lowell', 'New Hampshire', 'UMBC',
@@ -207,11 +221,7 @@ update_conf_seeds <- function() {
   # seed_teams <- c('Yale', 'Princeton', 'Penn', 'Cornell')
   # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   # 
-  # # Big Sky
-  # seed_teams <- c('Eastern Wash.', 'Montana St.', 'Weber St.', 'Montana',  
-  #                 'Idaho St.','Sacramento St.','Portland St.', 'Northern Colo.',
-  #                 'Northern Ariz.', 'Idaho')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+
   # 
   # # Big East
   # seed_teams <- c('Marquette', 'Xavier', 'Creighton', 'UConn', 'Providence', 
@@ -313,7 +323,9 @@ conf_tourney_graphics <- function(year = '2023-24') {
   img_files <- dir('app/www/')
   df_img <- 
     tibble('team' = teams,
-           'logo_file' = paste0('app/www/', map_chr(teams, ~ifelse(paste0(.x, '.png') %in% img_files, paste0(.x, '.png'), paste0(.x, '.svg')))))
+           'logo_file' = paste0('app/www/', map_chr(teams, ~case_when(paste0(.x, '.png') %in% img_files ~ paste0(.x, '.png'), 
+                                                                      paste0(.x, '.svg') %in% img_files ~ paste0(.x, '.svg'), 
+                                                                      paste0(.x, '.jpg') %in% img_files ~ paste0(.x, '.jpg')))))
   
   
   

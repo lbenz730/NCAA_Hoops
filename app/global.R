@@ -38,7 +38,9 @@ teams <- sort(unique(x$team))
 img_files <- dir('www/')
 df_img <- 
   tibble('team' = teams,
-         'logo_file' = paste0('www/', map_chr(teams, ~ifelse(paste0(.x, '.png') %in% img_files, paste0(.x, '.png'), paste0(.x, '.svg')))))
+         'logo_file' = paste0('www/', map_chr(teams, ~case_when(paste0(.x, '.png') %in% img_files ~ paste0(.x, '.png'), 
+                                                                paste0(.x, '.svg') %in% img_files ~ paste0(.x, '.svg'), 
+                                                                paste0(.x, '.jpg') %in% img_files ~ paste0(.x, '.jpg')))))
 
 history <- read_csv("3.0_Files/History/history.csv") %>%
   mutate("date" = as.Date(date)) 
