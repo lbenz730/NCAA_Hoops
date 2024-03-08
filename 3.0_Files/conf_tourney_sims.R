@@ -200,7 +200,7 @@ update_conf_seeds <- function() {
       'Binghamton',
       'Maine',
       'UMBC',
-      'Albany (NY)')
+      'UAlbany')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
   # # MEAC

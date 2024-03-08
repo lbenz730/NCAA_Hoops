@@ -110,9 +110,9 @@ make_bracket <- function(tourney) {
                                    T ~ 1)) %>%
     mutate('odds' = case_when(
       team %in% c('Arizona') ~ odds * 0.99999,
-      team %in% c('Boise St.') ~ odds * 1.02,
+      team %in% c('Fla. Atlantic') ~ odds * 2.8,
 
-      team %in% c('Ole Miss') ~ odds * 0.5,
+      team %in% c('Ole Miss') ~ odds * 0.3,
       is.na(seed_avg) & odds > 0.3 ~ odds/2,
       is.na(seed_avg) ~ odds,
       T ~ (1 - bm_weight) * odds * pct_brackets +  bm_weight * pct_brackets * bm_odds
