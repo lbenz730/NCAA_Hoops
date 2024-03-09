@@ -203,16 +203,42 @@ update_conf_seeds <- function() {
       'UAlbany')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
-  # # MEAC
-  # seed_teams <- c('Howard', 'N.C. Central', 'Norfolk St.', 'UMES', 'Morgan St.',
-  #                 'Coppin St.', 'South Carolina St.','Delaware St.')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # MAC
-  # seed_teams <- c('Toledo', 'Kent St.', 'Akron', 'Ball St.', 'Ohio',
-  #                 'Buffalo','NIU','Miami (OH)')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
+  # MEAC
+  seed_teams <- 
+    c('Norfolk St.',
+      'N.C. Central',
+      'South Carolina St.',
+      'Howard', 
+      'Morgan St.',
+      'Delaware St.',
+      'UMES', 
+      'Coppin St.')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
+  # Southland
+  seed_teams <- 
+    c('McNeese',
+      'A&M-Corpus Christi',
+      'Nicholls',
+      'Lamar University',
+      'Southeastern La.',
+      'Northwestern St.',
+      'Tex. A&M-Commerce',
+      'New Orleans')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+
+# MAC
+seed_teams <-
+  c('Toledo', 
+    'Akron', 
+    'Ohio',
+    'Central Mich.',
+    'Bowling Green', 
+    'Western Mich.',
+    'Miami (OH)',
+    'Kent St.')
+confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+
   # # MWC
   # seed_teams <- c('San Diego St.', 'Boise St.',  'Utah St.', 'Nevada', 'San Jose St.', 
   #                 'New Mexico', 'UNLV', 'Colorado St.', 'Fresno St.', 'Air Force', 'Wyoming')
@@ -235,10 +261,7 @@ update_conf_seeds <- function() {
   #                 'Villanova', 'Seton Hall', "St. John's (NY)", 'Butler', 'DePaul', 'Georgetown')
   # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   # 
-  # # Southkand
-  # seed_teams <- c('A&M-Corpus Christi', 'Northwestern St.',  'Southeastern La.','Nicholls',
-  #                 'Tex. A&M-Commerce', 'Houston Christian','New Orleans',  'McNeese')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+
   # 
   # # SWAC
   # seed_teams <- c('Alcorn', 'Grambling',  'Jackson St.', 'Southern U.', 'Alabama A&M', 
@@ -347,13 +370,12 @@ conf_tourney_graphics <- function(year = '2023-24') {
         inner_join(df_img, by = 'team') %>% 
         inner_join(select(power_rankings, team, yusag_coeff), by = 'team') %>% 
         inner_join(select(confs, team, eliminated), by = 'team') %>% 
-        filter(!eliminated) %>% 
         arrange(desc(champ), desc(finals)) %>% 
         select(team, logo_file, seed, yusag_coeff, finals, champ)
       
       library(gt)
       table <-
-        gt(df) %>% 
+        gt(df %>% filter(!eliminated)) %>% 
         cols_label('team' = '', 
                    'logo_file' = '',
                    'seed' = 'Seed',
