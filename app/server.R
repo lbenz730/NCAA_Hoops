@@ -597,10 +597,10 @@ shinyServer(function(input, output, session) {
       inner_join(select(confs, team, eliminated)) %>% 
       filter(!eliminated) %>% 
       arrange(desc(champ), desc(finals)) %>% 
-      select(team, logo_file, seed, yusag_coeff, finals, champ)
+      select(team, logo_file, seed, yusag_coeff, finals, champ, eliminated)
     
     table <-
-      gt(df) %>% 
+      gt(df %>% filter(!eliminated) %>% select(-eliminated)) %>% 
       cols_label('team' = '', 
                  'logo_file' = '',
                  'seed' = 'Seed',
