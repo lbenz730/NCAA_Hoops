@@ -119,7 +119,7 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, n_ct, force = F, year = '
         schedule$team < schedule$opponent ~ paste(schedule$team, schedule$opponent, schedule$date),
         T ~ paste(schedule$opponent, schedule$team, schedule$date)
       )
-    schedule <- filter(schedule, !duplicated(tmp))
+    schedule <- filter(schedule, !duplicated(tmp), date <= deadlines$deadline[deadlines$conference == conf])
     
     schedule <- bind_rows(replicate(nsims, schedule, simplify = F))
     
