@@ -595,7 +595,6 @@ shinyServer(function(input, output, session) {
       inner_join(df_img, by = 'team') %>% 
       inner_join(select(rankings_clean, team, yusag_coeff)) %>% 
       inner_join(select(confs, team, eliminated)) %>% 
-      filter(!eliminated) %>% 
       arrange(desc(champ), desc(finals)) %>% 
       select(team, logo_file, seed, yusag_coeff, finals, champ, eliminated)
     
