@@ -215,7 +215,7 @@ write_csv(x, "3.0_Files/Predictions/predictions.csv")
 # playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
 
 ############################ Conference Sims (No Tie-Breaks) ##################
-if(lubridate::hour(Sys.time())  <= 12) {
+if(lubridate::hour(Sys.time())  <= 23) {
   confs <- update_conf_seeds()
   for(conf in setdiff(sort(unique(confs$conference)), 'Independent')) {
     # for(conf in sort(unique(confs$conference[!is.na(confs$conf_seed)]))) {
