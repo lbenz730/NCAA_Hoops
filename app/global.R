@@ -20,6 +20,7 @@ replace_na <- function(x, r) {
 
 glm.pointspread <- readRDS("glm_pointspread.rds")
 ncaa_sims <- read_csv('3.0_Files/ncaa_sims/ncaa_sims.csv')
+seed_list <- read_csv('3.0_Files/ncaa_sims/seed_list.csv')
 t_confs <- gsub('\\.csv', '', dir('3.0_Files/Predictions/conf_tourney_sims/2023-24', full.names = F))
 
 
@@ -256,14 +257,19 @@ gg_color_hue <- function(n) {
 
 
 make_table <- function(sim_results, table_region) {
+  message <- ''
   
   df <- 
-    select(ncaa_colors, 'team' = ncaa_name, logo_url) %>% 
+    df_img %>% 
     inner_join(sim_results) 
   
-  if(table_region != 'all') {
-    df <- filter(df, region == table_region) 
-  }
+  round <- 'first_round'
+  df <- df[df[[round]] != 0,]
+  
+  elim <- 
+    seed_list %>% 
+    filter(!is.na(elim_round)) %>% 
+    pull(team)
   
   df <- 
     df %>% 
@@ -279,14 +285,23 @@ make_table <- function(sim_results, table_region) {
     arrange(-expected_elim_round, -rating) %>% 
     select(-expected_elim_round)
   
+  
+  if(table_region != 'all') {
+    df <- filter(df, region == table_region)
+    
+  }
+  
+  
+  
   df %>% 
     gt() %>% 
+    
     
     ### Ratings 
     data_color(
       columns = c(rating),
       fn = scales::col_numeric(
-        palette = ggsci::rgb_material('amber', n = 68),
+        palette = 'RdYlGn',
         domain = c(min(sim_results$rating), max(sim_results$rating)),
       )
     ) %>% 
@@ -297,10 +312,10 @@ make_table <- function(sim_results, table_region) {
     
     ### Tournament Odds 
     data_color(
-      columns = c(first_round, second_round,
-                  sweet_sixteen, elite_eight,
-                  final_four, championship_game,
-                  champ),
+      columns = any_of(c('first_round', 'second_round',
+                         'sweet_sixteen', 'elite_eight',
+                         'final_four', 'championship_game',
+                         'champ')),
       fn = scales::col_numeric(
         palette = ggsci::rgb_material('amber', n = 68),
         domain = c(0,1),
@@ -308,16 +323,16 @@ make_table <- function(sim_results, table_region) {
     ) %>% 
     
     fmt_percent(
-      columns = c(first_round, second_round,
-                  sweet_sixteen, elite_eight,
-                  final_four, championship_game,
-                  champ),
+      columns = any_of(c('first_round', 'second_round',
+                         'sweet_sixteen', 'elite_eight',
+                         'final_four', 'championship_game',
+                         'champ')),
       decimals = 1) %>% 
     
     ### Align Columns
     cols_align(
       align = "center",
-      columns = any_of(names(df))
+      columns = everything()
     ) %>% 
     
     ### Borders
@@ -350,17 +365,18 @@ make_table <- function(sim_results, table_region) {
       )
     ) %>% 
     text_transform(
-      locations = cells_body(c(logo_url)),
+      locations = cells_body(c(logo_file)),
       fn = function(x) {
-        web_image(
-          url = x,
+        local_image(
+          filename = gsub('amp;', '', x),
           height = 30
         )
+        
       }
     ) %>% 
     cols_label(
       team = '',
-      logo_url = '',
+      logo_file = '',
       region = 'Region',
       seed = 'Seed',
       rating = 'Rating',
@@ -372,14 +388,15 @@ make_table <- function(sim_results, table_region) {
       championship_game = 'NCG',
       champ = 'Champion'
     ) %>% 
-    tab_source_note("Based on 10,000 Simulations of NCAA Tournament") %>%
+    tab_source_note("Based on 100,000 Simulations of NCAA Tournament") %>%
     tab_source_note("Rating: Points relative to baseline NCAA team on neutral floor") %>% 
-    tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>%
+    tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
     tab_header(
-      title = md("**2023 NCAA Men's Basketball Tournament Odds**"),
-      subtitle = md(ifelse(table_region == 'all', '', paste0('**', table_region, " Region**")))
+      title = md("**2024 NCAA Men's Basketball Tournament Odds**"),
+      subtitle = md(paste0('**', ifelse(table_region != 'all', paste0(table_region, " Region**"), paste0(message, '**'))))
     ) %>% 
     tab_options(column_labels.font.size = 20,
+                column_labels.font.weight = 'bold',
                 heading.title.font.size = 40,
                 heading.subtitle.font.size = 30,
                 heading.title.font.weight = 'bold',

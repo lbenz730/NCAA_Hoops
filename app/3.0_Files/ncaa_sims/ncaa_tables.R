@@ -9,13 +9,21 @@ library(gtExtras)
 
 sim_results <- read_csv(here('3.0_Files/ncaa_sims/ncaa_sims.csv'))
 seed_list <-  read_csv(here('3.0_Files/ncaa_sims/seed_list.csv'))
-make_table <- function(sim_results, table_region, message = '') {
+
+make_table <- function(sim_results, table_region, round, message = '') {
+  
+  img_files <- dir('app/www/')
+  df_img <- 
+    tibble('team' = teams,
+           'logo_file' = paste0('app/www/', map_chr(teams, ~case_when(paste0(.x, '.png') %in% img_files ~ paste0(.x, '.png'), 
+                                                                      paste0(.x, '.svg') %in% img_files ~ paste0(.x, '.svg'), 
+                                                                      paste0(.x, '.jpg') %in% img_files ~ paste0(.x, '.jpg')))))
   
   df <- 
-    select(ncaa_colors, 'team' = ncaa_name, logo_url) %>% 
+    df_img %>% 
     inner_join(sim_results) 
   
-  round <- 'sweet_sixteen'
+  round <- 'first_round'
   df <- df[df[[round]] != 0,]
   
   elim <- 
@@ -46,17 +54,14 @@ make_table <- function(sim_results, table_region, message = '') {
   
   
   df %>% 
-    arrange(-final_four) %>% 
-    select(-c(first_round, second_round, sweet_sixteen)) %>% 
-    
     gt() %>% 
     
     
     ### Ratings 
     data_color(
       columns = c(rating),
-      colors = scales::col_numeric(
-        palette = ggsci::rgb_material('amber', n = 68),
+      fn = scales::col_numeric(
+        palette = 'RdYlGn',
         domain = c(min(sim_results$rating), max(sim_results$rating)),
       )
     ) %>% 
@@ -71,7 +76,7 @@ make_table <- function(sim_results, table_region, message = '') {
                          'sweet_sixteen', 'elite_eight',
                          'final_four', 'championship_game',
                          'champ')),
-      colors = scales::col_numeric(
+      fn = scales::col_numeric(
         palette = ggsci::rgb_material('amber', n = 68),
         domain = c(0,1),
       )
@@ -120,35 +125,35 @@ make_table <- function(sim_results, table_region, message = '') {
       )
     ) %>% 
     text_transform(
-      locations = cells_body(c(logo_url)),
+      locations = cells_body(c(logo_file)),
       fn = function(x) {
-        web_image(
-          url = x,
+        local_image(
+          filename = gsub('amp;', '', x),
           height = 30
         )
+        
       }
     ) %>% 
     cols_label(
       team = '',
-      logo_url = '',
+      logo_file = '',
       region = 'Region',
       seed = 'Seed',
       rating = 'Rating',
-      # first_round = '1st Round',
-      # second_round = '2nd Round',
-      # sweet_sixteen = 'Sweet 16',
+      first_round = '1st Round',
+      second_round = '2nd Round',
+      sweet_sixteen = 'Sweet 16',
       elite_eight = 'Elite 8',
       final_four = 'Final 4',
       championship_game = 'NCG',
       champ = 'Champion'
     ) %>% 
-    tab_source_note("Based on 10,000 Simulations of NCAA Tournament") %>%
+    tab_source_note("Based on 100,000 Simulations of NCAA Tournament") %>%
     tab_source_note("Rating: Points relative to baseline NCAA team on neutral floor") %>% 
     tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
     tab_header(
-      title = md("**2023 NCAA Men's Basketball Tournament Odds**"),
+      title = md("**2024 NCAA Men's Basketball Tournament Odds**"),
       subtitle = md(paste0('**', ifelse(table_region != 'all', paste0(table_region, " Region**"), paste0(message, '**'))))
-      # title = html(web_image("https://upload.wikimedia.org/wikipedia/en/0/04/2021_NCAA_Men%27s_Final_Four_logo.svg", 170))
     ) %>% 
     tab_options(column_labels.font.size = 20,
                 column_labels.font.weight = 'bold',
