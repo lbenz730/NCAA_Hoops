@@ -1,69 +1,69 @@
 team,region,seed,first_four,elim_round
 North Carolina,West,1,FALSE,NA
-Howard,West,16,TRUE,NA
-Wagner,West,16,TRUE,NA
-Mississippi St.,West,8,FALSE,NA
-Michigan St.,West,9,FALSE,NA
-Saint Mary's (CA),West,5,FALSE,NA
-Grand Canyon,West,12,FALSE,NA
+Howard,West,16,TRUE,0
+Wagner,West,16,TRUE,1
+Mississippi St.,West,8,FALSE,1
+Michigan St.,West,9,FALSE,2
+Saint Mary's (CA),West,5,FALSE,1
+Grand Canyon,West,12,FALSE,2
 Alabama,West,4,FALSE,NA
-Col. of Charleston,West,13,FALSE,NA
+Col. of Charleston,West,13,FALSE,1
 Clemson,West,6,FALSE,NA
-New Mexico,West,11,FALSE,NA
-Baylor,West,3,FALSE,NA
-Colgate,West,14,FALSE,NA
-Dayton,West,7,FALSE,NA
-Nevada,West,10,FALSE,NA
+New Mexico,West,11,FALSE,1
+Baylor,West,3,FALSE,2
+Colgate,West,14,FALSE,1
+Dayton,West,7,FALSE,2
+Nevada,West,10,FALSE,1
 Arizona,West,2,FALSE,NA
-Long Beach St.,West,15,FALSE,NA
+Long Beach St.,West,15,FALSE,1
 Purdue,Midwest,1,FALSE,NA
-Montana St.,Midwest,16,TRUE,NA
-Grambling,Midwest,16,TRUE,NA
-Utah St.,Midwest,8,FALSE,NA
-TCU,Midwest,9,FALSE,NA
+Montana St.,Midwest,16,TRUE,0
+Grambling,Midwest,16,TRUE,1
+Utah St.,Midwest,8,FALSE,2
+TCU,Midwest,9,FALSE,1
 Gonzaga,Midwest,5,FALSE,NA
-McNeese,Midwest,12,FALSE,NA
-Kansas,Midwest,4,FALSE,NA
-Samford,Midwest,13,FALSE,NA
-South Carolina,Midwest,6,FALSE,NA
-Oregon,Midwest,11,FALSE,NA
+McNeese,Midwest,12,FALSE,1
+Kansas,Midwest,4,FALSE,2
+Samford,Midwest,13,FALSE,1
+South Carolina,Midwest,6,FALSE,1
+Oregon,Midwest,11,FALSE,2
 Creighton,Midwest,3,FALSE,NA
-Akron,Midwest,14,FALSE,NA
-Texas,Midwest,7,FALSE,NA
-Virginia,Midwest,10,TRUE,NA
-Colorado St.,Midwest,10,TRUE,NA
+Akron,Midwest,14,FALSE,1
+Texas,Midwest,7,FALSE,2
+Virginia,Midwest,10,TRUE,0
+Colorado St.,Midwest,10,TRUE,1
 Tennessee,Midwest,2,FALSE,NA
-Saint Peter's,Midwest,15,FALSE,NA
+Saint Peter's,Midwest,15,FALSE,1
 Houston,South,1,FALSE,NA
-Longwood,South,16,FALSE,NA
-Nebraska,South,8,FALSE,NA
-Texas A&M,South,9,FALSE,NA
-Wisconsin,South,5,FALSE,NA
-James Madison,South,12,FALSE,NA
+Longwood,South,16,FALSE,1
+Nebraska,South,8,FALSE,1
+Texas A&M,South,9,FALSE,2
+Wisconsin,South,5,FALSE,1
+James Madison,South,12,FALSE,2
 Duke,South,4,FALSE,NA
-Vermont,South,13,FALSE,NA
-Texas Tech,South,6,FALSE,NA
+Vermont,South,13,FALSE,1
+Texas Tech,South,6,FALSE,1
 NC State,South,11,FALSE,NA
-Kentucky,South,3,FALSE,NA
-Oakland,South,14,FALSE,NA
-Florida,South,7,FALSE,NA
-Boise St.,South,10,TRUE,NA
-Colorado,South,10,TRUE,NA
+Kentucky,South,3,FALSE,1
+Oakland,South,14,FALSE,2
+Florida,South,7,FALSE,1
+Boise St.,South,10,TRUE,0
+Colorado,South,10,TRUE,2
 Marquette,South,2,FALSE,NA
-Western Ky.,South,15,FALSE,NA
+Western Ky.,South,15,FALSE,1
 UConn,East,1,FALSE,NA
-Stetson,East,16,FALSE,NA
-Fla. Atlantic,East,8,FALSE,NA
-Northwestern,East,9,FALSE,NA
+Stetson,East,16,FALSE,1
+Fla. Atlantic,East,8,FALSE,1
+Northwestern,East,9,FALSE,2
 San Diego St.,East,5,FALSE,NA
-UAB,East,12,FALSE,NA
-Auburn,East,4,FALSE,NA
-Yale,East,13,FALSE,NA
-BYU,East,6,FALSE,NA
-Duquesne,East,11,FALSE,NA
+UAB,East,12,FALSE,1
+Auburn,East,4,FALSE,1
+Yale,East,13,FALSE,2
+BYU,East,6,FALSE,1
+Duquesne,East,11,FALSE,2
 Illinois,East,3,FALSE,NA
-Morehead St.,East,14,FALSE,NA
-Washington St.,East,7,FALSE,NA
-Drake,East,10,FALSE,NA
+Morehead St.,East,14,FALSE,1
+Washington St.,East,7,FALSE,2
+Drake,East,10,FALSE,1
 Iowa St.,East,2,FALSE,NA
-South Dakota St.,East,15,FALSE,NA
+South Dakota St.,East,15,FALSE,1

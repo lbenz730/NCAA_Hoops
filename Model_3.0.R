@@ -4,7 +4,7 @@ library(readr)
 library(lubridate)
 library(purrr)
 library(furrr)
-plan(multicore(workers = 12))
+plan(multicore(workers = 8))
 options(future.fork.enable = T)
 options(future.rng.onMisue = "ignore")
 options(dplyr.summarise.inform = FALSE)
@@ -90,13 +90,13 @@ confs <- eliminate(filter(x, score_diff < 0, !reg_season) %>% pull(team), confs)
 
 ### Update NCAA Eliminations:
 round_dates <-
-  list('0' = c('2024-03-19', '2023-03-20'),
-       '1' = c('2023-03-21', '2023-03-22'),
-       '2' = c('2023-03-23', '2023-03-24'),
-       '3' = c('2023-03-28', '2023-03-29'),
-       '4' = c('2023-03-30', '2023-03-31'),
-       '5' = c('2023-04-06', '2023-04-06'),
-       '6' = c('2023-04-08', '2023-04-08'))
+  list('0' = c('2024-03-19', '2024-03-20'),
+       '1' = c('2024-03-21', '2024-03-22'),
+       '2' = c('2024-03-23', '2024-03-24'),
+       '3' = c('2024-03-28', '2024-03-29'),
+       '4' = c('2024-03-30', '2024-03-31'),
+       '5' = c('2024-04-06', '2024-04-06'),
+       '6' = c('2024-04-08', '2024-04-08'))
 
 eliminate_ncaa_teams(seed_list, round_dates)
 

@@ -13,6 +13,7 @@ seed_list <-  read_csv(here('3.0_Files/ncaa_sims/seed_list.csv'))
 make_table <- function(sim_results, table_region, round, message = '') {
   
   img_files <- dir('app/www/')
+  teams <- read_csv(here('3.0_Files/Info/conferences.csv')) %>% pull(team)
   df_img <- 
     tibble('team' = teams,
            'logo_file' = paste0('app/www/', map_chr(teams, ~case_when(paste0(.x, '.png') %in% img_files ~ paste0(.x, '.png'), 
@@ -23,7 +24,7 @@ make_table <- function(sim_results, table_region, round, message = '') {
     df_img %>% 
     inner_join(sim_results) 
   
-  round <- 'first_round'
+  round <- 'second_round'
   df <- df[df[[round]] != 0,]
   
   elim <- 
