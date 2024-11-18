@@ -137,7 +137,7 @@ make_bracket <- function(tourney) {
     
     ### Get At-Large bids
     atlarge <- vector()
-    while(j <= 36) {
+    while(j <= 37) {
       for(k in z:length(teams)){
         z <- z + 1
         if(confs$eligible[confs$team == tmp$team[k]]) {

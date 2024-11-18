@@ -1,221 +1,261 @@
 date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,game_id
-2023-12-01,H,Canisius,Quinnipiac,93,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,1
-2023-12-03,H,Canisius,Saint Peter's,52,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,2
-2024-01-05,V,Canisius,Mount St. Mary's,69,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,3
-2024-01-07,V,Canisius,Rider,76,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,4
-2024-01-12,H,Canisius,Siena,67,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,5
-2024-01-15,H,Canisius,Fairfield,63,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,6
-2024-01-19,V,Canisius,Iona,58,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,7
-2024-01-21,V,Canisius,Saint Peter's,59,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,8
-2024-01-26,H,Canisius,Manhattan,82,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,9
-2024-01-28,H,Canisius,Marist,71,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,10
-2024-02-04,V,Canisius,Quinnipiac,63,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,11
-2024-02-06,V,Canisius,Niagara,64,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,12
-2024-02-10,H,Canisius,Iona,73,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,13
-2024-02-16,V,Canisius,Marist,55,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,14
-2024-02-18,V,Canisius,Siena,73,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,15
-2024-02-23,H,Canisius,Niagara,69,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,16
-2024-03-01,H,Canisius,Mount St. Mary's,61,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,17
-2024-03-03,H,Canisius,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,18
-2024-03-07,V,Canisius,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,19
-2024-03-09,V,Canisius,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,20
-2023-12-01,H,Fairfield,Iona,67,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,1
-2023-12-03,V,Fairfield,Rider,88,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,2
-2024-01-05,V,Fairfield,Siena,93,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,3
-2024-01-07,H,Fairfield,Marist,82,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,4
-2024-01-12,V,Fairfield,Niagara,72,96,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,5
-2024-01-15,V,Fairfield,Canisius,88,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,6
-2024-01-19,H,Fairfield,Saint Peter's,76,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,7
-2024-01-21,V,Fairfield,Manhattan,82,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,8
-2024-01-28,H,Fairfield,Quinnipiac,64,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,9
-2024-02-02,V,Fairfield,Iona,82,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,10
-2024-02-04,H,Fairfield,Manhattan,77,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,11
-2024-02-08,H,Fairfield,Rider,84,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,12
-2024-02-10,V,Fairfield,Saint Peter's,64,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,13
-2024-02-16,H,Fairfield,Niagara,63,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,14
-2024-02-18,H,Fairfield,Mount St. Mary's,94,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,15
-2024-02-23,V,Fairfield,Quinnipiac,85,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,16
-2024-02-25,H,Fairfield,Siena,88,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,17
-2024-03-01,V,Fairfield,Marist,55,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,18
-2024-03-07,H,Fairfield,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,19
-2024-03-09,V,Fairfield,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,20
-2023-11-29,H,Iona,Marist,64,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,1
-2023-12-01,V,Iona,Fairfield,78,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,2
-2024-01-05,V,Iona,Saint Peter's,57,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,3
-2024-01-07,H,Iona,Niagara,73,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,4
-2024-01-14,H,Iona,Mount St. Mary's,87,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,5
-2024-01-19,H,Iona,Canisius,70,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,6
-2024-01-21,V,Iona,Quinnipiac,87,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,7
-2024-01-26,V,Iona,Siena,70,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,8
-2024-02-02,H,Iona,Fairfield,91,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,9
-2024-02-04,H,Iona,Rider,94,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,10
-2024-02-08,V,Iona,Niagara,74,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,11
-2024-02-10,V,Iona,Canisius,69,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,12
-2024-02-16,H,Iona,Manhattan,73,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,13
-2024-02-18,H,Iona,Saint Peter's,53,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,14
-2024-02-23,V,Iona,Rider,75,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,15
-2024-02-25,V,Iona,Mount St. Mary's,65,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,16
-2024-03-01,H,Iona,Quinnipiac,64,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,17
-2024-03-03,V,Iona,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,18
-2024-03-07,V,Iona,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,19
-2024-03-09,H,Iona,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,20
-2023-12-01,H,Manhattan,Mount St. Mary's,75,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,1
-2023-12-03,V,Manhattan,Marist,56,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,2
-2024-01-05,H,Manhattan,Niagara,67,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,3
-2024-01-07,V,Manhattan,Quinnipiac,59,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,4
-2024-01-12,V,Manhattan,Rider,58,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,5
-2024-01-14,H,Manhattan,Saint Peter's,68,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,6
-2024-01-21,H,Manhattan,Fairfield,75,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,7
-2024-01-26,V,Manhattan,Canisius,70,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,8
-2024-01-28,V,Manhattan,Niagara,84,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,9
-2024-02-02,H,Manhattan,Quinnipiac,71,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,10
-2024-02-04,V,Manhattan,Fairfield,68,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,11
-2024-02-08,V,Manhattan,Mount St. Mary's,78,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,12
-2024-02-10,H,Manhattan,Siena,63,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,13
-2024-02-16,V,Manhattan,Iona,63,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,14
-2024-02-18,H,Manhattan,Rider,62,104,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,15
-2024-02-23,H,Manhattan,Marist,50,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,16
-2024-03-01,V,Manhattan,Siena,70,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,17
-2024-03-03,V,Manhattan,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,18
-2024-03-07,H,Manhattan,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,19
-2024-03-09,H,Manhattan,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,20
-2023-11-29,V,Marist,Iona,68,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,1
-2023-12-03,H,Marist,Manhattan,70,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,2
-2024-01-07,V,Marist,Fairfield,61,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,3
-2024-01-12,H,Marist,Quinnipiac,55,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,4
-2024-01-14,H,Marist,Rider,83,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,5
-2024-01-19,V,Marist,Mount St. Mary's,48,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,6
-2024-01-21,H,Marist,Siena,50,48,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,7
-2024-01-26,V,Marist,Niagara,62,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,8
-2024-01-28,V,Marist,Canisius,80,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,9
-2024-02-02,H,Marist,Mount St. Mary's,58,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,10
-2024-02-04,H,Marist,Saint Peter's,63,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,11
-2024-02-08,V,Marist,Siena,67,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,12
-2024-02-10,V,Marist,Rider,77,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,13
-2024-02-16,H,Marist,Canisius,78,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,14
-2024-02-23,V,Marist,Manhattan,57,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,15
-2024-02-25,V,Marist,Saint Peter's,60,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,16
-2024-03-01,H,Marist,Fairfield,58,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,17
-2024-03-03,H,Marist,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,18
-2024-03-07,V,Marist,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,19
-2024-03-09,H,Marist,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,20
-2023-12-01,V,Mount St. Mary's,Manhattan,74,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,1
-2023-12-03,H,Mount St. Mary's,Siena,80,48,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,2
-2024-01-05,H,Mount St. Mary's,Canisius,74,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,3
-2024-01-07,V,Mount St. Mary's,Saint Peter's,64,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,4
-2024-01-14,V,Mount St. Mary's,Iona,70,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,5
-2024-01-19,H,Mount St. Mary's,Marist,65,48,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,6
-2024-01-21,H,Mount St. Mary's,Niagara,71,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,7
-2024-01-25,V,Mount St. Mary's,Quinnipiac,65,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,8
-2024-01-27,H,Mount St. Mary's,Rider,62,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,9
-2024-02-02,V,Mount St. Mary's,Marist,76,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,10
-2024-02-04,V,Mount St. Mary's,Siena,68,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,11
-2024-02-08,H,Mount St. Mary's,Manhattan,82,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,12
-2024-02-10,H,Mount St. Mary's,Quinnipiac,96,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,13
-2024-02-16,V,Mount St. Mary's,Rider,57,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,14
-2024-02-18,V,Mount St. Mary's,Fairfield,80,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,15
-2024-02-23,H,Mount St. Mary's,Saint Peter's,65,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,16
-2024-02-25,H,Mount St. Mary's,Iona,72,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,17
-2024-03-01,V,Mount St. Mary's,Canisius,56,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,18
-2024-03-03,V,Mount St. Mary's,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,19
-2024-03-09,H,Mount St. Mary's,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,20
-2023-12-01,H,Niagara,Saint Peter's,67,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,1
-2023-12-03,H,Niagara,Quinnipiac,68,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,2
-2024-01-05,V,Niagara,Manhattan,81,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,3
-2024-01-07,V,Niagara,Iona,75,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,4
-2024-01-12,H,Niagara,Fairfield,96,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,5
-2024-01-15,H,Niagara,Siena,88,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,6
-2024-01-19,V,Niagara,Rider,78,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,7
-2024-01-21,V,Niagara,Mount St. Mary's,82,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,8
-2024-01-26,H,Niagara,Marist,67,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,9
-2024-01-28,H,Niagara,Manhattan,78,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,10
-2024-02-02,V,Niagara,Saint Peter's,68,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,11
-2024-02-06,H,Niagara,Canisius,69,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,12
-2024-02-08,H,Niagara,Iona,71,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,13
-2024-02-16,V,Niagara,Fairfield,65,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,14
-2024-02-18,V,Niagara,Quinnipiac,80,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,15
-2024-02-23,V,Niagara,Canisius,59,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,16
-2024-03-01,H,Niagara,Rider,61,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,17
-2024-03-03,H,Niagara,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,18
-2024-03-07,V,Niagara,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,19
-2024-03-09,V,Niagara,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,20
-2023-12-01,V,Quinnipiac,Canisius,73,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,1
-2023-12-03,V,Quinnipiac,Niagara,75,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,2
-2024-01-05,H,Quinnipiac,Rider,88,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,3
-2024-01-07,H,Quinnipiac,Manhattan,76,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,4
-2024-01-12,V,Quinnipiac,Marist,66,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,5
-2024-01-19,V,Quinnipiac,Siena,82,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,6
-2024-01-21,H,Quinnipiac,Iona,91,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,7
-2024-01-25,H,Quinnipiac,Mount St. Mary's,79,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,8
-2024-01-28,V,Quinnipiac,Fairfield,66,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,9
-2024-02-02,V,Quinnipiac,Manhattan,77,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,10
-2024-02-04,H,Quinnipiac,Canisius,88,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,11
-2024-02-08,H,Quinnipiac,Saint Peter's,84,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,12
-2024-02-10,V,Quinnipiac,Mount St. Mary's,79,96,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,13
-2024-02-18,H,Quinnipiac,Niagara,66,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,14
-2024-02-23,H,Quinnipiac,Fairfield,81,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,15
-2024-02-25,V,Quinnipiac,Rider,78,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,16
-2024-03-01,V,Quinnipiac,Iona,82,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,17
-2024-03-03,H,Quinnipiac,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,18
-2024-03-07,H,Quinnipiac,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,19
-2024-03-09,V,Quinnipiac,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,20
-2023-12-01,V,Rider,Siena,65,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,1
-2023-12-03,H,Rider,Fairfield,81,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,2
-2024-01-05,V,Rider,Quinnipiac,84,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,3
-2024-01-07,H,Rider,Canisius,79,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,4
-2024-01-12,H,Rider,Manhattan,71,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,5
-2024-01-14,V,Rider,Marist,60,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,6
-2024-01-19,H,Rider,Niagara,74,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,7
-2024-01-25,V,Rider,Saint Peter's,62,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,8
-2024-01-27,V,Rider,Mount St. Mary's,66,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,9
-2024-02-02,H,Rider,Siena,91,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,10
-2024-02-04,V,Rider,Iona,93,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,11
-2024-02-08,V,Rider,Fairfield,67,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,12
-2024-02-10,H,Rider,Marist,62,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,13
-2024-02-16,H,Rider,Mount St. Mary's,61,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,14
-2024-02-18,V,Rider,Manhattan,104,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,15
-2024-02-23,H,Rider,Iona,78,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,16
-2024-02-25,H,Rider,Quinnipiac,88,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,17
-2024-03-01,V,Rider,Niagara,71,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,18
-2024-03-03,V,Rider,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,19
-2024-03-07,H,Rider,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,20
-2023-12-01,V,Saint Peter's,Niagara,72,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,1
-2023-12-03,V,Saint Peter's,Canisius,54,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,2
-2024-01-05,H,Saint Peter's,Iona,69,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,3
-2024-01-07,H,Saint Peter's,Mount St. Mary's,70,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,4
-2024-01-14,V,Saint Peter's,Manhattan,81,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,5
-2024-01-19,V,Saint Peter's,Fairfield,67,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,6
-2024-01-21,H,Saint Peter's,Canisius,70,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,7
-2024-01-25,H,Saint Peter's,Rider,57,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,8
-2024-01-28,V,Saint Peter's,Siena,63,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,9
-2024-02-02,H,Saint Peter's,Niagara,59,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,10
-2024-02-04,V,Saint Peter's,Marist,52,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,11
-2024-02-08,V,Saint Peter's,Quinnipiac,73,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,12
-2024-02-10,H,Saint Peter's,Fairfield,62,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,13
-2024-02-16,H,Saint Peter's,Siena,75,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,14
-2024-02-18,V,Saint Peter's,Iona,59,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,15
-2024-02-23,V,Saint Peter's,Mount St. Mary's,70,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,16
-2024-02-25,H,Saint Peter's,Marist,69,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,17
-2024-03-03,H,Saint Peter's,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,18
-2024-03-07,V,Saint Peter's,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,19
-2024-03-09,H,Saint Peter's,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,20
-2023-12-01,H,Siena,Rider,67,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,1
-2023-12-03,V,Siena,Mount St. Mary's,48,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,2
-2024-01-05,H,Siena,Fairfield,69,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,3
-2024-01-12,V,Siena,Canisius,63,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,4
-2024-01-15,V,Siena,Niagara,93,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,5
-2024-01-19,H,Siena,Quinnipiac,70,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,6
-2024-01-21,V,Siena,Marist,48,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,7
-2024-01-26,H,Siena,Iona,51,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,8
-2024-01-28,H,Siena,Saint Peter's,52,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,9
-2024-02-02,V,Siena,Rider,50,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,10
-2024-02-04,H,Siena,Mount St. Mary's,61,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,11
-2024-02-08,H,Siena,Marist,51,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,12
-2024-02-10,V,Siena,Manhattan,68,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,13
-2024-02-16,V,Siena,Saint Peter's,53,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,14
-2024-02-18,H,Siena,Canisius,64,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,15
-2024-02-25,V,Siena,Fairfield,64,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,16
-2024-03-01,H,Siena,Manhattan,68,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,17
-2024-03-03,V,Siena,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,18
-2024-03-07,H,Siena,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,19
-2024-03-09,V,Siena,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,20
+2024-12-06,H,Canisius,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,1
+2024-12-08,H,Canisius,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,2
+2025-01-05,V,Canisius,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,3
+2025-01-10,H,Canisius,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,4
+2025-01-12,H,Canisius,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,5
+2025-01-16,V,Canisius,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,6
+2025-01-18,V,Canisius,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,7
+2025-01-23,H,Canisius,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,8
+2025-01-25,H,Canisius,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,9
+2025-01-31,H,Canisius,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,10
+2025-02-06,V,Canisius,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,11
+2025-02-08,V,Canisius,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,12
+2025-02-12,V,Canisius,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,13
+2025-02-16,H,Canisius,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,14
+2025-02-21,V,Canisius,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,15
+2025-02-23,V,Canisius,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,16
+2025-02-28,H,Canisius,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,17
+2025-03-02,H,Canisius,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,18
+2025-03-06,V,Canisius,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,19
+2025-03-08,V,Canisius,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,20
+2024-12-04,H,Fairfield,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,1
+2024-12-08,V,Fairfield,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,2
+2025-01-03,V,Fairfield,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,3
+2025-01-10,H,Fairfield,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,4
+2025-01-12,V,Fairfield,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,5
+2025-01-16,H,Fairfield,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,6
+2025-01-18,H,Fairfield,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,7
+2025-01-23,V,Fairfield,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,8
+2025-01-25,H,Fairfield,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,9
+2025-01-31,V,Fairfield,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,10
+2025-02-02,V,Fairfield,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,11
+2025-02-06,H,Fairfield,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,12
+2025-02-08,H,Fairfield,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,13
+2025-02-14,V,Fairfield,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,14
+2025-02-16,H,Fairfield,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,15
+2025-02-21,V,Fairfield,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,16
+2025-02-28,H,Fairfield,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,17
+2025-03-02,V,Fairfield,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,18
+2025-03-06,V,Fairfield,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,19
+2025-03-08,H,Fairfield,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,20
+2024-12-06,V,Iona,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,1
+2024-12-08,H,Iona,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,2
+2025-01-03,H,Iona,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,3
+2025-01-05,V,Iona,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,4
+2025-01-10,V,Iona,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,5
+2025-01-12,H,Iona,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,6
+2025-01-16,H,Iona,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,7
+2025-01-23,V,Iona,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,8
+2025-01-25,H,Iona,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,9
+2025-01-31,V,Iona,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,10
+2025-02-02,H,Iona,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,11
+2025-02-06,V,Iona,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,12
+2025-02-08,V,Iona,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,13
+2025-02-14,H,Iona,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,14
+2025-02-16,V,Iona,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,15
+2025-02-21,H,Iona,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,16
+2025-02-23,H,Iona,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,17
+2025-02-28,V,Iona,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,18
+2025-03-02,V,Iona,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,19
+2025-03-08,H,Iona,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,20
+2024-12-06,V,Manhattan,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,1
+2024-12-08,H,Manhattan,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,2
+2025-01-03,V,Manhattan,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,3
+2025-01-05,V,Manhattan,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,4
+2025-01-10,H,Manhattan,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,5
+2025-01-12,V,Manhattan,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,6
+2025-01-18,H,Manhattan,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,7
+2025-01-23,H,Manhattan,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,8
+2025-01-25,V,Manhattan,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,9
+2025-01-31,H,Manhattan,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,10
+2025-02-02,V,Manhattan,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,11
+2025-02-08,H,Manhattan,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,12
+2025-02-14,H,Manhattan,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,13
+2025-02-16,V,Manhattan,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,14
+2025-02-21,V,Manhattan,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,15
+2025-02-23,H,Manhattan,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,16
+2025-02-28,V,Manhattan,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,17
+2025-03-02,V,Manhattan,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,18
+2025-03-06,H,Manhattan,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,19
+2025-03-08,H,Manhattan,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,20
+2024-12-06,H,Marist,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,1
+2024-12-08,V,Marist,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,2
+2025-01-03,V,Marist,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,3
+2025-01-05,H,Marist,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,4
+2025-01-12,H,Marist,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,5
+2025-01-16,V,Marist,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,6
+2025-01-18,H,Marist,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,7
+2025-01-23,V,Marist,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,8
+2025-01-25,V,Marist,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,9
+2025-01-31,H,Marist,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,10
+2025-02-06,V,Marist,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,11
+2025-02-08,H,Marist,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,12
+2025-02-14,V,Marist,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,13
+2025-02-16,V,Marist,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,14
+2025-02-21,H,Marist,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,15
+2025-02-23,H,Marist,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,16
+2025-02-28,V,Marist,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,17
+2025-03-02,H,Marist,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,18
+2025-03-06,H,Marist,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,19
+2025-03-08,V,Marist,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,20
+2024-12-06,V,Merrimack,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,1
+2024-12-08,V,Merrimack,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,2
+2025-01-03,H,Merrimack,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,3
+2025-01-10,V,Merrimack,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,4
+2025-01-12,H,Merrimack,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,5
+2025-01-16,V,Merrimack,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,6
+2025-01-18,H,Merrimack,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,7
+2025-01-23,V,Merrimack,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,8
+2025-01-25,V,Merrimack,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,9
+2025-01-31,H,Merrimack,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,10
+2025-02-02,V,Merrimack,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,11
+2025-02-06,H,Merrimack,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,12
+2025-02-08,H,Merrimack,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,13
+2025-02-14,V,Merrimack,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,14
+2025-02-16,H,Merrimack,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,15
+2025-02-21,H,Merrimack,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,16
+2025-02-23,V,Merrimack,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,17
+2025-02-28,H,Merrimack,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,18
+2025-03-02,H,Merrimack,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,19
+2025-03-06,V,Merrimack,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,20
+2024-12-06,V,Mount St. Mary's,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,1
+2024-12-08,H,Mount St. Mary's,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,2
+2025-01-05,H,Mount St. Mary's,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,3
+2025-01-10,V,Mount St. Mary's,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,4
+2025-01-12,H,Mount St. Mary's,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,5
+2025-01-16,V,Mount St. Mary's,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,6
+2025-01-18,H,Mount St. Mary's,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,7
+2025-01-23,V,Mount St. Mary's,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,8
+2025-01-25,H,Mount St. Mary's,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,9
+2025-01-31,V,Mount St. Mary's,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,10
+2025-02-02,V,Mount St. Mary's,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,11
+2025-02-06,H,Mount St. Mary's,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,12
+2025-02-14,V,Mount St. Mary's,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,13
+2025-02-16,V,Mount St. Mary's,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,14
+2025-02-21,H,Mount St. Mary's,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,15
+2025-02-23,H,Mount St. Mary's,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,16
+2025-02-28,V,Mount St. Mary's,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,17
+2025-03-02,H,Mount St. Mary's,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,18
+2025-03-06,V,Mount St. Mary's,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,19
+2025-03-08,H,Mount St. Mary's,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,20
+2024-12-06,H,Niagara,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,1
+2024-12-08,H,Niagara,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,2
+2025-01-05,V,Niagara,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,3
+2025-01-10,H,Niagara,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,4
+2025-01-12,H,Niagara,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,5
+2025-01-16,V,Niagara,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,6
+2025-01-18,V,Niagara,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,7
+2025-01-23,H,Niagara,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,8
+2025-01-25,H,Niagara,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,9
+2025-01-31,V,Niagara,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,10
+2025-02-06,V,Niagara,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,11
+2025-02-08,V,Niagara,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,12
+2025-02-12,H,Niagara,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,13
+2025-02-14,H,Niagara,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,14
+2025-02-21,V,Niagara,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,15
+2025-02-23,V,Niagara,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,16
+2025-02-28,H,Niagara,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,17
+2025-03-02,H,Niagara,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,18
+2025-03-06,V,Niagara,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,19
+2025-03-08,V,Niagara,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,20
+2024-12-06,V,Quinnipiac,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,1
+2024-12-08,H,Quinnipiac,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,2
+2025-01-03,V,Quinnipiac,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,3
+2025-01-05,V,Quinnipiac,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,4
+2025-01-10,H,Quinnipiac,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,5
+2025-01-12,V,Quinnipiac,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,6
+2025-01-16,H,Quinnipiac,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,7
+2025-01-18,V,Quinnipiac,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,8
+2025-01-25,H,Quinnipiac,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,9
+2025-01-31,H,Quinnipiac,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,10
+2025-02-02,V,Quinnipiac,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,11
+2025-02-06,H,Quinnipiac,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,12
+2025-02-08,H,Quinnipiac,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,13
+2025-02-14,V,Quinnipiac,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,14
+2025-02-16,H,Quinnipiac,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,15
+2025-02-23,V,Quinnipiac,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,16
+2025-02-28,H,Quinnipiac,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,17
+2025-03-02,V,Quinnipiac,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,18
+2025-03-06,H,Quinnipiac,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,19
+2025-03-08,V,Quinnipiac,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,20
+2024-12-04,V,Rider,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,1
+2024-12-06,H,Rider,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,2
+2025-01-05,H,Rider,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,3
+2025-01-10,V,Rider,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,4
+2025-01-12,V,Rider,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,5
+2025-01-16,H,Rider,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,6
+2025-01-18,V,Rider,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,7
+2025-01-23,H,Rider,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,8
+2025-01-25,V,Rider,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,9
+2025-01-31,H,Rider,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,10
+2025-02-02,H,Rider,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,11
+2025-02-06,V,Rider,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,12
+2025-02-08,H,Rider,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,13
+2025-02-14,V,Rider,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,14
+2025-02-16,V,Rider,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,15
+2025-02-21,H,Rider,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,16
+2025-02-23,V,Rider,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,17
+2025-02-28,V,Rider,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,18
+2025-03-06,H,Rider,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,19
+2025-03-08,H,Rider,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,20
+2024-12-06,H,Sacred Heart,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,1
+2024-12-08,V,Sacred Heart,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,2
+2025-01-05,H,Sacred Heart,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,3
+2025-01-10,H,Sacred Heart,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,4
+2025-01-12,V,Sacred Heart,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,5
+2025-01-16,V,Sacred Heart,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,6
+2025-01-18,H,Sacred Heart,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,7
+2025-01-23,V,Sacred Heart,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,8
+2025-01-25,V,Sacred Heart,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,9
+2025-02-02,H,Sacred Heart,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,10
+2025-02-06,H,Sacred Heart,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,11
+2025-02-08,V,Sacred Heart,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,12
+2025-02-14,H,Sacred Heart,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,13
+2025-02-16,H,Sacred Heart,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,14
+2025-02-21,V,Sacred Heart,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,15
+2025-02-23,V,Sacred Heart,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,16
+2025-02-28,H,Sacred Heart,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,17
+2025-03-02,H,Sacred Heart,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,18
+2025-03-06,V,Sacred Heart,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,19
+2025-03-08,V,Sacred Heart,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,20
+2024-12-06,H,Saint Peter's,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,1
+2024-12-08,V,Saint Peter's,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,2
+2025-01-03,H,Saint Peter's,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,3
+2025-01-10,V,Saint Peter's,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,4
+2025-01-12,V,Saint Peter's,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,5
+2025-01-16,H,Saint Peter's,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,6
+2025-01-18,V,Saint Peter's,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,7
+2025-01-23,H,Saint Peter's,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,8
+2025-01-31,V,Saint Peter's,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,9
+2025-02-02,H,Saint Peter's,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,10
+2025-02-06,V,Saint Peter's,Siena,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/d0/Siena_Saints_wordmark.png,11
+2025-02-08,V,Saint Peter's,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,12
+2025-02-14,H,Saint Peter's,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,13
+2025-02-16,H,Saint Peter's,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,14
+2025-02-21,V,Saint Peter's,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,15
+2025-02-23,H,Saint Peter's,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,16
+2025-02-28,V,Saint Peter's,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,17
+2025-03-02,V,Saint Peter's,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,18
+2025-03-06,H,Saint Peter's,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,19
+2025-03-08,H,Saint Peter's,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,20
+2024-12-06,V,Siena,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,1
+2024-12-08,V,Siena,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,2
+2025-01-03,H,Siena,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,3
+2025-01-05,H,Siena,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,4
+2025-01-10,V,Siena,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,5
+2025-01-16,H,Siena,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,6
+2025-01-18,V,Siena,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,7
+2025-01-23,H,Siena,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,8
+2025-01-25,V,Siena,Iona,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iona_College_Athletics_Primary_Logo.png/315px-Iona_College_Athletics_Primary_Logo.png,9
+2025-01-31,V,Siena,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,10
+2025-02-02,H,Siena,Quinnipiac,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/2/2c/Quinnipiac_Bobcats_logo.svg,11
+2025-02-06,H,Siena,Saint Peter's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/9/97/Saint_Peter%27s_Peacocks_logo.svg,12
+2025-02-08,V,Siena,Rider,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Rider_Broncs.svg/320px-Rider_Broncs.svg.png,13
+2025-02-14,H,Siena,Marist,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Marist_Red_Foxes_logo.svg/320px-Marist_Red_Foxes_logo.svg.png,14
+2025-02-16,V,Siena,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,15
+2025-02-21,H,Siena,Niagara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Niagara_Purple_Eagles.svg/320px-Niagara_Purple_Eagles.svg.png,16
+2025-02-23,H,Siena,Canisius,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/8/81/Canisius_Athletics_wordmark.png,17
+2025-03-02,V,Siena,Mount St. Mary's,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Mount_St._Mary%27s_Mountaineers_logo.svg/320px-Mount_St._Mary%27s_Mountaineers_logo.svg.png,18
+2025-03-06,H,Siena,Fairfield,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Fairfield_Stags_logo.svg/272px-Fairfield_Stags_logo.svg.png,19
+2025-03-08,V,Siena,Manhattan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Manhattan_Jaspers_logo.svg/287px-Manhattan_Jaspers_logo.svg.png,20

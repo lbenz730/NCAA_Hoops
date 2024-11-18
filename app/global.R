@@ -21,7 +21,7 @@ replace_na <- function(x, r) {
 glm.pointspread <- readRDS("glm_pointspread.rds")
 ncaa_sims <- read_csv('3.0_Files/ncaa_sims/ncaa_sims.csv')
 seed_list <- read_csv('3.0_Files/ncaa_sims/seed_list.csv')
-t_confs <- gsub('\\.csv', '', dir('3.0_Files/Predictions/conf_tourney_sims/2023-24', full.names = F))
+t_confs <- gsub('\\.csv', '', dir('3.0_Files/Predictions/conf_tourney_sims/2023-24', full.names = F)) ### Change when update
 
 
 
@@ -107,7 +107,7 @@ records_actual <-
             "conf_losses" = sum(1 - wins[conf_game& !is.na(team_score) ])) %>%
   ungroup()
 
-non_d1 <- read_csv(paste0("3.0_Files/Results/2023-24/NCAA_Hoops_Results_",
+non_d1 <- read_csv(paste0("3.0_Files/Results/2024-25/NCAA_Hoops_Results_",
                           paste(gsub("^0", "", unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)]), collapse = "_"),
                           ".csv")) %>% 
   filter(D1 == 1) %>%
@@ -121,7 +121,7 @@ non_d1 <- read_csv(paste0("3.0_Files/Results/2023-24/NCAA_Hoops_Results_",
   rename("team_conf" = conference) %>%
   ungroup()
 
-non_d1_actual <- read_csv(paste0("3.0_Files/Results/2023-24/NCAA_Hoops_Results_",
+non_d1_actual <- read_csv(paste0("3.0_Files/Results/2024-25/NCAA_Hoops_Results_",
                                  paste(gsub("^0", "", unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)]), collapse = "_"),
                                  ".csv")) %>% 
   filter(D1 == 1) %>%
@@ -407,7 +407,7 @@ make_table <- function(sim_results, table_region) {
 ### Ivy League
 ivy_history <- 
   read_csv('3.0_Files/Predictions/playoff_history.csv') %>% 
-  filter(date >= '2023-11-01')
+  filter(date >= '2024-11-01')
 ivy_playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
 
 ivy_gt <- 
@@ -490,12 +490,12 @@ ivy_gt <-
       )
     }
   ) %>% 
-  tab_source_note("2024 Tournament hosted by Columbia University") %>%
+  tab_source_note("2025 Tournament hosted by Brown University") %>%
   tab_source_note("Based on 5,000 Simulations. Ties broken according to official Ivy League tiebreaking rules.") %>%
   
   tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>%
   tab_header(
-    title = md("**2024 Ivy League Men's Basketball Tournament Odds**"),
+    title = md("**2025 Ivy League Men's Basketball Tournament Odds**"),
     subtitle = md("<img src='https://content.sportslogos.net/logos/153/4824/full/ivy_league_logo_primary_2019_sportslogosnet-9024.png' style='height: 50px; width: auto; vertical-align: middle;'> ")
     # subtitle = md(paste0('**', table_region, " Region**"))
   ) %>% 
@@ -508,14 +508,14 @@ ivy_gt <-
 cols <- filter(ncaa_colors, conference == "Ivy") %>% 
   pull(primary_color)
 ivy_history_plot <- 
-  ggplot(ivy_history %>% filter(date >= as.Date('2023-11-22')), aes(x = as.Date(date), y = playoff_prob)) + 
+  ggplot(ivy_history %>% filter(date >= as.Date('2024-11-08')), aes(x = as.Date(date), y = playoff_prob)) + 
   geom_line(aes(group = team, col = team), size = 1.5) +
   facet_wrap(~team, ncol = 4) +
   theme_bw() + 
   labs(x = "Date", 
        y = "Playoff Probability",
        title = "Ivy League Playoff Odds",
-       subtitle = "2023-2024") +
+       subtitle = "2024-2025") +
   theme(legend.position = "none",
         axis.title = element_text(size = 18),
         plot.title = element_text(size = 24, hjust = 0.5),
@@ -547,131 +547,131 @@ ivy_bar <-
 
 
 
-ivy_psf <- read_rds('3.0_Files/Predictions/ivy_psf_full.rds')
+# ivy_psf <- read_rds('3.0_Files/Predictions/ivy_psf_full.rds')
 
-ivy_psf_gt <-
-  ivy_psf %>%
-  inner_join(df_img, by = c('home' = 'team')) %>%
-  inner_join(df_img, by = c('away' = 'team'), suffix = c('_home', '_away')) %>%
-  mutate_if(is.numeric, ~{.x/100}) %>%
-  inner_join(x, by = c('home' = 'team',
-                       'away' = 'opponent',
-                       'date' = 'date')) %>%
-  mutate('home_bar' = paste0('3.0_Files/Predictions/psf_figures/home_', 1:nrow(.), '.png'),
-         'away_bar' = paste0('3.0_Files/Predictions/psf_figures/away_', 1:nrow(.), '.png'),
-         'delta_bar' = paste0('3.0_Files/Predictions/psf_figures/delta_', 1:nrow(.), '.png')) %>%
-  mutate('favored' = ifelse(pred_score_diff > 0, logo_file_home, logo_file_away),
-         'win_prob' = ifelse(pred_score_diff > 0, wins, 1-wins),
-         'pred_score' = ifelse(pred_score_diff > 0,
-                               paste(sprintf('%0.1f', pred_team_score), sprintf('%0.1f', pred_opp_score), sep = '-'),
-                               paste(sprintf('%0.1f', pred_opp_score), sprintf('%0.1f', pred_team_score), sep = '-'))) %>%
-  select(date, logo_file_away, logo_file_home, favored, pred_score, win_prob,
-         psf, auto_bid_sf, away_bar, home_bar, delta_bar) %>%
-  arrange(date) %>%
-  # filter(date == Sys.Date()) %>%
-  gt() %>%
-  cols_label('date' = 'Date',
-             'logo_file_home' = 'Home',
-             'logo_file_away' = 'Away',
-             'favored' = 'Winner',
-             'pred_score' = 'Score',
-             'win_prob' = 'Win Probability',
-             'psf' = 'Playoffs',
-             'auto_bid_sf' = 'Auto Bid',
-             'home_bar' = 'If Home Wins',
-             'away_bar' = 'If Away Wins',
-             'delta_bar' = 'Difference') %>%
-  
-  tab_spanner(label = 'Matchup', columns = c('date', 'logo_file_away', 'logo_file_home')) %>%
-  tab_spanner(label = 'Game Prediction', columns = c('favored', 'pred_score', 'win_prob')) %>%
-  tab_spanner(label = 'Leverage', columns = c('psf', 'auto_bid_sf')) %>%
-  tab_spanner(label = 'Playoff Odds', columns = c('away_bar', 'home_bar', 'delta_bar')) %>%
-  
-  
-  ### Hightlight Columns
-  data_color(
-    columns = c(auto_bid_sf, psf, win_prob),
-    colors = scales::col_numeric(
-      palette = ggsci::rgb_material('amber', n = 100),
-      domain = c(0,1.25),
-    )
-  ) %>%
-  
-  ### Percent
-  fmt_percent(
-    columns = c(auto_bid_sf, psf, win_prob),
-    decimals = 1) %>%
-  
-  ### Align Columns
-  cols_align(
-    align = "center",
-    columns = any_of(c('home_bar', 'away_bar', 'delta_bar', 'favored', names(x), 'pred_score', 'win_prob', names(ivy_psf)))
-  ) %>%
-  
-  ### Borders
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "bottom",
-        color = "black",
-        weight = px(3)
-      )
-    ),
-    locations = list(
-      cells_column_labels(
-        columns = gt::everything()
-      )
-    )
-  ) %>%
-  tab_style(
-    style = list(
-      cell_borders(
-        sides = "right",
-        color = "black",
-        weight = px(3)
-      )
-    ),
-    locations = list(
-      cells_body(
-        columns = c(logo_file_home, auto_bid_sf, home_bar, win_prob, away_bar, delta_bar)
-      )
-    )
-  ) %>%
-  text_transform(
-    locations = cells_body(c(logo_file_home, logo_file_away, favored)),
-    fn = function(x) {
-      local_image(
-        filename  = x,
-        height = 50
-      )
-    }
-  ) %>%
-  text_transform(
-    locations = cells_body(c(home_bar, away_bar, delta_bar)),
-    fn = function(x) {
-      local_image(
-        filename  = x,
-        height = 200
-      )
-    }
-  ) %>%
-  tab_source_note('@recspecs730') %>%
-  tab_source_note('Leverage = total swing in all teams\' playoff/auto-bid odds between the two possible outcomes.') %>%
-  tab_source_note('Difference = delta in playoff odds per team if Home wins (right) vs Away Wins (left)') %>%
-  tab_source_note("2024 Tournament hosted by Columbia University") %>%
-  tab_source_note("Based on 1,000 Simulations of each outcome. Ties broken according to official Ivy League tiebreaking rules.") %>%
-  tab_header(title = paste0(
-    'Ivy League Playoff Leverage: ',
-    min(ivy_psf$date),
-    ifelse(n_distinct(ivy_psf$date) > 1, paste(' -', max(ivy_psf$date)), ''),
-    ''
-  )) %>%
-  tab_options(column_labels.font.size = 20,
-              heading.title.font.size = 40,
-              heading.subtitle.font.size = 30,
-              heading.title.font.weight = 'bold',
-              heading.subtitle.font.weight = 'bold'
-  )
+# ivy_psf_gt <-
+#   ivy_psf %>%
+#   inner_join(df_img, by = c('home' = 'team')) %>%
+#   inner_join(df_img, by = c('away' = 'team'), suffix = c('_home', '_away')) %>%
+#   mutate_if(is.numeric, ~{.x/100}) %>%
+#   inner_join(x, by = c('home' = 'team',
+#                        'away' = 'opponent',
+#                        'date' = 'date')) %>%
+#   mutate('home_bar' = paste0('3.0_Files/Predictions/psf_figures/home_', 1:nrow(.), '.png'),
+#          'away_bar' = paste0('3.0_Files/Predictions/psf_figures/away_', 1:nrow(.), '.png'),
+#          'delta_bar' = paste0('3.0_Files/Predictions/psf_figures/delta_', 1:nrow(.), '.png')) %>%
+#   mutate('favored' = ifelse(pred_score_diff > 0, logo_file_home, logo_file_away),
+#          'win_prob' = ifelse(pred_score_diff > 0, wins, 1-wins),
+#          'pred_score' = ifelse(pred_score_diff > 0,
+#                                paste(sprintf('%0.1f', pred_team_score), sprintf('%0.1f', pred_opp_score), sep = '-'),
+#                                paste(sprintf('%0.1f', pred_opp_score), sprintf('%0.1f', pred_team_score), sep = '-'))) %>%
+#   select(date, logo_file_away, logo_file_home, favored, pred_score, win_prob,
+#          psf, auto_bid_sf, away_bar, home_bar, delta_bar) %>%
+#   arrange(date) %>%
+#   # filter(date == Sys.Date()) %>%
+#   gt() %>%
+#   cols_label('date' = 'Date',
+#              'logo_file_home' = 'Home',
+#              'logo_file_away' = 'Away',
+#              'favored' = 'Winner',
+#              'pred_score' = 'Score',
+#              'win_prob' = 'Win Probability',
+#              'psf' = 'Playoffs',
+#              'auto_bid_sf' = 'Auto Bid',
+#              'home_bar' = 'If Home Wins',
+#              'away_bar' = 'If Away Wins',
+#              'delta_bar' = 'Difference') %>%
+#   
+#   tab_spanner(label = 'Matchup', columns = c('date', 'logo_file_away', 'logo_file_home')) %>%
+#   tab_spanner(label = 'Game Prediction', columns = c('favored', 'pred_score', 'win_prob')) %>%
+#   tab_spanner(label = 'Leverage', columns = c('psf', 'auto_bid_sf')) %>%
+#   tab_spanner(label = 'Playoff Odds', columns = c('away_bar', 'home_bar', 'delta_bar')) %>%
+#   
+#   
+#   ### Hightlight Columns
+#   data_color(
+#     columns = c(auto_bid_sf, psf, win_prob),
+#     colors = scales::col_numeric(
+#       palette = ggsci::rgb_material('amber', n = 100),
+#       domain = c(0,1.25),
+#     )
+#   ) %>%
+#   
+#   ### Percent
+#   fmt_percent(
+#     columns = c(auto_bid_sf, psf, win_prob),
+#     decimals = 1) %>%
+#   
+#   ### Align Columns
+#   cols_align(
+#     align = "center",
+#     columns = any_of(c('home_bar', 'away_bar', 'delta_bar', 'favored', names(x), 'pred_score', 'win_prob', names(ivy_psf)))
+#   ) %>%
+#   
+#   ### Borders
+#   tab_style(
+#     style = list(
+#       cell_borders(
+#         sides = "bottom",
+#         color = "black",
+#         weight = px(3)
+#       )
+#     ),
+#     locations = list(
+#       cells_column_labels(
+#         columns = gt::everything()
+#       )
+#     )
+#   ) %>%
+#   tab_style(
+#     style = list(
+#       cell_borders(
+#         sides = "right",
+#         color = "black",
+#         weight = px(3)
+#       )
+#     ),
+#     locations = list(
+#       cells_body(
+#         columns = c(logo_file_home, auto_bid_sf, home_bar, win_prob, away_bar, delta_bar)
+#       )
+#     )
+#   ) %>%
+#   text_transform(
+#     locations = cells_body(c(logo_file_home, logo_file_away, favored)),
+#     fn = function(x) {
+#       local_image(
+#         filename  = x,
+#         height = 50
+#       )
+#     }
+#   ) %>%
+#   text_transform(
+#     locations = cells_body(c(home_bar, away_bar, delta_bar)),
+#     fn = function(x) {
+#       local_image(
+#         filename  = x,
+#         height = 200
+#       )
+#     }
+#   ) %>%
+#   tab_source_note('@recspecs730') %>%
+#   tab_source_note('Leverage = total swing in all teams\' playoff/auto-bid odds between the two possible outcomes.') %>%
+#   tab_source_note('Difference = delta in playoff odds per team if Home wins (right) vs Away Wins (left)') %>%
+#   tab_source_note("2024 Tournament hosted by Columbia University") %>%
+#   tab_source_note("Based on 1,000 Simulations of each outcome. Ties broken according to official Ivy League tiebreaking rules.") %>%
+#   tab_header(title = paste0(
+#     'Ivy League Playoff Leverage: ',
+#     min(ivy_psf$date),
+#     ifelse(n_distinct(ivy_psf$date) > 1, paste(' -', max(ivy_psf$date)), ''),
+#     ''
+#   )) %>%
+#   tab_options(column_labels.font.size = 20,
+#               heading.title.font.size = 40,
+#               heading.subtitle.font.size = 30,
+#               heading.title.font.weight = 'bold',
+#               heading.subtitle.font.weight = 'bold'
+#   )
 
 
 ### Bracketology

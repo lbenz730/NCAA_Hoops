@@ -143,8 +143,10 @@ z <-
     # opponent == 'App State' ~ 'Appalachian St.',
     # opponent == 'Nicholls' ~ "Nicholls St.",
     # opponent == 'Sam Houston' ~ "Sam Houston St.",
-    # opponent == 'NIU' ~ 'Northern Ill.',
+    opponent == 'Northern Ill.' ~ 'NIU',
     opponent == 'FDU' ~ 'Fairleigh Dickinson',
+    opponent == 'East Texas A&M' ~ 'Tex. A&M-Commerce',
+    opponent == 'Saint Francis' ~ 'Saint Francis (PA)',
     grepl('&;', opponent) ~ gsub('&;', "'", opponent),
     T ~ opponent))
 
@@ -160,6 +162,6 @@ month <- 1 + today$mon
 day <- today$mday
 
 ### Save Results
-write.csv(z, paste("3.0_Files/Results/2023-24/NCAA_Hoops_Results_", month, "_", 
+write.csv(z, paste("3.0_Files/Results/2024-25/NCAA_Hoops_Results_", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names = F)
 

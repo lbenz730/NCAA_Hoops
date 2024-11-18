@@ -10,7 +10,7 @@ library(gtExtras)
 sim_results <- read_csv(here('3.0_Files/ncaa_sims/ncaa_sims.csv'))
 seed_list <-  read_csv(here('3.0_Files/ncaa_sims/seed_list.csv'))
 
-make_table <- function(sim_results, table_region, round, message = '') {
+make_table <- function(sim_results, table_region, message = '') {
   
   img_files <- dir('app/www/')
   teams <- read_csv(here('3.0_Files/Info/conferences.csv')) %>% pull(team)
@@ -24,7 +24,7 @@ make_table <- function(sim_results, table_region, round, message = '') {
     df_img %>% 
     inner_join(sim_results) 
   
-  round <- 'second_round'
+  round <- 'sweet_sixteen'
   df <- df[df[[round]] != 0,]
   
   elim <- 

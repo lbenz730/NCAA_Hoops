@@ -7,14 +7,14 @@ palestra.sim <- function(teams) {
   tmp$location <- "N"
   
   ### Find Penn in Tournament
-  if(teams[1] == "Columbia") {
+  if(teams[1] == "Brown") {
     tmp$location[1] <- "H"
-  }else if(teams[4] == "Columbia") {
+  }else if(teams[4] == "Brown") {
     tmp$location[1] <- "V"
   }
-  if(teams[2] == "Columbia") {
+  if(teams[2] == "Brown") {
     tmp$location[2] <- "H"
-  }else if(teams[3] == "Columbia") {
+  }else if(teams[3] == "Brown") {
     tmp$location[2] <- "V"
   }
   
@@ -26,9 +26,9 @@ palestra.sim <- function(teams) {
   tmp[3, c("team", "opponent")] <- ifelse(rands <= tmp$winprob[1:2], tmp$team, tmp$opponent)
   
   ### Finals
-  if(tmp$team[3] == "Columbia") {
+  if(tmp$team[3] == "Brown") {
     tmp$location[3] <- "H"
-  }else if(tmp$opponent[3] == "Columbia") {
+  }else if(tmp$opponent[3] == "Brown") {
     tmp$location[3] <- "V"
   }
   
@@ -445,7 +445,10 @@ fast.sim <- function(nsims) {
 ivy_games <- function(x) {
   x %>% 
     filter(conf_game, team_conf == 'Ivy', location == 'H',
-           !canceled, !duplicated(paste(team, opponent, location), fromLast = T))
+           !canceled
+           # , 
+           # !duplicated(paste(team, opponent, location), fromLast = T)
+           )
 }
 
 

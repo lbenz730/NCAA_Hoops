@@ -1,145 +1,129 @@
 date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,game_id
-2024-01-04,V,Central Conn. St.,Stonehill,74,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,1
-2024-01-13,V,Central Conn. St.,Saint Francis (PA),75,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,2
-2024-01-15,H,Central Conn. St.,Merrimack,75,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,3
-2024-01-19,H,Central Conn. St.,Le Moyne,73,75,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,4
-2024-01-21,V,Central Conn. St.,LIU,72,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,5
-2024-01-25,V,Central Conn. St.,Fairleigh Dickinson,76,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,6
-2024-01-27,H,Central Conn. St.,Wagner,69,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,7
-2024-02-01,H,Central Conn. St.,Saint Francis (PA),63,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,8
-2024-02-03,V,Central Conn. St.,Merrimack,68,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,9
-2024-02-08,H,Central Conn. St.,Sacred Heart,77,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,10
-2024-02-10,H,Central Conn. St.,Fairleigh Dickinson,71,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,11
-2024-02-15,V,Central Conn. St.,Le Moyne,64,69,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,12
-2024-02-22,V,Central Conn. St.,Wagner,73,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,13
-2024-02-24,V,Central Conn. St.,Sacred Heart,68,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,14
-2024-02-29,H,Central Conn. St.,LIU,78,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,15
-2024-03-02,H,Central Conn. St.,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,16
-2024-01-04,V,Fairleigh Dickinson,Merrimack,56,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,1
-2024-01-06,H,Fairleigh Dickinson,Le Moyne,63,74,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,2
-2024-01-13,H,Fairleigh Dickinson,Stonehill,81,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,3
-2024-01-15,V,Fairleigh Dickinson,Saint Francis (PA),81,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,4
-2024-01-19,V,Fairleigh Dickinson,Stonehill,76,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,5
-2024-01-25,H,Fairleigh Dickinson,Central Conn. St.,60,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,6
-2024-01-27,H,Fairleigh Dickinson,Sacred Heart,93,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,7
-2024-02-01,H,Fairleigh Dickinson,LIU,82,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,8
-2024-02-08,H,Fairleigh Dickinson,Wagner,62,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,9
-2024-02-10,V,Fairleigh Dickinson,Central Conn. St.,62,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,10
-2024-02-15,V,Fairleigh Dickinson,LIU,84,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,11
-2024-02-17,H,Fairleigh Dickinson,Saint Francis (PA),93,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,12
-2024-02-22,V,Fairleigh Dickinson,Sacred Heart,91,99,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,13
-2024-02-24,V,Fairleigh Dickinson,Le Moyne,68,58,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,14
-2024-02-29,H,Fairleigh Dickinson,Merrimack,55,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,15
-2024-03-02,V,Fairleigh Dickinson,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,16
-2024-01-04,H,LIU,Wagner,69,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,1
-2024-01-06,V,LIU,Stonehill,73,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,2
-2024-01-13,V,LIU,Sacred Heart,55,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,3
-2024-01-19,V,LIU,Saint Francis (PA),66,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,4
-2024-01-21,H,LIU,Central Conn. St.,63,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,5
-2024-01-25,H,LIU,Stonehill,63,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,6
-2024-01-27,V,LIU,Le Moyne,74,87,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,7
-2024-02-01,V,LIU,Fairleigh Dickinson,75,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,8
-2024-02-03,H,LIU,Saint Francis (PA),70,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,9
-2024-02-08,H,LIU,Merrimack,79,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,10
-2024-02-10,H,LIU,Sacred Heart,75,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,11
-2024-02-15,H,LIU,Fairleigh Dickinson,82,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,12
-2024-02-17,V,LIU,Merrimack,68,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,13
-2024-02-22,H,LIU,Le Moyne,76,64,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,14
-2024-02-25,V,LIU,Wagner,57,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,15
-2024-02-29,V,LIU,Central Conn. St.,64,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,16
-2024-01-06,V,Le Moyne,Fairleigh Dickinson,74,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,1
-2024-01-13,H,Le Moyne,Merrimack,62,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,2
-2024-01-15,H,Le Moyne,Sacred Heart,73,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,3
-2024-01-19,V,Le Moyne,Central Conn. St.,75,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,4
-2024-01-21,H,Le Moyne,Saint Francis (PA),94,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,5
-2024-01-27,H,Le Moyne,LIU,87,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,6
-2024-02-01,V,Le Moyne,Wagner,57,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,7
-2024-02-03,V,Le Moyne,Sacred Heart,81,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,8
-2024-02-08,V,Le Moyne,Stonehill,88,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,9
-2024-02-10,V,Le Moyne,Merrimack,50,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,10
-2024-02-15,H,Le Moyne,Central Conn. St.,69,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,11
-2024-02-17,H,Le Moyne,Stonehill,75,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,12
-2024-02-22,V,Le Moyne,LIU,64,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,13
-2024-02-24,H,Le Moyne,Fairleigh Dickinson,58,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,14
-2024-02-29,H,Le Moyne,Wagner,70,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,15
-2024-03-02,V,Le Moyne,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,16
-2024-01-04,H,Merrimack,Fairleigh Dickinson,60,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,1
-2024-01-06,H,Merrimack,Sacred Heart,82,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,2
-2024-01-13,V,Merrimack,Le Moyne,66,62,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,3
-2024-01-15,V,Merrimack,Central Conn. St.,70,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,4
-2024-01-19,H,Merrimack,Wagner,65,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,5
-2024-01-21,H,Merrimack,Stonehill,63,47,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,6
-2024-01-25,V,Merrimack,Wagner,60,44,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,7
-2024-01-27,V,Merrimack,Saint Francis (PA),74,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,8
-2024-02-03,H,Merrimack,Central Conn. St.,71,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,9
-2024-02-08,V,Merrimack,LIU,82,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,10
-2024-02-10,H,Merrimack,Le Moyne,66,50,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,11
-2024-02-15,V,Merrimack,Stonehill,66,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,12
-2024-02-17,H,Merrimack,LIU,83,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,13
-2024-02-22,H,Merrimack,Saint Francis (PA),71,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,14
-2024-02-29,V,Merrimack,Fairleigh Dickinson,74,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,15
-2024-03-02,V,Merrimack,Sacred Heart,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,16
-2024-01-04,H,Sacred Heart,Saint Francis (PA),79,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,1
-2024-01-06,V,Sacred Heart,Merrimack,58,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,2
-2024-01-13,H,Sacred Heart,LIU,89,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,3
-2024-01-15,V,Sacred Heart,Le Moyne,80,73,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,4
-2024-01-21,H,Sacred Heart,Wagner,66,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,5
-2024-01-25,V,Sacred Heart,Saint Francis (PA),71,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,6
-2024-01-27,V,Sacred Heart,Fairleigh Dickinson,91,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,7
-2024-02-01,H,Sacred Heart,Stonehill,77,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,8
-2024-02-03,H,Sacred Heart,Le Moyne,87,81,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,9
-2024-02-08,V,Sacred Heart,Central Conn. St.,70,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,10
-2024-02-10,V,Sacred Heart,LIU,58,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,11
-2024-02-17,V,Sacred Heart,Wagner,63,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,12
-2024-02-22,H,Sacred Heart,Fairleigh Dickinson,99,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,13
-2024-02-24,H,Sacred Heart,Central Conn. St.,67,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,14
-2024-02-29,V,Sacred Heart,Stonehill,79,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,15
-2024-03-02,H,Sacred Heart,Merrimack,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,16
-2024-01-04,V,Saint Francis (PA),Sacred Heart,67,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,1
-2024-01-06,V,Saint Francis (PA),Wagner,56,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,2
-2024-01-13,H,Saint Francis (PA),Central Conn. St.,61,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,3
-2024-01-15,H,Saint Francis (PA),Fairleigh Dickinson,71,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,4
-2024-01-19,H,Saint Francis (PA),LIU,72,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,5
-2024-01-21,V,Saint Francis (PA),Le Moyne,57,94,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,6
-2024-01-25,H,Saint Francis (PA),Sacred Heart,75,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,7
-2024-01-27,H,Saint Francis (PA),Merrimack,55,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,8
-2024-02-01,V,Saint Francis (PA),Central Conn. St.,62,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,9
-2024-02-03,V,Saint Francis (PA),LIU,67,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,10
-2024-02-10,H,Saint Francis (PA),Stonehill,72,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,11
-2024-02-15,H,Saint Francis (PA),Wagner,63,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,12
-2024-02-17,V,Saint Francis (PA),Fairleigh Dickinson,74,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,13
-2024-02-22,V,Saint Francis (PA),Merrimack,60,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,14
-2024-02-24,V,Saint Francis (PA),Stonehill,63,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,15
-2024-03-02,H,Saint Francis (PA),Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,16
-2024-01-04,H,Stonehill,Central Conn. St.,59,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,1
-2024-01-06,H,Stonehill,LIU,68,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,2
-2024-01-13,V,Stonehill,Fairleigh Dickinson,74,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,3
-2024-01-15,V,Stonehill,Wagner,54,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,4
-2024-01-19,H,Stonehill,Fairleigh Dickinson,69,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,5
-2024-01-21,V,Stonehill,Merrimack,47,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,6
-2024-01-25,V,Stonehill,LIU,60,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,7
-2024-02-01,V,Stonehill,Sacred Heart,72,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,8
-2024-02-03,H,Stonehill,Wagner,71,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,9
-2024-02-08,H,Stonehill,Le Moyne,57,88,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,10
-2024-02-10,V,Stonehill,Saint Francis (PA),63,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,11
-2024-02-15,H,Stonehill,Merrimack,63,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,12
-2024-02-17,V,Stonehill,Le Moyne,67,75,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,13
-2024-02-24,H,Stonehill,Saint Francis (PA),72,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,14
-2024-02-29,H,Stonehill,Sacred Heart,51,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,15
-2024-03-02,V,Stonehill,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,16
-2024-01-04,V,Wagner,LIU,67,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,1
-2024-01-06,H,Wagner,Saint Francis (PA),71,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,2
-2024-01-15,H,Wagner,Stonehill,64,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,3
-2024-01-19,V,Wagner,Merrimack,71,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,4
-2024-01-21,V,Wagner,Sacred Heart,61,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,5
-2024-01-25,H,Wagner,Merrimack,44,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/309px-Merrimack_Warriors.svg.png,6
-2024-01-27,V,Wagner,Central Conn. St.,68,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,7
-2024-02-01,H,Wagner,Le Moyne,80,57,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,8
-2024-02-03,V,Wagner,Stonehill,61,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,9
-2024-02-08,V,Wagner,Fairleigh Dickinson,66,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,10
-2024-02-15,V,Wagner,Saint Francis (PA),65,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,11
-2024-02-17,H,Wagner,Sacred Heart,53,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sacred_Heart_Pioneers_logo.svg/320px-Sacred_Heart_Pioneers_logo.svg.png,12
-2024-02-22,H,Wagner,Central Conn. St.,72,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,13
-2024-02-25,H,Wagner,LIU,72,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,14
-2024-02-29,V,Wagner,Le Moyne,56,70,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,15
-2024-03-02,H,Wagner,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,16
+2025-01-03,V,Central Conn. St.,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,1
+2025-01-10,H,Central Conn. St.,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,2
+2025-01-12,H,Central Conn. St.,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,3
+2025-01-18,V,Central Conn. St.,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,4
+2025-01-24,V,Central Conn. St.,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,5
+2025-01-26,H,Central Conn. St.,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,6
+2025-01-30,V,Central Conn. St.,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,7
+2025-02-01,V,Central Conn. St.,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,8
+2025-02-06,H,Central Conn. St.,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,9
+2025-02-15,H,Central Conn. St.,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,10
+2025-02-20,V,Central Conn. St.,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,11
+2025-02-22,H,Central Conn. St.,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,12
+2025-02-27,H,Central Conn. St.,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,13
+2025-03-01,V,Central Conn. St.,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,14
+2025-01-03,V,Chicago St.,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,1
+2025-01-05,V,Chicago St.,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,2
+2025-01-12,H,Chicago St.,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,3
+2025-01-18,H,Chicago St.,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,4
+2025-01-20,H,Chicago St.,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,5
+2025-01-24,V,Chicago St.,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,6
+2025-01-26,V,Chicago St.,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,7
+2025-02-01,H,Chicago St.,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,8
+2025-02-08,H,Chicago St.,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,9
+2025-02-13,V,Chicago St.,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,10
+2025-02-15,V,Chicago St.,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,11
+2025-02-20,H,Chicago St.,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,12
+2025-02-22,H,Chicago St.,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,13
+2025-03-01,V,Chicago St.,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,14
+2025-01-05,V,Fairleigh Dickinson,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,1
+2025-01-10,V,Fairleigh Dickinson,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,2
+2025-01-12,H,Fairleigh Dickinson,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,3
+2025-01-18,H,Fairleigh Dickinson,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,4
+2025-01-20,V,Fairleigh Dickinson,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,5
+2025-01-26,V,Fairleigh Dickinson,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,6
+2025-01-30,H,Fairleigh Dickinson,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,7
+2025-02-06,V,Fairleigh Dickinson,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,8
+2025-02-08,H,Fairleigh Dickinson,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,9
+2025-02-13,H,Fairleigh Dickinson,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,10
+2025-02-15,V,Fairleigh Dickinson,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,11
+2025-02-22,V,Fairleigh Dickinson,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,12
+2025-02-27,H,Fairleigh Dickinson,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,13
+2025-03-01,H,Fairleigh Dickinson,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,14
+2025-01-03,H,LIU,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,1
+2025-01-05,H,LIU,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,2
+2025-01-10,V,LIU,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,3
+2025-01-12,V,LIU,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,4
+2025-01-16,H,LIU,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,5
+2025-01-24,V,LIU,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,6
+2025-01-30,H,LIU,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,7
+2025-02-01,V,LIU,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,8
+2025-02-06,V,LIU,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,9
+2025-02-08,H,LIU,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,10
+2025-02-15,H,LIU,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,11
+2025-02-22,V,LIU,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,12
+2025-02-27,H,LIU,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,13
+2025-03-01,V,LIU,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,14
+2025-01-03,V,Le Moyne,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,1
+2025-01-10,H,Le Moyne,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,2
+2025-01-18,V,Le Moyne,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,3
+2025-01-20,H,Le Moyne,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,4
+2025-01-24,H,Le Moyne,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,5
+2025-01-30,V,Le Moyne,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,6
+2025-02-01,V,Le Moyne,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,7
+2025-02-06,V,Le Moyne,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,8
+2025-02-13,H,Le Moyne,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,9
+2025-02-15,H,Le Moyne,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,10
+2025-02-20,H,Le Moyne,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,11
+2025-02-22,H,Le Moyne,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,12
+2025-02-27,V,Le Moyne,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,13
+2025-03-01,V,Le Moyne,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,14
+2025-01-03,H,Mercyhurst,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,1
+2025-01-05,H,Mercyhurst,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,2
+2025-01-10,V,Mercyhurst,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,3
+2025-01-12,V,Mercyhurst,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,4
+2025-01-18,V,Mercyhurst,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,5
+2025-01-20,V,Mercyhurst,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,6
+2025-01-24,H,Mercyhurst,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,7
+2025-01-26,H,Mercyhurst,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,8
+2025-01-30,H,Mercyhurst,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,9
+2025-02-01,V,Mercyhurst,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,10
+2025-02-06,V,Mercyhurst,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,11
+2025-02-08,H,Mercyhurst,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,12
+2025-02-13,V,Mercyhurst,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,13
+2025-02-15,V,Mercyhurst,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,14
+2025-02-20,H,Mercyhurst,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,15
+2025-02-27,H,Mercyhurst,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,16
+2025-01-03,H,Saint Francis (PA),Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,1
+2025-01-05,H,Saint Francis (PA),Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,2
+2025-01-12,V,Saint Francis (PA),Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,3
+2025-01-16,V,Saint Francis (PA),LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,4
+2025-01-20,V,Saint Francis (PA),Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,5
+2025-01-24,H,Saint Francis (PA),LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,6
+2025-01-26,H,Saint Francis (PA),Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,7
+2025-02-06,H,Saint Francis (PA),Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,8
+2025-02-08,V,Saint Francis (PA),Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,9
+2025-02-13,V,Saint Francis (PA),Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,10
+2025-02-15,V,Saint Francis (PA),Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,11
+2025-02-20,V,Saint Francis (PA),Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,12
+2025-02-22,H,Saint Francis (PA),Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,13
+2025-03-01,H,Saint Francis (PA),Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,14
+2025-01-05,V,Stonehill,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,1
+2025-01-10,H,Stonehill,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,2
+2025-01-12,V,Stonehill,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,3
+2025-01-20,V,Stonehill,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,4
+2025-01-24,H,Stonehill,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,5
+2025-01-26,H,Stonehill,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,6
+2025-01-30,H,Stonehill,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,7
+2025-02-01,H,Stonehill,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,8
+2025-02-08,V,Stonehill,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,9
+2025-02-13,H,Stonehill,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,10
+2025-02-20,V,Stonehill,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,11
+2025-02-22,V,Stonehill,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,12
+2025-02-27,V,Stonehill,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,13
+2025-03-01,H,Stonehill,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,14
+2025-01-03,H,Wagner,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,1
+2025-01-05,H,Wagner,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,2
+2025-01-10,V,Wagner,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,3
+2025-01-20,H,Wagner,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,4
+2025-01-26,V,Wagner,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,5
+2025-01-30,V,Wagner,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,6
+2025-02-01,H,Wagner,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,7
+2025-02-06,H,Wagner,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,8
+2025-02-08,V,Wagner,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,9
+2025-02-13,V,Wagner,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,10
+2025-02-20,H,Wagner,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,11
+2025-02-22,V,Wagner,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,12
+2025-02-27,V,Wagner,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,13
+2025-03-01,H,Wagner,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,14
