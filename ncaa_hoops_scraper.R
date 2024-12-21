@@ -98,14 +98,20 @@ for (i in 1:nrow(teamid)) {
       }
       result <- matrix(as.numeric(unlist(result)), ncol=2, byrow=TRUE)
       
+      ixR <- 1:nrow(result) 
+      
+      if(length(ixR) == length(ix2)) {
+        ixR <- ix2 
+      }
+      
       res <- data.frame(year=dates[,3],
                         month=dates[,1],
                         day=dates[,2],
                         team=teamid$team[i],
                         opponent=opp[ix2],
                         location=loc[ix2],
-                        teamscore=result[ix2,1],
-                        oppscore=result[ix2,2],
+                        teamscore=result[ixR,1],
+                        oppscore=result[ixR,2],
                         canceled=canceled[ix2],
                         postponed=postponed[ix2],
                         OT=OT[ix2], stringsAsFactors=FALSE)
