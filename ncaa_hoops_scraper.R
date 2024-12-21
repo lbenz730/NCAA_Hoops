@@ -69,7 +69,9 @@ for (i in 1:nrow(teamid)) {
     if(sum(ix) > 0) {
       datelines <- datelines[ix]
       dates <- dates[ix]
-      dates <- dates[!duplicated(dates)]
+      dates <- stringr::str_extract(dates, '\\d\\d/\\d\\d/\\d\\d\\d\\d')
+      ix2 <- !duplicated(dates)
+      dates <- dates[ix2]
       dates <- matrix(as.numeric(unlist(strsplit(dates, "/"))),
                       ncol=3, byrow=TRUE)
       
@@ -100,13 +102,13 @@ for (i in 1:nrow(teamid)) {
                         month=dates[,1],
                         day=dates[,2],
                         team=teamid$team[i],
-                        opponent=opp,
-                        location=loc,
-                        teamscore=result[,1],
-                        oppscore=result[,2],
-                        canceled=canceled,
-                        postponed=postponed,
-                        OT=OT, stringsAsFactors=FALSE)
+                        opponent=opp[ix2],
+                        location=loc[ix2],
+                        teamscore=result[ix2,1],
+                        oppscore=result[ix2,2],
+                        canceled=canceled[ix2],
+                        postponed=postponed[ix2],
+                        OT=OT[ix2], stringsAsFactors=FALSE)
       res$date <- paste(res$month, res$day, sep = "_") 
       res$opponent <- stripwhite(gsub("&amp;", "&", gsub("&x;", "'", gsub("[0-9]", "", gsub("#", "", res$opponent)))))
       #fix <- sapply(res$opponent, function(x) { any(sapply(teamid$team, grepl, x)) }) &
