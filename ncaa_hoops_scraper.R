@@ -36,7 +36,7 @@ conf_tournaments <- paste0('-\\sMBB\\s+', c("Big South", "Patriot League", "Nort
 
 z <- NULL
 bad <- NULL
-for (i in 149:nrow(teamid)) {
+for (i in 1:nrow(teamid)) {
   cat("Getting", i, teamid$team[i], "\n")
   
   # Elegantly scan and handle hiccups:
