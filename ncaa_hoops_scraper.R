@@ -36,7 +36,7 @@ conf_tournaments <- paste0('-\\sMBB\\s+', c("Big South", "Patriot League", "Nort
 
 z <- NULL
 bad <- NULL
-for (i in 1:nrow(teamid)) {
+for (i in 149:nrow(teamid)) {
   cat("Getting", i, teamid$team[i], "\n")
   
   # Elegantly scan and handle hiccups:
@@ -65,10 +65,11 @@ for (i in 1:nrow(teamid)) {
     dates <- stripwhite(gsub("<[^<>]*>", "", x[datelines]))
     
     dates <- gsub("\\(.*", "", gsub(" .*", "", dates))
-    ix <- !dates %in% c("Start", "Team", "End")
+    ix <- !grepl("(Start|Team|End)", dates) 
     if(sum(ix) > 0) {
       datelines <- datelines[ix]
       dates <- dates[ix]
+      dates <- dates[!duplicated(dates)]
       dates <- matrix(as.numeric(unlist(strsplit(dates, "/"))),
                       ncol=3, byrow=TRUE)
       
