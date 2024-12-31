@@ -59,8 +59,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-24,V,Lamar University,UIW,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ea/Incarnate_Word_Cardinals_logo.svg/320px-Incarnate_Word_Cardinals_logo.svg.png,18
 2025-03-01,H,Lamar University,McNeese,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,19
 2025-03-03,H,Lamar University,Nicholls,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,20
-2024-12-28,H,McNeese,New Orleans,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/27/New_Orleans_Privateers_logo.svg/278px-New_Orleans_Privateers_logo.svg.png,1
-2024-12-30,H,McNeese,Southeastern La.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Southeastern_Louisiana_Lions_script.svg/175px-Southeastern_Louisiana_Lions_script.svg.png,2
+2024-12-28,H,McNeese,New Orleans,86,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/27/New_Orleans_Privateers_logo.svg/278px-New_Orleans_Privateers_logo.svg.png,1
+2024-12-30,H,McNeese,Southeastern La.,79,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Southeastern_Louisiana_Lions_script.svg/175px-Southeastern_Louisiana_Lions_script.svg.png,2
 2025-01-04,V,McNeese,Tex. A&M-Commerce,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Texas_A%26M%E2%80%93Commerce_Lions_logo.svg/200px-Texas_A%26M%E2%80%93Commerce_Lions_logo.svg.png,3
 2025-01-06,V,McNeese,Northwestern St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Northwestern_State_Demons_wordmark.svg/320px-Northwestern_State_Demons_wordmark.svg.png,4
 2025-01-11,H,McNeese,Nicholls,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,5
@@ -80,7 +80,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-03-01,V,McNeese,Lamar University,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Lamar_Cardinals_logo.svg/320px-Lamar_Cardinals_logo.svg.png,19
 2025-03-03,V,McNeese,SFA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Stephen_F._Austin_Athletics_wordmark.svg/240px-Stephen_F._Austin_Athletics_wordmark.svg.png,20
 2024-12-07,V,New Orleans,Nicholls,70,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,1
-2024-12-28,V,New Orleans,McNeese,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,2
+2024-12-28,V,New Orleans,McNeese,61,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,2
 2025-01-04,H,New Orleans,UTRGV,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg/320px-Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg.png,3
 2025-01-06,H,New Orleans,A&M-Corpus Christi,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg/260px-Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg.png,4
 2025-01-11,H,New Orleans,Southeastern La.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Southeastern_Louisiana_Lions_script.svg/175px-Southeastern_Louisiana_Lions_script.svg.png,5
@@ -160,7 +160,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-03-01,H,SFA,Nicholls,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,19
 2025-03-03,H,SFA,McNeese,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,20
 2024-12-05,V,Southeastern La.,Nicholls,64,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Nicholls_State_Colonels_logo.svg/320px-Nicholls_State_Colonels_logo.svg.png,1
-2024-12-30,V,Southeastern La.,McNeese,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,2
+2024-12-30,V,Southeastern La.,McNeese,51,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/McNeese_State_Athletics_logo.svg/224px-McNeese_State_Athletics_logo.svg.png,2
 2025-01-04,H,Southeastern La.,A&M-Corpus Christi,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg/260px-Texas_A%26M%E2%80%93Corpus_Christi_Islanders_logo.svg.png,3
 2025-01-06,H,Southeastern La.,UTRGV,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg/320px-Texas%E2%80%93Rio_Grande_Valley_Vaqueros_logo.svg.png,4
 2025-01-11,V,Southeastern La.,New Orleans,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/27/New_Orleans_Privateers_logo.svg/278px-New_Orleans_Privateers_logo.svg.png,5
