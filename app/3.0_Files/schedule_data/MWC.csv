@@ -23,7 +23,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-28,V,Boise St.,San Jose St.,73,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/233px-San_Jose_State_Spartans_logo.svg.png,2
 2024-12-31,V,Boise St.,Wyoming,67,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wyoming_Athletics_logo.svg/138px-Wyoming_Athletics_logo.svg.png,3
 2025-01-04,H,Boise St.,San Diego St.,68,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/San_Diego_State_Aztecs_logo.svg/320px-San_Diego_State_Aztecs_logo.svg.png,4
-2025-01-07,H,Boise St.,UNLV,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/UNLV_Rebels_wordmark.svg/320px-UNLV_Rebels_wordmark.svg.png,5
+2025-01-07,H,Boise St.,UNLV,81,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/UNLV_Rebels_wordmark.svg/320px-UNLV_Rebels_wordmark.svg.png,5
 2025-01-11,V,Boise St.,Utah St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Utah_State_Aggies_logo.svg/317px-Utah_State_Aggies_logo.svg.png,6
 2025-01-14,H,Boise St.,Wyoming,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wyoming_Athletics_logo.svg/138px-Wyoming_Athletics_logo.svg.png,7
 2025-01-17,V,Boise St.,New Mexico,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/New_Mexico_Lobos_logo.svg/195px-New_Mexico_Lobos_logo.svg.png,8
@@ -42,7 +42,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-21,V,Colorado St.,Nevada,66,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Nevada_Wolf_Pack_logo.svg/320px-Nevada_Wolf_Pack_logo.svg.png,1
 2024-12-28,H,Colorado St.,New Mexico,68,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/New_Mexico_Lobos_logo.svg/195px-New_Mexico_Lobos_logo.svg.png,2
 2024-12-31,V,Colorado St.,San Jose St.,72,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/233px-San_Jose_State_Spartans_logo.svg.png,3
-2025-01-07,H,Colorado St.,Fresno St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Fresno_State_Bulldogs_logo.svg/320px-Fresno_State_Bulldogs_logo.svg.png,4
+2025-01-07,H,Colorado St.,Fresno St.,91,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Fresno_State_Bulldogs_logo.svg/320px-Fresno_State_Bulldogs_logo.svg.png,4
 2025-01-11,H,Colorado St.,UNLV,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/UNLV_Rebels_wordmark.svg/320px-UNLV_Rebels_wordmark.svg.png,5
 2025-01-14,V,Colorado St.,San Diego St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/San_Diego_State_Aztecs_logo.svg/320px-San_Diego_State_Aztecs_logo.svg.png,6
 2025-01-18,V,Colorado St.,Wyoming,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wyoming_Athletics_logo.svg/138px-Wyoming_Athletics_logo.svg.png,7
@@ -63,7 +63,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-28,V,Fresno St.,UNLV,77,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/UNLV_Rebels_wordmark.svg/320px-UNLV_Rebels_wordmark.svg.png,2
 2024-12-31,H,Fresno St.,New Mexico,89,103,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/New_Mexico_Lobos_logo.svg/195px-New_Mexico_Lobos_logo.svg.png,3
 2025-01-04,V,Fresno St.,Utah St.,83,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Utah_State_Aggies_logo.svg/317px-Utah_State_Aggies_logo.svg.png,4
-2025-01-07,V,Fresno St.,Colorado St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Colorado_State_Rams_logo.svg/240px-Colorado_State_Rams_logo.svg.png,5
+2025-01-07,V,Fresno St.,Colorado St.,64,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Colorado_State_Rams_logo.svg/240px-Colorado_State_Rams_logo.svg.png,5
 2025-01-11,H,Fresno St.,Nevada,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Nevada_Wolf_Pack_logo.svg/320px-Nevada_Wolf_Pack_logo.svg.png,6
 2025-01-17,H,Fresno St.,Air Force,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/dc/Air_Force_Falcons_logo.svg,7
 2025-01-20,V,Fresno St.,New Mexico,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/New_Mexico_Lobos_logo.svg/195px-New_Mexico_Lobos_logo.svg.png,8
@@ -103,7 +103,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-28,V,New Mexico,Colorado St.,76,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Colorado_State_Rams_logo.svg/240px-Colorado_State_Rams_logo.svg.png,2
 2024-12-31,V,New Mexico,Fresno St.,103,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Fresno_State_Bulldogs_logo.svg/320px-Fresno_State_Bulldogs_logo.svg.png,3
 2025-01-03,H,New Mexico,Nevada,82,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Nevada_Wolf_Pack_logo.svg/320px-Nevada_Wolf_Pack_logo.svg.png,4
-2025-01-07,V,New Mexico,Wyoming,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wyoming_Athletics_logo.svg/138px-Wyoming_Athletics_logo.svg.png,5
+2025-01-07,V,New Mexico,Wyoming,61,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wyoming_Athletics_logo.svg/138px-Wyoming_Athletics_logo.svg.png,5
 2025-01-11,H,New Mexico,San Diego St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/San_Diego_State_Aztecs_logo.svg/320px-San_Diego_State_Aztecs_logo.svg.png,6
 2025-01-14,V,New Mexico,San Jose St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/233px-San_Jose_State_Spartans_logo.svg.png,7
 2025-01-17,H,New Mexico,Boise St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Boise_State_%22B%22_logo.svg/150px-Boise_State_%22B%22_logo.svg.png,8
@@ -143,7 +143,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-28,H,San Jose St.,Boise St.,71,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Boise_State_%22B%22_logo.svg/150px-Boise_State_%22B%22_logo.svg.png,2
 2024-12-31,H,San Jose St.,Colorado St.,50,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Colorado_State_Rams_logo.svg/240px-Colorado_State_Rams_logo.svg.png,3
 2025-01-04,V,San Jose St.,UNLV,73,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/UNLV_Rebels_wordmark.svg/320px-UNLV_Rebels_wordmark.svg.png,4
-2025-01-07,H,San Jose St.,Utah St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Utah_State_Aggies_logo.svg/317px-Utah_State_Aggies_logo.svg.png,5
+2025-01-07,H,San Jose St.,Utah St.,78,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Utah_State_Aggies_logo.svg/317px-Utah_State_Aggies_logo.svg.png,5
 2025-01-11,V,San Jose St.,Air Force,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/dc/Air_Force_Falcons_logo.svg,6
 2025-01-14,H,San Jose St.,New Mexico,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/New_Mexico_Lobos_logo.svg/195px-New_Mexico_Lobos_logo.svg.png,7
 2025-01-18,V,San Jose St.,Nevada,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Nevada_Wolf_Pack_logo.svg/320px-Nevada_Wolf_Pack_logo.svg.png,8
@@ -162,7 +162,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-28,H,UNLV,Fresno St.,87,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Fresno_State_Bulldogs_logo.svg/320px-Fresno_State_Bulldogs_logo.svg.png,1
 2024-12-31,V,UNLV,Air Force,77,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/dc/Air_Force_Falcons_logo.svg,2
 2025-01-04,H,UNLV,San Jose St.,79,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/233px-San_Jose_State_Spartans_logo.svg.png,3
-2025-01-07,V,UNLV,Boise St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Boise_State_%22B%22_logo.svg/150px-Boise_State_%22B%22_logo.svg.png,4
+2025-01-07,V,UNLV,Boise St.,59,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Boise_State_%22B%22_logo.svg/150px-Boise_State_%22B%22_logo.svg.png,4
 2025-01-11,V,UNLV,Colorado St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Colorado_State_Rams_logo.svg/240px-Colorado_State_Rams_logo.svg.png,5
 2025-01-15,H,UNLV,Utah St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Utah_State_Aggies_logo.svg/317px-Utah_State_Aggies_logo.svg.png,6
 2025-01-18,V,UNLV,San Diego St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/San_Diego_State_Aztecs_logo.svg/320px-San_Diego_State_Aztecs_logo.svg.png,7
@@ -183,7 +183,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-28,V,Utah St.,San Diego St.,67,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/San_Diego_State_Aztecs_logo.svg/320px-San_Diego_State_Aztecs_logo.svg.png,2
 2024-12-31,V,Utah St.,Nevada,69,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Nevada_Wolf_Pack_logo.svg/320px-Nevada_Wolf_Pack_logo.svg.png,3
 2025-01-04,H,Utah St.,Fresno St.,89,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Fresno_State_Bulldogs_logo.svg/320px-Fresno_State_Bulldogs_logo.svg.png,4
-2025-01-07,V,Utah St.,San Jose St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/233px-San_Jose_State_Spartans_logo.svg.png,5
+2025-01-07,V,Utah St.,San Jose St.,85,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/San_Jose_State_Spartans_logo.svg/233px-San_Jose_State_Spartans_logo.svg.png,5
 2025-01-11,H,Utah St.,Boise St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Boise_State_%22B%22_logo.svg/150px-Boise_State_%22B%22_logo.svg.png,6
 2025-01-15,V,Utah St.,UNLV,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/UNLV_Rebels_wordmark.svg/320px-UNLV_Rebels_wordmark.svg.png,7
 2025-01-22,H,Utah St.,Nevada,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Nevada_Wolf_Pack_logo.svg/320px-Nevada_Wolf_Pack_logo.svg.png,8
@@ -203,7 +203,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-28,H,Wyoming,Nevada,66,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Nevada_Wolf_Pack_logo.svg/320px-Nevada_Wolf_Pack_logo.svg.png,2
 2024-12-31,H,Wyoming,Boise St.,58,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Boise_State_%22B%22_logo.svg/150px-Boise_State_%22B%22_logo.svg.png,3
 2025-01-04,V,Wyoming,Air Force,70,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/d/dc/Air_Force_Falcons_logo.svg,4
-2025-01-07,H,Wyoming,New Mexico,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/New_Mexico_Lobos_logo.svg/195px-New_Mexico_Lobos_logo.svg.png,5
+2025-01-07,H,Wyoming,New Mexico,53,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/New_Mexico_Lobos_logo.svg/195px-New_Mexico_Lobos_logo.svg.png,5
 2025-01-14,V,Wyoming,Boise St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Boise_State_%22B%22_logo.svg/150px-Boise_State_%22B%22_logo.svg.png,6
 2025-01-18,H,Wyoming,Colorado St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Colorado_State_Rams_logo.svg/240px-Colorado_State_Rams_logo.svg.png,7
 2025-01-21,V,Wyoming,UNLV,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/UNLV_Rebels_wordmark.svg/320px-UNLV_Rebels_wordmark.svg.png,8
