@@ -3,7 +3,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,V,Belmont,Drake,46,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Drake_Bulldogs_%22D%22_logo.svg/261px-Drake_Bulldogs_%22D%22_logo.svg.png,2
 2025-01-01,V,Belmont,UNI,70,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Northern_Iowa_Panters_logo.svg/320px-Northern_Iowa_Panters_logo.svg.png,3
 2025-01-04,H,Belmont,UIC,92,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/a/a3/UIC_Flames_wordmark.svg,4
-2025-01-08,H,Belmont,Southern Ill.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Southern_Illinois_Salukis_logo.svg/320px-Southern_Illinois_Salukis_logo.svg.png,5
+2025-01-08,H,Belmont,Southern Ill.,90,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Southern_Illinois_Salukis_logo.svg/320px-Southern_Illinois_Salukis_logo.svg.png,5
 2025-01-11,V,Belmont,Indiana St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Indiana_State_Sycamores_logo.svg/250px-Indiana_State_Sycamores_logo.svg.png,6
 2025-01-14,H,Belmont,Valparaiso,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/f/fb/Valparaiso_Crusaders_wordmark.svg,7
 2025-01-18,V,Belmont,Evansville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Evansville_Purple_Aces_logo.svg/320px-Evansville_Purple_Aces_logo.svg.png,8
@@ -23,7 +23,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,H,Bradley,Valparaiso,81,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/f/fb/Valparaiso_Crusaders_wordmark.svg,2
 2025-01-01,V,Bradley,Indiana St.,90,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Indiana_State_Sycamores_logo.svg/250px-Indiana_State_Sycamores_logo.svg.png,3
 2025-01-04,H,Bradley,Missouri St.,69,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Missouri_State_Athletics_logo.svg/274px-Missouri_State_Athletics_logo.svg.png,4
-2025-01-08,H,Bradley,Drake,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Drake_Bulldogs_%22D%22_logo.svg/261px-Drake_Bulldogs_%22D%22_logo.svg.png,5
+2025-01-08,H,Bradley,Drake,57,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Drake_Bulldogs_%22D%22_logo.svg/261px-Drake_Bulldogs_%22D%22_logo.svg.png,5
 2025-01-11,V,Bradley,UIC,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/a/a3/UIC_Flames_wordmark.svg,6
 2025-01-15,H,Bradley,Indiana St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Indiana_State_Sycamores_logo.svg/250px-Indiana_State_Sycamores_logo.svg.png,7
 2025-01-18,V,Bradley,Murray St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Murray_State_Racers_logo.svg/227px-Murray_State_Racers_logo.svg.png,8
@@ -43,7 +43,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,H,Drake,Belmont,65,46,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Belmont_Bruins_logo.svg/251px-Belmont_Bruins_logo.svg.png,2
 2025-01-01,V,Drake,UIC,70,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/a/a3/UIC_Flames_wordmark.svg,3
 2025-01-05,H,Drake,Murray St.,59,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Murray_State_Racers_logo.svg/227px-Murray_State_Racers_logo.svg.png,4
-2025-01-08,V,Drake,Bradley,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Bradley_Braves_logo.svg/200px-Bradley_Braves_logo.svg.png,5
+2025-01-08,V,Drake,Bradley,64,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Bradley_Braves_logo.svg/200px-Bradley_Braves_logo.svg.png,5
 2025-01-11,H,Drake,Evansville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Evansville_Purple_Aces_logo.svg/320px-Evansville_Purple_Aces_logo.svg.png,6
 2025-01-15,H,Drake,Illinois St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Illinois_State_Athletics_logo.svg/320px-Illinois_State_Athletics_logo.svg.png,7
 2025-01-18,V,Drake,Indiana St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Indiana_State_Sycamores_logo.svg/250px-Indiana_State_Sycamores_logo.svg.png,8
@@ -63,7 +63,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,H,Evansville,Missouri St.,57,40,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Missouri_State_Athletics_logo.svg/274px-Missouri_State_Athletics_logo.svg.png,2
 2025-01-01,V,Evansville,Southern Ill.,68,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Southern_Illinois_Salukis_logo.svg/320px-Southern_Illinois_Salukis_logo.svg.png,3
 2025-01-04,H,Evansville,Indiana St.,62,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Indiana_State_Sycamores_logo.svg/250px-Indiana_State_Sycamores_logo.svg.png,4
-2025-01-08,H,Evansville,Illinois St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Illinois_State_Athletics_logo.svg/320px-Illinois_State_Athletics_logo.svg.png,5
+2025-01-08,H,Evansville,Illinois St.,69,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Illinois_State_Athletics_logo.svg/320px-Illinois_State_Athletics_logo.svg.png,5
 2025-01-11,V,Evansville,Drake,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Drake_Bulldogs_%22D%22_logo.svg/261px-Drake_Bulldogs_%22D%22_logo.svg.png,6
 2025-01-14,V,Evansville,UNI,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Northern_Iowa_Panters_logo.svg/320px-Northern_Iowa_Panters_logo.svg.png,7
 2025-01-18,H,Evansville,Belmont,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Belmont_Bruins_logo.svg/251px-Belmont_Bruins_logo.svg.png,8
@@ -83,7 +83,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,H,Illinois St.,UIC,67,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/a/a3/UIC_Flames_wordmark.svg,2
 2025-01-02,V,Illinois St.,Murray St.,74,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Murray_State_Racers_logo.svg/227px-Murray_State_Racers_logo.svg.png,3
 2025-01-05,H,Illinois St.,Southern Ill.,85,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Southern_Illinois_Salukis_logo.svg/320px-Southern_Illinois_Salukis_logo.svg.png,4
-2025-01-08,V,Illinois St.,Evansville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Evansville_Purple_Aces_logo.svg/320px-Evansville_Purple_Aces_logo.svg.png,5
+2025-01-08,V,Illinois St.,Evansville,51,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Evansville_Purple_Aces_logo.svg/320px-Evansville_Purple_Aces_logo.svg.png,5
 2025-01-11,H,Illinois St.,UNI,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Northern_Iowa_Panters_logo.svg/320px-Northern_Iowa_Panters_logo.svg.png,6
 2025-01-15,V,Illinois St.,Drake,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Drake_Bulldogs_%22D%22_logo.svg/261px-Drake_Bulldogs_%22D%22_logo.svg.png,7
 2025-01-18,H,Illinois St.,Missouri St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Missouri_State_Athletics_logo.svg/274px-Missouri_State_Athletics_logo.svg.png,8
@@ -103,7 +103,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-18,H,Indiana St.,Murray St.,84,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Murray_State_Racers_logo.svg/227px-Murray_State_Racers_logo.svg.png,2
 2025-01-01,H,Indiana St.,Bradley,89,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Bradley_Braves_logo.svg/200px-Bradley_Braves_logo.svg.png,3
 2025-01-04,V,Indiana St.,Evansville,66,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Evansville_Purple_Aces_logo.svg/320px-Evansville_Purple_Aces_logo.svg.png,4
-2025-01-08,V,Indiana St.,Valparaiso,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/f/fb/Valparaiso_Crusaders_wordmark.svg,5
+2025-01-08,V,Indiana St.,Valparaiso,95,98,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/f/fb/Valparaiso_Crusaders_wordmark.svg,5
 2025-01-11,H,Indiana St.,Belmont,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Belmont_Bruins_logo.svg/251px-Belmont_Bruins_logo.svg.png,6
 2025-01-15,V,Indiana St.,Bradley,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Bradley_Braves_logo.svg/200px-Bradley_Braves_logo.svg.png,7
 2025-01-18,H,Indiana St.,Drake,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Drake_Bulldogs_%22D%22_logo.svg/261px-Drake_Bulldogs_%22D%22_logo.svg.png,8
@@ -143,7 +143,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-18,V,Murray St.,Indiana St.,74,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Indiana_State_Sycamores_logo.svg/250px-Indiana_State_Sycamores_logo.svg.png,2
 2025-01-02,H,Murray St.,Illinois St.,68,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Illinois_State_Athletics_logo.svg/320px-Illinois_State_Athletics_logo.svg.png,3
 2025-01-05,V,Murray St.,Drake,66,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Drake_Bulldogs_%22D%22_logo.svg/261px-Drake_Bulldogs_%22D%22_logo.svg.png,4
-2025-01-08,V,Murray St.,UNI,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Northern_Iowa_Panters_logo.svg/320px-Northern_Iowa_Panters_logo.svg.png,5
+2025-01-08,V,Murray St.,UNI,71,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Northern_Iowa_Panters_logo.svg/320px-Northern_Iowa_Panters_logo.svg.png,5
 2025-01-11,H,Murray St.,Valparaiso,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/f/fb/Valparaiso_Crusaders_wordmark.svg,6
 2025-01-15,V,Murray St.,UIC,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/a/a3/UIC_Flames_wordmark.svg,7
 2025-01-18,H,Murray St.,Bradley,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Bradley_Braves_logo.svg/200px-Bradley_Braves_logo.svg.png,8
@@ -163,7 +163,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,V,Southern Ill.,UNI,67,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Northern_Iowa_Panters_logo.svg/320px-Northern_Iowa_Panters_logo.svg.png,2
 2025-01-01,H,Southern Ill.,Evansville,53,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Evansville_Purple_Aces_logo.svg/320px-Evansville_Purple_Aces_logo.svg.png,3
 2025-01-05,V,Southern Ill.,Illinois St.,54,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Illinois_State_Athletics_logo.svg/320px-Illinois_State_Athletics_logo.svg.png,4
-2025-01-08,V,Southern Ill.,Belmont,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Belmont_Bruins_logo.svg/251px-Belmont_Bruins_logo.svg.png,5
+2025-01-08,V,Southern Ill.,Belmont,86,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Belmont_Bruins_logo.svg/251px-Belmont_Bruins_logo.svg.png,5
 2025-01-11,H,Southern Ill.,Missouri St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Missouri_State_Athletics_logo.svg/274px-Missouri_State_Athletics_logo.svg.png,6
 2025-01-15,V,Southern Ill.,Missouri St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Missouri_State_Athletics_logo.svg/274px-Missouri_State_Athletics_logo.svg.png,7
 2025-01-18,H,Southern Ill.,UNI,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Northern_Iowa_Panters_logo.svg/320px-Northern_Iowa_Panters_logo.svg.png,8
@@ -203,7 +203,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,H,UNI,Southern Ill.,78,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Southern_Illinois_Salukis_logo.svg/320px-Southern_Illinois_Salukis_logo.svg.png,2
 2025-01-01,H,UNI,Belmont,76,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Belmont_Bruins_logo.svg/251px-Belmont_Bruins_logo.svg.png,3
 2025-01-04,V,UNI,Valparaiso,73,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/f/fb/Valparaiso_Crusaders_wordmark.svg,4
-2025-01-08,H,UNI,Murray St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Murray_State_Racers_logo.svg/227px-Murray_State_Racers_logo.svg.png,5
+2025-01-08,H,UNI,Murray St.,68,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Murray_State_Racers_logo.svg/227px-Murray_State_Racers_logo.svg.png,5
 2025-01-11,V,UNI,Illinois St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f8/Illinois_State_Athletics_logo.svg/320px-Illinois_State_Athletics_logo.svg.png,6
 2025-01-14,H,UNI,Evansville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Evansville_Purple_Aces_logo.svg/320px-Evansville_Purple_Aces_logo.svg.png,7
 2025-01-18,V,UNI,Southern Ill.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Southern_Illinois_Salukis_logo.svg/320px-Southern_Illinois_Salukis_logo.svg.png,8
@@ -223,7 +223,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,V,Valparaiso,Bradley,75,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Bradley_Braves_logo.svg/200px-Bradley_Braves_logo.svg.png,2
 2025-01-01,V,Valparaiso,Missouri St.,73,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/4e/Missouri_State_Athletics_logo.svg/274px-Missouri_State_Athletics_logo.svg.png,3
 2025-01-04,H,Valparaiso,UNI,80,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Northern_Iowa_Panters_logo.svg/320px-Northern_Iowa_Panters_logo.svg.png,4
-2025-01-08,H,Valparaiso,Indiana St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Indiana_State_Sycamores_logo.svg/250px-Indiana_State_Sycamores_logo.svg.png,5
+2025-01-08,H,Valparaiso,Indiana St.,98,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Indiana_State_Sycamores_logo.svg/250px-Indiana_State_Sycamores_logo.svg.png,5
 2025-01-11,V,Valparaiso,Murray St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Murray_State_Racers_logo.svg/227px-Murray_State_Racers_logo.svg.png,6
 2025-01-14,V,Valparaiso,Belmont,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/Belmont_Bruins_logo.svg/251px-Belmont_Bruins_logo.svg.png,7
 2025-01-18,H,Valparaiso,UIC,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/a/a3/UIC_Flames_wordmark.svg,8

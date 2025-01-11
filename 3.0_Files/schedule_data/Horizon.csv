@@ -4,7 +4,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-19,H,Cleveland St.,Oakland,92,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Oakland_Golden_Grizzlies_logo.svg/303px-Oakland_Golden_Grizzlies_logo.svg.png,3
 2024-12-29,H,Cleveland St.,Wright St.,78,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Wright_State_Raiders_logo.svg/313px-Wright_State_Raiders_logo.svg.png,4
 2025-01-04,H,Cleveland St.,IU Indy,67,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/IU_Indy.jpg/150px-IU_Indy.jpg,5
-2025-01-08,V,Cleveland St.,Robert Morris,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=200&w=200,6
+2025-01-08,V,Cleveland St.,Robert Morris,80,69,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=200&w=200,6
 2025-01-11,V,Cleveland St.,Youngstown St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,7
 2025-01-15,H,Cleveland St.,Northern Ky.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Northern_Kentucky_Norse_logo.svg/320px-Northern_Kentucky_Norse_logo.svg.png,8
 2025-01-19,V,Cleveland St.,IU Indy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/IU_Indy.jpg/150px-IU_Indy.jpg,9
@@ -25,7 +25,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,V,Detroit Mercy,Youngstown St.,64,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,4
 2025-01-02,H,Detroit Mercy,Robert Morris,78,76,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=200&w=200,5
 2025-01-04,H,Detroit Mercy,Milwaukee,56,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/36/Milwaukee_Panthers_letter_logo.svg,6
-2025-01-09,V,Detroit Mercy,IU Indy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/IU_Indy.jpg/150px-IU_Indy.jpg,7
+2025-01-09,V,Detroit Mercy,IU Indy,61,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/IU_Indy.jpg/150px-IU_Indy.jpg,7
 2025-01-11,V,Detroit Mercy,Purdue Fort Wayne,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Purdue_Fort_Wayne_Mastodons_logo.svg/202px-Purdue_Fort_Wayne_Mastodons_logo.svg.png,8
 2025-01-18,H,Detroit Mercy,Oakland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Oakland_Golden_Grizzlies_logo.svg/303px-Oakland_Golden_Grizzlies_logo.svg.png,9
 2025-01-22,V,Detroit Mercy,Cleveland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Cleveland_State_Vikings_logo.svg/311px-Cleveland_State_Vikings_logo.svg.png,10
@@ -65,7 +65,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,V,IU Indy,Milwaukee,81,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/36/Milwaukee_Panthers_letter_logo.svg,4
 2025-01-01,H,IU Indy,Youngstown St.,61,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,5
 2025-01-04,V,IU Indy,Cleveland St.,61,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Cleveland_State_Vikings_logo.svg/311px-Cleveland_State_Vikings_logo.svg.png,6
-2025-01-09,H,IU Indy,Detroit Mercy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Detroit_Titans_logo.svg/320px-Detroit_Titans_logo.svg.png,7
+2025-01-09,H,IU Indy,Detroit Mercy,95,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Detroit_Titans_logo.svg/320px-Detroit_Titans_logo.svg.png,7
 2025-01-15,V,IU Indy,Oakland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Oakland_Golden_Grizzlies_logo.svg/303px-Oakland_Golden_Grizzlies_logo.svg.png,8
 2025-01-19,H,IU Indy,Cleveland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Cleveland_State_Vikings_logo.svg/311px-Cleveland_State_Vikings_logo.svg.png,9
 2025-01-22,V,IU Indy,Green Bay,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Green_Bay_Phoenix_logo.svg/308px-Green_Bay_Phoenix_logo.svg.png,10
@@ -84,7 +84,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,H,Milwaukee,IU Indy,88,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/IU_Indy.jpg/150px-IU_Indy.jpg,3
 2025-01-02,V,Milwaukee,Oakland,49,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Oakland_Golden_Grizzlies_logo.svg/303px-Oakland_Golden_Grizzlies_logo.svg.png,4
 2025-01-04,V,Milwaukee,Detroit Mercy,64,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Detroit_Titans_logo.svg/320px-Detroit_Titans_logo.svg.png,5
-2025-01-08,V,Milwaukee,Purdue Fort Wayne,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Purdue_Fort_Wayne_Mastodons_logo.svg/202px-Purdue_Fort_Wayne_Mastodons_logo.svg.png,6
+2025-01-08,V,Milwaukee,Purdue Fort Wayne,73,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Purdue_Fort_Wayne_Mastodons_logo.svg/202px-Purdue_Fort_Wayne_Mastodons_logo.svg.png,6
 2025-01-11,H,Milwaukee,Green Bay,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Green_Bay_Phoenix_logo.svg/308px-Green_Bay_Phoenix_logo.svg.png,7
 2025-01-17,H,Milwaukee,Youngstown St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,8
 2025-01-19,H,Milwaukee,Robert Morris,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=200&w=200,9
@@ -104,7 +104,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,V,Northern Ky.,Robert Morris,93,97,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=200&w=200,3
 2025-01-01,H,Northern Ky.,Purdue Fort Wayne,69,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Purdue_Fort_Wayne_Mastodons_logo.svg/202px-Purdue_Fort_Wayne_Mastodons_logo.svg.png,4
 2025-01-04,H,Northern Ky.,Green Bay,78,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Green_Bay_Phoenix_logo.svg/308px-Green_Bay_Phoenix_logo.svg.png,5
-2025-01-08,V,Northern Ky.,Youngstown St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,6
+2025-01-08,V,Northern Ky.,Youngstown St.,61,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,6
 2025-01-11,H,Northern Ky.,Oakland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Oakland_Golden_Grizzlies_logo.svg/303px-Oakland_Golden_Grizzlies_logo.svg.png,7
 2025-01-15,V,Northern Ky.,Cleveland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Cleveland_State_Vikings_logo.svg/311px-Cleveland_State_Vikings_logo.svg.png,8
 2025-01-18,H,Northern Ky.,Wright St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Wright_State_Raiders_logo.svg/313px-Wright_State_Raiders_logo.svg.png,9
@@ -124,7 +124,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-19,V,Oakland,Cleveland St.,75,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Cleveland_State_Vikings_logo.svg/311px-Cleveland_State_Vikings_logo.svg.png,3
 2025-01-02,H,Oakland,Milwaukee,65,49,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/36/Milwaukee_Panthers_letter_logo.svg,4
 2025-01-04,H,Oakland,Robert Morris,71,79,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=200&w=200,5
-2025-01-09,V,Oakland,Wright St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Wright_State_Raiders_logo.svg/313px-Wright_State_Raiders_logo.svg.png,6
+2025-01-09,V,Oakland,Wright St.,62,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Wright_State_Raiders_logo.svg/313px-Wright_State_Raiders_logo.svg.png,6
 2025-01-11,V,Oakland,Northern Ky.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Northern_Kentucky_Norse_logo.svg/320px-Northern_Kentucky_Norse_logo.svg.png,7
 2025-01-15,H,Oakland,IU Indy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/IU_Indy.jpg/150px-IU_Indy.jpg,8
 2025-01-18,V,Oakland,Detroit Mercy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Detroit_Titans_logo.svg/320px-Detroit_Titans_logo.svg.png,9
@@ -145,7 +145,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,V,Purdue Fort Wayne,Green Bay,83,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Green_Bay_Phoenix_logo.svg/308px-Green_Bay_Phoenix_logo.svg.png,4
 2025-01-01,V,Purdue Fort Wayne,Northern Ky.,68,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Northern_Kentucky_Norse_logo.svg/320px-Northern_Kentucky_Norse_logo.svg.png,5
 2025-01-04,H,Purdue Fort Wayne,Youngstown St.,90,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,6
-2025-01-08,H,Purdue Fort Wayne,Milwaukee,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/36/Milwaukee_Panthers_letter_logo.svg,7
+2025-01-08,H,Purdue Fort Wayne,Milwaukee,78,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/36/Milwaukee_Panthers_letter_logo.svg,7
 2025-01-11,H,Purdue Fort Wayne,Detroit Mercy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Detroit_Titans_logo.svg/320px-Detroit_Titans_logo.svg.png,8
 2025-01-15,V,Purdue Fort Wayne,Wright St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Wright_State_Raiders_logo.svg/313px-Wright_State_Raiders_logo.svg.png,9
 2025-01-22,V,Purdue Fort Wayne,Oakland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Oakland_Golden_Grizzlies_logo.svg/303px-Oakland_Golden_Grizzlies_logo.svg.png,10
@@ -164,7 +164,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,H,Robert Morris,Northern Ky.,97,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Northern_Kentucky_Norse_logo.svg/320px-Northern_Kentucky_Norse_logo.svg.png,3
 2025-01-02,V,Robert Morris,Detroit Mercy,76,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Detroit_Titans_logo.svg/320px-Detroit_Titans_logo.svg.png,4
 2025-01-04,V,Robert Morris,Oakland,79,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Oakland_Golden_Grizzlies_logo.svg/303px-Oakland_Golden_Grizzlies_logo.svg.png,5
-2025-01-08,H,Robert Morris,Cleveland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Cleveland_State_Vikings_logo.svg/311px-Cleveland_State_Vikings_logo.svg.png,6
+2025-01-08,H,Robert Morris,Cleveland St.,69,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Cleveland_State_Vikings_logo.svg/311px-Cleveland_State_Vikings_logo.svg.png,6
 2025-01-12,H,Robert Morris,Wright St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Wright_State_Raiders_logo.svg/313px-Wright_State_Raiders_logo.svg.png,7
 2025-01-17,V,Robert Morris,Green Bay,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Green_Bay_Phoenix_logo.svg/308px-Green_Bay_Phoenix_logo.svg.png,8
 2025-01-19,V,Robert Morris,Milwaukee,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/36/Milwaukee_Panthers_letter_logo.svg,9
@@ -184,7 +184,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-18,H,Wright St.,Youngstown St.,70,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Youngstown_State_Penguins_logo.svg/320px-Youngstown_State_Penguins_logo.svg.png,3
 2024-12-29,V,Wright St.,Cleveland St.,64,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Cleveland_State_Vikings_logo.svg/311px-Cleveland_State_Vikings_logo.svg.png,4
 2025-01-02,H,Wright St.,Green Bay,74,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Green_Bay_Phoenix_logo.svg/308px-Green_Bay_Phoenix_logo.svg.png,5
-2025-01-09,H,Wright St.,Oakland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Oakland_Golden_Grizzlies_logo.svg/303px-Oakland_Golden_Grizzlies_logo.svg.png,6
+2025-01-09,H,Wright St.,Oakland,66,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Oakland_Golden_Grizzlies_logo.svg/303px-Oakland_Golden_Grizzlies_logo.svg.png,6
 2025-01-12,V,Wright St.,Robert Morris,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=200&w=200,7
 2025-01-15,H,Wright St.,Purdue Fort Wayne,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Purdue_Fort_Wayne_Mastodons_logo.svg/202px-Purdue_Fort_Wayne_Mastodons_logo.svg.png,8
 2025-01-18,V,Wright St.,Northern Ky.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Northern_Kentucky_Norse_logo.svg/320px-Northern_Kentucky_Norse_logo.svg.png,9
@@ -205,7 +205,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2024-12-29,H,Youngstown St.,Detroit Mercy,73,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Detroit_Titans_logo.svg/320px-Detroit_Titans_logo.svg.png,4
 2025-01-01,V,Youngstown St.,IU Indy,77,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/IU_Indy.jpg/150px-IU_Indy.jpg,5
 2025-01-04,V,Youngstown St.,Purdue Fort Wayne,81,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/14/Purdue_Fort_Wayne_Mastodons_logo.svg/202px-Purdue_Fort_Wayne_Mastodons_logo.svg.png,6
-2025-01-08,H,Youngstown St.,Northern Ky.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Northern_Kentucky_Norse_logo.svg/320px-Northern_Kentucky_Norse_logo.svg.png,7
+2025-01-08,H,Youngstown St.,Northern Ky.,72,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Northern_Kentucky_Norse_logo.svg/320px-Northern_Kentucky_Norse_logo.svg.png,7
 2025-01-11,H,Youngstown St.,Cleveland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/Cleveland_State_Vikings_logo.svg/311px-Cleveland_State_Vikings_logo.svg.png,8
 2025-01-17,V,Youngstown St.,Milwaukee,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/36/Milwaukee_Panthers_letter_logo.svg,9
 2025-01-19,V,Youngstown St.,Green Bay,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Green_Bay_Phoenix_logo.svg/308px-Green_Bay_Phoenix_logo.svg.png,10

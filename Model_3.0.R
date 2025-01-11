@@ -32,7 +32,7 @@ source("3.0_Files/conf_tourney_sims.R")
 params <- 
   list('conf_sims' = 1000,
        # 'n_ct' = 5000,
-       'ivy_sims' = 500,
+       'ivy_sims' = 1000,
        'psf_sims' = 200,
        'pct_post' = 0.25)
 
