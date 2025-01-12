@@ -2,7 +2,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-02,H,Eastern Wash.,Montana,81,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Montana_Griz_logo.svg/320px-Montana_Griz_logo.svg.png,1
 2025-01-04,H,Eastern Wash.,Montana St.,68,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,2
 2025-01-09,V,Eastern Wash.,Portland St.,59,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,3
-2025-01-11,V,Eastern Wash.,Sacramento St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,4
+2025-01-11,V,Eastern Wash.,Sacramento St.,65,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,4
 2025-01-18,V,Eastern Wash.,Idaho,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,5
 2025-01-20,V,Eastern Wash.,Montana St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,6
 2025-01-23,H,Eastern Wash.,Northern Ariz.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,7
@@ -20,7 +20,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-02,H,Idaho,Montana St.,69,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,1
 2025-01-04,H,Idaho,Montana,71,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Montana_Griz_logo.svg/320px-Montana_Griz_logo.svg.png,2
 2025-01-09,V,Idaho,Sacramento St.,80,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,3
-2025-01-11,V,Idaho,Portland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,4
+2025-01-11,V,Idaho,Portland St.,63,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,4
 2025-01-18,H,Idaho,Eastern Wash.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,5
 2025-01-20,V,Idaho,Montana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Montana_Griz_logo.svg/320px-Montana_Griz_logo.svg.png,6
 2025-01-23,H,Idaho,Northern Colo.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,7
@@ -37,7 +37,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-03-03,V,Idaho,Montana St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,18
 2025-01-02,V,Idaho St.,Northern Ariz.,72,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,1
 2025-01-04,V,Idaho St.,Northern Colo.,92,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,2
-2025-01-11,H,Idaho St.,Weber St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,3
+2025-01-11,H,Idaho St.,Weber St.,69,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,3
 2025-01-16,H,Idaho St.,Montana St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,4
 2025-01-18,H,Idaho St.,Montana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Montana_Griz_logo.svg/320px-Montana_Griz_logo.svg.png,5
 2025-01-23,V,Idaho St.,Sacramento St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,6
@@ -56,7 +56,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-02,V,Montana,Eastern Wash.,92,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,1
 2025-01-04,V,Montana,Idaho,73,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,2
 2025-01-09,H,Montana,Northern Ariz.,81,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,3
-2025-01-11,H,Montana,Northern Colo.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,4
+2025-01-11,H,Montana,Northern Colo.,57,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,4
 2025-01-16,V,Montana,Weber St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,5
 2025-01-18,V,Montana,Idaho St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,6
 2025-01-20,H,Montana,Idaho,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,7
@@ -74,7 +74,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-02,V,Montana St.,Idaho,64,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,1
 2025-01-04,V,Montana St.,Eastern Wash.,63,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,2
 2025-01-09,H,Montana St.,Northern Colo.,82,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,3
-2025-01-11,H,Montana St.,Northern Ariz.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,4
+2025-01-11,H,Montana St.,Northern Ariz.,58,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,4
 2025-01-16,V,Montana St.,Idaho St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,5
 2025-01-18,V,Montana St.,Weber St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,6
 2025-01-20,H,Montana St.,Eastern Wash.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,7
@@ -92,7 +92,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-02,H,Northern Ariz.,Idaho St.,67,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,1
 2025-01-04,H,Northern Ariz.,Weber St.,80,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,2
 2025-01-09,V,Northern Ariz.,Montana,76,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Montana_Griz_logo.svg/320px-Montana_Griz_logo.svg.png,3
-2025-01-11,V,Northern Ariz.,Montana St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,4
+2025-01-11,V,Northern Ariz.,Montana St.,53,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,4
 2025-01-16,H,Northern Ariz.,Sacramento St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,5
 2025-01-18,H,Northern Ariz.,Portland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,6
 2025-01-23,V,Northern Ariz.,Eastern Wash.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,7
@@ -110,7 +110,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-02,H,Northern Colo.,Weber St.,89,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,1
 2025-01-04,H,Northern Colo.,Idaho St.,93,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,2
 2025-01-09,V,Northern Colo.,Montana St.,83,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,3
-2025-01-11,V,Northern Colo.,Montana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Montana_Griz_logo.svg/320px-Montana_Griz_logo.svg.png,4
+2025-01-11,V,Northern Colo.,Montana,81,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Montana_Griz_logo.svg/320px-Montana_Griz_logo.svg.png,4
 2025-01-16,H,Northern Colo.,Portland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,5
 2025-01-18,H,Northern Colo.,Sacramento St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,6
 2025-01-23,V,Northern Colo.,Idaho,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,7
@@ -127,7 +127,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-03-03,V,Northern Colo.,Weber St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,18
 2025-01-04,V,Portland St.,Sacramento St.,53,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,1
 2025-01-09,H,Portland St.,Eastern Wash.,64,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,2
-2025-01-11,H,Portland St.,Idaho,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,3
+2025-01-11,H,Portland St.,Idaho,75,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,3
 2025-01-16,V,Portland St.,Northern Colo.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,4
 2025-01-18,V,Portland St.,Northern Ariz.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,5
 2025-01-23,H,Portland St.,Weber St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Weber_State_Wildcats_logo.svg/310px-Weber_State_Wildcats_logo.svg.png,6
@@ -145,7 +145,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-03-03,H,Portland St.,Sacramento St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/6/61/Sacramento_State_Hornets_logo.svg,18
 2025-01-04,H,Sacramento St.,Portland St.,56,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,1
 2025-01-09,H,Sacramento St.,Idaho,67,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Idaho_Vandals_logo.svg/216px-Idaho_Vandals_logo.svg.png,2
-2025-01-11,H,Sacramento St.,Eastern Wash.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,3
+2025-01-11,H,Sacramento St.,Eastern Wash.,54,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Eastern_Washington_Eagles_logo.svg/257px-Eastern_Washington_Eagles_logo.svg.png,3
 2025-01-16,V,Sacramento St.,Northern Ariz.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,4
 2025-01-18,V,Sacramento St.,Northern Colo.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,5
 2025-01-23,H,Sacramento St.,Idaho St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,6
@@ -163,7 +163,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-03-03,V,Sacramento St.,Portland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,18
 2025-01-02,V,Weber St.,Northern Colo.,72,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Northern_Colorado_Bears_logo.svg/239px-Northern_Colorado_Bears_logo.svg.png,1
 2025-01-04,V,Weber St.,Northern Ariz.,77,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Northern_Arizona_Athletics_logo.svg/320px-Northern_Arizona_Athletics_logo.svg.png,2
-2025-01-11,V,Weber St.,Idaho St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,3
+2025-01-11,V,Weber St.,Idaho St.,77,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Idaho_State_Bengals_logo.svg/254px-Idaho_State_Bengals_logo.svg.png,3
 2025-01-16,H,Weber St.,Montana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Montana_Griz_logo.svg/320px-Montana_Griz_logo.svg.png,4
 2025-01-18,H,Weber St.,Montana St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Montana_State_Bobcats_logo.svg/320px-Montana_State_Bobcats_logo.svg.png,5
 2025-01-23,V,Weber St.,Portland St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Portland_State_Vikings_logo.svg/186px-Portland_State_Vikings_logo.svg.png,6
