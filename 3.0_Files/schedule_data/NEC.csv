@@ -2,7 +2,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-03,V,Central Conn. St.,Saint Francis (PA),74,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,1
 2025-01-05,V,Central Conn. St.,Mercyhurst,62,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mercyhurst_logo_from_NCAA.svg/150px-Mercyhurst_logo_from_NCAA.svg.png,2
 2025-01-10,H,Central Conn. St.,Wagner,57,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,3
-2025-01-12,H,Central Conn. St.,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,4
+2025-01-12,H,Central Conn. St.,LIU,52,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,4
 2025-01-18,V,Central Conn. St.,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,5
 2025-01-24,V,Central Conn. St.,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,6
 2025-01-26,H,Central Conn. St.,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,7
@@ -17,7 +17,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-03-01,V,Central Conn. St.,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,16
 2025-01-03,V,Chicago St.,Wagner,64,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,1
 2025-01-05,V,Chicago St.,LIU,39,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,2
-2025-01-12,H,Chicago St.,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,3
+2025-01-12,H,Chicago St.,Stonehill,52,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,3
 2025-01-18,H,Chicago St.,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,4
 2025-01-20,H,Chicago St.,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,5
 2025-01-24,V,Chicago St.,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,6
@@ -33,7 +33,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-03-01,V,Chicago St.,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,16
 2025-01-05,V,Fairleigh Dickinson,Wagner,71,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,1
 2025-01-10,V,Fairleigh Dickinson,Le Moyne,91,86,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,2
-2025-01-12,H,Fairleigh Dickinson,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,3
+2025-01-12,H,Fairleigh Dickinson,Saint Francis (PA),71,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,3
 2025-01-18,H,Fairleigh Dickinson,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,4
 2025-01-20,V,Fairleigh Dickinson,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,5
 2025-01-26,V,Fairleigh Dickinson,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,6
@@ -50,7 +50,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-03,H,LIU,Le Moyne,78,62,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,1
 2025-01-05,H,LIU,Chicago St.,53,39,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,2
 2025-01-10,V,LIU,Stonehill,70,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,3
-2025-01-12,V,LIU,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,4
+2025-01-12,V,LIU,Central Conn. St.,54,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,4
 2025-01-18,H,LIU,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,5
 2025-01-20,H,LIU,Mercyhurst,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mercyhurst_logo_from_NCAA.svg/150px-Mercyhurst_logo_from_NCAA.svg.png,6
 2025-01-24,V,LIU,Saint Francis (PA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,7
@@ -65,7 +65,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-03-01,V,LIU,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,16
 2025-01-03,V,Le Moyne,LIU,62,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,1
 2025-01-10,H,Le Moyne,Fairleigh Dickinson,86,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,2
-2025-01-12,H,Le Moyne,Mercyhurst,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mercyhurst_logo_from_NCAA.svg/150px-Mercyhurst_logo_from_NCAA.svg.png,3
+2025-01-12,H,Le Moyne,Mercyhurst,79,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mercyhurst_logo_from_NCAA.svg/150px-Mercyhurst_logo_from_NCAA.svg.png,3
 2025-01-18,V,Le Moyne,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,4
 2025-01-20,H,Le Moyne,Stonehill,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,5
 2025-01-24,H,Le Moyne,Central Conn. St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,6
@@ -82,7 +82,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-03,H,Mercyhurst,Stonehill,76,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,1
 2025-01-05,H,Mercyhurst,Central Conn. St.,50,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,2
 2025-01-10,V,Mercyhurst,Saint Francis (PA),59,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,3
-2025-01-12,V,Mercyhurst,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,4
+2025-01-12,V,Mercyhurst,Le Moyne,63,79,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,4
 2025-01-18,V,Mercyhurst,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,5
 2025-01-20,V,Mercyhurst,LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,6
 2025-01-24,H,Mercyhurst,Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,7
@@ -98,7 +98,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-03,H,Saint Francis (PA),Central Conn. St.,59,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Central_Connecticut_Blue_Devils_logo.svg/264px-Central_Connecticut_Blue_Devils_logo.svg.png,1
 2025-01-05,H,Saint Francis (PA),Stonehill,60,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Stonehill_Skyhawks_logo.svg/1200px-Stonehill_Skyhawks_logo.svg.png,2
 2025-01-10,H,Saint Francis (PA),Mercyhurst,73,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mercyhurst_logo_from_NCAA.svg/150px-Mercyhurst_logo_from_NCAA.svg.png,3
-2025-01-12,V,Saint Francis (PA),Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,4
+2025-01-12,V,Saint Francis (PA),Fairleigh Dickinson,75,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,4
 2025-01-18,V,Saint Francis (PA),LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,5
 2025-01-20,V,Saint Francis (PA),Wagner,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Wagner_Seahawks_logo.svg/320px-Wagner_Seahawks_logo.svg.png,6
 2025-01-24,H,Saint Francis (PA),LIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,7
@@ -114,7 +114,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-03,V,Stonehill,Mercyhurst,69,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Mercyhurst_logo_from_NCAA.svg/150px-Mercyhurst_logo_from_NCAA.svg.png,1
 2025-01-05,V,Stonehill,Saint Francis (PA),64,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Saint_Francis_Red_Flash_logo.svg/320px-Saint_Francis_Red_Flash_logo.svg.png,2
 2025-01-10,H,Stonehill,LIU,60,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/LIU_Brooklyn_Blackbirds_logo.svg/320px-LIU_Brooklyn_Blackbirds_logo.svg.png,3
-2025-01-12,V,Stonehill,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,4
+2025-01-12,V,Stonehill,Chicago St.,68,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,4
 2025-01-20,V,Stonehill,Le Moyne,NA,NA,FALSE,FALSE,https://en.wikipedia.org/wiki/File:Le_Moyne_Dolphins_logo.svg,5
 2025-01-24,H,Stonehill,Chicago St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Chicago_State_Cougars_logo.svg/246px-Chicago_State_Cougars_logo.svg.png,6
 2025-01-26,H,Stonehill,Fairleigh Dickinson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/FDU_Knights_Logo.png/175px-FDU_Knights_Logo.png,7

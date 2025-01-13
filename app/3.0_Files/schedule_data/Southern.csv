@@ -2,7 +2,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-01,V,Chattanooga,Mercer,94,99,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Mercer_Bears_logo.svg/312px-Mercer_Bears_logo.svg.png,1
 2025-01-04,V,Chattanooga,The Citadel,81,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/0d/Correct_secondary_logo.png,2
 2025-01-09,H,Chattanooga,UNC Greensboro,75,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/UNCG_Spartans_logo.svg/309px-UNCG_Spartans_logo.svg.png,3
-2025-01-12,H,Chattanooga,VMI,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/VMI_Keydets_logo.svg/225px-VMI_Keydets_logo.svg.png,4
+2025-01-12,H,Chattanooga,VMI,91,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/VMI_Keydets_logo.svg/225px-VMI_Keydets_logo.svg.png,4
 2025-01-15,H,Chattanooga,Wofford,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Wofford_Terriers_logo.svg/217px-Wofford_Terriers_logo.svg.png,5
 2025-01-18,V,Chattanooga,Furman,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Furman_Paladins_logo.svg/245px-Furman_Paladins_logo.svg.png,6
 2025-01-22,H,Chattanooga,Samford,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Samford_Bulldogs_logo.svg/320px-Samford_Bulldogs_logo.svg.png,7
@@ -56,7 +56,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-01,H,Mercer,Chattanooga,99,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Chattanooga_Mocs_logo.svg/272px-Chattanooga_Mocs_logo.svg.png,1
 2025-01-04,V,Mercer,VMI,70,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/VMI_Keydets_logo.svg/225px-VMI_Keydets_logo.svg.png,2
 2025-01-08,H,Mercer,ETSU,68,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/East_Tennessee_State_Buccaneers_logo.svg/241px-East_Tennessee_State_Buccaneers_logo.svg.png,3
-2025-01-12,V,Mercer,Western Caro.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Western_Carolina_Catamounts_logo.svg/290px-Western_Carolina_Catamounts_logo.svg.png,4
+2025-01-12,V,Mercer,Western Caro.,82,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Western_Carolina_Catamounts_logo.svg/290px-Western_Carolina_Catamounts_logo.svg.png,4
 2025-01-15,H,Mercer,Samford,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Samford_Bulldogs_logo.svg/320px-Samford_Bulldogs_logo.svg.png,5
 2025-01-18,V,Mercer,Wofford,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Wofford_Terriers_logo.svg/217px-Wofford_Terriers_logo.svg.png,6
 2025-01-22,V,Mercer,UNC Greensboro,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/UNCG_Spartans_logo.svg/309px-UNCG_Spartans_logo.svg.png,7
@@ -128,7 +128,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-01,V,VMI,ETSU,69,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/East_Tennessee_State_Buccaneers_logo.svg/241px-East_Tennessee_State_Buccaneers_logo.svg.png,1
 2025-01-04,H,VMI,Mercer,67,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Mercer_Bears_logo.svg/312px-Mercer_Bears_logo.svg.png,2
 2025-01-09,V,VMI,Samford,68,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Samford_Bulldogs_logo.svg/320px-Samford_Bulldogs_logo.svg.png,3
-2025-01-12,V,VMI,Chattanooga,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Chattanooga_Mocs_logo.svg/272px-Chattanooga_Mocs_logo.svg.png,4
+2025-01-12,V,VMI,Chattanooga,66,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Chattanooga_Mocs_logo.svg/272px-Chattanooga_Mocs_logo.svg.png,4
 2025-01-15,H,VMI,Western Caro.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Western_Carolina_Catamounts_logo.svg/290px-Western_Carolina_Catamounts_logo.svg.png,5
 2025-01-18,V,VMI,The Citadel,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/0d/Correct_secondary_logo.png,6
 2025-01-22,H,VMI,Furman,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Furman_Paladins_logo.svg/245px-Furman_Paladins_logo.svg.png,7
@@ -146,7 +146,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-01,H,Western Caro.,Furman,61,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Furman_Paladins_logo.svg/245px-Furman_Paladins_logo.svg.png,1
 2025-01-04,H,Western Caro.,Samford,69,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Samford_Bulldogs_logo.svg/320px-Samford_Bulldogs_logo.svg.png,2
 2025-01-08,V,Western Caro.,Wofford,69,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Wofford_Terriers_logo.svg/217px-Wofford_Terriers_logo.svg.png,3
-2025-01-12,H,Western Caro.,Mercer,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Mercer_Bears_logo.svg/312px-Mercer_Bears_logo.svg.png,4
+2025-01-12,H,Western Caro.,Mercer,85,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Mercer_Bears_logo.svg/312px-Mercer_Bears_logo.svg.png,4
 2025-01-15,V,Western Caro.,VMI,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/VMI_Keydets_logo.svg/225px-VMI_Keydets_logo.svg.png,5
 2025-01-18,H,Western Caro.,UNC Greensboro,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/70/UNCG_Spartans_logo.svg/309px-UNCG_Spartans_logo.svg.png,6
 2025-01-22,V,Western Caro.,ETSU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/East_Tennessee_State_Buccaneers_logo.svg/241px-East_Tennessee_State_Buccaneers_logo.svg.png,7
