@@ -4,7 +4,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-08,H,Charlotte,Fla. Atlantic,64,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Florida_Atlantic_Owls_logo.svg/320px-Florida_Atlantic_Owls_logo.svg.png,3
 2025-01-12,V,Charlotte,Tulsa,63,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Tulsa_Golden_Hurricane_logo.svg/319px-Tulsa_Golden_Hurricane_logo.svg.png,4
 2025-01-14,V,Charlotte,Wichita St.,59,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Wichita_State_Shockers_logo.svg/288px-Wichita_State_Shockers_logo.svg.png,5
-2025-01-19,H,Charlotte,Memphis,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/235.png&h=200&w=200,6
+2025-01-19,H,Charlotte,Memphis,68,77,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/235.png&h=200&w=200,6
 2025-01-22,H,Charlotte,South Fla.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/South_Florida_Bulls_logo.svg/300px-South_Florida_Bulls_logo.svg.png,7
 2025-01-29,V,Charlotte,Temple,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/212px-Temple_T_logo.svg.png,8
 2025-02-01,V,Charlotte,UAB,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/UAB_Blazers_logo.svg/283px-UAB_Blazers_logo.svg.png,9
@@ -40,7 +40,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-08,V,Fla. Atlantic,Charlotte,75,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/33/Charlotte_49ers_logo.svg,3
 2025-01-12,H,Fla. Atlantic,UAB,76,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/UAB_Blazers_logo.svg/283px-UAB_Blazers_logo.svg.png,4
 2025-01-15,V,Fla. Atlantic,Tulane,65,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Tulane_Green_Wave_logo.svg/320px-Tulane_Green_Wave_logo.svg.png,5
-2025-01-19,H,Fla. Atlantic,Rice,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Rice_Owls_logo.svg/200px-Rice_Owls_logo.svg.png,6
+2025-01-19,H,Fla. Atlantic,Rice,75,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Rice_Owls_logo.svg/200px-Rice_Owls_logo.svg.png,6
 2025-01-26,V,Fla. Atlantic,North Texas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/North_Texas_Mean_Green_logo.svg/215px-North_Texas_Mean_Green_logo.svg.png,7
 2025-01-29,H,Fla. Atlantic,UTSA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/UTSA_Roadrunners_logo.svg/320px-UTSA_Roadrunners_logo.svg.png,8
 2025-02-02,H,Fla. Atlantic,South Fla.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/South_Florida_Bulls_logo.svg/300px-South_Florida_Bulls_logo.svg.png,9
@@ -57,7 +57,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-05,H,Memphis,North Texas,68,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/North_Texas_Mean_Green_logo.svg/215px-North_Texas_Mean_Green_logo.svg.png,2
 2025-01-11,H,Memphis,East Carolina,74,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/East_Carolina_Pirates_logo.svg/226px-East_Carolina_Pirates_logo.svg.png,3
 2025-01-16,V,Memphis,Temple,81,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/212px-Temple_T_logo.svg.png,4
-2025-01-19,V,Memphis,Charlotte,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/33/Charlotte_49ers_logo.svg,5
+2025-01-19,V,Memphis,Charlotte,77,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/33/Charlotte_49ers_logo.svg,5
 2025-01-23,H,Memphis,Wichita St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Wichita_State_Shockers_logo.svg/288px-Wichita_State_Shockers_logo.svg.png,6
 2025-01-26,H,Memphis,UAB,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/UAB_Blazers_logo.svg/283px-UAB_Blazers_logo.svg.png,7
 2025-01-30,V,Memphis,Tulane,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Tulane_Green_Wave_logo.svg/320px-Tulane_Green_Wave_logo.svg.png,8
@@ -94,7 +94,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-08,V,Rice,North Texas,59,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/North_Texas_Mean_Green_logo.svg/215px-North_Texas_Mean_Green_logo.svg.png,3
 2025-01-11,H,Rice,Temple,70,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/212px-Temple_T_logo.svg.png,4
 2025-01-14,H,Rice,UTSA,84,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/UTSA_Roadrunners_logo.svg/320px-UTSA_Roadrunners_logo.svg.png,5
-2025-01-19,V,Rice,Fla. Atlantic,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Florida_Atlantic_Owls_logo.svg/320px-Florida_Atlantic_Owls_logo.svg.png,6
+2025-01-19,V,Rice,Fla. Atlantic,73,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Florida_Atlantic_Owls_logo.svg/320px-Florida_Atlantic_Owls_logo.svg.png,6
 2025-01-25,H,Rice,Tulane,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Tulane_Green_Wave_logo.svg/320px-Tulane_Green_Wave_logo.svg.png,7
 2025-01-28,V,Rice,South Fla.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/South_Florida_Bulls_logo.svg/300px-South_Florida_Bulls_logo.svg.png,8
 2025-02-02,H,Rice,Memphis,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/235.png&h=200&w=200,9
@@ -129,7 +129,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-08,V,Temple,East Carolina,79,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/East_Carolina_Pirates_logo.svg/226px-East_Carolina_Pirates_logo.svg.png,2
 2025-01-11,V,Temple,Rice,73,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Rice_Owls_logo.svg/200px-Rice_Owls_logo.svg.png,3
 2025-01-16,H,Temple,Memphis,88,81,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/235.png&h=200&w=200,4
-2025-01-19,H,Temple,Tulane,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Tulane_Green_Wave_logo.svg/320px-Tulane_Green_Wave_logo.svg.png,5
+2025-01-19,H,Temple,Tulane,80,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Tulane_Green_Wave_logo.svg/320px-Tulane_Green_Wave_logo.svg.png,5
 2025-01-22,V,Temple,North Texas,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/North_Texas_Mean_Green_logo.svg/215px-North_Texas_Mean_Green_logo.svg.png,6
 2025-01-25,V,Temple,UTSA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/UTSA_Roadrunners_logo.svg/320px-UTSA_Roadrunners_logo.svg.png,7
 2025-01-29,H,Temple,Charlotte,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/33/Charlotte_49ers_logo.svg,8
@@ -148,7 +148,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-07,V,Tulane,UAB,69,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/UAB_Blazers_logo.svg/283px-UAB_Blazers_logo.svg.png,3
 2025-01-11,H,Tulane,South Fla.,73,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/South_Florida_Bulls_logo.svg/300px-South_Florida_Bulls_logo.svg.png,4
 2025-01-15,H,Tulane,Fla. Atlantic,80,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Florida_Atlantic_Owls_logo.svg/320px-Florida_Atlantic_Owls_logo.svg.png,5
-2025-01-19,V,Tulane,Temple,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/212px-Temple_T_logo.svg.png,6
+2025-01-19,V,Tulane,Temple,77,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Temple_T_logo.svg/212px-Temple_T_logo.svg.png,6
 2025-01-25,V,Tulane,Rice,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Rice_Owls_logo.svg/200px-Rice_Owls_logo.svg.png,7
 2025-01-30,H,Tulane,Memphis,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/235.png&h=200&w=200,8
 2025-02-02,H,Tulane,Tulsa,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Tulsa_Golden_Hurricane_logo.svg/319px-Tulsa_Golden_Hurricane_logo.svg.png,9
