@@ -6,7 +6,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-11,H,Gonzaga,Washington St.,88,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Washington_State_Cougars_logo.svg/252px-Washington_State_Cougars_logo.svg.png,5
 2025-01-16,V,Gonzaga,Oregon St.,89,97,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Oregon_State_Beavers_logo.svg/320px-Oregon_State_Beavers_logo.svg.png,6
 2025-01-18,H,Gonzaga,Santa Clara,99,103,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Santa_Clara_Broncos_logo.svg/185px-Santa_Clara_Broncos_logo.svg.png,7
-2025-01-25,V,Gonzaga,Portland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Portland_Pilots_logo.svg/213px-Portland_Pilots_logo.svg.png,8
+2025-01-25,V,Gonzaga,Portland,105,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Portland_Pilots_logo.svg/213px-Portland_Pilots_logo.svg.png,8
 2025-01-28,H,Gonzaga,Oregon St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Oregon_State_Beavers_logo.svg/320px-Oregon_State_Beavers_logo.svg.png,9
 2025-02-01,V,Gonzaga,Saint Mary's (CA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saint_Mary%27s_College_Gaels_logo.svg/300px-Saint_Mary%27s_College_Gaels_logo.svg.png,10
 2025-02-06,H,Gonzaga,LMU (CA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/LMU_Lions_logo.svg/320px-LMU_Lions_logo.svg.png,11
@@ -24,7 +24,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-07,V,LMU (CA),Saint Mary's (CA),56,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saint_Mary%27s_College_Gaels_logo.svg/300px-Saint_Mary%27s_College_Gaels_logo.svg.png,5
 2025-01-16,H,LMU (CA),Santa Clara,57,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Santa_Clara_Broncos_logo.svg/185px-Santa_Clara_Broncos_logo.svg.png,6
 2025-01-18,H,LMU (CA),San Diego,77,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/7e/San_Diego_Toreros_logo.svg,7
-2025-01-23,V,LMU (CA),Pacific,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Pacific_Tigers_logo.svg/320px-Pacific_Tigers_logo.svg.png,8
+2025-01-23,V,LMU (CA),Pacific,73,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Pacific_Tigers_logo.svg/320px-Pacific_Tigers_logo.svg.png,8
 2025-01-30,H,LMU (CA),Portland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Portland_Pilots_logo.svg/213px-Portland_Pilots_logo.svg.png,9
 2025-02-01,V,LMU (CA),San Diego,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/7e/San_Diego_Toreros_logo.svg,10
 2025-02-06,V,LMU (CA),Gonzaga,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Gonzaga_Bulldogs_logo.svg/301px-Gonzaga_Bulldogs_logo.svg.png,11
@@ -42,8 +42,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-11,V,Oregon St.,Pacific,91,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Pacific_Tigers_logo.svg/320px-Pacific_Tigers_logo.svg.png,5
 2025-01-16,H,Oregon St.,Gonzaga,97,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Gonzaga_Bulldogs_logo.svg/301px-Gonzaga_Bulldogs_logo.svg.png,6
 2025-01-18,V,Oregon St.,San Francisco,70,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/San_Francisco_Dons_logo.svg/200px-San_Francisco_Dons_logo.svg.png,7
-2025-01-23,H,Oregon St.,Pepperdine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Pepperdine_Waves_logo.svg/226px-Pepperdine_Waves_logo.svg.png,8
-2025-01-25,H,Oregon St.,Santa Clara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Santa_Clara_Broncos_logo.svg/185px-Santa_Clara_Broncos_logo.svg.png,9
+2025-01-23,H,Oregon St.,Pepperdine,83,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Pepperdine_Waves_logo.svg/226px-Pepperdine_Waves_logo.svg.png,8
+2025-01-25,H,Oregon St.,Santa Clara,83,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Santa_Clara_Broncos_logo.svg/185px-Santa_Clara_Broncos_logo.svg.png,9
 2025-01-28,V,Oregon St.,Gonzaga,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Gonzaga_Bulldogs_logo.svg/301px-Gonzaga_Bulldogs_logo.svg.png,10
 2025-02-06,H,Oregon St.,Washington St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Washington_State_Cougars_logo.svg/252px-Washington_State_Cougars_logo.svg.png,11
 2025-02-08,H,Oregon St.,Saint Mary's (CA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saint_Mary%27s_College_Gaels_logo.svg/300px-Saint_Mary%27s_College_Gaels_logo.svg.png,12
@@ -60,7 +60,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-09,V,Pacific,Washington St.,95,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Washington_State_Cougars_logo.svg/252px-Washington_State_Cougars_logo.svg.png,5
 2025-01-11,H,Pacific,Oregon St.,55,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Oregon_State_Beavers_logo.svg/320px-Oregon_State_Beavers_logo.svg.png,6
 2025-01-16,V,Pacific,Portland,81,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Portland_Pilots_logo.svg/213px-Portland_Pilots_logo.svg.png,7
-2025-01-23,H,Pacific,LMU (CA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/LMU_Lions_logo.svg/320px-LMU_Lions_logo.svg.png,8
+2025-01-23,H,Pacific,LMU (CA),68,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/LMU_Lions_logo.svg/320px-LMU_Lions_logo.svg.png,8
 2025-01-25,V,Pacific,Pepperdine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Pepperdine_Waves_logo.svg/226px-Pepperdine_Waves_logo.svg.png,9
 2025-01-30,H,Pacific,Washington St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Washington_State_Cougars_logo.svg/252px-Washington_State_Cougars_logo.svg.png,10
 2025-02-01,V,Pacific,Santa Clara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Santa_Clara_Broncos_logo.svg/185px-Santa_Clara_Broncos_logo.svg.png,11
@@ -77,7 +77,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-04,V,Pepperdine,Pacific,87,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Pacific_Tigers_logo.svg/320px-Pacific_Tigers_logo.svg.png,4
 2025-01-16,H,Pepperdine,San Francisco,63,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/San_Francisco_Dons_logo.svg/200px-San_Francisco_Dons_logo.svg.png,5
 2025-01-18,H,Pepperdine,Saint Mary's (CA),50,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saint_Mary%27s_College_Gaels_logo.svg/300px-Saint_Mary%27s_College_Gaels_logo.svg.png,6
-2025-01-23,V,Pepperdine,Oregon St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Oregon_State_Beavers_logo.svg/320px-Oregon_State_Beavers_logo.svg.png,7
+2025-01-23,V,Pepperdine,Oregon St.,63,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Oregon_State_Beavers_logo.svg/320px-Oregon_State_Beavers_logo.svg.png,7
 2025-01-25,H,Pepperdine,Pacific,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Pacific_Tigers_logo.svg/320px-Pacific_Tigers_logo.svg.png,8
 2025-01-30,V,Pepperdine,San Diego,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/7e/San_Diego_Toreros_logo.svg,9
 2025-02-01,H,Pepperdine,Portland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Portland_Pilots_logo.svg/213px-Portland_Pilots_logo.svg.png,10
@@ -96,8 +96,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-09,V,Portland,San Francisco,72,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/San_Francisco_Dons_logo.svg/200px-San_Francisco_Dons_logo.svg.png,5
 2025-01-16,H,Portland,Pacific,84,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Pacific_Tigers_logo.svg/320px-Pacific_Tigers_logo.svg.png,6
 2025-01-18,V,Portland,Washington St.,70,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Washington_State_Cougars_logo.svg/252px-Washington_State_Cougars_logo.svg.png,7
-2025-01-23,H,Portland,San Diego,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/7e/San_Diego_Toreros_logo.svg,8
-2025-01-25,H,Portland,Gonzaga,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Gonzaga_Bulldogs_logo.svg/301px-Gonzaga_Bulldogs_logo.svg.png,9
+2025-01-23,H,Portland,San Diego,92,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/7e/San_Diego_Toreros_logo.svg,8
+2025-01-25,H,Portland,Gonzaga,62,105,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Gonzaga_Bulldogs_logo.svg/301px-Gonzaga_Bulldogs_logo.svg.png,9
 2025-01-30,V,Portland,LMU (CA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/LMU_Lions_logo.svg/320px-LMU_Lions_logo.svg.png,10
 2025-02-01,V,Portland,Pepperdine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Pepperdine_Waves_logo.svg/226px-Pepperdine_Waves_logo.svg.png,11
 2025-02-06,H,Portland,Santa Clara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Santa_Clara_Broncos_logo.svg/185px-Santa_Clara_Broncos_logo.svg.png,12
@@ -113,8 +113,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-07,H,Saint Mary's (CA),LMU (CA),81,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/LMU_Lions_logo.svg/320px-LMU_Lions_logo.svg.png,4
 2025-01-11,V,Saint Mary's (CA),San Diego,103,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/7e/San_Diego_Toreros_logo.svg,5
 2025-01-18,V,Saint Mary's (CA),Pepperdine,74,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Pepperdine_Waves_logo.svg/226px-Pepperdine_Waves_logo.svg.png,6
-2025-01-23,H,Saint Mary's (CA),San Francisco,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/San_Francisco_Dons_logo.svg/200px-San_Francisco_Dons_logo.svg.png,7
-2025-01-25,V,Saint Mary's (CA),Washington St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Washington_State_Cougars_logo.svg/252px-Washington_State_Cougars_logo.svg.png,8
+2025-01-23,H,Saint Mary's (CA),San Francisco,71,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/San_Francisco_Dons_logo.svg/200px-San_Francisco_Dons_logo.svg.png,7
+2025-01-25,V,Saint Mary's (CA),Washington St.,80,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Washington_State_Cougars_logo.svg/252px-Washington_State_Cougars_logo.svg.png,8
 2025-01-29,V,Saint Mary's (CA),Santa Clara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Santa_Clara_Broncos_logo.svg/185px-Santa_Clara_Broncos_logo.svg.png,9
 2025-02-01,H,Saint Mary's (CA),Gonzaga,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Gonzaga_Bulldogs_logo.svg/301px-Gonzaga_Bulldogs_logo.svg.png,10
 2025-02-06,V,Saint Mary's (CA),San Francisco,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/San_Francisco_Dons_logo.svg/200px-San_Francisco_Dons_logo.svg.png,11
@@ -132,7 +132,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-11,H,San Diego,Saint Mary's (CA),56,103,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saint_Mary%27s_College_Gaels_logo.svg/300px-Saint_Mary%27s_College_Gaels_logo.svg.png,5
 2025-01-16,H,San Diego,Washington St.,61,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Washington_State_Cougars_logo.svg/252px-Washington_State_Cougars_logo.svg.png,6
 2025-01-18,V,San Diego,LMU (CA),70,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/LMU_Lions_logo.svg/320px-LMU_Lions_logo.svg.png,7
-2025-01-23,V,San Diego,Portland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Portland_Pilots_logo.svg/213px-Portland_Pilots_logo.svg.png,8
+2025-01-23,V,San Diego,Portland,82,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Portland_Pilots_logo.svg/213px-Portland_Pilots_logo.svg.png,8
 2025-01-25,V,San Diego,San Francisco,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/San_Francisco_Dons_logo.svg/200px-San_Francisco_Dons_logo.svg.png,9
 2025-01-30,H,San Diego,Pepperdine,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Pepperdine_Waves_logo.svg/226px-Pepperdine_Waves_logo.svg.png,10
 2025-02-01,H,San Diego,LMU (CA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/LMU_Lions_logo.svg/320px-LMU_Lions_logo.svg.png,11
@@ -151,7 +151,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-11,V,San Francisco,Santa Clara,54,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Santa_Clara_Broncos_logo.svg/185px-Santa_Clara_Broncos_logo.svg.png,6
 2025-01-16,V,San Francisco,Pepperdine,80,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Pepperdine_Waves_logo.svg/226px-Pepperdine_Waves_logo.svg.png,7
 2025-01-18,H,San Francisco,Oregon St.,81,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Oregon_State_Beavers_logo.svg/320px-Oregon_State_Beavers_logo.svg.png,8
-2025-01-23,V,San Francisco,Saint Mary's (CA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saint_Mary%27s_College_Gaels_logo.svg/300px-Saint_Mary%27s_College_Gaels_logo.svg.png,9
+2025-01-23,V,San Francisco,Saint Mary's (CA),51,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saint_Mary%27s_College_Gaels_logo.svg/300px-Saint_Mary%27s_College_Gaels_logo.svg.png,9
 2025-01-25,H,San Francisco,San Diego,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/7e/San_Diego_Toreros_logo.svg,10
 2025-02-01,H,San Francisco,Washington St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Washington_State_Cougars_logo.svg/252px-Washington_State_Cougars_logo.svg.png,11
 2025-02-06,H,San Francisco,Saint Mary's (CA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saint_Mary%27s_College_Gaels_logo.svg/300px-Saint_Mary%27s_College_Gaels_logo.svg.png,12
@@ -168,8 +168,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-11,H,Santa Clara,San Francisco,77,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/San_Francisco_Dons_logo.svg/200px-San_Francisco_Dons_logo.svg.png,5
 2025-01-16,V,Santa Clara,LMU (CA),54,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/LMU_Lions_logo.svg/320px-LMU_Lions_logo.svg.png,6
 2025-01-18,V,Santa Clara,Gonzaga,103,99,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Gonzaga_Bulldogs_logo.svg/301px-Gonzaga_Bulldogs_logo.svg.png,7
-2025-01-23,H,Santa Clara,Washington St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Washington_State_Cougars_logo.svg/252px-Washington_State_Cougars_logo.svg.png,8
-2025-01-25,V,Santa Clara,Oregon St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Oregon_State_Beavers_logo.svg/320px-Oregon_State_Beavers_logo.svg.png,9
+2025-01-23,H,Santa Clara,Washington St.,93,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Washington_State_Cougars_logo.svg/252px-Washington_State_Cougars_logo.svg.png,8
+2025-01-25,V,Santa Clara,Oregon St.,69,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Oregon_State_Beavers_logo.svg/320px-Oregon_State_Beavers_logo.svg.png,9
 2025-01-29,H,Santa Clara,Saint Mary's (CA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saint_Mary%27s_College_Gaels_logo.svg/300px-Saint_Mary%27s_College_Gaels_logo.svg.png,10
 2025-02-01,H,Santa Clara,Pacific,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Pacific_Tigers_logo.svg/320px-Pacific_Tigers_logo.svg.png,11
 2025-02-06,V,Santa Clara,Portland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Portland_Pilots_logo.svg/213px-Portland_Pilots_logo.svg.png,12
@@ -186,8 +186,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-11,V,Washington St.,Gonzaga,75,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/Gonzaga_Bulldogs_logo.svg/301px-Gonzaga_Bulldogs_logo.svg.png,5
 2025-01-16,V,Washington St.,San Diego,65,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/7/7e/San_Diego_Toreros_logo.svg,6
 2025-01-18,H,Washington St.,Portland,92,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Portland_Pilots_logo.svg/213px-Portland_Pilots_logo.svg.png,7
-2025-01-23,V,Washington St.,Santa Clara,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Santa_Clara_Broncos_logo.svg/185px-Santa_Clara_Broncos_logo.svg.png,8
-2025-01-25,H,Washington St.,Saint Mary's (CA),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saint_Mary%27s_College_Gaels_logo.svg/300px-Saint_Mary%27s_College_Gaels_logo.svg.png,9
+2025-01-23,V,Washington St.,Santa Clara,65,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Santa_Clara_Broncos_logo.svg/185px-Santa_Clara_Broncos_logo.svg.png,8
+2025-01-25,H,Washington St.,Saint Mary's (CA),75,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Saint_Mary%27s_College_Gaels_logo.svg/300px-Saint_Mary%27s_College_Gaels_logo.svg.png,9
 2025-01-30,V,Washington St.,Pacific,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5e/Pacific_Tigers_logo.svg/320px-Pacific_Tigers_logo.svg.png,10
 2025-02-01,V,Washington St.,San Francisco,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/San_Francisco_Dons_logo.svg/200px-San_Francisco_Dons_logo.svg.png,11
 2025-02-06,V,Washington St.,Oregon St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Oregon_State_Beavers_logo.svg/320px-Oregon_State_Beavers_logo.svg.png,12
