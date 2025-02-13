@@ -29,7 +29,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-29,V,Arkansas St.,Southern Miss.,81,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Southern_Miss_Athletics_logo.svg/320px-Southern_Miss_Athletics_logo.svg.png,10
 2025-02-01,V,Arkansas St.,Texas St.,85,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Texas_State_Bobcats_logo.svg/206px-Texas_State_Bobcats_logo.svg.png,11
 2025-02-05,V,Arkansas St.,Marshall,72,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marshall_Thundering_Herd_logo.svg/320px-Marshall_Thundering_Herd_logo.svg.png,12
-2025-02-12,H,Arkansas St.,Southern Miss.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Southern_Miss_Athletics_logo.svg/320px-Southern_Miss_Athletics_logo.svg.png,13
+2025-02-12,H,Arkansas St.,Southern Miss.,101,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Southern_Miss_Athletics_logo.svg/320px-Southern_Miss_Athletics_logo.svg.png,13
 2025-02-15,H,Arkansas St.,Troy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/34/Troy_Trojans_logo.svg,14
 2025-02-19,H,Arkansas St.,South Alabama,NA,NA,FALSE,FALSE,https://giving.usajaguars.com/image/USA-00001_PrimaryMaster2c.png,15
 2025-02-22,H,Arkansas St.,ULM,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Louisiana-Monroe_Warhawks_logo.svg/320px-Louisiana-Monroe_Warhawks_logo.svg.png,16
@@ -119,7 +119,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-30,V,Louisiana,Texas St.,70,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Texas_State_Bobcats_logo.svg/206px-Texas_State_Bobcats_logo.svg.png,10
 2025-02-01,H,Louisiana,South Alabama,58,62,FALSE,FALSE,https://giving.usajaguars.com/image/USA-00001_PrimaryMaster2c.png,11
 2025-02-05,V,Louisiana,Ga. Southern,82,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Georgia_Southern_Eagles_logo.svg/320px-Georgia_Southern_Eagles_logo.svg.png,12
-2025-02-12,H,Louisiana,Troy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/34/Troy_Trojans_logo.svg,13
+2025-02-12,H,Louisiana,Troy,56,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/34/Troy_Trojans_logo.svg,13
 2025-02-15,H,Louisiana,Marshall,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marshall_Thundering_Herd_logo.svg/320px-Marshall_Thundering_Herd_logo.svg.png,14
 2025-02-20,V,Louisiana,Troy,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/3/34/Troy_Trojans_logo.svg,15
 2025-02-22,V,Louisiana,Southern Miss.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Southern_Miss_Athletics_logo.svg/320px-Southern_Miss_Athletics_logo.svg.png,16
@@ -191,7 +191,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-29,H,Southern Miss.,Arkansas St.,68,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Arkansas_State_Red_Wolves_wordmark.svg/200px-Arkansas_State_Red_Wolves_wordmark.svg.png,10
 2025-02-01,H,Southern Miss.,Ga. Southern,72,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Georgia_Southern_Eagles_logo.svg/320px-Georgia_Southern_Eagles_logo.svg.png,11
 2025-02-05,V,Southern Miss.,App State,58,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Appalachian_State_Mountaineers_logo.svg/200px-Appalachian_State_Mountaineers_logo.svg.png,12
-2025-02-12,V,Southern Miss.,Arkansas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Arkansas_State_Red_Wolves_wordmark.svg/200px-Arkansas_State_Red_Wolves_wordmark.svg.png,13
+2025-02-12,V,Southern Miss.,Arkansas St.,67,101,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Arkansas_State_Red_Wolves_wordmark.svg/200px-Arkansas_State_Red_Wolves_wordmark.svg.png,13
 2025-02-15,V,Southern Miss.,ULM,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Louisiana-Monroe_Warhawks_logo.svg/320px-Louisiana-Monroe_Warhawks_logo.svg.png,14
 2025-02-20,H,Southern Miss.,Coastal Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Coastal_Carolina_Chanticleers_logo.svg/214px-Coastal_Carolina_Chanticleers_logo.svg.png,15
 2025-02-22,H,Southern Miss.,Louisiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Ragin_Cajuns_logo.svg/320px-Ragin_Cajuns_logo.svg.png,16
@@ -227,7 +227,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-30,H,Troy,Ga. Southern,81,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Georgia_Southern_Eagles_logo.svg/320px-Georgia_Southern_Eagles_logo.svg.png,10
 2025-02-01,H,Troy,ULM,87,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Louisiana-Monroe_Warhawks_logo.svg/320px-Louisiana-Monroe_Warhawks_logo.svg.png,11
 2025-02-05,V,Troy,James Madison,61,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/James_Madison_University_Athletics_logo.svg/320px-James_Madison_University_Athletics_logo.svg.png,12
-2025-02-12,V,Troy,Louisiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Ragin_Cajuns_logo.svg/320px-Ragin_Cajuns_logo.svg.png,13
+2025-02-12,V,Troy,Louisiana,74,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Ragin_Cajuns_logo.svg/320px-Ragin_Cajuns_logo.svg.png,13
 2025-02-15,V,Troy,Arkansas St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Arkansas_State_Red_Wolves_wordmark.svg/200px-Arkansas_State_Red_Wolves_wordmark.svg.png,14
 2025-02-20,H,Troy,Louisiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Ragin_Cajuns_logo.svg/320px-Ragin_Cajuns_logo.svg.png,15
 2025-02-22,H,Troy,Coastal Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Coastal_Carolina_Chanticleers_logo.svg/214px-Coastal_Carolina_Chanticleers_logo.svg.png,16

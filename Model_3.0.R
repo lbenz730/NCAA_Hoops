@@ -36,6 +36,10 @@ params <-
        'psf_sims' = 500,
        'pct_post' = 0.25)
 
+### Ivy Data Fix
+x$location[x$team == 'Dartmouth' & x$opponent == 'Princeton' & x$month == 2] <- 'V'
+x$location[x$opponent == 'Dartmouth' & x$team == 'Princeton' & x$month == 2] <- 'H'
+
 ########################  Data Cleaning ########################################
 x <- 
   x %>%

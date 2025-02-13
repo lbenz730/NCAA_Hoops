@@ -676,7 +676,7 @@ ivy_psf_gt <-
 
 ### Bracketology
 bracket_odds <-
-  map_dfr(dir('3.0_Files/Predictions/conf_sims_ncaa/', full.names = T), read_csv) %>%
+  map_dfr(setdiff(dir('3.0_Files/Predictions/conf_sims_ncaa/', full.names = T), '3.0_Files/Predictions/conf_sims_ncaa//Pac 12.csv'), read_csv) %>%
   filter(!is.na(team)) %>%
   right_join(bracket_math, by = 'team') %>%
   select(team, 'auto_bid' = freq, 'at_large' = odds) %>%
