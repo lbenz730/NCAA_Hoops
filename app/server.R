@@ -577,7 +577,7 @@ shinyServer(function(input, output, session) {
   
   ### Ivy
   output$ivy_sims <- render_gt(ivy_gt)
-  # output$ivy_psf <- render_gt(ivy_psf_gt)
+  output$ivy_psf <- render_gt(ivy_psf_gt)
   output$ivy_history <- renderPlot(ivy_history_plot)
   output$ivy_barplot <- renderPlot(ivy_bar)
   output$ivy_snap <- renderPlot(ivy_snapsnot)
