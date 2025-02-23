@@ -32,8 +32,8 @@ source("3.0_Files/conf_tourney_sims.R")
 params <- 
   list('conf_sims' = 1000,
        # 'n_ct' = 5000,
-       'ivy_sims' = 2000,
-       'psf_sims' = 500,
+       'ivy_sims' = 3000,
+       'psf_sims' = 1000,
        'pct_post' = 0.25)
 
 ### Ivy Data Fix
@@ -216,7 +216,7 @@ by_conf <- pr_compute(by_conf = T)
 write_csv(x, "3.0_Files/Predictions/predictions.csv")
 ######################### Ivy League Specific Sims #############################
 playoffs <- ivy.sim(params$ivy_sims)
-ivy_psf <- psf(params$psf_sims, min_date = Sys.Date(), max_date = Sys.Date()+6)
+ivy_psf <- psf(params$psf_sims, min_date = Sys.Date()+1, max_date = Sys.Date()+2)
 # playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
 
 ############################ Conference Sims (No Tie-Breaks) ##################

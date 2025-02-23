@@ -1,3 +1,4 @@
+source('3.0_Files/tiebreak.R')
 ############################# Palestra Sims (Ivy Tourney) ########################################
 ### Simulates Ivy League Tournament
 palestra.sim <- function(teams) {
@@ -45,6 +46,7 @@ palestra.sim <- function(teams) {
 ################################### IVY SIMS ##################################
 ### Simulates Ivy League Regular Season
 ivy.sim <- function(nsims) {
+  all_standings <- NULL
   games <- ivy_games(x)
   games <- 
     bind_rows(
@@ -113,6 +115,10 @@ ivy.sim <- function(nsims) {
                   ivy[as.vector(prebreak.pos[j,] == 3)], ivy[as.vector(prebreak.pos[j,] == 4)])
     champ[j] <- palestra.sim(palestra)
     
+    all_standings <- 
+      all_standings %>% 
+      bind_rows(standings$standings %>% mutate('sim_id' = j))
+    
   }
   
   df_wins <- 
@@ -136,6 +142,7 @@ ivy.sim <- function(nsims) {
     ungroup()
   
   write_csv(df_wins, '3.0_Files/Predictions/win_place_results.csv')
+  write_csv(all_standings, '3.0_Files/Predictions/all_standings.csv')
   
   ### store playoff odds
   playoffs <- data.frame(team = ivy,
