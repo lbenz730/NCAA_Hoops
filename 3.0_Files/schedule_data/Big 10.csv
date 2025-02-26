@@ -14,9 +14,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-05,V,Illinois,Rutgers,73,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,13
 2025-02-08,V,Illinois,Minnesota,95,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,14
 2025-02-11,H,Illinois,UCLA,83,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,15
-2025-02-15,H,Illinois,Michigan St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,16
-2025-02-18,V,Illinois,Wisconsin,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,17
-2025-02-25,H,Illinois,Iowa,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,18
+2025-02-15,H,Illinois,Michigan St.,65,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,16
+2025-02-18,V,Illinois,Wisconsin,74,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,17
+2025-02-25,H,Illinois,Iowa,81,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,18
 2025-03-02,V,Illinois,Michigan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,19
 2025-03-07,H,Illinois,Purdue,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,20
 2024-12-09,H,Indiana,Minnesota,82,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,1
@@ -33,8 +33,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-04,V,Indiana,Wisconsin,64,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,12
 2025-02-08,H,Indiana,Michigan,67,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,13
 2025-02-11,V,Indiana,Michigan St.,71,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,14
-2025-02-14,H,Indiana,UCLA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,15
-2025-02-23,H,Indiana,Purdue,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,16
+2025-02-14,H,Indiana,UCLA,68,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,15
+2025-02-23,H,Indiana,Purdue,73,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,16
 2025-02-26,H,Indiana,Penn St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,17
 2025-03-01,V,Indiana,Washington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,18
 2025-03-04,V,Indiana,Oregon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,19
@@ -52,10 +52,10 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-04,H,Iowa,Purdue,81,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,11
 2025-02-08,H,Iowa,Wisconsin,63,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,12
 2025-02-12,V,Iowa,Rutgers,84,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,13
-2025-02-16,V,Iowa,Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,14
-2025-02-19,H,Iowa,Oregon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,15
-2025-02-22,H,Iowa,Washington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,16
-2025-02-25,V,Iowa,Illinois,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,17
+2025-02-16,V,Iowa,Maryland,75,101,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,14
+2025-02-19,H,Iowa,Oregon,78,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,15
+2025-02-22,H,Iowa,Washington,85,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,16
+2025-02-25,V,Iowa,Illinois,61,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,17
 2025-02-28,V,Iowa,Northwestern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,18
 2025-03-06,H,Iowa,Michigan St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,19
 2025-03-09,V,Iowa,Nebraska,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,20
@@ -72,9 +72,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-29,H,Maryland,Wisconsin,76,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,11
 2025-02-06,V,Maryland,Ohio St.,70,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,12
 2025-02-09,H,Maryland,Rutgers,90,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,13
-2025-02-13,V,Maryland,Nebraska,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,14
-2025-02-16,H,Maryland,Iowa,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,15
-2025-02-20,H,Maryland,Southern California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,16
+2025-02-13,V,Maryland,Nebraska,83,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,14
+2025-02-16,H,Maryland,Iowa,101,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,15
+2025-02-20,H,Maryland,Southern California,88,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,16
 2025-02-26,H,Maryland,Michigan St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,17
 2025-03-01,V,Maryland,Penn St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,18
 2025-03-05,V,Maryland,Michigan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,19
@@ -92,9 +92,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-05,H,Michigan,Oregon,80,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,11
 2025-02-08,V,Michigan,Indiana,70,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,12
 2025-02-11,H,Michigan,Purdue,75,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,13
-2025-02-16,V,Michigan,Ohio St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,14
-2025-02-21,H,Michigan,Michigan St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,15
-2025-02-24,V,Michigan,Nebraska,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,16
+2025-02-16,V,Michigan,Ohio St.,86,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,14
+2025-02-21,H,Michigan,Michigan St.,62,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,15
+2025-02-24,V,Michigan,Nebraska,49,46,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,16
 2025-02-27,H,Michigan,Rutgers,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,17
 2025-03-02,H,Michigan,Illinois,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,18
 2025-03-05,H,Michigan,Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,19
@@ -112,9 +112,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-04,V,Michigan St.,UCLA,61,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,11
 2025-02-08,H,Michigan St.,Oregon,86,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,12
 2025-02-11,H,Michigan St.,Indiana,67,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,13
-2025-02-15,V,Michigan St.,Illinois,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,14
-2025-02-18,H,Michigan St.,Purdue,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,15
-2025-02-21,V,Michigan St.,Michigan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,16
+2025-02-15,V,Michigan St.,Illinois,79,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,14
+2025-02-18,H,Michigan St.,Purdue,75,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,15
+2025-02-21,V,Michigan St.,Michigan,75,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,16
 2025-02-26,V,Michigan St.,Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,17
 2025-03-02,H,Michigan St.,Wisconsin,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,18
 2025-03-06,V,Michigan St.,Iowa,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,19
@@ -132,10 +132,10 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-01,H,Minnesota,Washington,68,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,11
 2025-02-04,V,Minnesota,Penn St.,69,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,12
 2025-02-08,H,Minnesota,Illinois,74,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,13
-2025-02-15,V,Minnesota,Southern California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,14
-2025-02-18,V,Minnesota,UCLA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,15
-2025-02-22,H,Minnesota,Penn St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,16
-2025-02-25,H,Minnesota,Northwestern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,17
+2025-02-15,V,Minnesota,Southern California,69,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,14
+2025-02-18,V,Minnesota,UCLA,64,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,15
+2025-02-22,H,Minnesota,Penn St.,60,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,16
+2025-02-25,H,Minnesota,Northwestern,63,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,17
 2025-03-01,V,Minnesota,Nebraska,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,18
 2025-03-05,H,Minnesota,Wisconsin,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,19
 2025-03-09,V,Minnesota,Rutgers,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,20
@@ -152,10 +152,10 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-02,V,Nebraska,Oregon,77,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,11
 2025-02-05,V,Nebraska,Washington,86,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,12
 2025-02-09,H,Nebraska,Ohio St.,79,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,13
-2025-02-13,H,Nebraska,Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,14
-2025-02-16,V,Nebraska,Northwestern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,15
-2025-02-19,V,Nebraska,Penn St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,16
-2025-02-24,H,Nebraska,Michigan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,17
+2025-02-13,H,Nebraska,Maryland,75,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,14
+2025-02-16,V,Nebraska,Northwestern,68,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,15
+2025-02-19,V,Nebraska,Penn St.,72,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,16
+2025-02-24,H,Nebraska,Michigan,46,49,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,17
 2025-03-01,H,Nebraska,Minnesota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,18
 2025-03-04,V,Nebraska,Ohio St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,19
 2025-03-09,H,Nebraska,Iowa,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,20
@@ -173,9 +173,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-04,H,Northwestern,Southern California,77,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,12
 2025-02-08,V,Northwestern,Washington,71,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,13
 2025-02-11,V,Northwestern,Oregon,75,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,14
-2025-02-16,H,Northwestern,Nebraska,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,15
-2025-02-20,V,Northwestern,Ohio St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,16
-2025-02-25,V,Northwestern,Minnesota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,17
+2025-02-16,H,Northwestern,Nebraska,64,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,15
+2025-02-20,V,Northwestern,Ohio St.,70,49,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,16
+2025-02-25,V,Northwestern,Minnesota,75,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,17
 2025-02-28,H,Northwestern,Iowa,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,18
 2025-03-03,H,Northwestern,UCLA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,19
 2025-03-08,V,Northwestern,Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,20
@@ -193,9 +193,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-06,H,Ohio St.,Maryland,73,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,12
 2025-02-09,V,Ohio St.,Nebraska,71,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,13
 2025-02-12,H,Ohio St.,Washington,93,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,14
-2025-02-16,H,Ohio St.,Michigan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,15
-2025-02-20,H,Ohio St.,Northwestern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,16
-2025-02-23,V,Ohio St.,UCLA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,17
+2025-02-16,H,Ohio St.,Michigan,83,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,15
+2025-02-20,H,Ohio St.,Northwestern,49,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,16
+2025-02-23,V,Ohio St.,UCLA,61,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,17
 2025-02-26,V,Ohio St.,Southern California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,18
 2025-03-04,H,Ohio St.,Nebraska,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,19
 2025-03-08,V,Ohio St.,Indiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,20
@@ -213,9 +213,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-05,V,Oregon,Michigan,76,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,12
 2025-02-08,V,Oregon,Michigan St.,74,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,13
 2025-02-11,H,Oregon,Northwestern,81,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,14
-2025-02-16,H,Oregon,Rutgers,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,15
-2025-02-19,V,Oregon,Iowa,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,16
-2025-02-22,V,Oregon,Wisconsin,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,17
+2025-02-16,H,Oregon,Rutgers,75,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,15
+2025-02-19,V,Oregon,Iowa,80,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,16
+2025-02-22,V,Oregon,Wisconsin,77,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,17
 2025-03-01,H,Oregon,Southern California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,18
 2025-03-04,H,Oregon,Indiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,19
 2025-03-09,V,Oregon,Washington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,20
@@ -233,9 +233,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-04,H,Penn St.,Minnesota,61,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,12
 2025-02-08,V,Penn St.,UCLA,54,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,13
 2025-02-11,V,Penn St.,Southern California,67,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,14
-2025-02-15,H,Penn St.,Washington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,15
-2025-02-19,H,Penn St.,Nebraska,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,16
-2025-02-22,V,Penn St.,Minnesota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,17
+2025-02-15,H,Penn St.,Washington,73,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,15
+2025-02-19,H,Penn St.,Nebraska,89,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,16
+2025-02-22,V,Penn St.,Minnesota,69,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,17
 2025-02-26,V,Penn St.,Indiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,18
 2025-03-01,H,Penn St.,Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,19
 2025-03-08,V,Penn St.,Wisconsin,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,20
@@ -253,9 +253,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-04,V,Purdue,Iowa,90,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,12
 2025-02-07,H,Purdue,Southern California,90,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,13
 2025-02-11,V,Purdue,Michigan,73,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,14
-2025-02-15,H,Purdue,Wisconsin,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,15
-2025-02-18,V,Purdue,Michigan St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,16
-2025-02-23,V,Purdue,Indiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,17
+2025-02-15,H,Purdue,Wisconsin,84,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,15
+2025-02-18,V,Purdue,Michigan St.,66,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,16
+2025-02-23,V,Purdue,Indiana,58,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,17
 2025-02-28,H,Purdue,UCLA,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/UCLA_Bruins_script.svg/320px-UCLA_Bruins_script.svg.png,18
 2025-03-04,H,Purdue,Rutgers,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,19
 2025-03-07,V,Purdue,Illinois,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,20
@@ -273,9 +273,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-05,H,Rutgers,Illinois,82,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,12
 2025-02-09,V,Rutgers,Maryland,81,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,13
 2025-02-12,H,Rutgers,Iowa,73,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,14
-2025-02-16,V,Rutgers,Oregon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,15
-2025-02-19,V,Rutgers,Washington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,16
-2025-02-23,H,Rutgers,Southern California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,17
+2025-02-16,V,Rutgers,Oregon,57,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,15
+2025-02-19,V,Rutgers,Washington,89,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,16
+2025-02-23,H,Rutgers,Southern California,95,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,17
 2025-02-27,V,Rutgers,Michigan,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Michigan_Wolverines_logo.svg/320px-Michigan_Wolverines_logo.svg.png,18
 2025-03-04,V,Rutgers,Purdue,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,19
 2025-03-09,H,Rutgers,Minnesota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,20
@@ -292,9 +292,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-04,V,Southern California,Northwestern,75,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,11
 2025-02-07,V,Southern California,Purdue,72,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,12
 2025-02-11,H,Southern California,Penn St.,92,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,13
-2025-02-15,H,Southern California,Minnesota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,14
-2025-02-20,V,Southern California,Maryland,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,15
-2025-02-23,V,Southern California,Rutgers,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,16
+2025-02-15,H,Southern California,Minnesota,66,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,14
+2025-02-20,V,Southern California,Maryland,71,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Maryland_Terrapins_logo.svg/219px-Maryland_Terrapins_logo.svg.png,15
+2025-02-23,V,Southern California,Rutgers,85,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,16
 2025-02-26,H,Southern California,Ohio St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,17
 2025-03-01,V,Southern California,Oregon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,18
 2025-03-05,H,Southern California,Washington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,19
@@ -313,9 +313,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-04,H,UCLA,Michigan St.,63,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,12
 2025-02-08,H,UCLA,Penn St.,78,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,13
 2025-02-11,V,UCLA,Illinois,78,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,14
-2025-02-14,V,UCLA,Indiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,15
-2025-02-18,H,UCLA,Minnesota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,16
-2025-02-23,H,UCLA,Ohio St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,17
+2025-02-14,V,UCLA,Indiana,72,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,15
+2025-02-18,H,UCLA,Minnesota,61,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,16
+2025-02-23,H,UCLA,Ohio St.,69,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,17
 2025-02-28,V,UCLA,Purdue,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,18
 2025-03-03,V,UCLA,Northwestern,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,19
 2025-03-08,H,UCLA,Southern California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,20
@@ -332,10 +332,10 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-05,H,Washington,Nebraska,72,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nebraska_Cornhuskers_logo.svg/240px-Nebraska_Cornhuskers_logo.svg.png,11
 2025-02-08,H,Washington,Northwestern,76,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,12
 2025-02-12,V,Washington,Ohio St.,69,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ohio_State_Buckeyes_logo.svg/244px-Ohio_State_Buckeyes_logo.svg.png,13
-2025-02-15,V,Washington,Penn St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,14
-2025-02-19,H,Washington,Rutgers,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,15
-2025-02-22,V,Washington,Iowa,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,16
-2025-02-25,V,Washington,Wisconsin,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,17
+2025-02-15,V,Washington,Penn St.,75,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,14
+2025-02-19,H,Washington,Rutgers,85,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Rutgers_Scarlet_Knights_logo.svg/270px-Rutgers_Scarlet_Knights_logo.svg.png,15
+2025-02-22,V,Washington,Iowa,79,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,16
+2025-02-25,V,Washington,Wisconsin,62,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/254px-Wisconsin_Badgers_logo.svg.png,17
 2025-03-01,H,Washington,Indiana,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,18
 2025-03-05,V,Washington,Southern California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USC_Trojans_logo.svg/161px-USC_Trojans_logo.svg.png,19
 2025-03-09,H,Washington,Oregon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,20
@@ -352,10 +352,10 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-01,V,Wisconsin,Northwestern,75,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Northwestern_Wildcats_logo.svg/156px-Northwestern_Wildcats_logo.svg.png,11
 2025-02-04,H,Wisconsin,Indiana,76,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Indiana_Hoosiers_logo.svg/190px-Indiana_Hoosiers_logo.svg.png,12
 2025-02-08,V,Wisconsin,Iowa,74,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Iowa_Hawkeyes_logo.svg/320px-Iowa_Hawkeyes_logo.svg.png,13
-2025-02-15,V,Wisconsin,Purdue,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,14
-2025-02-18,H,Wisconsin,Illinois,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,15
-2025-02-22,H,Wisconsin,Oregon,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,16
-2025-02-25,H,Wisconsin,Washington,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,17
+2025-02-15,V,Wisconsin,Purdue,94,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Purdue_Boilermakers_logo.svg/320px-Purdue_Boilermakers_logo.svg.png,14
+2025-02-18,H,Wisconsin,Illinois,95,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Illinois_Fighting_Illini_logo.svg/166px-Illinois_Fighting_Illini_logo.svg.png,15
+2025-02-22,H,Wisconsin,Oregon,73,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Oregon_Ducks_logo.svg/290px-Oregon_Ducks_logo.svg.png,16
+2025-02-25,H,Wisconsin,Washington,88,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Washington_Huskies_logo.svg/320px-Washington_Huskies_logo.svg.png,17
 2025-03-02,V,Wisconsin,Michigan St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Michigan_State_Athletics_logo.svg/208px-Michigan_State_Athletics_logo.svg.png,18
 2025-03-05,V,Wisconsin,Minnesota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minnesota_Golden_Gophers_logo.svg/320px-Minnesota_Golden_Gophers_logo.svg.png,19
 2025-03-08,H,Wisconsin,Penn St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Penn_State_Nittany_Lions_logo.svg/320px-Penn_State_Nittany_Lions_logo.svg.png,20

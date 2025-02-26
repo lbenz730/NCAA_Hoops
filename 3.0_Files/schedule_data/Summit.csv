@@ -10,9 +10,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-01,V,Denver,Omaha,69,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,9
 2025-02-06,H,Denver,South Dakota,79,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/South_Dakota_Coyotes_logo.svg/189px-South_Dakota_Coyotes_logo.svg.png,10
 2025-02-08,H,Denver,St. Thomas (MN),76,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/08/St_thomas_tommies.jpg,11
-2025-02-13,V,Denver,North Dakota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/92/North_Dakota_Fighting_Hawks_logo.svg/320px-North_Dakota_Fighting_Hawks_logo.svg.png,12
-2025-02-15,V,Denver,North Dakota St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,13
-2025-02-19,H,Denver,Oral Roberts,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Oral_Roberts_Golden_Eagles_logo.svg/320px-Oral_Roberts_Golden_Eagles_logo.svg.png,14
+2025-02-13,V,Denver,North Dakota,68,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/92/North_Dakota_Fighting_Hawks_logo.svg/320px-North_Dakota_Fighting_Hawks_logo.svg.png,12
+2025-02-15,V,Denver,North Dakota St.,84,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,13
+2025-02-19,H,Denver,Oral Roberts,71,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Oral_Roberts_Golden_Eagles_logo.svg/320px-Oral_Roberts_Golden_Eagles_logo.svg.png,14
 2025-02-27,V,Denver,Kansas City,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Kansas_City_Roos_logo.svg/254px-Kansas_City_Roos_logo.svg.png,15
 2025-03-01,H,Denver,South Dakota St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/25/South_Dakota_State_Jackrabbits_logo.svg/315px-South_Dakota_State_Jackrabbits_logo.svg.png,16
 2025-01-02,H,Kansas City,South Dakota,68,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/South_Dakota_Coyotes_logo.svg/189px-South_Dakota_Coyotes_logo.svg.png,1
@@ -26,9 +26,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-01,V,Kansas City,Oral Roberts,67,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Oral_Roberts_Golden_Eagles_logo.svg/320px-Oral_Roberts_Golden_Eagles_logo.svg.png,9
 2025-02-06,H,Kansas City,North Dakota St.,72,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,10
 2025-02-08,H,Kansas City,North Dakota,80,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/92/North_Dakota_Fighting_Hawks_logo.svg/320px-North_Dakota_Fighting_Hawks_logo.svg.png,11
-2025-02-13,V,Kansas City,South Dakota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/South_Dakota_Coyotes_logo.svg/189px-South_Dakota_Coyotes_logo.svg.png,12
-2025-02-19,H,Kansas City,Omaha,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,13
-2025-02-23,V,Kansas City,South Dakota St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/25/South_Dakota_State_Jackrabbits_logo.svg/315px-South_Dakota_State_Jackrabbits_logo.svg.png,14
+2025-02-13,V,Kansas City,South Dakota,72,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/South_Dakota_Coyotes_logo.svg/189px-South_Dakota_Coyotes_logo.svg.png,12
+2025-02-19,H,Kansas City,Omaha,66,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,13
+2025-02-23,V,Kansas City,South Dakota St.,65,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/25/South_Dakota_State_Jackrabbits_logo.svg/315px-South_Dakota_State_Jackrabbits_logo.svg.png,14
 2025-02-27,H,Kansas City,Denver,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2172.png,15
 2025-03-01,V,Kansas City,St. Thomas (MN),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/08/St_thomas_tommies.jpg,16
 2025-01-02,H,North Dakota,Omaha,85,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,1
@@ -42,9 +42,9 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-01,H,North Dakota,South Dakota St.,80,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/25/South_Dakota_State_Jackrabbits_logo.svg/315px-South_Dakota_State_Jackrabbits_logo.svg.png,9
 2025-02-06,V,North Dakota,Omaha,77,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,10
 2025-02-08,V,North Dakota,Kansas City,69,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Kansas_City_Roos_logo.svg/254px-Kansas_City_Roos_logo.svg.png,11
-2025-02-13,H,North Dakota,Denver,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2172.png,12
-2025-02-15,H,North Dakota,Oral Roberts,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Oral_Roberts_Golden_Eagles_logo.svg/320px-Oral_Roberts_Golden_Eagles_logo.svg.png,13
-2025-02-22,H,North Dakota,North Dakota St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,14
+2025-02-13,H,North Dakota,Denver,64,68,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2172.png,12
+2025-02-15,H,North Dakota,Oral Roberts,88,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Oral_Roberts_Golden_Eagles_logo.svg/320px-Oral_Roberts_Golden_Eagles_logo.svg.png,13
+2025-02-22,H,North Dakota,North Dakota St.,79,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,14
 2025-02-27,V,North Dakota,St. Thomas (MN),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/08/St_thomas_tommies.jpg,15
 2025-03-01,V,North Dakota,South Dakota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/South_Dakota_Coyotes_logo.svg/189px-South_Dakota_Coyotes_logo.svg.png,16
 2025-01-02,H,North Dakota St.,St. Thomas (MN),85,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/08/St_thomas_tommies.jpg,1
@@ -58,10 +58,10 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-02,V,North Dakota St.,St. Thomas (MN),62,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/08/St_thomas_tommies.jpg,9
 2025-02-06,V,North Dakota St.,Kansas City,78,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Kansas_City_Roos_logo.svg/254px-Kansas_City_Roos_logo.svg.png,10
 2025-02-08,V,North Dakota St.,Omaha,74,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,11
-2025-02-13,H,North Dakota St.,Oral Roberts,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Oral_Roberts_Golden_Eagles_logo.svg/320px-Oral_Roberts_Golden_Eagles_logo.svg.png,12
-2025-02-15,H,North Dakota St.,Denver,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2172.png,13
-2025-02-19,V,North Dakota St.,South Dakota St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/25/South_Dakota_State_Jackrabbits_logo.svg/315px-South_Dakota_State_Jackrabbits_logo.svg.png,14
-2025-02-22,V,North Dakota St.,North Dakota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/92/North_Dakota_Fighting_Hawks_logo.svg/320px-North_Dakota_Fighting_Hawks_logo.svg.png,15
+2025-02-13,H,North Dakota St.,Oral Roberts,94,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Oral_Roberts_Golden_Eagles_logo.svg/320px-Oral_Roberts_Golden_Eagles_logo.svg.png,12
+2025-02-15,H,North Dakota St.,Denver,89,84,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2172.png,13
+2025-02-19,V,North Dakota St.,South Dakota St.,77,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/25/South_Dakota_State_Jackrabbits_logo.svg/315px-South_Dakota_State_Jackrabbits_logo.svg.png,14
+2025-02-22,V,North Dakota St.,North Dakota,77,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/92/North_Dakota_Fighting_Hawks_logo.svg/320px-North_Dakota_Fighting_Hawks_logo.svg.png,15
 2025-02-26,H,North Dakota St.,South Dakota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/South_Dakota_Coyotes_logo.svg/189px-South_Dakota_Coyotes_logo.svg.png,16
 2025-01-02,V,Omaha,North Dakota,95,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/92/North_Dakota_Fighting_Hawks_logo.svg/320px-North_Dakota_Fighting_Hawks_logo.svg.png,1
 2025-01-04,V,Omaha,North Dakota St.,85,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,2
@@ -74,10 +74,10 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-01,H,Omaha,Denver,78,69,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2172.png,9
 2025-02-06,H,Omaha,North Dakota,80,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/92/North_Dakota_Fighting_Hawks_logo.svg/320px-North_Dakota_Fighting_Hawks_logo.svg.png,10
 2025-02-08,H,Omaha,North Dakota St.,85,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,11
-2025-02-13,V,Omaha,South Dakota St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/25/South_Dakota_State_Jackrabbits_logo.svg/315px-South_Dakota_State_Jackrabbits_logo.svg.png,12
-2025-02-15,V,Omaha,St. Thomas (MN),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/08/St_thomas_tommies.jpg,13
-2025-02-19,V,Omaha,Kansas City,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Kansas_City_Roos_logo.svg/254px-Kansas_City_Roos_logo.svg.png,14
-2025-02-22,H,Omaha,South Dakota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/South_Dakota_Coyotes_logo.svg/189px-South_Dakota_Coyotes_logo.svg.png,15
+2025-02-13,V,Omaha,South Dakota St.,85,98,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/25/South_Dakota_State_Jackrabbits_logo.svg/315px-South_Dakota_State_Jackrabbits_logo.svg.png,12
+2025-02-15,V,Omaha,St. Thomas (MN),84,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/08/St_thomas_tommies.jpg,13
+2025-02-19,V,Omaha,Kansas City,78,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Kansas_City_Roos_logo.svg/254px-Kansas_City_Roos_logo.svg.png,14
+2025-02-22,H,Omaha,South Dakota,93,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/South_Dakota_Coyotes_logo.svg/189px-South_Dakota_Coyotes_logo.svg.png,15
 2025-03-01,H,Omaha,Oral Roberts,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Oral_Roberts_Golden_Eagles_logo.svg/320px-Oral_Roberts_Golden_Eagles_logo.svg.png,16
 2025-01-04,V,Oral Roberts,Kansas City,67,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Kansas_City_Roos_logo.svg/254px-Kansas_City_Roos_logo.svg.png,1
 2025-01-09,H,Oral Roberts,North Dakota St.,96,110,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,2
@@ -89,10 +89,10 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-29,V,Oral Roberts,St. Thomas (MN),71,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/08/St_thomas_tommies.jpg,8
 2025-02-01,H,Oral Roberts,Kansas City,73,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Kansas_City_Roos_logo.svg/254px-Kansas_City_Roos_logo.svg.png,9
 2025-02-08,H,Oral Roberts,South Dakota,74,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/South_Dakota_Coyotes_logo.svg/189px-South_Dakota_Coyotes_logo.svg.png,10
-2025-02-13,V,Oral Roberts,North Dakota St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,11
-2025-02-15,V,Oral Roberts,North Dakota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/92/North_Dakota_Fighting_Hawks_logo.svg/320px-North_Dakota_Fighting_Hawks_logo.svg.png,12
-2025-02-19,V,Oral Roberts,Denver,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2172.png,13
-2025-02-22,H,Oral Roberts,St. Thomas (MN),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/08/St_thomas_tommies.jpg,14
+2025-02-13,V,Oral Roberts,North Dakota St.,88,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,11
+2025-02-15,V,Oral Roberts,North Dakota,77,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/92/North_Dakota_Fighting_Hawks_logo.svg/320px-North_Dakota_Fighting_Hawks_logo.svg.png,12
+2025-02-19,V,Oral Roberts,Denver,60,71,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2172.png,13
+2025-02-22,H,Oral Roberts,St. Thomas (MN),71,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/08/St_thomas_tommies.jpg,14
 2025-02-27,H,Oral Roberts,South Dakota St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/25/South_Dakota_State_Jackrabbits_logo.svg/315px-South_Dakota_State_Jackrabbits_logo.svg.png,15
 2025-03-01,V,Oral Roberts,Omaha,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,16
 2025-01-02,V,South Dakota,Kansas City,54,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Kansas_City_Roos_logo.svg/254px-Kansas_City_Roos_logo.svg.png,1
@@ -105,10 +105,10 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-29,H,South Dakota,Omaha,91,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,8
 2025-02-06,V,South Dakota,Denver,86,79,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2172.png,9
 2025-02-08,V,South Dakota,Oral Roberts,75,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Oral_Roberts_Golden_Eagles_logo.svg/320px-Oral_Roberts_Golden_Eagles_logo.svg.png,10
-2025-02-13,H,South Dakota,Kansas City,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Kansas_City_Roos_logo.svg/254px-Kansas_City_Roos_logo.svg.png,11
-2025-02-16,H,South Dakota,South Dakota St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/25/South_Dakota_State_Jackrabbits_logo.svg/315px-South_Dakota_State_Jackrabbits_logo.svg.png,12
-2025-02-19,H,South Dakota,St. Thomas (MN),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/08/St_thomas_tommies.jpg,13
-2025-02-22,V,South Dakota,Omaha,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,14
+2025-02-13,H,South Dakota,Kansas City,79,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Kansas_City_Roos_logo.svg/254px-Kansas_City_Roos_logo.svg.png,11
+2025-02-16,H,South Dakota,South Dakota St.,91,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/25/South_Dakota_State_Jackrabbits_logo.svg/315px-South_Dakota_State_Jackrabbits_logo.svg.png,12
+2025-02-19,H,South Dakota,St. Thomas (MN),85,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/08/St_thomas_tommies.jpg,13
+2025-02-22,V,South Dakota,Omaha,85,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,14
 2025-02-26,V,South Dakota,North Dakota St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,15
 2025-03-01,H,South Dakota,North Dakota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/92/North_Dakota_Fighting_Hawks_logo.svg/320px-North_Dakota_Fighting_Hawks_logo.svg.png,16
 2025-01-02,H,South Dakota St.,Denver,91,70,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2172.png,1
@@ -121,10 +121,10 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-01-30,V,South Dakota St.,North Dakota St.,72,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,8
 2025-02-01,V,South Dakota St.,North Dakota,75,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/92/North_Dakota_Fighting_Hawks_logo.svg/320px-North_Dakota_Fighting_Hawks_logo.svg.png,9
 2025-02-06,H,South Dakota St.,St. Thomas (MN),102,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/0/08/St_thomas_tommies.jpg,10
-2025-02-13,H,South Dakota St.,Omaha,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,11
-2025-02-16,V,South Dakota St.,South Dakota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/South_Dakota_Coyotes_logo.svg/189px-South_Dakota_Coyotes_logo.svg.png,12
-2025-02-19,H,South Dakota St.,North Dakota St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,13
-2025-02-23,H,South Dakota St.,Kansas City,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Kansas_City_Roos_logo.svg/254px-Kansas_City_Roos_logo.svg.png,14
+2025-02-13,H,South Dakota St.,Omaha,98,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,11
+2025-02-16,V,South Dakota St.,South Dakota,94,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/South_Dakota_Coyotes_logo.svg/189px-South_Dakota_Coyotes_logo.svg.png,12
+2025-02-19,H,South Dakota St.,North Dakota St.,68,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,13
+2025-02-23,H,South Dakota St.,Kansas City,70,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Kansas_City_Roos_logo.svg/254px-Kansas_City_Roos_logo.svg.png,14
 2025-02-27,V,South Dakota St.,Oral Roberts,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Oral_Roberts_Golden_Eagles_logo.svg/320px-Oral_Roberts_Golden_Eagles_logo.svg.png,15
 2025-03-01,V,South Dakota St.,Denver,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2172.png,16
 2025-01-02,V,St. Thomas (MN),North Dakota St.,89,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,1
@@ -138,8 +138,8 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-02,H,St. Thomas (MN),North Dakota St.,79,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/74/North_Dakota_State_Bison_logo.svg/320px-North_Dakota_State_Bison_logo.svg.png,9
 2025-02-06,V,St. Thomas (MN),South Dakota St.,86,102,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/25/South_Dakota_State_Jackrabbits_logo.svg/315px-South_Dakota_State_Jackrabbits_logo.svg.png,10
 2025-02-08,V,St. Thomas (MN),Denver,79,76,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2172.png,11
-2025-02-15,H,St. Thomas (MN),Omaha,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,12
-2025-02-19,V,St. Thomas (MN),South Dakota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/South_Dakota_Coyotes_logo.svg/189px-South_Dakota_Coyotes_logo.svg.png,13
-2025-02-22,V,St. Thomas (MN),Oral Roberts,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Oral_Roberts_Golden_Eagles_logo.svg/320px-Oral_Roberts_Golden_Eagles_logo.svg.png,14
+2025-02-15,H,St. Thomas (MN),Omaha,95,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Omaha_Mavericks_logo.svg/246px-Omaha_Mavericks_logo.svg.png,12
+2025-02-19,V,St. Thomas (MN),South Dakota,80,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/South_Dakota_Coyotes_logo.svg/189px-South_Dakota_Coyotes_logo.svg.png,13
+2025-02-22,V,St. Thomas (MN),Oral Roberts,66,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Oral_Roberts_Golden_Eagles_logo.svg/320px-Oral_Roberts_Golden_Eagles_logo.svg.png,14
 2025-02-27,H,St. Thomas (MN),North Dakota,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/92/North_Dakota_Fighting_Hawks_logo.svg/320px-North_Dakota_Fighting_Hawks_logo.svg.png,15
 2025-03-01,H,St. Thomas (MN),Kansas City,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Kansas_City_Roos_logo.svg/254px-Kansas_City_Roos_logo.svg.png,16

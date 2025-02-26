@@ -21,6 +21,7 @@ df_ties <-
   count() %>% 
   group_by(tied_teams) %>% 
   mutate('n_tie' = sum(n),
+         'n_teams' = length(unlist(strsplit(tied_teams[1], '/'))),
          'pct' = n/n_tie,
          'tie_freq' = n_tie/max(df_standings$sim_id)) %>% 
   ungroup()
@@ -33,7 +34,8 @@ x <-
 
 gt2 <- 
   x %>% 
-  filter(n() == 2, tie_freq > 0.0885, tie_freq > 0.01) %>%
+  filter(n_teams == 2, tie_freq > 0.01) %>%
+  select(-n_teams) %>% 
   gt() %>% 
   cols_align('center') %>% 
   fmt_percent('pct', decimals = 1) %>% 
@@ -88,12 +90,13 @@ gt2 <-
               heading.subtitle.font.weight = 'bold'
   )
 
-gtsave(gt2, 'graphics/ivy/ties_2a.png', zoom = 2)
+gtsave(gt2, 'graphics/ivy/ties_2.png', zoom = 2)
 
 
 gt3 <- 
   x %>% 
-  filter(n() == 3, tie_freq >= 0.01) %>% 
+  filter(n_teams == 3, tie_freq > 0.01) %>%
+  select(-n_teams) %>% 
   gt() %>% 
   cols_align('center') %>% 
   fmt_percent('pct', decimals = 1) %>% 
@@ -149,3 +152,32 @@ gt3 <-
   )
 
 gtsave(gt3, 'graphics/ivy/ties_3.png')
+
+
+
+df_brown <- 
+  df_standings %>% 
+  filter(rank_start <= 4) %>% 
+  group_by(sim_id, rank_start) %>% 
+  filter(n() == 2, any(team == 'Brown'), any(team == 'Dartmouth'))
+
+
+df_brown %>% 
+  group_by(sim_id) %>% 
+  mutate('winner' = team[which.min(rank_final)]) %>% 
+  group_by(relevant_teams, metric, winner) %>% 
+  count() %>% 
+  View()
+
+df_brown$metric
+
+
+
+df_standings %>% 
+  filter(team == 'Harvard', n_win == 7) %>% 
+  filter(rank_final <= 4)
+
+predictions <- read_csv('3.0_Files/Predictions/predictions.csv') 
+predictions %>% 
+  filter(team == 'Harvard', is.na(score_diff)) %>% 
+  select(team, opponent, date, location, wins) 
