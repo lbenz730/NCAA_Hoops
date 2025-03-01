@@ -8,6 +8,7 @@ plan(multicore(workers = 8))
 options(future.fork.enable = T)
 options(future.rng.onMisue = "ignore")
 options(dplyr.summarise.inform = FALSE)
+options(chromote.headless = "new")
 x <- read_csv(paste("3.0_Files/Results/2024-25/NCAA_Hoops_Results",
                     month(Sys.Date()), day(Sys.Date()), paste0(year(Sys.Date()), ".csv"),
                     sep = "_"))
@@ -31,8 +32,8 @@ source("3.0_Files/conf_tourney_sims.R")
 
 params <- 
   list('conf_sims' = 1000,
-       # 'n_ct' = 5000,
-       'ivy_sims' = 3000,
+       'n_ct' = 5000,
+       'ivy_sims' = 5000,
        'psf_sims' = 1000,
        'pct_post' = 0.25)
 
@@ -90,7 +91,7 @@ x <-
   select(-deadline)
 
 ### Eliminate Teams from Auto Bid contention
-# confs <- eliminate(filter(x, score_diff < 0, !reg_season) %>% pull(team), confs)
+confs <- eliminate(filter(x, score_diff < 0, !reg_season) %>% pull(team), confs)
 
 # ### Update NCAA Eliminations:
 # round_dates <-
@@ -268,7 +269,7 @@ if(lubridate::hour(Sys.time())  <= 12) {
         write_csv(paste0("3.0_Files/Predictions/conf_sims_ncaa/", conf, ".csv"))
     }
   }
-  # conf_tourney_graphics()
+  conf_tourney_graphics()
 }
 
 

@@ -21,7 +21,7 @@ replace_na <- function(x, r) {
 glm.pointspread <- readRDS("glm_pointspread.rds")
 ncaa_sims <- read_csv('3.0_Files/ncaa_sims/ncaa_sims.csv')
 seed_list <- read_csv('3.0_Files/ncaa_sims/seed_list.csv')
-t_confs <- gsub('\\.csv', '', dir('3.0_Files/Predictions/conf_tourney_sims/2023-24', full.names = F)) ### Change when update
+t_confs <- gsub('\\.csv', '', dir('3.0_Files/Predictions/conf_tourney_sims/2024-25', full.names = F)) ### Change when update
 
 
 
