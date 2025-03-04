@@ -177,21 +177,21 @@ update_conf_seeds <- function() {
       'Missouri St.')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
-  # # Big Sky
-  # seed_teams <- 
-  #   c('Eastern Wash.',
-  #     'Northern Colo.',
-  #     'Montana', 
-  #     'Weber St.', 
-  #     'Montana St.', 
-  #     'Portland St.', 
-  #     'Northern Ariz.',
-  #     'Idaho',
-  #     'Idaho St.',
-  #     'Sacramento St.')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # 
+  # Big Sky
+  seed_teams <-
+    c('Northern Colo.',
+      'Montana',
+      'Portland St.',
+      'Idaho St.',
+      'Montana St.',
+      'Idaho',
+      'Northern Ariz.',
+      'Eastern Wash.',
+      'Weber St.',
+      'Sacramento St.')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+
+
   # # Am. East
   # seed_teams <- 
   #   c('Vermont', 
@@ -216,16 +216,16 @@ update_conf_seeds <- function() {
   #     'Coppin St.')
   # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   # 
-  # # Southland
-  # seed_teams <- 
-  #   c('McNeese',
-  #     'A&M-Corpus Christi',
-  #     'Nicholls',
-  #     'Lamar University',
-  #     'Southeastern La.',
-  #     'Northwestern St.',
-  #     'Tex. A&M-Commerce',
-  #     'New Orleans')
+  # Southland
+  seed_teams <-
+    c('McNeese',
+      'Lamar University',
+      'Nicholls',
+      'Northwestern St.',
+      'A&M-Corpus Christi',
+      'Southeastern La.',
+      'UIW',
+      'Houston Christian')
   # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   # 
   # # MAC
