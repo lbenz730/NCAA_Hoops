@@ -217,12 +217,12 @@ by_conf <- pr_compute(by_conf = T)
 write_csv(x, "3.0_Files/Predictions/predictions.csv")
 ######################### Ivy League Specific Sims #############################
 playoffs <- ivy.sim(params$ivy_sims)
-ivy_psf <- psf(params$psf_sims, min_date = Sys.Date()+1, max_date = Sys.Date()+2)
+ivy_psf <- psf(params$psf_sims, min_date = Sys.Date()+1, max_date = Sys.Date()+7)
 # playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
 
 ############################ Conference Sims (No Tie-Breaks) ##################
-if(lubridate::hour(Sys.time())  <= 12) {
-  # confs <- update_conf_seeds()
+if(lubridate::hour(Sys.time())  <= 23) {
+  confs <- update_conf_seeds()
   for(conf in setdiff(sort(unique(confs$conference)), 'Independent')) {
     # for(conf in sort(unique(confs$conference[!is.na(confs$conf_seed)]))) {
     visualize_schedule_data(conf)

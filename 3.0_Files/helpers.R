@@ -220,9 +220,13 @@ conf_fast_sim <- function(conf, nsims, pct_postseason, n_ct, force = F, year = '
       
       dfs <- map(1:n_ct, ~df_conf)
       
-      ### Treat Triple Byes as 8-2-2 w/ sampling of first round teams
+      ### Treat Triple Byes or more as 8-2-2 w/ sampling of first round teams
       if(conf == 'WCC') {
-        keep <- map(1:n_ct, ~c(1:7, sample(c(8,9),1))) 
+        keep <- map(1:n_ct, ~c(1:6, sample(c(7,7, 10, 11), 1), sample(c(8,9),1))) 
+        dfs <- map2(dfs, keep, ~filter(.x, conf_seed %in% .y))
+      } 
+      if(conf == 'Sunbelt') {
+        keep <- map(1:n_ct, ~c(1:6, sample(c(11,14,10,10,7,7,7,7), 1), sample(c(12,13,9,9,8,8,8,8), 1))) 
         dfs <- map2(dfs, keep, ~filter(.x, conf_seed %in% .y))
       }
       

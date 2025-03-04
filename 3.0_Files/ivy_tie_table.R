@@ -159,7 +159,7 @@ df_brown <-
   df_standings %>% 
   filter(rank_start <= 4) %>% 
   group_by(sim_id, rank_start) %>% 
-  filter(n() == 2, any(team == 'Brown'), any(team == 'Dartmouth'))
+  filter(n() == 2, any(team == 'Dartmouth'), any(team == 'Brown'))
 
 
 df_brown %>% 
