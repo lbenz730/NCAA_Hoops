@@ -17,7 +17,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-22,V,Butler,DePaul,84,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/79/DePaul_Blue_Demons_logo.svg/150px-DePaul_Blue_Demons_logo.svg.png,16
 2025-02-26,H,Butler,St. John's (NY),70,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/St._John%27s_Red_Storm_logo.svg/172px-St._John%27s_Red_Storm_logo.svg.png,17
 2025-03-01,V,Butler,Villanova,70,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Villanova_Wildcats_logo.svg/269px-Villanova_Wildcats_logo.svg.png,18
-2025-03-05,H,Butler,Xavier,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Xavier_Musketeers_logo.svg/301px-Xavier_Musketeers_logo.svg.png,19
+2025-03-05,H,Butler,Xavier,78,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Xavier_Musketeers_logo.svg/301px-Xavier_Musketeers_logo.svg.png,19
 2025-03-08,V,Butler,Creighton,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Creighton_Bluejays_logo.svg/238px-Creighton_Bluejays_logo.svg.png,20
 2024-12-18,V,Creighton,Georgetown,57,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Georgetown_Hoyas_logo.svg/239px-Georgetown_Hoyas_logo.svg.png,1
 2024-12-21,H,Creighton,Villanova,86,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Villanova_Wildcats_logo.svg/269px-Villanova_Wildcats_logo.svg.png,2
@@ -57,7 +57,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-19,H,DePaul,St. John's (NY),58,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/St._John%27s_Red_Storm_logo.svg/172px-St._John%27s_Red_Storm_logo.svg.png,16
 2025-02-22,H,DePaul,Butler,72,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Butler_Bulldogs_logo.svg/245px-Butler_Bulldogs_logo.svg.png,17
 2025-02-26,V,DePaul,Creighton,65,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Creighton_Bluejays_logo.svg/238px-Creighton_Bluejays_logo.svg.png,18
-2025-03-05,V,DePaul,Providence,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/5/5f/Providence_Friars_P_script_logo.gif,19
+2025-03-05,V,DePaul,Providence,80,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/5/5f/Providence_Friars_P_script_logo.gif,19
 2025-03-08,H,DePaul,Georgetown,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Georgetown_Hoyas_logo.svg/239px-Georgetown_Hoyas_logo.svg.png,20
 2024-12-18,H,Georgetown,Creighton,81,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Creighton_Bluejays_logo.svg/238px-Creighton_Bluejays_logo.svg.png,1
 2024-12-22,V,Georgetown,Seton Hall,61,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Seton_Hall_Pirates_logo.svg/236px-Seton_Hall_Pirates_logo.svg.png,2
@@ -97,7 +97,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-21,V,Marquette,Villanova,66,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Villanova_Wildcats_logo.svg/269px-Villanova_Wildcats_logo.svg.png,16
 2025-02-25,H,Marquette,Providence,82,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/5/5f/Providence_Friars_P_script_logo.gif,17
 2025-03-01,V,Marquette,Georgetown,76,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Georgetown_Hoyas_logo.svg/239px-Georgetown_Hoyas_logo.svg.png,18
-2025-03-05,V,Marquette,UConn,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Connecticut_Huskies_logo.svg/192px-Connecticut_Huskies_logo.svg.png,19
+2025-03-05,V,Marquette,UConn,66,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Connecticut_Huskies_logo.svg/192px-Connecticut_Huskies_logo.svg.png,19
 2025-03-08,H,Marquette,St. John's (NY),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/St._John%27s_Red_Storm_logo.svg/172px-St._John%27s_Red_Storm_logo.svg.png,20
 2024-12-10,V,Providence,DePaul,70,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/79/DePaul_Blue_Demons_logo.svg/150px-DePaul_Blue_Demons_logo.svg.png,1
 2024-12-20,H,Providence,St. John's (NY),70,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/St._John%27s_Red_Storm_logo.svg/172px-St._John%27s_Red_Storm_logo.svg.png,2
@@ -117,7 +117,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-19,V,Providence,Georgetown,72,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Georgetown_Hoyas_logo.svg/239px-Georgetown_Hoyas_logo.svg.png,16
 2025-02-25,V,Providence,Marquette,52,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Marquette_Golden_Eagles_logo.svg/320px-Marquette_Golden_Eagles_logo.svg.png,17
 2025-03-01,H,Providence,UConn,63,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Connecticut_Huskies_logo.svg/192px-Connecticut_Huskies_logo.svg.png,18
-2025-03-05,H,Providence,DePaul,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/79/DePaul_Blue_Demons_logo.svg/150px-DePaul_Blue_Demons_logo.svg.png,19
+2025-03-05,H,Providence,DePaul,77,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/7/79/DePaul_Blue_Demons_logo.svg/150px-DePaul_Blue_Demons_logo.svg.png,19
 2025-03-08,V,Providence,Xavier,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Xavier_Musketeers_logo.svg/301px-Xavier_Musketeers_logo.svg.png,20
 2024-12-17,V,Seton Hall,Villanova,67,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Villanova_Wildcats_logo.svg/269px-Villanova_Wildcats_logo.svg.png,1
 2024-12-22,H,Seton Hall,Georgetown,60,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Georgetown_Hoyas_logo.svg/239px-Georgetown_Hoyas_logo.svg.png,2
@@ -177,7 +177,7 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-23,V,UConn,St. John's (NY),75,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/St._John%27s_Red_Storm_logo.svg/172px-St._John%27s_Red_Storm_logo.svg.png,16
 2025-02-26,H,UConn,Georgetown,93,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Georgetown_Hoyas_logo.svg/239px-Georgetown_Hoyas_logo.svg.png,17
 2025-03-01,V,UConn,Providence,75,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/5/5f/Providence_Friars_P_script_logo.gif,18
-2025-03-05,H,UConn,Marquette,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Marquette_Golden_Eagles_logo.svg/320px-Marquette_Golden_Eagles_logo.svg.png,19
+2025-03-05,H,UConn,Marquette,72,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Marquette_Golden_Eagles_logo.svg/320px-Marquette_Golden_Eagles_logo.svg.png,19
 2025-03-08,H,UConn,Seton Hall,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Seton_Hall_Pirates_logo.svg/236px-Seton_Hall_Pirates_logo.svg.png,20
 2024-12-17,H,Villanova,Seton Hall,79,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Seton_Hall_Pirates_logo.svg/236px-Seton_Hall_Pirates_logo.svg.png,1
 2024-12-21,V,Villanova,Creighton,79,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Creighton_Bluejays_logo.svg/238px-Creighton_Bluejays_logo.svg.png,2
@@ -217,5 +217,5 @@ date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,gam
 2025-02-18,H,Xavier,Butler,76,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Butler_Bulldogs_logo.svg/245px-Butler_Bulldogs_logo.svg.png,16
 2025-02-23,V,Xavier,Seton Hall,73,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Seton_Hall_Pirates_logo.svg/236px-Seton_Hall_Pirates_logo.svg.png,17
 2025-03-01,H,Xavier,Creighton,83,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Creighton_Bluejays_logo.svg/238px-Creighton_Bluejays_logo.svg.png,18
-2025-03-05,V,Xavier,Butler,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Butler_Bulldogs_logo.svg/245px-Butler_Bulldogs_logo.svg.png,19
+2025-03-05,V,Xavier,Butler,91,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Butler_Bulldogs_logo.svg/245px-Butler_Bulldogs_logo.svg.png,19
 2025-03-08,H,Xavier,Providence,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/5/5f/Providence_Friars_P_script_logo.gif,20

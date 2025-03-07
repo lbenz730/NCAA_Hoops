@@ -204,18 +204,18 @@ update_conf_seeds <- function() {
       'UMBC')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
 
-  # # MEAC
-  # seed_teams <- 
-  #   c('Norfolk St.',
-  #     'N.C. Central',
-  #     'South Carolina St.',
-  #     'Howard', 
-  #     'Morgan St.',
-  #     'Delaware St.',
-  #     'UMES', 
-  #     'Coppin St.')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
+# MEAC
+seed_teams <-
+  c('Norfolk St.',
+    'South Carolina St.',
+    'Delaware St.',
+    'Howard',
+    'Morgan St.',
+    'N.C. Central',
+    'Coppin St.',
+    'UMES')
+confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+
   # Southland
   seed_teams <-
     c('McNeese',
