@@ -681,7 +681,7 @@ shinyServer(function(input, output, session) {
       tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>%
       tab_source_note("Rating = Points relative to average NCAA team on neutral court") %>%
       tab_header(
-        title = md(paste("**2025", input$conf, "Men's Basketball Tournament Odds**")),
+        title = md(paste("**2025", input$conft, "Men's Basketball Tournament Odds**")),
       ) %>% 
       tab_options(column_labels.font.size = 16,
                   column_labels.font.weight = 'bold',

@@ -190,8 +190,8 @@ update_conf_seeds <- function() {
       'Weber St.',
       'Sacramento St.')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-
-
+  
+  
   # Am. East
   seed_teams <-
     c('Bryant',
@@ -203,19 +203,19 @@ update_conf_seeds <- function() {
       'New Hampshire',
       'UMBC')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-
-# MEAC
-seed_teams <-
-  c('Norfolk St.',
-    'South Carolina St.',
-    'Delaware St.',
-    'Howard',
-    'Morgan St.',
-    'N.C. Central',
-    'Coppin St.',
-    'UMES')
-confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-
+  
+  # MEAC
+  seed_teams <-
+    c('Norfolk St.',
+      'South Carolina St.',
+      'Delaware St.',
+      'Howard',
+      'Morgan St.',
+      'N.C. Central',
+      'Coppin St.',
+      'UMES')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  
   # Southland
   seed_teams <-
     c('McNeese',
@@ -227,26 +227,26 @@ confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_
       'UIW',
       'Houston Christian')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # MAC
-  # seed_teams <-
-  #   c('Toledo', 
-  #     'Akron', 
-  #     'Ohio',
-  #     'Central Mich.',
-  #     'Bowling Green', 
-  #     'Western Mich.',
-  #     'Miami (OH)',
-  #     'Kent St.')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # Ivy
+  
+  # MAC
+  seed_teams <-
+    c('Akron',
+      'Miami (OH)',
+      'Kent St.',
+      'Toledo',
+      'Ohio',
+      'Western Mich.',
+      'Eastern Mich.',
+      'Bowling Green')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+
+  # Ivy
   # seed_teams <-
   #   c('Princeton',
-  #     'Yale',  
+  #     'Yale',
   #     'Cornell',
   #     'Brown')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   # 
   # # C-USA
   # seed_teams <- 
