@@ -459,23 +459,24 @@ update_conf_seeds <- function() {
   #     'UTSA')
   # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   # 
-  # # Big 10
-  # seed_teams <-
-  #   c('Purdue',
-  #     'Illinois',
-  #     'Nebraska',
-  #     'Northwestern',
-  #     'Wisconsin',
-  #     'Indiana',
-  #     'Iowa',
-  #     'Michigan St.',
-  #     'Minnesota',
-  #     'Ohio St.',
-  #     'Penn St.',
-  #     'Maryland',
-  #     'Rutgers',
-  #     'Michigan')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+  # Big 10
+  seed_teams <-
+    c('Michigan St.',
+      'Maryland',
+      'Michigan',
+      'UCLA',
+      'Wisconsin',
+      'Purdue',
+      'Illinois',
+      'Oregon',
+      'Indiana',
+      'Ohio St.',
+      'Rutgers',
+      'Minnesota',
+      'Northwestern',
+      'USC',
+      'Iowa')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   
   
   ### Elimiate teams that didn't even make their conf tournament

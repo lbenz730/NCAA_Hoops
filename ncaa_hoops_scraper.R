@@ -33,6 +33,8 @@ conf_tournaments <- paste0('-\\sMBB\\s+', c("Big South", "Patriot League", "Nort
                                             "America East", "Sun Belt", "SWAC", "MEAC", "Big East", 
                                             "Big 10", "Big 12", "ACC", "SEC", "Ivy League"), "\\s+(Championship)+")
 
+max_date <- as.Date('2025-04-07')
+
 
 z <- NULL
 bad <- NULL
@@ -72,10 +74,17 @@ for (i in 1:nrow(teamid)) {
       dates <- stringr::str_extract(dates, '\\d\\d/\\d\\d/\\d\\d\\d\\d')
       ix2 <- !duplicated(dates)
       dates <- dates[ix2]
+      result <- stripwhite(gsub("<[^<>]*>", "", x[datelines+5][ix2]))
+      ix3 <- rep(T, length(result))
+      if(any(result == 'Record:')) {
+        ix3[1:which.max(result == 'Record:')] <- F
+      }
+      
+      dates <- dates[ix3]
       dates <- matrix(as.numeric(unlist(strsplit(dates, "/"))),
                       ncol=3, byrow=TRUE)
       
-      opploc <- stripwhite(gsub("<[^<>]*>", "", x[datelines+2]))
+      opploc <- stripwhite(gsub("<[^<>]*>", "", x[datelines+2][ix2]))
       loc <- rep("H", length(opploc))
       loc[grep("@", opploc, fixed=TRUE)] <- "N"
       loc[grep("^@", opploc)] <- "V"
@@ -85,13 +94,14 @@ for (i in 1:nrow(teamid)) {
       
       
       
-      result <- stripwhite(gsub("<[^<>]*>", "", x[datelines+5]))
+      
       OT <- suppressWarnings(as.numeric(gsub("^.*\\((\\d)OT\\)",
                                              "\\1", result))) # warnings okay
       result <- gsub(" \\(.*\\)", "", result)
       canceled <- result == 'Canceled'
       postponed <- result == 'Postponed' | result == 'Ppd'
       result[canceled|postponed] <- ""
+      result <- result[ix3]
       result <- strsplit(substring(result, 3, 20), "-")
       if (any(sapply(result, length) == 0)) {
         result[sapply(result, length) == 0] <- list(c(NA, NA))
@@ -100,21 +110,21 @@ for (i in 1:nrow(teamid)) {
       
       ixR <- 1:nrow(result) 
       
-      if(length(ixR) == length(ix2)) {
-        ixR <- ix2 
+      if(length(ixR) == length(ix3)) {
+        ixR <- ix3 
       }
       
       res <- data.frame(year=dates[,3],
                         month=dates[,1],
                         day=dates[,2],
                         team=teamid$team[i],
-                        opponent=opp[ix2],
-                        location=loc[ix2],
+                        opponent=opp[ix3],
+                        location=loc[ix3],
                         teamscore=result[ixR,1],
                         oppscore=result[ixR,2],
-                        canceled=canceled[ix2],
-                        postponed=postponed[ix2],
-                        OT=OT[ix2], stringsAsFactors=FALSE)
+                        canceled=canceled[ix3],
+                        postponed=postponed[ix3],
+                        OT=OT[ix3], stringsAsFactors=FALSE)
       res$date <- paste(res$month, res$day, sep = "_") 
       res$opponent <- stripwhite(gsub("&amp;", "&", gsub("&x;", "'", gsub("[0-9]", "", gsub("#", "", res$opponent)))))
       #fix <- sapply(res$opponent, function(x) { any(sapply(teamid$team, grepl, x)) }) &
