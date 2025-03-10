@@ -440,25 +440,24 @@ update_conf_seeds <- function() {
       'Cal Poly',
       'CSU Bakersfield')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
-  # # AAC
-  # seed_teams <-
-  #   c('South Fla.',
-  #     'Fla. Atlantic',
-  #     'Charlotte',
-  #     'UAB',
-  #     'Memphis',
-  #     'SMU',
-  #     'North Texas',
-  #     'East Carolina',
-  #     'Tulsa',
-  #     'Tulane',
-  #     'Temple',
-  #     'Wichita St.',
-  #     'Rice',
-  #     'UTSA')
-  # confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
-  # 
+
+  # AAC
+  seed_teams <-
+    c('Memphis',
+      'North Texas',
+      'UAB',
+      'Tulane',
+      'Fla. Atlantic',
+      'East Carolina',
+      'Temple',
+      'Wichita St.',
+      'South Fla.',
+      'Tulsa',
+      'UTSA',
+      'Rice',
+      'Charlotte')
+  confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
+
   # Big 10
   seed_teams <-
     c('Michigan St.',
