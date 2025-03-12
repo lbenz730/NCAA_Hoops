@@ -473,7 +473,7 @@ update_conf_seeds <- function() {
       'Rutgers',
       'Minnesota',
       'Northwestern',
-      'USC',
+      'Southern California',
       'Iowa')
   confs$conf_seed[map_dbl(seed_teams, ~which(confs$team == .x))] <- 1:length(seed_teams)
   

@@ -218,7 +218,7 @@ write_csv(x, "3.0_Files/Predictions/predictions.csv")
 ######################### Ivy League Specific Sims #############################
 # playoffs <- ivy.sim(params$ivy_sims)
 # ivy_psf <- psf(params$psf_sims, min_date = Sys.Date()+1, max_date = Sys.Date()+7)
-playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
+# playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
 
 ############################ Conference Sims (No Tie-Breaks) ##################
 if(lubridate::hour(Sys.time())  <= 23) {
