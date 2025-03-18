@@ -67,7 +67,7 @@ wp_matrix <-
   mutate('pred_score_diff' = rating_team - rating_opponent) %>%  
   ### Win Prob for Team over Opponent
   mutate('win_prob' = predict(glm_pointspread, newdata = ., type = 'response'))
-write_csv(wp_matrix, '3.0_Files/ncaa_sims/ncaa_wp_matrix_2024.csv')
+write_csv(wp_matrix, '3.0_Files/ncaa_sims/ncaa_wp_matrix_2025.csv')
 
 ### First Four
 first_four <- 

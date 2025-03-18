@@ -181,70 +181,70 @@ shinyUI(navbarPage("recspecs730 Basketball Central",
                             )
                    ),
                    
-                   ### Bracketology
-                   tabPanel("Bracketology",
-                            value = 'bracketology',
-                            sidebarLayout(position = "left",
-                                          sidebarPanel(tags$h3("Bracketology"),
-                                                       
-                                                       p(align = "center", 
-                                                         textOutput("update2"),
-                                                         tags$head(tags$style("#update2{text-align: center; color: ; font-weight: bold;}"))
-                                                         
-                                                       ),
-                                                       
-                                                       "Automatic bids are denoted by", tags$b("bold"), 
-                                                       ", while the First Four (last four at-large bids, worst four automatic bids) are denoted by", tags$i("italics."), 
-                                                       "Teams are selected and seeded using a combination of logistic regression based at-large odds",
-                                                       "and linear regression to predict the seed of selected teams based on historical data since the 2015-2016 season.",
-                                                       
-                                                       br(),
-                                                       br(),
-                                                       
-                                                       # "NOTE: As of 3/1/2022, some regression towards the BracketMatrix wisdom of crowds consensus is applied, using weights",
-                                                       # "based on both the average seed in the matrix as well as the percentage of bracketologists putting a team in their bracket.",
-                                                       # 
-                                                       # br(),
-                                                       # br(),
-                                                       # 
-                                                       # tags$b('FINAL 2022 Submission Contingencies'),
-                                                       # tags$ul(
-                                                       #   tags$li(tags$b("Richmond over Davidson:"), "Richmond replaces SMU as 12 Seed"),
-                                                       #   tags$li(tags$b("Yale Over Princeton"), "Yale replaces Princeton as 14 Seed"),
-                                                       # ),
-                                                       # 
-                                                       # br(),
-                                                       # br(),
-                                                       
-                                                       "All metrics are projected end of season values/ranks.",
-                                                       
-                                                       br(),
-                                                       br(),
-                                                       
-                                                       tags$ul(
-                                                         tags$li(tags$b("Net Rating:"), "Points +/- Average NCAA Team"),
-                                                         tags$li(tags$b("Wins Above Bubble:"), "How you do on schedule compared to how we would expect average bubble team to do on your schedule."),
-                                                         tags$li(tags$b("Strength of Record:"), "How you do on schedule compared to how we would expect average Top-25 team to do on your schedule"),
-                                                         tags$li(tags$b("Resume:"), "Weighted sum of win quality based on committe team sheet tiers")
-                                                         
-                                                         
-                                                         
-                                                       )
-                                                       
-                                          ),
-                                          mainPanel(
-                                            
-                                            p(align = "center", tags$h1("Bracket")),
-                                            DT::dataTableOutput("bracket"),
-                                            br(),
-                                            p(align = "center", tags$h1("Bubble")),
-                                            DT::dataTableOutput("bubble"),
-                                            br(),
-                                            p(align = "center", tags$h1("Bid-Breakdown")),
-                                            DT::dataTableOutput("bid_breakdown")
-                                          )
-                            )
-                   ),
+                   # ### Bracketology
+                   # tabPanel("Bracketology",
+                   #          value = 'bracketology',
+                   #          sidebarLayout(position = "left",
+                   #                        sidebarPanel(tags$h3("Bracketology"),
+                   #                                     
+                   #                                     p(align = "center", 
+                   #                                       textOutput("update2"),
+                   #                                       tags$head(tags$style("#update2{text-align: center; color: ; font-weight: bold;}"))
+                   #                                       
+                   #                                     ),
+                   #                                     
+                   #                                     "Automatic bids are denoted by", tags$b("bold"), 
+                   #                                     ", while the First Four (last four at-large bids, worst four automatic bids) are denoted by", tags$i("italics."), 
+                   #                                     "Teams are selected and seeded using a combination of logistic regression based at-large odds",
+                   #                                     "and linear regression to predict the seed of selected teams based on historical data since the 2015-2016 season.",
+                   #                                     
+                   #                                     br(),
+                   #                                     br(),
+                   #                                     
+                   #                                     # "NOTE: As of 3/1/2022, some regression towards the BracketMatrix wisdom of crowds consensus is applied, using weights",
+                   #                                     # "based on both the average seed in the matrix as well as the percentage of bracketologists putting a team in their bracket.",
+                   #                                     # 
+                   #                                     # br(),
+                   #                                     # br(),
+                   #                                     # 
+                   #                                     # tags$b('FINAL 2022 Submission Contingencies'),
+                   #                                     # tags$ul(
+                   #                                     #   tags$li(tags$b("Richmond over Davidson:"), "Richmond replaces SMU as 12 Seed"),
+                   #                                     #   tags$li(tags$b("Yale Over Princeton"), "Yale replaces Princeton as 14 Seed"),
+                   #                                     # ),
+                   #                                     # 
+                   #                                     # br(),
+                   #                                     # br(),
+                   #                                     
+                   #                                     "All metrics are projected end of season values/ranks.",
+                   #                                     
+                   #                                     br(),
+                   #                                     br(),
+                   #                                     
+                   #                                     tags$ul(
+                   #                                       tags$li(tags$b("Net Rating:"), "Points +/- Average NCAA Team"),
+                   #                                       tags$li(tags$b("Wins Above Bubble:"), "How you do on schedule compared to how we would expect average bubble team to do on your schedule."),
+                   #                                       tags$li(tags$b("Strength of Record:"), "How you do on schedule compared to how we would expect average Top-25 team to do on your schedule"),
+                   #                                       tags$li(tags$b("Resume:"), "Weighted sum of win quality based on committe team sheet tiers")
+                   #                                       
+                   #                                       
+                   #                                       
+                   #                                     )
+                   #                                     
+                   #                        ),
+                   #                        mainPanel(
+                   #                          
+                   #                          p(align = "center", tags$h1("Bracket")),
+                   #                          DT::dataTableOutput("bracket"),
+                   #                          br(),
+                   #                          p(align = "center", tags$h1("Bubble")),
+                   #                          DT::dataTableOutput("bubble"),
+                   #                          br(),
+                   #                          p(align = "center", tags$h1("Bid-Breakdown")),
+                   #                          DT::dataTableOutput("bid_breakdown")
+                   #                        )
+                   #          )
+                   # ),
                    
                    ### Conference Tournament Odds
                    tabPanel("Conference Tournament Odds",

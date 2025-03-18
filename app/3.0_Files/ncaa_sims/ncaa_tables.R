@@ -4,7 +4,7 @@ library(ncaahoopR)
 library(tidyverse)
 library(here)
 library(gtExtras)
-
+options(chromote.headless = "new")
 
 
 sim_results <- read_csv(here('3.0_Files/ncaa_sims/ncaa_sims.csv'))
@@ -24,8 +24,8 @@ make_table <- function(sim_results, table_region, message = '') {
     df_img %>% 
     inner_join(sim_results) 
   
-  round <- 'sweet_sixteen'
-  df <- df[df[[round]] != 0,]
+  # round <- 'sweet_sixteen'
+  # df <- df[df[[round]] != 0,]
   
   elim <- 
     seed_list %>% 
@@ -153,7 +153,7 @@ make_table <- function(sim_results, table_region, message = '') {
     tab_source_note("Rating: Points relative to baseline NCAA team on neutral floor") %>% 
     tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
     tab_header(
-      title = md("**2024 NCAA Men's Basketball Tournament Odds**"),
+      title = md("**2025 NCAA Men's Basketball Tournament Odds**"),
       subtitle = md(paste0('**', ifelse(table_region != 'all', paste0(table_region, " Region**"), paste0(message, '**'))))
     ) %>% 
     tab_options(column_labels.font.size = 20,

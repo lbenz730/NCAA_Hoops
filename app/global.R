@@ -392,7 +392,7 @@ make_table <- function(sim_results, table_region) {
     tab_source_note("Rating: Points relative to baseline NCAA team on neutral floor") %>% 
     tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>% 
     tab_header(
-      title = md("**2024 NCAA Men's Basketball Tournament Odds**"),
+      title = md("**2025 NCAA Men's Basketball Tournament Odds**"),
       subtitle = md(paste0('**', ifelse(table_region != 'all', paste0(table_region, " Region**"), paste0(message, '**'))))
     ) %>% 
     tab_options(column_labels.font.size = 20,
