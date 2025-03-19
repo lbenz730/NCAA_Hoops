@@ -4,7 +4,7 @@ library(ncaahoopR)
 library(tidyverse)
 library(here)
 library(gtExtras)
-options(chromote.headless = "new")
+
 
 
 sim_results <- read_csv(here('3.0_Files/ncaa_sims/ncaa_sims.csv'))
@@ -24,8 +24,8 @@ make_table <- function(sim_results, table_region, message = '') {
     df_img %>% 
     inner_join(sim_results) 
   
-  # round <- 'sweet_sixteen'
-  # df <- df[df[[round]] != 0,]
+  round <- 'sweet_sixteen'
+  df <- df[df[[round]] != 0,]
   
   elim <- 
     seed_list %>% 
