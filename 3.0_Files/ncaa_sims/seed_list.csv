@@ -1,13 +1,13 @@
 team,region,seed,first_four,elim_round
 Auburn,South,1,FALSE,NA
-Alabama St.,South,16,TRUE,NA
+Alabama St.,South,16,TRUE,1
 Saint Francis (PA),South,16,TRUE,0
-Louisville,South,8,FALSE,NA
+Louisville,South,8,FALSE,1
 Creighton,South,9,FALSE,NA
 Michigan,South,5,FALSE,NA
-UC San Diego,South,12,FALSE,NA
+UC San Diego,South,12,FALSE,1
 Texas A&M,South,4,FALSE,NA
-Yale,South,13,FALSE,NA
+Yale,South,13,FALSE,1
 Ole Miss,South,6,FALSE,NA
 North Carolina,South,11,TRUE,NA
 San Diego St.,South,11,TRUE,0
@@ -18,22 +18,22 @@ New Mexico,South,10,FALSE,NA
 Michigan St.,South,2,FALSE,NA
 Bryant,South,15,FALSE,NA
 Houston,Midwest,1,FALSE,NA
-SIUE,Midwest,16,FALSE,NA
+SIUE,Midwest,16,FALSE,1
 Gonzaga,Midwest,8,FALSE,NA
-Georgia,Midwest,9,FALSE,NA
-Clemson,Midwest,5,FALSE,NA
+Georgia,Midwest,9,FALSE,1
+Clemson,Midwest,5,FALSE,1
 McNeese,Midwest,12,FALSE,NA
 Purdue,Midwest,4,FALSE,NA
-High Point,Midwest,13,FALSE,NA
+High Point,Midwest,13,FALSE,1
 Illinois,Midwest,6,FALSE,NA
-Texas,Midwest,11,TRUE,NA
+Texas,Midwest,11,TRUE,0
 Xavier,Midwest,11,TRUE,NA
 Kentucky,Midwest,3,FALSE,NA
 Troy,Midwest,14,FALSE,NA
 UCLA,Midwest,7,FALSE,NA
-Utah St.,Midwest,10,FALSE,NA
+Utah St.,Midwest,10,FALSE,1
 Tennessee,Midwest,2,FALSE,NA
-Wofford,Midwest,15,FALSE,NA
+Wofford,Midwest,15,FALSE,1
 Florida,West,1,FALSE,NA
 Norfolk St.,West,16,FALSE,NA
 UConn,West,8,FALSE,NA
@@ -42,16 +42,16 @@ Memphis,West,5,FALSE,NA
 Colorado St.,West,12,FALSE,NA
 Maryland,West,4,FALSE,NA
 Grand Canyon,West,13,FALSE,NA
-Missouri,West,6,FALSE,NA
+Missouri,West,6,FALSE,1
 Drake,West,11,FALSE,NA
 Texas Tech,West,3,FALSE,NA
-UNCW,West,14,FALSE,NA
-Kansas,West,7,FALSE,NA
+UNCW,West,14,FALSE,1
+Kansas,West,7,FALSE,1
 Arkansas,West,10,FALSE,NA
 St. John's (NY),West,2,FALSE,NA
-Omaha,West,15,FALSE,NA
+Omaha,West,15,FALSE,1
 Duke,East,1,FALSE,NA
-American,East,16,TRUE,NA
+American,East,16,TRUE,0
 Mount St. Mary's,East,16,TRUE,NA
 Mississippi St.,East,8,FALSE,NA
 Baylor,East,9,FALSE,NA
@@ -60,9 +60,9 @@ Liberty,East,12,FALSE,NA
 Arizona,East,4,FALSE,NA
 Akron,East,13,FALSE,NA
 BYU,East,6,FALSE,NA
-VCU,East,11,FALSE,NA
+VCU,East,11,FALSE,1
 Wisconsin,East,3,FALSE,NA
-Montana,East,14,FALSE,NA
+Montana,East,14,FALSE,1
 Saint Mary's (CA),East,7,FALSE,NA
 Vanderbilt,East,10,FALSE,NA
 Alabama,East,2,FALSE,NA
