@@ -312,8 +312,8 @@ nrow(filter(x, round(pred_team_score) == team_score))
 filter(x, round(pred_team_score) == team_score, round(pred_opp_score) == opp_score)
 
 #### Copy App Specific Files
-file.copy(dir('3.0_Files/Results/2025-25/', full.names = T),
-          paste0('app/', dir('3.0_Files/Results/2025-25/', full.names = T)), overwrite = T)
+file.copy(dir('3.0_Files/Results/2024-25/', full.names = T),
+          paste0('app/', dir('3.0_Files/Results/2024-25/', full.names = T)), overwrite = T)
 file.copy(dir('3.0_Files/Predictions/', full.names = T, recursive = T),
           paste0('app/', dir('3.0_Files/Predictions/', full.names = T, recursive = T)), overwrite = T)
 file.copy(dir('3.0_Files/Bracketology/', full.names = T),
