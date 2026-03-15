@@ -1,217 +1,235 @@
 date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,game_id
-2025-01-03,V,Akron,Bowling Green,71,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,1
-2025-01-07,H,Akron,Central Mich.,87,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,2
-2025-01-11,V,Akron,Eastern Mich.,105,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,3
-2025-01-14,H,Akron,Toledo,85,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,4
-2025-01-17,H,Akron,Ohio,92,80,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,5
-2025-01-21,V,Akron,Buffalo,90,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,6
-2025-01-25,H,Akron,Miami (OH),102,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,7
-2025-01-28,V,Akron,NIU,80,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,8
-2025-01-31,V,Akron,Kent St.,85,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,9
-2025-02-04,H,Akron,Ball St.,81,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,10
-2025-02-11,H,Akron,Western Mich.,105,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,11
-2025-02-15,V,Akron,Central Mich.,85,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,12
-2025-02-18,H,Akron,NIU,73,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,13
-2025-02-22,V,Akron,Ohio,67,84,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,14
-2025-02-25,V,Akron,Ball St.,87,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,15
-2025-02-28,H,Akron,Kent St.,77,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,16
-2025-03-04,V,Akron,Toledo,96,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,17
-2025-03-07,H,Akron,Buffalo,88,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,18
-2025-01-04,V,Ball St.,Kent St.,75,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,1
-2025-01-07,H,Ball St.,Miami (OH),72,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,2
-2025-01-11,H,Ball St.,Bowling Green,91,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,3
-2025-01-14,V,Ball St.,Ohio,71,86,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,4
-2025-01-18,H,Ball St.,Toledo,75,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,5
-2025-01-21,V,Ball St.,Central Mich.,82,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,6
-2025-01-25,V,Ball St.,NIU,66,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,7
-2025-01-28,H,Ball St.,Western Mich.,71,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,8
-2025-02-01,V,Ball St.,Buffalo,89,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,9
-2025-02-04,V,Ball St.,Akron,73,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,10
-2025-02-11,H,Ball St.,Eastern Mich.,86,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,11
-2025-02-15,H,Ball St.,NIU,89,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,12
-2025-02-18,V,Ball St.,Toledo,66,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,13
-2025-02-22,H,Ball St.,Buffalo,80,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,14
-2025-02-25,H,Ball St.,Akron,82,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,15
-2025-03-01,V,Ball St.,Bowling Green,52,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,16
-2025-03-04,H,Ball St.,Central Mich.,67,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,17
-2025-03-07,V,Ball St.,Miami (OH),66,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,18
-2025-01-03,H,Bowling Green,Akron,68,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,1
-2025-01-07,V,Bowling Green,Western Mich.,83,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,2
-2025-01-11,V,Bowling Green,Ball St.,69,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,3
-2025-01-14,H,Bowling Green,Buffalo,79,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,4
-2025-01-18,H,Bowling Green,Eastern Mich.,62,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,5
-2025-01-21,V,Bowling Green,Miami (OH),76,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,6
-2025-01-24,H,Bowling Green,Toledo,71,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,7
-2025-01-28,V,Bowling Green,Kent St.,57,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,8
-2025-02-01,V,Bowling Green,Central Mich.,71,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,9
-2025-02-04,H,Bowling Green,NIU,84,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,10
-2025-02-11,H,Bowling Green,Ohio,81,86,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,11
-2025-02-15,V,Bowling Green,Buffalo,63,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,12
-2025-02-18,H,Bowling Green,Kent St.,84,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,13
-2025-02-21,V,Bowling Green,Toledo,69,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,14
-2025-02-25,V,Bowling Green,Eastern Mich.,65,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,15
-2025-03-01,H,Bowling Green,Ball St.,61,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,16
-2025-03-04,V,Bowling Green,NIU,71,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,17
-2025-03-07,H,Bowling Green,Western Mich.,63,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,18
-2025-01-04,V,Buffalo,Miami (OH),79,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,1
-2025-01-07,H,Buffalo,Ohio,79,88,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,2
-2025-01-10,H,Buffalo,Kent St.,49,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,3
-2025-01-14,V,Buffalo,Bowling Green,61,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,4
-2025-01-18,V,Buffalo,Western Mich.,85,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,5
-2025-01-21,H,Buffalo,Akron,58,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,6
-2025-01-25,V,Buffalo,Eastern Mich.,77,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,7
-2025-01-28,H,Buffalo,Central Mich.,75,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,8
-2025-02-01,H,Buffalo,Ball St.,76,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,9
-2025-02-04,V,Buffalo,Toledo,74,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,10
-2025-02-11,V,Buffalo,NIU,73,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,11
-2025-02-15,H,Buffalo,Bowling Green,59,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,12
-2025-02-18,H,Buffalo,Western Mich.,64,97,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,13
-2025-02-22,V,Buffalo,Ball St.,66,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,14
-2025-02-25,V,Buffalo,Central Mich.,69,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,15
-2025-03-01,H,Buffalo,Toledo,87,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,16
-2025-03-04,H,Buffalo,Miami (OH),69,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,17
-2025-03-07,V,Buffalo,Akron,70,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,18
-2025-01-04,H,Central Mich.,Ohio,55,57,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,1
-2025-01-07,V,Central Mich.,Akron,71,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,2
-2025-01-10,V,Central Mich.,Toledo,67,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,3
-2025-01-14,H,Central Mich.,Eastern Mich.,82,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,4
-2025-01-18,V,Central Mich.,NIU,71,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,5
-2025-01-21,H,Central Mich.,Ball St.,80,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,6
-2025-01-25,H,Central Mich.,Western Mich.,73,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,7
-2025-01-28,V,Central Mich.,Buffalo,69,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,8
-2025-02-01,H,Central Mich.,Bowling Green,90,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,9
-2025-02-04,H,Central Mich.,Miami (OH),70,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,10
-2025-02-11,V,Central Mich.,Kent St.,83,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,11
-2025-02-15,H,Central Mich.,Akron,82,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,12
-2025-02-18,V,Central Mich.,Ohio,82,84,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,13
-2025-02-22,V,Central Mich.,Western Mich.,86,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,14
-2025-02-25,H,Central Mich.,Buffalo,73,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,15
-2025-02-28,V,Central Mich.,Eastern Mich.,73,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,16
-2025-03-04,V,Central Mich.,Ball St.,69,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,17
-2025-03-07,H,Central Mich.,NIU,81,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,18
-2025-01-04,H,Eastern Mich.,NIU,75,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,1
-2025-01-07,V,Eastern Mich.,Toledo,87,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,2
-2025-01-11,H,Eastern Mich.,Akron,81,105,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,3
-2025-01-14,V,Eastern Mich.,Central Mich.,63,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,4
-2025-01-18,V,Eastern Mich.,Bowling Green,68,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,5
-2025-01-21,H,Eastern Mich.,Ohio,94,87,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,6
-2025-01-25,H,Eastern Mich.,Buffalo,90,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,7
-2025-01-28,V,Eastern Mich.,Miami (OH),80,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,8
-2025-02-01,V,Eastern Mich.,Western Mich.,54,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,9
-2025-02-04,H,Eastern Mich.,Kent St.,49,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,10
-2025-02-11,V,Eastern Mich.,Ball St.,84,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,11
-2025-02-15,H,Eastern Mich.,Toledo,80,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,12
-2025-02-18,H,Eastern Mich.,Miami (OH),76,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,13
-2025-02-22,V,Eastern Mich.,NIU,79,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,14
-2025-02-25,H,Eastern Mich.,Bowling Green,60,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,15
-2025-02-28,H,Eastern Mich.,Central Mich.,84,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,16
-2025-03-04,V,Eastern Mich.,Ohio,83,79,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,17
-2025-03-07,V,Eastern Mich.,Kent St.,70,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,18
-2025-01-04,H,Kent St.,Ball St.,67,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,1
-2025-01-07,V,Kent St.,NIU,68,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,2
-2025-01-10,V,Kent St.,Buffalo,68,49,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,3
-2025-01-14,H,Kent St.,Western Mich.,83,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,4
-2025-01-18,H,Kent St.,Miami (OH),61,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,5
-2025-01-21,V,Kent St.,Toledo,83,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,6
-2025-01-24,V,Kent St.,Ohio,59,61,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,7
-2025-01-28,H,Kent St.,Bowling Green,75,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,8
-2025-01-31,H,Kent St.,Akron,71,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,9
-2025-02-04,V,Kent St.,Eastern Mich.,70,49,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,10
-2025-02-11,H,Kent St.,Central Mich.,91,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,11
-2025-02-14,H,Kent St.,Ohio,76,75,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,12
-2025-02-18,V,Kent St.,Bowling Green,91,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,13
-2025-02-21,V,Kent St.,Miami (OH),92,96,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,14
-2025-02-25,H,Kent St.,Toledo,105,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,15
-2025-02-28,V,Kent St.,Akron,72,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,16
-2025-03-04,V,Kent St.,Western Mich.,77,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,17
-2025-03-07,H,Kent St.,Eastern Mich.,76,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,18
-2025-01-04,H,Miami (OH),Buffalo,93,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,1
-2025-01-07,V,Miami (OH),Ball St.,80,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,2
-2025-01-11,H,Miami (OH),Western Mich.,91,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,3
-2025-01-14,V,Miami (OH),NIU,84,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,4
-2025-01-18,V,Miami (OH),Kent St.,70,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,5
-2025-01-21,H,Miami (OH),Bowling Green,84,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,6
-2025-01-25,V,Miami (OH),Akron,75,102,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,7
-2025-01-28,H,Miami (OH),Eastern Mich.,89,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,8
-2025-02-01,H,Miami (OH),Ohio,73,69,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,9
-2025-02-04,V,Miami (OH),Central Mich.,76,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,10
-2025-02-11,H,Miami (OH),Toledo,92,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,11
-2025-02-15,V,Miami (OH),Western Mich.,70,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,12
-2025-02-18,V,Miami (OH),Eastern Mich.,66,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,13
-2025-02-21,H,Miami (OH),Kent St.,96,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,14
-2025-02-25,H,Miami (OH),NIU,87,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,15
-2025-03-01,V,Miami (OH),Ohio,66,75,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,16
-2025-03-04,V,Miami (OH),Buffalo,84,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,17
-2025-03-07,H,Miami (OH),Ball St.,79,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,18
-2025-01-04,V,NIU,Eastern Mich.,71,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,1
-2025-01-07,H,NIU,Kent St.,50,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,2
-2025-01-11,V,NIU,Ohio,70,108,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,3
-2025-01-14,H,NIU,Miami (OH),69,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,4
-2025-01-18,H,NIU,Central Mich.,66,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,5
-2025-01-21,V,NIU,Western Mich.,70,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,6
-2025-01-25,H,NIU,Ball St.,76,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,7
-2025-01-28,H,NIU,Akron,70,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,8
-2025-02-01,V,NIU,Toledo,85,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,9
-2025-02-04,V,NIU,Bowling Green,77,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,10
-2025-02-11,H,NIU,Buffalo,67,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,11
-2025-02-15,V,NIU,Ball St.,83,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,12
-2025-02-18,V,NIU,Akron,63,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,13
-2025-02-22,H,NIU,Eastern Mich.,76,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,14
-2025-02-25,V,NIU,Miami (OH),58,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,15
-2025-03-01,H,NIU,Western Mich.,70,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,16
-2025-03-04,H,NIU,Bowling Green,58,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,17
-2025-03-07,V,NIU,Central Mich.,83,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,18
-2025-01-04,V,Ohio,Central Mich.,57,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,1
-2025-01-07,V,Ohio,Buffalo,88,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,2
-2025-01-11,H,Ohio,NIU,108,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,3
-2025-01-14,H,Ohio,Ball St.,86,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,4
-2025-01-17,V,Ohio,Akron,80,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,5
-2025-01-21,V,Ohio,Eastern Mich.,87,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,6
-2025-01-24,H,Ohio,Kent St.,61,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,7
-2025-01-28,H,Ohio,Toledo,83,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,8
-2025-02-01,V,Ohio,Miami (OH),69,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,9
-2025-02-04,H,Ohio,Western Mich.,94,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,10
-2025-02-11,V,Ohio,Bowling Green,86,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,11
-2025-02-14,V,Ohio,Kent St.,75,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,12
-2025-02-18,H,Ohio,Central Mich.,84,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,13
-2025-02-22,H,Ohio,Akron,84,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,14
-2025-02-25,V,Ohio,Western Mich.,73,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,15
-2025-03-01,H,Ohio,Miami (OH),75,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,16
-2025-03-04,H,Ohio,Eastern Mich.,79,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,17
-2025-03-07,V,Ohio,Toledo,82,96,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,18
-2025-01-04,V,Toledo,Western Mich.,76,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,1
-2025-01-07,H,Toledo,Eastern Mich.,90,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,2
-2025-01-10,H,Toledo,Central Mich.,69,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,3
-2025-01-14,V,Toledo,Akron,78,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,4
-2025-01-18,V,Toledo,Ball St.,93,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,5
-2025-01-21,H,Toledo,Kent St.,64,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,6
-2025-01-24,V,Toledo,Bowling Green,84,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,7
-2025-01-28,V,Toledo,Ohio,86,83,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,8
-2025-02-01,H,Toledo,NIU,89,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,9
-2025-02-04,H,Toledo,Buffalo,87,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,10
-2025-02-11,V,Toledo,Miami (OH),80,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,11
-2025-02-15,V,Toledo,Eastern Mich.,73,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,12
-2025-02-18,H,Toledo,Ball St.,67,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,13
-2025-02-21,H,Toledo,Bowling Green,68,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,14
-2025-02-25,V,Toledo,Kent St.,65,105,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,15
-2025-03-01,V,Toledo,Buffalo,74,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,16
-2025-03-04,H,Toledo,Akron,87,96,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,17
-2025-03-07,H,Toledo,Ohio,96,82,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,18
-2025-01-04,H,Western Mich.,Toledo,70,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,1
-2025-01-07,H,Western Mich.,Bowling Green,79,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,2
-2025-01-11,V,Western Mich.,Miami (OH),71,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,3
-2025-01-14,V,Western Mich.,Kent St.,94,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,4
-2025-01-18,H,Western Mich.,Buffalo,76,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,5
-2025-01-21,H,Western Mich.,NIU,72,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,6
-2025-01-25,V,Western Mich.,Central Mich.,52,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,7
-2025-01-28,V,Western Mich.,Ball St.,74,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,8
-2025-02-01,H,Western Mich.,Eastern Mich.,61,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,9
-2025-02-04,V,Western Mich.,Ohio,69,94,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,10
-2025-02-11,V,Western Mich.,Akron,92,105,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,11
-2025-02-15,H,Western Mich.,Miami (OH),78,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,12
-2025-02-18,V,Western Mich.,Buffalo,97,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,13
-2025-02-22,H,Western Mich.,Central Mich.,57,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,14
-2025-02-25,H,Western Mich.,Ohio,82,73,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,15
-2025-03-01,V,Western Mich.,NIU,74,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,16
-2025-03-04,H,Western Mich.,Kent St.,76,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,17
-2025-03-07,V,Western Mich.,Bowling Green,64,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,18
+2025-12-19,H,Akron,Eastern Mich.,93,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,1
+2026-01-03,V,Akron,Miami (OH),73,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,2
+2026-01-06,H,Akron,Central Mich.,82,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,3
+2026-01-09,V,Akron,Bowling Green,77,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,4
+2026-01-13,H,Akron,Ball St.,87,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,5
+2026-01-17,H,Akron,Western Mich.,104,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,6
+2026-01-20,V,Akron,Buffalo,82,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,7
+2026-01-23,V,Akron,Ohio,86,65,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,8
+2026-01-27,H,Akron,Toledo,91,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,9
+2026-01-30,H,Akron,Kent St.,69,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,10
+2026-02-03,V,Akron,Eastern Mich.,66,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,11
+2026-02-13,H,Akron,Massachusetts,99,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,12
+2026-02-17,V,Akron,Western Mich.,90,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,13
+2026-02-20,V,Akron,Ball St.,78,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,14
+2026-02-24,H,Akron,Buffalo,99,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,15
+2026-02-27,V,Akron,Kent St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,16
+2026-03-03,V,Akron,Central Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,17
+2026-03-06,H,Akron,NIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,18
+2025-12-20,H,Ball St.,Miami (OH),77,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,1
+2026-01-03,V,Ball St.,Buffalo,72,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,2
+2026-01-06,H,Ball St.,Eastern Mich.,52,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,3
+2026-01-10,V,Ball St.,Massachusetts,71,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,4
+2026-01-13,V,Ball St.,Akron,77,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,5
+2026-01-16,H,Ball St.,Ohio,76,71,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,6
+2026-01-20,V,Ball St.,Central Mich.,68,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,7
+2026-01-24,H,Ball St.,NIU,58,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,8
+2026-01-31,V,Ball St.,Toledo,55,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,9
+2026-02-03,V,Ball St.,Bowling Green,52,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,10
+2026-02-11,H,Ball St.,Buffalo,53,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,11
+2026-02-14,H,Ball St.,Kent St.,68,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,12
+2026-02-17,V,Ball St.,Ohio,57,69,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,13
+2026-02-20,H,Ball St.,Akron,65,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,14
+2026-02-24,H,Ball St.,Massachusetts,74,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,15
+2026-02-28,V,Ball St.,NIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,16
+2026-03-03,V,Ball St.,Western Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,17
+2026-03-06,H,Ball St.,Central Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,18
+2025-12-20,V,Bowling Green,Ohio,68,58,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,1
+2025-12-30,H,Bowling Green,Miami (OH),83,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,2
+2026-01-03,V,Bowling Green,Massachusetts,101,100,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,3
+2026-01-06,V,Bowling Green,Kent St.,93,96,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,4
+2026-01-09,H,Bowling Green,Akron,67,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,5
+2026-01-17,H,Bowling Green,Eastern Mich.,85,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,6
+2026-01-20,V,Bowling Green,Western Mich.,72,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,7
+2026-01-24,V,Bowling Green,Toledo,72,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,8
+2026-01-27,H,Bowling Green,Buffalo,78,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,9
+2026-01-31,V,Bowling Green,Central Mich.,59,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,10
+2026-02-03,H,Bowling Green,Ball St.,77,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,11
+2026-02-11,V,Bowling Green,NIU,68,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,12
+2026-02-14,H,Bowling Green,Toledo,80,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,13
+2026-02-17,H,Bowling Green,Kent St.,71,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,14
+2026-02-20,V,Bowling Green,Miami (OH),77,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,15
+2026-02-24,H,Bowling Green,Western Mich.,79,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,16
+2026-02-28,H,Bowling Green,Massachusetts,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,17
+2026-03-06,V,Bowling Green,Eastern Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,18
+2025-12-20,V,Buffalo,Western Mich.,88,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,1
+2025-12-31,V,Buffalo,NIU,81,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,2
+2026-01-03,H,Buffalo,Ball St.,85,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,3
+2026-01-10,V,Buffalo,Ohio,80,91,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,4
+2026-01-13,H,Buffalo,Kent St.,81,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,5
+2026-01-17,V,Buffalo,Miami (OH),102,105,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,6
+2026-01-20,H,Buffalo,Akron,63,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,7
+2026-01-23,H,Buffalo,Massachusetts,67,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,8
+2026-01-27,V,Buffalo,Bowling Green,89,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,9
+2026-01-31,H,Buffalo,Ohio,83,95,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,10
+2026-02-03,H,Buffalo,Miami (OH),71,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,11
+2026-02-11,V,Buffalo,Ball St.,63,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,12
+2026-02-17,H,Buffalo,NIU,70,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,13
+2026-02-21,V,Buffalo,Massachusetts,86,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,14
+2026-02-24,V,Buffalo,Akron,85,99,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,15
+2026-02-28,H,Buffalo,Central Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,16
+2026-03-03,H,Buffalo,Eastern Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,17
+2026-03-06,V,Buffalo,Toledo,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,18
+2025-12-20,V,Central Mich.,NIU,73,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,1
+2025-12-30,H,Central Mich.,Ohio,64,80,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,2
+2026-01-03,H,Central Mich.,Toledo,75,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,3
+2026-01-06,V,Central Mich.,Akron,69,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,4
+2026-01-10,H,Central Mich.,Kent St.,87,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,5
+2026-01-13,V,Central Mich.,Miami (OH),61,100,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,6
+2026-01-20,H,Central Mich.,Ball St.,67,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,7
+2026-01-24,V,Central Mich.,Western Mich.,65,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,8
+2026-01-27,H,Central Mich.,Eastern Mich.,100,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,9
+2026-01-31,H,Central Mich.,Bowling Green,62,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,10
+2026-02-03,V,Central Mich.,Massachusetts,89,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,11
+2026-02-14,H,Central Mich.,NIU,88,46,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,12
+2026-02-17,V,Central Mich.,Eastern Mich.,54,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,13
+2026-02-21,H,Central Mich.,Western Mich.,83,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,14
+2026-02-24,V,Central Mich.,Kent St.,81,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,15
+2026-02-28,V,Central Mich.,Buffalo,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,16
+2026-03-03,H,Central Mich.,Akron,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,17
+2026-03-06,V,Central Mich.,Ball St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,18
+2025-12-19,V,Eastern Mich.,Akron,72,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,1
+2025-12-30,H,Eastern Mich.,Massachusetts,80,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,2
+2026-01-03,H,Eastern Mich.,Ohio,67,68,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,3
+2026-01-06,V,Eastern Mich.,Ball St.,74,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,4
+2026-01-10,V,Eastern Mich.,Western Mich.,62,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,5
+2026-01-13,H,Eastern Mich.,NIU,77,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,6
+2026-01-17,V,Eastern Mich.,Bowling Green,79,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,7
+2026-01-24,H,Eastern Mich.,Kent St.,75,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,8
+2026-01-27,V,Eastern Mich.,Central Mich.,65,100,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,9
+2026-01-31,V,Eastern Mich.,Massachusetts,67,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,10
+2026-02-03,H,Eastern Mich.,Akron,64,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,11
+2026-02-11,V,Eastern Mich.,Kent St.,91,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,12
+2026-02-14,H,Eastern Mich.,Western Mich.,62,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,13
+2026-02-17,H,Eastern Mich.,Central Mich.,66,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,14
+2026-02-21,V,Eastern Mich.,Toledo,75,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,15
+2026-02-24,H,Eastern Mich.,Miami (OH),64,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,16
+2026-03-03,V,Eastern Mich.,Buffalo,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,17
+2026-03-06,H,Eastern Mich.,Bowling Green,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,18
+2025-12-20,V,Kent St.,Massachusetts,69,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,1
+2026-01-03,H,Kent St.,NIU,77,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,2
+2026-01-06,H,Kent St.,Bowling Green,96,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,3
+2026-01-10,V,Kent St.,Central Mich.,85,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,4
+2026-01-13,V,Kent St.,Buffalo,87,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,5
+2026-01-16,H,Kent St.,Toledo,87,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,6
+2026-01-20,H,Kent St.,Miami (OH),101,107,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,7
+2026-01-24,V,Kent St.,Eastern Mich.,76,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,8
+2026-01-27,H,Kent St.,Ohio,72,57,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,9
+2026-01-30,V,Kent St.,Akron,52,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,10
+2026-02-03,V,Kent St.,Toledo,75,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,11
+2026-02-11,H,Kent St.,Eastern Mich.,95,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,12
+2026-02-14,V,Kent St.,Ball St.,75,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,13
+2026-02-17,V,Kent St.,Bowling Green,78,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,14
+2026-02-24,H,Kent St.,Central Mich.,83,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,15
+2026-02-27,H,Kent St.,Akron,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,16
+2026-03-03,V,Kent St.,NIU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,17
+2026-03-06,H,Kent St.,Western Mich.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,18
+2025-12-20,H,Massachusetts,Kent St.,59,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,1
+2025-12-30,V,Massachusetts,Eastern Mich.,74,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,2
+2026-01-03,H,Massachusetts,Bowling Green,100,101,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,3
+2026-01-06,V,Massachusetts,Ohio,83,86,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,4
+2026-01-10,H,Massachusetts,Ball St.,79,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,5
+2026-01-13,V,Massachusetts,Western Mich.,85,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,6
+2026-01-17,V,Massachusetts,NIU,68,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,7
+2026-01-20,H,Massachusetts,Toledo,84,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,8
+2026-01-23,V,Massachusetts,Buffalo,68,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,9
+2026-01-27,V,Massachusetts,Miami (OH),84,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,10
+2026-01-31,H,Massachusetts,Eastern Mich.,70,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,11
+2026-02-03,H,Massachusetts,Central Mich.,95,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,12
+2026-02-13,V,Massachusetts,Akron,92,99,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,13
+2026-02-17,H,Massachusetts,Miami (OH),77,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,14
+2026-02-21,H,Massachusetts,Buffalo,82,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,15
+2026-02-24,V,Massachusetts,Ball St.,73,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,16
+2026-02-28,V,Massachusetts,Bowling Green,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,17
+2026-03-03,H,Massachusetts,Ohio,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,18
+2025-12-20,V,Miami (OH),Ball St.,86,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,1
+2025-12-30,V,Miami (OH),Bowling Green,93,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,2
+2026-01-03,H,Miami (OH),Akron,76,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,3
+2026-01-06,H,Miami (OH),Western Mich.,87,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,4
+2026-01-09,V,Miami (OH),Toledo,87,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,5
+2026-01-13,H,Miami (OH),Central Mich.,100,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,6
+2026-01-17,H,Miami (OH),Buffalo,105,102,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,7
+2026-01-20,V,Miami (OH),Kent St.,107,101,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,8
+2026-01-27,H,Miami (OH),Massachusetts,86,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,9
+2026-01-31,H,Miami (OH),NIU,85,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,10
+2026-02-03,V,Miami (OH),Buffalo,73,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,11
+2026-02-13,H,Miami (OH),Ohio,90,74,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,12
+2026-02-17,V,Miami (OH),Massachusetts,86,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,13
+2026-02-20,H,Miami (OH),Bowling Green,91,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,14
+2026-02-24,V,Miami (OH),Eastern Mich.,74,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,15
+2026-02-27,V,Miami (OH),Western Mich.,69,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,16
+2026-03-03,H,Miami (OH),Toledo,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,17
+2026-03-06,V,Miami (OH),Ohio,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,18
+2025-12-20,H,NIU,Central Mich.,74,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,1
+2025-12-31,H,NIU,Buffalo,67,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,2
+2026-01-03,V,NIU,Kent St.,73,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,3
+2026-01-06,H,NIU,Toledo,61,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,4
+2026-01-13,V,NIU,Eastern Mich.,59,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,5
+2026-01-17,H,NIU,Massachusetts,70,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,6
+2026-01-20,V,NIU,Ohio,77,80,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,7
+2026-01-24,V,NIU,Ball St.,53,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,8
+2026-01-27,H,NIU,Western Mich.,85,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,9
+2026-01-31,V,NIU,Miami (OH),61,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,10
+2026-02-11,H,NIU,Bowling Green,52,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,11
+2026-02-14,V,NIU,Central Mich.,46,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,12
+2026-02-17,V,NIU,Buffalo,72,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,13
+2026-02-21,H,NIU,Ohio,66,74,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,14
+2026-02-24,V,NIU,Toledo,69,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,15
+2026-02-28,H,NIU,Ball St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,16
+2026-03-03,H,NIU,Kent St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,17
+2026-03-06,V,NIU,Akron,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,18
+2025-12-20,H,Ohio,Bowling Green,58,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,1
+2025-12-30,V,Ohio,Central Mich.,80,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,2
+2026-01-03,V,Ohio,Eastern Mich.,68,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,3
+2026-01-06,H,Ohio,Massachusetts,86,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,4
+2026-01-10,H,Ohio,Buffalo,91,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,5
+2026-01-13,V,Ohio,Toledo,85,101,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,6
+2026-01-16,V,Ohio,Ball St.,71,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,7
+2026-01-20,H,Ohio,NIU,80,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,8
+2026-01-23,H,Ohio,Akron,65,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,9
+2026-01-27,V,Ohio,Kent St.,57,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,10
+2026-01-31,V,Ohio,Buffalo,95,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,11
+2026-02-03,H,Ohio,Western Mich.,91,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,12
+2026-02-13,V,Ohio,Miami (OH),74,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,13
+2026-02-17,H,Ohio,Ball St.,69,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,14
+2026-02-21,V,Ohio,NIU,74,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,15
+2026-02-28,H,Ohio,Toledo,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,16
+2026-03-03,V,Ohio,Massachusetts,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,17
+2026-03-06,H,Ohio,Miami (OH),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,18
+2025-12-30,H,Toledo,Western Mich.,84,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,1
+2026-01-03,V,Toledo,Central Mich.,78,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,2
+2026-01-06,V,Toledo,NIU,75,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,3
+2026-01-09,H,Toledo,Miami (OH),73,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,4
+2026-01-13,H,Toledo,Ohio,101,85,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,5
+2026-01-16,V,Toledo,Kent St.,84,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,6
+2026-01-20,V,Toledo,Massachusetts,82,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,7
+2026-01-24,H,Toledo,Bowling Green,73,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,8
+2026-01-27,V,Toledo,Akron,81,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,9
+2026-01-31,H,Toledo,Ball St.,73,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,10
+2026-02-03,H,Toledo,Kent St.,72,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,11
+2026-02-11,V,Toledo,Western Mich.,90,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Western_Michigan_Broncos_%282021%29_logo.svg/150px-Western_Michigan_Broncos_%282021%29_logo.svg.png,12
+2026-02-14,V,Toledo,Bowling Green,70,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,13
+2026-02-21,H,Toledo,Eastern Mich.,94,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,14
+2026-02-24,H,Toledo,NIU,79,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,15
+2026-02-28,V,Toledo,Ohio,NA,NA,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,16
+2026-03-03,V,Toledo,Miami (OH),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,17
+2026-03-06,H,Toledo,Buffalo,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,18
+2025-12-20,H,Western Mich.,Buffalo,71,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Buffalo_Bulls_logo.svg/320px-Buffalo_Bulls_logo.svg.png,1
+2025-12-30,V,Western Mich.,Toledo,79,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,2
+2026-01-06,V,Western Mich.,Miami (OH),76,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,3
+2026-01-10,H,Western Mich.,Eastern Mich.,79,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,4
+2026-01-13,H,Western Mich.,Massachusetts,82,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/UMass_Amherst_Athletics_logo.svg/294px-UMass_Amherst_Athletics_logo.svg.png,5
+2026-01-17,V,Western Mich.,Akron,89,104,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,6
+2026-01-20,H,Western Mich.,Bowling Green,54,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,7
+2026-01-24,H,Western Mich.,Central Mich.,77,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,8
+2026-01-27,V,Western Mich.,NIU,65,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/8/87/Northern_Illinois_Huskies_logo.svg/246px-Northern_Illinois_Huskies_logo.svg.png,9
+2026-02-03,V,Western Mich.,Ohio,71,91,FALSE,FALSE,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/195.png&h=300&w=300,10
+2026-02-11,H,Western Mich.,Toledo,79,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Toledo_Rockets_logo.svg/320px-Toledo_Rockets_logo.svg.png,11
+2026-02-14,V,Western Mich.,Eastern Mich.,76,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Eastern_Michigan_Eagles_logo.svg/211px-Eastern_Michigan_Eagles_logo.svg.png,12
+2026-02-17,H,Western Mich.,Akron,73,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Akron_Zips_logo.svg/200px-Akron_Zips_logo.svg.png,13
+2026-02-21,V,Western Mich.,Central Mich.,70,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Central_Michigan_Chippewas_logo.svg/200px-Central_Michigan_Chippewas_logo.svg.png,14
+2026-02-24,V,Western Mich.,Bowling Green,88,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Bowling_Green_Falcons_logo.svg/257px-Bowling_Green_Falcons_logo.svg.png,15
+2026-02-27,H,Western Mich.,Miami (OH),67,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Miami_Redhawks_logo.svg/317px-Miami_Redhawks_logo.svg.png,16
+2026-03-03,H,Western Mich.,Ball St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Ball_State_Cardinals_logo.svg/170px-Ball_State_Cardinals_logo.svg.png,17
+2026-03-06,V,Western Mich.,Kent St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Kent_State_athletic_logo.svg/320px-Kent_State_athletic_logo.svg.png,18

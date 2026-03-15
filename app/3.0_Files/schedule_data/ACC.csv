@@ -1,361 +1,325 @@
 date,location,team,opponent,team_score,opp_score,postponed,canceled,logo_url,game_id
-2024-12-07,V,Boston College,Wake Forest,66,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,1
-2024-12-21,H,Boston College,SMU,77,103,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,2
-2025-01-01,H,Boston College,Miami (FL),78,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,3
-2025-01-04,V,Boston College,Georgia Tech,64,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,4
-2025-01-11,H,Boston College,Syracuse,71,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,5
-2025-01-13,V,Boston College,Notre Dame,60,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,6
-2025-01-18,H,Boston College,Duke,63,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,7
-2025-01-21,V,Boston College,Virginia,56,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,8
-2025-01-25,V,Boston College,North Carolina,96,102,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,9
-2025-02-01,H,Boston College,Florida St.,77,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,10
-2025-02-05,H,Boston College,Louisville,58,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,11
-2025-02-08,V,Boston College,Syracuse,86,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,12
-2025-02-12,H,Boston College,Notre Dame,94,97,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,13
-2025-02-15,V,Boston College,NC State,62,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,14
-2025-02-18,H,Boston College,Virginia Tech,54,36,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,15
-2025-02-22,H,Boston College,Georgia Tech,69,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,16
-2025-02-26,V,Boston College,Stanford,60,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,17
-2025-03-01,V,Boston College,California,71,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,18
-2025-03-05,H,Boston College,Clemson,69,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,19
-2025-03-08,V,Boston College,Pittsburgh,67,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,20
-2024-12-07,H,California,Stanford,81,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,1
-2025-01-01,V,California,Pittsburgh,74,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,2
-2025-01-04,V,California,Clemson,68,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,3
-2025-01-08,H,California,Virginia,75,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,4
-2025-01-11,H,California,Virginia Tech,68,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,5
-2025-01-15,V,California,North Carolina,53,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,6
-2025-01-18,V,California,NC State,65,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,7
-2025-01-22,H,California,Florida St.,77,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,8
-2025-01-25,H,California,Miami (FL),98,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,9
-2025-01-29,V,California,SMU,65,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,10
-2025-02-01,H,California,Syracuse,66,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,11
-2025-02-05,H,California,NC State,74,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,12
-2025-02-08,H,California,Wake Forest,66,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,13
-2025-02-12,V,California,Duke,57,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,14
-2025-02-15,V,California,Georgia Tech,88,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,15
-2025-02-22,V,California,Stanford,61,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,16
-2025-02-26,H,California,SMU,77,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,17
-2025-03-01,H,California,Boston College,82,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,18
-2025-03-05,V,California,Louisville,68,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,19
-2025-03-08,V,California,Notre Dame,110,112,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,20
-2024-12-07,V,Clemson,Miami (FL),65,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,1
-2024-12-21,H,Clemson,Wake Forest,73,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,2
-2025-01-01,H,Clemson,Stanford,85,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,3
-2025-01-04,H,Clemson,California,80,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,4
-2025-01-07,V,Clemson,Louisville,64,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,5
-2025-01-11,H,Clemson,Florida St.,77,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,6
-2025-01-14,V,Clemson,Georgia Tech,70,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,7
-2025-01-18,V,Clemson,Pittsburgh,78,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,8
-2025-01-22,H,Clemson,Syracuse,86,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,9
-2025-01-25,V,Clemson,Virginia Tech,72,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,10
-2025-02-01,V,Clemson,NC State,68,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,11
-2025-02-04,H,Clemson,Georgia Tech,86,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,12
-2025-02-08,H,Clemson,Duke,77,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,13
-2025-02-10,H,Clemson,North Carolina,85,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,14
-2025-02-15,V,Clemson,Florida St.,72,46,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,15
-2025-02-22,V,Clemson,SMU,79,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,16
-2025-02-26,H,Clemson,Notre Dame,83,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,17
-2025-03-01,V,Clemson,Virginia,71,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,18
-2025-03-05,V,Clemson,Boston College,78,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,19
-2025-03-08,H,Clemson,Virginia Tech,65,47,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,20
-2024-12-08,V,Duke,Louisville,76,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,1
-2024-12-21,V,Duke,Georgia Tech,82,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,2
-2024-12-31,H,Duke,Virginia Tech,88,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,3
-2025-01-04,V,Duke,SMU,89,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,4
-2025-01-07,H,Duke,Pittsburgh,76,47,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,5
-2025-01-11,H,Duke,Notre Dame,86,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,6
-2025-01-14,H,Duke,Miami (FL),89,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,7
-2025-01-18,V,Duke,Boston College,88,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,8
-2025-01-25,V,Duke,Wake Forest,63,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,9
-2025-01-27,H,Duke,NC State,74,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,10
-2025-02-01,H,Duke,North Carolina,87,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,11
-2025-02-05,V,Duke,Syracuse,83,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,12
-2025-02-08,V,Duke,Clemson,71,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,13
-2025-02-12,H,Duke,California,78,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,14
-2025-02-15,H,Duke,Stanford,106,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,15
-2025-02-17,V,Duke,Virginia,80,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,16
-2025-02-25,V,Duke,Miami (FL),97,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,17
-2025-03-01,H,Duke,Florida St.,100,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,18
-2025-03-03,H,Duke,Wake Forest,93,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,19
-2025-03-08,V,Duke,North Carolina,82,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,20
-2024-12-07,V,Florida St.,NC State,74,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,1
-2024-12-21,H,Florida St.,Louisville,76,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,2
-2025-01-04,H,Florida St.,Syracuse,90,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,3
-2025-01-08,V,Florida St.,Miami (FL),80,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,4
-2025-01-11,V,Florida St.,Clemson,57,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,5
-2025-01-15,H,Florida St.,Pittsburgh,82,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,6
-2025-01-18,H,Florida St.,Georgia Tech,91,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,7
-2025-01-22,V,Florida St.,California,68,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,8
-2025-01-25,V,Florida St.,Stanford,71,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,9
-2025-01-29,H,Florida St.,Virginia Tech,66,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,10
-2025-02-01,V,Florida St.,Boston College,76,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,11
-2025-02-04,H,Florida St.,Notre Dame,67,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,12
-2025-02-12,V,Florida St.,Wake Forest,72,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,13
-2025-02-15,H,Florida St.,Clemson,46,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,14
-2025-02-19,H,Florida St.,Miami (FL),74,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,15
-2025-02-22,V,Florida St.,Louisville,81,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,16
-2025-02-24,H,Florida St.,North Carolina,85,96,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,17
-2025-03-01,V,Florida St.,Duke,65,100,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,18
-2025-03-04,V,Florida St.,Virginia,57,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,19
-2025-03-08,H,Florida St.,SMU,76,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,20
-2024-12-07,V,Georgia Tech,North Carolina,65,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,1
-2024-12-21,H,Georgia Tech,Duke,56,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,2
-2024-12-31,H,Georgia Tech,Notre Dame,86,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,3
-2025-01-04,H,Georgia Tech,Boston College,85,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,4
-2025-01-07,V,Georgia Tech,Syracuse,55,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,5
-2025-01-11,V,Georgia Tech,SMU,71,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,6
-2025-01-14,H,Georgia Tech,Clemson,59,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,7
-2025-01-18,V,Georgia Tech,Florida St.,78,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,8
-2025-01-22,H,Georgia Tech,Virginia Tech,71,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,9
-2025-01-28,V,Georgia Tech,Notre Dame,68,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,10
-2025-02-01,H,Georgia Tech,Louisville,77,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,11
-2025-02-04,V,Georgia Tech,Clemson,89,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,12
-2025-02-08,V,Georgia Tech,Virginia,61,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,13
-2025-02-12,H,Georgia Tech,Stanford,60,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,14
-2025-02-15,H,Georgia Tech,California,90,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,15
-2025-02-22,V,Georgia Tech,Boston College,54,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,16
-2025-02-25,V,Georgia Tech,Pittsburgh,73,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,17
-2025-03-01,H,Georgia Tech,NC State,87,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,18
-2025-03-04,H,Georgia Tech,Miami (FL),89,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,19
-2025-03-08,V,Georgia Tech,Wake Forest,43,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,20
-2024-12-08,H,Louisville,Duke,65,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,1
-2024-12-21,V,Louisville,Florida St.,90,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,2
-2025-01-01,H,Louisville,North Carolina,83,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,3
-2025-01-04,V,Louisville,Virginia,70,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,4
-2025-01-07,H,Louisville,Clemson,74,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,5
-2025-01-11,V,Louisville,Pittsburgh,82,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,6
-2025-01-14,V,Louisville,Syracuse,85,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,7
-2025-01-18,H,Louisville,Virginia,81,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,8
-2025-01-21,V,Louisville,SMU,98,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,9
-2025-01-28,H,Louisville,Wake Forest,72,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,10
-2025-02-01,V,Louisville,Georgia Tech,70,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,11
-2025-02-05,V,Louisville,Boston College,84,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,12
-2025-02-08,H,Louisville,Miami (FL),88,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,13
-2025-02-12,V,Louisville,NC State,91,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,14
-2025-02-16,V,Louisville,Notre Dame,75,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,15
-2025-02-22,H,Louisville,Florida St.,89,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,16
-2025-02-25,V,Louisville,Virginia Tech,71,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,17
-2025-03-01,H,Louisville,Pittsburgh,79,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,18
-2025-03-05,H,Louisville,California,85,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,19
-2025-03-08,H,Louisville,Stanford,68,48,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,20
-2024-12-07,H,Miami (FL),Clemson,55,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,1
-2025-01-01,V,Miami (FL),Boston College,68,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,2
-2025-01-04,V,Miami (FL),Virginia Tech,85,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,3
-2025-01-08,H,Miami (FL),Florida St.,65,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,4
-2025-01-11,H,Miami (FL),Wake Forest,78,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,5
-2025-01-14,V,Miami (FL),Duke,54,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,6
-2025-01-18,H,Miami (FL),SMU,74,117,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,7
-2025-01-22,V,Miami (FL),Stanford,51,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,8
-2025-01-25,V,Miami (FL),California,94,98,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,9
-2025-01-29,H,Miami (FL),Virginia,71,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,10
-2025-02-01,H,Miami (FL),Notre Dame,63,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,11
-2025-02-08,V,Miami (FL),Louisville,78,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,12
-2025-02-11,H,Miami (FL),Syracuse,91,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,13
-2025-02-15,V,Miami (FL),Pittsburgh,65,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,14
-2025-02-19,V,Miami (FL),Florida St.,66,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,15
-2025-02-22,H,Miami (FL),Virginia Tech,68,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,16
-2025-02-25,H,Miami (FL),Duke,60,97,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,17
-2025-03-01,V,Miami (FL),North Carolina,73,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,18
-2025-03-04,V,Miami (FL),Georgia Tech,74,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,19
-2025-03-08,H,Miami (FL),NC State,72,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,20
-2024-12-07,H,NC State,Florida St.,84,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,1
-2024-12-31,V,NC State,Virginia,67,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,2
-2025-01-04,V,NC State,Wake Forest,59,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,3
-2025-01-08,H,NC State,Notre Dame,66,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,4
-2025-01-11,H,NC State,North Carolina,61,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,5
-2025-01-15,V,NC State,Virginia Tech,76,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,6
-2025-01-18,H,NC State,California,62,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,7
-2025-01-25,H,NC State,SMU,57,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,8
-2025-01-27,V,NC State,Duke,64,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,9
-2025-02-01,H,NC State,Clemson,58,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,10
-2025-02-05,V,NC State,California,62,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,11
-2025-02-08,V,NC State,Stanford,73,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,12
-2025-02-12,H,NC State,Louisville,66,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,13
-2025-02-15,H,NC State,Boston College,70,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,14
-2025-02-19,V,NC State,North Carolina,73,97,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,15
-2025-02-22,H,NC State,Wake Forest,85,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,16
-2025-02-26,V,NC State,Syracuse,60,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,17
-2025-03-01,V,NC State,Georgia Tech,62,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,18
-2025-03-05,H,NC State,Pittsburgh,71,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,19
-2025-03-08,V,NC State,Miami (FL),70,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,20
-2024-12-07,H,North Carolina,Georgia Tech,68,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,1
-2025-01-01,V,North Carolina,Louisville,70,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,2
-2025-01-04,V,North Carolina,Notre Dame,74,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,3
-2025-01-07,H,North Carolina,SMU,82,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,4
-2025-01-11,V,North Carolina,NC State,63,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,5
-2025-01-15,H,North Carolina,California,79,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,6
-2025-01-18,H,North Carolina,Stanford,71,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,7
-2025-01-21,V,North Carolina,Wake Forest,66,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,8
-2025-01-25,H,North Carolina,Boston College,102,96,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,9
-2025-01-28,V,North Carolina,Pittsburgh,65,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,10
-2025-02-01,V,North Carolina,Duke,70,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,11
-2025-02-08,H,North Carolina,Pittsburgh,67,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,12
-2025-02-10,V,North Carolina,Clemson,65,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,13
-2025-02-15,V,North Carolina,Syracuse,88,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,14
-2025-02-19,H,North Carolina,NC State,97,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,15
-2025-02-22,H,North Carolina,Virginia,81,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,16
-2025-02-24,V,North Carolina,Florida St.,96,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,17
-2025-03-01,H,North Carolina,Miami (FL),92,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,18
-2025-03-04,V,North Carolina,Virginia Tech,91,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,19
-2025-03-08,H,North Carolina,Duke,69,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,20
-2024-12-07,H,Notre Dame,Syracuse,69,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,1
-2024-12-31,V,Notre Dame,Georgia Tech,75,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,2
-2025-01-04,H,Notre Dame,North Carolina,73,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,3
-2025-01-08,V,Notre Dame,NC State,65,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,4
-2025-01-11,V,Notre Dame,Duke,78,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,5
-2025-01-13,H,Notre Dame,Boston College,78,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,6
-2025-01-18,V,Notre Dame,Syracuse,69,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,7
-2025-01-25,V,Notre Dame,Virginia,74,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,8
-2025-01-28,H,Notre Dame,Georgia Tech,71,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,9
-2025-02-01,V,Notre Dame,Miami (FL),57,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,10
-2025-02-04,V,Notre Dame,Florida St.,60,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,11
-2025-02-08,H,Notre Dame,Virginia Tech,63,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,12
-2025-02-12,V,Notre Dame,Boston College,97,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,13
-2025-02-16,H,Notre Dame,Louisville,60,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,14
-2025-02-19,H,Notre Dame,SMU,73,97,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,15
-2025-02-22,H,Notre Dame,Pittsburgh,76,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,16
-2025-02-26,V,Notre Dame,Clemson,68,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,17
-2025-03-01,V,Notre Dame,Wake Forest,71,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,18
-2025-03-05,H,Notre Dame,Stanford,56,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,19
-2025-03-08,H,Notre Dame,California,112,110,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,20
-2024-12-07,V,Pittsburgh,Virginia Tech,64,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,1
-2025-01-01,H,Pittsburgh,California,86,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,2
-2025-01-04,H,Pittsburgh,Stanford,83,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,3
-2025-01-07,V,Pittsburgh,Duke,47,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,4
-2025-01-11,H,Pittsburgh,Louisville,78,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,5
-2025-01-15,V,Pittsburgh,Florida St.,70,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,6
-2025-01-18,H,Pittsburgh,Clemson,75,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,7
-2025-01-25,V,Pittsburgh,Syracuse,77,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,8
-2025-01-28,H,Pittsburgh,North Carolina,73,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,9
-2025-02-01,V,Pittsburgh,Wake Forest,74,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,10
-2025-02-03,H,Pittsburgh,Virginia,57,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,11
-2025-02-08,V,Pittsburgh,North Carolina,66,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,12
-2025-02-11,V,Pittsburgh,SMU,63,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,13
-2025-02-15,H,Pittsburgh,Miami (FL),74,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,14
-2025-02-18,H,Pittsburgh,Syracuse,80,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,15
-2025-02-22,V,Pittsburgh,Notre Dame,72,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,16
-2025-02-25,H,Pittsburgh,Georgia Tech,67,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,17
-2025-03-01,V,Pittsburgh,Louisville,68,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,18
-2025-03-05,V,Pittsburgh,NC State,63,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,19
-2025-03-08,H,Pittsburgh,Boston College,93,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,20
-2024-12-07,H,SMU,Virginia,63,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,1
-2024-12-21,V,SMU,Boston College,103,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,2
-2025-01-04,H,SMU,Duke,62,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,3
-2025-01-07,V,SMU,North Carolina,67,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,4
-2025-01-11,H,SMU,Georgia Tech,93,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,5
-2025-01-15,V,SMU,Virginia,54,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,6
-2025-01-18,V,SMU,Miami (FL),117,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,7
-2025-01-21,H,SMU,Louisville,73,98,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,8
-2025-01-25,V,SMU,NC State,63,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,9
-2025-01-29,H,SMU,California,76,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,10
-2025-02-01,H,SMU,Stanford,85,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,11
-2025-02-05,V,SMU,Virginia Tech,81,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,12
-2025-02-11,H,SMU,Pittsburgh,83,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,13
-2025-02-15,H,SMU,Wake Forest,66,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,14
-2025-02-19,V,SMU,Notre Dame,97,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,15
-2025-02-22,H,SMU,Clemson,69,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,16
-2025-02-26,V,SMU,California,81,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,17
-2025-03-01,V,SMU,Stanford,68,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,18
-2025-03-04,H,SMU,Syracuse,77,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,19
-2025-03-08,V,SMU,Florida St.,69,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,20
-2024-12-07,V,Stanford,California,89,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,1
-2025-01-01,V,Stanford,Clemson,71,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,2
-2025-01-04,V,Stanford,Pittsburgh,68,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,3
-2025-01-08,H,Stanford,Virginia Tech,70,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,4
-2025-01-11,H,Stanford,Virginia,88,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,5
-2025-01-15,V,Stanford,Wake Forest,67,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,6
-2025-01-18,V,Stanford,North Carolina,72,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,7
-2025-01-22,H,Stanford,Miami (FL),88,51,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,8
-2025-01-25,H,Stanford,Florida St.,78,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,9
-2025-01-29,H,Stanford,Syracuse,70,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,10
-2025-02-01,V,Stanford,SMU,61,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,11
-2025-02-05,H,Stanford,Wake Forest,73,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,12
-2025-02-08,H,Stanford,NC State,74,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,13
-2025-02-12,V,Stanford,Georgia Tech,52,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,14
-2025-02-15,V,Stanford,Duke,70,106,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,15
-2025-02-22,H,Stanford,California,66,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,16
-2025-02-26,H,Stanford,Boston College,78,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,17
-2025-03-01,H,Stanford,SMU,73,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,18
-2025-03-05,V,Stanford,Notre Dame,54,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,19
-2025-03-08,V,Stanford,Louisville,48,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,20
-2024-12-07,V,Syracuse,Notre Dame,64,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,1
-2024-12-31,H,Syracuse,Wake Forest,71,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,2
-2025-01-04,V,Syracuse,Florida St.,74,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,3
-2025-01-07,H,Syracuse,Georgia Tech,62,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,4
-2025-01-11,V,Syracuse,Boston College,79,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,5
-2025-01-14,H,Syracuse,Louisville,61,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,6
-2025-01-18,H,Syracuse,Notre Dame,77,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,7
-2025-01-22,V,Syracuse,Clemson,72,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,8
-2025-01-25,H,Syracuse,Pittsburgh,73,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,9
-2025-01-29,V,Syracuse,Stanford,61,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,10
-2025-02-01,V,Syracuse,California,75,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,11
-2025-02-05,H,Syracuse,Duke,54,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,12
-2025-02-08,H,Syracuse,Boston College,95,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,13
-2025-02-11,V,Syracuse,Miami (FL),84,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,14
-2025-02-15,H,Syracuse,North Carolina,82,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,15
-2025-02-18,V,Syracuse,Pittsburgh,69,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,16
-2025-02-26,H,Syracuse,NC State,74,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,17
-2025-03-01,V,Syracuse,Virginia Tech,95,101,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,18
-2025-03-04,V,Syracuse,SMU,75,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,19
-2025-03-08,H,Syracuse,Virginia,84,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,20
-2024-12-07,V,Virginia,SMU,51,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,1
-2024-12-31,H,Virginia,NC State,70,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,2
-2025-01-04,H,Virginia,Louisville,50,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,3
-2025-01-08,V,Virginia,California,61,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,4
-2025-01-11,V,Virginia,Stanford,65,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,5
-2025-01-15,H,Virginia,SMU,52,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,6
-2025-01-18,V,Virginia,Louisville,67,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,7
-2025-01-21,H,Virginia,Boston College,74,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,8
-2025-01-25,H,Virginia,Notre Dame,59,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,9
-2025-01-29,V,Virginia,Miami (FL),82,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,10
-2025-02-01,H,Virginia,Virginia Tech,74,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,11
-2025-02-03,V,Virginia,Pittsburgh,73,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,12
-2025-02-08,H,Virginia,Georgia Tech,75,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,13
-2025-02-15,V,Virginia,Virginia Tech,73,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,14
-2025-02-17,H,Virginia,Duke,62,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,15
-2025-02-22,V,Virginia,North Carolina,66,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,16
-2025-02-26,V,Virginia,Wake Forest,83,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,17
-2025-03-01,H,Virginia,Clemson,58,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,18
-2025-03-04,H,Virginia,Florida St.,60,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,19
-2025-03-08,V,Virginia,Syracuse,70,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,20
-2024-12-07,H,Virginia Tech,Pittsburgh,59,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,1
-2024-12-31,V,Virginia Tech,Duke,65,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,2
-2025-01-04,H,Virginia Tech,Miami (FL),86,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,3
-2025-01-08,V,Virginia Tech,Stanford,59,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,4
-2025-01-11,V,Virginia Tech,California,71,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,5
-2025-01-15,H,Virginia Tech,NC State,79,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,6
-2025-01-18,H,Virginia Tech,Wake Forest,63,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,7
-2025-01-22,V,Virginia Tech,Georgia Tech,64,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,8
-2025-01-25,H,Virginia Tech,Clemson,57,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,9
-2025-01-29,V,Virginia Tech,Florida St.,76,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,10
-2025-02-01,V,Virginia Tech,Virginia,75,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,11
-2025-02-05,H,Virginia Tech,SMU,75,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,12
-2025-02-08,V,Virginia Tech,Notre Dame,65,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,13
-2025-02-15,H,Virginia Tech,Virginia,70,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,14
-2025-02-18,V,Virginia Tech,Boston College,36,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,15
-2025-02-22,V,Virginia Tech,Miami (FL),81,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,16
-2025-02-25,H,Virginia Tech,Louisville,66,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,17
-2025-03-01,H,Virginia Tech,Syracuse,101,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,18
-2025-03-04,H,Virginia Tech,North Carolina,59,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,19
-2025-03-08,V,Virginia Tech,Clemson,47,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,20
-2024-12-07,H,Wake Forest,Boston College,72,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,1
-2024-12-21,V,Wake Forest,Clemson,62,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,2
-2024-12-31,V,Wake Forest,Syracuse,81,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,3
-2025-01-04,H,Wake Forest,NC State,77,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,4
-2025-01-11,V,Wake Forest,Miami (FL),88,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,5
-2025-01-15,H,Wake Forest,Stanford,80,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,6
-2025-01-18,V,Wake Forest,Virginia Tech,72,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,7
-2025-01-21,H,Wake Forest,North Carolina,67,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,8
-2025-01-25,H,Wake Forest,Duke,56,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,9
-2025-01-28,V,Wake Forest,Louisville,59,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,10
-2025-02-01,H,Wake Forest,Pittsburgh,76,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,11
-2025-02-05,V,Wake Forest,Stanford,79,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,12
-2025-02-08,V,Wake Forest,California,76,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,13
-2025-02-12,H,Wake Forest,Florida St.,70,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,14
-2025-02-15,V,Wake Forest,SMU,77,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,15
-2025-02-22,V,Wake Forest,NC State,73,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,16
-2025-02-26,H,Wake Forest,Virginia,75,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,17
-2025-03-01,H,Wake Forest,Notre Dame,74,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,18
-2025-03-03,V,Wake Forest,Duke,60,93,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,19
-2025-03-08,H,Wake Forest,Georgia Tech,69,43,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,20
+2026-01-03,V,Boston College,Georgia Tech,53,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,1
+2026-01-06,H,Boston College,NC State,71,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,2
+2026-01-10,V,Boston College,Louisville,62,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,3
+2026-01-13,V,Boston College,Clemson,50,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,4
+2026-01-17,H,Boston College,Syracuse,81,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,5
+2026-01-21,H,Boston College,Pittsburgh,65,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,6
+2026-01-24,V,Boston College,Notre Dame,64,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,7
+2026-01-31,H,Boston College,Virginia,66,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,8
+2026-02-03,V,Boston College,Duke,49,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,9
+2026-02-07,H,Boston College,Miami (FL),68,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,10
+2026-02-11,H,Boston College,Stanford,64,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,11
+2026-02-14,H,Boston College,California,75,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,12
+2026-02-17,V,Boston College,Florida St.,72,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,13
+2026-02-21,V,Boston College,SMU,70,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,14
+2026-02-25,H,Boston College,Wake Forest,68,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,15
+2026-02-28,V,Boston College,Miami (FL),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,16
+2026-03-03,V,Boston College,Virginia Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,17
+2026-03-07,H,Boston College,Notre Dame,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,18
+2025-12-30,H,California,Louisville,70,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,1
+2026-01-02,H,California,Notre Dame,72,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,2
+2026-01-07,V,California,Virginia,60,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,3
+2026-01-10,V,California,Virginia Tech,75,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,4
+2026-01-14,H,California,Duke,56,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,5
+2026-01-17,H,California,North Carolina,84,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,6
+2026-01-24,V,California,Stanford,78,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,7
+2026-01-28,V,California,Florida St.,61,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,8
+2026-01-31,V,California,Miami (FL),86,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,9
+2026-02-04,H,California,Georgia Tech,90,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,10
+2026-02-07,H,California,Clemson,55,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,11
+2026-02-11,V,California,Syracuse,100,107,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,12
+2026-02-14,V,California,Boston College,86,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,13
+2026-02-21,H,California,Stanford,72,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,14
+2026-02-25,H,California,SMU,73,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,15
+2026-02-28,H,California,Pittsburgh,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,16
+2026-03-04,V,California,Georgia Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,17
+2026-03-07,V,California,Wake Forest,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,18
+2025-12-31,V,Clemson,Syracuse,64,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,1
+2026-01-03,V,Clemson,Pittsburgh,73,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,2
+2026-01-07,H,Clemson,SMU,74,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,3
+2026-01-10,V,Clemson,Notre Dame,76,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,4
+2026-01-13,H,Clemson,Boston College,74,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,5
+2026-01-17,H,Clemson,Miami (FL),69,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,6
+2026-01-20,H,Clemson,NC State,76,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,7
+2026-01-24,V,Clemson,Georgia Tech,77,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,8
+2026-01-31,H,Clemson,Pittsburgh,63,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,9
+2026-02-04,V,Clemson,Stanford,66,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,10
+2026-02-07,V,Clemson,California,77,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,11
+2026-02-11,H,Clemson,Virginia Tech,66,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,12
+2026-02-14,V,Clemson,Duke,54,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,13
+2026-02-18,V,Clemson,Wake Forest,77,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,14
+2026-02-21,H,Clemson,Florida St.,65,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,15
+2026-02-28,H,Clemson,Louisville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,16
+2026-03-03,V,Clemson,North Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,17
+2026-03-07,H,Clemson,Georgia Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,18
+2025-12-31,H,Duke,Georgia Tech,85,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,1
+2026-01-03,V,Duke,Florida St.,91,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,2
+2026-01-06,V,Duke,Louisville,84,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,3
+2026-01-10,H,Duke,SMU,82,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,4
+2026-01-14,V,Duke,California,71,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,5
+2026-01-17,V,Duke,Stanford,80,50,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,6
+2026-01-24,H,Duke,Wake Forest,90,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,7
+2026-01-26,H,Duke,Louisville,83,52,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,8
+2026-01-31,V,Duke,Virginia Tech,72,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,9
+2026-02-03,H,Duke,Boston College,67,49,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,10
+2026-02-07,V,Duke,North Carolina,68,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,11
+2026-02-10,V,Duke,Pittsburgh,70,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,12
+2026-02-14,H,Duke,Clemson,67,54,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,13
+2026-02-16,H,Duke,Syracuse,101,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,14
+2026-02-24,V,Duke,Notre Dame,100,56,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,15
+2026-02-28,H,Duke,Virginia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,16
+2026-03-02,V,Duke,NC State,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,17
+2026-03-07,H,Duke,North Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,18
+2025-12-30,V,Florida St.,North Carolina,66,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,1
+2026-01-03,H,Florida St.,Duke,87,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,2
+2026-01-10,H,Florida St.,NC State,69,113,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,3
+2026-01-13,V,Florida St.,Syracuse,86,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,4
+2026-01-17,H,Florida St.,Wake Forest,68,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,5
+2026-01-20,V,Florida St.,Miami (FL),65,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,6
+2026-01-24,V,Florida St.,SMU,80,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,7
+2026-01-28,H,Florida St.,California,63,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,8
+2026-01-31,H,Florida St.,Stanford,88,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,9
+2026-02-07,V,Florida St.,Notre Dame,82,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,10
+2026-02-10,H,Florida St.,Virginia,58,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,11
+2026-02-14,V,Florida St.,Virginia Tech,92,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,12
+2026-02-17,H,Florida St.,Boston College,80,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,13
+2026-02-21,V,Florida St.,Clemson,70,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,14
+2026-02-24,H,Florida St.,Miami (FL),73,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,15
+2026-02-28,V,Florida St.,Georgia Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,16
+2026-03-04,V,Florida St.,Pittsburgh,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,17
+2026-03-07,H,Florida St.,SMU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,18
+2025-12-31,V,Georgia Tech,Duke,79,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,1
+2026-01-03,H,Georgia Tech,Boston College,65,53,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,2
+2026-01-06,H,Georgia Tech,Syracuse,72,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,3
+2026-01-10,V,Georgia Tech,Miami (FL),81,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,4
+2026-01-14,H,Georgia Tech,Pittsburgh,66,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,5
+2026-01-17,V,Georgia Tech,NC State,78,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,6
+2026-01-24,H,Georgia Tech,Clemson,63,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,7
+2026-01-27,V,Georgia Tech,Virginia Tech,65,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,8
+2026-01-31,H,Georgia Tech,North Carolina,75,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,9
+2026-02-04,V,Georgia Tech,California,85,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,10
+2026-02-07,V,Georgia Tech,Stanford,72,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,11
+2026-02-11,H,Georgia Tech,Wake Forest,67,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,12
+2026-02-14,V,Georgia Tech,Notre Dame,74,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,13
+2026-02-18,H,Georgia Tech,Virginia,68,94,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,14
+2026-02-21,V,Georgia Tech,Louisville,70,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,15
+2026-02-28,H,Georgia Tech,Florida St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,16
+2026-03-04,H,Georgia Tech,California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,17
+2026-03-07,V,Georgia Tech,Clemson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,18
+2025-12-30,V,Louisville,California,90,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,1
+2026-01-02,V,Louisville,Stanford,76,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,2
+2026-01-06,H,Louisville,Duke,73,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,3
+2026-01-10,H,Louisville,Boston College,75,62,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,4
+2026-01-13,H,Louisville,Virginia,70,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,5
+2026-01-17,V,Louisville,Pittsburgh,100,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,6
+2026-01-24,H,Louisville,Virginia Tech,85,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,7
+2026-01-26,V,Louisville,Duke,52,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,8
+2026-01-31,H,Louisville,SMU,88,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,9
+2026-02-04,H,Louisville,Notre Dame,76,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,10
+2026-02-07,V,Louisville,Wake Forest,88,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,11
+2026-02-09,H,Louisville,NC State,118,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,12
+2026-02-17,V,Louisville,SMU,85,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,13
+2026-02-21,H,Louisville,Georgia Tech,87,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,14
+2026-02-23,V,Louisville,North Carolina,74,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,15
+2026-02-28,V,Louisville,Clemson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,16
+2026-03-03,H,Louisville,Syracuse,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,17
+2026-03-07,V,Louisville,Miami (FL),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,18
+2025-12-30,H,Miami (FL),Pittsburgh,76,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,1
+2026-01-07,V,Miami (FL),Wake Forest,81,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,2
+2026-01-10,H,Miami (FL),Georgia Tech,91,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,3
+2026-01-13,V,Miami (FL),Notre Dame,81,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,4
+2026-01-17,V,Miami (FL),Clemson,59,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,5
+2026-01-20,H,Miami (FL),Florida St.,63,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,6
+2026-01-24,V,Miami (FL),Syracuse,85,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,7
+2026-01-28,H,Miami (FL),Stanford,79,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,8
+2026-01-31,H,Miami (FL),California,85,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,9
+2026-02-07,V,Miami (FL),Boston College,74,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,10
+2026-02-10,H,Miami (FL),North Carolina,75,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,11
+2026-02-14,V,Miami (FL),NC State,77,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,12
+2026-02-17,H,Miami (FL),Virginia Tech,67,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,13
+2026-02-21,V,Miami (FL),Virginia,83,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,14
+2026-02-24,V,Miami (FL),Florida St.,83,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,15
+2026-02-28,H,Miami (FL),Boston College,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,16
+2026-03-04,V,Miami (FL),SMU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,17
+2026-03-07,H,Miami (FL),Louisville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,18
+2025-12-31,H,NC State,Wake Forest,70,57,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,1
+2026-01-03,H,NC State,Virginia,61,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,2
+2026-01-06,V,NC State,Boston College,79,71,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,3
+2026-01-10,V,NC State,Florida St.,113,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,4
+2026-01-17,H,NC State,Georgia Tech,74,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,5
+2026-01-20,V,NC State,Clemson,80,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,6
+2026-01-24,V,NC State,Pittsburgh,81,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,7
+2026-01-27,H,NC State,Syracuse,88,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,8
+2026-01-31,V,NC State,Wake Forest,96,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,9
+2026-02-03,V,NC State,SMU,84,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,10
+2026-02-07,H,NC State,Virginia Tech,82,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,11
+2026-02-09,V,NC State,Louisville,77,118,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,12
+2026-02-14,H,NC State,Miami (FL),76,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,13
+2026-02-17,H,NC State,North Carolina,82,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,14
+2026-02-24,V,NC State,Virginia,61,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,15
+2026-02-28,V,NC State,Notre Dame,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,16
+2026-03-02,H,NC State,Duke,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,17
+2026-03-07,H,NC State,Stanford,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,18
+2025-12-30,H,North Carolina,Florida St.,79,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,1
+2026-01-03,V,North Carolina,SMU,83,97,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,2
+2026-01-10,H,North Carolina,Wake Forest,87,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,3
+2026-01-14,V,North Carolina,Stanford,90,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,4
+2026-01-17,V,North Carolina,California,78,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,5
+2026-01-21,H,North Carolina,Notre Dame,91,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,6
+2026-01-24,V,North Carolina,Virginia,85,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,7
+2026-01-31,V,North Carolina,Georgia Tech,91,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,8
+2026-02-02,H,North Carolina,Syracuse,87,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,9
+2026-02-07,H,North Carolina,Duke,71,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,10
+2026-02-10,V,North Carolina,Miami (FL),66,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,11
+2026-02-14,H,North Carolina,Pittsburgh,79,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,12
+2026-02-17,V,North Carolina,NC State,58,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,13
+2026-02-21,V,North Carolina,Syracuse,77,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,14
+2026-02-23,H,North Carolina,Louisville,77,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,15
+2026-02-28,H,North Carolina,Virginia Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,16
+2026-03-03,H,North Carolina,Clemson,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,17
+2026-03-07,V,North Carolina,Duke,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,18
+2025-12-30,V,Notre Dame,Stanford,47,40,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,1
+2026-01-02,V,Notre Dame,California,71,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,2
+2026-01-10,H,Notre Dame,Clemson,61,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,3
+2026-01-13,H,Notre Dame,Miami (FL),69,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,4
+2026-01-17,V,Notre Dame,Virginia Tech,76,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,5
+2026-01-21,V,Notre Dame,North Carolina,69,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,6
+2026-01-24,H,Notre Dame,Boston College,68,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,7
+2026-01-27,H,Notre Dame,Virginia,97,100,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,8
+2026-01-31,V,Notre Dame,Syracuse,72,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,9
+2026-02-04,V,Notre Dame,Louisville,65,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,10
+2026-02-07,H,Notre Dame,Florida St.,79,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,11
+2026-02-10,V,Notre Dame,SMU,81,89,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,12
+2026-02-14,H,Notre Dame,Georgia Tech,89,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,13
+2026-02-21,V,Notre Dame,Pittsburgh,68,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,14
+2026-02-24,H,Notre Dame,Duke,56,100,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,15
+2026-02-28,H,Notre Dame,NC State,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,16
+2026-03-04,H,Notre Dame,Stanford,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,17
+2026-03-07,V,Notre Dame,Boston College,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,18
+2025-12-30,V,Pittsburgh,Miami (FL),69,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,1
+2026-01-03,H,Pittsburgh,Clemson,68,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,2
+2026-01-10,H,Pittsburgh,Syracuse,72,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,3
+2026-01-14,V,Pittsburgh,Georgia Tech,89,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,4
+2026-01-17,H,Pittsburgh,Louisville,59,100,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,5
+2026-01-21,V,Pittsburgh,Boston College,62,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,6
+2026-01-24,H,Pittsburgh,NC State,72,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,7
+2026-01-27,H,Pittsburgh,Wake Forest,80,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,8
+2026-01-31,V,Pittsburgh,Clemson,52,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,9
+2026-02-03,V,Pittsburgh,Virginia,47,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,10
+2026-02-07,H,Pittsburgh,SMU,67,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,11
+2026-02-10,H,Pittsburgh,Duke,54,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,12
+2026-02-14,V,Pittsburgh,North Carolina,65,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,13
+2026-02-21,H,Pittsburgh,Notre Dame,73,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,14
+2026-02-25,V,Pittsburgh,Stanford,67,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,15
+2026-02-28,V,Pittsburgh,California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,16
+2026-03-04,H,Pittsburgh,Florida St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,17
+2026-03-07,V,Pittsburgh,Syracuse,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,18
+2026-01-03,H,SMU,North Carolina,97,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,1
+2026-01-07,V,SMU,Clemson,70,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,2
+2026-01-10,V,SMU,Duke,75,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,3
+2026-01-14,H,SMU,Virginia Tech,77,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,4
+2026-01-17,H,SMU,Virginia,68,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,5
+2026-01-20,V,SMU,Wake Forest,91,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,6
+2026-01-24,H,SMU,Florida St.,83,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,7
+2026-01-31,V,SMU,Louisville,74,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,8
+2026-02-03,H,SMU,NC State,83,84,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,9
+2026-02-07,V,SMU,Pittsburgh,86,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,10
+2026-02-10,H,SMU,Notre Dame,89,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,11
+2026-02-14,V,SMU,Syracuse,78,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,12
+2026-02-17,H,SMU,Louisville,95,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,13
+2026-02-21,H,SMU,Boston College,94,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,14
+2026-02-25,V,SMU,California,69,73,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,15
+2026-02-28,V,SMU,Stanford,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,16
+2026-03-04,H,SMU,Miami (FL),NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,17
+2026-03-07,V,SMU,Florida St.,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,18
+2025-12-30,H,Stanford,Notre Dame,40,47,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,1
+2026-01-02,H,Stanford,Louisville,80,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,2
+2026-01-07,V,Stanford,Virginia Tech,69,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,3
+2026-01-10,V,Stanford,Virginia,55,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,4
+2026-01-14,H,Stanford,North Carolina,95,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,5
+2026-01-17,H,Stanford,Duke,50,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,6
+2026-01-24,H,Stanford,California,66,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,7
+2026-01-28,V,Stanford,Miami (FL),70,79,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,8
+2026-01-31,V,Stanford,Florida St.,80,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,9
+2026-02-04,H,Stanford,Clemson,64,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,10
+2026-02-07,H,Stanford,Georgia Tech,95,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,11
+2026-02-11,V,Stanford,Boston College,70,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,12
+2026-02-14,V,Stanford,Wake Forest,63,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,13
+2026-02-21,V,Stanford,California,66,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,14
+2026-02-25,H,Stanford,Pittsburgh,75,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,15
+2026-02-28,H,Stanford,SMU,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,16
+2026-03-04,V,Stanford,Notre Dame,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,17
+2026-03-07,V,Stanford,NC State,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,18
+2025-12-31,H,Syracuse,Clemson,61,64,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,1
+2026-01-06,V,Syracuse,Georgia Tech,82,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,2
+2026-01-10,V,Syracuse,Pittsburgh,83,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,3
+2026-01-13,H,Syracuse,Florida St.,94,86,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,4
+2026-01-17,V,Syracuse,Boston College,73,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,5
+2026-01-21,H,Syracuse,Virginia Tech,74,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,6
+2026-01-24,H,Syracuse,Miami (FL),76,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,7
+2026-01-27,V,Syracuse,NC State,68,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,8
+2026-01-31,H,Syracuse,Notre Dame,86,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,9
+2026-02-02,V,Syracuse,North Carolina,77,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,10
+2026-02-07,V,Syracuse,Virginia,59,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,11
+2026-02-11,H,Syracuse,California,107,100,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,12
+2026-02-14,H,Syracuse,SMU,79,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,13
+2026-02-16,V,Syracuse,Duke,64,101,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,14
+2026-02-21,H,Syracuse,North Carolina,64,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,15
+2026-02-28,V,Syracuse,Wake Forest,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,16
+2026-03-03,V,Syracuse,Louisville,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,17
+2026-03-07,H,Syracuse,Pittsburgh,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,18
+2025-12-31,V,Virginia,Virginia Tech,85,95,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,1
+2026-01-03,V,Virginia,NC State,76,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,2
+2026-01-07,H,Virginia,California,84,60,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,3
+2026-01-10,H,Virginia,Stanford,70,55,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,4
+2026-01-13,V,Virginia,Louisville,79,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,5
+2026-01-17,V,Virginia,SMU,72,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,6
+2026-01-24,H,Virginia,North Carolina,80,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,7
+2026-01-27,V,Virginia,Notre Dame,100,97,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,8
+2026-01-31,V,Virginia,Boston College,73,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,9
+2026-02-03,H,Virginia,Pittsburgh,67,47,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,10
+2026-02-07,H,Virginia,Syracuse,72,59,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,11
+2026-02-10,V,Virginia,Florida St.,61,58,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,12
+2026-02-18,V,Virginia,Georgia Tech,94,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,13
+2026-02-21,H,Virginia,Miami (FL),86,83,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,14
+2026-02-24,H,Virginia,NC State,90,61,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,15
+2026-02-28,V,Virginia,Duke,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,16
+2026-03-03,H,Virginia,Wake Forest,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,17
+2026-03-07,H,Virginia,Virginia Tech,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,18
+2025-12-31,H,Virginia Tech,Virginia,95,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,1
+2026-01-03,V,Virginia Tech,Wake Forest,78,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,2
+2026-01-07,H,Virginia Tech,Stanford,68,69,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,3
+2026-01-10,H,Virginia Tech,California,78,75,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,4
+2026-01-14,V,Virginia Tech,SMU,76,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,5
+2026-01-17,H,Virginia Tech,Notre Dame,89,76,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Notre_Dame_Fighting_Irish_logo.svg/267px-Notre_Dame_Fighting_Irish_logo.svg.png,6
+2026-01-21,V,Virginia Tech,Syracuse,76,74,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,7
+2026-01-24,V,Virginia Tech,Louisville,71,85,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,8
+2026-01-27,H,Virginia Tech,Georgia Tech,71,65,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,9
+2026-01-31,H,Virginia Tech,Duke,58,72,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,10
+2026-02-07,V,Virginia Tech,NC State,73,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,11
+2026-02-11,V,Virginia Tech,Clemson,76,66,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,12
+2026-02-14,H,Virginia Tech,Florida St.,69,92,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,13
+2026-02-17,V,Virginia Tech,Miami (FL),66,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,14
+2026-02-21,H,Virginia Tech,Wake Forest,82,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wake_Forest_University_Athletic_logo.svg/320px-Wake_Forest_University_Athletic_logo.svg.png,15
+2026-02-28,V,Virginia Tech,North Carolina,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,16
+2026-03-03,H,Virginia Tech,Boston College,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,17
+2026-03-07,V,Virginia Tech,Virginia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,18
+2025-12-31,V,Wake Forest,NC State,57,70,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,1
+2026-01-03,H,Wake Forest,Virginia Tech,81,78,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,2
+2026-01-07,H,Wake Forest,Miami (FL),77,81,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/320px-Miami_Hurricanes_logo.svg.png,3
+2026-01-10,V,Wake Forest,North Carolina,84,87,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/304px-North_Carolina_Tar_Heels_logo.svg.png,4
+2026-01-17,V,Wake Forest,Florida St.,69,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Florida_State_Seminoles_logo.svg/235px-Florida_State_Seminoles_logo.svg.png,5
+2026-01-20,H,Wake Forest,SMU,79,91,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SMU_Mustang_logo.svg/320px-SMU_Mustang_logo.svg.png,6
+2026-01-24,V,Wake Forest,Duke,69,90,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Duke_Athletics_logo.svg/200px-Duke_Athletics_logo.svg.png,7
+2026-01-27,V,Wake Forest,Pittsburgh,76,80,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Pitt_Panthers_wordmark.svg/320px-Pitt_Panthers_wordmark.svg.png,8
+2026-01-31,H,Wake Forest,NC State,78,96,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_Carolina_State_University_Athletic_logo.svg/202px-North_Carolina_State_University_Athletic_logo.svg.png,9
+2026-02-07,H,Wake Forest,Louisville,80,88,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Louisville_Cardinals_logo.svg/218px-Louisville_Cardinals_logo.svg.png,10
+2026-02-11,V,Wake Forest,Georgia Tech,83,67,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Georgia_Tech_Yellow_Jackets_logo.svg/320px-Georgia_Tech_Yellow_Jackets_logo.svg.png,11
+2026-02-14,H,Wake Forest,Stanford,68,63,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Stanford_Cardinal_logo.svg/157px-Stanford_Cardinal_logo.svg.png,12
+2026-02-18,H,Wake Forest,Clemson,85,77,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Clemson_Tigers_logo.svg/251px-Clemson_Tigers_logo.svg.png,13
+2026-02-21,V,Wake Forest,Virginia Tech,63,82,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Virginia_Tech_Hokies_logo.svg/320px-Virginia_Tech_Hokies_logo.svg.png,14
+2026-02-25,V,Wake Forest,Boston College,67,68,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/9/96/Boston_College_Eagles_logo.svg/264px-Boston_College_Eagles_logo.svg.png,15
+2026-02-28,H,Wake Forest,Syracuse,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Syracuse_Orange_logo.svg/177px-Syracuse_Orange_logo.svg.png,16
+2026-03-03,V,Wake Forest,Virginia,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Virginia_Cavaliers_sabre.svg/320px-Virginia_Cavaliers_sabre.svg.png,17
+2026-03-07,H,Wake Forest,California,NA,NA,FALSE,FALSE,https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/California_Golden_Bears_logo.svg/200px-California_Golden_Bears_logo.svg.png,18

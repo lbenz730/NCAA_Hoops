@@ -21,7 +21,7 @@ replace_na <- function(x, r) {
 glm.pointspread <- readRDS("glm_pointspread.rds")
 ncaa_sims <- read_csv('3.0_Files/ncaa_sims/ncaa_sims.csv')
 seed_list <- read_csv('3.0_Files/ncaa_sims/seed_list.csv')
-t_confs <- gsub('\\.csv', '', dir('3.0_Files/Predictions/conf_tourney_sims/2024-25', full.names = F)) ### Change when update
+t_confs <- gsub('\\.csv', '', dir('3.0_Files/Predictions/conf_tourney_sims/2025-26', full.names = F)) ### Change when update
 
 
 
@@ -107,7 +107,7 @@ records_actual <-
             "conf_losses" = sum(1 - wins[conf_game& !is.na(team_score) ])) %>%
   ungroup()
 
-non_d1 <- read_csv(paste0("3.0_Files/Results/2024-25/NCAA_Hoops_Results_",
+non_d1 <- read_csv(paste0("3.0_Files/Results/2025-26/NCAA_Hoops_Results_",
                           paste(gsub("^0", "", unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)]), collapse = "_"),
                           ".csv")) %>% 
   filter(D1 == 1) %>%
@@ -121,7 +121,7 @@ non_d1 <- read_csv(paste0("3.0_Files/Results/2024-25/NCAA_Hoops_Results_",
   rename("team_conf" = conference) %>%
   ungroup()
 
-non_d1_actual <- read_csv(paste0("3.0_Files/Results/2024-25/NCAA_Hoops_Results_",
+non_d1_actual <- read_csv(paste0("3.0_Files/Results/2025-26/NCAA_Hoops_Results_",
                                  paste(gsub("^0", "", unlist(strsplit(as.character(max(history$date)), "-"))[c(2,3,1)]), collapse = "_"),
                                  ".csv")) %>% 
   filter(D1 == 1) %>%
@@ -407,7 +407,7 @@ make_table <- function(sim_results, table_region) {
 ### Ivy League
 ivy_history <- 
   read_csv('3.0_Files/Predictions/playoff_history.csv') %>% 
-  filter(date >= '2024-11-01')
+  filter(date >= '2025-11-01')
 ivy_playoffs <- read_csv('3.0_Files/Predictions/playoffs.csv')
 
 ivy_gt <- 
@@ -490,13 +490,13 @@ ivy_gt <-
       )
     }
   ) %>% 
-  tab_source_note("2025 Tournament hosted by Brown University") %>%
+  tab_source_note("2026 Tournament hosted by Cornell University") %>%
   tab_source_note("Based on 5,000 Simulations. Ties broken according to official Ivy League tiebreaking rules.") %>%
   
   tab_source_note("Table: Luke Benz (@recspecs730) | https://lbenz730.shinyapps.io/recspecs_basketball_central/") %>%
   tab_header(
-    title = md("**2025 Ivy League Men's Basketball Tournament Odds**"),
-    subtitle = md("<img src='https://content.sportslogos.net/logos/153/4824/full/ivy_league_logo_primary_2019_sportslogosnet-9024.png' style='height: 50px; width: auto; vertical-align: middle;'> ")
+    title = md("**2026 Ivy League Men's Basketball Tournament Odds**"),
+    subtitle = md("<img src='https://sportslogohistory.com/wp-content/uploads/2023/02/ivy_league_2019-pres.png?20250104014540' style='height: 100px; width: auto; vertical-align: middle;'> ")
     # subtitle = md(paste0('**', table_region, " Region**"))
   ) %>% 
   tab_options(column_labels.font.size = 16,
@@ -508,14 +508,14 @@ ivy_gt <-
 cols <- filter(ncaa_colors, conference == "Ivy") %>% 
   pull(primary_color)
 ivy_history_plot <- 
-  ggplot(ivy_history %>% filter(date >= as.Date('2024-11-08')), aes(x = as.Date(date), y = playoff_prob)) + 
+  ggplot(ivy_history %>% filter(date >= as.Date('2025-11-08')), aes(x = as.Date(date), y = playoff_prob)) + 
   geom_line(aes(group = team, col = team), size = 1.5) +
   facet_wrap(~team, ncol = 4) +
   theme_bw() + 
   labs(x = "Date", 
        y = "Playoff Probability",
        title = "Ivy League Playoff Odds",
-       subtitle = "2024-2025") +
+       subtitle = "2025-2026") +
   theme(legend.position = "none",
         axis.title = element_text(size = 18),
         plot.title = element_text(size = 24, hjust = 0.5),
@@ -658,7 +658,7 @@ ivy_psf_gt <-
   tab_source_note('@recspecs730') %>%
   tab_source_note('Leverage = total swing in all teams\' playoff/auto-bid odds between the two possible outcomes.') %>%
   tab_source_note('Difference = delta in playoff odds per team if Home wins (right) vs Away Wins (left)') %>%
-  tab_source_note("2025 Tournament hosted by Brown University") %>%
+  tab_source_note("2026 Tournament hosted by Cornell University") %>%
   tab_source_note("Based on 1,000 Simulations of each outcome. Ties broken according to official Ivy League tiebreaking rules.") %>%
   tab_header(title = paste0(
     'Ivy League Playoff Leverage: ',
@@ -780,7 +780,7 @@ ivy_4th <-
              pct = 'Frequency', 
              tiebreak = 'Tiebreak for 4th Seed') %>% 
   tab_header(subtitle = md('**Distribution of Wins Need for Last Ivy Playoff Spot**'),
-             title = md("<img src='https://content.sportslogos.net/logos/153/4824/full/ivy_league_logo_primary_2019_sportslogosnet-9024.png' style='height: 100px; width: auto; vertical-align: middle;'> ")) %>% 
+             title = md("<img src='https://sportslogohistory.com/wp-content/uploads/2023/02/ivy_league_2019-pres.png?20250104014540' style='height: 100px; width: auto; vertical-align: middle;'> ")) %>% 
   tab_options(column_labels.font.size = 16,
               column_labels.font.weight = 'bold',
               heading.title.font.size = 30,
@@ -813,7 +813,7 @@ tab <-
   cols_label(team = '') %>% 
   cols_label_with(columns = 2:9, fn = md) %>% 
   tab_header(subtitle = md('**Head-to-Head Win Matrix**'),
-             title = md("<img src='https://content.sportslogos.net/logos/153/4824/full/ivy_league_logo_primary_2019_sportslogosnet-9024.png' style='height: 100px; width: auto; vertical-align: middle;'> ")) %>% 
+             title = md("<img src='' style='height: 100px; width: auto; vertical-align: middle;'> ")) %>% 
   tab_options(column_labels.font.size = 16,
               column_labels.font.weight = 'bold',
               heading.title.font.size = 30,

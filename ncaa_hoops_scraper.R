@@ -33,7 +33,7 @@ conf_tournaments <- paste0('-\\sMBB\\s+', c("Big South", "Patriot League", "Nort
                                             "America East", "Sun Belt", "SWAC", "MEAC", "Big East", 
                                             "Big 10", "Big 12", "ACC", "SEC", "Ivy League"), "\\s+(Championship)+")
 
-max_date <- as.Date('2025-04-07')
+max_date <- as.Date('2026-04-07')
 
 
 z <- NULL
@@ -162,10 +162,10 @@ z <-
     # opponent == 'App State' ~ 'Appalachian St.',
     # opponent == 'Nicholls' ~ "Nicholls St.",
     # opponent == 'Sam Houston' ~ "Sam Houston St.",
-    opponent == 'Northern Ill.' ~ 'NIU',
-    opponent == 'FDU' ~ 'Fairleigh Dickinson',
-    opponent == 'East Texas A&M' ~ 'Tex. A&M-Commerce',
-    opponent == 'Saint Francis' ~ 'Saint Francis (PA)',
+    # opponent == 'Northern Ill.' ~ 'NIU',
+    # opponent == 'FDU' ~ 'Fairleigh Dickinson',
+    # opponent == 'East Texas A&M' ~ 'Tex. A&M-Commerce',
+    # opponent == 'Saint Francis' ~ 'Saint Francis (PA)',
     grepl('&;', opponent) ~ gsub('&;', "'", opponent),
     T ~ opponent))
 
@@ -181,6 +181,6 @@ month <- 1 + today$mon
 day <- today$mday
 
 ### Save Results
-write.csv(z, paste("3.0_Files/Results/2024-25/NCAA_Hoops_Results_", month, "_", 
+write.csv(z, paste("3.0_Files/Results/2025-26/NCAA_Hoops_Results_", month, "_", 
                    day, "_", year, ".csv", sep=""), row.names = F)
 
